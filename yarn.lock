@@ -1209,6 +1209,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@popperjs/core@npm:^2.9.3":
+  version: 2.11.6
+  resolution: "@popperjs/core@npm:2.11.6"
+  checksum: 47fb328cec1924559d759b48235c78574f2d71a8a6c4c03edb6de5d7074078371633b91e39bbf3f901b32aa8af9b9d8f82834856d2f5737a23475036b16817f0
+  languageName: node
+  linkType: hard
+
 "@rollup/plugin-alias@npm:^4.0.2":
   version: 4.0.2
   resolution: "@rollup/plugin-alias@npm:4.0.2"
@@ -4363,6 +4370,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"flowbite@npm:^1.5.5":
+  version: 1.5.5
+  resolution: "flowbite@npm:1.5.5"
+  dependencies:
+    "@popperjs/core": ^2.9.3
+    mini-svg-data-uri: ^1.4.3
+  checksum: 4f6f377613a5eb876def0ea754948872272130f94be69b43cb73732d6895aee79ae2e74c42735e7a0ee570395f35151215cf818bacfa020496bc24f4018c4371
+  languageName: node
+  linkType: hard
+
 "follow-redirects@npm:^1.0.0":
   version: 1.15.2
   resolution: "follow-redirects@npm:1.15.2"
@@ -6614,6 +6631,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mini-svg-data-uri@npm:^1.4.3":
+  version: 1.4.4
+  resolution: "mini-svg-data-uri@npm:1.4.4"
+  bin:
+    mini-svg-data-uri: cli.js
+  checksum: 997f1fbd8d59a70f03761e18626d335197a3479cb9d1ff75678e4b64b864d32a0b8fc18115eabde035e5299b8b4a354a78e57dd6ac10f9d604162a6170898d09
+  languageName: node
+  linkType: hard
+
 "minimatch@npm:^3.0.4, minimatch@npm:^3.0.5, minimatch@npm:^3.1.1, minimatch@npm:^3.1.2":
   version: 3.1.2
   resolution: "minimatch@npm:3.1.2"
@@ -8515,6 +8541,7 @@ __metadata:
     "@nuxtjs/fontawesome": ^1.1.2
     "@nuxtjs/i18n": next
     eslint: ^8.30.0
+    flowbite: ^1.5.5
     nuxt: ^3.0.0
     nuxt-fontawesome: ^0.4.0
     nuxt-windicss: ^2.6.0
