@@ -32,3 +32,6 @@ CONNECTED
 #description3
 An open ecosystem approach
 ::
+
+::smart-section
+::
