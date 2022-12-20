@@ -15,5 +15,20 @@ Air360 brings data analysts and business profiles together on the same mission: 
 
 ::features
 #title1
-Smart
+SMART
+
+#description1
+Your decision making assistant
+
+#title2
+INTUITIVE
+
+#description2
+Great usability, ready to use
+
+#title3
+CONNECTED
+
+#description3
+An open ecosystem approach
 ::
