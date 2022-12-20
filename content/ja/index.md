@@ -35,3 +35,6 @@ An open ecosystem approach
 
 ::smart-section
 ::
+
+::intuitive-section
+::
