@@ -30,7 +30,7 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              What is Flowbite?</span
+              Plug & Play Solution</span
             >
             <svg
               data-accordion-icon
@@ -93,7 +93,7 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              >Is there a Figma file available?</span
+              Full Retroactive Auto-Tracking</span
             >
             <svg
               data-accordion-icon
@@ -156,7 +156,7 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              What are the differences between Flowbite and Tailwind UI?</span
+              Highest Level Granularity</span
             >
             <svg
               data-accordion-icon
@@ -194,7 +194,7 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              What are the differences between Flowbite and Tailwind UI?</span
+              Out-of-the-box Data Sets</span
             >
             <svg
               data-accordion-icon
@@ -232,7 +232,7 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              What are the differences between Flowbite and Tailwind UI?</span
+              Privacy by Default</span
             >
             <svg
               data-accordion-icon

@@ -24,7 +24,7 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              What is Flowbite?</span
+              Segmentation Engine</span
             >
             <svg
               data-accordion-icon
@@ -87,7 +87,7 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              >Is there a Figma file available?</span
+              Open Data Integrations</span
             >
             <svg
               data-accordion-icon
@@ -150,7 +150,7 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              What are the differences between Flowbite and Tailwind UI?</span
+              Enriched Data</span
             >
             <svg
               data-accordion-icon
@@ -188,7 +188,7 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              What are the differences between Flowbite and Tailwind UI?</span
+              Advanced Data Collection</span
             >
             <svg
               data-accordion-icon

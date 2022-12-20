@@ -24,7 +24,7 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              What is Flowbite?</span
+              Custom Dashboards and Charts</span
             >
             <svg
               data-accordion-icon
@@ -87,7 +87,7 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              >Is there a Figma file available?</span
+              Funnels</span
             >
             <svg
               data-accordion-icon
@@ -150,7 +150,7 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              What are the differences between Flowbite and Tailwind UI?</span
+              User Journeys</span
             >
             <svg
               data-accordion-icon
@@ -188,7 +188,7 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              What are the differences between Flowbite and Tailwind UI?</span
+              On-page Analytics</span
             >
             <svg
               data-accordion-icon
@@ -226,7 +226,7 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              What are the differences between Flowbite and Tailwind UI?</span
+              Session Replays</span
             >
             <svg
               data-accordion-icon
@@ -264,7 +264,7 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              What are the differences between Flowbite and Tailwind UI?</span
+              Smart Notification</span
             >
             <svg
               data-accordion-icon

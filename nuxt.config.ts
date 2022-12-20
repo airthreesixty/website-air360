@@ -12,5 +12,5 @@ export default defineNuxtConfig({
       fallbackLocale: 'en',
     },
     detectBrowserLanguage: false,
-  }
+  },
 })
