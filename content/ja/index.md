@@ -38,3 +38,9 @@ An open ecosystem approach
 
 ::intuitive-section
 ::
+
+::connected-section
+::
+
+::cta-section
+::
