@@ -1,0 +1,19 @@
+<template>
+  <div>
+    <div>
+      <h3><ContentSlot :use="$slots.title1" /></h3>
+      <p></p>
+      <p></p>
+    </div>
+    <div>
+      <h3></h3>
+      <p></p>
+      <p></p>
+    </div>
+    <div>
+      <h3></h3>
+      <p></p>
+      <p></p>
+    </div>
+  </div>
+</template>

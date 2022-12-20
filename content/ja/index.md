@@ -1,13 +1,19 @@
-# JA Nuxt Content
+::slideshow
+::
 
-This page corresponds to the `/` route of your website. You can delete it or create another file in the `content/` directory.
+::home-page-hero
+#title
+SMART, INTUITIVE & CONNECTED
 
-Try to navigate to [/about](/about). These 2 pages are rendered by the `pages/[...slug].vue` component.
+#subtitle
+Get better insights , turn them into actions and increase your conversion rate faster.
 
-Try to navigate to [/blog/bla](/blog/bla)
+#description
+Air360 brings data analysts and business profiles together on the same mission: increase conversion, unlock missed revenue, and turn frustrated users into loyal customers.
 
-Try to navigate to [/stuff](/stuff)
+::
 
----
-
-Look at the [Content documentation](https://content.nuxtjs.org/) to learn more.
+::features
+#title1
+Smart
+::

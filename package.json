@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev -o",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "lint": "eslint --ext .ts,.js,.vue ."
@@ -10,11 +10,20 @@
   "devDependencies": {
     "@nuxt/content": "^2.2.2",
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@nuxtjs/fontawesome": "^1.1.2",
     "@nuxtjs/i18n": "next",
     "eslint": "^8.30.0",
     "nuxt": "^3.0.0",
     "nuxt-windicss": "^2.6.0",
     "typescript": "^4.9.4"
   },
-  "packageManager": "yarn@3.3.0"
+  "packageManager": "yarn@3.3.0",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@fortawesome/free-brands-svg-icons": "^6.2.1",
+    "@fortawesome/free-regular-svg-icons": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@fortawesome/vue-fontawesome": "latest-3",
+    "nuxt-fontawesome": "^0.4.0"
+  }
 }
