@@ -6,22 +6,32 @@
       <li
         class="inline-block w-full min-w-[150px] mr-[20px] list-none text-center"
       >
-        User Journey
+        {{ $t("user-journey") }}
       </li>
       <li
         class="inline-block w-full min-w-[150px] mr-[20px] list-none text-center"
       >
-        On-Page Analytics
+        {{ $t("on-page-analytics") }}
       </li>
       <li
         class="inline-block w-full min-w-[150px] mr-[20px] list-none text-center"
       >
-        On-Page Analytics
+        {{ $t("session-replays") }}
       </li>
       <li
         class="inline-block w-full min-w-[150px] mr-[20px] list-none text-center"
       >
-        Session Replays
+        {{ $t("funnels") }}
+      </li>
+      <li
+        class="inline-block w-full min-w-[150px] mr-[20px] list-none text-center"
+      >
+        {{ $t("open-data") }}
+      </li>
+      <li
+        class="inline-block w-full min-w-[150px] mr-[20px] list-none text-center"
+      >
+        {{ $t("behavioral-segments") }}
       </li>
     </ul>
     <ul
@@ -30,17 +40,32 @@
       <li
         class="inline-block w-full min-w-[150px] mr-[20px] list-none text-center"
       >
-        Funnels
+        {{ $t("user-journey") }}
       </li>
       <li
         class="inline-block w-full min-w-[150px] mr-[20px] list-none text-center"
       >
-        Open Data
+        {{ $t("on-page-analytics") }}
       </li>
       <li
         class="inline-block w-full min-w-[150px] mr-[20px] list-none text-center"
       >
-        Behavioral Segments
+        {{ $t("session-replays") }}
+      </li>
+      <li
+        class="inline-block w-full min-w-[150px] mr-[20px] list-none text-center"
+      >
+        {{ $t("funnels") }}
+      </li>
+      <li
+        class="inline-block w-full min-w-[150px] mr-[20px] list-none text-center"
+      >
+        {{ $t("open-data") }}
+      </li>
+      <li
+        class="inline-block w-full min-w-[150px] mr-[20px] list-none text-center"
+      >
+        {{ $t("behavioral-segments") }}
       </li>
     </ul>
   </div>

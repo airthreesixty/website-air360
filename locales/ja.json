@@ -3,5 +3,11 @@
   "product": "製品",
   "pricing": "価格",
   "inspiration": "インスピレーション",
-  "login": "ログイン"
+  "login": "ログイン",
+  "user-journey": "カスタマージャーニー",
+  "on-page-analytics": "ページ上分析",
+  "session-replays": "セッション録画",
+  "funnels": "ファネル",
+  "open-data": "オープンデータ",
+  "behavioral-segments": "行動セグメンテーション"
 }
