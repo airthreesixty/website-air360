@@ -52,6 +52,18 @@ Air360 はデータアナリストと事業内容を同じミッションに結�
 ::
 
 ::intuitive-section
+#intuitive
+直感的
+#title1
+簡単に始められる
+#title2
+完全遡及追跡機能
+#title3
+最上位の精度
+#title4
+革新的なデータ組み
+#title5
+デフォルトでプライバシーを保護
 ::
 
 ::connected-section

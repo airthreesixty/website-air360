@@ -8,7 +8,9 @@
         />
       </div>
       <div id="accordion-open" data-accordion="open" class="flex-1">
-        <h2 class="text-white text-3xl font-extrabold pb-2">Intuitive</h2>
+        <h2 class="text-white text-3xl font-extrabold pb-2">
+          <ContentSlot :use="$slots.intuitive" />
+        </h2>
         <h2 id="accordion-open-heading-7">
           <button
             type="button"
@@ -30,8 +32,8 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              Plug & Play Solution</span
-            >
+              <ContentSlot :use="$slots.title1"
+            /></span>
             <svg
               data-accordion-icon
               class="w-6 h-6 rotate-180 shrink-0"
@@ -93,8 +95,8 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              Full Retroactive Auto-Tracking</span
-            >
+              <ContentSlot :use="$slots.title2"
+            /></span>
             <svg
               data-accordion-icon
               class="w-6 h-6 shrink-0"
@@ -157,8 +159,8 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              Highest Level Granularity</span
-            >
+              <ContentSlot :use="$slots.title3"
+            /></span>
             <svg
               data-accordion-icon
               class="w-6 h-6 shrink-0"
@@ -221,8 +223,8 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              Out-of-the-box Data Sets</span
-            >
+              <ContentSlot :use="$slots.title4"
+            /></span>
             <svg
               data-accordion-icon
               class="w-6 h-6 shrink-0"
@@ -284,8 +286,8 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              Privacy by Default</span
-            >
+              <ContentSlot :use="$slots.title5"
+            /></span>
             <svg
               data-accordion-icon
               class="w-6 h-6 shrink-0"
