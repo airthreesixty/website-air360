@@ -2,10 +2,10 @@
 ::
 
 ::home-page-hero
-#title
-SMART, INTUITIVE & CONNECTED
-
 #subtitle
+SMART, 直感的 & CONNECTED
+
+#title
 Get better insights , turn them into actions and increase your conversion rate faster.
 
 #description

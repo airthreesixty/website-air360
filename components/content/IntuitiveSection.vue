@@ -12,7 +12,7 @@
         <h2 id="accordion-open-heading-7">
           <button
             type="button"
-            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+            class="flex items-center justify-between w-full p-5 font-medium text-left text-white border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
             data-accordion-target="#accordion-open-body-7"
             aria-expanded="false"
             aria-controls="accordion-open-body-7"
@@ -55,12 +55,12 @@
           <div
             class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900"
           >
-            <p class="mb-2 text-gray-500 dark:text-gray-400">
+            <p class="mb-2 text-white dark:text-gray-400">
               Flowbite is an open-source library of interactive components built
               on top of Tailwind CSS including buttons, dropdowns, modals,
               navbars, and more.
             </p>
-            <p class="text-gray-500 dark:text-gray-400">
+            <p class="text-white dark:text-gray-400">
               Check out this guide to learn how to
               <a
                 href="/docs/getting-started/introduction/"
@@ -75,7 +75,7 @@
         <h2 id="accordion-open-heading-8">
           <button
             type="button"
-            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+            class="flex items-center justify-between w-full p-5 font-medium text-left text-white border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
             data-accordion-target="#accordion-open-body-8"
             aria-expanded="false"
             aria-controls="accordion-open-body-8"
@@ -139,7 +139,7 @@
         <h2 id="accordion-open-heading-9">
           <button
             type="button"
-            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+            class="flex items-center justify-between w-full p-5 font-medium text-left text-white border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
             data-accordion-target="#accordion-open-body-9"
             aria-expanded="false"
             aria-controls="accordion-open-body-9"
@@ -203,7 +203,7 @@
         <h2 id="accordion-open-heading-10">
           <button
             type="button"
-            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+            class="flex items-center justify-between w-full p-5 font-medium text-left text-white border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
             data-accordion-target="#accordion-open-body-10"
             aria-expanded="false"
             aria-controls="accordion-open-body-10"
@@ -266,7 +266,7 @@
         <h2 id="accordion-open-heading-11">
           <button
             type="button"
-            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+            class="flex items-center justify-between w-full p-5 font-medium text-left text-white border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
             data-accordion-target="#accordion-open-body-11"
             aria-expanded="false"
             aria-controls="accordion-open-body-11"
