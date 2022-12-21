@@ -1,6 +1,7 @@
 import { defineConfig } from 'windicss/helpers'
 
 export default defineConfig({
+  darkMode: 'class',
   plugins: [require('windicss/plugin/typography'), require('flowbite/plugin')],
   content: [
     './node_modules/flowbite/**/*.js',
@@ -20,6 +21,15 @@ export default defineConfig({
       animation: {
         slideshow1: 'slide1 60s -30s linear infinite',
         slideshow2: 'slide2 60s linear infinite',
+      },
+      fontFamily: {
+        sans: [
+          'Lato',
+          'ui-sans-serif',
+          'system-ui',
+          '-apple-system',
+          'sans-serif',
+        ],
       },
     },
   },
