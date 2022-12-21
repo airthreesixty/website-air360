@@ -129,6 +129,7 @@
             </p>
           </div>
         </div>
+
         <h2 id="accordion-open-heading-3">
           <button
             type="button"
@@ -167,13 +168,39 @@
             </svg>
           </button>
         </h2>
+        <div
+          id="accordion-open-body-3"
+          class="hidden"
+          aria-labelledby="accordion-open-heading-3"
+        >
+          <div
+            class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700"
+          >
+            <p class="mb-2 text-gray-500 dark:text-gray-400">
+              Flowbite is first conceptualized and designed using the Figma
+              software so everything you see in the library has a design
+              equivalent in our Figma file.
+            </p>
+            <p class="text-gray-500 dark:text-gray-400">
+              Check out the
+              <a
+                href="https://flowbite.com/figma/"
+                class="text-blue-600 dark:text-blue-500 hover:underline"
+                >Figma design system</a
+              >
+              based on the utility classes from Tailwind CSS and components from
+              Flowbite.
+            </p>
+          </div>
+        </div>
+
         <h2 id="accordion-open-heading-4">
           <button
             type="button"
             class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
-            data-accordion-target="#accordion-open-body-3"
+            data-accordion-target="#accordion-open-body-4"
             aria-expanded="false"
-            aria-controls="accordion-open-body-3"
+            aria-controls="accordion-open-body-4"
           >
             <span class="flex items-center"
               ><svg
@@ -205,13 +232,38 @@
             </svg>
           </button>
         </h2>
+        <div
+          id="accordion-open-body-4"
+          class="hidden"
+          aria-labelledby="accordion-open-heading-4"
+        >
+          <div
+            class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700"
+          >
+            <p class="mb-2 text-gray-500 dark:text-gray-400">
+              Flowbite is first conceptualized and designed using the Figma
+              software so everything you see in the library has a design
+              equivalent in our Figma file.
+            </p>
+            <p class="text-gray-500 dark:text-gray-400">
+              Check out the
+              <a
+                href="https://flowbite.com/figma/"
+                class="text-blue-600 dark:text-blue-500 hover:underline"
+                >Figma design system</a
+              >
+              based on the utility classes from Tailwind CSS and components from
+              Flowbite.
+            </p>
+          </div>
+        </div>
         <h2 id="accordion-open-heading-5">
           <button
             type="button"
             class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
-            data-accordion-target="#accordion-open-body-3"
+            data-accordion-target="#accordion-open-body-5"
             aria-expanded="false"
-            aria-controls="accordion-open-body-3"
+            aria-controls="accordion-open-body-5"
           >
             <span class="flex items-center"
               ><svg
@@ -243,13 +295,38 @@
             </svg>
           </button>
         </h2>
+        <div
+          id="accordion-open-body-5"
+          class="hidden"
+          aria-labelledby="accordion-open-heading-5"
+        >
+          <div
+            class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700"
+          >
+            <p class="mb-2 text-gray-500 dark:text-gray-400">
+              Flowbite is first conceptualized and designed using the Figma
+              software so everything you see in the library has a design
+              equivalent in our Figma file.
+            </p>
+            <p class="text-gray-500 dark:text-gray-400">
+              Check out the
+              <a
+                href="https://flowbite.com/figma/"
+                class="text-blue-600 dark:text-blue-500 hover:underline"
+                >Figma design system</a
+              >
+              based on the utility classes from Tailwind CSS and components from
+              Flowbite.
+            </p>
+          </div>
+        </div>
         <h2 id="accordion-open-heading-6">
           <button
             type="button"
             class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
-            data-accordion-target="#accordion-open-body-3"
+            data-accordion-target="#accordion-open-body-6"
             aria-expanded="false"
-            aria-controls="accordion-open-body-3"
+            aria-controls="accordion-open-body-6"
           >
             <span class="flex items-center"
               ><svg
@@ -282,9 +359,9 @@
           </button>
         </h2>
         <div
-          id="accordion-open-body-3"
+          id="accordion-open-body-6"
           class="hidden"
-          aria-labelledby="accordion-open-heading-3"
+          aria-labelledby="accordion-open-heading-6"
         >
           <div
             class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700"
