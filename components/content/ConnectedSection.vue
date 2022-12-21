@@ -3,13 +3,13 @@
     <div class="flex flex-col max-w-screen-xl px-4 py-8 mx-auto md:flex-row">
       <div id="accordion-open" data-accordion="open" class="flex-1">
         <h2 class="text-blue-500 text-3xl font-extrabold pb-2">Connected</h2>
-        <h2 id="accordion-open-heading-1">
+        <h2 id="accordion-open-heading-12">
           <button
             type="button"
             class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
-            data-accordion-target="#accordion-open-body-1"
+            data-accordion-target="#accordion-open-body-12"
             aria-expanded="true"
-            aria-controls="accordion-open-body-1"
+            aria-controls="accordion-open-body-12"
           >
             <span class="flex items-center"
               ><svg
@@ -42,9 +42,9 @@
           </button>
         </h2>
         <div
-          id="accordion-open-body-1"
+          id="accordion-open-body-12"
           class="hidden"
-          aria-labelledby="accordion-open-heading-1"
+          aria-labelledby="accordion-open-heading-12"
         >
           <div
             class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900"
@@ -66,13 +66,13 @@
             </p>
           </div>
         </div>
-        <h2 id="accordion-open-heading-2">
+        <h2 id="accordion-open-heading-13">
           <button
             type="button"
             class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
-            data-accordion-target="#accordion-open-body-2"
+            data-accordion-target="#accordion-open-body-13"
             aria-expanded="false"
-            aria-controls="accordion-open-body-2"
+            aria-controls="accordion-open-body-13"
           >
             <span class="flex items-center"
               ><svg
@@ -87,7 +87,7 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              Open Data Integrations</span
+              Open Data Integration</span
             >
             <svg
               data-accordion-icon
@@ -105,9 +105,9 @@
           </button>
         </h2>
         <div
-          id="accordion-open-body-2"
+          id="accordion-open-body-13"
           class="hidden"
-          aria-labelledby="accordion-open-heading-2"
+          aria-labelledby="accordion-open-heading-13"
         >
           <div
             class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700"
@@ -129,13 +129,14 @@
             </p>
           </div>
         </div>
-        <h2 id="accordion-open-heading-3">
+
+        <h2 id="accordion-open-heading-14">
           <button
             type="button"
             class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
-            data-accordion-target="#accordion-open-body-3"
+            data-accordion-target="#accordion-open-body-14"
             aria-expanded="false"
-            aria-controls="accordion-open-body-3"
+            aria-controls="accordion-open-body-14"
           >
             <span class="flex items-center"
               ><svg
@@ -167,13 +168,39 @@
             </svg>
           </button>
         </h2>
-        <h2 id="accordion-open-heading-4">
+        <div
+          id="accordion-open-body-14"
+          class="hidden"
+          aria-labelledby="accordion-open-heading-14"
+        >
+          <div
+            class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700"
+          >
+            <p class="mb-2 text-gray-500 dark:text-gray-400">
+              Flowbite is first conceptualized and designed using the Figma
+              software so everything you see in the library has a design
+              equivalent in our Figma file.
+            </p>
+            <p class="text-gray-500 dark:text-gray-400">
+              Check out the
+              <a
+                href="https://flowbite.com/figma/"
+                class="text-blue-600 dark:text-blue-500 hover:underline"
+                >Figma design system</a
+              >
+              based on the utility classes from Tailwind CSS and components from
+              Flowbite.
+            </p>
+          </div>
+        </div>
+
+        <h2 id="accordion-open-heading-15">
           <button
             type="button"
             class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
-            data-accordion-target="#accordion-open-body-3"
+            data-accordion-target="#accordion-open-body-15"
             aria-expanded="false"
-            aria-controls="accordion-open-body-3"
+            aria-controls="accordion-open-body-15"
           >
             <span class="flex items-center"
               ><svg
@@ -205,47 +232,29 @@
             </svg>
           </button>
         </h2>
-
         <div
-          id="accordion-open-body-3"
+          id="accordion-open-body-15"
           class="hidden"
-          aria-labelledby="accordion-open-heading-3"
+          aria-labelledby="accordion-open-heading-15"
         >
           <div
-            class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700"
+            class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700"
           >
             <p class="mb-2 text-gray-500 dark:text-gray-400">
-              The main difference is that the core components from Flowbite are
-              open source under the MIT license, whereas Tailwind UI is a paid
-              product. Another difference is that Flowbite relies on smaller and
-              standalone components, whereas Tailwind UI offers sections of
-              pages.
+              Flowbite is first conceptualized and designed using the Figma
+              software so everything you see in the library has a design
+              equivalent in our Figma file.
             </p>
-            <p class="mb-2 text-gray-500 dark:text-gray-400">
-              However, we actually recommend using both Flowbite, Flowbite Pro,
-              and even Tailwind UI as there is no technical reason stopping you
-              from using the best of two worlds.
+            <p class="text-gray-500 dark:text-gray-400">
+              Check out the
+              <a
+                href="https://flowbite.com/figma/"
+                class="text-blue-600 dark:text-blue-500 hover:underline"
+                >Figma design system</a
+              >
+              based on the utility classes from Tailwind CSS and components from
+              Flowbite.
             </p>
-            <p class="mb-2 text-gray-500 dark:text-gray-400">
-              Learn more about these technologies:
-            </p>
-            <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
-              <li>
-                <a
-                  href="https://flowbite.com/pro/"
-                  class="text-blue-600 dark:text-blue-500 hover:underline"
-                  >Flowbite Pro</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://tailwindui.com/"
-                  rel="nofollow"
-                  class="text-blue-600 dark:text-blue-500 hover:underline"
-                  >Tailwind UI</a
-                >
-              </li>
-            </ul>
           </div>
         </div>
       </div>
