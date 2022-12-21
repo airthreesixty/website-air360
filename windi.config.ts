@@ -7,6 +7,15 @@ export default defineConfig({
     './node_modules/flowbite/**/*.js',
   ],
   theme: {
+    fontFamily: {
+      sans: [
+        'Lato',
+        'ui-sans-serif',
+        'system-ui',
+        '-apple-system',
+        'sans-serif',
+      ],
+    },
     extend: {
       keyframes: {
         slide1: {
@@ -21,15 +30,6 @@ export default defineConfig({
       animation: {
         slideshow1: 'slide1 60s -30s linear infinite',
         slideshow2: 'slide2 60s linear infinite',
-      },
-      fontFamily: {
-        sans: [
-          'Lato',
-          'ui-sans-serif',
-          'system-ui',
-          '-apple-system',
-          'sans-serif',
-        ],
       },
     },
   },
