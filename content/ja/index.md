@@ -3,13 +3,13 @@
 
 ::home-page-hero
 #subtitle
-SMART, 直感的 & CONNECTED
+スマート, 直感的 & 一貫性
 
 #title
-Get better insights , turn them into actions and increase your conversion rate faster.
+本質を見抜き、アクションへ、コンバージョン率をより早く上昇させる
 
 #description
-Air360 brings data analysts and business profiles together on the same mission: increase conversion, unlock missed revenue, and turn frustrated users into loyal customers.
+Air360 はデータアナリストと事業内容を同じミッションへ導きます。コンバージョン率を高め、逃した収益を取り戻し、不満を持つユーザーを常連客へ変えます。
 
 ::
 
