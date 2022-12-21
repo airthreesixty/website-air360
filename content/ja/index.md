@@ -67,6 +67,17 @@ Air360 はデータアナリストと事業内容を同じミッションに結�
 ::
 
 ::connected-section
+#connected
+連携性
+#title1
+セグメンテーションエンジン
+#title2
+データ統合
+#title3
+豊富なデータ
+#title4
+高機能なデータ収集
+
 ::
 
 ::cta-section
