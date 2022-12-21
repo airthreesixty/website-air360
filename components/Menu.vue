@@ -2,12 +2,12 @@
   <nav
     class="bg-[#FFFFFFD9] border-gray-200 px-2 sticky top-0 sm:px-4 py-2.5 rounded dark:bg-gray-900"
   >
-    <div class="container flex flex-wrap items-center justify-between mx-auto">
+    <div class="flex flex-wrap items-center justify-between">
       <NuxtLink :to="$localePath('/')">
         <img
           src="https://www.air360.io/wp-content/uploads/2022/05/air360-logo-bk.svg"
           class="h-6 mr-3 sm:h-9"
-          alt="Flowbite Logo"
+          alt="Air360 Logo"
         />
       </NuxtLink>
       <button

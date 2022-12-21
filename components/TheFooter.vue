@@ -14,7 +14,7 @@
             href="#"
             class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
           >
-            <img src="/linkedin.svg" alt="" />
+            <!-- <font-awesome-icon icon="fa-brands fa-linkedin" /> -->
             <span class="sr-only">LinkedIn page</span>
           </a>
           <a

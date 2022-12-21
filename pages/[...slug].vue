@@ -11,7 +11,6 @@ const route = useRoute();
 
 const pathWithoutLocale = computed(() => {
   const matches = route.path.match(/^(\/(en|ja))?(.*)/);
-  console.log(route.path);
   return matches ? matches[3] : "";
 });
 
