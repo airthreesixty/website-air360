@@ -1,12 +1,47 @@
 <template>
-  <div class="w-full">
-    <ul class="list-none flex justify-around">
-      <li>User Journey</li>
-      <li>On-Page Analytics</li>
-      <li>Session Replays</li>
-      <li>Funnels</li>
-      <li>Open Data</li>
-      <li>Behavioral Segments</li>
+  <div class="relative flex w-screen overflow-hidden">
+    <ul
+      class="p-0 w-screen flex flex-shrink-0 first:animate-slideshow1 last:animate-slideshow2"
+    >
+      <li
+        class="inline-block w-full min-w-[150px] mr-[20px] list-none text-center"
+      >
+        User Journey
+      </li>
+      <li
+        class="inline-block w-full min-w-[150px] mr-[20px] list-none text-center"
+      >
+        On-Page Analytics
+      </li>
+      <li
+        class="inline-block w-full min-w-[150px] mr-[20px] list-none text-center"
+      >
+        On-Page Analytics
+      </li>
+      <li
+        class="inline-block w-full min-w-[150px] mr-[20px] list-none text-center"
+      >
+        Session Replays
+      </li>
+    </ul>
+    <ul
+      class="p-0 w-screen flex flex-shrink-0 first:animate-slideshow1 last:animate-slideshow2"
+    >
+      <li
+        class="inline-block w-full min-w-[150px] mr-[20px] list-none text-center"
+      >
+        Funnels
+      </li>
+      <li
+        class="inline-block w-full min-w-[150px] mr-[20px] list-none text-center"
+      >
+        Open Data
+      </li>
+      <li
+        class="inline-block w-full min-w-[150px] mr-[20px] list-none text-center"
+      >
+        Behavioral Segments
+      </li>
     </ul>
   </div>
 </template>
