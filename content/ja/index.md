@@ -34,6 +34,21 @@ Air360 はデータアナリストと事業内容を同じミッションに結�
 ::
 
 ::smart-section
+#smart
+スマート
+
+#title1
+カスタムダッシュボード＆チャート
+#title2
+ファネル
+#title3
+カスタマージャーニー
+#title4
+ページ上分析
+#title5
+セッション録画
+#title6
+スマート通知
 ::
 
 ::intuitive-section

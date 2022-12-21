@@ -2,7 +2,9 @@
   <section class="bg-white dark:bg-gray-900">
     <div class="flex flex-col max-w-screen-xl px-4 py-8 mx-auto md:flex-row">
       <div id="accordion-open" data-accordion="open" class="flex-1">
-        <h2 class="text-pink-500 text-3xl font-extrabold pb-2">Smart</h2>
+        <h2 class="text-pink-500 text-3xl font-extrabold pb-2">
+          <ContentSlot :use="$slots.smart" />
+        </h2>
         <h2 id="accordion-open-heading-1">
           <button
             type="button"
@@ -24,8 +26,8 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              Custom Dashboards and Charts</span
-            >
+              <ContentSlot :use="$slots.title1"
+            /></span>
             <svg
               data-accordion-icon
               class="w-6 h-6 rotate-180 shrink-0"
@@ -87,8 +89,8 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              Funnels</span
-            >
+              <ContentSlot :use="$slots.title2"
+            /></span>
             <svg
               data-accordion-icon
               class="w-6 h-6 shrink-0"
@@ -151,8 +153,8 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              User Journeys</span
-            >
+              <ContentSlot :use="$slots.title3"
+            /></span>
             <svg
               data-accordion-icon
               class="w-6 h-6 shrink-0"
@@ -215,8 +217,8 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              On-page Analytics</span
-            >
+              <ContentSlot :use="$slots.title4"
+            /></span>
             <svg
               data-accordion-icon
               class="w-6 h-6 shrink-0"
@@ -278,8 +280,8 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              Session Replays</span
-            >
+              <ContentSlot :use="$slots.title5"
+            /></span>
             <svg
               data-accordion-icon
               class="w-6 h-6 shrink-0"
@@ -341,8 +343,8 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              Smart Notification</span
-            >
+              <ContentSlot :use="$slots.title6"
+            /></span>
             <svg
               data-accordion-icon
               class="w-6 h-6 shrink-0"

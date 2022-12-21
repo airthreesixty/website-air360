@@ -1,6 +1,8 @@
 <template>
   <section class="bg-white dark:bg-gray-900">
-    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
+    <div
+      class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:pt-6 lg:pb-16 lg:px-6"
+    >
       <div class="grid gap-16 sm:grid-cols-2 md:grid-cols-3">
         <div class="text-center text-gray-500">
           <a href="#">
