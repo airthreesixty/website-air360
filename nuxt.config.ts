@@ -1,6 +1,7 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   modules: ['@nuxt/content', 'nuxt-windicss', '@nuxtjs/i18n', 'nuxt-font-loader'],
+
   i18n: {
     locales: [
       { code: 'en', iso: 'en-US', file: 'en.json', name: 'English' },
@@ -23,4 +24,8 @@ export default defineNuxtConfig({
       },
     ],
   },
+
+  css: [
+    '@fortawesome/fontawesome-svg-core/styles.css',
+  ],
 })
