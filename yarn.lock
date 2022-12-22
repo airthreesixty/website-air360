@@ -7105,6 +7105,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"nuxt-font-loader@npm:^2.2.2":
+  version: 2.2.2
+  resolution: "nuxt-font-loader@npm:2.2.2"
+  checksum: 3406669d2a6500ec77f5c4a2d733d04569f0842559d18391f0c72e5c4d99b04718a47c8e644897997596c6e658167846fe553b46f948ec41f1b7ad10f4fbc78a
+  languageName: node
+  linkType: hard
+
 "nuxt-fontawesome@npm:^0.4.0":
   version: 0.4.0
   resolution: "nuxt-fontawesome@npm:0.4.0"
@@ -8502,6 +8509,7 @@ __metadata:
     eslint: ^8.30.0
     flowbite: ^1.5.5
     nuxt: ^3.0.0
+    nuxt-font-loader: ^2.2.2
     nuxt-fontawesome: ^0.4.0
     nuxt-windicss: ^2.6.0
     typescript: ^4.9.4

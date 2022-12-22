@@ -2,21 +2,21 @@ import { defineConfig } from 'windicss/helpers'
 
 export default defineConfig({
   darkMode: 'class',
-  plugins: [require('windicss/plugin/typography'), require('flowbite/plugin')],
-  content: [
-    './node_modules/flowbite/**/*.js',
-  ],
+  plugins: [require('windicss/plugin/typography') /*, require('flowbite/plugin')*/ ],
+  // content: [
+  //   './node_modules/flowbite/**/*.js',
+  // ],
   theme: {
-    fontFamily: {
-      sans: [
-        'Lato',
-        'ui-sans-serif',
-        'system-ui',
-        '-apple-system',
-        'sans-serif',
-      ],
-    },
     extend: {
+      fontFamily: {
+        sans: [
+          'Lato',
+          'ui-sans-serif',
+          'system-ui',
+          '-apple-system',
+          'sans-serif',
+        ],
+      },
       keyframes: {
         slide1: {
           '0%': { transform: 'translateX(100%)' },
