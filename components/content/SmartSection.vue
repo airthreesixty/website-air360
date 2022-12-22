@@ -2,7 +2,7 @@
   <section class="bg-white dark:bg-gray-900">
     <div class="flex flex-col max-w-screen-xl px-4 py-8 mx-auto md:flex-row">
       <div id="accordion-open" data-accordion="open" class="flex-1">
-        <h2 class="text-pink-500 text-3xl font-extrabold pb-2">
+        <h2 class="text-pink-500 text-3xl font-extrabold pb-3">
           <ContentSlot :use="$slots.smart" />
         </h2>
         <h2 id="accordion-open-heading-1">

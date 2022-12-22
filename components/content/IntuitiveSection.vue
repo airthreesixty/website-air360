@@ -8,7 +8,7 @@
         />
       </div>
       <div id="accordion-open" data-accordion="open" class="flex-1">
-        <h2 class="text-white text-3xl font-extrabold pb-2">
+        <h2 class="text-white text-3xl font-extrabold pb-3">
           <ContentSlot :use="$slots.intuitive" />
         </h2>
         <h2 id="accordion-open-heading-7">
@@ -55,7 +55,7 @@
           aria-labelledby="accordion-open-heading-7"
         >
           <div
-            class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900"
+            class="p-5 text-white font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900"
           >
             <p class="mb-2 text-white dark:text-gray-400">
               <ContentSlot :use="$slots.description1" />
