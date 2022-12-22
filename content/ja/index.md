@@ -1,5 +1,5 @@
-::slideshow
-::
+<!-- ::slideshow
+:: -->
 
 ::home-page-hero
 #subtitle

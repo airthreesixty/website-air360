@@ -1,13 +1,13 @@
 <template>
   <section class="bg-white dark:bg-gray-900">
     <div
-      class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:pt-6 lg:pb-16 lg:px-6"
+      class="py-2 px-4 mx-auto max-w-screen-xl text-center lg:pt-6 lg:pb-16 lg:px-6"
     >
-      <div class="grid gap-16 sm:grid-cols-2 md:grid-cols-3">
+      <div class="grid gap-2 sm:grid-cols-2 md:grid-cols-3">
         <div class="text-center text-gray-500">
           <a href="#">
             <h5
-              class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              class="mb-1 text-2xl font-base tracking-tight text-gray-900 dark:text-white"
             >
               <ContentSlot :use="$slots.title1" />
             </h5>
@@ -22,7 +22,7 @@
         <div class="text-center text-gray-500">
           <a href="#">
             <h5
-              class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              class="mb-1 text-2xl font-base tracking-tight text-gray-900 dark:text-white"
             >
               <ContentSlot :use="$slots.title2" />
             </h5>
@@ -37,7 +37,7 @@
         <div class="text-center text-gray-500">
           <a href="#">
             <h5
-              class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              class="mb-1 text-2xl font-base tracking-tight text-gray-900 dark:text-white"
             >
               <ContentSlot :use="$slots.title3" />
             </h5>

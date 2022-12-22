@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="bg-[#FFFFFFD9] border-gray-200 shadow-lg px-2 sticky top-0 sm:px-4 py-2.5 rounded dark:bg-gray-900"
+    class="bg-[#FFFFFFDA] border-gray-200 shadow-lg px-2 sticky top-0 sm:px-4 py-2.5 rounded dark:bg-gray-900"
   >
     <div class="flex flex-wrap items-center justify-between">
       <NuxtLink :to="$localePath('/')">
@@ -32,14 +32,17 @@
           ></path>
         </svg>
       </button>
-      <div class="hidden w-full lg:block lg:w-auto" id="navbar-default">
+      <div
+        class="hidden w-full transition ease-in-out duration-500 lg:block lg:w-auto"
+        id="navbar-default"
+      >
         <ul
-          class="flex flex-col p-4 mt-4 border items-center border-gray-100 rounded-lg lg:flex-row lg:space-x-8 lg:mt-0 lg:text-sm lg:font-medium lg:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          class="flex flex-col transition ease-in-out delay-500 p-4 mt-4 border items-center border-none lg:flex-row lg:space-x-8 lg:mt-0 lg:text-sm lg:font-medium lg:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
         >
           <li class="py-2">
             <a
               href="#"
-              class="block py-2 pl-3 pr-4 text-gray-700 bg-white md:bg-transparent md:text-gray-700 md:p-0 dark:text-white"
+              class="block py-2 pl-3 pr-4 text-gray-700 md:bg-transparent md:text-gray-700 md:p-0 dark:text-white"
               aria-current="page"
               >Why Air360</a
             >
@@ -75,7 +78,7 @@
           <li class="py-2">
             <a
               href="#"
-              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+              class="text-white bg-[#e74b91] hover:bg-[#ce3077] focus:ring-4 focus:ring-[#ce3077] font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
               >Request a demo</a
             >
           </li>

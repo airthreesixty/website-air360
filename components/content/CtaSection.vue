@@ -10,17 +10,15 @@
           </h2>
         </div>
         <div class="mt-6 w-full lg:mt-0">
-          <form action="#">
-            <div class="items-center mb-3 space-y-4 sm:flex sm:space-y-0">
-              <div class="relative w-full text-center">
-                <a
-                  href="#"
-                  class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-                  >Request a demo</a
-                >
-              </div>
+          <div class="items-center mb-3 space-y-4 sm:flex sm:space-y-0">
+            <div class="w-full text-center">
+              <a
+                href="#"
+                class="text-white bg-[#e74b91] hover:bg-[#ce3077] focus:ring-4 focus:ring-[#ce3077] font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                >Request a demo</a
+              >
             </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>
