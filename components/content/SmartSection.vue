@@ -49,7 +49,7 @@
           aria-labelledby="accordion-open-heading-1"
         >
           <div
-            class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900"
+            class="p-5 text-gray-500 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900"
           >
             <p class="mb-2 text-gray-500 dark:text-gray-400">
               <ContentSlot :use="$slots.description1" />
@@ -103,7 +103,7 @@
           aria-labelledby="accordion-open-heading-2"
         >
           <div
-            class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700"
+            class="p-5 text-gray-500 font-light border border-b-0 border-gray-200 dark:border-gray-700"
           >
             <p class="mb-2 text-gray-500 dark:text-gray-400">
               <ContentSlot :use="$slots.description2" />
@@ -158,7 +158,7 @@
           aria-labelledby="accordion-open-heading-3"
         >
           <div
-            class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700"
+            class="p-5 text-gray-500 font-light border border-b-0 border-gray-200 dark:border-gray-700"
           >
             <p class="mb-2 text-gray-500 dark:text-gray-400">
               <ContentSlot :use="$slots.description3" />
@@ -213,7 +213,7 @@
           aria-labelledby="accordion-open-heading-4"
         >
           <div
-            class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700"
+            class="p-5 text-gray-500 font-light border border-b-0 border-gray-200 dark:border-gray-700"
           >
             <p class="mb-2 text-gray-500 dark:text-gray-400">
               <ContentSlot :use="$slots.description4" />
@@ -267,7 +267,7 @@
           aria-labelledby="accordion-open-heading-5"
         >
           <div
-            class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700"
+            class="p-5 text-gray-500 font-light border border-b-0 border-gray-200 dark:border-gray-700"
           >
             <p class="mb-2 text-gray-500 dark:text-gray-400">
               <ContentSlot :use="$slots.description5" />
@@ -321,7 +321,7 @@
           aria-labelledby="accordion-open-heading-6"
         >
           <div
-            class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700"
+            class="p-5 text-gray-500 font-light border border-t-0 border-gray-200 dark:border-gray-700"
           >
             <p class="mb-2 text-gray-500 dark:text-gray-400">
               <ContentSlot :use="$slots.description6" />

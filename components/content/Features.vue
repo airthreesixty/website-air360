@@ -41,7 +41,6 @@
             >
               <ContentSlot :use="$slots.title3" />
             </h5>
-            <h1>Hello</h1>
           </a>
           <span> <ContentSlot :use="$slots.description3" /></span>
           <img
