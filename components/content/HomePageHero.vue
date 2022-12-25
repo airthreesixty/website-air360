@@ -28,11 +28,19 @@
         >
           <ContentSlot :use="$slots.description" />
         </p>
+        <div class="text-center md:text-left">
+          <button
+            class="text-white bg-[#e74b91] text-base font-bold w-full mt-3 block inline-block hover:bg-[#ce3077] focus:ring-4 focus:ring-[#ce3077] font-medium rounded-lg text-sm px-6 py-3 mr-2 mb-2 md:w-1/2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+          >
+            <ContentSlot :use="$slots.button1" />
+          </button>
+        </div>
       </div>
       <div class="hidden md:block lg:mt-0 lg:col-span-5 lg:flex">
         <img
           src="https://www.air360.io/wp-content/uploads/2022/08/hero-illustration.webp"
           alt="mockup"
+          class="object-scale-down"
         />
       </div>
     </div>
