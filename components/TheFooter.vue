@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="p-4 bg-white border-gray-200 border-t-1 sm:p-6 dark:bg-gray-900"
+    class="p-4 bg-white border-gray-200 shadow-inner sm:p-6 dark:bg-gray-900"
   >
     <div class="md:flex md:justify-between">
       <div class="mb-6 md:mb-0">
@@ -14,21 +14,21 @@
         <div class="flex my-6 space-x-6 sm:justify-start md:mt-4 lg:mt-6">
           <a
             href="#"
-            class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+            class="text-[#0E6DFD] hover:text-[#0C63E4] dark:hover:text-white"
           >
             <fa-icon class="fa-xl" :icon="['fab', 'linkedin']" />
             <span class="sr-only">LinkedIn page</span>
           </a>
           <a
             href="#"
-            class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+            class="text-[#0E6DFD] hover:text-[#0C63E4] dark:hover:text-white"
           >
             <fa-icon class="fa-xl" :icon="['fab', 'twitter']" />
             <span class="sr-only">Twitter page</span>
           </a>
           <a
             href="#"
-            class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+            class="text-[#0E6DFD] hover:text-[#0C63E4] dark:hover:text-white"
           >
             <fa-icon class="fa-xl" :icon="['fab', 'instagram']" />
             <span class="sr-only">Instagram page</span>
