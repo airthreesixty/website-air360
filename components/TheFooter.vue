@@ -1,7 +1,5 @@
 <template>
-  <footer
-    class="p-4 bg-white border-gray-200 shadow-inner sm:p-6 dark:bg-gray-900"
-  >
+  <footer class="p-4 border-gray-200 border-t-1 sm:p-6 dark:bg-gray-900">
     <div class="md:flex md:justify-between">
       <div class="mb-6 md:mb-0">
         <a href="https://www.air360.io/" class="flex items-center">
