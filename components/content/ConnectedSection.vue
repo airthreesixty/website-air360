@@ -282,6 +282,7 @@
         <img
           src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mobile-app.svg"
           alt="phone illustration"
+          loading="lazy"
         />
       </div>
     </div>

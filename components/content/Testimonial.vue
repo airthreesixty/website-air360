@@ -1,6 +1,6 @@
 <template>
   <section
-    class="overflow-hidden"
+    class="overflow-hidden bg-cover"
     style="
       background-image: url('https://www.air360.io/wp-content/uploads/2022/08/testimonials-bg-1.svg');
     "
@@ -17,10 +17,10 @@
 
         <div class="lg:ml-10">
           <blockquote class="">
-            <div class="text-2xl font-medium leading-9 text-gray-900">
+            <div class="text-2xl font-medium leading-9 text-gray-600">
               <p>
-                “With Air360 we can get more people involved in making
-                data-driven decisions on a global scale.”
+                “With Air360 we can get more people involved in<br />
+                making data-driven decisions on a global scale.”
               </p>
             </div>
             <footer class="mt-8">
