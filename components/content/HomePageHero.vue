@@ -7,6 +7,7 @@
         <img
           src="https://www.air360.io/wp-content/uploads/2022/08/hero-illustration.webp"
           alt="mockup"
+          loading="lazy"
           width="583"
           height="349"
         />
