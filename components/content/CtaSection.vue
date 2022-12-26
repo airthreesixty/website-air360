@@ -1,16 +1,16 @@
 <template>
-  <section class="bg-white mb-5 dark:bg-gray-900">
-    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-10 lg:px-6">
+  <section class="bg-white border-t-1 mb-5 dark:bg-gray-900">
+    <div class="pt-6 px-4 mx-auto max-w-screen-xl lg:py-10 lg:px-6">
       <div
         class="gap-16 flex-col justify-between items-center p-6 bg-white rounded-lg dark:bg-gray-800 md:p-6 lg:flex lg:gap-8"
       >
         <h2
-          class="w-full text-center mb-10 text-3xl tracking-tight font-extrabold lg:text-4xl lg:mb-2"
+          class="w-full text-center mb-10 text-3xl tracking-tight font-bold lg:text-4xl lg:mb-2"
         >
           Need to learn more?
         </h2>
 
-        <div class="my-6 w-full lg:mt-0">
+        <div class="mt-6 w-full lg:mt-0">
           <div class="items-center mb-3 space-y-4 sm:flex sm:space-y-0">
             <div class="w-full text-center">
               <a
