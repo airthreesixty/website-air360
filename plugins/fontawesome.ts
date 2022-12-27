@@ -5,6 +5,7 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 
+
 // This is important, we are going to let Nuxt worry about the CSS
 config.autoAddCss = false
 
