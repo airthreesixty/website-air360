@@ -5,9 +5,9 @@
         class="gap-16 flex-col justify-between items-center p-6 bg-white rounded-lg dark:bg-gray-800 md:p-6 lg:flex lg:gap-8"
       >
         <h2
-          class="w-full text-center mb-10 text-3xl tracking-tight font-bold lg:text-4xl lg:mb-2"
+          class="w-full text-center mb-10 text-2xl tracking-tight font-bold lg:text-3xl lg:mb-2"
         >
-          Need to learn more?
+          <ContentSlot :use="$slots.title" />
         </h2>
 
         <div class="mt-6 w-full lg:mt-0">

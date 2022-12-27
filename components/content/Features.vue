@@ -12,7 +12,7 @@
         </p>
       </div> -->
       <div
-        class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 xl:gap-8 md:space-y-0"
+        class="space-y-8 grid md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 xl:gap-8 md:space-y-0"
       >
         <a href="#smart-section">
           <div class="p-6 bg-white rounded shadow dark:bg-gray-800">
