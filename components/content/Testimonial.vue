@@ -1,6 +1,6 @@
 <template>
   <section
-    class="overflow-hidden bg-cover md:justify-center md:flex"
+    class="overflow-hidden bg-cover md:bg-[rgba(255,255,255,0.59)] bg-blend-lighten md:justify-center md:flex"
     style="
       background-image: url('https://www.air360.io/wp-content/uploads/2022/08/testimonials-bg-1.svg');
     "
