@@ -42,7 +42,7 @@
           <li class="py-2">
             <a
               href="#"
-              class="block py-2 pl-3 pr-4 text-gray-700 md:bg-transparent md:text-gray-700 md:p-0 dark:text-white"
+              class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               aria-current="page"
               >Why Air360</a
             >
@@ -79,7 +79,7 @@
             <a
               href="#"
               class="text-white bg-[#e74b91] hover:bg-[#ce3077] focus:ring-4 focus:ring-[#ce3077] font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-              >Request a demo</a
+              >{{ $t("request-demo") }}</a
             >
           </li>
         </ul>

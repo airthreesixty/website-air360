@@ -38,21 +38,21 @@
           <h2
             class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
           >
-            Company
+            {{ $t("company") }}
           </h2>
           <ul class="text-gray-600 dark:text-gray-400">
             <li class="mb-4">
               <a href="https://flowbite.com/" class="hover:underline">ESW</a>
             </li>
             <li class="mb-4">
-              <a href="https://tailwindcss.com/" class="hover:underline"
-                >Careers</a
-              >
+              <a href="https://tailwindcss.com/" class="hover:underline">{{
+                $t("careers")
+              }}</a>
             </li>
             <li>
-              <a href="https://tailwindcss.com/" class="hover:underline"
-                >Privacy Policy</a
-              >
+              <a href="https://tailwindcss.com/" class="hover:underline">{{
+                $t("privacy-policy")
+              }}</a>
             </li>
           </ul>
         </div>
@@ -60,14 +60,14 @@
           <h2
             class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
           >
-            Inspiration
+            {{ $t("inspiration") }}
           </h2>
           <ul class="text-gray-600 dark:text-gray-400">
             <li class="mb-4">
               <a
                 href="https://github.com/themesberg/flowbite"
                 class="hover:underline"
-                >Blog</a
+                >{{ $t("blog") }}</a
               >
             </li>
           </ul>
@@ -76,17 +76,17 @@
           <h2
             class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
           >
-            Help
+            {{ $t("help") }}
           </h2>
           <ul class="text-gray-600 dark:text-gray-400">
             <li class="mb-4">
-              <a href="#" class="hover:underline">Request a demo</a>
+              <a href="#" class="hover:underline">{{ $t("request-demo") }}</a>
             </li>
             <li class="mb-4">
-              <a href="#" class="hover:underline">Contact Us</a>
+              <a href="#" class="hover:underline">{{ $t("contact-us") }}</a>
             </li>
             <li>
-              <a href="#" class="hover:underline">Login</a>
+              <a href="#" class="hover:underline">{{ $t("login") }}</a>
             </li>
           </ul>
         </div>
