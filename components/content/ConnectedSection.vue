@@ -8,7 +8,7 @@
         <h2 id="accordion-collapse-heading-12">
           <button
             type="button"
-            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 dark:hover:bg-gray-800"
             data-accordion-target="#accordion-collapse-body-12"
             aria-expanded="false"
             aria-controls="accordion-collapse-body-12"
@@ -49,7 +49,7 @@
           aria-labelledby="accordion-collapse-heading-12"
         >
           <div
-            class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900"
+            class="px-5 pb-2 font-light dark:border-gray-700 dark:bg-gray-900"
           >
             <p class="mb-2 text-gray-500 dark:text-gray-400">
               Flowbite is an collapse-source library of interactive components
@@ -71,7 +71,7 @@
         <h2 id="accordion-collapse-heading-13">
           <button
             type="button"
-            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
             data-accordion-target="#accordion-collapse-body-13"
             aria-expanded="false"
             aria-controls="accordion-collapse-body-13"
@@ -111,9 +111,7 @@
           class="hidden"
           aria-labelledby="accordion-collapse-heading-13"
         >
-          <div
-            class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700"
-          >
+          <div class="px-5 pb-2 font-light dark:border-gray-700">
             <p class="mb-2 text-gray-500 dark:text-gray-400">
               Flowbite is first conceptualized and designed using the Figma
               software so everything you see in the library has a design
@@ -135,7 +133,7 @@
         <h2 id="accordion-collapse-heading-14">
           <button
             type="button"
-            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
             data-accordion-target="#accordion-collapse-body-14"
             aria-expanded="false"
             aria-controls="accordion-collapse-body-14"
@@ -176,7 +174,7 @@
           aria-labelledby="accordion-collapse-heading-14"
         >
           <div
-            class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700"
+            class="px-5 pb-2 font-light border-gray-200 dark:border-gray-700"
           >
             <p class="mb-2 text-gray-500 dark:text-gray-400">
               Flowbite is first conceptualized and designed using the Figma
@@ -199,7 +197,7 @@
         <h2 id="accordion-collapse-heading-15">
           <button
             type="button"
-            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
             data-accordion-target="#accordion-collapse-body-15"
             aria-expanded="false"
             aria-controls="accordion-collapse-body-15"
@@ -239,9 +237,7 @@
           class="hidden"
           aria-labelledby="accordion-collapse-heading-15"
         >
-          <div
-            class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700"
-          >
+          <div class="px-5 pb-2 font-light dark:border-gray-700">
             <p class="mb-2 text-gray-500 dark:text-gray-400">
               The main difference is that the core components from Flowbite are
               collapse source under the MIT license, whereas Tailwind UI is a

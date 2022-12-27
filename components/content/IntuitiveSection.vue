@@ -265,7 +265,7 @@
           class="hidden"
           aria-labelledby="accordion-collapse-heading-11"
         >
-          <div class="px-5 pb-2 font-light dark:border-gray-700">
+          <div class="px-5 pb-2 font-light text-white dark:border-gray-700">
             <p class="mb-2 text-white dark:text-gray-400">
               <ContentSlot :use="$slots.description5" />
             </p>
