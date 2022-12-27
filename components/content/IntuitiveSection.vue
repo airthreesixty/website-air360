@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-[#6677D8] dark:bg-gray-900">
+  <section class="bg-[#6677D8] dark:bg-gray-900" id="intuitive-section">
     <div class="flex flex-col max-w-screen-xl px-4 py-10 mx-auto md:flex-row">
       <div
         class="hidden h-full lg:mt-0 lg:col-span-5 xl:col-span-4 lg:flex flex-1"

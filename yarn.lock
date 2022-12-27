@@ -588,6 +588,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fortawesome/free-solid-svg-icons@npm:^6.2.1":
+  version: 6.2.1
+  resolution: "@fortawesome/free-solid-svg-icons@npm:6.2.1"
+  dependencies:
+    "@fortawesome/fontawesome-common-types": 6.2.1
+  checksum: a24170b676fced926cccdd08171357b20714483ceddeb052985a9acae3a347ffe853de2e757bf95cc7add74807d82eb1cc578e17430c32ca2c6a844c8276f91a
+  languageName: node
+  linkType: hard
+
 "@fortawesome/vue-fontawesome@npm:^0.1.4":
   version: 0.1.10
   resolution: "@fortawesome/vue-fontawesome@npm:0.1.10"
@@ -8512,6 +8521,7 @@ __metadata:
   dependencies:
     "@fortawesome/fontawesome-svg-core": ^6.2.1
     "@fortawesome/free-brands-svg-icons": ^6.2.1
+    "@fortawesome/free-solid-svg-icons": ^6.2.1
     "@fortawesome/vue-fontawesome": latest-3
     "@nuxt/content": ^2.2.2
     "@nuxtjs/eslint-config-typescript": ^12.0.0

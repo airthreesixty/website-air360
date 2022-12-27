@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white dark:bg-gray-900">
+  <section class="bg-white dark:bg-gray-900" id="smart-section">
     <div class="flex flex-col max-w-screen-xl px-4 py-10 mx-auto md:flex-row">
       <div id="accordion-collapse" data-accordion="collapse" class="flex-1">
         <h2 class="text-pink-500 text-3xl font-extrabold pb-3">
@@ -13,19 +13,10 @@
             aria-expanded="false"
             aria-controls="accordion-collapse-body-1"
           >
-            <span class="flex items-center"
-              ><svg
-                class="w-5 h-5 mr-2 shrink-0"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
+            <span class="flex items-center">
+              <fa-icon
+                class="fa-xl text-[#e74b91] w-5 h-5 mr-2 shrink-0"
+                :icon="['fas', '1']" />
               <ContentSlot :use="$slots.title1"
             /></span>
             <svg
