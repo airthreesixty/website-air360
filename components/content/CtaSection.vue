@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white border-t-1 mb-5 dark:bg-gray-900">
+  <section class="bg-white mb-5 dark:bg-gray-900">
     <div class="pt-6 px-4 mx-auto max-w-screen-xl lg:py-10 lg:px-6">
       <div
         class="gap-16 flex-col justify-between items-center p-6 bg-white rounded-lg dark:bg-gray-800 md:p-6 lg:flex lg:gap-8"
