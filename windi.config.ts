@@ -1,12 +1,9 @@
 import { defineConfig } from 'windicss/helpers'
-import plugin from 'windicss/plugin'
+import flowbite from 'flowbite-windicss-plugin'
 
 export default defineConfig({
   darkMode: 'class',
-  plugins: [require('windicss/plugin/typography'), require('flowbite/plugin')],
-  content: [
-    './node_modules/flowbite/**/*.js',
-  ],
+  plugins: [require('windicss/plugin/typography'), flowbite],
   theme: {
     fontFamily: {
       sans: [
