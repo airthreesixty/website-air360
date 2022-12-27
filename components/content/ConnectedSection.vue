@@ -8,7 +8,7 @@
         <h2 id="accordion-collapse-heading-12">
           <button
             type="button"
-            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 dark:hover:bg-gray-800"
+            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 focus:bg-transparent dark:hover:bg-gray-800"
             data-accordion-target="#accordion-collapse-body-12"
             aria-expanded="false"
             aria-controls="accordion-collapse-body-12"
@@ -71,7 +71,7 @@
         <h2 id="accordion-collapse-heading-13">
           <button
             type="button"
-            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
+            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 focus:bg-transparent dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
             data-accordion-target="#accordion-collapse-body-13"
             aria-expanded="false"
             aria-controls="accordion-collapse-body-13"
@@ -133,7 +133,7 @@
         <h2 id="accordion-collapse-heading-14">
           <button
             type="button"
-            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
+            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 focus:bg-transparent dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
             data-accordion-target="#accordion-collapse-body-14"
             aria-expanded="false"
             aria-controls="accordion-collapse-body-14"
@@ -197,7 +197,7 @@
         <h2 id="accordion-collapse-heading-15">
           <button
             type="button"
-            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
+            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 focus:bg-transparent dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
             data-accordion-target="#accordion-collapse-body-15"
             aria-expanded="false"
             aria-controls="accordion-collapse-body-15"
