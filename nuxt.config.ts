@@ -29,4 +29,13 @@ export default defineNuxtConfig({
     '@fortawesome/fontawesome-svg-core/styles.css',
     '~/assets/css/style.css',
   ],
+
+  build: {
+    transpile: [
+      '@fortawesome/vue-fontawesome',
+      '@fortawesome/fontawesome-svg-core',
+      '@fortawesome/free-brands-svg-icons',
+      '@fortawesome/free-solid-svg-icons',
+    ],
+  },
 })
