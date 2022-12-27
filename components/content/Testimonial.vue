@@ -1,6 +1,6 @@
 <template>
   <section
-    class="overflow-hidden bg-cover"
+    class="overflow-hidden bg-cover md:justify-center md:flex"
     style="
       background-image: url('https://www.air360.io/wp-content/uploads/2022/08/testimonials-bg-1.svg');
     "
@@ -17,14 +17,16 @@
 
         <div class="lg:ml-10">
           <blockquote class="">
-            <div class="text-2xl font-medium leading-9 text-gray-600">
+            <div
+              class="text-2xl font-medium leading-9 text-gray-600 md:text-[27px]"
+            >
               <p>
                 “With Air360 we can get more people involved in<br />
                 making data-driven decisions on a global scale.”
               </p>
             </div>
             <footer class="mt-8">
-              <div class="flex">
+              <div class="flex md:justify-center lg:justify-start">
                 <div class="flex-shrink-0 lg:hidden">
                   <img
                     class="h-12 w-12 rounded-full"
