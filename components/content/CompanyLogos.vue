@@ -4,11 +4,7 @@
       <h2
         class="mb-10 text-gray-600 lg:mb-16 text-2xl font-base tracking-tight leading-tight text-center dark:text-white md:text-3xl"
       >
-        Best loved eCommerce brands choose<span
-          class="bg-gradient-to-r from-[#6278DF] to-blue-[#3DDC97] bg-clip-text text-transparent"
-        >
-          Air360</span
-        >
+        <ContentSlot :use="$slots.title" />
       </h2>
       <div
         class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6 dark:text-gray-400"
