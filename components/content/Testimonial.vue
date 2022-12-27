@@ -21,8 +21,7 @@
               class="text-2xl font-medium leading-9 text-gray-600 md:text-[27px]"
             >
               <p>
-                “With Air360 we can get more people involved in<br />
-                making data-driven decisions on a global scale.”
+                <ContentSlot :use="$slots.title" />
               </p>
             </div>
             <footer class="mt-8">

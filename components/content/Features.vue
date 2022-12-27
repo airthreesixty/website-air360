@@ -1,16 +1,16 @@
 <template>
   <section class="bg-gray-50 dark:bg-gray-900">
     <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-      <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-16">
+      <!-- <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-16">
         <h2
           class="mb-4 text-2xl tracking-tight font-bold text-gray-900 md:text-[27px] md:mb-6 dark:text-white"
         >
           Three facts that help your conversion increase
         </h2>
-        <!-- <p class="font-light text-gray-500 dark:text-gray-400 sm:text-xl">
+        <p class="font-light text-gray-500 dark:text-gray-400 sm:text-xl">
           Some Texts
-        </p> -->
-      </div>
+        </p>
+      </div> -->
       <div
         class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 xl:gap-8 md:space-y-0"
       >
