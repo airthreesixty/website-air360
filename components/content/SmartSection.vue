@@ -1,17 +1,17 @@
 <template>
   <section class="bg-white dark:bg-gray-900">
     <div class="flex flex-col max-w-screen-xl px-4 py-8 mx-auto md:flex-row">
-      <div id="accordion-open" data-accordion="open" class="flex-1">
+      <div id="accordion-collapse" data-accordion="collapse" class="flex-1">
         <h2 class="text-pink-500 text-3xl font-extrabold pb-3">
           <ContentSlot :use="$slots.smart" />
         </h2>
-        <h2 id="accordion-open-heading-1">
+        <h2 id="accordion-collapse-heading-1">
           <button
             type="button"
             class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
-            data-accordion-target="#accordion-open-body-1"
+            data-accordion-target="#accordion-collapse-body-1"
             aria-expanded="false"
-            aria-controls="accordion-open-body-1"
+            aria-controls="accordion-collapse-body-1"
           >
             <span class="flex items-center"
               ><svg
@@ -44,9 +44,9 @@
           </button>
         </h2>
         <div
-          id="accordion-open-body-1"
+          id="accordion-collapse-body-1"
           class="hidden"
-          aria-labelledby="accordion-open-heading-1"
+          aria-labelledby="accordion-collapse-heading-1"
         >
           <div
             class="p-5 text-gray-500 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900"
@@ -59,13 +59,13 @@
             </p>
           </div>
         </div>
-        <h2 id="accordion-open-heading-2">
+        <h2 id="accordion-collapse-heading-2">
           <button
             type="button"
             class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
-            data-accordion-target="#accordion-open-body-2"
+            data-accordion-target="#accordion-collapse-body-2"
             aria-expanded="false"
-            aria-controls="accordion-open-body-2"
+            aria-controls="accordion-collapse-body-2"
           >
             <span class="flex items-center"
               ><svg
@@ -98,9 +98,9 @@
           </button>
         </h2>
         <div
-          id="accordion-open-body-2"
+          id="accordion-collapse-body-2"
           class="hidden"
-          aria-labelledby="accordion-open-heading-2"
+          aria-labelledby="accordion-collapse-heading-2"
         >
           <div
             class="p-5 text-gray-500 font-light border border-b-0 border-gray-200 dark:border-gray-700"
@@ -114,13 +114,13 @@
           </div>
         </div>
 
-        <h2 id="accordion-open-heading-3">
+        <h2 id="accordion-collapse-heading-3">
           <button
             type="button"
             class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
-            data-accordion-target="#accordion-open-body-3"
+            data-accordion-target="#accordion-collapse-body-3"
             aria-expanded="false"
-            aria-controls="accordion-open-body-3"
+            aria-controls="accordion-collapse-body-3"
           >
             <span class="flex items-center"
               ><svg
@@ -153,9 +153,9 @@
           </button>
         </h2>
         <div
-          id="accordion-open-body-3"
+          id="accordion-collapse-body-3"
           class="hidden"
-          aria-labelledby="accordion-open-heading-3"
+          aria-labelledby="accordion-collapse-heading-3"
         >
           <div
             class="p-5 text-gray-500 font-light border border-b-0 border-gray-200 dark:border-gray-700"
@@ -169,13 +169,13 @@
           </div>
         </div>
 
-        <h2 id="accordion-open-heading-4">
+        <h2 id="accordion-collapse-heading-4">
           <button
             type="button"
             class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
-            data-accordion-target="#accordion-open-body-4"
+            data-accordion-target="#accordion-collapse-body-4"
             aria-expanded="false"
-            aria-controls="accordion-open-body-4"
+            aria-controls="accordion-collapse-body-4"
           >
             <span class="flex items-center"
               ><svg
@@ -208,9 +208,9 @@
           </button>
         </h2>
         <div
-          id="accordion-open-body-4"
+          id="accordion-collapse-body-4"
           class="hidden"
-          aria-labelledby="accordion-open-heading-4"
+          aria-labelledby="accordion-collapse-heading-4"
         >
           <div
             class="p-5 text-gray-500 font-light border border-b-0 border-gray-200 dark:border-gray-700"
@@ -223,13 +223,13 @@
             </p>
           </div>
         </div>
-        <h2 id="accordion-open-heading-5">
+        <h2 id="accordion-collapse-heading-5">
           <button
             type="button"
             class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
-            data-accordion-target="#accordion-open-body-5"
+            data-accordion-target="#accordion-collapse-body-5"
             aria-expanded="false"
-            aria-controls="accordion-open-body-5"
+            aria-controls="accordion-collapse-body-5"
           >
             <span class="flex items-center"
               ><svg
@@ -262,9 +262,9 @@
           </button>
         </h2>
         <div
-          id="accordion-open-body-5"
+          id="accordion-collapse-body-5"
           class="hidden"
-          aria-labelledby="accordion-open-heading-5"
+          aria-labelledby="accordion-collapse-heading-5"
         >
           <div
             class="p-5 text-gray-500 font-light border border-b-0 border-gray-200 dark:border-gray-700"
@@ -277,13 +277,13 @@
             </p>
           </div>
         </div>
-        <h2 id="accordion-open-heading-6">
+        <h2 id="accordion-collapse-heading-6">
           <button
             type="button"
             class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
-            data-accordion-target="#accordion-open-body-6"
+            data-accordion-target="#accordion-collapse-body-6"
             aria-expanded="false"
-            aria-controls="accordion-open-body-6"
+            aria-controls="accordion-collapse-body-6"
           >
             <span class="flex items-center"
               ><svg
@@ -316,9 +316,9 @@
           </button>
         </h2>
         <div
-          id="accordion-open-body-6"
+          id="accordion-collapse-body-6"
           class="hidden"
-          aria-labelledby="accordion-open-heading-6"
+          aria-labelledby="accordion-collapse-heading-6"
         >
           <div
             class="p-5 text-gray-500 font-light border border-t-0 border-gray-200 dark:border-gray-700"
@@ -333,7 +333,9 @@
         </div>
       </div>
 
-      <div class="hidden lg:mt-0 lg:col-span-5 xl:col-span-4 lg:flex flex-1">
+      <div
+        class="hidden h-full lg:mt-0 lg:col-span-5 xl:col-span-4 lg:flex flex-1"
+      >
         <img
           src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mobile-app.svg"
           alt="phone illustration"

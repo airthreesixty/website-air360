@@ -1,17 +1,17 @@
 <template>
   <section class="bg-white dark:bg-gray-900">
     <div class="flex flex-col max-w-screen-xl px-4 py-8 mx-auto md:flex-row">
-      <div id="accordion-open" data-accordion="open" class="flex-1">
+      <div id="accordion-collapse" data-accordion="collapse" class="flex-1">
         <h2 class="text-blue-500 text-3xl font-extrabold pb-3">
           <ContentSlot :use="$slots.connected" />
         </h2>
-        <h2 id="accordion-open-heading-12">
+        <h2 id="accordion-collapse-heading-12">
           <button
             type="button"
             class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
-            data-accordion-target="#accordion-open-body-12"
+            data-accordion-target="#accordion-collapse-body-12"
             aria-expanded="false"
-            aria-controls="accordion-open-body-12"
+            aria-controls="accordion-collapse-body-12"
           >
             <span class="flex items-center"
               ><svg
@@ -44,16 +44,16 @@
           </button>
         </h2>
         <div
-          id="accordion-open-body-12"
+          id="accordion-collapse-body-12"
           class="hidden"
-          aria-labelledby="accordion-open-heading-12"
+          aria-labelledby="accordion-collapse-heading-12"
         >
           <div
             class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900"
           >
             <p class="mb-2 text-gray-500 dark:text-gray-400">
-              Flowbite is an open-source library of interactive components built
-              on top of Tailwind CSS including buttons, dropdowns, modals,
+              Flowbite is an collapse-source library of interactive components
+              built on top of Tailwind CSS including buttons, dropdowns, modals,
               navbars, and more.
             </p>
             <p class="text-gray-500 dark:text-gray-400">
@@ -68,13 +68,13 @@
             </p>
           </div>
         </div>
-        <h2 id="accordion-open-heading-13">
+        <h2 id="accordion-collapse-heading-13">
           <button
             type="button"
             class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
-            data-accordion-target="#accordion-open-body-13"
+            data-accordion-target="#accordion-collapse-body-13"
             aria-expanded="false"
-            aria-controls="accordion-open-body-13"
+            aria-controls="accordion-collapse-body-13"
           >
             <span class="flex items-center"
               ><svg
@@ -107,9 +107,9 @@
           </button>
         </h2>
         <div
-          id="accordion-open-body-13"
+          id="accordion-collapse-body-13"
           class="hidden"
-          aria-labelledby="accordion-open-heading-13"
+          aria-labelledby="accordion-collapse-heading-13"
         >
           <div
             class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700"
@@ -132,13 +132,13 @@
           </div>
         </div>
 
-        <h2 id="accordion-open-heading-14">
+        <h2 id="accordion-collapse-heading-14">
           <button
             type="button"
             class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
-            data-accordion-target="#accordion-open-body-14"
+            data-accordion-target="#accordion-collapse-body-14"
             aria-expanded="false"
-            aria-controls="accordion-open-body-14"
+            aria-controls="accordion-collapse-body-14"
           >
             <span class="flex items-center"
               ><svg
@@ -171,9 +171,9 @@
           </button>
         </h2>
         <div
-          id="accordion-open-body-14"
+          id="accordion-collapse-body-14"
           class="hidden"
-          aria-labelledby="accordion-open-heading-14"
+          aria-labelledby="accordion-collapse-heading-14"
         >
           <div
             class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700"
@@ -196,13 +196,13 @@
           </div>
         </div>
 
-        <h2 id="accordion-open-heading-15">
+        <h2 id="accordion-collapse-heading-15">
           <button
             type="button"
             class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
-            data-accordion-target="#accordion-open-body-15"
+            data-accordion-target="#accordion-collapse-body-15"
             aria-expanded="false"
-            aria-controls="accordion-open-body-15"
+            aria-controls="accordion-collapse-body-15"
           >
             <span class="flex items-center"
               ><svg
@@ -235,19 +235,19 @@
           </button>
         </h2>
         <div
-          id="accordion-open-body-15"
+          id="accordion-collapse-body-15"
           class="hidden"
-          aria-labelledby="accordion-open-heading-15"
+          aria-labelledby="accordion-collapse-heading-15"
         >
           <div
             class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700"
           >
             <p class="mb-2 text-gray-500 dark:text-gray-400">
               The main difference is that the core components from Flowbite are
-              open source under the MIT license, whereas Tailwind UI is a paid
-              product. Another difference is that Flowbite relies on smaller and
-              standalone components, whereas Tailwind UI offers sections of
-              pages.
+              collapse source under the MIT license, whereas Tailwind UI is a
+              paid product. Another difference is that Flowbite relies on
+              smaller and standalone components, whereas Tailwind UI offers
+              sections of pages.
             </p>
             <p class="mb-2 text-gray-500 dark:text-gray-400">
               However, we actually recommend using both Flowbite, Flowbite Pro,
@@ -278,7 +278,9 @@
         </div>
       </div>
 
-      <div class="hidden lg:mt-0 lg:col-span-5 xl:col-span-4 lg:flex flex-1">
+      <div
+        class="hidden h-full lg:mt-0 lg:col-span-5 xl:col-span-4 lg:flex flex-1"
+      >
         <img
           src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mobile-app.svg"
           alt="phone illustration"
