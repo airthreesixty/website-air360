@@ -1,5 +1,8 @@
 <template>
-  <section class="bg-white dark:bg-gray-900" id="connected-section">
+  <section
+    class="bg-white block pt-[70px] mt-[-70px] dark:bg-gray-900"
+    id="connected-section"
+  >
     <div class="flex flex-col max-w-screen-xl px-4 py-10 mx-auto md:flex-row">
       <div id="accordion-collapse" data-accordion="collapse" class="flex-1">
         <h2 class="text-blue-500 text-3xl font-extrabold pb-3">
