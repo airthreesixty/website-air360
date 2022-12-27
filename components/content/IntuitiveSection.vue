@@ -13,7 +13,7 @@
         <h2 id="accordion-collapse-heading-7">
           <button
             type="button"
-            class="flex items-center justify-between w-full p-5 font-medium text-left text-white focus:text-white dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
+            class="flex items-center justify-between w-full p-5 font-medium text-left text-white focus:text-white focus:bg-transparent dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
             data-accordion-target="#accordion-collapse-body-7"
             aria-expanded="false"
             aria-controls="accordion-collapse-body-7"
@@ -67,7 +67,7 @@
         <h2 id="accordion-collapse-heading-8">
           <button
             type="button"
-            class="flex items-center justify-between w-full p-5 font-medium text-left text-white focus:text-white dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
+            class="flex items-center justify-between w-full p-5 font-medium text-left text-white focus:text-white focus:bg-transparent dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
             data-accordion-target="#accordion-collapse-body-8"
             aria-expanded="false"
             aria-controls="accordion-collapse-body-8"
@@ -120,7 +120,7 @@
         <h2 id="accordion-collapse-heading-9">
           <button
             type="button"
-            class="flex items-center justify-between w-full p-5 font-medium text-left text-white focus:text-white dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
+            class="flex items-center justify-between w-full p-5 font-medium text-left text-white focus:text-white focus:bg-transparent dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
             data-accordion-target="#accordion-collapse-body-9"
             aria-expanded="false"
             aria-controls="accordion-collapse-body-9"
@@ -173,7 +173,7 @@
         <h2 id="accordion-collapse-heading-10">
           <button
             type="button"
-            class="flex items-center justify-between w-full p-5 font-medium text-left text-white focus:text-white dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
+            class="flex items-center justify-between w-full p-5 font-medium text-left text-white focus:text-white focus:bg-transparent dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
             data-accordion-target="#accordion-collapse-body-10"
             aria-expanded="false"
             aria-controls="accordion-collapse-body-10"
@@ -225,7 +225,7 @@
         <h2 id="accordion-collapse-heading-11">
           <button
             type="button"
-            class="flex items-center justify-between w-full p-5 font-medium text-left text-white focus:text-white dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
+            class="flex items-center justify-between w-full p-5 font-medium text-left text-white focus:text-white focus:bg-transparent dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
             data-accordion-target="#accordion-collapse-body-11"
             aria-expanded="false"
             aria-controls="accordion-collapse-body-11"
