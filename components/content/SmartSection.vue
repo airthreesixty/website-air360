@@ -1,8 +1,5 @@
 <template>
-  <section
-    class="bg-white block pt-[70px] mt-[-70px] dark:bg-gray-900"
-    id="smart-section"
-  >
+  <section class="bg-white scroll-p-8 dark:bg-gray-900" id="smart-section">
     <div class="flex flex-col max-w-screen-xl px-4 py-10 mx-auto md:flex-row">
       <div id="accordion-collapse" data-accordion="collapse" class="flex-1">
         <h2 class="text-pink-500 text-3xl font-extrabold pb-3">
