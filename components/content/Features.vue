@@ -3,7 +3,7 @@
     <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
       <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-16">
         <h2
-          class="mb-4 text-2xl tracking-tight font-bold text-gray-900 dark:text-white"
+          class="mb-4 text-2xl tracking-tight font-bold text-gray-900 md:text-[27px] md:mb-6 dark:text-white"
         >
           Three facts that help your conversion increase
         </h2>

@@ -8,7 +8,7 @@
         <h2 id="accordion-collapse-heading-1">
           <button
             type="button"
-            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
             data-accordion-target="#accordion-collapse-body-1"
             aria-expanded="false"
             aria-controls="accordion-collapse-body-1"
@@ -49,7 +49,7 @@
           aria-labelledby="accordion-collapse-heading-1"
         >
           <div
-            class="p-5 text-gray-500 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900"
+            class="p-5 text-gray-500 font-light dark:border-gray-700 dark:bg-gray-900"
           >
             <p class="mb-2 text-gray-500 dark:text-gray-400">
               <ContentSlot :use="$slots.description1" />
@@ -62,7 +62,7 @@
         <h2 id="accordion-collapse-heading-2">
           <button
             type="button"
-            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
             data-accordion-target="#accordion-collapse-body-2"
             aria-expanded="false"
             aria-controls="accordion-collapse-body-2"
@@ -102,9 +102,7 @@
           class="hidden"
           aria-labelledby="accordion-collapse-heading-2"
         >
-          <div
-            class="p-5 text-gray-500 font-light border border-b-0 border-gray-200 dark:border-gray-700"
-          >
+          <div class="p-5 text-gray-500 font-light dark:border-gray-700">
             <p class="mb-2 text-gray-500 dark:text-gray-400">
               <ContentSlot :use="$slots.description2" />
             </p>
@@ -117,7 +115,7 @@
         <h2 id="accordion-collapse-heading-3">
           <button
             type="button"
-            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
             data-accordion-target="#accordion-collapse-body-3"
             aria-expanded="false"
             aria-controls="accordion-collapse-body-3"
@@ -157,9 +155,7 @@
           class="hidden"
           aria-labelledby="accordion-collapse-heading-3"
         >
-          <div
-            class="p-5 text-gray-500 font-light border border-b-0 border-gray-200 dark:border-gray-700"
-          >
+          <div class="p-5 text-gray-500 font-light dark:border-gray-700">
             <p class="mb-2 text-gray-500 dark:text-gray-400">
               <ContentSlot :use="$slots.description3" />
             </p>
@@ -172,7 +168,7 @@
         <h2 id="accordion-collapse-heading-4">
           <button
             type="button"
-            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
             data-accordion-target="#accordion-collapse-body-4"
             aria-expanded="false"
             aria-controls="accordion-collapse-body-4"
@@ -212,9 +208,7 @@
           class="hidden"
           aria-labelledby="accordion-collapse-heading-4"
         >
-          <div
-            class="p-5 text-gray-500 font-light border border-b-0 border-gray-200 dark:border-gray-700"
-          >
+          <div class="p-5 text-gray-500 font-light dark:border-gray-700">
             <p class="mb-2 text-gray-500 dark:text-gray-400">
               <ContentSlot :use="$slots.description4" />
             </p>
@@ -226,7 +220,7 @@
         <h2 id="accordion-collapse-heading-5">
           <button
             type="button"
-            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
             data-accordion-target="#accordion-collapse-body-5"
             aria-expanded="false"
             aria-controls="accordion-collapse-body-5"
@@ -266,9 +260,7 @@
           class="hidden"
           aria-labelledby="accordion-collapse-heading-5"
         >
-          <div
-            class="p-5 text-gray-500 font-light border border-b-0 border-gray-200 dark:border-gray-700"
-          >
+          <div class="p-5 text-gray-500 font-light dark:border-gray-700">
             <p class="mb-2 text-gray-500 dark:text-gray-400">
               <ContentSlot :use="$slots.description5" />
             </p>
@@ -280,7 +272,7 @@
         <h2 id="accordion-collapse-heading-6">
           <button
             type="button"
-            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
             data-accordion-target="#accordion-collapse-body-6"
             aria-expanded="false"
             aria-controls="accordion-collapse-body-6"
@@ -320,9 +312,7 @@
           class="hidden"
           aria-labelledby="accordion-collapse-heading-6"
         >
-          <div
-            class="p-5 text-gray-500 font-light border border-t-0 border-gray-200 dark:border-gray-700"
-          >
+          <div class="p-5 text-gray-500 font-light dark:border-gray-700">
             <p class="mb-2 text-gray-500 dark:text-gray-400">
               <ContentSlot :use="$slots.description6" />
             </p>
@@ -336,11 +326,7 @@
       <div
         class="hidden h-full lg:mt-0 lg:col-span-5 xl:col-span-4 lg:flex flex-1"
       >
-        <img
-          src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mobile-app.svg"
-          alt="phone illustration"
-          loading="lazy"
-        />
+        <img src="/smart.png" alt="phone illustration" loading="lazy" />
       </div>
     </div>
   </section>
