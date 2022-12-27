@@ -1,6 +1,6 @@
 <template>
   <section class="bg-white dark:bg-gray-900">
-    <div class="flex flex-col max-w-screen-xl px-4 py-8 mx-auto md:flex-row">
+    <div class="flex flex-col max-w-screen-xl px-4 py-10 mx-auto md:flex-row">
       <div id="accordion-collapse" data-accordion="collapse" class="flex-1">
         <h2 class="text-blue-500 text-3xl font-extrabold pb-3">
           <ContentSlot :use="$slots.connected" />
@@ -281,11 +281,7 @@
       <div
         class="hidden h-full lg:mt-0 lg:col-span-5 xl:col-span-4 lg:flex flex-1"
       >
-        <img
-          src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mobile-app.svg"
-          alt="phone illustration"
-          loading="lazy"
-        />
+        <img src="/connected.png" alt="phone illustration" loading="lazy" />
       </div>
     </div>
   </section>

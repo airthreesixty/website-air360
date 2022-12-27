@@ -1,12 +1,10 @@
 <template>
   <section class="bg-[#6677D8] dark:bg-gray-900">
-    <div class="flex flex-col max-w-screen-xl px-4 py-8 mx-auto md:flex-row">
-      <div class="hidden lg:mt-0 lg:col-span-5 xl:col-span-4 lg:flex flex-1">
-        <img
-          src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mobile-app.svg"
-          alt="phone illustration"
-          loading="lazy"
-        />
+    <div class="flex flex-col max-w-screen-xl px-4 py-10 mx-auto md:flex-row">
+      <div
+        class="hidden h-full lg:mt-0 lg:col-span-5 xl:col-span-4 lg:flex flex-1"
+      >
+        <img src="/intuitive.png" alt="phone illustration" loading="lazy" />
       </div>
       <div id="accordion-collapse" data-accordion="collapse" class="flex-1">
         <h2 class="text-white text-3xl font-extrabold pb-3">
@@ -15,7 +13,7 @@
         <h2 id="accordion-collapse-heading-7">
           <button
             type="button"
-            class="flex items-center justify-between w-full p-5 font-medium text-left text-white border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+            class="flex items-center justify-between w-full p-5 font-medium text-left text-white focus:text-white dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
             data-accordion-target="#accordion-collapse-body-7"
             aria-expanded="false"
             aria-controls="accordion-collapse-body-7"
@@ -56,7 +54,7 @@
           aria-labelledby="accordion-collapse-heading-7"
         >
           <div
-            class="p-5 text-white font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900"
+            class="p-5 text-white font-light dark:border-gray-700 dark:bg-gray-900"
           >
             <p class="mb-2 text-white dark:text-gray-400">
               <ContentSlot :use="$slots.description1" />

@@ -1,6 +1,6 @@
 <template>
   <section class="bg-white dark:bg-gray-900">
-    <div class="flex flex-col max-w-screen-xl px-4 py-8 mx-auto md:flex-row">
+    <div class="flex flex-col max-w-screen-xl px-4 py-10 mx-auto md:flex-row">
       <div id="accordion-collapse" data-accordion="collapse" class="flex-1">
         <h2 class="text-pink-500 text-3xl font-extrabold pb-3">
           <ContentSlot :use="$slots.smart" />
@@ -49,7 +49,7 @@
           aria-labelledby="accordion-collapse-heading-1"
         >
           <div
-            class="p-5 text-gray-500 font-light dark:border-gray-700 dark:bg-gray-900"
+            class="px-5 pb-2 text-gray-500 font-light dark:border-gray-700 dark:bg-gray-900"
           >
             <p class="mb-2 text-gray-500 dark:text-gray-400">
               <ContentSlot :use="$slots.description1" />
@@ -102,7 +102,7 @@
           class="hidden"
           aria-labelledby="accordion-collapse-heading-2"
         >
-          <div class="p-5 text-gray-500 font-light dark:border-gray-700">
+          <div class="px-5 pb-2 text-gray-500 font-light dark:border-gray-700">
             <p class="mb-2 text-gray-500 dark:text-gray-400">
               <ContentSlot :use="$slots.description2" />
             </p>
@@ -155,7 +155,7 @@
           class="hidden"
           aria-labelledby="accordion-collapse-heading-3"
         >
-          <div class="p-5 text-gray-500 font-light dark:border-gray-700">
+          <div class="px-5 pb-2 text-gray-500 font-light dark:border-gray-700">
             <p class="mb-2 text-gray-500 dark:text-gray-400">
               <ContentSlot :use="$slots.description3" />
             </p>
@@ -208,7 +208,7 @@
           class="hidden"
           aria-labelledby="accordion-collapse-heading-4"
         >
-          <div class="p-5 text-gray-500 font-light dark:border-gray-700">
+          <div class="px-5 pb-2 text-gray-500 font-light dark:border-gray-700">
             <p class="mb-2 text-gray-500 dark:text-gray-400">
               <ContentSlot :use="$slots.description4" />
             </p>
@@ -260,7 +260,7 @@
           class="hidden"
           aria-labelledby="accordion-collapse-heading-5"
         >
-          <div class="p-5 text-gray-500 font-light dark:border-gray-700">
+          <div class="px-5 pb-2 text-gray-500 font-light dark:border-gray-700">
             <p class="mb-2 text-gray-500 dark:text-gray-400">
               <ContentSlot :use="$slots.description5" />
             </p>
@@ -312,7 +312,7 @@
           class="hidden"
           aria-labelledby="accordion-collapse-heading-6"
         >
-          <div class="p-5 text-gray-500 font-light dark:border-gray-700">
+          <div class="px-5 pb-2 text-gray-500 font-light dark:border-gray-700">
             <p class="mb-2 text-gray-500 dark:text-gray-400">
               <ContentSlot :use="$slots.description6" />
             </p>
