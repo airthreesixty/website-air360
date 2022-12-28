@@ -5,7 +5,7 @@
         <h2 class="text-[#0E6DFD] text-3xl font-extrabold pb-3">
           <ContentSlot :use="$slots.connected" />
         </h2>
-        <SingleAccordion :num="15" :iconNum="1" iconColor="#0E6DFD">
+        <SingleAccordion :num="12" :iconNum="1" iconColor="#0E6DFD">
           <template #title>
             <ContentSlot :use="$slots.title1" />
           </template>
