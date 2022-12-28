@@ -1,11 +1,11 @@
 <template>
-  <h2 id="accordion-collapse-heading-1">
+  <h2 :id="`accordion-collapse-heading-${props.num}`">
     <button
       type="button"
       class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 focus:bg-transparent dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
-      data-accordion-target="#accordion-collapse-body-1"
+      :data-accordion-target="`#accordion-collapse-body-${props.num}`"
       aria-expanded="false"
-      aria-controls="accordion-collapse-body-1"
+      :aria-controls="`accordion-collapse-body-${props.num}`"
     >
       <span class="flex items-center">
         <fa-icon
@@ -29,9 +29,9 @@
     </button>
   </h2>
   <div
-    id="accordion-collapse-body-1"
+    :id="`accordion-collapse-body-${props.num}`"
     class="hidden"
-    aria-labelledby="accordion-collapse-heading-1"
+    :aria-labelledby="`accordion-collapse-heading-${props.num}`"
   >
     <div
       class="px-5 pb-2 text-gray-500 font-light dark:border-gray-700 dark:bg-gray-900"
