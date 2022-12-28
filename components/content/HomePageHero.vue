@@ -25,7 +25,7 @@
         </h2>
 
         <p
-          class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-base lg:text-xl dark:text-gray-400"
+          class="max-w-2xl mb-1 font-light text-gray-500 lg:mb-8 md:text-base lg:text-xl dark:text-gray-400"
         >
           <ContentSlot :use="$slots.description" />
         </p>
@@ -33,7 +33,12 @@
           <button
             class="text-white bg-[#056AFE] border-2 border-white text-base font-bold w-full mt-5 block inline-block transition ease-in-out duration-300 hover:bg-transparent hover:border-[#056AFE] hover:box-border hover:border-2 hover:text-[#056AFE] font-medium rounded-lg text-sm px-6 py-3 mr-2 mb-2 md:w-1/2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
           >
-            <ContentSlot :use="$slots.button1" />
+            デモをリクエスト
+          </button>
+          <button
+            class="text-[#056AFE] bg-white border-2 border-[#056AFE] text-base font-bold w-full mt-2 block inline-block transition ease-in-out duration-300 hover:bg-[#056AFE] hover:border-[#056AFE] hover:box-border hover:border-2 hover:text-white font-medium rounded-lg text-sm px-6 py-3 mr-2 mb-2 md:w-1/2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+          >
+          <ContentSlot :use="$slots.button1" />
           </button>
         </div>
       </div>

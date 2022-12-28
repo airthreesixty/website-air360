@@ -1,6 +1,6 @@
 <template>
 <section class="bg-gray-50 dark:bg-gray-900">
-  <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+  <div class="pb-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
     <img src="/contribution.jpg" alt="">
       <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-16">
           <h2 class="mb-4 text-xl tracking-tight font-bold text-gray-900 dark:text-white">Air360なら○○でCVRの上昇に貢献します</h2>

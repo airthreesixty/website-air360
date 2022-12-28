@@ -4,9 +4,9 @@
       <div>
         <img src="/depressedMan.jpg" alt="">
         <p class="mt-2 text-xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          訪問者のたった２％しか購入に進まないのはご存知でしたか？
+          訪問者のたった２％しか購入に進まないことはご存知でしたか？
         </p>
-        <p class="mx-auto mt-5 max-w-prose text-base text-gray-500">折角あなたの手のかけたショップにお客様が訪れても、その殆どが購入せず立ち去ってしまいます。つまり多くの収益機会を損失しているわけです。</p>
+        <p class="mx-auto mt-5 max-w-prose text-base text-gray-500">折角あなたの手のかけたショップにお客様が訪れても、その殆どが購入せず立ち去ってしまいます。つまり多くの収益機会を逃しているわけです。</p>
       </div>
     </div>
   </div>
