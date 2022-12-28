@@ -2,7 +2,7 @@
   <section class="bg-white scroll-p-8 dark:bg-gray-900" id="smart-section">
     <div class="flex flex-col max-w-screen-xl px-4 py-10 mx-auto md:flex-row">
       <div id="accordion-collapse" data-accordion="collapse" class="flex-1">
-        <h2 class="text-pink-500 text-3xl font-extrabold pb-3">
+        <h2 class="text-[#e74b91] text-3xl font-extrabold pb-3">
           <ContentSlot :use="$slots.smart" />
         </h2>
         <SingleAccordion :num="1" :iconNum="1" iconColor="#e74b91">
