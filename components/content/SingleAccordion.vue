@@ -2,7 +2,7 @@
   <h2 :id="`accordion-collapse-heading-${props.num}`">
     <button
       type="button"
-      class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 focus:bg-transparent dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
+      :class="`flex items-center justify-between w-full p-5 font-medium text-left text-[${textColor}] focus:bg-transparent dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800`"
       :data-accordion-target="`#accordion-collapse-body-${props.num}`"
       aria-expanded="false"
       :aria-controls="`accordion-collapse-body-${props.num}`"
@@ -34,9 +34,9 @@
     :aria-labelledby="`accordion-collapse-heading-${props.num}`"
   >
     <div
-      class="px-5 pb-2 text-gray-500 font-light dark:border-gray-700 dark:bg-gray-900"
+      :class="`px-5 pb-2 text-[${textColor}] font-light dark:border-gray-700 dark:bg-gray-900`"
     >
-      <p class="mb-2 text-gray-500 dark:text-gray-400">
+      <p :class="`mb-2 text-[${textColor}] dark:text-gray-400`">
         <slot name="description1"></slot>
       </p>
       <p class="text-gray-500 dark:text-gray-400">
@@ -59,6 +59,10 @@ const props = defineProps({
   iconColor: {
     type: String,
     default: 'black',
+  },
+  textColor: {
+    type: String,
+    default: '#6B7280',
   },
 })
 

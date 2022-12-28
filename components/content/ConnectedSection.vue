@@ -2,10 +2,10 @@
   <section class="bg-white dark:bg-gray-900" id="connected-section">
     <div class="flex flex-col max-w-screen-xl px-4 py-10 mx-auto md:flex-row">
       <div id="accordion-collapse" data-accordion="collapse" class="flex-1">
-        <h2 class="text-blue-500 text-3xl font-extrabold pb-3">
+        <h2 class="text-[#0E6DFD] text-3xl font-extrabold pb-3">
           <ContentSlot :use="$slots.connected" />
         </h2>
-        <SingleAccordion :num="15" :iconNum="1">
+        <SingleAccordion :num="15" :iconNum="1" iconColor="#0E6DFD">
           <template #title>
             <ContentSlot :use="$slots.title1" />
           </template>
@@ -16,7 +16,7 @@
             <ContentSlot :use="$slots.description1_2" />
           </template>
         </SingleAccordion>
-        <SingleAccordion :num="13" :iconNum="2">
+        <SingleAccordion :num="13" :iconNum="2" iconColor="#0E6DFD">
           <template #title>
             <ContentSlot :use="$slots.title2" />
           </template>
@@ -28,7 +28,7 @@
           </template>
         </SingleAccordion>
 
-        <SingleAccordion :num="14" :iconNum="3">
+        <SingleAccordion :num="14" :iconNum="3" iconColor="#0E6DFD">
           <template #title>
             <ContentSlot :use="$slots.title3" />
           </template>
@@ -40,7 +40,7 @@
           </template>
         </SingleAccordion>
 
-        <SingleAccordion :num="15" :iconNum="4">
+        <SingleAccordion :num="15" :iconNum="4" iconColor="#0E6DFD">
           <template #title>
             <ContentSlot :use="$slots.title4" />
           </template>
