@@ -9,7 +9,7 @@
     >
       <span class="flex items-center">
         <fa-icon
-          class="fa-xl text-[#e74b91] w-5 h-5 mr-2 shrink-0"
+          :class="`fa-xl text-[${iconColor}] w-5 h-5 mr-2 shrink-0`"
           :icon="['fas', `${props.iconNum}`]"
         />
         <slot name="title"></slot>
@@ -48,8 +48,18 @@
 
 <script setup>
 const props = defineProps({
-  num: Number,
-  iconNum: Number,
+  num: {
+    type: Number,
+    required: true,
+  },
+  iconNum: {
+    type: Number,
+    default: 1,
+  },
+  iconColor: {
+    type: String,
+    default: 'black',
+  },
 })
 
 </script>
