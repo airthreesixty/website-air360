@@ -10,7 +10,7 @@
       <span class="flex items-center">
         <fa-icon
           class="fa-xl text-[#e74b91] w-5 h-5 mr-2 shrink-0"
-          :icon="['fas', `${props.num}`]"
+          :icon="['fas', `${props.iconNum}`]"
         />
         <slot name="title"></slot>
       </span>
@@ -49,6 +49,7 @@
 <script setup>
 const props = defineProps({
   num: Number,
+  iconNum: Number,
 })
 
 </script>
