@@ -18,7 +18,7 @@
             aria-expanded="false"
             aria-controls="accordion-collapse-body-7"
           >
-            <span class="flex items-center"
+            <span class="flex items-center text-white"
               ><svg
                 class="w-5 h-5 mr-2 shrink-0"
                 fill="currentColor"
@@ -72,7 +72,7 @@
             aria-expanded="false"
             aria-controls="accordion-collapse-body-8"
           >
-            <span class="flex items-center"
+            <span class="flex items-center text-white"
               ><svg
                 class="w-5 h-5 mr-2 shrink-0"
                 fill="currentColor"
@@ -108,7 +108,7 @@
           aria-labelledby="accordion-collapse-heading-8"
         >
           <div class="px-5 pb-2 font-light dark:border-gray-700">
-            <p class="mb-2 text-gray-500 dark:text-gray-400">
+            <p class="mb-2 text-gray-500 text-white dark:text-gray-400">
               <ContentSlot :use="$slots.description2" />
             </p>
             <p class="text-gray-500 dark:text-gray-400">
@@ -125,7 +125,7 @@
             aria-expanded="false"
             aria-controls="accordion-collapse-body-9"
           >
-            <span class="flex items-center"
+            <span class="flex items-center text-white"
               ><svg
                 class="w-5 h-5 mr-2 shrink-0"
                 fill="currentColor"
@@ -161,11 +161,11 @@
           aria-labelledby="accordion-collapse-heading-9"
         >
           <div class="px-5 pb-2 font-light dark:border-gray-700">
-            <p class="mb-2 text-gray-500 dark:text-gray-400">
+            <p class="mb-2 text-white dark:text-gray-400">
               <ContentSlot :use="$slots.description3" />
             </p>
-            <p class="text-gray-500 dark:text-gray-400">
-              <ContentSlot :use="$slots.description3_1" />
+            <p class="text-white dark:text-gray-400">
+              <ContentSlot :use="$slots.description3_2" />
             </p>
           </div>
         </div>
@@ -178,7 +178,7 @@
             aria-expanded="false"
             aria-controls="accordion-collapse-body-10"
           >
-            <span class="flex items-center"
+            <span class="flex items-center text-white"
               ><svg
                 class="w-5 h-5 mr-2 shrink-0"
                 fill="currentColor"
@@ -230,7 +230,7 @@
             aria-expanded="false"
             aria-controls="accordion-collapse-body-11"
           >
-            <span class="flex items-center"
+            <span class="flex items-center text-white"
               ><svg
                 class="w-5 h-5 mr-2 shrink-0"
                 fill="currentColor"
