@@ -5,7 +5,7 @@
         <a href="https://www.air360.io/" class="flex items-center">
           <img
             src="https://www.air360.io/wp-content/uploads/2022/05/air360-logo-bk.svg"
-            class="mr-3 h-8"
+            class="mr-3 h-6 sm:h-7 xl-8"
             alt="Air360 Logo"
           />
         </a>

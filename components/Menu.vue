@@ -6,7 +6,7 @@
       <NuxtLink :to="$localePath('/')">
         <img
           src="https://www.air360.io/wp-content/uploads/2022/05/air360-logo-bk.svg"
-          class="h-6 mr-3 sm:h-9"
+          class="h-6 mr-3 sm:h-7 xl:h-8"
           alt="Air360 Logo"
         />
       </NuxtLink>
