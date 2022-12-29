@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="bg-white border-gray-200 border-b-1 px-2 sticky py-2 top-0 rounded md:py-3 lg:py-0 dark:bg-gray-900"
+    class="bg-white border-gray-200 border-b-1 px-4 sticky py-2 top-0 rounded md:py-3 lg:py-0 dark:bg-gray-900"
   >
     <div class="flex flex-wrap items-center justify-between">
       <NuxtLink :to="$localePath('/')">

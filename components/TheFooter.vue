@@ -1,5 +1,5 @@
 <template>
-  <footer class="p-5 border-gray-200 border-t-1 sm:p-6 dark:bg-gray-900">
+  <footer class="px-4 py-6 border-gray-200 border-t-1 dark:bg-gray-900">
     <div class="md:flex md:justify-between">
       <div class="mb-6 md:mb-0">
         <a href="https://www.air360.io/" class="flex items-center">
@@ -33,7 +33,7 @@
           </a>
         </div>
       </div>
-      <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+      <div class="grid grid-cols-2 gap-x-3 gap-y-6 sm:gap-6 sm:grid-cols-3">
         <div>
           <h2
             class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
