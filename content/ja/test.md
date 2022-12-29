@@ -1,7 +1,7 @@
 <!-- ::slideshow
 :: -->
 
-::home-page-hero2
+::home-page-hero-test
 #subtitle
 スマート、直感的 & 連携性
 
@@ -16,14 +16,14 @@ Air360 はデータアナリストと事業内容を同じミッションに結�
 
 ::
 
-::interest2
+::interest-test
 #title
 訪問者のたった<span class="text-red-500 text-2xl lg:text-3xl">２％</span>しか購入に進まないことはご存知でしたか？
 #description
 折角あなたの手のかけたショップにお客様が訪れても、その殆どが購入せず立ち去ってしまいます。つまり多くの収益機会を逃しているわけです。
 ::
 
-::features3
+::features-test
 #title
 Air360なら豊富な機能であなたのコンバージョン率上昇に貢献します
 #description
