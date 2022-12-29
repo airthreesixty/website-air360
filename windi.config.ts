@@ -17,7 +17,11 @@ export default defineConfig({
     },
     extend: {
       colors: {
-        primary: colors.blue,
+        primary: {
+          100: '#FCE9F2',
+          600: '#e74b91',
+          700: '#ce3077',
+        },
       },
       keyframes: {
         slide1: {
