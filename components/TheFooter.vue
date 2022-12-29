@@ -12,14 +12,14 @@
         <div class="flex my-6 space-x-6 sm:justify-start md:mt-4 lg:mt-6">
           <a
             href="#"
-            class="text-[#0E6DFD] hover:text-[#0C63E4] dark:hover:text-white"
+            class="text-blue-400 hover:text-blue-500 dark:hover:text-white"
           >
             <fa-icon class="fa-xl" :icon="['fab', 'linkedin']" />
             <span class="sr-only">LinkedIn page</span>
           </a>
           <a
             href="#"
-            class="text-[#0E6DFD] hover:text-[#0C63E4] dark:hover:text-white"
+            class="text-blue-400 hover:text-blue-500 dark:hover:text-white"
           >
             <fa-icon class="fa-xl" :icon="['fab', 'twitter']" />
             <span class="sr-only">Twitter page</span>
