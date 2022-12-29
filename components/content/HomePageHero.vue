@@ -31,7 +31,7 @@
         </p>
         <div class="md:flex md:items-center">
           <button
-            class="text-white bg-primary-600 text-base font-bold w-full mt-5 block transition ease-in-out duration-300 hover:bg-transparent hover:bg-primary-700 font-medium rounded-lg text-sm px-6 py-3 mr-2 mb-2 md:w-1/2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            class="text-white bg-primary-600 text-base font-bold w-full mt-5 block transition ease-in-out duration-300 hover:bg-primary-700 font-medium rounded-lg text-sm px-6 py-3 mr-2 mb-2 md:w-1/2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
           >
             {{ $t("request-demo") }}
           </button>
