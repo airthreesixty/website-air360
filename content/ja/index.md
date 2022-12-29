@@ -19,8 +19,35 @@ Air360 はデータアナリストと事業内容を同じミッションに結�
 ::interest
 ::
 
-::features2
+::features3
 ::
+
+::features2
+#title1
+スマート
+
+#description1
+視覚的な情報や事前通知を駆使し、あなたの意思決定をアシスタントします。
+
+#title2
+直感的
+
+#description2
+優れた操作性を備え持ち、コードレス&タグレスですぐに分析を始められます。
+
+#title3
+連携性
+
+#description3
+
+豊富な種類の外部ツールとの連携が可能なオープンエコシステムなアプローチを採用しています。
+::
+
+<!-- ::features3
+:: -->
+
+<!-- ::features4
+:: -->
 
 <!-- ::features
 #title1
