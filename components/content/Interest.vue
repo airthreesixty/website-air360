@@ -6,10 +6,10 @@
           <img src="/depressedMan.jpg" alt="" loading="lazy">
         </div>
         <div class="flex-1">
-          <p class="mt-2 text-xl font-bold tracking-tight text-black-600 text-center lg:text-2xl xl:text-3xl">
+          <p class="mt-2 text-xl font-semibold tracking-tight text-black-600 text-center lg:text-2xl">
             <ContentSlot :use="$slots.title" />
           </p>
-          <p class="mx-auto mt-5 max-w-prose text-base text-gray-500 lg:text-lg xl:text-xl"><ContentSlot :use="$slots.description" /></p>
+          <p class="mx-auto mt-5 max-w-prose text-semibold text-gray-500 lg:text-lg xl:text-xl"><ContentSlot :use="$slots.description" /></p>
         </div>
       </div>
     </div>
