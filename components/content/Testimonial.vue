@@ -18,7 +18,7 @@
         <div class="lg:ml-10">
           <blockquote class="">
             <div
-              class="text-2xl font-medium leading-9 text-gray-600 md:text-[27px]"
+              class="text-2xl font-medium leading-9 text-black-600 lg:text-3xl"
             >
               <p>
                 <ContentSlot :use="$slots.title" />
@@ -35,7 +35,7 @@
                   />
                 </div>
                 <div class="ml-4 lg:ml-0">
-                  <div class="text-base font-medium text-gray-900">
+                  <div class="text-base font-medium text-black-600">
                     Nelson Fernandes
                   </div>
                   <div class="text-base font-medium text-indigo-600">

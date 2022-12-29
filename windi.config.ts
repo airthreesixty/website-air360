@@ -36,6 +36,11 @@ export default defineConfig({
           500: '#0D6EFD', // Sea
           600: '#0C63E4', // Ocean
         },
+        black: {
+          100: '#6E84A3',
+          200: '#4B4B4B',
+          600: '#232e4a',
+        },
       },
       keyframes: {
         slide1: {

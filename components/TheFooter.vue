@@ -36,11 +36,11 @@
       <div class="grid grid-cols-2 gap-x-3 gap-y-6 sm:gap-6 sm:grid-cols-3">
         <div>
           <h2
-            class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+            class="mb-6 text-sm font-semibold text-black-600 uppercase dark:text-white"
           >
             {{ $t("company") }}
           </h2>
-          <ul class="text-gray-600 dark:text-gray-400">
+          <ul class="text-gray-700 dark:text-gray-400">
             <li class="mb-4">
               <a href="https://flowbite.com/" class="hover:underline">ESW</a>
             </li>
@@ -58,7 +58,7 @@
         </div>
         <div>
           <h2
-            class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+            class="mb-6 text-sm font-semibold text-black-600 uppercase dark:text-white"
           >
             {{ $t("inspiration") }}
           </h2>
@@ -74,11 +74,11 @@
         </div>
         <div>
           <h2
-            class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+            class="mb-6 text-sm font-semibold text-black-600 uppercase dark:text-white"
           >
             {{ $t("help") }}
           </h2>
-          <ul class="text-gray-600 dark:text-gray-400">
+          <ul class="text-gray-700 dark:text-gray-400">
             <li class="mb-4">
               <a href="#" class="hover:underline">{{ $t("request-demo") }}</a>
             </li>
