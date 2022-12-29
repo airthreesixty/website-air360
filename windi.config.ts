@@ -1,6 +1,6 @@
 import { defineConfig } from 'windicss/helpers'
 import flowbite from 'flowbite-windicss-plugin'
-import colors from 'windicss/colors'
+// import colors from 'windicss/colors'
 
 export default defineConfig({
   darkMode: 'class',
@@ -21,6 +21,20 @@ export default defineConfig({
           100: '#FCE9F2',
           600: '#e74b91',
           700: '#ce3077',
+        },
+        secondary: {
+          100: '#f4f5fa',
+          200: '#dbe1f8',
+          600: '#9a9cbf',
+          700: '#7068bf',
+        },
+        blue: {
+          100: '#F0F6FF', // Fog
+          200: '#B1D1FF', // Sky
+          300: '#6EA8FE', // Lake
+          400: '#3C8BFF', // Water
+          500: '#0D6EFD', // Sea
+          600: '#0C63E4', // Ocean
         },
       },
       keyframes: {
