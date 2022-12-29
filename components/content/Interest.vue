@@ -1,9 +1,9 @@
 <template>
   <div class="bg-white pb-5">
     <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-      <div class="flex flex-row items-center">
+      <div class="md:flex md:flex-row md:items-center">
         <div class="flex-1">
-          <img src="/depressedMan.jpg" alt="">
+          <img src="/depressedMan.jpg" alt="" loading="lazy">
         </div>
         <div class="flex-1">
           <p class="mt-2 text-xl font-bold tracking-tight text-gray-900">

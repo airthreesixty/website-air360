@@ -1,11 +1,18 @@
 <template>
-  <section class="bg-gray-50 dark:bg-gray-900">
-    <div class="pb-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+  <section>
+    <div class="md:flex md:items-center">
+      <div class="md:hidden">
         <img src="/contribution.jpg" alt="">
-        <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-16">
-            <h2 class="mb-4 text-xl tracking-tight font-bold text-gray-900 dark:text-white">Air360なら○○でCVRの上昇に貢献します</h2>
-            <!-- <p class="font-light text-gray-500 dark:text-gray-400 sm:text-xl">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p> -->
-        </div>
+      </div>
+      <div class="mx-auto max-w-screen-md text-center mb-8 mt-4 flex-1 lg:mb-16">
+        <h2 class="mb-4 text-xl tracking-tight font-bold text-gray-900 dark:text-white">Air360なら○○でCVRの上昇に貢献します</h2>
+        <!-- <p class="font-light text-gray-500 dark:text-gray-400 sm:text-xl">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p> -->
+      </div>
+      <div class="flex-1 hidden md:block">
+        <img src="/contribution.jpg" alt="">
+      </div>
+    </div>
+    <div class="pb-8 px-4 mx-auto max-w-screen-xl bg-gray-50 dark:bg-gray-900 sm:py-16 lg:px-6">
         <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-8 xl:gap-8 md:space-y-0">
             <div class="p-6 bg-white rounded shadow dark:bg-gray-800">
                 <div class="flex justify-center items-center mb-4 w-10 h-10 rounded bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
