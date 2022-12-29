@@ -38,7 +38,7 @@
                   <div class="text-base font-medium text-black-600">
                     Nelson Fernandes
                   </div>
-                  <div class="text-base font-medium text-indigo-600">
+                  <div class="text-base font-medium text-blue-600">
                     CEO, Club Med
                   </div>
                 </div>
