@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="bg-white border-gray-200 border-b-1 px-2 sticky top-0 py-2.5 rounded dark:bg-gray-900"
+    class="bg-white border-gray-200 border-b-1 px-2 sticky py-2 top-0 rounded md:py-3 lg:py-0 dark:bg-gray-900"
   >
     <div class="flex flex-wrap items-center justify-between">
       <NuxtLink :to="$localePath('/')">
@@ -76,10 +76,9 @@
             >
           </li>
           <li class="py-2">
-            <a
-              href="#"
-              class="text-white bg-primary-600 transition ease-in-out duration-300 hover:bg-primary-700 focus:ring-4 focus:ring-[#ce3077] font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-              >{{ $t("request-demo") }}</a
+            <button
+              class="text-white bg-primary-600 transition ease-in-out duration-300 hover:bg-primary-700 font-medium rounded-lg text-sm px-5 py-2 mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+              >{{ $t("request-demo") }}</button
             >
           </li>
         </ul>
