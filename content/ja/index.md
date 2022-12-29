@@ -24,6 +24,10 @@ Air360 はデータアナリストと事業内容を同じミッションに結�
 ::
 
 ::features2
+#title
+Air360なら豊富な機能であなたのコンバージョン率上昇に貢献します
+#description
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur sapiente iusto consectetur laudantium accusantium atque dicta esse 
 ::
 
 ::features
