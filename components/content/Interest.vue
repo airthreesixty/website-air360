@@ -6,9 +6,9 @@
           <img src="/depressedMan.jpg" alt="" loading="lazy">
         </div>
         <div class="flex-1">
-          <p class="mb-4 text-xl tracking-tight font-semibold text-black-600 lg:text-2xl dark:text-white">
+          <h2 class="mb-4 text-xl tracking-tight font-semibold text-black-600 lg:text-2xl dark:text-white">
             <ContentSlot :use="$slots.title" />
-          </p>
+          </h2>
           <p class="font-light text-gray-500 text-base text-left lg:text-lg xl:text-xl dark:text-gray-400"><ContentSlot :use="$slots.description" /></p>
         </div>
       </div>
