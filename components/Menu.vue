@@ -88,5 +88,5 @@
 </template>
 
 <script setup lang="ts">
-const { $localePath } = useNuxtApp();
+const { $localePath } = useNuxtApp()
 </script>
