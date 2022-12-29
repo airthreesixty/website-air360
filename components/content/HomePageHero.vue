@@ -1,7 +1,7 @@
 <template>
   <section class="bg-white dark:bg-gray-900">
     <div
-      class="grid max-w-screen-xl px-4 py-8 mx-auto md:gap-8 md:py-16 md:grid-cols-2 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12"
+      class="grid max-w-screen-xl px-4 py-8 mx-auto md:gap-4 md:py-16 md:grid-cols-2 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12"
     >
       <div class="md:hidden lg:mt-0 lg:col-span-5">
         <img
@@ -29,14 +29,14 @@
         >
           <ContentSlot :use="$slots.description" />
         </p>
-        <div class="text-center md:text-left">
+        <div class="md:flex md:items-center">
           <button
             class="text-white bg-[#056AFE] border-2 border-white text-base font-bold w-full mt-5 block inline-block transition ease-in-out duration-300 hover:bg-transparent hover:border-[#056AFE] hover:box-border hover:border-2 hover:text-[#056AFE] font-medium rounded-lg text-sm px-6 py-3 mr-2 mb-2 md:w-1/2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
           >
             デモのリクエスト
           </button>
           <button
-            class="text-[#056AFE] bg-white border-2 border-[#056AFE] text-base font-bold w-full mt-1 block inline-block transition ease-in-out duration-300 hover:bg-[#056AFE] hover:border-[#056AFE] hover:box-border hover:border-2 hover:text-white font-medium rounded-lg text-sm px-6 py-3 mr-2 mb-2 md:w-1/2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            class="text-[#056AFE] bg-white border-2 border-[#056AFE] text-base font-bold w-full mt-1 block inline-block transition ease-in-out duration-300 md:mt-5 hover:bg-[#056AFE] hover:border-[#056AFE] hover:box-border hover:border-2 hover:text-white font-medium rounded-lg text-sm px-6 py-3 mr-2 mb-2 md:w-1/2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
           >
           <ContentSlot :use="$slots.button1" />
           </button>
