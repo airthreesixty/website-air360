@@ -1,5 +1,6 @@
 import { defineConfig } from 'windicss/helpers'
 import flowbite from 'flowbite-windicss-plugin'
+import colors from 'windicss/colors'
 
 export default defineConfig({
   darkMode: 'class',
@@ -15,6 +16,9 @@ export default defineConfig({
       ],
     },
     extend: {
+      colors: {
+        primary: colors.blue,
+      },
       keyframes: {
         slide1: {
           '0%': { transform: 'translateX(100%)' },
