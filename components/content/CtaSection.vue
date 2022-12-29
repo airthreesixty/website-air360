@@ -14,7 +14,7 @@
           <div class="items-center mb-3 space-y-4 sm:flex sm:space-y-0">
             <div class="w-full text-center">
               <button
-                class="text-white bg-[#e74b91] text-base font-bold hover:bg-[#ce3077] focus:ring-4 focus:ring-[#ce3077] font-medium rounded-lg text-sm px-6 py-3 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                class="text-white bg-primary-600 text-base font-bold transition ease-in-out duration-300 hover:bg-primary-700 focus:ring-4 focus:ring-[#ce3077] font-medium rounded-lg text-sm px-6 py-3 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
               >
                 <ContentSlot :use="$slots.action" />
               </button>
