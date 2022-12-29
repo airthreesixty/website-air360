@@ -1,7 +1,7 @@
 <template>
   <section class="bg-white dark:bg-gray-900">
     <div
-      class="grid max-w-screen-xl px-4 py-8 mx-auto md:gap-4 md:py-16 md:grid-cols-2 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12"
+      class="grid max-w-screen-xl px-4 py-8 mx-auto md:gap-4 md:py-12 md:grid-cols-2 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12"
     >
       <div class="md:hidden lg:mt-0 lg:col-span-5">
         <img
@@ -42,7 +42,7 @@
           </button>
         </div>
       </div>
-      <div class="hidden md:block lg:mt-0 lg:col-span-5 lg:flex">
+      <div class="hidden md:block md:flex lg:mt-0 lg:col-span-5">
         <img
           src="https://www.air360.io/wp-content/uploads/2022/08/hero-illustration.webp"
           alt="mockup"
