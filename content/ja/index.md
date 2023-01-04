@@ -73,6 +73,13 @@ Air360 はデスクトップ、モバイル、アプリを問わず、ウェブ�
 ::
 
 ::real-example
+#title
+実績
+#description
+世界 24 か国約 70 ヶ所にリゾートを展開する<span class="font-bold"
+            >Club Med</span
+          >は Air360 導入後、コンバージョン率 +50%、そしてオプションの保存率
++100%と大幅な売り上げ増加に成功しました。
 ::
 
 <!-- ::features
