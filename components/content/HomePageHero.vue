@@ -14,7 +14,7 @@
       </div>
       <div class="mr-auto place-self-center lg:col-span-7 md:flex-1">
         <p
-          class="max-w-2xl my-4 text-gray-500 bg-light-100tracking-tight leading-none md:text-base xl:text-xl dark:text-white"
+          class="max-w-2xl my-4 text-gray-500 bg-light-100tracking-tight leading-none md:text-base lg:text-xl xl:text-xl dark:text-white"
         >
           <ContentSlot :use="$slots.subtitle" />
         </p>
@@ -36,9 +36,9 @@
             {{ $t("request-demo") }}
           </button>
           <button
-            class="text-white bg-blue-400 text-base font-bold w-full mt-1 block transition ease-in-out duration-300 md:mt-5 hover:bg-blue-500  font-medium rounded-lg text-sm px-6 py-3 mb-2 md:w-1/2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            class="text-white bg-blue-400 text-base font-bold w-full mt-1 block transition ease-in-out duration-300 md:mt-5 hover:bg-blue-500 font-medium rounded-lg text-sm px-6 py-3 mb-2 md:w-1/2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
           >
-          <ContentSlot :use="$slots.button1" />
+            <ContentSlot :use="$slots.button1" />
           </button>
         </div>
       </div>

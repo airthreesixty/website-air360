@@ -17,13 +17,12 @@
         <h2
           class="mb-4 text-xl tracking-tight font-semibold text-black-600 text-left md:text-2xl lg:text-3xl dark:text-white"
         >
-          実績
+          <ContentSlot :use="$slots.title" />
         </h2>
-        <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">
-          世界24か国約70ヶ所にリゾートを展開する<span class="font-bold"
-            >Club Med</span
-          >はAir360導入後、コンバージョン率 +50%、そしてオプションの保存率
-          +100%と大幅な売り上げ増加に成功しました。
+        <p
+          class="mb-6 font-light text-gray-500 md:text-base lg:text-xl dark:text-gray-400"
+        >
+          <ContentSlot :use="$slots.description" />
         </p>
         <div
           class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6"
