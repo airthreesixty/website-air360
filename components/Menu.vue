@@ -43,36 +43,45 @@
             <NuxtLink :to="$localePath('/test')">
               <div
                 class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >Test Link</div>
+              >
+                Test Link
+              </div>
             </NuxtLink>
           </li>
           <li class="py-2">
             <NuxtLink :to="$localePath('/why-air360')">
               <div
                 class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >Why Air360</div>
+              >
+                Why Air360
+              </div>
             </NuxtLink>
           </li>
           <li class="py-2">
             <NuxtLink :to="$localePath('/product')">
               <div
                 class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >{{ $t("product") }}</div>
+              >
+                {{ $t("product") }}
+              </div>
             </NuxtLink>
           </li>
           <li class="py-2">
             <NuxtLink :to="$localePath('/inspiration')">
-            <div
-              class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >{{ $t("inspiration") }}</div
-            >
+              <div
+                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              >
+                {{ $t("inspiration") }}
+              </div>
             </NuxtLink>
           </li>
           <li class="py-2">
             <NuxtLink :to="$localePath('/price')">
               <div
-                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                {{ $t("pricing") }}</div>
+                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              >
+                {{ $t("pricing") }}
+              </div>
             </NuxtLink>
           </li>
           <li class="py-2">
@@ -87,8 +96,9 @@
           <li class="py-2">
             <button
               class="text-white bg-primary-600 transition ease-in-out duration-300 hover:bg-primary-700 font-medium rounded-lg text-sm px-5 py-2 mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-              >{{ $t("request-demo") }}</button
             >
+              {{ $t("request-demo") }}
+            </button>
           </li>
         </ul>
       </div>
@@ -97,5 +107,5 @@
 </template>
 
 <script setup lang="ts">
-const { $localePath } = useNuxtApp()
+const { $localePath } = useNuxtApp();
 </script>
