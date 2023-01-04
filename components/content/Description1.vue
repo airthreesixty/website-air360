@@ -16,7 +16,7 @@
         </p>
         <a
           href="#"
-          class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-blue-400 hover:bg-blue-500 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+          class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-blue-400 transition ease-in-out duration-300 hover:bg-blue-500 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
         >
           もっと詳しく
           <svg

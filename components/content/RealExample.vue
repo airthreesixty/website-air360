@@ -45,9 +45,9 @@
           </dl>
         </div>
         <div
-          class="inline-flex items-center text-white bg-blue-400 hover:bg-blue-500 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900"
+          class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-blue-400 transition ease-in-out duration-300 hover:bg-blue-500 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
         >
-          もっと見る
+          もっと詳しく
           <svg
             class="ml-2 -mr-1 w-5 h-5"
             fill="currentColor"
