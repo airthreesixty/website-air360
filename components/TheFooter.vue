@@ -14,21 +14,21 @@
         <div class="flex my-6 space-x-6 sm:justify-start md:mt-4 lg:mt-6">
           <a
             href="#"
-            class="text-blue-400 transition ease-in-out duration-300 hover:text-blue-500 dark:hover:text-white"
+            class="text-gray-700 transition ease-in-out duration-300 hover:text-gray-800 dark:hover:text-white"
           >
             <fa-icon class="fa-xl" :icon="['fab', 'linkedin']" />
             <span class="sr-only">LinkedIn page</span>
           </a>
           <a
             href="#"
-            class="text-blue-400 transition ease-in-out duration-300 hover:text-blue-500 dark:hover:text-white"
+            class="text-gray-700 transition ease-in-out duration-300 hover:text-gray-800 dark:hover:text-white"
           >
             <fa-icon class="fa-xl" :icon="['fab', 'twitter']" />
             <span class="sr-only">Twitter page</span>
           </a>
           <a
             href="#"
-            class="text-blue-400 transition ease-in-out duration-300 hover:text-blue-500 dark:hover:text-white"
+            class="text-gray-700 transition ease-in-out duration-300 hover:text-gray-800 dark:hover:text-white"
           >
             <fa-icon class="fa-xl" :icon="['fab', 'instagram']" />
             <span class="sr-only">Instagram page</span>
@@ -44,17 +44,25 @@
           </h2>
           <ul class="text-gray-700 dark:text-gray-400">
             <li class="mb-4">
-              <a href="https://esw.com/" class="hover:underline" target="_blank" rel="noopener noreferrer">ESW</a>
+              <a
+                href="https://esw.com/"
+                class="hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+                >ESW</a
+              >
             </li>
             <li class="mb-4">
-              <a href="https://careers.scalefast.com/?__hstc=69791311.587dc70d597a89b224440e3269a98128.1671688238492.1672293542187.1672297085320.12&__hssc=69791311.2.1672297085320&__hsfp=1906143005" class="hover:underline" target="_blank" rel="noopener noreferrer">{{
-                $t("careers")
-              }}</a>
+              <a
+                href="https://careers.scalefast.com/?__hstc=69791311.587dc70d597a89b224440e3269a98128.1671688238492.1672293542187.1672297085320.12&__hssc=69791311.2.1672297085320&__hsfp=1906143005"
+                class="hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+                >{{ $t("careers") }}</a
+              >
             </li>
             <li>
-              <a href="#" class="hover:underline">{{
-                $t("privacy-policy")
-              }}</a>
+              <a href="#" class="hover:underline">{{ $t("privacy-policy") }}</a>
             </li>
           </ul>
         </div>
@@ -66,11 +74,7 @@
           </h2>
           <ul class="text-gray-600 dark:text-gray-400">
             <li class="mb-4">
-              <a
-                href="#"
-                class="hover:underline"
-                >{{ $t("blog") }}</a
-              >
+              <a href="#" class="hover:underline">{{ $t("blog") }}</a>
             </li>
           </ul>
         </div>
@@ -98,5 +102,5 @@
 </template>
 
 <script setup lang="ts">
-const { $localePath } = useNuxtApp()
+const { $localePath } = useNuxtApp();
 </script>
