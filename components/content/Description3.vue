@@ -12,8 +12,7 @@
         <p
           class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
         >
-          Air360 collects and analyzes every interaction a visitor has with your
-          websites, whether on desktop, mobile or app.
+          セールスフォースやグーグルタグマネージャーといった豊富な種類の外部ツールと連携することができ、あなたの分析をより深く、そして効率的に行えます。
         </p>
         <a
           href="#"
