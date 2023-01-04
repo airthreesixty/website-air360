@@ -2,7 +2,7 @@
   <section class="bg-gray-50 mt-10 dark:bg-gray-900">
     <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
       <h2
-        class="mb-10 text-black-600 lg:mb-16 text-2xl font-bold tracking-tight leading-tight text-center dark:text-white md:text-2xl"
+        class="mb-10 text-black-600 lg:mb-16 text-xl font-bold tracking-tight leading-tight text-center dark:text-white md:text-2xl"
       >
         <ContentSlot :use="$slots.title" />
       </h2>
