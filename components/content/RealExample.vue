@@ -20,8 +20,9 @@
           実績
         </h2>
         <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">
-          世界24か国約70ヶ所にリゾートを展開するクラブメッドはAir360導入後、コンバージョン率
-          +50%、そしてオプションの保存率
+          世界24か国約70ヶ所にリゾートを展開する<span class="font-bold"
+            >Club Med</span
+          >はAir360導入後、コンバージョン率 +50%、そしてオプションの保存率
           +100%と大幅な売り上げ増加に成功しました。
         </p>
         <div
@@ -44,7 +45,8 @@
             </div>
           </dl>
         </div>
-        <div
+        <a
+          href="#"
           class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-blue-400 transition ease-in-out duration-300 hover:bg-blue-500 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
         >
           もっと詳しく
@@ -60,7 +62,7 @@
               clip-rule="evenodd"
             ></path>
           </svg>
-        </div>
+        </a>
       </div>
     </div>
   </section>
