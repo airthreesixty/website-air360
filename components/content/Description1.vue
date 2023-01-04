@@ -13,18 +13,18 @@
         <h1
           class="mb-4 text-xl tracking-tight font-semibold text-black-600 text-left md:text-2xl lg:text-3xl dark:text-white"
         >
-          スマート
+          <ContentSlot :use="$slots.title" />
         </h1>
         <p
           class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
         >
-          Air360はデスクトップ、モバイル、アプリを問わず、ウェブサイト上のユーザーの動きを自動的に収集し、分析します。更にデータを遡り、ユーザーの離脱タイミングを知り、改善することができます。
+          <ContentSlot :use="$slots.description" />
         </p>
         <a
           href="#"
           class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-blue-400 transition ease-in-out duration-300 hover:bg-blue-500 dark:focus:ring-primary-900"
         >
-          もっと詳しく
+          {{ $t("more") }}
           <svg
             class="w-5 h-5 ml-2 -mr-1"
             fill="currentColor"
