@@ -33,13 +33,13 @@
             <div class="flex flex-col items-center justify-center">
               <dt class="mb-2 text-3xl md:text-4xl font-extrabold">+100%</dt>
               <dd class="font-light text-gray-500 dark:text-gray-400">
-                コンバージョン率
+                <ContentSlot :use="$slots.achievement1" />
               </dd>
             </div>
             <div class="flex flex-col items-center justify-center">
               <dt class="mb-2 text-3xl md:text-4xl font-extrabold">+50%</dt>
               <dd class="font-light text-gray-500 dark:text-gray-400">
-                オプション保存率
+                <ContentSlot :use="$slots.achievement2" />
               </dd>
             </div>
           </dl>
