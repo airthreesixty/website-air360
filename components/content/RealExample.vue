@@ -31,13 +31,13 @@
             class="grid max-w-screen-md gap-8 mx-auto text-gray-900 grid-cols-2 dark:text-white"
           >
             <div class="flex flex-col items-center justify-center">
-              <dt class="mb-2 text-3xl md:text-4xl font-extrabold">100%+</dt>
+              <dt class="mb-2 text-3xl md:text-4xl font-extrabold">+100%</dt>
               <dd class="font-light text-gray-500 dark:text-gray-400">
                 コンバージョン率
               </dd>
             </div>
             <div class="flex flex-col items-center justify-center">
-              <dt class="mb-2 text-3xl md:text-4xl font-extrabold">50%+</dt>
+              <dt class="mb-2 text-3xl md:text-4xl font-extrabold">+50%</dt>
               <dd class="font-light text-gray-500 dark:text-gray-400">
                 オプション保存率
               </dd>
@@ -45,7 +45,7 @@
           </dl>
         </div>
         <div
-          class="inline-flex items-center text-white bg-primary-600 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900"
+          class="inline-flex items-center text-white bg-primary-600 hover:bg-primary-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900"
         >
           もっと見る
           <svg
