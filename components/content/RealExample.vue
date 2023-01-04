@@ -15,7 +15,7 @@
       />
       <div class="mt-4 md:mt-0">
         <h2
-          class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+          class="mb-4 text-xl tracking-tight font-semibold text-black-600 text-left md:text-2xl lg:text-3xl dark:text-white"
         >
           実績
         </h2>

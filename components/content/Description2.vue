@@ -11,7 +11,7 @@
       </div>
       <div class="mr-auto place-self-center md:col-span-7">
         <h1
-          class="mb-4 text-xl tracking-tight font-semibold text-black-600 text-left lg:text-2xl dark:text-white"
+          class="mb-4 text-xl tracking-tight font-semibold text-black-600 text-left md:text-2xl lg:text-3xl dark:text-white"
         >
           直感的
         </h1>
