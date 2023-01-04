@@ -5,19 +5,18 @@
     >
       <div class="mr-auto place-self-center lg:col-span-7">
         <h1
-          class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"
+          class="mb-4 text-xl tracking-tight font-semibold text-black-600 text-left lg:text-2xl dark:text-white"
         >
-          Full Auto-Tracking
+          スマート
         </h1>
         <p
           class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
         >
-          Air360 collects and analyzes every interaction a visitor has with your
-          websites, whether on desktop, mobile or app.
+          Air360はデスクトップ、モバイル、アプリを問わず、ウェブサイト上のユーザーの動きを自動的に収集し、分析します。更にデータを遡り、ユーザーの離脱タイミングを知り、改善することができます。
         </p>
         <a
           href="#"
-          class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+          class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
         >
           もっと詳しく
           <svg
