@@ -45,7 +45,7 @@
           </dl>
         </div>
         <div
-          class="inline-flex items-center text-white bg-primary-600 hover:bg-primary-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900"
+          class="inline-flex items-center text-white bg-blue-400 hover:bg-blue-500 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900"
         >
           もっと見る
           <svg
