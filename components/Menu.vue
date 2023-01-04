@@ -8,7 +8,7 @@
           src="https://www.air360.io/wp-content/uploads/2022/05/air360-logo-bk.svg"
           class="h-6 mr-3 sm:h-7 xl:h-8"
           alt="Air360 Logo"
-        />
+        >
       </NuxtLink>
       <button
         data-collapse-toggle="navbar-default"
@@ -29,12 +29,12 @@
             fill-rule="evenodd"
             d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
             clip-rule="evenodd"
-          ></path>
+          />
         </svg>
       </button>
       <div
-        class="hidden w-full transition ease-in-out duration-500 lg:block lg:w-auto"
         id="navbar-default"
+        class="hidden w-full transition ease-in-out duration-500 lg:block lg:w-auto"
       >
         <ul
           class="flex flex-col p-4 mt-4 border items-center border-none lg:flex-row lg:space-x-8 lg:mt-0 lg:text-base lg:font-medium lg:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
@@ -42,7 +42,7 @@
           <li class="py-2">
             <NuxtLink :to="$localePath('/test')">
               <div
-                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                class="menu__link"
               >
                 Test Link
               </div>
@@ -51,7 +51,7 @@
           <li class="py-2">
             <NuxtLink :to="$localePath('/why-air360')">
               <div
-                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                class="menu__link"
               >
                 Why Air360
               </div>
@@ -60,7 +60,7 @@
           <li class="py-2">
             <NuxtLink :to="$localePath('/product')">
               <div
-                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                class="menu__link"
               >
                 {{ $t("product") }}
               </div>
@@ -69,7 +69,7 @@
           <li class="py-2">
             <NuxtLink :to="$localePath('/inspiration')">
               <div
-                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                class="menu__link"
               >
                 {{ $t("inspiration") }}
               </div>
@@ -78,7 +78,7 @@
           <li class="py-2">
             <NuxtLink :to="$localePath('/price')">
               <div
-                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                class="menu__link"
               >
                 {{ $t("pricing") }}
               </div>
@@ -87,11 +87,10 @@
           <li class="py-2">
             <a
               href="https://beta.air360.io/"
-              class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              class="menu__link"
               target="_blank"
               rel="noopener noreferrer"
-              >{{ $t("login") }}</a
-            >
+            >{{ $t("login") }}</a>
           </li>
           <li class="py-2">
             <button
@@ -107,5 +106,11 @@
 </template>
 
 <script setup lang="ts">
-const { $localePath } = useNuxtApp();
+const { $localePath } = useNuxtApp()
 </script>
+
+<style lang="postcss">
+.menu__link {
+  @apply block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent;
+}
+</style>
