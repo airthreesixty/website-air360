@@ -13,12 +13,12 @@
         <h1
           class="mb-4 text-xl tracking-tight font-semibold text-black-600 text-left md:text-2xl lg:text-3xl dark:text-white"
         >
-          <slot name="title"></slot>
+          <slot name="title" />
         </h1>
         <p
           class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-base lg:text-xl dark:text-gray-400"
         >
-          <slot name="description"></slot>
+          <slot name="description" />
         </p>
         <a
           href="#"
