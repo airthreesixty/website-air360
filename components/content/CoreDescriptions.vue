@@ -7,7 +7,7 @@
       <ContentSlot :use="$slots.description1" />
     </template>
   </SingleDescription>
-  <SingleDescription bg-color="gray-50">
+  <SingleDescription bg-color="gray-50" image-status="block" image-status2="hidden">
     <template #title>
       <ContentSlot :use="$slots.title2" />
     </template>

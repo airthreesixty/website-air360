@@ -3,7 +3,7 @@
     <div
       class="grid max-w-screen-[1400px] px-4 py-8 mx-auto md:gap-8 xl:gap-0 md:py-16 md:grid-cols-12"
     >
-      <div class="md:hidden md:mt-0 md:col-span-5 md:flex">
+      <div :class="`md:${props.imageStatus} md:mt-0 md:col-span-5 md:flex`">
         <img
           src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png"
           alt="mockup"
@@ -39,7 +39,7 @@
           </svg>
         </a>
       </div>
-      <div class="hidden md:mt-0 md:col-span-5 md:flex">
+      <div :class="`hidden md:${props.imageStatus2} md:mt-0 md:col-span-5 md:flex`">
         <img
           src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png"
           alt="mockup"
@@ -54,6 +54,18 @@ const props = defineProps({
   bgColor: {
     type: String,
     default: 'white',
+  },
+  imagePath: {
+    type: String,
+    required: true,
+  },
+  imageStatus: {
+    type: String,
+    default: 'hidden',
+  },
+  imageStatus2: {
+    type: String,
+    default: 'block',
   },
 })
 </script>
