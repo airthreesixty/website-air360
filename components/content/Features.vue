@@ -1,7 +1,7 @@
 <template>
   <section>
-    <div class="pb-8 px-4 mx-auto bg-gray-50 dark:bg-gray-900 sm:py-16 lg:px-6">
-      <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3  md:gap-8 xl:gap-10 md:space-y-0">
+    <div class="pb-8 px-4 bg-gray-50 dark:bg-gray-900 sm:py-16 lg:px-6">
+      <div class="space-y-8 max-w-screen-[1400px] mx-auto md:grid md:grid-cols-2 lg:grid-cols-3  md:gap-8 xl:gap-10 md:space-y-0">
         <div class="p-6 bg-white rounded shadow dark:bg-gray-800">
           <div class="flex justify-center items-center mb-4 w-10 h-10 rounded bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
             <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>

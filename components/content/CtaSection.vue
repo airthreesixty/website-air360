@@ -1,6 +1,6 @@
 <template>
   <section class="bg-white py-2 lg:py-5 dark:bg-gray-900">
-    <div class="pt-6 px-4 mx-auto max-w-screen-xl lg:px-6">
+    <div class="pt-6 px-4 mx-auto max-w-screen-[1400px] lg:px-6">
       <div
         class="gap-16 flex-col justify-between items-center p-6 bg-white rounded-lg dark:bg-gray-800 md:p-6 lg:flex lg:gap-8"
       >

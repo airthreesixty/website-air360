@@ -1,7 +1,7 @@
 <template>
   <section class="bg-gray-50 dark:bg-gray-900">
     <div
-      class="grid max-w-screen-xl px-4 py-8 mx-auto md:gap-8 xl:gap-0 md:py-16 md:grid-cols-12"
+      class="grid max-w-screen-[1400px] px-4 py-8 mx-auto md:gap-8 xl:gap-0 md:py-16 md:grid-cols-12"
     >
       <div class="md:mt-0 md:col-span-5 md:flex">
         <img

@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white pb-5">
-    <div class="px-4 md:flex md:items-center">
+    <div class="px-4 max-w-screen-[1400px] mx-auto md:flex md:items-center">
       <div class="md:flex md:flex-row md:items-center">
         <div class="flex-1">
           <img src="/depressedMan.jpg" alt="" loading="lazy" />

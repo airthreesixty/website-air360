@@ -1,6 +1,6 @@
 <template>
   <section class="bg-white pb-5 dark:bg-gray-900">
-    <div class="px-4 md:flex md:items-center">
+    <div class="px-4 max-w-screen-[1400px] mx-auto md:flex md:items-center">
       <div class="md:hidden">
         <img src="/boostConversion.png" alt="" loading="lazy" />
       </div>
