@@ -1,11 +1,11 @@
 <template>
-  <section class="bg-white scroll-p-8 dark:bg-gray-900" id="smart-section">
+  <section id="smart-section" class="bg-white scroll-p-8 dark:bg-gray-900">
     <div class="flex flex-col max-w-screen-xl px-4 py-10 mx-auto md:flex-row">
       <div id="accordion-collapse" data-accordion="collapse" class="flex-1">
         <h2 class="text-[#e74b91] text-3xl font-extrabold pb-3">
           <ContentSlot :use="$slots.smart" />
         </h2>
-        <SingleAccordion :num="1" :iconNum="1" iconColor="#e74b91">
+        <SingleAccordion :num="1" :icon-num="1" icon-color="#e74b91">
           <template #title>
             <ContentSlot :use="$slots.title1" />
           </template>
@@ -16,7 +16,7 @@
             <ContentSlot :use="$slots.description1_2" />
           </template>
         </SingleAccordion>
-        <SingleAccordion :num="2" :iconNum="2" iconColor="#e74b91">
+        <SingleAccordion :num="2" :icon-num="2" icon-color="#e74b91">
           <template #title>
             <ContentSlot :use="$slots.title2" />
           </template>
@@ -27,7 +27,7 @@
             <ContentSlot :use="$slots.description2_2" />
           </template>
         </SingleAccordion>
-        <SingleAccordion :num="3" :iconNum="3" iconColor="#e74b91">
+        <SingleAccordion :num="3" :icon-num="3" icon-color="#e74b91">
           <template #title>
             <ContentSlot :use="$slots.title3" />
           </template>
@@ -38,7 +38,7 @@
             <ContentSlot :use="$slots.description3_2" />
           </template>
         </SingleAccordion>
-        <SingleAccordion :num="4" :iconNum="4" iconColor="#e74b91">
+        <SingleAccordion :num="4" :icon-num="4" icon-color="#e74b91">
           <template #title>
             <ContentSlot :use="$slots.title4" />
           </template>
@@ -49,7 +49,7 @@
             <ContentSlot :use="$slots.description4_2" />
           </template>
         </SingleAccordion>
-        <SingleAccordion :num="5" :iconNum="5" iconColor="#e74b91">
+        <SingleAccordion :num="5" :icon-num="5" icon-color="#e74b91">
           <template #title>
             <ContentSlot :use="$slots.title5" />
           </template>
@@ -60,7 +60,7 @@
             <ContentSlot :use="$slots.description5_2" />
           </template>
         </SingleAccordion>
-        <SingleAccordion :num="6" :iconNum="6" iconColor="#e74b91">
+        <SingleAccordion :num="6" :icon-num="6" icon-color="#e74b91">
           <template #title>
             <ContentSlot :use="$slots.title6" />
           </template>

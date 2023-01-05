@@ -2,7 +2,7 @@
   <section class="bg-white pb-5 dark:bg-gray-900">
     <div class="px-4 max-w-screen-[1400px] mx-auto md:flex md:items-center">
       <div class="md:hidden">
-        <img src="/boostConversion.png" alt="" loading="lazy" />
+        <img src="/boostConversion.png" alt="" loading="lazy">
       </div>
       <div class="mx-auto max-w-screen-md text-center mb-8 mt-4 flex-1 md:mb-0">
         <h2
@@ -17,7 +17,7 @@
         </p>
       </div>
       <div class="flex-1 hidden md:block">
-        <img src="/boostConversion.png" alt="" loading="lazy" />
+        <img src="/boostConversion.png" alt="" loading="lazy">
       </div>
     </div>
   </section>

@@ -12,7 +12,7 @@
           :class="`fa-xl text-[${iconColor}] w-5 h-5 mr-2 shrink-0`"
           :icon="['fas', `${props.iconNum}`]"
         />
-        <slot name="title"></slot>
+        <slot name="title" />
       </span>
       <svg
         data-accordion-icon
@@ -21,10 +21,11 @@
         viewBox="0 0 20 20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path fill-rule="evenodd"
+        <path
+          fill-rule="evenodd"
           d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
           clip-rule="evenodd"
-        ></path>
+        />
       </svg>
     </button>
   </h2>
@@ -37,10 +38,10 @@
       :class="`px-5 pb-2 text-[${textColor}] font-light dark:border-gray-700 dark:bg-gray-900`"
     >
       <p :class="`mb-2 text-[${textColor}] dark:text-gray-400`">
-        <slot name="description1"></slot>
+        <slot name="description1" />
       </p>
       <p class="text-gray-500 dark:text-gray-400">
-        <slot name="description2"></slot>
+        <slot name="description2" />
       </p>
     </div>
   </div>

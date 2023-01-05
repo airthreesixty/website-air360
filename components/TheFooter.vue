@@ -8,7 +8,7 @@
               src="https://www.air360.io/wp-content/uploads/2022/05/air360-logo-bk.svg"
               class="mr-3 h-6 sm:h-7 xl:h-8"
               alt="Air360 Logo"
-            />
+            >
           </div>
         </NuxtLink>
         <div class="flex my-6 space-x-6 sm:justify-start md:mt-4 lg:mt-6">
@@ -49,8 +49,7 @@
                 class="hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"
-                >ESW</a
-              >
+              >ESW</a>
             </li>
             <li class="mb-4">
               <a
@@ -58,8 +57,7 @@
                 class="hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"
-                >{{ $t("careers") }}</a
-              >
+              >{{ $t("careers") }}</a>
             </li>
             <li>
               <a href="#" class="hover:underline">{{ $t("privacy-policy") }}</a>
@@ -102,5 +100,5 @@
 </template>
 
 <script setup lang="ts">
-const { $localePath } = useNuxtApp();
+const { $localePath } = useNuxtApp()
 </script>
