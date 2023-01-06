@@ -21,7 +21,7 @@ great solution
 ユーザーの離脱点が分かる
 ::
 
-::why-air360-description{imagePath="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" buttonStatus="hidden"}
+::why-air360-description{imagePath="https://www.air360.io/wp-content/uploads/2022/08/unleash-crh-1-1024x763.webp" buttonStatus="hidden"}
 #title
 ユーザーの動きを全てトラッキング
 #subtext

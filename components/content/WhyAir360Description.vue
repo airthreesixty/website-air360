@@ -14,7 +14,7 @@
           <slot name="subtext" />
         </p>
         <h1
-          class="mb-4 text-xl tracking-tight font-semibold text-black-600 text-left md:text-2xl lg:text-3xl dark:text-white"
+          class="mb-6 text-xl tracking-tight font-semibold text-black-600 text-left md:text-2xl lg:text-3xl dark:text-white"
         >
           <slot name="title" />
         </h1>
