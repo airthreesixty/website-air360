@@ -3,8 +3,8 @@
     <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16">
       <div class="grid gap-8 items-center mb-8 lg:mb-24 lg:gap-12 md:grid-cols-12">
         <div class="col-span-6 md:hidden">
-          <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+          <div class="wistia_responsive_padding">
+            <div class="wistia_responsive_wrapper">
               <iframe
                 src="https://fast.wistia.net/embed/iframe/4vg5g5jgct?videoFoam=true"
                 title="Air360 by Scalefast Creating Conversion Rate Heroes Video"
@@ -37,8 +37,8 @@
           </div>
         </div>
         <div class="col-span-6 hidden md:block">
-          <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+          <div class="wistia_responsive_padding">
+            <div class="wistia_responsive_wrapper">
               <iframe
                 src="https://fast.wistia.net/embed/iframe/4vg5g5jgct?videoFoam=true"
                 title="Air360 by Scalefast Creating Conversion Rate Heroes Video"
