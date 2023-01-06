@@ -20,10 +20,9 @@
         </h1>
         <div class="flex">
           <div
-            class="text-gray-700"
+            class="text-blue-600 mr-2"
           >
-            <fa-icon class="fa-xl" :icon="['fab', 'twitter']" />
-            <span class="sr-only">Twitter page</span>
+            <fa-icon class="fa-xl" :icon="['fas', 'check']" />
           </div>
           <p
             class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-base lg:text-xl dark:text-gray-400"
@@ -33,9 +32,9 @@
         </div>
         <div class="flex">
           <div
-            class="text-gray-700"
+            class="text-blue-600 mr-2"
           >
-            <fa-icon class="fa-xl" :icon="['fab', 'twitter']" />
+            <fa-icon class="fa-xl" :icon="['fas', 'check']" />
             <span class="sr-only">Twitter page</span>
           </div>
           <p
@@ -46,9 +45,9 @@
         </div>
         <div class="flex">
           <div
-            class="text-gray-700"
+            class="text-blue-600"
           >
-            <fa-icon class="fa-xl" :icon="['fab', 'twitter']" />
+            <fa-icon class="fa-xl mr-2" :icon="['fas', 'check']" />
             <span class="sr-only">Twitter page</span>
           </div>
           <p
