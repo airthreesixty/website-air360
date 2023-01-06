@@ -1,7 +1,16 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   modules: ['@nuxt/content', 'nuxt-windicss', '@nuxtjs/i18n', 'nuxt-font-loader'],
-
+  app: {
+    head: {
+      script: [
+        {
+          src: 'https://fast.wistia.net/assets/external/E-v1.js',
+          async: true,
+        },
+      ],
+    },
+  },
   i18n: {
     locales: [
       { code: 'en', iso: 'en-US', file: 'en.json', name: 'English' },
