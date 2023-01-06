@@ -10,6 +10,9 @@
         >
       </div>
       <div class="mr-auto place-self-center md:col-span-7">
+        <p class="text-primary-600 font-bold text-lg my-2">
+          <slot name="subtext" />
+        </p>
         <h1
           class="mb-4 text-xl tracking-tight font-semibold text-black-600 text-left md:text-2xl lg:text-3xl dark:text-white"
         >
