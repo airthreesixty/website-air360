@@ -15,10 +15,10 @@ Air360 はデータアナリストと事業内容を同じミッションに結�
 ビデオを見る
 
 ::
-
+<!-- <span class="text-red-500 text-2xl lg:text-3xl"> -->
 ::interest
 #title
-訪問者のたった<span class="text-red-500 text-2xl lg:text-3xl">２％</span>しか購入に進まないことはご存知でしたか？
+訪問者のたった[２％]{.text-red-500.text-2xl.lg:text-3xl}しか購入に進まないことはご存知でしたか？
 #description
 折角あなたの手のかけたショップにお客様が訪れても、その殆どが購入せず立ち去ってしまいます。つまり多くの収益機会を逃しているわけです。
 ::

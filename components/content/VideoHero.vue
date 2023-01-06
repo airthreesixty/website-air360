@@ -14,7 +14,7 @@
         </div>
         <div class="col-span-6 text-center sm:mb-6 md:text-left lg:mb-0">
           <h1 class="mb-4 text-2xl font-bold tracking-tight leading-none text-black-600 md:text-3xl lg:text-4xl xl:text-6xl dark:text-white">
-            なぜAir360は選ばれるのか
+            なぜAir360が選ばれるのか
           </h1>
           <p class="mx-auto mb-6 max-w-xl font-light text-gray-500 text-left lg:mx-0 xl:mb-8 md:text-lg xl:text-xl dark:text-gray-400">
             Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.
