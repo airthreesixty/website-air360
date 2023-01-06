@@ -15,7 +15,7 @@ Air360は従来のアナリティクスツールとは違い、ユーザーの�
 クリック、スワイプ、ページ変更、スクロール、マウスイベント、タッチ、ダブルタップなど、あらゆるものを捕捉します。その結果、今後、重要なデータを見逃すことは100％ありません。
 ::
 
-::single-description{imagePath="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" buttonStatus="hidden"}
+::single-description{imagePath="https://www.air360.io/wp-content/uploads/2022/08/unleash-crh-1-1024x763.webp" buttonStatus="hidden"}
 #title
 ユーザーの離脱点をあぶり出し、改善
 #description
@@ -30,10 +30,10 @@ Air360は従来のアナリティクスツールとは違い、ユーザーの�
 ピクセルをHTMLに埋め込むだけなので、すぐ分析を始められてストレスフリー。更には過去のデータも遡れ、データの取り逃がしがありません。
 ::
 
-::company-logos
+<!-- ::company-logos
 #title
 愛される E コマースブランドが Air360 を採用しています
-::
+:: -->
 
 ::cta-section
 #title
