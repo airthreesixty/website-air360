@@ -5,7 +5,7 @@
     >
       <div :class="`md:${props.imageStatus} md:mt-0 md:col-span-5 md:flex`">
         <img
-          src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png"
+          :src="imagePath"
           alt="mockup"
         >
       </div>
@@ -42,7 +42,7 @@
       </div>
       <div :class="`hidden md:${props.imageStatus2} md:mt-0 md:col-span-5 md:flex`">
         <img
-          src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png"
+          :src="imagePath"
           alt="mockup"
         >
       </div>

@@ -1,5 +1,5 @@
 <template>
-  <SingleDescription>
+  <SingleDescription image-path="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png">
     <template #title>
       <ContentSlot :use="$slots.title1" />
     </template>
@@ -7,7 +7,7 @@
       <ContentSlot :use="$slots.description1" />
     </template>
   </SingleDescription>
-  <SingleDescription bg-color="gray-50" image-status="block" image-status2="hidden">
+  <SingleDescription bg-color="gray-50" image-status="block" image-status2="hidden" image-path="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png">
     <template #title>
       <ContentSlot :use="$slots.title2" />
     </template>
@@ -15,7 +15,7 @@
       <ContentSlot :use="$slots.description2" />
     </template>
   </SingleDescription>
-  <SingleDescription>
+  <SingleDescription image-path="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png">
     <template #title>
       <ContentSlot :use="$slots.title3" />
     </template>
