@@ -12,6 +12,16 @@
           height="349"
         >
       </div>
+      <!-- <div class="md:hidden lg:mt-0 lg:col-span-5">
+        <iframe
+          class="mx-auto w-full max-w-xl h-64 rounded-lg sm:h-96"
+          src="https://www.youtube.com/embed/h9UrKxNDXCM"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        />
+      </div> -->
       <div class="mr-auto place-self-center lg:col-span-7 md:flex-1">
         <p
           class="max-w-2xl my-4 text-gray-500 bg-light-100tracking-tight leading-none md:text-base lg:text-xl xl:text-xl dark:text-white"
@@ -49,6 +59,16 @@
           class="object-scale-down"
         >
       </div>
+      <!-- <div class="hidden md:block md:flex lg:mt-0 lg:col-span-5">
+        <iframe
+          class="mx-auto w-full max-w-xl h-64 rounded-lg sm:h-96"
+          src="https://www.youtube.com/embed/h9UrKxNDXCM"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        />
+      </div> -->
     </div>
   </section>
 </template>

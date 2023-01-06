@@ -3,17 +3,26 @@
     <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16">
       <div class="grid gap-8 items-center mb-8 lg:mb-24 lg:gap-12 md:grid-cols-12">
         <div class="col-span-6 md:hidden">
-          <iframe
-            class="mx-auto w-full max-w-xl h-64 rounded-lg sm:h-96"
-            src="https://www.youtube.com/embed/h9UrKxNDXCM"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          />
+          <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+              <iframe
+                src="https://fast.wistia.net/embed/iframe/4vg5g5jgct?videoFoam=true"
+                title="Air360 by Scalefast Creating Conversion Rate Heroes Video"
+                allow="autoplay; fullscreen"
+                allowtransparency="true"
+                frameborder="0"
+                scrolling="no"
+                class="wistia_embed"
+                name="wistia_embed"
+                msallowfullscreen
+                width="100%"
+                height="100%"
+              />
+            </div>
+          </div>
         </div>
         <div class="col-span-6 text-center sm:mb-6 md:text-left lg:mb-0">
-          <h1 class="mb-4 text-2xl font-bold tracking-tight leading-none text-black-600 md:text-3xl lg:text-4xl xl:text-6xl dark:text-white">
+          <h1 class="mb-4 text-2xl font-bold tracking-tight leading-none text-black-600 md:text-3xl lg:text-4xl dark:text-white">
             なぜAir360が選ばれるのか
           </h1>
           <p class="mx-auto mb-6 max-w-xl font-light text-gray-500 text-left lg:mx-0 xl:mb-8 md:text-lg xl:text-xl dark:text-gray-400">
@@ -28,14 +37,23 @@
           </div>
         </div>
         <div class="col-span-6 hidden md:block">
-          <iframe
-            class="mx-auto w-full max-w-xl h-64 rounded-lg sm:h-96"
-            src="https://www.youtube.com/embed/h9UrKxNDXCM"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          />
+          <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+              <iframe
+                src="https://fast.wistia.net/embed/iframe/4vg5g5jgct?videoFoam=true"
+                title="Air360 by Scalefast Creating Conversion Rate Heroes Video"
+                allow="autoplay; fullscreen"
+                allowtransparency="true"
+                frameborder="0"
+                scrolling="no"
+                class="wistia_embed"
+                name="wistia_embed"
+                msallowfullscreen
+                width="100%"
+                height="100%"
+              />
+            </div>
+          </div>
         </div>
       </div>
       <div class="grid grid-cols-2 gap-8 mx-auto max-w-screen-xl text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6 dark:text-gray-400">
