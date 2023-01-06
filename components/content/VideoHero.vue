@@ -12,7 +12,7 @@
             allowfullscreen
           />
         </div>
-        <div class="col-span-6 text-center sm:mb-6 lg:text-left lg:mb-0">
+        <div class="col-span-6 text-center sm:mb-6 md:text-left lg:mb-0">
           <h1 class="mb-4 text-2xl font-bold tracking-tight leading-none text-black-600 md:text-3xl lg:text-4xl xl:text-6xl dark:text-white">
             なぜAir360は選ばれるのか
           </h1>
