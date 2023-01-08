@@ -10,15 +10,15 @@ Air360は従来のアナリティクスツールとは違い、ユーザーの�
 
 ::why-air360-description{imagePath="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" imageStatus="block" imageStatus2="hidden" buttonStatus="hidden"}
 #title
-ユーザーの動きを全てトラッキング
+ユーザーの行動を完全トラッキング＆遡及
 #subtext
 great solution
 #description1
-ユーザーの離脱点が分かる
+スワイプ、クリック、スクロール等、ユーザーの全ての行動を自動でトラッキング
 #description2
-ユーザーの離脱点が分かる
+データの蓄積を何日も何週間も待たず分析を始められます
 #description3
-ユーザーの離脱点が分かる
+コードをいじる必要がないため、技術的な能力は必要ありません
 ::
 
 ::why-air360-description{imagePath="https://www.air360.io/wp-content/uploads/2022/08/unleash-crh-1-1024x763.webp" buttonStatus="hidden"}
