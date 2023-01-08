@@ -34,11 +34,17 @@ great solution
 ユーザーの離脱点が分かる
 ::
 
-::single-description{imagePath="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" imageStatus="block" imageStatus2="hidden" buttonStatus="hidden"}
+::why-air360-description{imagePath="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" imageStatus="block" imageStatus2="hidden" buttonStatus="hidden"}
 #title
 すぐに始められる
-#description
-ピクセルをHTMLに埋め込むだけなので、すぐ分析を始められてストレスフリー。更には過去のデータも遡れ、データの取り逃がしがありません。
+#subtext
+great solution
+#description1
+ユーザーの離脱点が分かる
+#description2
+ユーザーの離脱点が分かる
+#description3
+ユーザーの離脱点が分かる
 ::
 
 <!-- ::company-logos
