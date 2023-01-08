@@ -14,9 +14,10 @@ Air360は従来のアナリティクスツールとは違い、ユーザーの�
 #subtext
 great solution
 #description1
-スワイプ、クリック、スクロール等、ユーザーの全ての行動を自動でトラッキングすることで・・・
+スワイプ、クリック、スクロール、ページビュー等、ユーザーの全ての行動を自動でトラッキングします
+
 #description2
-過去のトラッキングデータ・・・
+完全トラッキングのおかげでデータの取りこぼしがなく、価値のあるデータだけを取り出し改善に活かせます
 #description3
 コードを書き換えたりする必要がないため、技術的な能力は求められません
 ::
@@ -27,11 +28,11 @@ great solution
 #subtext
 great solution
 #description1
-ユーザーの離脱点を明らかにすることで、
+離脱点を明らかにすることで・・・
 #description2
-ユーザーの離脱点が分かる
+ユーザーの行動の全体像を把握できます
 #description3
-ユーザーの離脱点が分かる
+・・・
 ::
 
 ::why-air360-description{imagePath="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" imageStatus="block" imageStatus2="hidden" }
