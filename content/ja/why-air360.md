@@ -14,20 +14,20 @@ Air360は従来のアナリティクスツールとは違い、ユーザーの�
 #subtext
 great solution
 #description1
-スワイプ、クリック、スクロール等、ユーザーの全ての行動を自動でトラッキング
+スワイプ、クリック、スクロール等、ユーザーの全ての行動を自動でトラッキングすることで・・・
 #description2
-データの蓄積を何日も何週間も待たず分析を始められます
+過去のトラッキングデータ・・・
 #description3
-コードをいじる必要がないため、技術的な能力は必要ありません
+コードを書き換えたりする必要がないため、技術的な能力は求められません
 ::
 
 ::why-air360-description{imagePath="https://www.air360.io/wp-content/uploads/2022/08/unleash-crh-1-1024x763.webp" buttonStatus="hidden"}
 #title
-ユーザーの動きを全てトラッキング
+ユーザーの不満点を見つけ、改善に繋げられる
 #subtext
 great solution
 #description1
-ユーザーの離脱点が分かる
+ユーザーの離脱点を明らかにすることで、
 #description2
 ユーザーの離脱点が分かる
 #description3
