@@ -32,14 +32,14 @@
                     src="https://www.air360.io/wp-content/uploads/2022/08/nelson.webp"
                     alt=""
                     loading="lazy"
-                  >
+                  />
                 </div>
                 <div class="ml-4 lg:ml-0">
                   <div class="text-base font-medium text-black-600">
                     Nelson Fernandes
                   </div>
                   <div class="text-base font-medium text-gray-500">
-                    CEO, Club Med
+                    Digital Analytics Manager, Club Med
                   </div>
                 </div>
               </div>
