@@ -56,7 +56,7 @@
         <img
           src="https://www.air360.io/wp-content/uploads/2022/08/hero-illustration.webp"
           alt="mockup"
-          class="object-scale-down"
+          class="object-scale-down rotate-180"
         >
       </div>
       <!-- <div class="hidden md:block md:flex lg:mt-0 lg:col-span-5">
@@ -72,3 +72,9 @@
     </div>
   </section>
 </template>
+
+<style scoped>
+img {
+  transform: scale(-1, 1)
+}
+</style>
