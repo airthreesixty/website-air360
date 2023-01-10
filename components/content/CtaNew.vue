@@ -7,10 +7,10 @@
               <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
                 <span class="block">今すぐ始めましょう</span>
               </h2>
-            <p class="mt-4 text-lg leading-6 text-white">
+            <p class="mt-4 text-lg leading-6 text-primary-100">
               ユーザー体験を改善し、コンバージョンを上げてみませんか？Air360なら一行のコードを追加するだけで分析を始められ、素早くインサイトを得られます。
             </p>
-              <a href="#" class="mt-8 inline-flex items-center rounded-lg border border-transparent bg-white px-5 py-3 text-base font-medium text-primary-600 shadow hover:bg-primary-100">Air360を試してみる</a>
+              <a href="#" class="mt-8 inline-flex items-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-primary-600 shadow hover:bg-primary-100">Air360を試してみる</a>
             </div>
           </div>
           <div class="aspect-w-5 aspect-h-3 -mt-6 md:aspect-w-2 md:aspect-h-1">
