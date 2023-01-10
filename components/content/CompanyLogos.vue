@@ -19,14 +19,14 @@
         <div class="flex justify-center items-center">
           <img
             class="h-6 lg:h-7 xl:h-8 dark:hover:text-white"
-            src="http://air360-website.s3-website-eu-west-1.amazonaws.com/landingpage-assets/images/logos/bandai-namco.png"
+            src="https://www.air360.io/wp-content/uploads/2022/05/Copy-of-logo_aristocrazy-1.png"
             alt=""
           >
         </div>
         <div class="flex justify-center items-center">
           <img
             class="h-6 lg:h-7 xl:h-8 dark:hover:text-white"
-            src="http://air360-website.s3-website-eu-west-1.amazonaws.com/landingpage-assets/images/logos/1-square-enix.png"
+            src="https://www.air360.io/wp-content/uploads/2022/05/olympique-1.png"
             alt=""
           >
         </div>
@@ -41,7 +41,7 @@
         <div class="flex justify-center items-center">
           <img
             class="h-6 lg:h-7 xl:h-8 dark:hover:text-white"
-            src="http://air360-website.s3-website-eu-west-1.amazonaws.com/landingpage-assets/images/logos/Loreal_Paris-1167x338.png"
+            src="https://www.air360.io/wp-content/uploads/2022/05/logo_qoqa-black-1.png"
             alt=""
           >
         </div>
