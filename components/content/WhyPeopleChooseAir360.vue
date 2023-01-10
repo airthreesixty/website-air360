@@ -12,24 +12,31 @@
             <img :src="category.imageSrc" :alt="category.imageAlt" class="h-[250px] w-full object-cover object-center">
           </div>
           <div class="px-1 md:px-2">
-            <h3 class="mt-4 text-xl font-semibold text-black-600 lg:text-2xl">{{ category.name }}</h3>
-            <p class="mt-2 text-lg text-gray-500">{{ category.description }}</p>
-            <a href="#" class="flex text-primary-600 mt-3 items-center">
-              <p>{{ $t("more") }}
-              </p>
-              <svg
-                class="w-5 h-5 ml-1"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </a>
+            <h3 class="mt-4 text-xl font-semibold text-black-600 lg:text-2xl">
+              {{ category.name }}
+            </h3>
+            <p class="mt-2 text-lg text-gray-500">
+              {{ category.description }}
+            </p>
+            <div class="inline-block ">
+              <a href="#" class="flex text-primary-600 mt-3 items-center">
+                <p>
+                  {{ $t("more") }}
+                </p>
+                <svg
+                  class="w-5 h-5 ml-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </div>
