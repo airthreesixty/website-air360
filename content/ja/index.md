@@ -19,6 +19,10 @@ Air360はWebサイト上の顧客体験を分析するツールです。
 
 ::
 
+::company-logos
+
+::
+
 ::interest
 #title
 訪問者のたった[２％]{.text-red-500.text-2xl.lg:text-3xl}しか購入に進まないことはご存知でしたか？
@@ -236,10 +240,10 @@ Air360は、シンプルであることの一環として、技術的な実装�
 “Air360 を使うことで、より多くの人が世界規模でデータに基づいた意思決定に携わることができます。”
 ::
 
-::company-logos
+<!-- ::company-logos
 #title
 愛される E コマースブランドが Air360 を採用しています
-::
+:: -->
 
 ::cta-section
 #title
