@@ -76,7 +76,7 @@
       <div
         class="hidden h-full lg:mt-0 lg:col-span-5 xl:col-span-4 lg:flex flex-1"
       >
-        <img src="/smart.png" alt="phone illustration" loading="lazy">
+        <img src="/smartAccordion.png" alt="phone illustration" loading="lazy">
       </div>
     </div>
   </section>

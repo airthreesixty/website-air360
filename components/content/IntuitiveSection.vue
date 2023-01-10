@@ -4,7 +4,7 @@
       <div
         class="hidden h-full lg:mt-0 lg:col-span-5 xl:col-span-4 lg:flex flex-1"
       >
-        <img src="/intuitive.png" alt="phone illustration" loading="lazy">
+        <img src="/intuitiveAccordion.png" alt="phone illustration" loading="lazy">
       </div>
       <div id="accordion-collapse" data-accordion="collapse" class="flex-1">
         <h2 class="text-[#ffffff] text-3xl font-extrabold pb-3">
