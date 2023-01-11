@@ -1,11 +1,9 @@
 <template>
   <div class="bg-white">
-    <div class="mx-auto max-w-screen-[1400px] py-16 px-4 md:py-24 lg:max-w-7xl lg:px-8">
-      <!-- <h2 class="text-2xl font-bold tracking-tight text-gray-900">Shop by Collection
+    <div class="mx-auto max-w-screen-[1400px] py-16 px-4 md:py-24">
+      <h2 class="text-2xl font-semibold text-center text-black-600 lg:text-3xl">
+        Air360を選ぶ理由
       </h2>
-      <p class="mt-4 text-base text-gray-500">
-        Each season, we collaborate with world-class designers to create a collection inspired by the natural world.
-      </p> -->
       <div class="mt-10 space-y-12 md:grid md:grid-cols-3 md:space-y-0">
         <div v-for="category in categories" :key="category.name" class="group block">
           <div aria-hidden="true" class="aspect-w-3 aspect-h-2 overflow-hidden lg:aspect-w-5 lg:aspect-h-6">
