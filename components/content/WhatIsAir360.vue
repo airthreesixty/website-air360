@@ -2,8 +2,8 @@
   <div class="relative overflow-hidden bg-white pt-10">
     <div class="mx-auto max-w-md px-6 text-center sm:max-w-3xl lg:max-w-7xl lg:px-8">
       <div>
-        <h2 class="text-md font-semibold text-primary-600 lg:text-xl">Serverless</h2>
-        <p class="mt-2 text-2xl font-bold tracking-tight text-black-600 md:text-3xl lg:text-4xl">No server? No problem.</p>
+        <!-- <h2 class="text-md font-semibold text-primary-600 lg:text-xl">次世代型UXアナリティクスツール</h2> -->
+        <p class="mt-2 text-2xl font-bold text-black-600 md:text-3xl lg:text-4xl">Air360とは</p>
         <p class="mx-auto mt-5 max-w-prose text-md text-gray-600 lg:text-xl">Air360はWebサイト上の顧客体験を分析するツールです。 データを元にEコマースのコンバージョンレートを迅速に 向上させ、ビジネスの成長に貢献します。</p>
       </div>
       <div class="mt-12 -mb-10 sm:-mb-24 lg:-mb-80">
