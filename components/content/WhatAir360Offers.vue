@@ -9,9 +9,6 @@
         >
           このような機能をオファー
         </h2>
-        <p class="mb-4 font-light lg:text-xl">
-          
-        </p>
         <div
           class="py-8 mb-6 dark:border-gray-700"
         >
