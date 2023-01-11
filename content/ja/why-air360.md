@@ -49,15 +49,18 @@ HTMLにたった一行のコードを追加するだけで分析を始められ�
 ・・・・・
 ::
 
-::company-logos
+<!-- ::company-logos
 #title
 愛される E コマースブランドが Air360 を採用しています
-::
+:: -->
 
-::cta-section
+<!-- ::cta-section
 #title
 もっと知ってみませんか？
 
 #action
 Air360を試してみる
+:: -->
+
+::cta-new
 ::
