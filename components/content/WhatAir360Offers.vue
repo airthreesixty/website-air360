@@ -96,6 +96,7 @@
         class="mb-4 w-full hidden md:block lg:mb-0 rounded-lg"
         src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/features/feature-office-long.png"
         alt="feature image"
+        loading="lazy"
       >
     </div>
   </section>
