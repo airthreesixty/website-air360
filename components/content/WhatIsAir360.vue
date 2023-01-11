@@ -1,5 +1,5 @@
 <template>
-  <div class="relative overflow-hidden bg-white pt-3">
+  <div class="overflow-hidden bg-white pt-3">
     <div class="mx-auto max-w-screen-[1400px] px-4 text-center lg:px-8">
       <div>
         <!-- <h2 class="text-md font-semibold text-primary-600 lg:text-xl">次世代型UXアナリティクスツール</h2> -->
@@ -11,7 +11,7 @@
         </p>
       </div>
       <div class="mt-12 -mb-10 sm:-mb-24 lg:-mb-80">
-        <img class="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5" src="https://tailwindui.com/img/component-images/top-nav-with-multi-column-layout-screenshot.jpg" alt="" loading="lazy">
+        <img class="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5" src="https://tailwindui.com/img/component-images/top-nav-with-multi-column-layout-screenshot.jpg" alt="">
       </div>
     </div>
   </div>
