@@ -38,6 +38,15 @@ Air360 なら豊富な機能であなたのコンバージョン率上昇に貢�
 :: -->
 
 ::what-is-air360
+#subtext
+Hello
+#title
+次世代型アナリティクスツール
+#description
+Air360はWebサイト上の顧客体験を分析するツールです。 データを元にEコマースのコンバージョンレートを迅速に 向上させ、ビジネスの成長に貢献します。
+::
+
+::what-air360-offers
 ::
 
 ::why-people-choose-air360

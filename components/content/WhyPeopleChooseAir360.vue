@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white">
     <div class="mx-auto max-w-screen-[1400px] py-16 px-4 md:py-24">
-      <h2 class="text-2xl font-semibold text-center text-black-600 lg:text-3xl">
+      <h2 class="text-2xl font-semibold text-center text-black-600 lg:text-4xl">
         Air360を選ぶ理由
       </h2>
       <div class="mt-10 space-y-12 md:grid md:grid-cols-3 md:space-y-0 xl:mt-14">
