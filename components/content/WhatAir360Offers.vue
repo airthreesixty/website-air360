@@ -1,16 +1,16 @@
 <template>
   <section class="bg-white dark:bg-gray-900">
     <div
-      class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl md:grid md:grid-cols-2 xl:gap-16 md:py-16 lg:px-6"
+      class="gap-8 items-center pt-20 px-4 mx-auto max-w-screen-[1400px] md:grid md:grid-cols-2 xl:gap-16 md:pt-25"
     >
-      <div class="text-gray-500 dark:text-gray-400 sm:text-lg">
+      <div class="text-gray-500 dark:text-gray-400">
         <h2
-          class="mb-4 text-2xl font-semibold text-black-600 md:text-3xl lg:text-4xl dark:text-white"
+          class="mb-4 text-2xl font-semibold text-black-600 text-center md:text-left md:text-3xl lg:text-4xl dark:text-white"
         >
           このような機能をオファー
         </h2>
         <div
-          class="py-8 mb-6 dark:border-gray-700"
+          class="pt-5 pb-8 dark:border-gray-700"
         >
           <div class="flex">
             <div
