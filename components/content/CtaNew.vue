@@ -13,8 +13,8 @@
             <a href="#" class="mt-8 inline-flex items-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-primary-600 shadow transition ease-in-out duration-300 hover:bg-primary-100">Air360を試してみる</a>
           </div>
         </div>
-        <div class="aspect-w-5 aspect-h-3 -mt-6 md:aspect-w-2 md:aspect-h-1">
-          <img class="translate-x-6 translate-y-6 transform rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20" src="/whatIsAir360.png" alt="App screenshot">
+        <div class="aspect-w-5 aspect-h-3 -mt-6 z-0 md:aspect-w-2 md:aspect-h-1">
+          <img class="translate-x-6 translate-y-6 transform rounded-md object-cover object-left-top md:translate-x-16 lg:translate-y-20" src="/whatIsAir360.png" alt="App screenshot">
         </div>
       </div>
     </div>
