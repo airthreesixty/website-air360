@@ -4,13 +4,8 @@
       class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-[1400px] xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
     >
       <img
-        class="w-full dark:hidden"
+        class="w-full md:hidden dark:hidden"
         src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg"
-        alt="dashboard image"
-      >
-      <img
-        class="w-full hidden dark:block"
-        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg"
         alt="dashboard image"
       >
       <div class="mt-4 md:mt-0">
@@ -67,6 +62,11 @@
           </svg>
         </a>
       </div>
+      <img
+        class="hidden w-full md:block dark:hidden"
+        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg"
+        alt="dashboard image"
+      >
     </div>
   </section>
 </template>
