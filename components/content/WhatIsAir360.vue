@@ -1,5 +1,5 @@
 <template>
-  <div class="relative overflow-hidden bg-white pt-10">
+  <div class="relative overflow-hidden bg-white pt-3">
     <div class="mx-auto max-w-screen-[1400px] px-4 text-center lg:px-8">
       <div>
         <!-- <h2 class="text-md font-semibold text-primary-600 lg:text-xl">次世代型UXアナリティクスツール</h2> -->
