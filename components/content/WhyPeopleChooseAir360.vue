@@ -4,7 +4,7 @@
       <h2 class="text-2xl font-semibold text-center text-black-600 lg:text-3xl">
         Air360を選ぶ理由
       </h2>
-      <div class="mt-10 space-y-12 md:grid md:grid-cols-3 md:space-y-0">
+      <div class="mt-10 space-y-12 md:grid md:grid-cols-3 md:space-y-0 xl:mt-14">
         <div v-for="category in categories" :key="category.name" class="group block">
           <div aria-hidden="true" class="aspect-w-3 aspect-h-2 overflow-hidden lg:aspect-w-5 lg:aspect-h-6">
             <img :src="category.imageSrc" :alt="category.imageAlt" class="h-[250px] w-full object-cover object-center">
