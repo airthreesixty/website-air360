@@ -7,7 +7,7 @@
         </div>
         <div class="flex-1">
           <h2
-            class="mb-4 text-xl tracking-tight font-semibold text-black-600 lg:text-2xl dark:text-white"
+            class="mb-4 text-xl font-semibold text-black-600 lg:text-2xl dark:text-white"
           >
             <ContentSlot :use="$slots.title" />
           </h2>

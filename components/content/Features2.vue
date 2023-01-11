@@ -6,7 +6,7 @@
       </div>
       <div class="mx-auto max-w-screen-md text-center mb-8 mt-4 flex-1 md:mb-0">
         <h2
-          class="mb-4 text-xl tracking-tight font-semibold text-black-600 text-left lg:text-2xl dark:text-white"
+          class="mb-4 text-xl font-semibold text-black-600 text-left lg:text-2xl dark:text-white"
         >
           <ContentSlot :use="$slots.title" />
         </h2>

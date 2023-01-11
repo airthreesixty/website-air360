@@ -28,11 +28,11 @@
         >
           <ContentSlot :use="$slots.subtitle" />
         </p>
-        <h2
+        <h1
           class="max-w-2xl mb-6 font-bold text-2xl bg-gradient-to-r from-[#6278DF] to-blue-[#3DDC97] bg-clip-text text-transparent lg:mb-8 md:text-3xl lg:text-4xl dark:text-gray-400"
         >
           <ContentSlot :use="$slots.title" />
-        </h2>
+        </h1>
 
         <p
           class="max-w-2xl mb-1 font-light text-gray-500 lg:mb-8 md:text-base lg:text-xl dark:text-gray-400"
