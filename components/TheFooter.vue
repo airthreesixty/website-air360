@@ -14,21 +14,21 @@
         <div class="flex my-6 space-x-6 sm:justify-start md:mt-4 lg:mt-6">
           <a
             href="#"
-            class="text-gray-700 transition ease-in-out duration-300 hover:text-gray-800 dark:hover:text-white"
+            class="text-gray-600 transition ease-in-out duration-300 hover:text-gray-800 dark:hover:text-white"
           >
             <fa-icon class="fa-xl" :icon="['fab', 'linkedin']" />
             <span class="sr-only">LinkedIn page</span>
           </a>
           <a
             href="#"
-            class="text-gray-700 transition ease-in-out duration-300 hover:text-gray-800 dark:hover:text-white"
+            class="text-gray-600 transition ease-in-out duration-300 hover:text-gray-800 dark:hover:text-white"
           >
             <fa-icon class="fa-xl" :icon="['fab', 'twitter']" />
             <span class="sr-only">Twitter page</span>
           </a>
           <a
             href="#"
-            class="text-gray-700 transition ease-in-out duration-300 hover:text-gray-800 dark:hover:text-white"
+            class="text-gray-600 transition ease-in-out duration-300 hover:text-gray-800 dark:hover:text-white"
           >
             <fa-icon class="fa-xl" :icon="['fab', 'instagram']" />
             <span class="sr-only">Instagram page</span>
