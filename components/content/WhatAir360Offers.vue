@@ -7,10 +7,10 @@
         <h2
           class="mb-4 text-2xl font-semibold text-black-600 text-center md:text-left md:text-3xl lg:text-4xl dark:text-white"
         >
-          このような機能をオファー
+          どうあなたのビジネスの手助けをするか
         </h2>
         <div
-          class="pt-5 pb-8 dark:border-gray-700"
+          class="pt-5 pb-3 dark:border-gray-700"
         >
           <div class="flex">
             <div
@@ -34,7 +34,7 @@
                 完全自動トラッキング
               </h3>
               <p class="mb-2 font-light text-gray-500 dark:text-gray-400">
-                スワイプ、クリック、スクロール、ページビュー等、ユーザーの全ての行動を自動でトラッキングします
+                ユーザーの全ての行動を追跡するため、価値のあるデータだけを取り出し改善に活かせます。
               </p>
             </div>
           </div>
@@ -83,10 +83,10 @@
             </div>
             <div>
               <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white">
-                No アナリスト
+                技術的な能力なしで分析可能
               </h3>
               <p class="mb-2 font-light text-gray-500 dark:text-gray-400">
-                エンジニアに複雑なタグ付けやコーディングをお願いする必要がありません。
+                エンジニアに複雑なタグ付けやコーディングをお願いする必要がないため、時間と人件費のコスト削減になります。
               </p>
             </div>
           </div>
