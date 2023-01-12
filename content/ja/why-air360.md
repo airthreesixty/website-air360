@@ -8,7 +8,7 @@ Air360は従来のアナリティクスツールとは違い、ユーザーの�
 ::why-air360
 ::
 
-::why-air360-description{imagePath="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" imageStatus="block" imageStatus2="hidden" buttonStatus="hidden"}
+::why-air360-description{imagePath="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" buttonStatus="hidden"}
 #title
 ユーザーの行動を完全トラッキング＆遡及
 #subtext
@@ -22,7 +22,7 @@ Auto-Tracking & Retroactive
 コードを書き換えたりする必要がないため、技術的な能力は求められません
 ::
 
-::why-air360-description{imagePath="https://www.air360.io/wp-content/uploads/2022/08/unleash-crh-1-1024x763.webp" buttonStatus="hidden"}
+::why-air360-description{imagePath="https://www.air360.io/wp-content/uploads/2022/08/unleash-crh-1-1024x763.webp" imageStatus="block" imageStatus2="hidden" buttonStatus="hidden"}
 #title
 ユーザーの離脱点を見つけ、改善に繋げられる
 #subtext
@@ -36,7 +36,7 @@ Custom Sunburst
 可能にします
 ::
 
-::why-air360-description{imagePath="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" imageStatus="block" imageStatus2="hidden" buttonStatus="hidden"}
+::why-air360-description{imagePath="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" buttonStatus="hidden"}
 #title
 すぐに始められ、インサイトを得られる
 #subtext
