@@ -1,3 +1,6 @@
+::product-header
+::
+
 ::single-description{imagePath="/smartDescription.png" buttonStatus="hidden"}
 #subtext
 スマート
