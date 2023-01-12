@@ -8,7 +8,7 @@
               <span class="block">今すぐ始めましょう</span>
             </h2>
             <p class="mt-4 text-md leading-6 text-primary-100 lg:text-xl">
-              ユーザー体験を改善し、コンバージョンを上げてみませんか？Air360なら一行のコードを追加するだけで分析を始められ、素早くインサイトを得られます。
+              ユーザー体験を改善し、コンバージョンを上げてみませんか？Air360なら僅か数行のコードを追加するだけで分析を始められ、素早くインサイトを得られます。
             </p>
             <a href="#" class="mt-8 inline-flex items-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-primary-600 shadow transition ease-in-out duration-300 hover:bg-primary-100">Air360を試してみる</a>
           </div>
