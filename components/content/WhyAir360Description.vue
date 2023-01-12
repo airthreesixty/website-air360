@@ -13,11 +13,11 @@
         <p class="text-primary-600 font-bold text-lg my-2">
           <slot name="subtext" />
         </p>
-        <h1
+        <h2
           class="mb-6 text-xl tracking-tight font-semibold text-black-600 text-left md:text-2xl lg:text-3xl dark:text-white"
         >
           <slot name="title" />
-        </h1>
+        </h2>
         <div class="flex">
           <div
             class="text-blue-600 mr-2"
