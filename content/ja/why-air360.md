@@ -5,8 +5,11 @@ Why Air360?
 Air360は従来のアナリティクスツールとは違い、ユーザーの行動を360°把握することで、「なぜ買ってくれたのか、買ってくれなかったのか」を明確にします。
 :: -->
 
-::why-air360
+::problems
 ::
+
+<!-- ::why-air360
+:: -->
 
 ::why-air360-description{imagePath="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" buttonStatus="hidden"}
 #title
