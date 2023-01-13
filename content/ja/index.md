@@ -20,18 +20,24 @@ Air360はWebサイト上の顧客体験を分析するツールです。
 ::
 
 ::what-is-air360
-#subtext
-Hello
-#title
-次世代型アナリティクスツール
-#description
-Air360はWebサイト上の顧客体験を分析するツールです。 データを元にEコマースのコンバージョンレートを迅速に 向上させ、ビジネスの成長に貢献します。
 ::
 
 ::what-air360-offers
 ::
 
-::why-people-choose-air360
+::why-people-choose-air360{imagePath1="/smartDescription.png" imagePath2="/intuitiveDescription.png" imagePath3="/funnel.png"}
+#title1
+スマート
+#description1
+視覚的な情報や事前通知を駆使し、あなたの意思決定をアシスタントします。
+#title2
+直感的
+#description2
+優れた操作性を備え持ち、コードレス&タグレスですぐに分析を始められます。
+#title3
+視覚的
+#description3
+豊富な種類の外部ツールとの連携が可能なオープンエコシステムなアプローチを採用しています。
 ::
 
 ::real-example
