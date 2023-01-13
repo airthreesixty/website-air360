@@ -1,7 +1,7 @@
 ::product-header
 ::
 
-::single-description{imagePath="/smartDescription.png" buttonStatus="hidden"}
+::single-description{imagePath="/smartDescription.png" buttonStatus="hidden" subtextColor="text-secondary-600"}
 #subtext
 スマート
 #title
@@ -10,7 +10,7 @@
 訪問者の目を通して、あなたのウェブサイトを体験してください。ユーザーの問題点や不満な点を素早く発見できます。
 ::
 
-::single-description{imagePath="/intuitiveDescription.png" imageStatus="block" imageStatus2="hidden" buttonStatus="hidden"}
+::single-description{imagePath="/intuitiveDescription.png" imageStatus="block" imageStatus2="hidden" buttonStatus="hidden" subtextColor="text-blue-300"}
 #subtext
 直感的
 #title
@@ -19,7 +19,7 @@
 Chrome Extensionを使えば、Air360は自分のウェブサイトをナビゲートし、簡単なクリックで重要な指標を明らかにすることができます。今までにないアナリティクスを体験してください。
 ::
 
-::single-description{imagePath="/funnel.png" buttonStatus="hidden"}
+::single-description{imagePath="/funnel.png" buttonStatus="hidden" subtextColor="text-orange-300"}
 #subtext
 視覚的
 #title
@@ -38,7 +38,7 @@ Chrome Extensionを使えば、Air360は自分のウェブサイトをナビゲ�
 
 ::
 
-::single-description{imagePath="/dataIntegration.png"  buttonStatus="hidden"}
+::single-description{imagePath="/dataIntegration.png"  buttonStatus="hidden" subtextColor="text-green-300"}
 #subtext
 連携性
 #title
