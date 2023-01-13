@@ -25,7 +25,7 @@ Air360はWebサイト上の顧客体験を分析するツールです。
 ::what-air360-offers
 ::
 
-::why-people-choose-air360{imagePath1="/smartDescription.png" imagePath2="/intuitiveDescription.png" imagePath3="/funnel.png"}
+::why-people-choose-air360{imagePath1="/smartDescription.png" imagePath2="/intuitiveDescription.png" imagePath3="/dataIntegration.png"}
 #title1
 スマート
 #description1
@@ -35,7 +35,7 @@ Air360はWebサイト上の顧客体験を分析するツールです。
 #description2
 優れた操作性を備え持ち、コードレス&タグレスですぐに分析を始められます。
 #title3
-視覚的
+連携性
 #description3
 豊富な種類の外部ツールとの連携が可能なオープンエコシステムなアプローチを採用しています。
 ::
