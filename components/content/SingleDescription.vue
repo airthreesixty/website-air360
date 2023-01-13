@@ -10,7 +10,7 @@
         >
       </div>
       <div class="mr-auto place-self-center md:col-span-7">
-        <p class="text-primary-600 font-bold text-lg my-2">
+        <p class="font-bold text-lg my-2" :class="subtextColor">
           <slot name="subtext" />
         </p>
         <h1
@@ -74,6 +74,10 @@ const props = defineProps({
   buttonStatus: {
     type: String,
     default: 'inline-flex',
+  },
+  subtextColor: {
+    type: String,
+    default: 'text-primary-600',
   },
 })
 </script>
