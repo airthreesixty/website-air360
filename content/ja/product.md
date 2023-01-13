@@ -21,14 +21,24 @@ Chrome Extensionを使えば、Air360は自分のウェブサイトをナビゲ�
 
 ::single-description{imagePath="/funnel.png" buttonStatus="hidden"}
 #subtext
-スマート
+視覚的
 #title
 ファネル
 #description
 ファネルは複雑だとお考えですか？その通りですが、もう違います。Air360でファネルを作るのは簡単すぎるくらい簡単です。
 ::
 
-::single-description{imagePath="/dataIntegration.png" imageStatus="block" imageStatus2="hidden" buttonStatus="hidden"}
+::single-description{imagePath="/sunburst.png" imageStatus="block" imageStatus2="hidden" buttonStatus="hidden"}
+#subtext
+カスタムサンバースト
+#title
+カスタマージャーニー
+#description
+ユーザーがウェブサイト、アプリ上でどのような行動をしているか、その全体像を把握することができます。
+
+::
+
+::single-description{imagePath="/dataIntegration.png"  buttonStatus="hidden"}
 #subtext
 連携性
 #title
