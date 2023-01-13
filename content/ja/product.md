@@ -22,7 +22,7 @@ Features
 #title
 ページ上分析
 #description
-Chrome Extensionを使えば、クリック一つで重要な指標を明らかにすることができます。今までにないアナリティクスを体験してください。
+Chrome拡張機能を使えば、クリック一つで重要な指標を明らかにすることができます。今までにないアナリティクスを体験してください。
 ::
 
 ::single-description{imagePath="/funnel.png" buttonStatus="hidden"}
