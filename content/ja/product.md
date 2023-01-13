@@ -1,4 +1,10 @@
 ::product-header
+#subtext
+Features
+#title
+シンプルな機能。驚きの結果。
+#description
+複雑で終わりのない分析レポートにうんざりしていませんか？Air360は、より多くの収益を上げるための隠れたインサイトを発見するお手伝いをします。
 ::
 
 ::single-description{imagePath="/smartDescription.png" buttonStatus="hidden"}
