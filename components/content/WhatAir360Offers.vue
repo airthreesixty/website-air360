@@ -7,7 +7,7 @@
         <h2
           class="mb-4 text-2xl font-semibold text-black-600 text-center md:text-left md:text-3xl lg:text-4xl dark:text-white"
         >
-          どうあなたのビジネスの手助けをするか
+          <ContentSlot :use="$slots.title" />
         </h2>
         <div
           class="pt-5 pb-3 dark:border-gray-700"
@@ -31,10 +31,10 @@
             </div>
             <div>
               <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white">
-                完全自動トラッキング
+                <ContentSlot :use="$slots.title1" />
               </h3>
               <p class="mb-2 font-light text-gray-500 dark:text-gray-400">
-                ユーザーの全ての行動を追跡するため、価値のあるデータだけを取り出し改善に活かせます。
+                <ContentSlot :use="$slots.description1" />
               </p>
             </div>
           </div>
@@ -57,10 +57,10 @@
             </div>
             <div>
               <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white">
-                問題を根本から解決
+                <ContentSlot :use="$slots.title2" />
               </h3>
               <p class="mb-2 font-light text-gray-500 dark:text-gray-400">
-                どのステップでユーザーが離脱し多くの取引を逃したか明確にすることで、コンバージョンを増やすための改善策を練れます。
+                <ContentSlot :use="$slots.description1" />
               </p>
             </div>
           </div>
@@ -83,10 +83,10 @@
             </div>
             <div>
               <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white">
-                技術的な能力なしで分析可能
+                <ContentSlot :use="$slots.title3" />
               </h3>
               <p class="mb-2 font-light text-gray-500 dark:text-gray-400">
-                必要なのは数行のコードのみ。エンジニアに複雑なタグ付けやコーディングをお願いせずに済むため、時間と人件費のコスト削減になります。
+                <ContentSlot :use="$slots.description3" />
               </p>
             </div>
           </div>

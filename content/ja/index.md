@@ -27,6 +27,20 @@ Air360はWebサイト上の顧客体験を分析するツールです。 デー�
 ::
 
 ::what-air360-offers
+#title
+どうあなたのビジネスを手助けするか
+#title1
+コーディング不要な自動トラッキング
+#description1
+ユーザーの全ての行動を追跡するため、価値のあるデータだけを取り出し改善に活かせます。
+#title2
+問題を根本から解決
+#description2
+どのステップでユーザーが離脱し多くの取引を逃したか明確にすることで、コンバージョンを増やすための改善策を練れます。
+#title3
+技術的な能力なしで分析可能
+#description3
+必要なのは数行のコードのみ。エンジニアに複雑なタグ付けやコーディングをお願いせずに済むため、時間と人件費のコスト削減になります。
 ::
 
 ::why-people-choose-air360{imagePath1="/smartDescription.png" imagePath2="/intuitiveDescription.png" imagePath3="/dataIntegration.png"}
