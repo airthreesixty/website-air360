@@ -1,7 +1,7 @@
 <template>
   <section class="bg-white dark:bg-gray-900">
     <div
-      class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-[1400px] xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
+      class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-[1400px] xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-8"
     >
       <img
         class="w-full md:hidden dark:hidden"

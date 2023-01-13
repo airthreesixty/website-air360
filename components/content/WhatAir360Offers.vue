@@ -1,7 +1,7 @@
 <template>
   <section class="bg-white dark:bg-gray-900">
     <div
-      class="gap-8 items-center pt-20 px-4 mx-auto max-w-screen-[1400px] md:grid md:grid-cols-2 xl:gap-16 md:pt-25"
+      class="gap-8 items-center pt-20 px-4 mx-auto max-w-screen-[1400px] md:grid md:grid-cols-2 xl:gap-16 md:pt-25 lg:px-8"
     >
       <div class="text-gray-500 dark:text-gray-400">
         <h2
