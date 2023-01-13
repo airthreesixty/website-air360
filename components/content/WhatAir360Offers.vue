@@ -60,7 +60,7 @@
                 <ContentSlot :use="$slots.title2" />
               </h3>
               <p class="mb-2 font-light text-gray-500 dark:text-gray-400">
-                <ContentSlot :use="$slots.description1" />
+                <ContentSlot :use="$slots.description2" />
               </p>
             </div>
           </div>
