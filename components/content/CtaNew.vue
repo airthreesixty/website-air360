@@ -2,7 +2,7 @@
   <div class="bg-white">
     <div class="max-w-screen-[1400px] mx-auto pb-16 pt-10 px-4 lg:px-8">
       <div class="overflow-hidden rounded-lg bg-primary-600 shadow-xl lg:grid lg:grid-cols-2 lg:gap-4">
-        <div class="px-6 pt-10 pb-12 sm:px-16 sm:pt-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
+        <div class="px-6 pt-10 pb-12 md:px-16 md:pt-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
           <div class="lg:self-center">
             <h2 class="text-2xl font-bold tracking-tight text-white md:text-3xl lg:text-4xl">
               <span class="block"><ContentSlot :use="$slots.title" /></span>

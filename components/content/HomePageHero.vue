@@ -1,9 +1,9 @@
 <template>
   <section class="bg-white dark:bg-gray-900">
     <div
-      class="grid max-w-screen-[1400px] px-4 py-8 mx-auto md:gap-4 md:py-12 md:grid-cols-2 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12"
+      class="grid max-w-screen-[1400px] px-4 py-12 mx-auto md:gap-4 md:py-12 md:grid-cols-2 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12"
     >
-      <div class="md:hidden lg:mt-0 lg:col-span-5">
+      <div class="pb-6 md:hidden lg:mt-0 lg:col-span-5">
         <img
           src="https://www.air360.io/wp-content/uploads/2022/08/hero-illustration.webp"
           alt="mockup"
@@ -39,7 +39,7 @@
         >
           <ContentSlot :use="$slots.description" />
         </p>
-        <div class="md:flex md:items-center">
+        <div class="pt-3 md:flex md:items-center">
           <button
             class="text-white bg-primary-600 text-base font-bold w-full mt-5 block transition ease-in-out duration-300 hover:bg-primary-700 font-medium rounded-lg text-sm px-6 py-3 mr-2 mb-2 md:w-1/2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
           >
