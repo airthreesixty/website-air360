@@ -14,7 +14,7 @@
           <slot name="subtext" />
         </p>
         <h1
-          class="mb-4 text-xl tracking-tight font-semibold text-black-600 text-left md:text-2xl lg:text-3xl dark:text-white"
+          class="mb-4 text-xl font-semibold text-black-600 text-left hello md:text-2xl lg:text-3xl dark:text-white"
         >
           <slot name="title" />
         </h1>
@@ -81,3 +81,14 @@ const props = defineProps({
   },
 })
 </script>
+
+<!-- <style>
+.hello::after {
+  content:"aa";
+}
+</style> -->
+<style lang="postcss">
+.hello {
+  @apply after:content-[''] after:block after:w-25 after:h-[5px] after:rounded-[7px] after:static after:mt-[30px] after:bg-primary-600;
+}
+</style>
