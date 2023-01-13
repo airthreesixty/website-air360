@@ -1,15 +1,15 @@
 <template>
-  <section :class="`bg-${props.bgColor} dark:bg-gray-900`">
+  <section class="dark:bg-gray-900" :class="props.bgColor">
     <div
       class="grid max-w-screen-[1400px] px-4 py-10 mx-auto md:gap-8 md:py-16 md:grid-cols-12 lg:py-18 lg:px-8"
     >
       <div :class="`md:${props.imageStatus} md:mt-0 md:col-span-7 md:flex lg:w-11/12`">
         <img
-          :src="imagePath"
+          :src="props.imagePath"
           alt="mockup"
         >
       </div>
-      <div class="mr-auto place-self-center md:col-span-5">
+      <div class="md:col-span-5">
         <p class="font-bold text-base my-2 lg:text-lg" :class="subtextColor">
           <slot name="subtext" />
         </p>
@@ -25,7 +25,7 @@
         </p>
         <a
           href="#"
-          class="items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-blue-400 transition ease-in-out duration-300 hover:bg-blue-500 dark:focus:ring-primary-900"
+          class="items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-blue-400 transition ease-in-out duration-300 hover:bg-blue-500"
           :class="buttonStatus"
         >
           {{ $t("more") }}
@@ -45,7 +45,7 @@
       </div>
       <div :class="`hidden md:${props.imageStatus2} md:mt-0 md:col-span-7 md:flex lg:w-11/12`">
         <img
-          :src="imagePath"
+          :src="props.imagePath"
           alt="mockup"
         >
       </div>
