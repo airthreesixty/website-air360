@@ -39,7 +39,7 @@
         <ul
           class="flex flex-col p-4 mt-4 border items-center border-none lg:flex-row lg:space-x-8 lg:mt-0 lg:text-base lg:font-medium lg:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
         >
-          <li class="py-2">
+          <!-- <li class="py-2">
             <NuxtLink :to="$localePath('/test')">
               <div
                 class="menu__link"
@@ -56,7 +56,7 @@
                 Why Air360
               </div>
             </NuxtLink>
-          </li>
+          </li> -->
           <li class="py-2">
             <NuxtLink :to="$localePath('/product')">
               <div
@@ -67,15 +67,15 @@
             </NuxtLink>
           </li>
           <li class="py-2">
-            <NuxtLink :to="$localePath('/inspiration')">
+            <NuxtLink :to="$localePath('/blog')">
               <div
                 class="menu__link"
               >
-                {{ $t("inspiration") }}
+                {{ $t("blog") }}
               </div>
             </NuxtLink>
           </li>
-          <li class="py-2">
+          <!-- <li class="py-2">
             <NuxtLink :to="$localePath('/price')">
               <div
                 class="menu__link"
@@ -83,7 +83,7 @@
                 {{ $t("pricing") }}
               </div>
             </NuxtLink>
-          </li>
+          </li> -->
           <li class="py-2">
             <a
               href="https://beta.air360.io/"

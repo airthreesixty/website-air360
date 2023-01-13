@@ -27,7 +27,7 @@
           </div>
           <div class="pt-8">
             <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white">
-              必要なデータが不明
+              あ
             </h3>
             <p class="mb-2 font-light text-gray-500 dark:text-gray-400">
               See the packages your project depends on, the repositories that

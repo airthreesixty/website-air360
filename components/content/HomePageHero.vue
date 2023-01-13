@@ -24,7 +24,7 @@
       </div> -->
       <div class="mr-auto place-self-center lg:col-span-7 md:flex-1">
         <p
-          class="max-w-2xl my-4 text-gray-500 bg-light-100tracking-tight leading-none md:text-base lg:text-xl xl:text-xl dark:text-white"
+          class="max-w-2xl my-4 text-gray-500 leading-none md:text-base lg:text-xl dark:text-white"
         >
           <ContentSlot :use="$slots.subtitle" />
         </p>
