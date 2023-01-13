@@ -7,7 +7,7 @@
         <ContentSlot :use="$slots.title" />
       </h2>
       <div
-        class="grid grid-cols-2 gap-12 text-gray-500 md:grid-cols-3 lg:grid-cols-6 dark:text-gray-400"
+        class="grid grid-cols-2 gap-18 gap-x-12 text-gray-500 md:grid-cols-3 lg:grid-cols-6 dark:text-gray-400"
       >
         <div class="flex justify-center items-center">
           <img
