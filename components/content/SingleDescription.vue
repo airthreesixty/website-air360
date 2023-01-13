@@ -3,7 +3,7 @@
     <div
       class="grid max-w-screen-[1400px] px-4 py-8 mx-auto md:gap-8 md:py-16 md:grid-cols-12"
     >
-      <div :class="`md:${props.imageStatus} md:mt-0 md:col-span-7 md:flex`">
+      <div :class="`md:${props.imageStatus} md:mt-0 md:col-span-7 md:flex lg:w-11/12`">
         <img
           :src="imagePath"
           alt="mockup"
@@ -43,7 +43,7 @@
           </svg>
         </a>
       </div>
-      <div :class="`hidden md:${props.imageStatus2} md:mt-0 md:col-span-7 md:flex`">
+      <div :class="`hidden md:${props.imageStatus2} md:mt-0 md:col-span-7 md:flex lg:w-11/12`">
         <img
           :src="imagePath"
           alt="mockup"
