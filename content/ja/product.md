@@ -13,7 +13,8 @@ Features
 #title
 セッションリプレイ
 #description
-訪問者の目を通して、あなたのウェブサイトを体験してください。ユーザーの問題点や不満な点を素早く発見できます。
+実際の画面上でユーザーが行った動きを確認でき、
+ユーザーが感じる問題点や不満な点を素早く発見できます。
 ::
 
 ::single-description{imagePath="/intuitiveDescription.png" imageStatus="block" imageStatus2="hidden" buttonStatus="hidden"}
