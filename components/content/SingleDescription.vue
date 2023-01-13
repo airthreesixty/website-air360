@@ -1,7 +1,7 @@
 <template>
   <section :class="`bg-${props.bgColor} dark:bg-gray-900`">
     <div
-      class="grid max-w-screen-[1400px] px-4 py-8 mx-auto md:gap-8 md:py-16 md:grid-cols-12"
+      class="grid max-w-screen-[1400px] px-4 py-10 mx-auto md:gap-8 md:py-16 md:grid-cols-12 lg:py-18"
     >
       <div :class="`md:${props.imageStatus} md:mt-0 md:col-span-7 md:flex lg:w-11/12`">
         <img
