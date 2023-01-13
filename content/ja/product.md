@@ -22,7 +22,7 @@ Features
 #title
 ページ上分析
 #description
-Chrome拡張機能を使えば、クリック一つで重要な指標を明らかにすることができます。今までにないアナリティクスを体験してください。
+Chrome拡張機能を使えば、クリック一つでコンバージョンに影響を与える重要な要素を明らかにできます。今までにないアナリティクスを体験してください。
 ::
 
 ::single-description{imagePath="/funnel.png" buttonStatus="hidden"}
@@ -31,7 +31,7 @@ Chrome拡張機能を使えば、クリック一つで重要な指標を明ら�
 #title
 ファネル
 #description
-どのステップで多くのユーザーが離脱してしまったか明らかにできます。サイト上の問題を探り改善へ繋げましょう。
+ファネルはどのステップで多くのユーザーが離脱してしまったかを分析するのに便利な機能です。サイト上の問題を探り改善へ繋げられます。
 ::
 
 ::single-description{imagePath="/sunburst.png" imageStatus="block" imageStatus2="hidden" buttonStatus="hidden"}
@@ -40,7 +40,7 @@ Chrome拡張機能を使えば、クリック一つで重要な指標を明ら�
 #title
 カスタマージャーニー
 #description
-ユーザーがウェブサイト、アプリ上でどのような行動をしているか、その全体像を把握できます。
+ユーザーがウェブサイト、アプリ上でどのような経路を辿っているか、その全体像を把握できます。
 
 ::
 
