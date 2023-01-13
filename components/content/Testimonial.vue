@@ -5,7 +5,7 @@
       background-image: url('https://www.air360.io/wp-content/uploads/2022/08/testimonials-bg-1.svg');
     "
   >
-    <div class="mx-auto max-w-screen-[1400px] px-4 py-20 lg:px-8">
+    <div class="mx-auto max-w-screen-[1400px] px-4 py-16 lg:px-8 lg:pb-20">
       <div class="lg:flex lg:items-center">
         <div class="hidden lg:block lg:flex-shrink-0">
           <img

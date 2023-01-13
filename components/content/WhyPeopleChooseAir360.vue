@@ -4,8 +4,8 @@
       <h2 class="text-2xl font-semibold text-center text-black-600 md:text-3xl lg:text-4xl">
         <ContentSlot :use="$slots.title" />
       </h2>
-      <div class="mt-10 space-y-12 md:grid md:grid-cols-3 md:space-y-0 xl:mt-14">
-        <div>
+      <div class="mt-12 space-y-12 md:grid md:grid-cols-3 md:space-y-0 xl:mt-14">
+        <div class="pb-6 mb:pb-0">
           <div aria-hidden="true" class="aspect-w-3 aspect-h-2 overflow-hidden lg:aspect-w-5 lg:aspect-h-6">
             <img :src="props.imagePath1" class="h-[250px] w-full object-cover object-center">
           </div>
@@ -37,7 +37,7 @@
             </div>
           </div>
         </div>
-        <div>
+        <div class="pb-6 mb:pb-0">
           <div aria-hidden="true" class="aspect-w-3 aspect-h-2 overflow-hidden lg:aspect-w-5 lg:aspect-h-6">
             <img :src="props.imagePath2" class="h-[250px] w-full object-cover object-center">
           </div>
