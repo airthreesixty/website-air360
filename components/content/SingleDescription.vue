@@ -10,7 +10,7 @@
         >
       </div>
       <div class="mr-auto place-self-center md:col-span-5">
-        <p class="font-bold text-lg my-2" :class="subtextColor">
+        <p class="font-bold text-base my-2 lg:text-lg" :class="subtextColor">
           <slot name="subtext" />
         </p>
         <h1
