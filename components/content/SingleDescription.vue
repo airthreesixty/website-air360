@@ -3,18 +3,18 @@
     <div
       class="grid max-w-screen-[1400px] px-4 py-8 mx-auto md:gap-8 xl:gap-0 md:py-16 md:grid-cols-12"
     >
-      <div :class="`md:${props.imageStatus} md:mt-0 md:col-span-5 md:flex`">
+      <div :class="`md:${props.imageStatus} md:mt-0 md:col-span-7 md:flex`">
         <img
           :src="imagePath"
           alt="mockup"
         >
       </div>
-      <div class="mr-auto place-self-center md:col-span-7">
+      <div class="mr-auto place-self-center md:col-span-5">
         <p class="font-bold text-lg my-2" :class="subtextColor">
           <slot name="subtext" />
         </p>
         <h1
-          class="mb-4 text-xl font-semibold text-black-600 text-left hello md:text-2xl lg:text-3xl dark:text-white"
+          class="mb-4 mt-[22px] text-xl font-semibold text-black-600 text-left border-deco md:text-2xl lg:text-3xl dark:text-white"
         >
           <slot name="title" />
         </h1>
@@ -43,7 +43,7 @@
           </svg>
         </a>
       </div>
-      <div :class="`hidden md:${props.imageStatus2} md:mt-0 md:col-span-5 md:flex`">
+      <div :class="`hidden md:${props.imageStatus2} md:mt-0 md:col-span-7 md:flex`">
         <img
           :src="imagePath"
           alt="mockup"
@@ -82,13 +82,8 @@ const props = defineProps({
 })
 </script>
 
-<!-- <style>
-.hello::after {
-  content:"aa";
-}
-</style> -->
 <style lang="postcss">
-.hello {
+.border-deco {
   @apply after:content-[''] after:block after:w-25 after:h-[5px] after:rounded-[7px] after:static after:mt-[30px] after:bg-primary-600;
 }
 </style>
