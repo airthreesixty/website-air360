@@ -2,9 +2,9 @@
   <div class="bg-white">
     <div class="mx-auto max-w-screen-[1400px] py-16 px-4 md:py-24 lg:px-8">
       <div class="text-center">
-        <h2 class="text-lg font-semibold text-primary-600">
+        <p class="text-lg font-semibold text-primary-600 lg:text-xl">
           Features
-        </h2>
+        </p>
         <h1
           class="mt-1 text-2xl font-semibold text-black-600 tracking-tight md:text-3xl lg:text-4xl"
         >
