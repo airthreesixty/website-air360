@@ -6,7 +6,7 @@
         <h2 class="mt-2 text-2xl font-semibold text-black-600 md:text-3xl lg:text-4xl">
           <ContentSlot :use="$slots.title" />
         </h2>
-        <p class="mx-auto mt-5 max-w-prose text-md text-gray-500 lg:text-xl">
+        <p class="mx-auto mt-5 max-w-prose text-md text-gray-500 lg:text-xl xl:leading-8">
           <ContentSlot :use="$slots.description" />
         </p>
       </div>

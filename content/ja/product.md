@@ -31,7 +31,7 @@ Chrome拡張機能を使えば、クリック一つでコンバージョンに�
 #title
 ファネル
 #description
-ファネルはどのステップで多くのユーザーが離脱してしまったかを分析するのに便利な機能です。サイト上の問題を探り改善へ繋げられます。
+ファネルはどのステップで多くのユーザーが離脱してしまったかを分析するのに便利な機能です。あなたのオリジナルのファネルを作成できます。
 ::
 
 ::single-description{imagePath="/sunburst.png" imageStatus="block" imageStatus2="hidden" buttonStatus="hidden"}

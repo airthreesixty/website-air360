@@ -10,7 +10,7 @@
         >
           <ContentSlot :use="$slots.title" />
         </h1>
-        <p class="mx-auto mt-5 max-w-xl text-gray-500 md:text-base lg:text-xl">
+        <p class="mx-auto mt-5 max-w-xl text-gray-500 md:text-base lg:text-xl xl:leading-8">
           <ContentSlot :use="$slots.description" />
         </p>
       </div>

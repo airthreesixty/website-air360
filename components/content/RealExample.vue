@@ -15,7 +15,7 @@
           <ContentSlot :use="$slots.title" />
         </h2>
         <p
-          class="mb-6 font-light text-gray-500 md:text-base lg:text-xl dark:text-gray-400"
+          class="mb-6 font-light text-gray-500 md:text-base lg:text-xl xl:leading-8 dark:text-gray-400"
         >
           <ContentSlot :use="$slots.description" />
         </p>
