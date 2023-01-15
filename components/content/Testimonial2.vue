@@ -15,7 +15,7 @@
         </svg>
         <blockquote>
           <p class="text-2xl font-medium text-gray-900 dark:text-white">
-            "急成長を目指す企業にとって、コンバージョン率最適化（CRO）はまさに必需品です。CROは全ての訪問者の価値を飛躍的に高めるため、最も重要なマーケティング活動です。"
+            “急成長を目指す企業にとって、コンバージョン率最適化（CRO）はまさに必需品です。CROは全ての訪問者の価値を飛躍的に高めるため、最も重要なマーケティング活動です。”
           </p>
         </blockquote>
         <figcaption class="flex items-center justify-center mt-6 space-x-3">
