@@ -18,24 +18,24 @@
     </SingleDescription>
     <SingleDescription image-path="/boostConversion.png" button-status="hidden" image-status="block" image-status2="hidden">
       <template #subtext>
-        <ContentSlot :use="$slots.subtext1" />
+        <ContentSlot :use="$slots.subtext2" />
       </template>
       <template #title>
-        <ContentSlot :use="$slots.title1" />
+        <ContentSlot :use="$slots.title2" />
       </template>
       <template #description>
-        <ContentSlot :use="$slots.description1" />
+        <ContentSlot :use="$slots.description2" />
       </template>
     </SingleDescription>
     <SingleDescription image-path="/boostConversion.png" button-status="hidden">
       <template #subtext>
-        <ContentSlot :use="$slots.subtext1" />
+        <ContentSlot :use="$slots.subtext3" />
       </template>
       <template #title>
-        <ContentSlot :use="$slots.title1" />
+        <ContentSlot :use="$slots.title3" />
       </template>
       <template #description>
-        <ContentSlot :use="$slots.description1" />
+        <ContentSlot :use="$slots.description3" />
       </template>
     </SingleDescription>
   </section>
