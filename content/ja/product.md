@@ -13,7 +13,7 @@ Features
 #title
 セッションリプレイ
 #description
-ユーザーのウェブ上の行動を動画で確認し、ユーザーが持つ不満を素早く発見できます。スクリーニングすることで、気になる動きをする特定のユーザーに絞れます。
+ユーザーのウェブ上の行動を動画で確認し、ユーザーが持つ不満を素早く発見できます。スクリーニングすることで、あなたの気になる特定のユーザーに絞れます。
 ::
 
 ::single-description{imagePath="/intuitiveDescription.png" imageStatus="block" imageStatus2="hidden" buttonStatus="hidden"}
