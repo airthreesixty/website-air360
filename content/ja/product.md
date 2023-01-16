@@ -13,7 +13,7 @@ Features
 #title
 セッションリプレイ
 #description
-実際のユーザーのウェブ上の行動を動画で確認し、ユーザーが持つ不満を素早く発見できます。
+ユーザーのウェブ上の行動を動画で確認し、ユーザーが持つ不満を素早く発見できます。スクリーニングすることで、気になる動きをする特定のユーザーに絞れます。
 ::
 
 ::single-description{imagePath="/intuitiveDescription.png" imageStatus="block" imageStatus2="hidden" buttonStatus="hidden"}
@@ -40,8 +40,7 @@ Chrome拡張機能を使えば、クリック一つでコンバージョンに�
 #title
 カスタマージャーニー
 #description
-ユーザーがウェブサイト、アプリ上でどのような経路を辿っているか、その全体像を把握できます。
-
+ウェブサイト、アプリ上でユーザーが商品やサービスに出会い購入に至るまで、どのような経路を辿っているか、その全体像を把握できます。
 ::
 
 ::single-description{imagePath="/dataIntegration.png"  buttonStatus="hidden"}
@@ -50,7 +49,7 @@ Chrome拡張機能を使えば、クリック一つでコンバージョンに�
 #title
 豊富な統合機能
 #description
-豊富な種類の外部ツールとの連携が可能で、これまでのアナリティクスを更に効率化します。
+豊富な種類のマーケティング、分析ツールとの連携が可能で、これまでのアナリティクスを更に効率化します。
 ::
 
 ::testimonial2
