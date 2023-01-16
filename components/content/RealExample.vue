@@ -5,7 +5,7 @@
     >
       <img
         class="w-full md:hidden dark:hidden"
-        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg"
+        src="https://media-server.clubmed.com/image/jpeg/1024/auto/crop/center/70/https%3A%2F%2Fns.clubmed.com%2Fesap%2F2022%2F206%2Fimg%2Foffer%2FW23.jpg"
         alt="dashboard image"
       >
       <div class="mt-4 md:mt-0">
@@ -64,7 +64,7 @@
       </div>
       <img
         class="hidden w-full md:block dark:hidden"
-        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg"
+        src="https://media-server.clubmed.com/image/jpeg/1024/auto/crop/center/70/https%3A%2F%2Fns.clubmed.com%2Fesap%2F2022%2F206%2Fimg%2Foffer%2FW23.jpg"
         alt="dashboard image"
       >
     </div>
