@@ -27,7 +27,7 @@
         <ContentSlot :use="$slots.description2" />
       </template>
     </SingleDescription>
-    <SingleDescription image-path="/boostConversion.png" button-status="hidden">
+    <SingleDescription image-path="/dataIntegration.png" button-status="hidden">
       <template #subtext>
         <ContentSlot :use="$slots.subtext3" />
       </template>
