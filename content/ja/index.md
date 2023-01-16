@@ -38,7 +38,7 @@ Air360はウェブサイト上の顧客体験を分析するツールです。 �
 #title3
 技術的な能力なしで分析可能
 #description3
-必要なのは数行のコードのみ。エンジニアに複雑なタグ付けやコーディングをお願いせずに済むため、時間と人件費のコスト削減になります。
+必要なのは初めの数行のコードのみ。エンジニアに複雑なタグ付けやコーディングをお願いせずに済むため、時間と人件費のコスト削減になります。
 ::
 
 ::why-people-choose-air360{imagePath1="/smartDescription.png" imagePath2="/intuitiveDescription.png" imagePath3="/dataIntegration.png"}

@@ -1,5 +1,5 @@
 <template>
-  <div class="overflow-hidden bg-white py-6 lg:py-10">
+  <section class="overflow-hidden bg-white py-6 lg:py-10">
     <div class="mx-auto max-w-screen-[1400px] px-4 text-center lg:px-8">
       <div>
         <!-- <h2 class="text-md font-semibold text-primary-600 lg:text-xl">次世代型UXアナリティクスツール</h2> -->
@@ -14,7 +14,7 @@
         <img class="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5" src="https://tailwindui.com/img/component-images/top-nav-with-multi-column-layout-screenshot.jpg" alt="">
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- <SingleDescription image-path="/boostConversion.png" button-status="hidden">
     <template #subtext>
