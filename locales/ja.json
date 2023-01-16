@@ -17,5 +17,12 @@
   "company": "企業",
   "help": "ヘルプ",
   "request-demo": "デモのリクエスト",
-  "more": "もっと詳しく"
+  "more": "もっと詳しく",
+  "tag": {
+    "all": "All TODO",
+    "marketing": "Marketing TODO",
+    "ux": "UX TODO",
+    "other": "Other TODO",
+    "ecommerce": "E-commerce TODO"
+  }
 }

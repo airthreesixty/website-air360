@@ -34,6 +34,11 @@ export default defineNuxtConfig({
     ],
   },
 
+  // dayjs: {
+  //   locales: ['ja', 'en'],
+  //   defaultLocale: ['ja'],
+  // },
+
   css: [
     '@fortawesome/fontawesome-svg-core/styles.css',
     '~/assets/css/style.css',
