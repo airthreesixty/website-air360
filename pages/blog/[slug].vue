@@ -18,7 +18,7 @@
               <span
                 v-for="(tag, index) in data.tags"
                 :key="index"
-                class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 mr-2 rounded dark:bg-purple-200 dark:text-purple-900"
+                class="bg-blue-100 text-blue-400 text-xs font-semibold px-2.5 py-0.5 mr-2 rounded dark:bg-purple-200 dark:text-purple-900"
               >{{ $t(`tag.${tag}`) }}</span>
               <header class="my-4 lg:mb-6 not-format">
                 <address class="flex items-center justify-between mb-6 not-italic">

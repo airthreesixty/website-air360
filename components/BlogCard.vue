@@ -13,7 +13,7 @@
       <span
         v-for="(tag, index) in data.tags"
         :key="index"
-        class="bg-purple-100 text-purple-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-purple-200 dark:text-purple-900"
+        class="bg-blue-100 text-blue-400 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-purple-200 dark:text-purple-900"
       >{{ $t(`tag.${tag}`) }}</span>
       <h2
         class="my-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
