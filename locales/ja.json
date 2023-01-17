@@ -19,10 +19,10 @@
   "request-demo": "デモのリクエスト",
   "more": "もっと詳しく",
   "tag": {
-    "all": "All TODO",
-    "marketing": "Marketing TODO",
-    "ux": "UX TODO",
-    "other": "Other TODO",
-    "ecommerce": "E-commerce TODO"
+    "all": "全カテゴリ",
+    "marketing": "マーケティング",
+    "ux": "UX",
+    "other": "その他",
+    "ecommerce": "eコマース"
   }
 }
