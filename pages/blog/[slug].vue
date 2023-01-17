@@ -15,8 +15,13 @@
             <article
               class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert"
             >
-              <header class="mb-4 lg:mb-6 not-format">
-                <address class="flex items-center mb-6 not-italic">
+              <span
+                v-for="(tag, index) in data.tags"
+                :key="index"
+                class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 mr-2 rounded dark:bg-purple-200 dark:text-purple-900"
+              >{{ $t(`tag.${tag}`) }}</span>
+              <header class="my-4 lg:mb-6 not-format">
+                <address class="flex items-center justify-between mb-6 not-italic">
                   <div
                     class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white"
                   >
@@ -31,11 +36,11 @@
                         rel="author"
                         class="text-xl font-bold text-gray-900 dark:text-white"
                       >Jese Leos</a>
-                      <p
+                      <!-- <p
                         class="text-base font-light text-gray-500 dark:text-gray-400"
                       >
                         Graphic Designer, educator & CEO Flowbite
-                      </p>
+                      </p> -->
                       <p
                         class="text-base font-light text-gray-500 dark:text-gray-400"
                       >
@@ -43,6 +48,74 @@
                       </p>
                     </div>
                   </div>
+                  <aside aria-label="Share social media">
+                    <div class="not-format flex items-center">
+                      <p class="text-primary-600">Share:</p>
+                      <button data-tooltip-target="tooltip-linkedin" class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button">
+                        <a
+                          href="#"
+                          class="text-primary-600 transition ease-in-out duration-300 hover:text-primary-700 dark:hover:text-white"
+                        >
+                          <fa-icon class="fa-xl" :icon="['fab', 'linkedin']" />
+                          <span class="sr-only">LinkedIn page</span>
+                        </a>
+                      </button>
+                      <div id="tooltip-linkedin" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
+                        Share on Linkedin
+                        <div class="tooltip-arrow" data-popper-arrow />
+                      </div>
+                      <button data-tooltip-target="tooltip-twitter" class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button"> 
+                        <a
+                          href="#"
+                          class="text-primary-600 transition ease-in-out duration-300 hover:text-primary-700 dark:hover:text-white"
+                        >
+                          <fa-icon class="fa-xl" :icon="['fab', 'twitter']" />
+                          <span class="sr-only">LinkedIn page</span>
+                        </a>
+                      </button>
+                      <div id="tooltip-twitter" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
+                        Share on Twitter
+                        <div class="tooltip-arrow" data-popper-arrow />
+                      </div>
+                      <button data-tooltip-target="tooltip-facebook" class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button">
+                        <a
+                          href="#"
+                          class="text-primary-600 transition ease-in-out duration-300 hover:text-primary-700 dark:hover:text-white"
+                        >
+                          <fa-icon class="fa-xl" :icon="['fab', 'facebook']" />
+                          <span class="sr-only">Facebook page</span>
+                        </a>
+                      </button>
+                      <div id="tooltip-facebook" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
+                        Share on Facebook
+                        <div class="tooltip-arrow" data-popper-arrow />
+                      </div>
+                      <button data-tooltip-target="tooltip-link" class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button"> 
+                        <a
+                          href="#"
+                          class="text-primary-600 transition ease-in-out duration-300 hover:text-primary-700 dark:hover:text-white"
+                        >
+                          <fa-icon class="fa-xl" :icon="['fas', 'link']" />
+                          <span class="sr-only">Link page</span>
+                        </a>
+                      </button>
+                      <div id="tooltip-link" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
+                        Share link
+                        <div class="tooltip-arrow" data-popper-arrow/>
+                      </div>
+                      <!-- Dropdown menu -->
+                      <div id="dropdownDotsHorizontal" class="hidden z-10 w-36 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600">
+                        <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownMenuIconHorizontalButton">
+                          <li>
+                            <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Add to collection</a>
+                          </li>
+                          <li>
+                            <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Report</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </aside>
                 </address>
                 <h1
                   class="mb-4 text-3xl font-semibold text-black-600 lg:mb-6 lg:text-4xl dark:text-white"
