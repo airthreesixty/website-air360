@@ -1,4 +1,3 @@
-
 <template>
   <main v-if="data" class="prose">
     <ContentRenderer :value="data">
