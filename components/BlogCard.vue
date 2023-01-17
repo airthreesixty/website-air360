@@ -38,7 +38,7 @@
                 .locale($i18n.locale._value)
                 .format("DD MMMM YY")
             }}
-            · 16 min read
+            · {{ data.readingTime }} min
           </div>
         </div>
       </div>
