@@ -39,17 +39,13 @@
                       <p
                         class="text-base font-light text-gray-500 dark:text-gray-400"
                       >
-                        <time
-                          pubdate
-                          datetime="2022-02-08"
-                          title="February 8th, 2022"
-                        >Feb. 8, 2022</time>
+                        <time>{{ data.published }}</time>
                       </p>
                     </div>
                   </div>
                 </address>
                 <h1
-                  class="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white"
+                  class="mb-4 text-3xl font-semibold text-black-600 lg:mb-6 lg:text-4xl dark:text-white"
                 >
                   {{ data.title }}
                 </h1>
