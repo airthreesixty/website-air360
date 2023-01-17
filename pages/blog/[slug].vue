@@ -2,24 +2,18 @@
   <div>
     <main v-if="data">
       <ContentRenderer :value="data">
-        <!-- <nuxt-link
-          v-for="(tag, index) in data.tags"
-          :key="index"
-          :to="$localePath(`/blog/tag/${tag}`)"
-        >
-          {{ $t(`tag.${tag}`) }}
-        </nuxt-link> -->
         <main class="pb-16 lg:pb-24 bg-white dark:bg-gray-900">
           <img :src="data.image" alt="" class="h-90 mb-10 w-full object-cover">
           <div class="flex justify-between px-4 mx-auto max-w-screen-xl">
             <article
               class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert"
             >
-              <span
+              <nuxt-link
                 v-for="(tag, index) in data.tags"
                 :key="index"
                 class="bg-blue-100 text-blue-400 text-xs font-semibold px-2.5 py-0.5 mr-2 rounded dark:bg-purple-200 dark:text-purple-900"
-              >{{ $t(`tag.${tag}`) }}</span>
+                :to="$localePath(`/blog/tag/${tag}`)"
+              >{{ $t(`tag.${tag}`) }}</nuxt-link>
               <header class="my-4 lg:mb-6 not-format">
                 <address class="flex items-center justify-between mb-6 not-italic">
                   <div
