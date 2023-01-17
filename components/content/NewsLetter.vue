@@ -1,0 +1,79 @@
+<template>
+  <div
+    id="newsletter-modal"
+    class="w-full py-20 md:h-full"
+  >
+    <div class="relative p-4 w-full max-w-screen-[1400px] h-full rounded-lg md:h-auto">
+      <!-- Modal content -->
+      <div
+        class="flex relative items-center bg-white rounded-lg shadow dark:bg-gray-800"
+      >
+        <div>
+          <!-- Modal body -->
+          <div class="p-6 pt-4">
+            <h3
+              class="mb-2 text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
+            >
+              Join our Newsletter
+            </h3>
+            <p
+              class="mb-4 text-base leading-relaxed text-gray-500 dark:text-gray-400"
+            >
+              Get started with our monthly newsletter for helpful tips on how to
+              run your business smoothly.
+            </p>
+            <form action="#">
+              <div
+                class="items-center mx-auto space-y-4 max-w-screen-sm sm:flex sm:space-y-0"
+              >
+                <div class="relative mr-3 w-full">
+                  <label
+                    for="email"
+                    class="hidden mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300"
+                  >Email address</label>
+                  <div
+                    class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
+                  >
+                    <svg
+                      class="w-5 h-5 text-gray-500 dark:text-gray-400"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                      />
+                      <path
+                        d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                      />
+                    </svg>
+                  </div>
+                  <input
+                    id="email"
+                    class="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                    placeholder="Your email"
+                    type="email"
+                    required
+                  >
+                </div>
+                <div>
+                  <button
+                    type="submit"
+                    class="py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg cursor-pointer bg-primary-600 hover:bg-primary-700 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                  >
+                    Subscribe
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <img
+          src="https://www.air360.io/wp-content/uploads/2022/05/mochi-binoculars.png"
+          class="hidden rounded-r-lg md:flex h-30"
+          alt="office"
+        >
+      </div>
+    </div>
+  </div>
+</template>

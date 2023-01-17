@@ -1,15 +1,18 @@
 <template>
-  <main v-if="data" class="prose">
-    <ContentRenderer :value="data">
-      <nuxt-link v-for="(tag, index) in data.tags" :key="index" :to="$localePath(`/blog/tag/${tag}`)">
-        {{ $t(`tag.${tag}`) }}
-      </nuxt-link>
-      <h1>
-        {{ data.title }}
-      </h1>
-      <ContentRendererMarkdown :value="data" />
-    </ContentRenderer>
-  </main>
+  <div>
+    <main v-if="data" class="prose">
+      <ContentRenderer :value="data">
+        <nuxt-link v-for="(tag, index) in data.tags" :key="index" :to="$localePath(`/blog/tag/${tag}`)">
+          {{ $t(`tag.${tag}`) }}
+        </nuxt-link>
+        <h1>
+          {{ data.title }}
+        </h1>
+        <ContentRendererMarkdown :value="data" />
+      </ContentRenderer>
+    </main>
+    <NewsLetter />
+  </div>
 </template>
 
 <script setup lang="ts">
