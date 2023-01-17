@@ -4,6 +4,7 @@
  */
 const getPathWithoutLocale = (path: string) => {
   const matches = path.match(/^(\/(en|ja))?(.*)/)
+
   return matches ? matches[3] : ''
 }
 
