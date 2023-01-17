@@ -3,14 +3,14 @@
     id="newsletter-modal"
     class="w-full py-20 md:h-full"
   >
-    <div class="relative p-4 w-full max-w-screen-[1400px] h-full rounded-lg md:h-auto">
+    <div class="p-4 w-full max-w-screen-[1400px] h-full rounded-lg md:h-auto">
       <!-- Modal content -->
       <div
-        class="flex relative items-center bg-white rounded-lg shadow dark:bg-gray-800"
+        class="flex items-center bg-white rounded-lg shadow dark:bg-gray-800"
       >
         <div>
           <!-- Modal body -->
-          <div class="p-6 pt-4">
+          <div class="p-6 lg:p-10">
             <h3
               class="mb-2 text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
             >
