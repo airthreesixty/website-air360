@@ -4,7 +4,7 @@ published: 2023-1-17
 tags: 
   - other
 readingTime: 7
-image: /path/to/image
+image: https://www.air360.io/wp-content/uploads/2022/05/Air360-Leverage-CRO-e1661920168596-1024x543.jpeg
 ---
 
 多くの小売業やeコマース企業が、変化する顧客ニーズやサプライチェーンに関すること

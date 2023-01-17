@@ -9,8 +9,7 @@
             Our Blog
           </h2>
           <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">
-            We use an agile approach to test assumptions and connect with the
-            needs of your audience early and often.
+            Inspiration for conversion heroes
           </p>
         </div>
         <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">

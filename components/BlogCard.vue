@@ -6,7 +6,7 @@
       <a href="#">
         <img
           class="mb-5 rounded-lg"
-          src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/blog/office-laptops.png"
+          :src="data.image"
           alt="office laptop working"
         >
       </a>
