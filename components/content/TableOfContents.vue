@@ -1,13 +1,36 @@
 <template>
-  <ol>
-    <li>aaaa</li>
-    <li>iii</li>
-    <li>uuu</li>
-  </ol>
+  <div class="flex justify-center border-2 px-1 my-16 py-5 rounded-md">
+    <div class="">
+      <h2 class="text-center">
+        目次
+      </h2>
+      <ul v-for="(title, index) in props.paragraphTitles" :key="index">
+        <li>
+          <nuxt-link :to="`#${title.id}`">
+            {{ title.text }}
+          </nuxt-link>
+        </li>
+        <div v-if="title.children">
+          <li
+            v-for="(subTitle, num) in title.children"
+            :key="num"
+            class="pl-11"
+          >
+            <nuxt-link :to="`#${subTitle.id}`">
+              {{ subTitle.text }}
+            </nuxt-link>
+          </li>
+        </div>
+      </ul>
+    </div>
+  </div>
 </template>
 
-<!-- bring h2 and h3 -->
-
-<!-- <script setup>
-const { h2 } = await this.$content
-</script> -->
+<script setup>
+const props = defineProps({
+  paragraphTitles: {
+    type: String,
+    required: true,
+  },
+})
+</script>
