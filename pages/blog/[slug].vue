@@ -114,7 +114,9 @@
               <div class="prose">
                 <div class="flex justify-center border-2 px-1 my-16 py-5">
                   <div class="">
-                    <h2 class="text-center">目次</h2>
+                    <h2 class="text-center">
+                      目次
+                    </h2>
                     <ul v-for="(title, index) in paragraphTitles" :key="index">
                       <li>
                         <nuxt-link :to="`#${title.id}`">
@@ -156,7 +158,7 @@ const { data } = await useAsyncData(`blog-${route.params.slug}`, () =>
   ).findOne(),
 )
 const paragraphTitles = data._rawValue.body.toc.links
-console.log(paragraphTitles)
+
 if (!data.value) {
   router.push($localePath('/blog'))
 }
