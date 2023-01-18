@@ -77,7 +77,7 @@
                   </div>
                 </aside>
               </div>
-              <header class="my-4 lg:mb-6 not-format">
+              <header class="my-4 lg:mb-10 not-format">
                 <div class="flex items-center justify-between mb-6 not-italic">
                   <div
                     class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white"
@@ -106,26 +106,31 @@
                   </div>
                 </div>
                 <h1
-                  class="mb-4 text-3xl font-semibold text-black-600 lg:mb-6 lg:text-4xl dark:text-white"
+                  class="mb-4 text-3xl font-semibold text-[#111827] lg:mb-6 lg:text-4xl dark:text-white"
                 >
                   {{ data.title }}
                 </h1>
               </header>
-              <ul v-for="(title, index) in paragraphTitles" :key="index">
-                <li>
-                  <nuxt-link :to="`#${title.id}`">
-                    {{ title.text }}
-                  </nuxt-link>
-                </li>
-                <div v-if="title.children">
-                  <li v-for="(subTitle, num) in title.children" :key="num">
-                    <nuxt-link :to="`#${subTitle.id}`">
-                      {{ subTitle.text }}
-                    </nuxt-link>
-                  </li>
-                </div>
-              </ul>
               <div class="prose">
+                <div class="flex justify-center border-2 px-1 my-16 py-5">
+                  <div class="">
+                    <h2 class="text-center">目次</h2>
+                    <ul v-for="(title, index) in paragraphTitles" :key="index">
+                      <li>
+                        <nuxt-link :to="`#${title.id}`">
+                          {{ title.text }}
+                        </nuxt-link>
+                      </li>
+                      <div v-if="title.children">
+                        <li v-for="(subTitle, num) in title.children" :key="num" class="pl-11">
+                          <nuxt-link :to="`#${subTitle.id}`">
+                            {{ subTitle.text }}
+                          </nuxt-link>
+                        </li>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
                 <ContentRendererMarkdown :value="data" />
               </div>
             </article>
