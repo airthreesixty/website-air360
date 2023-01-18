@@ -3,13 +3,11 @@
     <article
       class="p-4 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
     >
-      <a href="#">
-        <img
-          class="mb-5 rounded-lg"
-          :src="data.image"
-          alt="office laptop working"
-        >
-      </a>
+      <img
+        class="mb-5 rounded-lg"
+        :src="data.image"
+        alt="office laptop working"
+      >
       <span
         v-for="(tag, index) in data.tags"
         :key="index"
@@ -57,7 +55,7 @@ const props = defineProps({
     required: true,
   },
 })
-console.log(props.data)
+
 const pathWithoutLocale = computed(() =>
   getPathWithoutLocale(props.data._path),
 )

@@ -3,7 +3,7 @@
     <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
       <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
         <h2
-          class="mb-4 text-3xl tracking-tight font-extrabold text-black-600 lg:text-4xl dark:text-white"
+          class="mb-4 text-2xl tracking-tight font-extrabold text-black-600 lg:text-4xl dark:text-white"
         >
           Air360 ブログ
         </h2>
@@ -20,3 +20,11 @@
     </div>
   </section>
 </template>
+
+<script setup>
+// const route = useRoute()
+
+// console.log(route.path)
+// const item = route.path.split('/')
+// console.log(item)
+</script>
