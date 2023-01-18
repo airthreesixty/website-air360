@@ -2,7 +2,7 @@
   <div>
     <main v-if="data">
       <ContentRenderer :value="data">
-        <main class="pb-16 lg:pb-24 bg-white dark:bg-gray-900">
+        <div class="pb-16 lg:pb-24 bg-white dark:bg-gray-900">
           <img :src="data.image" alt="" class="h-90 mb-10 w-full object-cover">
           <div class="flex justify-between px-4 mx-auto max-w-screen-xl">
             <article
@@ -111,12 +111,26 @@
                   {{ data.title }}
                 </h1>
               </header>
+              <ul v-for="(title, index) in paragraphTitles" :key="index">
+                <li>
+                  <nuxt-link :to="`#${title.id}`">
+                    {{ title.text }}
+                  </nuxt-link>
+                </li>
+                <div v-if="title.children">
+                  <li v-for="(subTitle, num) in title.children" :key="num">
+                    <nuxt-link :to="`#${subTitle.id}`">
+                      {{ subTitle.text }}
+                    </nuxt-link>
+                  </li>
+                </div>
+              </ul>
               <div class="prose">
                 <ContentRendererMarkdown :value="data" />
               </div>
             </article>
           </div>
-        </main>
+        </div>
       </ContentRenderer>
     </main>
     <NewsLetter />
@@ -133,10 +147,11 @@ const router = useRouter()
 // TODO the value from the plugin is wrong, remove _value when it's fixed
 const { data } = await useAsyncData(`blog-${route.params.slug}`, () =>
   queryContent<BlogArticle>(
-    `/${$i18n.locale._value}${getPathWithoutLocale(route.path)}`
+    `/${$i18n.locale._value}${getPathWithoutLocale(route.path)}`,
   ).findOne(),
 )
-
+const paragraphTitles = data._rawValue.body.toc.links
+console.log(paragraphTitles)
 if (!data.value) {
   router.push($localePath('/blog'))
 }
