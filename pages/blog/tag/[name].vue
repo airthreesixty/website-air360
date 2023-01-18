@@ -1,6 +1,10 @@
 <template>
   <main>
-    <BlogCard v-for="article in data" :key="article._path" :data="article" />
+    <BlogPage>
+      <template #articles>
+        <BlogCard v-for="article in data" :key="article._path" :data="article" />
+      </template>
+    </BlogPage>
   </main>
 </template>
 
