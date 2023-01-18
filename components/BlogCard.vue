@@ -16,14 +16,14 @@
         class="bg-blue-100 text-blue-400 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-purple-200 dark:text-purple-900"
       >{{ $t(`tag.${tag}`) }}</span>
       <h2
-        class="my-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+        class="mt-2 mb-10 text-xl font-bold tracking-tight text-gray-900 dark:text-white"
       >
         <a href="#">{{ data.title }}</a>
       </h2>
-      <p class="mb-4 font-light text-gray-500 dark:text-gray-400">
+      <!-- <p class="mb-4 font-light text-gray-500 dark:text-gray-400">
         Over the past year, Volosoft has undergone many changes! After months of
         preparation and some hard work, we moved to our new office.
-      </p>
+      </p> -->
       <div class="flex items-center space-x-4">
         <img
           class="w-10 h-10 rounded-full"
@@ -57,7 +57,7 @@ const props = defineProps({
     required: true,
   },
 })
-
+console.log(props.data)
 const pathWithoutLocale = computed(() =>
   getPathWithoutLocale(props.data._path),
 )
