@@ -36,7 +36,7 @@
             {{
               dayjs(data.published)
                 .locale($i18n.locale._value)
-                .format("DD MMMM YY")
+                .format("YYYY-MM-DD")
             }}
             · {{ data.readingTime }} min
           </div>
