@@ -106,13 +106,13 @@
                   </div>
                 </div>
                 <h1
-                  class="mb-4 text-3xl font-semibold text-[#111827] lg:mb-6 lg:text-4xl dark:text-white"
+                  class="mb-6 text-3xl font-semibold text-[#111827] lg:text-4xl dark:text-white"
                 >
                   {{ data.title }}
                 </h1>
               </header>
               <div class="prose">
-                <div class="flex justify-center border-2 px-1 my-16 py-5">
+                <div class="flex justify-center border-2 px-1 my-16 py-5 rounded-md">
                   <div class="">
                     <h2 class="text-center">
                       目次
