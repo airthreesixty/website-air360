@@ -18,7 +18,7 @@
                   {{ $t(`tag.${tag}`) }}
                 </nuxt-link>
                 <aside aria-label="Share social media">
-                  <div class="not-format flex items-center">
+                  <div class="flex items-center">
                     <p class="text-primary-600">
                       Share:
                     </p>
@@ -26,9 +26,10 @@
                       <a
                         href="#"
                         class="text-primary-600 transition ease-in-out duration-300 hover:text-primary-700 dark:hover:text-white"
+                        rel="nofollow noopener"
+                        target="_blank"
                       >
                         <fa-icon class="fa-xl" :icon="['fab', 'linkedin']" />
-                        <span class="sr-only">LinkedIn page</span>
                       </a>
                     </button>
                     <div id="tooltip-linkedin" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
@@ -37,11 +38,12 @@
                     </div>
                     <button data-tooltip-target="tooltip-twitter" class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button">
                       <a
-                        href="#"
+                        :href="`https://twiter.com/share?url=${fullPath}`"
                         class="text-primary-600 transition ease-in-out duration-300 hover:text-primary-700 dark:hover:text-white"
+                        rel="nofollow noopener"
+                        target="_blank"
                       >
                         <fa-icon class="fa-xl" :icon="['fab', 'twitter']" />
-                        <span class="sr-only">LinkedIn page</span>
                       </a>
                     </button>
                     <div id="tooltip-twitter" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
@@ -50,11 +52,12 @@
                     </div>
                     <button data-tooltip-target="tooltip-facebook" class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button">
                       <a
-                        href="#"
+                        href=""
                         class="text-primary-600 transition ease-in-out duration-300 hover:text-primary-700 dark:hover:text-white"
+                        rel="nofollow noopener"
+                        target="_blank"
                       >
                         <fa-icon class="fa-xl" :icon="['fab', 'facebook']" />
-                        <span class="sr-only">Facebook page</span>
                       </a>
                     </button>
                     <div id="tooltip-facebook" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
@@ -67,7 +70,6 @@
                         class="text-primary-600 transition ease-in-out duration-300 hover:text-primary-700 dark:hover:text-white"
                       >
                         <fa-icon class="fa-xl" :icon="['fas', 'link']" />
-                        <span class="sr-only">Link page</span>
                       </a>
                     </button>
                     <div id="tooltip-link" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
@@ -142,4 +144,6 @@ const paragraphTitles = data._rawValue.body.toc.links
 if (!data.value) {
   router.push($localePath('/blog'))
 }
+
+const fullPath = route.fullPath
 </script>
