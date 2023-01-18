@@ -7,8 +7,8 @@
         >
           Air360 ブログ
         </h2>
-        <h3 class="text-xl text-black-600 md:text-2xl">
-          Hello
+        <h3 v-if="tagList.includes(tag)" class="text-xl text-black-600 md:text-2xl">
+          {{ $t(`tag.${tag}`) }}
         </h3>
         <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">
           Inspiration for conversion heroes
@@ -22,9 +22,7 @@
 </template>
 
 <script setup>
-// const route = useRoute()
-
-// console.log(route.path)
-// const item = route.path.split('/')
-// console.log(item)
+const route = useRoute()
+const tagList = ['all', 'marketing', 'ux', 'other', 'ecommerce']
+const tag = route.path.split('/').slice(-1)[0]
 </script>
