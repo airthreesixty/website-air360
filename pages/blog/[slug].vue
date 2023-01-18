@@ -109,7 +109,9 @@
                   {{ data.title }}
                 </h1>
               </header>
-              <ContentRendererMarkdown :value="data" />
+              <div class="prose">
+                <ContentRendererMarkdown :value="data" />
+              </div>
             </article>
           </div>
         </main>

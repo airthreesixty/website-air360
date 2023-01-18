@@ -4,7 +4,7 @@ import flowbite from 'flowbite-windicss-plugin'
 
 export default defineConfig({
   darkMode: 'class',
-  plugins: [require('windicss/plugin/typography'), flowbite, require('flowbite-typography')],
+  plugins: [require('windicss/plugin/typography'), flowbite],
   theme: {
     fontFamily: {
       sans: [
