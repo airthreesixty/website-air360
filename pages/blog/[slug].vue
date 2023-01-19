@@ -64,7 +64,7 @@
                       {{ $t('share-on-facebook') }}
                       <div class="tooltip-arrow" data-popper-arrow />
                     </div>
-                    <button data-tooltip-target="tooltip-link" class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button">
+                    <button data-tooltip-target="tooltip-link" class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button" @click="copy">
                       <div
                         class="text-primary-600 transition ease-in-out duration-300 hover:text-primary-700 dark:hover:text-white"
                       >

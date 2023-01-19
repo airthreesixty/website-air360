@@ -29,7 +29,7 @@
 <script setup>
 const props = defineProps({
   paragraphTitles: {
-    type: String,
+    type: Array,
     required: true,
   },
 })
