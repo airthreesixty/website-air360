@@ -11,7 +11,7 @@
           {{ $t(`tag.${tag}`) }}
         </h3>
         <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">
-          Inspiration for conversion heroes
+          コンバージョン率を向上させるには
         </p>
       </div>
       <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
