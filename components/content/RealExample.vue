@@ -4,7 +4,7 @@
       class="gap-8 items-center py-10 px-4 mx-auto max-w-screen-[1400px] xl:gap-16 md:grid md:grid-cols-2 md:py-16 lg:px-8 lg:pt-6 lg:pb-14"
     >
       <img
-        class="w-full md:hidden dark:hidden"
+        class="w-full rounded-lg md:hidden dark:hidden"
         src="https://media-server.clubmed.com/image/jpeg/1024/auto/crop/center/70/https%3A%2F%2Fns.clubmed.com%2Fesap%2F2022%2F206%2Fimg%2Foffer%2FW23.jpg"
         alt="dashboard image"
       >
