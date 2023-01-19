@@ -35,7 +35,7 @@
                   >
                 </div>
                 <div class="ml-4 lg:ml-0">
-                  <div class="text-base font-medium text-black-600">
+                  <div class="text-lg font-semibold text-black-600">
                     Nelson Fernandes
                   </div>
                   <div class="text-base font-medium text-gray-500">
