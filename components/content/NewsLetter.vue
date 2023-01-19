@@ -1,9 +1,9 @@
 <template>
   <div
     id="newsletter-modal"
-    class="w-full py-20 md:h-full"
+    class="w-full py-10 flex justify-center md:h-full"
   >
-    <div class="p-4 w-full bg-white max-w-screen-[1400px] h-full rounded-lg md:h-auto">
+    <div class="p-4 w-full bg-white max-w-screen-[1000px] h-full rounded-lg md:h-auto">
       <!-- Modal content -->
       <div
         class="flex items-center justify-center bg-white rounded-lg shadow dark:bg-gray-800"
@@ -12,15 +12,14 @@
           <!-- Modal body -->
           <div class="p-6 lg:p-10">
             <h3
-              class="mb-2 text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
+              class="mb-2 text-xl font-semibold tracking-tight text-black-600 dark:text-white"
             >
-              Join our Newsletter
+              最新のコンテンツを受信トレイに直接お届けします
             </h3>
             <p
               class="mb-4 text-base leading-relaxed text-gray-500 dark:text-gray-400"
             >
-              Get started with our monthly newsletter for helpful tips on how to
-              run your business smoothly.
+              ニュースレターに登録して、最新のコンテンツを手に入れましょう。購読停止はいつでも可能です。
             </p>
             <form action="#">
               <div

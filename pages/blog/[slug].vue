@@ -2,7 +2,7 @@
   <div>
     <main v-if="data">
       <ContentRenderer :value="data">
-        <div class="pb-16 lg:pb-24 bg-white dark:bg-gray-900">
+        <div class="bg-white dark:bg-gray-900">
           <img :src="data.image" alt="" class="h-90 mb-10 w-full object-cover">
           <div class="flex justify-between px-4 mx-auto max-w-screen-xl">
             <article
