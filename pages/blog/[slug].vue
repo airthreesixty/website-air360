@@ -64,13 +64,12 @@
                       {{ $t('share-on-facebook') }}
                       <div class="tooltip-arrow" data-popper-arrow />
                     </div>
-                    <button @click="copy" data-tooltip-target="tooltip-link" class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button">
-                      <a
-                        href="#"
+                    <button data-tooltip-target="tooltip-link" class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button" @click="copy">
+                      <div
                         class="text-primary-600 transition ease-in-out duration-300 hover:text-primary-700 dark:hover:text-white"
                       >
                         <fa-icon class="fa-xl" :icon="['fas', 'link']" />
-                      </a>
+                      </div>
                     </button>
                     <div id="tooltip-link" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
                       {{ $t('share-link') }}
@@ -157,5 +156,4 @@ const copy = async () => {
     console.error(e)
   }
 }
-console.log(route)
 </script>

@@ -89,7 +89,11 @@
           </h2>
           <ul class="text-gray-600 dark:text-gray-400">
             <li class="mb-4">
-              <a href="#" class="hover:underline">{{ $t("blog") }}</a>
+              <NuxtLink :to="$localePath('/blog')">
+                <div class="hover:underline">
+                  {{ $t("blog") }}
+                </div>
+              </NuxtLink>
             </li>
           </ul>
         </div>
@@ -107,7 +111,7 @@
               <a href="#" class="hover:underline">{{ $t("contact-us") }}</a>
             </li>
             <li>
-              <a href="#" class="hover:underline">{{ $t("login") }}</a>
+              <a href="https://beta.air360.io/" target="_blank" class="hover:underline">{{ $t("login") }}</a>
             </li>
           </ul>
         </div>
