@@ -12,6 +12,11 @@ export default defineNuxtConfig({
       titleTemplate: 'Air360',
       meta: [
         { charset: 'utf-8' },
+        {
+          hid: 'description',
+          name: 'description',
+          content: '最も効率的なユーザー体験を提供することで、あなたのeコマースサイトのポテンシャルを最大限に引き出し、収益を増加させます。',
+        },
       ],
     },
   },
