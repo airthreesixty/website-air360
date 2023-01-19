@@ -63,7 +63,7 @@
         </a> -->
       </div>
       <img
-        class="hidden w-full md:block dark:hidden"
+        class="hidden w-full rounded-lg md:block dark:hidden"
         src="https://media-server.clubmed.com/image/jpeg/1024/auto/crop/center/70/https%3A%2F%2Fns.clubmed.com%2Fesap%2F2022%2F206%2Fimg%2Foffer%2FW23.jpg"
         alt="dashboard image"
       >
