@@ -7,8 +7,7 @@
         class="flex-col justify-between hidden mr-auto lg:flex lg:col-span-5 xl:col-span-6 xl:mb-0"
       >
         <div>
-          <a
-            href="#"
+          <div
             class="inline-flex items-center mb-6 text-2xl font-semibold text-gray-900 lg:mb-10 dark:text-white"
           >
             <img
@@ -16,7 +15,7 @@
               src="https://www.air360.io/wp-content/uploads/2022/05/air360-logo-bk.svg"
               alt="Air360 logo"
             >
-          </a>
+          </div>
           <div class="flex">
             <svg
               class="w-6 h-6 mr-2 text-primary-600 shrink-0"
@@ -210,7 +209,7 @@
             </div>
             <button
               type="submit"
-              class="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+              class="w-full text-white bg-primary-600 hover:bg-primary-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
             >
               デモのリクエスト
             </button>
