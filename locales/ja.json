@@ -24,5 +24,10 @@
     "ux": "UX",
     "other": "その他",
     "ecommerce": "eコマース"
-  }
+  },
+  "share": "シェア",
+  "share-on-linkedin": "Linkedinでシェア",
+  "share-on-twitter": "Twitterでシェア",
+  "share-on-facebook": "Facebookでシェア",
+  "share-link": "リンクをシェア"
 }
