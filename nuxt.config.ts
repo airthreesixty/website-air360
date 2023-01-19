@@ -9,7 +9,7 @@ export default defineNuxtConfig({
           async: true,
         },
       ],
-      title: 'Air360',
+      titleTemplate: 'Air360',
       meta: [
         { charset: 'utf-8' },
       ],
