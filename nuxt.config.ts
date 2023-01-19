@@ -9,6 +9,10 @@ export default defineNuxtConfig({
           async: true,
         },
       ],
+      title: 'Air360',
+      meta: [
+        { charset: 'utf-8' },
+      ],
     },
   },
   i18n: {
