@@ -10,7 +10,11 @@
             <p class="mt-4 text-md leading-6 text-primary-100 lg:text-xl">
               <ContentSlot :use="$slots.description" />
             </p>
-            <a href="#" class="mt-8 inline-flex items-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-primary-600 shadow transition ease-in-out duration-300 hover:bg-primary-100">Air360を試してみる</a>
+            <NuxtLink :to="$localePath('/request-demo')">
+              <div class="mt-8 inline-flex items-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-primary-600 shadow transition ease-in-out duration-300 hover:bg-primary-100">
+                Air360を試してみる
+              </div>
+            </NuxtLink>
           </div>
         </div>
         <div class="aspect-w-5 aspect-h-3 -mt-6 z-0 md:aspect-w-2 md:aspect-h-1">
@@ -20,3 +24,7 @@
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+const { $localePath } = useNuxtApp()
+</script>

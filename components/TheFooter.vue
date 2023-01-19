@@ -105,7 +105,11 @@
           </h2>
           <ul class="text-gray-700 dark:text-gray-400">
             <li class="mb-4">
-              <a href="#" class="hover:underline">{{ $t("request-demo") }}</a>
+              <NuxtLink :to="$localePath('/request-demo')">
+                <div class="hover:underline">
+                  {{ $t("request-demo") }}
+                </div>
+              </NuxtLink>
             </li>
             <li class="mb-4">
               <a href="#" class="hover:underline">{{ $t("contact-us") }}</a>
