@@ -1450,6 +1450,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/web-bluetooth@npm:^0.0.16":
+  version: 0.0.16
+  resolution: "@types/web-bluetooth@npm:0.0.16"
+  checksum: f68a630d062202a25c46d48686ebae1cf429dc70b4578fcf13b8357b2db63e4aedfb6f6d752bd388366be46ebd19c1c9de45f8a15c2631bb79e904fdfc454f94
+  languageName: node
+  linkType: hard
+
 "@typescript-eslint/eslint-plugin@npm:^5.42.1":
   version: 5.47.0
   resolution: "@typescript-eslint/eslint-plugin@npm:5.47.0"
@@ -1798,6 +1805,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vueuse/core@npm:^9.11.0":
+  version: 9.11.0
+  resolution: "@vueuse/core@npm:9.11.0"
+  dependencies:
+    "@types/web-bluetooth": ^0.0.16
+    "@vueuse/metadata": 9.11.0
+    "@vueuse/shared": 9.11.0
+    vue-demi: "*"
+  checksum: 469bacd20709c3e68de1edf726edae3d68ad2c2cb6f37f197250a42e2ff12d2bd267b9f3c212a55e06a5351d6708fb59dd54d9eac2746ca0482b0aac1767b5b1
+  languageName: node
+  linkType: hard
+
 "@vueuse/head@npm:^1.0.15":
   version: 1.0.22
   resolution: "@vueuse/head@npm:1.0.22"
@@ -1809,6 +1828,22 @@ __metadata:
   peerDependencies:
     vue: ">=2.7 || >=3"
   checksum: e886142669713744f563f52ae84e92c5ffc586bf0447ac5cf98f68d928d0e3ec002d9accc25e3218f314e979d78907471251ff407cd5d7d21bed13643783d34a
+  languageName: node
+  linkType: hard
+
+"@vueuse/metadata@npm:9.11.0":
+  version: 9.11.0
+  resolution: "@vueuse/metadata@npm:9.11.0"
+  checksum: 262ba0cfe89b65ead26b7d9bdb47221c6d8bf3e5a67dc6ff5fb2a67d5fe849b8854749f9bfa337bab6597d2f7e596f01a24028507cc511b9d198ea403f46f6ed
+  languageName: node
+  linkType: hard
+
+"@vueuse/shared@npm:9.11.0":
+  version: 9.11.0
+  resolution: "@vueuse/shared@npm:9.11.0"
+  dependencies:
+    vue-demi: "*"
+  checksum: 6ede8f66df880be27b447b4b95085ae223916328e10f86a87b2a9d69baf51184c313a7be6136b0c9ad0d38b68c5616fad64cf535911f3695aa53629d9ccaacba
   languageName: node
   linkType: hard
 
@@ -2563,17 +2598,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"clipboard@npm:^2.0.6":
-  version: 2.0.11
-  resolution: "clipboard@npm:2.0.11"
-  dependencies:
-    good-listener: ^1.2.2
-    select: ^1.1.2
-    tiny-emitter: ^2.0.0
-  checksum: 413055a6038e43898e0e895216b58ed54fbf386f091cb00188875ef35b186cefbd258acdf4cb4b0ac87cbc00de936f41b45dde9fe1fd1a57f7babb28363b8748
-  languageName: node
-  linkType: hard
-
 "clipboardy@npm:^3.0.0":
   version: 3.0.0
   resolution: "clipboardy@npm:3.0.0"
@@ -3054,13 +3078,6 @@ __metadata:
   version: 6.1.1
   resolution: "defu@npm:6.1.1"
   checksum: 51d05b48297fca6c5a0ac73558f1c6182eca544c9ac7b290692ec7e165d8c5cd20d772c58b0777a8a1186fa25f49c19d28f095982a9e478d33857d46e5fa5e48
-  languageName: node
-  linkType: hard
-
-"delegate@npm:^3.1.2":
-  version: 3.2.0
-  resolution: "delegate@npm:3.2.0"
-  checksum: d943058fe05897228b158cbd1bab05164df28c8f54127873231d6b03b0a5acc1b3ee1f98ac70ccc9b79cd84aa47118a7de111fee2923753491583905069da27d
   languageName: node
   linkType: hard
 
@@ -4775,15 +4792,6 @@ __metadata:
   version: 0.1.2
   resolution: "globrex@npm:0.1.2"
   checksum: adca162494a176ce9ecf4dd232f7b802956bb1966b37f60c15e49d2e7d961b66c60826366dc2649093cad5a0d69970cfa8875bd1695b5a1a2f33dcd2aa88da3c
-  languageName: node
-  linkType: hard
-
-"good-listener@npm:^1.2.2":
-  version: 1.2.2
-  resolution: "good-listener@npm:1.2.2"
-  dependencies:
-    delegate: ^3.1.2
-  checksum: f39fb82c4e41524f56104cfd2d7aef1a88e72f3f75139115fbdf98cc7d844e0c1b39218b2e83438c6188727bf904ed78c7f0f2feff67b32833bc3af7f0202b33
   languageName: node
   linkType: hard
 
@@ -8590,6 +8598,7 @@ __metadata:
     "@nuxt/content": ^2.2.2
     "@nuxtjs/eslint-config-typescript": ^12.0.0
     "@nuxtjs/i18n": next
+    "@vueuse/core": ^9.11.0
     dayjs: ^1.11.7
     eslint: ^8.30.0
     flowbite: ^1.5.5
@@ -8600,7 +8609,6 @@ __metadata:
     nuxt-fontawesome: ^0.4.0
     nuxt-windicss: ^2.6.0
     typescript: ^4.9.4
-    vue-clipboard3: ^2.0.0
   languageName: unknown
   linkType: soft
 
@@ -8683,13 +8691,6 @@ __metadata:
   version: 1.0.0
   resolution: "scule@npm:1.0.0"
   checksum: 57f745022ef391868c6adfc77cd8bf1e8a10096cb4e7ba7bbb04f57fab5651804b419da9435692cd012abf1fd020f4b3f823385536f4ddc7247ea725488451c4
-  languageName: node
-  linkType: hard
-
-"select@npm:^1.1.2":
-  version: 1.1.2
-  resolution: "select@npm:1.1.2"
-  checksum: 4346151e94f226ea6131e44e68e6d837f3fdee64831b756dd657cc0b02f4cb5107f867cb34a1d1216ab7737d0bf0645d44546afb030bbd8d64e891f5e4c4814e
   languageName: node
   linkType: hard
 
@@ -9326,13 +9327,6 @@ __metadata:
   version: 2.3.8
   resolution: "through@npm:2.3.8"
   checksum: a38c3e059853c494af95d50c072b83f8b676a9ba2818dcc5b108ef252230735c54e0185437618596c790bbba8fcdaef5b290405981ffa09dce67b1f1bf190cbd
-  languageName: node
-  linkType: hard
-
-"tiny-emitter@npm:^2.0.0":
-  version: 2.1.0
-  resolution: "tiny-emitter@npm:2.1.0"
-  checksum: fbcfb5145751a0e3b109507a828eb6d6d4501352ab7bb33eccef46e22e9d9ad3953158870a6966a59e57ab7c3f9cfac7cab8521db4de6a5e757012f4677df2dd
   languageName: node
   linkType: hard
 
@@ -10102,16 +10096,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue-clipboard3@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "vue-clipboard3@npm:2.0.0"
-  dependencies:
-    clipboard: ^2.0.6
-  checksum: 4a82dc080a6700811865adddd1b1560be9d0b1d68a78773e1e397ecb1784fe004e39c8f2c4a57f55a2e3276a8b23426047b9ba191597d67cacc6aa5d9e5ec2b3
-  languageName: node
-  linkType: hard
-
-"vue-demi@npm:^0.13.11, vue-demi@npm:^0.13.5":
+"vue-demi@npm:*, vue-demi@npm:^0.13.11, vue-demi@npm:^0.13.5":
   version: 0.13.11
   resolution: "vue-demi@npm:0.13.11"
   peerDependencies:
