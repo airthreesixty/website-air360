@@ -140,7 +140,7 @@
                 name="name"
                 class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               >
-              <span v-if="v$.name.$error">
+              <span v-if="v$.name.$error" class="error-alert">
                 {{ v$.name.$errors[0].$message }}
               </span>
             </div>
@@ -158,7 +158,7 @@
                 autocomplete="email"
               >
             </div>
-            <span v-if="v$.email.$error">
+            <span v-if="v$.email.$error" class="error-alert">
               {{ v$.email.$errors[0].$message }}
             </span>
             <div>
@@ -173,7 +173,7 @@
                 name="job"
                 class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               >
-              <span v-if="v$.jobTitle.$error">
+              <span v-if="v$.jobTitle.$error" class="error-alert">
                 {{ v$.jobTitle.$errors[0].$message }}
               </span>
             </div>
@@ -188,9 +188,8 @@
                 type="tel"
                 name="tel"
                 class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                pattern="\d{2,4}-?\d{2,4}-?\d{3,4}"
               >
-              <span v-if="v$.phoneNumber.$error">
+              <span v-if="v$.phoneNumber.$error" class="error-alert">
                 {{ v$.phoneNumber.$errors[0].$message }}
               </span>
             </div>
@@ -203,7 +202,7 @@
                   class="w-4 h-4 border border-gray-300 rounded bg-gray-50 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800"
                 >
               </div>
-              <div class="ml-3 text-sm">
+              <div class="ml-3 error-alert">
                 <label
                   for="terms"
                   class="font-light text-gray-500 dark:text-gray-300"
@@ -264,3 +263,9 @@ const submitForm = async () => {
   }
 }
 </script>
+
+<style lang="postcss">
+.error-alert {
+  @apply text-xs text-red-500;
+}
+</style>
