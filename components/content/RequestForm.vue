@@ -1,7 +1,7 @@
 <template>
-  <section class="bg-white dark:bg-gray-900">
+  <section class="bg-white h-screen dark:bg-gray-900">
     <div
-      class="max-w-screen-xl px-4 py-8 mx-auto lg:grid lg:gap-20 lg:py-16 lg:grid-cols-12"
+      class="max-w-screen-[1400px] px-4 py-8 mx-auto lg:grid lg:gap-20 lg:py-16 lg:grid-cols-12"
     >
       <div
         class="flex-col justify-between hidden mr-auto lg:flex lg:col-span-5 xl:col-span-6 xl:mb-0"
