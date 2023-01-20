@@ -148,8 +148,9 @@ if (!data.value) {
 const fullPath = route.fullPath
 
 const { toClipboard } = useClipboard()
+const text = `https://jp.air360.io${fullPath}/`
 
 const copy = async () => {
-  await toClipboard(`https://jp.air360.io${fullPath}/`)
+  await toClipboard(text)
 }
 </script>
