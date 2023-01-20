@@ -30,6 +30,7 @@
     "flowbite-typography": "^1.0.3",
     "flowbite-windicss-plugin": "^0.1.3",
     "nuxt-font-loader": "^2.2.2",
-    "nuxt-fontawesome": "^0.4.0"
+    "nuxt-fontawesome": "^0.4.0",
+    "vue-i18n": "next"
   }
 }

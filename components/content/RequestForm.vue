@@ -235,7 +235,8 @@
 
 <script setup lang="ts">
 import { useVuelidate } from '@vuelidate/core'
-import { required, email, minLength, maxLength } from '@vuelidate/validators'
+import { required, email, minLength, maxLength, numeric } from '@vuelidate/validators'
+import { createI18n } from 'vue-i18n'
 
 const formData = reactive({
   name: '',
@@ -249,9 +250,11 @@ const rules = computed(() => {
     name: { required },
     email: { required, email },
     jobTitle: { required },
-    phoneNumber: { required, minLength: minLength(9), maxLength: maxLength(14) },
+    phoneNumber: { required, minLength: minLength(9), maxLength: maxLength(14), numeric: numeric },
   }
 })
+
+// const
 
 const v$ = useVuelidate(rules, formData)
 
