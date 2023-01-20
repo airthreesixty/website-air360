@@ -123,7 +123,7 @@
       >
         <div class="p-6 space-y-4 lg:space-y-6 sm:p-8">
           <h1
-            class="text-xl font-bold leading-tight tracking-tight text-gray-900 sm:text-2xl dark:text-white"
+            class="text-xl font-bold leading-tight tracking-tight text-center text-gray-900 sm:text-2xl dark:text-white"
           >
             <ContentSlot :use="$slots.title" />
           </h1>
@@ -153,6 +153,7 @@
                 type="email"
                 name="email"
                 class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                autocomplete="email"
                 required
               >
             </div>
@@ -181,6 +182,9 @@
                 type="tel"
                 name="tel"
                 class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                pattern="\d{2,4}-?\d{2,4}-?\d{3,4}"
+                minlength="9"
+                maxlength="14"
                 required
               >
             </div>
