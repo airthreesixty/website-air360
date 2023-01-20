@@ -127,7 +127,7 @@
           >
             <ContentSlot :use="$slots.title" />
           </h1>
-          <form class="space-y-4 lg:space-y-6" action="#">
+          <form class="space-y-4 lg:space-y-6" action="#" @submit.prevent="submitForm">
             <div>
               <label
                 for="name"
@@ -135,6 +135,7 @@
               >お名前*</label>
               <input
                 id="name"
+                v-model="formData.name"
                 type="text"
                 name="name"
                 class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -148,6 +149,7 @@
               >メールアドレス*</label>
               <input
                 id="email"
+                v-model="formData.email"
                 type="email"
                 name="email"
                 class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -161,6 +163,7 @@
               >職種*</label>
               <input
                 id="job-title"
+                v-model="formData.jobTitle"
                 type="text"
                 name="job"
                 class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -174,6 +177,7 @@
               >電話番号*</label>
               <input
                 id="phone-number"
+                v-model="formData.phoneNumber"
                 type="tel"
                 name="tel"
                 class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -187,7 +191,6 @@
                   aria-describedby="terms"
                   type="checkbox"
                   class="w-4 h-4 border border-gray-300 rounded bg-gray-50 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800"
-                  required
                 >
               </div>
               <div class="ml-3 text-sm">
@@ -209,7 +212,9 @@
             </div>
             <button
               type="submit"
-              class="w-full text-white bg-primary-600 hover:bg-primary-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+              class="w-full text-white bg-primary-600 disabled font-medium rounded-lg text-sm px-5 py-2.5 text-center transition ease-in-out duration-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+              :class="{'opacity-25 cursor-not-allowed': !isFormValid }"
+              :disabled="!isFormValid"
             >
               デモのリクエスト
             </button>
@@ -219,3 +224,24 @@
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+const formData = reactive({
+  name: '',
+  email: '',
+  jobTitle: '',
+  phoneNumber: '',
+})
+
+const isFormValid = computed(() => {
+  if (formData.name && formData.email && formData.jobTitle && formData.phoneNumber) {
+    return true
+  } else {
+    return false
+  }
+})
+
+const submitForm = () => {
+  console.log('submit', formData)
+}
+</script>
