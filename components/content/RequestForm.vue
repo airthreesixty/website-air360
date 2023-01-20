@@ -139,8 +139,10 @@
                 type="text"
                 name="name"
                 class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                required
               >
+              <span v-if="v$.name.$error">
+                {{ v$.name.$errors[0].$message }}
+              </span>
             </div>
             <div>
               <label
@@ -154,9 +156,11 @@
                 name="email"
                 class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 autocomplete="email"
-                required
               >
             </div>
+            <span v-if="v$.email.$error">
+              {{ v$.email.$errors[0].$message }}
+            </span>
             <div>
               <label
                 for="job-title"
@@ -168,14 +172,16 @@
                 type="text"
                 name="job"
                 class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                required
               >
+              <span v-if="v$.jobTitle.$error">
+                {{ v$.jobTitle.$errors[0].$message }}
+              </span>
             </div>
             <div>
               <label
                 for="phone-number"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-              >電話番号*</label>
+              >電話番号(ハイフンなし)*</label>
               <input
                 id="phone-number"
                 v-model="formData.phoneNumber"
@@ -183,10 +189,10 @@
                 name="tel"
                 class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 pattern="\d{2,4}-?\d{2,4}-?\d{3,4}"
-                minlength="9"
-                maxlength="14"
-                required
               >
+              <span v-if="v$.phoneNumber.$error">
+                {{ v$.phoneNumber.$errors[0].$message }}
+              </span>
             </div>
             <div class="flex items-start">
               <div class="flex items-center h-5">
@@ -217,8 +223,6 @@
             <button
               type="submit"
               class="w-full text-white bg-primary-600 disabled font-medium rounded-lg text-sm px-5 py-2.5 text-center transition ease-in-out duration-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
-              :class="{'opacity-25 cursor-not-allowed': !isFormValid }"
-              :disabled="!isFormValid"
             >
               デモのリクエスト
             </button>
@@ -230,6 +234,9 @@
 </template>
 
 <script setup lang="ts">
+import { useVuelidate } from '@vuelidate/core'
+import { required, email, minLength, maxLength } from '@vuelidate/validators'
+
 const formData = reactive({
   name: '',
   email: '',
@@ -237,15 +244,23 @@ const formData = reactive({
   phoneNumber: '',
 })
 
-const isFormValid = computed(() => {
-  if (formData.name && formData.email && formData.jobTitle && formData.phoneNumber) {
-    return true
-  } else {
-    return false
+const rules = computed(() => {
+  return {
+    name: { required },
+    email: { required, email },
+    jobTitle: { required },
+    phoneNumber: { required, minLength: minLength(9), maxLength: maxLength(14) },
   }
 })
 
-const submitForm = () => {
-  console.log('submit', formData)
+const v$ = useVuelidate(rules, formData)
+
+const submitForm = async () => {
+  const isFormCorrect = await v$.value.$validate()
+  if (!isFormCorrect) {
+    alert('Fail')
+  } else {
+    alert('Success')
+  }
 }
 </script>
