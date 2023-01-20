@@ -11,7 +11,7 @@
             >
           </div>
         </NuxtLink>
-        <div class="flex my-6 space-x-6 sm:justify-start md:mt-4 lg:mt-6">
+        <div class="flex my-6 space-x-4 md:justify-start md:mt-4 lg:mt-6">
           <a
             href="https://www.linkedin.com/company/air360/"
             class="text-gray-600 transition ease-in-out duration-300 hover:text-gray-800 dark:hover:text-white"
