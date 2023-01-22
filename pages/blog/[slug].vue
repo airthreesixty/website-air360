@@ -141,6 +141,8 @@ if (!data.value) {
 }
 
 useSeoMeta({
-  description: data.value.metaDesc || '',
+  description: data.value.metaDesc,
+  ogImage: data.value.image,
+  twitterCard: 'summary_large_image',
 })
 </script>
