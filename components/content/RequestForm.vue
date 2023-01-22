@@ -236,7 +236,7 @@
 
 <script setup lang="ts">
 import { useVuelidate } from '@vuelidate/core'
-import { required, email, numeric } from '~/utils/i18n-validators'
+import { required, email, numeric, jpPhone } from '~/utils/i18n-validators'
 
 const formData = reactive({
   name: '',
@@ -244,13 +244,12 @@ const formData = reactive({
   jobTitle: '',
   phoneNumber: '',
 })
-
 const rules = computed(() => {
   return {
     name: { required },
     email: { required, email },
     jobTitle: { required },
-    phoneNumber: { required, numeric },
+    phoneNumber: { required, numeric, jpPhone },
   }
 })
 
