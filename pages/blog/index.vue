@@ -14,7 +14,7 @@ const { $i18n } = useNuxtApp()
 const { data } = await useAsyncData('blog', () =>
   queryContent($i18n.locale._value, 'blog')
     .sort({ published: -1 })
-    .only(['published', 'tags', 'readingTime', 'title', 'image', '_path'])
+    .only(['published', 'tags', 'readingTime', 'title', 'image', '_path', 'metaDesc'])
     .find(),
 )
 </script>

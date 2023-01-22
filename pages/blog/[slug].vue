@@ -120,6 +120,7 @@
 </template>
 
 <script setup lang="ts">
+import { useSeoMeta } from '@unhead/vue'
 import { BlogArticle } from '~~/interfaces/blog'
 
 const { $i18n, $localePath } = useNuxtApp()
@@ -137,4 +138,8 @@ const paragraphTitles = data._rawValue.body.toc.links
 if (!data.value) {
   router.push($localePath('/blog'))
 }
+
+useSeoMeta({
+  description: data.value.metaDesc || '',
+})
 </script>

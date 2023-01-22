@@ -1634,6 +1634,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@unhead/dom@npm:1.0.17":
+  version: 1.0.17
+  resolution: "@unhead/dom@npm:1.0.17"
+  dependencies:
+    "@unhead/schema": 1.0.17
+  checksum: cdc97291b63fa6a12cf2223efb1939361ee990fba169633cff75d3745df5e20e182f74f52d78278ce38610ec90323402863578d977502770674d7b3cc61684a9
+  languageName: node
+  linkType: hard
+
 "@unhead/schema@npm:1.0.13, @unhead/schema@npm:^1.0.9":
   version: 1.0.13
   resolution: "@unhead/schema@npm:1.0.13"
@@ -1641,6 +1650,16 @@ __metadata:
     "@zhead/schema": ^1.0.7
     hookable: ^5.4.2
   checksum: 15f2c6233f2f83f77320cd8b166c357b248e1fa8040757235ebc6b02a5930207eef7104726863e76384081b4ccca728c6859bf5f10faf7edfb64e7e7ab5f79e7
+  languageName: node
+  linkType: hard
+
+"@unhead/schema@npm:1.0.17":
+  version: 1.0.17
+  resolution: "@unhead/schema@npm:1.0.17"
+  dependencies:
+    "@zhead/schema": ^1.0.9
+    hookable: ^5.4.2
+  checksum: b7222d1c40befc3e6a8291ff73bb576e797cd806bff8fce4ca6bf0a948c3d446908068a8151de17bbec8361330cad10a31413c03f16227c76ce85c2599edbcf7
   languageName: node
   linkType: hard
 
@@ -1955,6 +1974,13 @@ __metadata:
   version: 1.0.7
   resolution: "@zhead/schema@npm:1.0.7"
   checksum: 9b0e3c2e88438950f290de3880661128c8b67c57d21d56924db1bd49c317ef04066ddf7ad3de6e02c8d00b95e9346f204066040fba56d3ff1f463128866a535a
+  languageName: node
+  linkType: hard
+
+"@zhead/schema@npm:^1.0.9":
+  version: 1.0.9
+  resolution: "@zhead/schema@npm:1.0.9"
+  checksum: 91125a1ca931918275cc82bf0ab43ad59f94f48509e96131244154b161abce9cd1a28a23d5a4a2eb365c495bdb62cfcec8b34e912097c67d65e837a9d00b9812
   languageName: node
   linkType: hard
 
@@ -8689,6 +8715,7 @@ __metadata:
     nuxt-fontawesome: ^0.4.0
     nuxt-windicss: ^2.6.0
     typescript: ^4.9.4
+    unhead: ^1.0.17
     vue-i18n: next
   languageName: unknown
   linkType: soft
@@ -9677,6 +9704,17 @@ __metadata:
     "@unhead/schema": 1.0.13
     hookable: ^5.4.2
   checksum: 53b133c6fa45fd95f9eac0f82d5fb505bc922cb1d8ab1bcb144b6a9d91e8366a0bbca0e525fc7019704d571a321067d418db1001ed4a6741f4cd4ffb75ec9896
+  languageName: node
+  linkType: hard
+
+"unhead@npm:^1.0.17":
+  version: 1.0.17
+  resolution: "unhead@npm:1.0.17"
+  dependencies:
+    "@unhead/dom": 1.0.17
+    "@unhead/schema": 1.0.17
+    hookable: ^5.4.2
+  checksum: d04f0ec6f6f183f460ae4dc8abf1e5a3a08fdde713c2d9cc39b021e9601a06a35377c7e2688e30fa12d60c660d57ce53aeb1529d569b6bb70bc80e67c8a8e795
   languageName: node
   linkType: hard
 

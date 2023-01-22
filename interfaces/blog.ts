@@ -5,4 +5,5 @@ export interface BlogArticle {
   title: string
   image: string
   _path: string
+  metaDesc: string
 }

@@ -5,6 +5,7 @@ tags:
   - other
 readingTime: 7
 image: https://www.air360.io/wp-content/uploads/2022/05/Air360-Leverage-CRO-e1661920168596-1024x543.jpeg
+metaDesc: 多くの小売業やeコマース企業が、変化する顧客ニーズやサプライチェーンに関することで悩んでいます。このような状況においてビジネスを安定させるには、CROツールを活用することが大切です。
 ---
 
 多くの小売業やeコマース企業が、変化する顧客ニーズやサプライチェーンに関すること
