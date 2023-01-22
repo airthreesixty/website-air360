@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white h-screen dark:bg-gray-900">
+  <section class="bg-white h-screen dark:bg-gray-900" :class="{'h-auto': screenHeight}">
     <div
       class="max-w-screen-[1400px] px-4 py-8 mx-auto lg:grid lg:gap-20 lg:py-16 lg:grid-cols-12"
     >
@@ -263,12 +263,16 @@ const isFormValid = computed(() => {
   }
 })
 
+const screenHeight = ref(false)
+
 const submitForm = async () => {
   const isFormCorrect = await v$.value.$validate()
   if (!isFormCorrect) {
     alert('Fail')
+    screenHeight.value = true
   } else {
     alert('Success')
+    screenHeight.value = false
   }
 }
 </script>
