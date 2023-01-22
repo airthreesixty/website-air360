@@ -77,7 +77,11 @@
               >{{ $t("careers") }}</a>
             </li>
             <li>
-              <a href="#" class="hover:underline">{{ $t("privacy-policy") }}</a>
+              <NuxtLink :to="$localePath('/privacy-policy')">
+                <div class="hover:underline">
+                  {{ $t("privacy-policy") }}
+                </div>
+              </NuxtLink>
             </li>
           </ul>
         </div>
