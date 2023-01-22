@@ -126,6 +126,7 @@ import { BlogArticle } from '~~/interfaces/blog'
 const { $i18n, $localePath } = useNuxtApp()
 const route = useRoute()
 const router = useRouter()
+const fullPath = route.fullPath
 
 // TODO the value from the plugin is wrong, remove _value when it's fixed
 const { data } = await useAsyncData(`blog-${route.params.slug}`, () =>
