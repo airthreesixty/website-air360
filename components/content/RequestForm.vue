@@ -132,7 +132,7 @@
               <label
                 for="name"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-              >お名前*</label>
+              ><ContentSlot :use="$slots.name" /></label>
               <input
                 id="name"
                 v-model="formData.name"
@@ -148,7 +148,7 @@
               <label
                 for="email"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-              >メールアドレス*</label>
+              ><ContentSlot :use="$slots.email" /></label>
               <input
                 id="email"
                 v-model="formData.email"
@@ -165,7 +165,7 @@
               <label
                 for="job-title"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-              >職種*</label>
+              ><ContentSlot :use="$slots.jobTitle" /></label>
               <input
                 id="job-title"
                 v-model="formData.jobTitle"
@@ -181,7 +181,7 @@
               <label
                 for="phone-number"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-              >電話番号(ハイフンなし)*</label>
+              ><ContentSlot :use="$slots.phone" /></label>
               <input
                 id="phone-number"
                 v-model="formData.phoneNumber"
