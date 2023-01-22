@@ -18,6 +18,7 @@ export default defineNuxtConfig({
           content: '最も効率的なユーザー体験を提供することで、あなたのeコマースサイトのポテンシャルを最大限に引き出し、収益を増加させます。',
         },
       ],
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/boostConversion.png' }],
     },
   },
   i18n: {
