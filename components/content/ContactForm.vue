@@ -10,8 +10,7 @@
           Contact Us
         </h2>
         <p class="font-light text-gray-600 dark:text-gray-400 sm:text-xl">
-          We use an agile approach to test assumptions and connect with the
-          needs of your audience early and often.
+          お問い合わせ内容をご入力ください。
         </p>
       </div>
       <div class="grid grid-cols-1 lg:gap-8 lg:grid-cols-3">
@@ -168,8 +167,7 @@
               ロケーション:
             </p>
             <p class="text-gray-500 dark:text-gray-400">
-              SILVER LAKE, United States 1941 Late Avenue <br>
-              Zip Code/Postal code:03875
+              東京都千代田区大手町1丁目6番1号<br>大手町ビル1階,2階SPACES大手町
             </p>
           </div>
           <div>

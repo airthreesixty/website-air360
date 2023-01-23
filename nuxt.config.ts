@@ -9,7 +9,6 @@ export default defineNuxtConfig({
           async: true,
         },
       ],
-      titleTemplate: 'Air360 - %s',
       meta: [
         {
           hid: 'description',
