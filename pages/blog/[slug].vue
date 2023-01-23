@@ -147,4 +147,9 @@ if (data.value) {
     twitterCard: 'summary_large_image',
   })
 }
+
+useHead({
+  title: data.value?.title,
+})
+
 </script>

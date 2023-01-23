@@ -85,7 +85,7 @@
               <label
                 for="message"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
-              >Your message</label>
+              >メッセージ*</label>
               <textarea
                 id="message"
                 v-model="formData.message"
@@ -141,10 +141,10 @@
               </svg>
             </div>
             <p class="mb-2 text-xl font-bold text-gray-900 dark:text-white">
-              Company information:
+              会社情報:
             </p>
             <p class="text-gray-500 dark:text-gray-400">
-              Themesberg LLC <br>Tax id: USXXXXXX
+              Scalefast Japan <br>Tax id: USXXXXXX
             </p>
           </div>
           <div>
@@ -165,7 +165,7 @@
               </svg>
             </div>
             <p class="mb-2 text-xl font-bold text-gray-900 dark:text-white">
-              Address:
+              ロケーション:
             </p>
             <p class="text-gray-500 dark:text-gray-400">
               SILVER LAKE, United States 1941 Late Avenue <br>

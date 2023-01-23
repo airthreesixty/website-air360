@@ -10,6 +10,11 @@
 
 <script setup lang="ts">
 const { $i18n } = useNuxtApp()
+
+useHead({
+  title: 'ブログ',
+})
+
 // TODO the value from the plugin is wrong, remove _value when it's fixed
 const { data } = await useAsyncData('blog', () =>
   queryContent($i18n.locale._value, 'blog')
