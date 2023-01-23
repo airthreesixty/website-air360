@@ -19,6 +19,12 @@ export default defineConfig({
       typography: {
         DEFAULT: {
           css: {
+            p: {
+              a: {
+                'text-decoration': 'none',
+                color: '#6278DF',
+              },
+            },
             a: {
               'text-decoration': 'none',
             },
