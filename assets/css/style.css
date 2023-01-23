@@ -2,3 +2,34 @@ html {
   scroll-margin-top: 61px;
   scroll-behavior: smooth;
 }
+
+table {
+  border-collapse: collapse;
+  border: solid 2px #6B7280;
+}
+
+th, td {
+  border: solid 1px #6B7280;
+}
+
+th:first-child {
+  width: 5%;
+}
+
+th:nth-child(2) {
+  width: 10%;
+}
+
+
+th:nth-child(3) {
+  width: 10%;
+}
+
+
+th:nth-child(4) {
+  width: 10%;
+}
+
+th:nth-child(5) {
+  width: 65%;
+}
