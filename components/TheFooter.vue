@@ -116,7 +116,11 @@
               </NuxtLink>
             </li>
             <li class="mb-4">
-              <a href="#" class="hover:underline">{{ $t("contact-us") }}</a>
+              <NuxtLink :to="$localePath('/contact')">
+                <div class="hover:underline">
+                  {{ $t("contact-us") }}
+                </div>
+              </NuxtLink>
             </li>
             <li>
               <a href="https://beta.air360.io/" target="_blank" class="hover:underline">{{ $t("login") }}</a>
