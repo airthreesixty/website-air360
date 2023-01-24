@@ -116,6 +116,7 @@
       </ContentRenderer>
     </main>
     <NewsLetter />
+    <RelatedArticles />
   </div>
 </template>
 
