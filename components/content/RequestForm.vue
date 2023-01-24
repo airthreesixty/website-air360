@@ -92,16 +92,22 @@
         <nav>
           <ul class="flex space-x-4">
             <li>
-              <a
-                href="#"
-                class="text-sm text-gray-500 hover:underline hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-              >Term & Conditions</a>
+              <NuxtLink :to="$localePath('/privacy-policy')">
+                <div
+                  class="text-sm text-gray-500 hover:underline hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                >
+                  {{ $t("privacy-policy") }}
+                </div>
+              </NuxtLink>
             </li>
             <li>
-              <a
-                href="#"
-                class="text-sm text-gray-500 hover:underline hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-              >Contact</a>
+              <NuxtLink :to="$localePath('/contact')">
+                <div
+                  class="text-sm text-gray-500 hover:underline hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                >
+                  {{ $t("contact-us") }}
+                </div>
+              </NuxtLink>
             </li>
           </ul>
         </nav>
@@ -197,6 +203,7 @@
               <div class="flex items-center h-5">
                 <input
                   id="terms"
+                  v-model="formData.terms"
                   aria-describedby="terms"
                   type="checkbox"
                   class="w-4 h-4 border border-gray-300 rounded bg-gray-50 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800"
@@ -229,12 +236,16 @@
 import { useVuelidate } from '@vuelidate/core'
 import { required, email, numeric, jpPhone } from '~/utils/i18n-validators'
 
+const { $localePath } = useNuxtApp()
+
 const formData = reactive({
   name: '',
   email: '',
   jobTitle: '',
   phoneNumber: '',
+  terms: false,
 })
+
 const rules = computed(() => {
   return {
     name: { required },
@@ -247,7 +258,7 @@ const rules = computed(() => {
 const v$ = useVuelidate(rules, formData)
 
 const isFormValid = computed(() => {
-  if (formData.name && formData.email && formData.jobTitle && formData.phoneNumber) {
+  if (formData.name && formData.email && formData.jobTitle && formData.phoneNumber && formData.terms) {
     return true
   } else {
     return false
