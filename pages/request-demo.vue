@@ -8,4 +8,11 @@
 definePageMeta({
   layout: false,
 })
+
+useHead({
+  title: 'デモのリクエスト',
+  meta: [
+    { hid: 'description', name: 'description', content: '' },
+  ],
+})
 </script>

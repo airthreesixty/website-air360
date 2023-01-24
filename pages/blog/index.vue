@@ -13,6 +13,9 @@ const { $i18n } = useNuxtApp()
 
 useHead({
   title: 'ブログ',
+  meta: [
+    { hid: 'description', name: 'description', content: 'eコマースUXの最新トレンド、コンバージョン率向上のためのヒントやコツ、Air360がどのように提供できるかをご紹介します。' },
+  ],
 })
 
 // TODO the value from the plugin is wrong, remove _value when it's fixed
