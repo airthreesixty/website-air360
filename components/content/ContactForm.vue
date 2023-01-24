@@ -10,7 +10,7 @@
           Contact Us
         </h2>
         <p class="font-light text-gray-600 dark:text-gray-400 sm:text-xl">
-          お問い合わせ内容をご入力ください。
+          <ContentSlot :use="$slots.subtext" />
         </p>
       </div>
       <div class="grid grid-cols-1 lg:gap-8 lg:grid-cols-3">
@@ -104,7 +104,7 @@
               :class="{'opacity-25 cursor-not-allowed': !isFormValid }"
               :disabled="!isFormValid"
             >
-              Send message
+              <ContentSlot :use="$slots.submitButton" />
             </button>
           </form>
         </div>
