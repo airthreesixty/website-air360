@@ -211,7 +211,7 @@
               </div>
               <div class="ml-3 error-alert">
                 <div
-                  class="font-light text-gray-500 dark:text-gray-300"
+                  class="font-light text-xs text-gray-500 dark:text-gray-300"
                 >
                   <ContentSlot :use="$slots.rule" />
                 </div>

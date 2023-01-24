@@ -94,19 +94,8 @@
               <span v-if="v$.message.$error" class="error-alert">
                 {{ v$.message.$errors[0].$message }}
               </span>
-              <p class="mt-4 text-sm text-gray-500">
-                By submitting this form you agree to our
-                <a
-                  href="#"
-                  class="text-primary-600 hover:underline dark:text-primary-500"
-                >terms and conditions</a>
-                and our
-                <a
-                  href="#"
-                  class="text-primary-600 hover:underline dark:text-primary-500"
-                >privacy policy</a>
-                which explains how we may collect, use and disclose your
-                personal information including to third parties.
+              <p class="mt-4 text-xs text-gray-500">
+                <ContentSlot :use="$slots.rule" />
               </p>
             </div>
             <button
