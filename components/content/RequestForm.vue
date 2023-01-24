@@ -206,7 +206,7 @@
                   v-model="formData.terms"
                   aria-describedby="terms"
                   type="checkbox"
-                  class="w-4 h-4 border border-gray-300 rounded bg-gray-50 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800"
+                  class="w-4 h-4 border text-primary-600 border-gray-300 rounded bg-gray-50 focus:ring-offset-0 focus:ring-0 dark:bg-gray-700 dark:border-gray-600 focus:ring-primary-600 dark:ring-offset-gray-800"
                 >
               </div>
               <div class="ml-3 error-alert">
