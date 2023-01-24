@@ -5,7 +5,7 @@
         class="px-4 mx-auto max-w-screen-sm text-center lg:px-6 mb-8 lg:mb-16"
       >
         <h2
-          class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+          class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 md:text-4xl dark:text-white"
         >
           Contact Us
         </h2>
