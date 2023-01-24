@@ -206,17 +206,8 @@
                 <label
                   for="terms"
                   class="font-light text-gray-500 dark:text-gray-300"
-                >By signing up, you are creating a Flowbite account, and you
-                  agree to Flowbite’s
-                  <a
-                    class="font-medium text-primary-600 dark:text-primary-500 hover:underline"
-                    href="#"
-                  >Terms of Use</a>
-                  and
-                  <a
-                    class="font-medium text-primary-600 dark:text-primary-500 hover:underline"
-                    href="#"
-                  >Privacy Policy</a>.</label>
+                ><ContentSlot :use="$slots.rule" />
+                </label>
               </div>
             </div>
             <button

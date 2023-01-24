@@ -22,4 +22,7 @@ Webサイト体験を向上させるためにすぐに実現できる簡単な�
 職種*
 #phone
 電話番号（ハイフンなし）*
+
+#rule
+Air360の利用規約とプライバシーポリシーに同意するものとします。および<span class="font-medium text-primary-600 dark:text-primary-500 hover:underline">プライバシーポリシー</span>に同意したものとみなされます。
 ::
