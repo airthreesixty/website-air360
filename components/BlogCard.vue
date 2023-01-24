@@ -4,7 +4,7 @@
       class="p-4 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
     >
       <img
-        class="mb-5 rounded-lg"
+        class="mb-5 rounded-lg h-50 w-full"
         :src="data.image"
         alt="office laptop working"
       >
