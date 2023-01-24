@@ -14,7 +14,7 @@
           コンバージョン率を向上させるには
         </p>
       </div>
-      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         <slot name="articles" />
       </div>
     </div>

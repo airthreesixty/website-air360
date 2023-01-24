@@ -30,5 +30,3 @@ Webサイト体験を向上させるためにすぐに実現できる簡単な�
 #rule
 Air360の<span class="text-primary-600 hover:underline">[利用規約とプライバシーポリシー](/privacy-policy)</span>に同意するものとします。
 ::
-
-<span class="text-primary-600 hover:underline dark:text-primary-500">
