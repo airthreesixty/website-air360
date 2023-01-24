@@ -1,3 +1,7 @@
+---
+title: 製品
+---
+
 ::product-header
 #subtext
 Features
