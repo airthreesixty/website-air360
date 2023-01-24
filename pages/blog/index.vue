@@ -25,6 +25,4 @@ const { data } = await useAsyncData('blog', () =>
     .only(['published', 'tags', 'readingTime', 'title', 'image', '_path', 'metaDesc'])
     .find(),
 )
-
-console.log(data._value[0])
 </script>
