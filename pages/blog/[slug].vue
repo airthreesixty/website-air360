@@ -140,13 +140,11 @@ if (!data.value) {
   router.push($localePath('/blog'))
 }
 
-if (data.value) {
-  useSeoMeta({
-    description: data.value.metaDesc,
-    ogImage: data.value.image,
-    twitterCard: 'summary_large_image',
-  })
-}
+useSeoMeta({
+  description: data.value?.metaDesc,
+  ogImage: data.value?.image,
+  twitterCard: 'summary_large_image',
+})
 
 useHead({
   title: data.value?.title,

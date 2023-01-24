@@ -170,32 +170,6 @@
               東京都千代田区大手町1丁目6番1号<br>大手町ビル1階,2階SPACES大手町
             </p>
           </div>
-          <div>
-            <div
-              class="flex justify-center items-center mx-auto mb-4 w-10 h-10 bg-gray-100 rounded-lg dark:bg-gray-800 lg:h-16 lg:w-16"
-            >
-              <svg
-                class="w-5 h-5 text-gray-600 lg:w-8 lg:h-8 dark:text-gray-500"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
-                />
-              </svg>
-            </div>
-            <p class="mb-2 text-xl font-bold text-gray-900 dark:text-white">
-              Call us:
-            </p>
-            <p class="mb-3 text-gray-500 dark:text-gray-400">
-              Call us to speak to a member of our team. We are always happy to
-              help.
-            </p>
-            <p class="font-semibold text-primary-600 dark:text-primary-500">
-              +1 (646) 786-5060
-            </p>
-          </div>
         </div>
       </div>
     </div>
