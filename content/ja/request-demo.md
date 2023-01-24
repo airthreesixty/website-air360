@@ -28,5 +28,7 @@ Webサイト体験を向上させるためにすぐに実現できる簡単な�
 電話番号（ハイフンなし）*
 
 #rule
-Air360の利用規約とプライバシーポリシーに同意するものとします。および<span class="font-medium text-primary-600 dark:text-primary-500 hover:underline">プライバシーポリシー</span>に同意したものとみなされます。
+Air360の<span class="text-primary-600 hover:underline">[利用規約とプライバシーポリシー](/privacy-policy)</span>に同意するものとします。
 ::
+
+<span class="text-primary-600 hover:underline dark:text-primary-500">

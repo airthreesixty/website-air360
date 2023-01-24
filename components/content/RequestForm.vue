@@ -203,11 +203,11 @@
                 >
               </div>
               <div class="ml-3 error-alert">
-                <label
-                  for="terms"
+                <div
                   class="font-light text-gray-500 dark:text-gray-300"
-                ><ContentSlot :use="$slots.rule" />
-                </label>
+                >
+                  <ContentSlot :use="$slots.rule" />
+                </div>
               </div>
             </div>
             <button
