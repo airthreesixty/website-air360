@@ -13,11 +13,6 @@
         >
       </div>
       <div class="mr-auto place-self-center lg:col-span-7 md:flex-1">
-        <!-- <p
-          class="max-w-2xl my-4 text-gray-500 leading-none md:text-base lg:text-xl dark:text-white"
-        >
-          <ContentSlot :use="$slots.subtitle" />
-        </p> -->
         <h1
           class="max-w-2xl mb-6 font-bold text-2xl bg-gradient-to-r from-[#6278DF] to-blue-[#3DDC97] bg-clip-text text-transparent lg:mb-8 md:text-3xl lg:text-4xl dark:text-gray-400"
         >

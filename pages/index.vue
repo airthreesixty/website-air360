@@ -3,7 +3,7 @@
 </template>
 
 <script setup lang="ts">
-import { useSeoMeta } from '@unhead/vue';
+import { useSeoMeta } from '@unhead/vue'
 
 useHead({
   title: 'Air360',
