@@ -11,7 +11,7 @@ Features
 複雑で終わりのない分析レポートにうんざりしていませんか？Air360はより多くの収益を上げるための隠れたインサイトを発見するお手伝いをします。
 ::
 
-::single-description{imagePath="/smartDescription.png" buttonStatus="hidden"}
+::single-description{imagePath="/smartDescription.jpeg" buttonStatus="hidden"}
 #subtext
 スマート
 #title
@@ -20,7 +20,7 @@ Features
 ユーザーのウェブ上の行動を動画で確認し、ユーザーが持つ不満を素早く発見できます。スクリーニングすることで、あなたの気になる特定のユーザーに絞れます。
 ::
 
-::single-description{imagePath="/intuitiveDescription.png" imageStatus="block" imageStatus2="hidden" buttonStatus="hidden"}
+::single-description{imagePath="/intuitiveDescription.jpeg" imageStatus="block" imageStatus2="hidden" buttonStatus="hidden"}
 #subtext
 直感的
 #title

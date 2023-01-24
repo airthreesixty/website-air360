@@ -5,7 +5,7 @@
     >
       <ContentSlot :use="$slots.mainTitle" />
     </h2>
-    <SingleDescription image-path="/boostConversion.png" button-status="hidden">
+    <SingleDescription image-path="/intuitiveDescription.jpeg" button-status="hidden">
       <template #subtext>
         <ContentSlot :use="$slots.subtext1" />
       </template>
@@ -16,7 +16,7 @@
         <ContentSlot :use="$slots.description1" />
       </template>
     </SingleDescription>
-    <SingleDescription image-path="/boostConversion.png" button-status="hidden" image-status="block" image-status2="hidden">
+    <SingleDescription image-path="/smartDescription.jpeg" button-status="hidden" image-status="block" image-status2="hidden">
       <template #subtext>
         <ContentSlot :use="$slots.subtext2" />
       </template>
