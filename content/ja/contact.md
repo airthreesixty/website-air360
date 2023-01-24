@@ -1,2 +1,6 @@
+---
+title: コンタクト
+---
+
 ::contact-form
 ::

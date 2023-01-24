@@ -1,3 +1,7 @@
+---
+title: デモのリクエスト
+---
+
 ::request-form
 #title
 デモをリクエストする
