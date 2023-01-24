@@ -10,7 +10,7 @@
         <h3 v-if="tagList.includes(tag)" class="text-xl text-black-600 md:text-2xl">
           {{ $t(`tag.${tag}`) }}
         </h3>
-        <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">
+        <p class="font-light text-gray-500 md:text-xl dark:text-gray-400">
           コンバージョン率を向上させるには
         </p>
       </div>
