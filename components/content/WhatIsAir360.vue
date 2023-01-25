@@ -10,8 +10,8 @@
           <ContentSlot :use="$slots.description" />
         </p>
       </div>
-      <div class="mt-12 scale-50 transition">
-        <img class="mx-auto rounded-lg shadow-md ring-1 ring-black ring-opacity-5 lg:w-10/12" src="/WhatIsAir360.jpeg" alt="">
+      <div class="mt-12">
+        <img class="mx-auto rounded-lg shadow-md ring-1 ring-black ring-opacity-5 md:w-10/12" src="/WhatIsAir360.jpeg" alt="">
       </div>
     </div>
   </section>
