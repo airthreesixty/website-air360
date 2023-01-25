@@ -30,7 +30,7 @@
                   <img
                     class="h-12 w-12 rounded-full"
                     src="https://www.air360.io/wp-content/uploads/2022/08/nelson.webp"
-                    alt=""
+                    :alt="$t('clubmed-manager')"
                     loading="lazy"
                   >
                 </div>

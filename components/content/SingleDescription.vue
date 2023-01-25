@@ -6,7 +6,8 @@
       <div :class="`md:${props.imageStatus} md:mt-0 md:col-span-7 md:flex lg:w-11/12`">
         <img
           :src="props.imagePath"
-          alt="mockup"
+          :alt="props.alt"
+          loading="lazy"
         >
       </div>
       <div class="md:col-span-5">
@@ -46,7 +47,8 @@
       <div :class="`hidden md:${props.imageStatus2} md:mt-0 md:col-span-7 md:flex lg:w-11/12`">
         <img
           :src="props.imagePath"
-          alt="mockup"
+          :alt="props.alt"
+          loading="lazy"
         >
       </div>
     </div>
@@ -78,6 +80,10 @@ const props = defineProps({
   subtextColor: {
     type: String,
     default: 'text-primary-600',
+  },
+  alt: {
+    type: String,
+    default: 'Picture',
   },
 })
 </script>

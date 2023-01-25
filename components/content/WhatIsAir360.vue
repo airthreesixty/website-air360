@@ -11,20 +11,8 @@
         </p>
       </div>
       <div class="mt-12">
-        <img class="mx-auto rounded-lg shadow-md ring-1 ring-black ring-opacity-5 md:w-7/12" src="/WhatIsAir360.jpeg" alt="">
+        <img class="mx-auto rounded-lg shadow-md ring-1 ring-black ring-opacity-5 md:w-7/12" src="/WhatIsAir360.jpeg" :alt="$t('what-is-air360')" loading="lazy">
       </div>
     </div>
   </section>
-
-  <!-- <SingleDescription image-path="/boostConversion.png" button-status="hidden">
-    <template #subtext>
-      <ContentSlot :use="$slots.subtext" />
-    </template>
-    <template #title>
-      <ContentSlot :use="$slots.title" />
-    </template>
-    <template #description>
-      <ContentSlot :use="$slots.description" />
-    </template>
-  </SingleDescription> -->
 </template>
