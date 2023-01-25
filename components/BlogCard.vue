@@ -6,7 +6,7 @@
       <img
         class="mb-5 rounded-lg h-50 w-full"
         :src="data.image"
-        alt="office laptop working"
+        :alt="data.title"
       >
       <span
         v-for="(tag, index) in data.tags"
