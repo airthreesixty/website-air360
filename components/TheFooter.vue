@@ -71,7 +71,7 @@
             </li>
             <li class="mb-4">
               <a
-                href="https://careers.scalefast.com/?__hstc=69791311.587dc70d597a89b224440e3269a98128.1671688238492.1672293542187.1672297085320.12&__hssc=69791311.2.1672297085320&__hsfp=1906143005"
+                href="https://en-jp.wantedly.com/companies/company_4114459"
                 class="hover:underline"
                 target="_blank"
               >{{ $t("careers") }}</a>

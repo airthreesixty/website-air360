@@ -1,42 +1,42 @@
 <template>
   <nuxt-link :to="$localePath(pathWithoutLocale)">
     <article
-      class="p-4 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+      class="relative p-4 bg-white h-full rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
     >
-      <img
-        class="mb-5 rounded-lg h-50 w-full"
-        :src="data.image"
-        alt="office laptop working"
-      >
-      <span
-        v-for="(tag, index) in data.tags"
-        :key="index"
-        class="bg-blue-100 text-blue-400 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-purple-200 dark:text-purple-900"
-      >{{ $t(`tag.${tag}`) }}</span>
-      <h2
-        class="mt-2 mb-10 text-xl font-bold tracking-tight text-gray-900 dark:text-white"
-      >
-        <a href="#">{{ data.title }}</a>
-      </h2>
-      <!-- <p class="mb-4 font-light text-gray-500 dark:text-gray-400">
-        Over the past year, Volosoft has undergone many changes! After months of
-        preparation and some hard work, we moved to our new office.
-      </p> -->
-      <div class="flex items-center space-x-4">
-        <img
-          class="w-10 h-10 rounded-full"
-          src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
-          alt="Jese Leos avatar"
-        >
-        <div class="font-medium dark:text-white">
-          <div>Jese Leos</div>
-          <div class="text-sm font-normal text-gray-500 dark:text-gray-400">
-            {{
-              dayjs(data.published)
-                .locale($i18n.locale._value)
-                .format("YYYY-MM-DD")
-            }}
-            · {{ data.readingTime }} min
+      <div class="">
+        <div class="">
+          <img
+            class="mb-5 rounded-lg h-50 w-full"
+            :src="data.image"
+            alt="office laptop working"
+          >
+          <span
+            v-for="(tag, index) in data.tags"
+            :key="index"
+            class="bg-blue-100 text-blue-400 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-purple-200 dark:text-purple-900"
+          >{{ $t(`tag.${tag}`) }}</span>
+          <h2
+            class="mt-2 mb-15 text-xl font-bold tracking-tight text-black-600 dark:text-white"
+          >
+            {{ data.title }}
+          </h2>
+        </div>
+        <div class="flex items-center space-x-4 absolute bottom-2">
+          <img
+            class="w-10 h-10 rounded-full"
+            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
+            alt="Jese Leos avatar"
+          >
+          <div class="font-medium dark:text-white">
+            <div>Jese Leos</div>
+            <div class="text-sm font-normal text-gray-500 dark:text-gray-400">
+              {{
+                dayjs(data.published)
+                  .locale($i18n.locale._value)
+                  .format("YYYY-MM-DD")
+              }}
+              · {{ data.readingTime }} min
+            </div>
           </div>
         </div>
       </div>
