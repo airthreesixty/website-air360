@@ -22,6 +22,7 @@ const { data } = await useAsyncData(`blog-${path}`, () =>
   queryContent($i18n.locale._value, '/blog')
     .sort({ published: -1 })
     .where({ _path: { $ne: `/${$i18n.locale._value}${path}` } })
+    .limit(3)
     .find(),
 )
 </script>
