@@ -7,7 +7,7 @@
         >
           Air360 ブログ
         </h2>
-        <h3 v-if="tagList.includes(tag)" class="text-xl text-black-600 md:text-2xl">
+        <h3 v-if="tagList.includes(tag)" class="text-xl mb-3 text-black-600 md:text-2xl">
           {{ $t(`tag.${tag}`) }}
         </h3>
         <p class="font-light text-gray-500 md:text-xl dark:text-gray-400">

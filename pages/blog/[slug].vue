@@ -79,19 +79,19 @@
                   >
                     <img
                       class="mr-4 w-16 h-16 rounded-full"
-                      src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
+                      src="https://secure.gravatar.com/avatar/8970d6f80cecf680b09d491937b1623f?s=96&d=mm&r=g"
                     >
                     <div>
-                      <a
-                        href="#"
-                        rel="author"
+                      <div
                         class="text-xl font-bold text-gray-900 dark:text-white"
-                      >Jese Leos</a>
-                      <p
+                      >
+                        {{ $t('air360-team') }}
+                      </div>
+                      <!-- <p
                         class="text-base font-light text-gray-500 dark:text-gray-400"
                       >
                         Graphic Designer, educator & CEO Flowbite
-                      </p>
+                      </p> -->
                       <p
                         class="text-base font-light text-gray-500 dark:text-gray-400"
                       >
