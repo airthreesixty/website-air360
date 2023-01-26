@@ -24,17 +24,19 @@
         >
           <ContentSlot :use="$slots.description" />
         </p>
-        <div class="pt-3 md:flex md:items-center">
-          <button
-            class="text-white bg-primary-600 text-base font-bold w-full mt-5 block transition ease-in-out duration-300 hover:bg-primary-700 font-medium rounded-lg text-sm px-6 py-3 mr-2 mb-2 md:w-1/2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-          >
-            {{ $t("request-demo") }}
-          </button>
-          <button
+        <div class="pt-3  md:items-center">
+          <NuxtLink :to="$localePath('/request-demo')">
+            <button
+              class="text-white bg-primary-600 text-base font-bold w-full mt-5 block transition ease-in-out duration-300 hover:bg-primary-700 font-medium rounded-lg text-sm px-6 py-3 mr-2 mb-2 md:w-1/2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            >
+              {{ $t("request-demo") }}
+            </button>
+          </NuxtLink>
+          <!-- <button
             class="text-white bg-blue-400 text-base font-bold w-full mt-3 block transition ease-in-out duration-300 md:mt-5 hover:bg-blue-500 font-medium rounded-lg text-sm px-6 py-3 mb-2 md:w-1/2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
           >
             <ContentSlot :use="$slots.button1" />
-          </button>
+          </button> -->
         </div>
       </div>
       <div class="hidden md:block md:flex lg:mt-0 lg:col-span-5">
@@ -47,6 +49,10 @@
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+const { $localePath } = useNuxtApp()
+</script>
 
 <style scoped>
 img {

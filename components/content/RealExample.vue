@@ -6,11 +6,11 @@
       <img
         class="w-full rounded-lg md:hidden dark:hidden"
         src="https://media-server.clubmed.com/image/jpeg/1024/auto/crop/center/70/https%3A%2F%2Fns.clubmed.com%2Fesap%2F2022%2F206%2Fimg%2Foffer%2FW23.jpg"
-        alt="dashboard image"
+        :alt="$t('clubmed-pic')"
       >
       <div class="mt-4 md:mt-0">
         <h2
-          class="mb-4 text-xl tracking-tight font-semibold text-black-600 text-left md:text-2xl lg:text-4xl dark:text-white"
+          class="mb-4 text-2xl font-semibold text-black-600 text-left md:text-3xl lg:text-4xl dark:text-white"
         >
           <ContentSlot :use="$slots.title" />
         </h2>
