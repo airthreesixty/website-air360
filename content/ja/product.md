@@ -40,7 +40,7 @@ Chrome拡張機能を使えば、クリック一つでコンバージョンに�
 
 ::single-description{imagePath="/sunburst.png" imageStatus="block" imageStatus2="hidden" buttonStatus="hidden" alt="カスタマージャーニー"}
 #subtext
-カスタムサンバースト
+視覚的
 #title
 カスタマージャーニー
 #description

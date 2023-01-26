@@ -1,10 +1,10 @@
 <template>
-  <section class="bg-white h-screen dark:bg-gray-900" :class="{'h-auto': screenHeight}">
+  <section class="bg-white dark:bg-gray-900" :class="{'h-auto': screenHeight}">
     <div
       class="max-w-screen-[1400px] px-4 py-8 mx-auto lg:grid lg:gap-20 lg:py-16 lg:grid-cols-12"
     >
       <div
-        class="flex-col justify-between hidden mr-auto lg:flex lg:col-span-5 xl:col-span-6 xl:mb-0"
+        class="flex-col justify-between hidden mr-auto lg:flex lg:col-span-6 xl:mb-0"
       >
         <div>
           <div
@@ -16,80 +16,36 @@
               alt="Air360 logo"
             >
           </div>
+          <h1 class="mb-3 font-semibold bg-gradient-to-r from-[#6278DF] to-blue-[#3DDC97] bg-clip-text text-transparent text-xl md:text-2xl lg:text-3xl">
+            ユーザーに最高のeコマース体験を
+          </h1>
+          <h2 class="mb-3 text-black-600 font-semibold lg:text-lg">
+            Air360は、より多くのユーザーを迅速にロイヤルカスタマーにするためのパワーを提供します。
+          </h2>
           <div class="flex">
-            <svg
-              class="w-6 h-6 mr-2 text-primary-600 shrink-0"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                clip-rule="evenodd"
-              />
-            </svg>
             <div>
-              <h3
-                class="mb-2 text-xl font-medium leading-none text-gray-900 dark:text-white"
-              >
-                <ContentSlot :use="$slots.title1" />
-              </h3>
               <p class="mb-2 font-light text-gray-500 dark:text-gray-400">
                 <ContentSlot :use="$slots.description1" />
               </p>
             </div>
           </div>
-          <div class="flex pt-8">
-            <svg
-              class="w-6 h-6 mr-2 text-primary-600 shrink-0"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                clip-rule="evenodd"
-              />
-            </svg>
+          <div class="flex pt-4">
             <div>
-              <h3
-                class="mb-2 text-xl font-medium leading-none text-gray-900 dark:text-white"
-              >
-                <ContentSlot :use="$slots.title2" />
-              </h3>
               <p class="mb-2 font-light text-gray-500 dark:text-gray-400">
                 <ContentSlot :use="$slots.description2" />
               </p>
             </div>
           </div>
-          <div class="flex pt-8">
-            <svg
-              class="w-6 h-6 mr-2 text-primary-600 shrink-0"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                clip-rule="evenodd"
-              />
-            </svg>
+          <div class="flex pt-4">
             <div>
-              <h3
-                class="mb-2 text-xl font-medium leading-none text-gray-900 dark:text-white"
-              >
-                <ContentSlot :use="$slots.title3" />
-              </h3>
               <p class="mb-2 font-light text-gray-500 dark:text-gray-400">
                 <ContentSlot :use="$slots.description3" />
               </p>
             </div>
           </div>
         </div>
-        <nav>
+        <CompanyLogos grid-cols-sm="grid-cols-2" grid-cols-md="grid-cols-3" grid-cols-lg="grid-cols-3" padding-bottom="pb-1" />
+        <!-- <nav>
           <ul class="flex space-x-4">
             <li>
               <NuxtLink :to="$localePath('/privacy-policy')">
@@ -110,7 +66,7 @@
               </NuxtLink>
             </li>
           </ul>
-        </nav>
+        </nav> -->
       </div>
       <div class="mb-6 text-center lg:hidden">
         <a
@@ -125,11 +81,11 @@
         </a>
       </div>
       <div
-        class="w-full mx-auto bg-white rounded-lg shadow dark:bg-gray-800 md:mt-0 sm:max-w-lg xl:p-0 lg:col-span-7 xl:col-span-6"
+        class="w-full mx-auto bg-white rounded-lg shadow dark:bg-gray-800 md:mt-0 sm:max-w-lg xl:p-0 lg:col-span-6"
       >
-        <div class="p-6 space-y-4 lg:space-y-6 sm:p-8">
+        <div class="p-6 space-y-4 lg:space-y-6 md:p-8">
           <h1
-            class="text-xl font-bold leading-tight tracking-tight text-center text-gray-900 sm:text-2xl dark:text-white"
+            class="text-xl font-bold leading-tight tracking-tight text-center text-black-600 md:text-2xl dark:text-white"
           >
             <ContentSlot :use="$slots.title" />
           </h1>
@@ -183,22 +139,6 @@
                 {{ v$.jobTitle.$errors[0].$message }}
               </span>
             </div>
-            <div>
-              <label
-                for="phone-number"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-              ><ContentSlot :use="$slots.phone" /></label>
-              <input
-                id="phone-number"
-                v-model="formData.phoneNumber"
-                type="tel"
-                name="tel"
-                class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              >
-              <span v-if="v$.phoneNumber.$error" class="error-alert">
-                {{ v$.phoneNumber.$errors[0].$message }}
-              </span>
-            </div>
             <div class="flex items-start">
               <div class="flex items-center h-5">
                 <input
@@ -234,7 +174,7 @@
 
 <script setup lang="ts">
 import { useVuelidate } from '@vuelidate/core'
-import { required, email, numeric, jpPhone } from '~/utils/i18n-validators'
+import { required, email } from '~/utils/i18n-validators'
 
 const { $localePath } = useNuxtApp()
 
@@ -242,7 +182,6 @@ const formData = reactive({
   name: '',
   email: '',
   jobTitle: '',
-  phoneNumber: '',
   terms: false,
 })
 
@@ -251,14 +190,13 @@ const rules = computed(() => {
     name: { required },
     email: { required, email },
     jobTitle: { required },
-    phoneNumber: { required, numeric, jpPhone },
   }
 })
 
 const v$ = useVuelidate(rules, formData)
 
 const isFormValid = computed(() => {
-  if (formData.name && formData.email && formData.jobTitle && formData.phoneNumber && formData.terms) {
+  if (formData.name && formData.email && formData.jobTitle && formData.terms) {
     return true
   } else {
     return false

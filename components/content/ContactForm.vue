@@ -65,22 +65,7 @@
                 {{ v$.jobTitle.$errors[0].$message }}
               </span>
             </div>
-            <div>
-              <label
-                for="phone-number"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-              >電話番号*</label>
-              <input
-                id="phone-number"
-                v-model="formData.phoneNumber"
-                type="tel"
-                class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-              >
-              <span v-if="v$.phoneNumber.$error" class="error-alert">
-                {{ v$.phoneNumber.$errors[0].$message }}
-              </span>
-            </div>
-            <div class="sm:col-span-2">
+            <div class="md:col-span-2">
               <label
                 for="message"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
@@ -132,7 +117,7 @@
               会社情報:
             </p>
             <p class="text-gray-500 dark:text-gray-400">
-              Scalefast Japan <br>Tax id: USXXXXXX
+              Scalefast Japan
             </p>
           </div>
           <div>
@@ -167,13 +152,12 @@
 
 <script setup lang="ts">
 import { useVuelidate } from '@vuelidate/core'
-import { required, email, numeric, jpPhone } from '~/utils/i18n-validators'
+import { required, email } from '~/utils/i18n-validators'
 
 const formData = reactive({
   name: '',
   email: '',
   jobTitle: '',
-  phoneNumber: '',
   message: '',
 })
 const rules = computed(() => {
@@ -181,7 +165,6 @@ const rules = computed(() => {
     name: { required },
     email: { required, email },
     jobTitle: { required },
-    phoneNumber: { required, numeric, jpPhone },
     message: { required },
   }
 })
@@ -189,7 +172,7 @@ const rules = computed(() => {
 const v$ = useVuelidate(rules, formData)
 
 const isFormValid = computed(() => {
-  if (formData.name && formData.email && formData.jobTitle && formData.phoneNumber && formData.message) {
+  if (formData.name && formData.email && formData.jobTitle && formData.message) {
     return true
   } else {
     return false
