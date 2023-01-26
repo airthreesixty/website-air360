@@ -150,5 +150,4 @@ useSeoMeta({
 useHead({
   title: data.value?.title,
 })
-
 </script>

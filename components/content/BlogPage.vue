@@ -13,6 +13,7 @@
         <p class="font-light text-gray-500 md:text-xl dark:text-gray-400">
           コンバージョン率を向上させるには
         </p>
+        <slot name="searchBar" />
       </div>
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         <slot name="articles" />

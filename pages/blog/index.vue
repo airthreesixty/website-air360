@@ -1,6 +1,9 @@
 <template>
   <main>
     <BlogPage>
+      <!-- <template #searchBar>
+        <BlogSearchBar />
+      </template> -->
       <template #articles>
         <BlogCard v-for="article in data" :key="article._path" :data="article" />
       </template>
@@ -22,7 +25,6 @@ useHead({
 const { data } = await useAsyncData('blog', () =>
   queryContent($i18n.locale._value, 'blog')
     .sort({ published: -1 })
-    .only(['published', 'tags', 'readingTime', 'title', 'image', '_path', 'metaDesc'])
     .find(),
 )
 </script>
