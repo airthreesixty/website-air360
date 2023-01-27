@@ -1,6 +1,10 @@
 <template>
   <section class="bg-white dark:bg-gray-900" :class="{'h-auto': screenHeight}">
-    <SuccessNotification :is-success="isSuccess" @close="close" />
+    <transition name="bar">
+      <div v-if="isSuccess">
+        <SuccessNotification :is-success="isSuccess" @close="close" />
+      </div>
+    </transition>
     <div
       class="max-w-screen-[1400px] px-4 py-8 mx-auto lg:grid lg:gap-20 lg:py-16 lg:grid-cols-12"
     >
@@ -217,9 +221,8 @@ const submitForm = async () => {
     alert('Fail')
     screenHeight.value = true
   } else {
-    alert('Success')
+    await axios.post('https://api.form-data.com/f/gq31layf9m65mw704tcnmm', formData).then()
     isSuccess.value = !isSuccess.value
-    // await axios.post('https://api.form-data.com/f/gq31layf9m65mw704tcnmm', formData)
     screenHeight.value = false
   }
 }
@@ -228,5 +231,12 @@ const submitForm = async () => {
 <style lang="postcss">
 .error-alert {
   @apply text-xs text-red-500;
+}
+
+.bar-enter-active, .bar-leave-active {
+  transition: opacity .3s;
+}
+.bar-enter, .bar-leave-to {
+  opacity: 0;
 }
 </style>

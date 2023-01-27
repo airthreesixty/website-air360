@@ -1,5 +1,5 @@
 <template>
-  <div class="absolute top-0 w-full rounded-md bg-green-50 p-4" :class="{'hidden': !isSuccess, 'block': isSuccess}">
+  <div class="absolute top-0 w-full rounded-md bg-green-50 p-4">
     <div class="flex">
       <div class="flex-shrink-0">
         <CheckCircleIcon class="h-5 w-5 text-green-400" aria-hidden="true" />
@@ -25,11 +25,4 @@
 import { CheckCircleIcon, XMarkIcon } from '@heroicons/vue/20/solid'
 
 const emit = defineEmits(['close'])
-
-defineProps({
-  isSuccess: {
-    type: Boolean,
-    required: true,
-  },
-})
 </script>
