@@ -89,7 +89,7 @@
           >
             <ContentSlot :use="$slots.title" />
           </h1>
-          <form class="space-y-4 lg:space-y-6" action="#" @submit.prevent="submitForm">
+          <form class="space-y-4 lg:space-y-6" action="" method="post" @submit.prevent="submitForm">
             <div>
               <label
                 for="name"
@@ -173,10 +173,11 @@
 </template>
 
 <script setup lang="ts">
+import axios from 'axios'
 import { useVuelidate } from '@vuelidate/core'
 import { required, email } from '~/utils/i18n-validators'
 
-const { $localePath } = useNuxtApp()
+const router = useRouter()
 
 const formData = reactive({
   name: '',
@@ -212,6 +213,8 @@ const submitForm = async () => {
     screenHeight.value = true
   } else {
     alert('Success')
+    await axios.post('https://api.form-data.com/f/gq31layf9m65mw704tcnmm', formData)
+    router.replace('form-submitted')
     screenHeight.value = false
   }
 }
