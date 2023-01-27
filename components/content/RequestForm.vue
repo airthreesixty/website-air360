@@ -1,5 +1,6 @@
 <template>
   <section class="bg-white dark:bg-gray-900" :class="{'h-auto': screenHeight}">
+    <SuccessNotification :is-success="isSuccess" @close="close" />
     <div
       class="max-w-screen-[1400px] px-4 py-8 mx-auto lg:grid lg:gap-20 lg:py-16 lg:grid-cols-12"
     >
@@ -177,7 +178,7 @@ import axios from 'axios'
 import { useVuelidate } from '@vuelidate/core'
 import { required, email } from '~/utils/i18n-validators'
 
-const router = useRouter()
+const isSuccess = ref(false)
 
 const formData = reactive({
   name: '',
@@ -204,6 +205,10 @@ const isFormValid = computed(() => {
   }
 })
 
+const close = () => {
+  isSuccess.value = !isSuccess.value
+}
+
 const screenHeight = ref(false)
 
 const submitForm = async () => {
@@ -213,8 +218,8 @@ const submitForm = async () => {
     screenHeight.value = true
   } else {
     alert('Success')
-    await axios.post('https://api.form-data.com/f/gq31layf9m65mw704tcnmm', formData)
-    router.replace('form-submitted')
+    isSuccess.value = !isSuccess.value
+    // await axios.post('https://api.form-data.com/f/gq31layf9m65mw704tcnmm', formData)
     screenHeight.value = false
   }
 }

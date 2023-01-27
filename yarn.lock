@@ -624,6 +624,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@heroicons/vue@npm:^2.0.14":
+  version: 2.0.14
+  resolution: "@heroicons/vue@npm:2.0.14"
+  peerDependencies:
+    vue: ">= 3"
+  checksum: c5a2c22eb663b0f467eb55849589ec80db74d542b3000c87d59dcac27635844348c2d42197fe9b3ca30590f74a5df0ea382b6b1d414d5020948b4b2416fa9d4a
+  languageName: node
+  linkType: hard
+
 "@humanwhocodes/config-array@npm:^0.11.8":
   version: 0.11.8
   resolution: "@humanwhocodes/config-array@npm:0.11.8"
@@ -8767,6 +8776,7 @@ __metadata:
     "@fortawesome/free-brands-svg-icons": ^6.2.1
     "@fortawesome/free-solid-svg-icons": ^6.2.1
     "@fortawesome/vue-fontawesome": latest-3
+    "@heroicons/vue": ^2.0.14
     "@nuxt/content": ^2.2.2
     "@nuxtjs/eslint-config-typescript": ^12.0.0
     "@nuxtjs/i18n": next
