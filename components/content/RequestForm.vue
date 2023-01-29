@@ -5,6 +5,7 @@
         <SuccessNotification :is-success="isSuccess" @close="close" />
       </div>
     </transition>
+    <Loading v-if="loading" />
     <div
       class="max-w-screen-[1400px] px-4 py-8 mx-auto lg:grid lg:gap-20 lg:py-16 lg:grid-cols-12"
     >
@@ -50,28 +51,6 @@
           </div>
         </div>
         <CompanyLogos grid-cols-sm="grid-cols-2" grid-cols-md="grid-cols-3" grid-cols-lg="grid-cols-3" padding-bottom="pb-1" />
-        <!-- <nav>
-          <ul class="flex space-x-4">
-            <li>
-              <NuxtLink :to="$localePath('/privacy-policy')">
-                <div
-                  class="text-sm text-gray-500 hover:underline hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-                >
-                  {{ $t("privacy-policy") }}
-                </div>
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink :to="$localePath('/contact')">
-                <div
-                  class="text-sm text-gray-500 hover:underline hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-                >
-                  {{ $t("contact-us") }}
-                </div>
-              </NuxtLink>
-            </li>
-          </ul>
-        </nav> -->
       </div>
       <div class="mb-6 text-center lg:hidden">
         <a
@@ -183,6 +162,7 @@ import { useVuelidate } from '@vuelidate/core'
 import { required, email } from '~/utils/i18n-validators'
 
 const isSuccess = ref(false)
+const loading = ref(false)
 
 const formData = reactive({
   name: '',
@@ -221,8 +201,12 @@ const submitForm = async () => {
     alert('Fail')
     screenHeight.value = true
   } else {
-    await axios.post('https://api.form-data.com/f/gq31layf9m65mw704tcnmm', formData).then()
-    isSuccess.value = !isSuccess.value
+    // await axios.post('https://api.form-data.com/f/gq31layf9m65mw704tcnmm', formData)
+    loading.value = true
+    setTimeout(() => {
+      loading.value = false
+      isSuccess.value = !isSuccess.value
+    }, 3000)
     screenHeight.value = false
   }
 }

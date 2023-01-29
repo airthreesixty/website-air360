@@ -47,9 +47,6 @@
         >
       </div>
     </div>
-    <div>
-      <Loading />
-    </div>
   </section>
 </template>
 
