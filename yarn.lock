@@ -8796,6 +8796,7 @@ __metadata:
     typescript: ^4.9.4
     unhead: ^1.0.17
     vue-i18n: next
+    vue-loading-overlay: ^6.0
   languageName: unknown
   linkType: soft
 
@@ -10389,6 +10390,15 @@ __metadata:
   peerDependencies:
     vue: ^3.0.0
   checksum: d2f6ce3d7709c8c418918b08f263298e188cb5bdfb8d5d31fe8f6c3b7b220098f405f2e3428f75121b2268c2e10ec5fc3168eea32c0de4a8714ef93323f7019a
+  languageName: node
+  linkType: hard
+
+"vue-loading-overlay@npm:^6.0":
+  version: 6.0.2
+  resolution: "vue-loading-overlay@npm:6.0.2"
+  peerDependencies:
+    vue: ^3.2.0
+  checksum: 1b712c33b8c5d182e6fdb0529aff3334482822fa613e618142921bb4ea73fe18a18b5dad42814ebce2afc896f33f434a655d2260290159f53731ff83159e8573
   languageName: node
   linkType: hard
 
