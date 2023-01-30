@@ -135,6 +135,7 @@ const { data } = await useAsyncData(`blog-${route.params.slug}`, () =>
     `/${$i18n.locale._value}${getPathWithoutLocale(route.path)}`,
   ).findOne(),
 )
+
 const paragraphTitles = data._rawValue.body.toc.links
 
 if (!data.value) {
