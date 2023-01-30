@@ -67,14 +67,14 @@
                 href="https://esw.com/"
                 class="hover:underline"
                 target="_blank"
-              >ESW</a>
+              >ESW<fa-icon class="fa-sm pl-1" :icon="['fas', 'arrow-up-right-from-square']" /></a>
             </li>
             <li class="mb-4">
               <a
                 href="https://en-jp.wantedly.com/companies/company_4114459"
                 class="hover:underline"
                 target="_blank"
-              >{{ $t("careers") }}</a>
+              >{{ $t("careers") }}<fa-icon class="fa-sm pl-1" :icon="['fas', 'arrow-up-right-from-square']" /></a>
             </li>
             <li>
               <NuxtLink :to="$localePath('/privacy-policy')">
@@ -123,7 +123,7 @@
               </NuxtLink>
             </li>
             <li>
-              <a href="https://beta.air360.io/" target="_blank" class="hover:underline">{{ $t("login") }}</a>
+              <a href="https://beta.air360.io/" target="_blank" class="hover:underline">{{ $t("login") }}<fa-icon class="fa-sm pl-1" :icon="['fas', 'arrow-up-right-from-square']" /></a>
             </li>
           </ul>
         </div>
