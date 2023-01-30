@@ -14,12 +14,12 @@
             <h3
               class="mb-2 text-xl font-semibold tracking-tight text-black-600 dark:text-white"
             >
-              最新のコンテンツを受信トレイに直接お届けします
+              {{ $t('newsletter-title') }}
             </h3>
             <p
               class="mb-4 text-base leading-relaxed text-gray-500 dark:text-gray-400"
             >
-              ニュースレターに登録して、最新のコンテンツを手に入れましょう。購読停止はいつでも可能です。
+              {{ $t('newsletter-subtitle') }}
             </p>
             <form action="#">
               <div
