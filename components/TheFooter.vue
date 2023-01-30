@@ -36,22 +36,22 @@
             <fa-icon class="fa-xl" :icon="['fab', 'instagram']" />
             <span class="sr-only">Instagram page</span>
           </a>
-          <a
+          <!-- <a
             href="https://www.youtube.com/@weareair360"
             class="text-gray-600 transition ease-in-out duration-300 hover:text-gray-800 dark:hover:text-white"
             target="_blank"
           >
             <fa-icon class="fa-xl" :icon="['fab', 'youtube']" />
             <span class="sr-only">Youtube page</span>
-          </a>
-          <a
+          </a> -->
+          <!-- <a
             href=" https://www.tiktok.com/@weareair360"
             class="text-gray-600 transition ease-in-out duration-300 hover:text-gray-800 dark:hover:text-white"
             target="_blank"
           >
             <fa-icon class="fa-xl" :icon="['fab', 'tiktok']" />
             <span class="sr-only">Tiktok page</span>
-          </a>
+          </a> -->
         </div>
       </div>
       <div class="grid grid-cols-2 gap-x-3 gap-y-6 sm:gap-6 sm:grid-cols-3">
