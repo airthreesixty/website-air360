@@ -17,12 +17,13 @@
 <script setup lang="ts">
 const { $i18n } = useNuxtApp()
 const { path } = useRoute()
+const route = useRoute()
 
-const { data } = await useAsyncData(`blog-${path}`, () => {
-  return queryContent($i18n.locale._value, '/blog')
+const { data } = await useAsyncData(`${route.params.slug}`, () =>
+  queryContent($i18n.locale._value, '/blog')
     .sort({ published: -1 })
     .where({ _path: { $ne: `/${$i18n.locale._value}${path}` } })
     .limit(3)
-    .find()
-})
+    .find(),
+)
 </script>
