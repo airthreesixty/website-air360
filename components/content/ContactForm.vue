@@ -1,5 +1,11 @@
 <template>
-  <section class="bg-white dark:bg-gray-900">
+  <section class="relative bg-white dark:bg-gray-900">
+    <transition name="bar">
+      <div v-if="isSuccess">
+        <SuccessNotification :is-success="isSuccess" @close="close" />
+      </div>
+    </transition>
+    <Loading v-if="loading" />
     <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
       <div
         class="px-4 mx-auto max-w-screen-sm text-center lg:px-6 mb-8 lg:mb-16"
@@ -16,17 +22,19 @@
       <div class="grid grid-cols-1 lg:gap-8 lg:grid-cols-3">
         <div class="col-span-2 mb-8 lg:mb-0">
           <form
-            action="#"
+            ref="form"
+            action=""
             class="grid grid-cols-1 gap-8 mx-auto max-w-screen-md sm:grid-cols-2"
+            method="post"
             @submit.prevent="submitForm"
           >
             <div>
               <label
-                for="first-name"
+                for="name"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-              >お名前*</label>
+              ><ContentSlot :use="$slots.name" /></label>
               <input
-                id="first-name"
+                id="name"
                 v-model="formData.name"
                 type="text"
                 class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
@@ -37,11 +45,11 @@
             </div>
             <div>
               <label
-                for="last-name"
+                for="email"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-              >メールアドレス*</label>
+              ><ContentSlot :use="$slots.email" /></label>
               <input
-                id="last-name"
+                id="email"
                 v-model="formData.email"
                 type="text"
                 class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
@@ -52,11 +60,11 @@
             </div>
             <div>
               <label
-                for="email"
+                for="job-title"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-              >職種*</label>
+              ><ContentSlot :use="$slots.jobTitle" /></label>
               <input
-                id="email"
+                id="job-title"
                 v-model="formData.jobTitle"
                 type="text"
                 class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
@@ -69,7 +77,7 @@
               <label
                 for="message"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
-              >メッセージ*</label>
+              ><ContentSlot :use="$slots.message" /></label>
               <textarea
                 id="message"
                 v-model="formData.message"
@@ -114,10 +122,10 @@
               </svg>
             </div>
             <p class="mb-2 text-xl font-bold text-gray-900 dark:text-white">
-              会社情報:
+              <ContentSlot :use="$slots.companyInfo" />
             </p>
             <p class="text-gray-500 dark:text-gray-400">
-              Scalefast Japan
+              <ContentSlot :use="$slots.companyName" />
             </p>
           </div>
           <div>
@@ -138,10 +146,10 @@
               </svg>
             </div>
             <p class="mb-2 text-xl font-bold text-gray-900 dark:text-white">
-              ロケーション:
+              <ContentSlot :use="$slots.location" />
             </p>
             <p class="text-gray-500 dark:text-gray-400">
-              東京都千代田区大手町1丁目6番1号<br>大手町ビル1階,2階SPACES大手町
+              <ContentSlot :use="$slots.address" />
             </p>
           </div>
         </div>
@@ -151,6 +159,7 @@
 </template>
 
 <script setup lang="ts">
+import axios from 'axios'
 import { useVuelidate } from '@vuelidate/core'
 import { required, email } from '~/utils/i18n-validators'
 
@@ -160,6 +169,11 @@ const formData = reactive({
   jobTitle: '',
   message: '',
 })
+
+const loading = ref(false)
+
+const isSuccess = ref(false)
+
 const rules = computed(() => {
   return {
     name: { required },
@@ -171,6 +185,8 @@ const rules = computed(() => {
 
 const v$ = useVuelidate(rules, formData)
 
+console.log(v$.value)
+
 const isFormValid = computed(() => {
   if (formData.name && formData.email && formData.jobTitle && formData.message) {
     return true
@@ -179,12 +195,22 @@ const isFormValid = computed(() => {
   }
 })
 
+const close = () => {
+  isSuccess.value = !isSuccess.value
+}
+
 const submitForm = async () => {
   const isFormCorrect = await v$.value.$validate()
-  if (!isFormCorrect) {
-    alert('Fail')
-  } else {
-    alert('Success')
+  if (isFormCorrect) {
+    loading.value = true
+    await axios.post('https://api.form-data.com/f/fhrtrdprid7cc823m483ku', formData)
+    loading.value = false
+    isSuccess.value = !isSuccess.value
+    v$.value.$reset()
+    formData.name = ''
+    formData.email = ''
+    formData.jobTitle = ''
+    formData.message = ''
   }
 }
 </script>
@@ -192,5 +218,13 @@ const submitForm = async () => {
 <style lang="postcss">
 .error-alert {
   @apply text-xs text-red-500;
+}
+
+.bar-enter-active, .bar-leave-active {
+  transition: opacity .3s;
+}
+
+.bar-enter, .bar-leave-to {
+  opacity: 0;
 }
 </style>

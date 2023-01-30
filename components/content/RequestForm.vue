@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white dark:bg-gray-900" :class="{'h-auto': screenHeight}">
+  <section class="bg-white dark:bg-gray-900">
     <transition name="bar">
       <div v-if="isSuccess">
         <SuccessNotification :is-success="isSuccess" @close="close" />
@@ -147,7 +147,7 @@
               :class="{'opacity-25 cursor-not-allowed': !isFormValid }"
               :disabled="!isFormValid"
             >
-              デモのリクエスト
+              {{ $t('request-demo') }}
             </button>
           </form>
         </div>
@@ -193,21 +193,13 @@ const close = () => {
   isSuccess.value = !isSuccess.value
 }
 
-const screenHeight = ref(false)
-
 const submitForm = async () => {
   const isFormCorrect = await v$.value.$validate()
-  if (!isFormCorrect) {
-    alert('Fail')
-    screenHeight.value = true
-  } else {
-    // await axios.post('https://api.form-data.com/f/gq31layf9m65mw704tcnmm', formData)
+  if (isFormCorrect) {
     loading.value = true
-    setTimeout(() => {
-      loading.value = false
-      isSuccess.value = !isSuccess.value
-    }, 3000)
-    screenHeight.value = false
+    await axios.post('https://api.form-data.com/f/gq31layf9m65mw704tcnmm', formData)
+    loading.value = false
+    isSuccess.value = !isSuccess.value
   }
 }
 </script>
