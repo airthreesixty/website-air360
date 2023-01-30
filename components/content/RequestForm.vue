@@ -200,6 +200,8 @@ const submitForm = async () => {
     await axios.post('https://api.form-data.com/f/gq31layf9m65mw704tcnmm', formData)
     loading.value = false
     isSuccess.value = !isSuccess.value
+    v$.value.$reset()
+    Object.assign(formData, { name: '', email: '', jobTitle: '', terms: false })
   }
 }
 </script>

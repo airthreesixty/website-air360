@@ -185,8 +185,6 @@ const rules = computed(() => {
 
 const v$ = useVuelidate(rules, formData)
 
-console.log(v$.value)
-
 const isFormValid = computed(() => {
   if (formData.name && formData.email && formData.jobTitle && formData.message) {
     return true
@@ -207,10 +205,7 @@ const submitForm = async () => {
     loading.value = false
     isSuccess.value = !isSuccess.value
     v$.value.$reset()
-    formData.name = ''
-    formData.email = ''
-    formData.jobTitle = ''
-    formData.message = ''
+    Object.assign(formData, { name: '', email: '', jobTitle: '', message: '' })
   }
 }
 </script>
