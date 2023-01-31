@@ -1,5 +1,5 @@
 <template>
-  <!-- <div
+  <div
     id="newsletter-modal"
     class="w-full py-10 flex justify-center md:h-full"
   >
@@ -20,22 +20,23 @@
               {{ $t('newsletter-subtitle') }}
             </p>
             <form
-              action="https://app.convertkit.com/forms/4813829/subscriptions"
+              id="mc-embedded-subscribe-form"
+              action="https://air360.us21.list-manage.com/subscribe/post?u=4797f92e2238d45352a848bc8&amp;id=254b202862&amp;f_id=006ee4e1f0"
               method="post"
-              class="seva-form formkit-form"
-              data-sv-form="4813829"
-              data-uid="8bd1d17a55"
-              data-format="inline"
-              data-version="5"
+              name="mc-embedded-subscribe-form"
+              class="validate"
+              target="_self"
             >
               <div
                 class="items-center mx-auto space-y-4 max-w-screen-sm sm:flex sm:space-y-0"
               >
                 <div class="relative mr-3 w-full">
                   <label
-                    for="email"
-                    class="hidden mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300"
-                  >Email address</label>
+                    for="mce-EMAIL"
+                    class="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  >
+                    メールアドレス <span class="asterisk">*</span>
+                  </label>
                   <div
                     class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
                   >
@@ -54,10 +55,11 @@
                     </svg>
                   </div>
                   <input
-                    id="email"
-                    class="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                    placeholder="Your email"
+                    id="mce-EMAIL"
                     type="email"
+                    placeholder="Your Email"
+                    name="EMAIL"
+                    class="required email block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                     required
                   >
                 </div>
@@ -80,8 +82,107 @@
         >
       </div>
     </div>
+  </div>
+  <!-- Begin Mailchimp Signup Form -->
+  <!-- <div id="mc_embed_signup" class="flex justify-center shadow-lg w-full py-10 md:h-full">
+    <form
+      id="mc-embedded-subscribe-form"
+      action="https://air360.us21.list-manage.com/subscribe/post?u=4797f92e2238d45352a848bc8&amp;id=254b202862&amp;f_id=006ee4e1f0"
+      method="post"
+      name="mc-embedded-subscribe-form"
+      class="validate"
+      target="_self"
+    >
+      <div id="mc_embed_signup_scroll">
+        <h3 class="mb-2 text-xl font-semibold tracking-tight text-black-600 dark:text-white">
+          最新のコンテンツを受信トレイに直接お届けします
+        </h3>
+        <p class="mb-4 text-base leading-relaxed text-gray-500 dark:text-gray-400">
+          ニュースレターに登録して、最新のコンテンツを手に入れましょう。購読停止はいつでも可能です。
+        </p>
+        <div
+                class="items-center mx-auto space-y-4 max-w-screen-sm sm:flex sm:space-y-0"
+              >
+        <div class="mc-field-group relative mr-3 w-full">
+          <label
+            for="mce-EMAIL"
+            class="mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+          >
+            メールアドレス <span class="asterisk">*</span>
+          </label>
+          <div
+                    class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
+                  >
+                    <svg
+                      class="w-5 h-5 text-gray-500 dark:text-gray-400"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                      />
+                      <path
+                        d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                      />
+                    </svg>
+                  </div>
+          <input
+            id="mce-EMAIL"
+            type="email"
+            value=""
+            name="EMAIL"
+            class="required email block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+            required
+          >
+          <span id="mce-EMAIL-HELPERTEXT" class="helper_text" />
+        </div>
+      </div>
+        <div id="mce-responses" class="clear foot">
+          <div
+            id="mce-error-response"
+            class="response"
+            style="display: none"
+          />
+          <div
+            id="mce-success-response"
+            class="response"
+            style="display: none"
+          />
+        </div> -->
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <!-- <div style="position: absolute; left: -5000px" aria-hidden="true">
+          <input
+            type="text"
+            name="b_4797f92e2238d45352a848bc8_254b202862"
+            tabindex="-1"
+            value=""
+          >
+        </div>
+        <div class="optionalParent">
+          <div class="clear foot">
+            <input
+              id="mc-embedded-subscribe"
+              type="submit"
+              value="Subscribe"
+              name="subscribe"
+              class="button"
+            >
+            <p class="brandingLogo">
+              <a
+                href="http://eepurl.com/ijCSWX"
+                title="Mailchimp - email marketing made easy and fun"
+              ><img
+                src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"
+              ></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </form>
   </div> -->
-  <!-- action="https://app.convertkit.com/forms/4813829/subscriptions"
+</template>
+<!-- action="https://app.convertkit.com/forms/4813829/subscriptions"
     class="seva-form formkit-form w-11/12 mx-auto my-10 py-5 flex justify-center md:h-full"
     method="post"
     data-sv-form="4813829"
@@ -91,111 +192,16 @@
     data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;:&quot;message&quot;,&quot;success_message&quot;:&quot;Success! 購読を確認するために電子メールをチェックしてください。&quot;,&quot;redirect_url&quot;:&quot;&quot;},&quot;analytics&quot;:{&quot;google&quot;:null,&quot;fathom&quot;:null,&quot;facebook&quot;:null,&quot;segment&quot;:null,&quot;pinterest&quot;:null,&quot;sparkloop&quot;:null,&quot;googletagmanager&quot;:null},&quot;modal&quot;:{&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;powered_by&quot;:{&quot;show&quot;:false,&quot;url&quot;:&quot;https://convertkit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic&quot;},&quot;recaptcha&quot;:{&quot;enabled&quot;:false},&quot;return_visitor&quot;:{&quot;action&quot;:&quot;show&quot;,&quot;custom_content&quot;:&quot;&quot;},&quot;slide_in&quot;:{&quot;display_in&quot;:&quot;bottom_right&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;sticky_bar&quot;:{&quot;display_in&quot;:&quot;top&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15}},&quot;version&quot;:&quot;5&quot;}"
     min-width="400 500 600 700 800"
     style="background-color: rgb(255, 255, 255); border-radius: 10px" -->
-  <!-- background-image: url('https://embed.filekitcdn.com/e/kWx2ppHwfD6PfccapXngr9/3B27gSLX9VxpWEivTBHoY9');
+<!-- background-image: url('https://embed.filekitcdn.com/e/kWx2ppHwfD6PfccapXngr9/3B27gSLX9VxpWEivTBHoY9');
           background-size: contain;
           background-repeat: no-repeat;
           height: 250px;
           margin: auto; -->
-  <form
-    action="https://app.convertkit.com/forms/4813829/subscriptions"
-    class="seva-form formkit-form w-11/12 mx-auto my-10 py-5 flex justify-center md:h-full"
-    method="post"
-    data-sv-form="4813829"
-    data-uid="8bd1d17a55"
-    data-format="inline"
-    data-version="5"
-    data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;:&quot;message&quot;,&quot;success_message&quot;:&quot;Success! 購読を確認するために電子メールをチェックしてください。&quot;,&quot;redirect_url&quot;:&quot;&quot;},&quot;analytics&quot;:{&quot;google&quot;:null,&quot;fathom&quot;:null,&quot;facebook&quot;:null,&quot;segment&quot;:null,&quot;pinterest&quot;:null,&quot;sparkloop&quot;:null,&quot;googletagmanager&quot;:null},&quot;modal&quot;:{&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;powered_by&quot;:{&quot;show&quot;:false,&quot;url&quot;:&quot;https://convertkit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic&quot;},&quot;recaptcha&quot;:{&quot;enabled&quot;:false},&quot;return_visitor&quot;:{&quot;action&quot;:&quot;show&quot;,&quot;custom_content&quot;:&quot;&quot;},&quot;slide_in&quot;:{&quot;display_in&quot;:&quot;bottom_right&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;sticky_bar&quot;:{&quot;display_in&quot;:&quot;top&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15}},&quot;version&quot;:&quot;5&quot;}"
-    min-width="400 500 600 700 800"
-    style="background-color: rgb(255, 255, 255); border-radius: 10px"
-  >
-    <div data-style="full" style="--bg-border-radius: 5px">
-      <div data-element="column" class="formkit-column">
-        <div
-          class="formkit-header"
-          data-element="header"
-          style="color: rgb(55, 63, 69); font-weight: 400"
-        >
-          <h2 style="text-align: justify">
-            最新のコンテンツを受信トレイに直接お届けします
-          </h2>
-        </div>
-        <div
-          class="formkit-content"
-          data-element="content"
-          style="color: rgb(106, 110, 114)"
-        >
-          <p>
-            ニュースレターに登録して、最新のコンテンツを手に入れましょう。購読停止はいつでも可能です。
-          </p>
-        </div>
-        <ul
-          class="formkit-alert formkit-alert-error"
-          data-element="errors"
-          data-group="alert"
-        />
-        <div
-          data-element="fields"
-          data-stacked="false"
-          class="seva-fields formkit-fields"
-        >
-          <div class="formkit-field">
-            <input
-              class="formkit-input"
-              name="email_address"
-              aria-label="Email Address"
-              placeholder="Email Address"
-              required
-              type="email"
-              style="
-                color: rgb(106, 110, 114);
-                background-color: rgb(246, 248, 250);
-                border-radius: 5px;
-                font-weight: 400;
-              "
-            >
-          </div>
-          <button
-            data-element="submit"
-            class="formkit-submit formkit-submit"
-            style="
-              color: rgb(255, 255, 255);
-              background-color: rgb(231, 75, 145);
-              border-radius: 8px;
-              font-weight: 400;
-            "
-          >
-            <div class="formkit-spinner">
-              <div />
-              <div />
-              <div />
-            </div>
-            <span class="">Subscribe</span>
-          </button>
-        </div>
-        <!-- <div
-          class="formkit-disclaimer"
-          data-element="disclaimer"
-          style="color: rgb(106, 110, 114)"
-        >
-          We respect your privacy. Unsubscribe at any time.
-        </div> -->
-      </div>
-      <div
-        data-element="column"
-        class="formkit-background"
-        style="
-          background-image: url('https://embed.filekitcdn.com/e/kWx2ppHwfD6PfccapXngr9/3B27gSLX9VxpWEivTBHoY9');
-          background-size: contain;
-          background-repeat: no-repeat;
-          height: 250px;
-          margin: auto;
-        "
-      />
-    </div>
+<!-- <form action="https://app.convertkit.com/forms/4813829/subscriptions" class="seva-form formkit-form" method="post" data-sv-form="4813829" data-uid="8bd1d17a55" data-format="inline" data-version="5" data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;:&quot;message&quot;,&quot;success_message&quot;:&quot;ご登録ありがとうございます。購読を確認するために電子メールをチェックしてください。&quot;,&quot;redirect_url&quot;:&quot;&quot;},&quot;analytics&quot;:{&quot;google&quot;:null,&quot;fathom&quot;:null,&quot;facebook&quot;:null,&quot;segment&quot;:null,&quot;pinterest&quot;:null,&quot;sparkloop&quot;:null,&quot;googletagmanager&quot;:null},&quot;modal&quot;:{&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;powered_by&quot;:{&quot;show&quot;:false,&quot;url&quot;:&quot;https://convertkit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic&quot;},&quot;recaptcha&quot;:{&quot;enabled&quot;:false},&quot;return_visitor&quot;:{&quot;action&quot;:&quot;show&quot;,&quot;custom_content&quot;:&quot;&quot;},&quot;slide_in&quot;:{&quot;display_in&quot;:&quot;bottom_right&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;sticky_bar&quot;:{&quot;display_in&quot;:&quot;top&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15}},&quot;version&quot;:&quot;5&quot;}" min-width="400 500 600 700 800" style="background-color: rgb(255, 255, 255); border-radius: 10px;"><div data-style="full" style="--bg-border-radius:5px;"><div data-element="column" class="formkit-column"><div class="formkit-header" data-element="header" style="color: rgb(17, 24, 39); font-weight: 400;"><h2><strong>最新のコンテンツを受信トレイに直接お届けします</strong></h2></div><div class="formkit-content" data-element="content" style="color: rgb(106, 110, 114);"><p>ニュースレターに登録して、最新のコンテンツを手に入れましょう。購読停止はいつでも可能です。</p></div><ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul><div data-element="fields" data-stacked="false" class="seva-fields formkit-fields"><div class="formkit-field"><input class="formkit-input" name="email_address" aria-label="Email Address" placeholder="Email Address" required="" type="email" style="color: rgb(106, 110, 114); background-color: rgb(246, 248, 250); border-radius: 5px; font-weight: 400;"></div><button data-element="submit" class="formkit-submit formkit-submit" style="color: rgb(255, 255, 255); background-color: rgb(231, 75, 145); border-radius: 8px; font-weight: 400;"><div class="formkit-spinner"><div></div><div></div><div></div></div><span class="">Subscribe</span></button></div><div class="formkit-disclaimer" data-element="disclaimer" style="color: rgb(106, 110, 114);"><p>​</p></div></div><div data-element="column" class="formkit-background" style="background-image: url(&quot;https://embed.filekitcdn.com/e/kWx2ppHwfD6PfccapXngr9/3B27gSLX9VxpWEivTBHoY9&quot;);"></div></div>
   </form>
-</template>
+</template> -->
 
-<style scoped>
+<!-- <style scoped>
 .formkit-form[data-uid="8bd1d17a55"] * {
   box-sizing: border-box;
 }
@@ -881,4 +887,4 @@
 .formkit-form[data-uid="8bd1d17a55"] h2 {
   font-size: 20px;
 }
-</style>
+</style> -->
