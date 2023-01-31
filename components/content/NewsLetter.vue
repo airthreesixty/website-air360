@@ -81,6 +81,21 @@
       </div>
     </div>
   </div> -->
+  <!-- action="https://app.convertkit.com/forms/4813829/subscriptions"
+    class="seva-form formkit-form w-11/12 mx-auto my-10 py-5 flex justify-center md:h-full"
+    method="post"
+    data-sv-form="4813829"
+    data-uid="8bd1d17a55"
+    data-format="inline"
+    data-version="5"
+    data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;:&quot;message&quot;,&quot;success_message&quot;:&quot;Success! 購読を確認するために電子メールをチェックしてください。&quot;,&quot;redirect_url&quot;:&quot;&quot;},&quot;analytics&quot;:{&quot;google&quot;:null,&quot;fathom&quot;:null,&quot;facebook&quot;:null,&quot;segment&quot;:null,&quot;pinterest&quot;:null,&quot;sparkloop&quot;:null,&quot;googletagmanager&quot;:null},&quot;modal&quot;:{&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;powered_by&quot;:{&quot;show&quot;:false,&quot;url&quot;:&quot;https://convertkit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic&quot;},&quot;recaptcha&quot;:{&quot;enabled&quot;:false},&quot;return_visitor&quot;:{&quot;action&quot;:&quot;show&quot;,&quot;custom_content&quot;:&quot;&quot;},&quot;slide_in&quot;:{&quot;display_in&quot;:&quot;bottom_right&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;sticky_bar&quot;:{&quot;display_in&quot;:&quot;top&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15}},&quot;version&quot;:&quot;5&quot;}"
+    min-width="400 500 600 700 800"
+    style="background-color: rgb(255, 255, 255); border-radius: 10px" -->
+  <!-- background-image: url('https://embed.filekitcdn.com/e/kWx2ppHwfD6PfccapXngr9/3B27gSLX9VxpWEivTBHoY9');
+          background-size: contain;
+          background-repeat: no-repeat;
+          height: 250px;
+          margin: auto; -->
   <form
     action="https://app.convertkit.com/forms/4813829/subscriptions"
     class="seva-form formkit-form w-11/12 mx-auto my-10 py-5 flex justify-center md:h-full"
@@ -98,10 +113,10 @@
         <div
           class="formkit-header"
           data-element="header"
-          style="color: rgb(17, 24, 39); font-weight: 400"
+          style="color: rgb(55, 63, 69); font-weight: 400"
         >
-          <h2>
-            <strong>最新のコンテンツを受信トレイに直接お届けします</strong>
+          <h2 style="text-align: justify">
+            最新のコンテンツを受信トレイに直接お届けします
           </h2>
         </div>
         <div
@@ -157,15 +172,17 @@
             <span class="">Subscribe</span>
           </button>
         </div>
-        <div
+        <!-- <div
           class="formkit-disclaimer"
           data-element="disclaimer"
           style="color: rgb(106, 110, 114)"
-        />
+        >
+          We respect your privacy. Unsubscribe at any time.
+        </div> -->
       </div>
       <div
         data-element="column"
-        class="formkit-background hidden md:block"
+        class="formkit-background"
         style="
           background-image: url('https://embed.filekitcdn.com/e/kWx2ppHwfD6PfccapXngr9/3B27gSLX9VxpWEivTBHoY9');
           background-size: contain;
