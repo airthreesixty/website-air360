@@ -3,7 +3,7 @@
     <main v-if="data">
       <ContentRenderer :value="data">
         <div class="bg-white dark:bg-gray-900">
-          <img :src="data.image" alt="" class="h-90 mb-10 w-full object-cover">
+          <img :src="data.image" :alt="data.title" class="h-90 mb-10 w-full object-cover">
           <div class="flex justify-between px-4 mx-auto max-w-screen-xl">
             <article
               class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert"
