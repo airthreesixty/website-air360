@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white py-6 lg:py-10">
+  <section class="bg-white pt-6 md:pt-10">
     <div class="mx-auto max-w-screen-[1400px] px-4 text-center lg:px-8">
       <div>
         <!-- <h2 class="text-md font-semibold text-primary-600 lg:text-xl">次世代型UXアナリティクスツール</h2> -->
@@ -11,7 +11,23 @@
         </p>
       </div>
       <div class="mt-12">
-        <img class="mx-auto rounded-lg shadow-md ring-1 ring-black ring-opacity-5 md:w-7/12" src="/WhatIsAir360.jpeg" :alt="$t('what-is-air360')" loading="lazy">
+        <div class="wistia_responsive_padding mx-auto md:w-9/12 lg:w-8/12" style="padding:56.25% 0 0 0;position:relative;">
+          <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+            <iframe
+              src="https://fast.wistia.net/embed/iframe/4vg5g5jgct?videoFoam=true"
+              title="Air360 by Scalefast Creating Conversion Rate Heroes Video"
+              allow="autoplay; fullscreen"
+              allowtransparency="true"
+              frameborder="0"
+              scrolling="no"
+              class="wistia_embed"
+              name="wistia_embed"
+              msallowfullscreen
+              width="100%"
+              height="100%"
+            />
+          </div>
+        </div>
       </div>
     </div>
   </section>
