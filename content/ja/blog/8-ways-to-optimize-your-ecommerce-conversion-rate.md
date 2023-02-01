@@ -23,6 +23,7 @@ eコマース市場における競争は年々激しくなっています。そ�
 また、プログレスバー（進行状況を視覚的に伝える棒状のもの）を使えば、ユーザーに
 対して「購入までのステップ数」「現在どこまで進んだか」などをわかりやすく提示で
 きます。
+![購入や登録までの手順を減らす](https://lh3.googleusercontent.com/hAVwI20EyqNQFpc_uOVT3x_OzotR8jfgpT-szlWRoBG71oDwCv9Yma3y1Z0fm3rYC0myJx_bgtptLVcdu1XQncAVseZ7GR8q0XWF72SmAGfAit8K5vgaYEegXM3B2ab0uRXMpiFc7ByV3fO7Yw)
 ## 2. すべてにおいてA/Bテストをする
 A/Bテスト（比較テスト）は、コンバージョン率を高めるために非常に役立ちます。
 このテストには様々な種類があります。一般的なものをいくつか紹介しましょう。
