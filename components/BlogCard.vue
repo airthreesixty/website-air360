@@ -4,7 +4,7 @@
       class="relative p-4 bg-white h-full rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
     >
       <img
-        class="mb-5 rounded-lg h-50 w-full"
+        class="mb-5 rounded-lg h-50 w-full object-cover"
         :src="data.image"
         :alt="data.title"
       >
