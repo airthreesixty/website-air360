@@ -8,9 +8,6 @@ export default defineNuxtConfig({
           src: 'https://fast.wistia.net/assets/external/E-v1.js',
           async: true,
         },
-        {
-          src: 'https://f.convertkit.com/ckjs/ck.5.js',
-        },
       ],
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/boostConversion.png' }],
     },
