@@ -14,7 +14,7 @@ const { $localePath } = useNuxtApp()
 const tagList = ['all', 'marketing', 'ux', 'ecommerce', 'other']
 </script>
 
-<style lang="postcss">
+<style scoped lang="postcss">
 .tag__link {
   @apply py-3 px-5 mt-5 inline-block text-base lg:text-lg bg-blue-100 text-blue-400 font-semibold rounded mx-2;
 }
