@@ -9,7 +9,7 @@ export default defineNuxtConfig({
           async: true,
         },
       ],
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/boostConversion.png' }],
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }],
     },
   },
   i18n: {
