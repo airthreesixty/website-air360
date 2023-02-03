@@ -1,6 +1,13 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  modules: ['@nuxt/content', 'nuxt-windicss', '@nuxtjs/i18n', 'nuxt-font-loader'],
+  modules: ['@nuxt/content', 'nuxt-windicss', '@nuxtjs/i18n', 'nuxt-font-loader', '@nuxtjs/algolia'],
+  algolia: {
+    apiKey: process.env.ALGOLIA_SEARCH_API_KEY,
+    applicationId: process.env.ALGOLIA_APPLICATION_ID,
+    instantSearch: {
+      theme: 'satellite',
+    },
+  },
   app: {
     head: {
       script: [
