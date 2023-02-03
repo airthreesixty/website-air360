@@ -7,9 +7,9 @@
         >
           Air360 ブログ
         </h2>
-        <h3 v-if="tagList.includes(tag)" class="text-xl mb-3 text-black-600 md:text-2xl">
+        <!-- <h3 v-if="tagList.includes(tag)" class="text-xl mb-3 text-black-600 md:text-2xl">
           {{ $t(`tag.${tag}`) }}
-        </h3>
+        </h3> -->
         <p class="font-light mb-6 text-gray-500 md:text-xl dark:text-gray-400">
           コンバージョン率を向上させるには
         </p>
