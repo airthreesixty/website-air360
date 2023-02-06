@@ -8,7 +8,7 @@ export default defineNuxtConfig({
       theme: 'satellite',
     },
     crawler: {
-      apiKey: '4d4f8640a1b55b42924a5e9fdf8658ef',
+      apiKey: process.env.ALGOLIA_SEARCH_API_KEY ?? '',
       indexName: 'articles',
       meta: ['title', 'description'],
       include: () => true,

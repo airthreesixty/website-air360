@@ -19,37 +19,22 @@
 </template>
 
 <script lang="ts" setup>
-import algoliasearch from 'algoliasearch'
-const { $i18n } = useNuxtApp()
+// import algoliasearch from 'algoliasearch'
+// const { $i18n } = useNuxtApp()
 
-// const { data } = await useAsyncData('blog', () =>
-//   queryContent($i18n.locale._value, 'blog')
-//     .sort({ published: -1 })
-//     .find(),
-// )
+// // const { data } = await useAsyncData('blog', () =>
+// //   queryContent($i18n.locale._value, 'blog')
+// //     .sort({ published: -1 })
+// //     .find(),
+// // )
 
-const client = algoliasearch('DXKTKKA6AW', '4d4f8640a1b55b42924a5e9fdf8658ef')
-const index = client.initIndex('articles')
-const records = [
-  { name: 'Tom Cruise' },
-  { name: 'Scarlett Johansson' },
-]
+// index.saveObjects(records, { autoGenerateObjectIDIfNotExist: true })
+// // import { AisInstantSearch, AisSearchBox, AisHits } from 'vue-instantsearch/vue3/es/index.js'
+// // const indexName = 'articles'
+// // const algolia = useAlgoliaRef()
 
-index.saveObjects(records, { autoGenerateObjectIDIfNotExist: true })
-// import { AisInstantSearch, AisSearchBox, AisHits } from 'vue-instantsearch/vue3/es/index.js'
-// const indexName = 'articles'
-// const algolia = useAlgoliaRef()
-
-const filterText = ref('')
-const onSubmit = async () => {
-  console.log("hey")
-  await search({ query: filterText })
-}
-
-const { result, search } = useAlgoliaSearch('articles')
-// onMounted(async () => {
-//   await search({ query: filterText })
-// })
-
-// console.log(data._value)
+// const filterText = ref('')
+// const onSubmit = async () => {
+//   console.log("hey")
+// }
 </script>
