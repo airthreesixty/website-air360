@@ -5,8 +5,10 @@
 name: Deploy Nuxt site to Pages
 
 env:
-  ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
+  ALGOLIA_SEARCH_API_KEY: ${{ secrets.ALGOLIA_SEARCH_API_KEY }}
+  ALGOLIA_WRITE_API_KEY: ${{ secrets.ALGOLIA_WRITE_API_KEY }}
   ALGOLIA_APPLICATION_ID: ${{ secrets.ALGOLIA_APPLICATION_ID }}
+  ALGOLIA_DOCSEARCH_INDEX_NAME: ${{ vars.ALGOLIA_DOCSEARCH_INDEX_NAME }}
 
 on:
   # Runs on pushes targeting the default branch
