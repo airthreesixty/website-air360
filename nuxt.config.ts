@@ -1,5 +1,12 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+  vite: {
+    optimizeDeps: {
+      exclude: [
+        'date-fns',
+      ],
+    },
+  },
   modules: ['@nuxt/content', 'nuxt-windicss', '@nuxtjs/i18n', 'nuxt-font-loader', '@nuxtjs/algolia'],
   algolia: {
     apiKey: process.env.ALGOLIA_SEARCH_API_KEY,

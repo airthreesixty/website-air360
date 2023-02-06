@@ -23,8 +23,8 @@
   </section>
 </template>
 
-<script setup>
+<!-- <script setup>
 const route = useRoute()
 const tagList = ['all', 'marketing', 'ux', 'other', 'ecommerce']
 const tag = route.path.split('/').slice(-1)[0]
-</script>
+</script> -->
