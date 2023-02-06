@@ -7,6 +7,12 @@ export default defineNuxtConfig({
     instantSearch: {
       theme: 'satellite',
     },
+    crawler: {
+      apiKey: '4d4f8640a1b55b42924a5e9fdf8658ef',
+      indexName: 'articles',
+      meta: ['title', 'description'],
+      include: () => true,
+    },
   },
   app: {
     head: {
