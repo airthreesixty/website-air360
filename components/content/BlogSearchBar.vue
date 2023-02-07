@@ -24,7 +24,7 @@
       </button>
     </div>
   </form>
-  <div>{{ result }}</div>
+  <!-- <div>{{ result }}</div> -->
 </template>
 
 <script lang="ts" setup>
