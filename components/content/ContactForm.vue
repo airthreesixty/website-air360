@@ -202,6 +202,8 @@ const submitForm = async () => {
   if (isFormCorrect) {
     loading.value = true
     await axios.post('https://api.form-data.com/f/fhrtrdprid7cc823m483ku', formData)
+    // @ts-ignore
+    Air360.identify(formData.email)
     loading.value = false
     isSuccess.value = !isSuccess.value
     v$.value.$reset()
