@@ -11,7 +11,7 @@
 
 <script setup lang="ts">
 const { $localePath } = useNuxtApp()
-const tagList = ['all', 'marketing', 'ux', 'ecommerce', 'other']
+const tagList = ['all', 'marketing', 'ux', 'ecommerce', 'product', 'other']
 </script>
 
 <style scoped lang="postcss">

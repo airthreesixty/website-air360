@@ -26,7 +26,7 @@
       </button>
     </div>
   </form>
-  <div>{{ result }}</div>
+  <!-- <div>{{ result }}</div> -->
   <!-- <div>
     <ais-instant-search :index-name="indexName" :search-client="algolia">
       <ais-search-box />
