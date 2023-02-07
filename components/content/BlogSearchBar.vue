@@ -26,7 +26,7 @@
       </button>
     </div>
   </form>
-  <!-- <div>{{ result }}</div> -->
+  <div>{{ result }}</div>
   <!-- <div>
     <ais-instant-search :index-name="indexName" :search-client="algolia">
       <ais-search-box />
@@ -39,7 +39,9 @@
 import algoliasearch from 'algoliasearch'
 
 const config = useRuntimeConfig()
-const client = algoliasearch(config.public.algoliaApplicationId, config.public.algoliaAdminApiKey)
+const { result, search } = useAlgoliaSearch(config.public.algoliaDocsearchIndexName)
+
+const client = algoliasearch(config.public.algoliaApplicationId, config.public.algoliaWriteApiKey)
 const index = client.initIndex(config.public.algoliaDocsearchIndexName)
 const records = [
   { name: 'Tom Cruise' },
@@ -53,7 +55,4 @@ const onSubmit = async () => {
   console.log('hey')
   await search({ query: filterText })
 }
-
-const { result, search } = useAlgoliaSearch(config.public.algoliaDocsearchIndexName)
-console.log(config)
 </script>

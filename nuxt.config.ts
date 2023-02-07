@@ -20,7 +20,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       algoliaSearchApiKey: process.env.ALGOLIA_SEARCH_API_KEY,
-      // algoliaWriteApiKey: process.env.NUXT_ALGOLIA_WRITE_API_KEY ,
+      algoliaWriteApiKey: process.env.ALGOLIA_WRITE_API_KEY,
       algoliaApplicationId: process.env.ALGOLIA_APPLICATION_ID,
       algoliaDocsearchIndexName: process.env.ALGOLIA_DOCSEARCH_INDEX_NAME,
       algoliaAdminApiKey: process.env.ALGOLIA_ADMIN_API_KEY,
