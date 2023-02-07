@@ -1,9 +1,6 @@
 <template>
   <main>
     <BlogPage>
-      <!-- <template #searchBar>
-        <BlogSearchBar :articles="data" />
-      </template> -->
       <template #articles>
         <BlogCard v-for="article in data" :key="article._path" :data="article" />
       </template>

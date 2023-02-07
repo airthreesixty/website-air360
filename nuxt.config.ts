@@ -1,21 +1,29 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   modules: ['@nuxt/content', 'nuxt-windicss', '@nuxtjs/i18n', 'nuxt-font-loader', '@nuxtjs/algolia'],
-
   algolia: {
     apiKey: process.env.ALGOLIA_SEARCH_API_KEY,
     applicationId: process.env.ALGOLIA_APPLICATION_ID,
     instantSearch: {
       theme: 'satellite',
     },
-    // docSearch: {
-    //   indexName: process.env.ALGOLIA_DOCSEARCH_INDEX_NAME,
-    // },
+    docSearch: {
+      indexName: process.env.ALGOLIA_DOCSEARCH_INDEX_NAME,
+    },
     crawler: {
       apiKey: process.env.ALGOLIA_WRITE_API_KEY ?? '',
       indexName: process.env.ALGOLIA_DOCSEARCH_INDEX_NAME ?? '',
       meta: ['title', 'description'],
       include: () => true,
+    },
+  },
+  runtimeConfig: {
+    public: {
+      algoliaSearchApiKey: process.env.ALGOLIA_SEARCH_API_KEY,
+      // algoliaWriteApiKey: process.env.NUXT_ALGOLIA_WRITE_API_KEY ,
+      algoliaApplicationId: process.env.ALGOLIA_APPLICATION_ID,
+      algoliaDocsearchIndexName: process.env.ALGOLIA_DOCSEARCH_INDEX_NAME,
+      algoliaAdminApiKey: process.env.ALGOLIA_ADMIN_API_KEY,
     },
   },
   app: {
