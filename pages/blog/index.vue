@@ -1,16 +1,13 @@
 <template>
   <main>
-    <BlogPage>
-      <template #articles>
-        <BlogCard v-for="article in data" :key="article._path" :data="article" />
-      </template>
-    </BlogPage>
+    <BlogPage :articles="data" />
   </main>
 </template>
 
 <script setup lang="ts">
 const { $i18n } = useNuxtApp()
 
+// TODO english version as well
 useHead({
   title: 'ブログ',
   meta: [
@@ -21,6 +18,7 @@ useHead({
 // TODO the value from the plugin is wrong, remove _value when it's fixed
 const { data } = await useAsyncData('blog', () =>
   queryContent($i18n.locale._value, 'blog')
+    .only(['published', 'tags', 'readingTime', 'title', 'image', '_path', 'metaDesc'])
     .sort({ published: -1 })
     .find(),
 )

@@ -14,17 +14,30 @@
           コンバージョン率を向上させるには
         </p>
         <BlogTagsFilter />
-        <!-- <BlogSearchBar /> -->
+        <BlogSearchBar v-model="searchedArticles" />
       </div>
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        <slot name="articles" />
+        <BlogCard v-for="article in filteredArticles" :key="article._path" :data="article" />
       </div>
     </div>
   </section>
 </template>
 
-<!-- <script setup>
-const route = useRoute()
-const tagList = ['all', 'marketing', 'ux', 'other', 'ecommerce']
-const tag = route.path.split('/').slice(-1)[0]
-</script> -->
+<script setup lang="ts">import { BlogArticle } from '~~/interfaces/blog'
+
+const props = defineProps({
+  articles: {
+    type: Array as () => BlogArticle[],
+    required: true,
+  },
+})
+
+const searchedArticles = ref<string[] | null>(null)
+
+const filteredArticles = computed(() => {
+  if (searchedArticles.value !== null) {
+    return props.articles.filter(article => searchedArticles.value.includes(article._path))
+  }
+  return props.articles
+})
+</script>

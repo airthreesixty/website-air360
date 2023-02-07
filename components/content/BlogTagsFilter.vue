@@ -1,5 +1,11 @@
 <template>
   <nuxt-link
+    :to="$localePath(`/blog`)"
+    class="tag__link"
+  >
+    {{ $t(`tag.all`) }}
+  </nuxt-link>
+  <nuxt-link
     v-for="tag in tagList"
     :key="tag"
     :to="$localePath(`/blog/tag/${tag}`)"
@@ -11,7 +17,7 @@
 
 <script setup lang="ts">
 const { $localePath } = useNuxtApp()
-const tagList = ['all', 'marketing', 'ux', 'ecommerce', 'product', 'other']
+const tagList = ['marketing', 'ux', 'ecommerce', 'product', 'other']
 </script>
 
 <style scoped lang="postcss">

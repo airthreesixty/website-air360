@@ -19,7 +19,6 @@
         type="search"
         class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:border-primary-600 focus:ring-primary-600 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
         placeholder="Search Mockups, Logos..."
-        required
       >
       <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-primary-600 hover:bg-primary-700 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
         Search
@@ -27,32 +26,30 @@
     </div>
   </form>
   <div>{{ result }}</div>
-  <!-- <div>
-    <ais-instant-search :index-name="indexName" :search-client="algolia">
-      <ais-search-box />
-      <ais-hits />
-    </ais-instant-search>
-  </div> -->
 </template>
 
 <script lang="ts" setup>
-import algoliasearch from 'algoliasearch'
+
+defineProps({
+  modelValue: {
+    type: Array as () => string[] | null,
+    required: true,
+  },
+})
+
+const emit = defineEmits(['update:modelValue'])
 
 const config = useRuntimeConfig()
 const { result, search } = useAlgoliaSearch(config.public.algoliaDocsearchIndexName)
 
-const client = algoliasearch(config.public.algoliaApplicationId, config.public.algoliaWriteApiKey)
-const index = client.initIndex(config.public.algoliaDocsearchIndexName)
-const records = [
-  { name: 'Tom Cruise' },
-  { name: 'Scarlett Johansson' },
-]
-
-index.saveObjects(records, { autoGenerateObjectIDIfNotExist: true })
-
 const filterText = ref('')
+
 const onSubmit = async () => {
-  console.log('hey')
-  await search({ query: filterText })
+  if (filterText.value) {
+    await search({ query: filterText.value })
+    emit('update:modelValue', result.value.hits.map(h => `/${h.lang}/blog/${h.slug}`))
+  } else {
+    emit('update:modelValue', null)
+  }
 }
 </script>
