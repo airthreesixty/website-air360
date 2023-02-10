@@ -28,6 +28,8 @@
 </template>
 
 <script lang="ts" setup>
+// @ts-ignore
+import _ from 'lodash'
 
 defineProps({
   modelValue: {
@@ -43,22 +45,12 @@ const { result, search } = useAlgoliaSearch(config.public.algoliaDocsearchIndexN
 
 const filterText = ref('')
 
-// const onSubmit = async () => {
-//   if (filterText.value) {
-//     await search({ query: filterText.value })
-//     // ['/ja/blog/leverage-cro-for-stability-in-unpredictable-times']
-//     emit('update:modelValue', result.value.hits.map(h => `/${h.lang}/blog/${h.slug}`))
-//   } else {
-//     emit('update:modelValue', null)
-//   }
-// }
-
-watch(filterText, async (_, _2) => {
+watch(filterText, _.debounce(async () => {
   if (filterText.value) {
     await search({ query: filterText.value })
     emit('update:modelValue', result.value.hits.map(h => `/${h.lang}/blog/${h.slug}`))
   } else {
     emit('update:modelValue', null)
   }
-})
+}, 300))
 </script>
