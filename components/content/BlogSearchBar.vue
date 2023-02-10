@@ -1,5 +1,5 @@
 <template>
-  <form class="pt-4" @submit.prevent="onSubmit">
+  <div class="pt-4">
     <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
     <div class="relative">
       <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -19,11 +19,11 @@
         type="search"
         class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:border-primary-600 focus:ring-primary-600 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
       >
-      <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-primary-600 hover:bg-primary-700 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+      <!-- <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-primary-600 hover:bg-primary-700 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
         Search
-      </button>
+      </button> -->
     </div>
-  </form>
+  </div>
   <!-- <div>{{ result }}</div> -->
 </template>
 
@@ -43,12 +43,22 @@ const { result, search } = useAlgoliaSearch(config.public.algoliaDocsearchIndexN
 
 const filterText = ref('')
 
-const onSubmit = async () => {
+// const onSubmit = async () => {
+//   if (filterText.value) {
+//     await search({ query: filterText.value })
+//     // ['/ja/blog/leverage-cro-for-stability-in-unpredictable-times']
+//     emit('update:modelValue', result.value.hits.map(h => `/${h.lang}/blog/${h.slug}`))
+//   } else {
+//     emit('update:modelValue', null)
+//   }
+// }
+
+watch(filterText, async (_, _2) => {
   if (filterText.value) {
     await search({ query: filterText.value })
     emit('update:modelValue', result.value.hits.map(h => `/${h.lang}/blog/${h.slug}`))
   } else {
     emit('update:modelValue', null)
   }
-}
+})
 </script>

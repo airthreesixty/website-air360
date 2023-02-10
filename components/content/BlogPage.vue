@@ -33,10 +33,12 @@ const props = defineProps({
   },
 })
 
+// ["/ja/blog/leverage-cro-for-stability-in-unpredictable-times"]
 const searchedArticles = ref<string[] | null>(null)
 
 const filteredArticles = computed(() => {
   if (searchedArticles.value !== null) {
+    console.log(props.articles)
     return props.articles.filter(article => searchedArticles.value?.includes(article._path))
   }
   return props.articles
