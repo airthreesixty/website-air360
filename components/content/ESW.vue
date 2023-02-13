@@ -5,11 +5,12 @@
       <div
         class="h-80 overflow-hidden md:absolute md:left-0 md:h-full md:w-1/2"
       >
-        <img
+        <nuxt-img
+          format="webp"
           class="h-full w-full object-cover"
-          src="https://esw.com/wp-content/uploads/2022/12/dtc_a.jpg"
-          alt=""
-        >
+          src="eswImage.jpg"
+          alt="ESW"
+        />
       </div>
       <div class="relative py-24 md:py-32 lg:py-40 lg:px-8">
         <div class="pr-6 pl-6 md:ml-auto md:pl-16 md:w-1/2 lg:pr-0 xl:pl-32">

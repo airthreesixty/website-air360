@@ -16,11 +16,12 @@
           <div
             class="inline-flex items-center mb-6 text-2xl font-semibold text-gray-900 lg:mb-10 dark:text-white"
           >
-            <img
-              class="mr-2"
-              src="https://www.air360.io/wp-content/uploads/2022/05/air360-logo-bk.svg"
+            <nuxt-img
+              format="webp"
+              class="h-6 mr-2 sm:h-7 xl:h-8"
+              src="/air360Logo.png"
               alt="Air360 logo"
-            >
+            />
           </div>
           <h1 class="mb-3 font-semibold bg-gradient-to-r from-[#6278DF] to-blue-[#3DDC97] bg-clip-text text-transparent text-xl md:text-2xl lg:text-3xl">
             <ContentSlot :use="$slots.title1" />

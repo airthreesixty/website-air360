@@ -19,11 +19,12 @@
           </p>
         </blockquote>
         <figcaption class="flex items-center justify-center mt-6 space-x-3">
-          <img
+          <nuxt-img
+            format="webp"
             class="w-15 h-15"
             src="/mozFounder.png"
             :alt="$t('moz-founder')"
-          >
+          />
           <div
             class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700"
           >

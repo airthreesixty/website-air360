@@ -4,11 +4,12 @@
       <div class="mb-6 md:mb-0">
         <NuxtLink :to="$localePath('/')">
           <div class="flex items-center">
-            <img
+            <nuxt-img
+              format="webp"
               src="https://www.air360.io/wp-content/uploads/2022/05/air360-logo-bk.svg"
               class="mr-3 h-6 sm:h-7 xl:h-8"
               alt="Air360 Logo"
-            >
+            />
           </div>
         </NuxtLink>
         <div class="flex my-6 space-x-4 md:justify-start md:mt-4 lg:mt-6">
