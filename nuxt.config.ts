@@ -30,6 +30,7 @@ export default defineNuxtConfig({
         {
           src: 'https://fast.wistia.net/assets/external/E-v1.js',
           async: true,
+          body: true,
         },
       ],
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }],
