@@ -8,7 +8,7 @@
     <div class="mx-auto max-w-screen-[1400px] px-4 py-16 lg:px-8 lg:pb-20">
       <div class="lg:flex lg:items-center">
         <div class="hidden lg:block lg:flex-shrink-0">
-          <nuxt-img format="webp" class="h-64 w-64 rounded-full xl:h-80 xl:w-80" src="https://www.air360.io/wp-content/uploads/2022/08/nelson.webp" :alt="$t('clubmed-manager')" />
+          <nuxt-img loading="lazy" format="webp" class="h-64 w-64 rounded-full xl:h-80 xl:w-80" src="https://www.air360.io/wp-content/uploads/2022/08/nelson.webp" :alt="$t('clubmed-manager')" />
         </div>
 
         <div class="lg:ml-10">
@@ -23,7 +23,7 @@
             <footer class="mt-8">
               <div class="flex md:justify-center lg:justify-start">
                 <div class="flex-shrink-0 lg:hidden">
-                  <nuxt-img format="webp" class="h-12 w-12 rounded-full" src="https://www.air360.io/wp-content/uploads/2022/08/nelson.webp" :alt="$t('clubmed-manager')" />
+                  <nuxt-img loading="lazy" format="webp" class="h-12 w-12 rounded-full" src="https://www.air360.io/wp-content/uploads/2022/08/nelson.webp" :alt="$t('clubmed-manager')" />
                 </div>
                 <div class="ml-4 lg:ml-0">
                   <div class="text-lg font-semibold text-black-600">
