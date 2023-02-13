@@ -4,13 +4,6 @@
       class="grid max-w-screen-[1400px] px-4 py-12 mx-auto md:gap-4 md:grid-cols-2 lg:gap-8 xl:gap-0 lg:py-16 lg:px-8 lg:grid-cols-12"
     >
       <div class="pb-6 md:hidden lg:mt-0 lg:col-span-5">
-        <img
-          src="https://www.air360.io/wp-content/uploads/2022/08/hero-illustration.webp"
-          alt="mockup"
-          loading="lazy"
-          width="583"
-          height="349"
-        >
         <nuxt-img
           format="webp"
           src="https://www.air360.io/wp-content/uploads/2022/08/hero-illustration.webp"
