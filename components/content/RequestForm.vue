@@ -5,7 +5,7 @@
         <SuccessNotification :is-success="isSuccess" @close="close" />
       </div>
     </transition>
-    <Loading v-if="loading" />
+    <Loading v-if="loading" :is-full-page="true" />
     <div
       class="max-w-screen-[1400px] px-4 py-8 mx-auto lg:grid lg:gap-20 lg:py-16 lg:grid-cols-12"
     >

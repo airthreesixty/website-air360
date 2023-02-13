@@ -3,15 +3,18 @@
     <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
     <div class="relative">
       <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-        <svg
-          aria-hidden="true"
-          class="w-5 h-5 text-gray-500 dark:text-gray-400"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+        <div v-if="!isLoading">
+          <svg
+            aria-hidden="true"
+            class="w-5 h-5 text-gray-500 dark:text-gray-400"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+        </div>
+        <Loading v-if="isLoading" class="w-5 h-5" :is-full-page="false" />
       </div>
       <input
         id="default-search"
@@ -44,13 +47,18 @@ const config = useRuntimeConfig()
 const { result, search } = useAlgoliaSearch(config.public.algoliaDocsearchIndexName)
 
 const filterText = ref('')
+const isLoading = ref(false)
 
-watch(filterText, _.debounce(async () => {
-  if (filterText.value) {
-    await search({ query: filterText.value })
-    emit('update:modelValue', result.value.hits.map(h => `/${h.lang}/blog/${h.slug}`))
-  } else {
-    emit('update:modelValue', null)
-  }
-}, 300))
+watch(filterText, (value) => {
+  isLoading.value = true
+  _.debounce(async () => {
+    if (value) {
+      await search({ query: value })
+      emit('update:modelValue', result.value.hits.map(h => `/${h.lang}/blog/${h.slug}`))
+    } else {
+      emit('update:modelValue', null)
+    }
+    isLoading.value = false
+  }, 300)()
+})
 </script>
