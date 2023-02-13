@@ -3,7 +3,7 @@
     <main v-if="data">
       <ContentRenderer :value="data">
         <div class="bg-white dark:bg-gray-900">
-          <img :src="data.image" :alt="data.title" class="h-90 mb-10 w-full object-cover">
+          <nuxt-img format="webp" :src="data.image" :alt="data.title" class="h-90 mb-10 w-full object-cover" />
           <div class="flex justify-between px-4 mx-auto max-w-screen-xl">
             <article
               class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert"
@@ -77,10 +77,7 @@
                   <div
                     class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white"
                   >
-                    <img
-                      class="mr-4 w-16 h-16 rounded-full"
-                      src="https://secure.gravatar.com/avatar/8970d6f80cecf680b09d491937b1623f?s=96&d=mm&r=g"
-                    >
+                    <nuxt-img class="mr-4 w-16 h-16 rounded-full" src="https://secure.gravatar.com/avatar/8970d6f80cecf680b09d491937b1623f?s=96&d=mm&r=g" />
                     <div>
                       <div
                         class="text-xl font-bold text-gray-900 dark:text-white"

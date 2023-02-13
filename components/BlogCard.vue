@@ -3,11 +3,12 @@
     <article
       class="relative p-4 bg-white h-full rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
     >
-      <img
+      <nuxt-img
+        format="webp"
         class="mb-5 rounded-lg h-50 w-full object-cover"
         :src="data.image"
         :alt="data.title"
-      >
+      />
       <span
         v-for="(tag, index) in data.tags"
         :key="index"
@@ -19,11 +20,11 @@
         {{ data.title }}
       </h2>
       <div class="flex items-center space-x-4 absolute bottom-2">
-        <img
+        <nuxt-img
           class="w-10 h-10 rounded-full"
           src="https://secure.gravatar.com/avatar/8970d6f80cecf680b09d491937b1623f?s=96&d=mm&r=g"
           :alt="$t('avatar')"
-        >
+        />
         <div class="font-medium dark:text-white">
           <div>{{ $t('air360-team') }}</div>
           <div class="text-sm font-normal text-gray-500 dark:text-gray-400">

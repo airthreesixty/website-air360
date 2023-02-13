@@ -10,11 +10,12 @@
         :class="`grid ${gridColsSm} gap-18 gap-x-12 text-gray-500 md:${gridColsMd} lg:${gridColsLg} dark:text-gray-400`"
       >
         <div v-for="logo in logos" :key="logo.id" class="flex justify-center items-center">
-          <img
+          <nuxt-img
+            format="webp"
             class="h-6 object-contain lg:h-7 xl:h-8 dark:hover:text-white"
             :src="logo.src"
             :alt="logo.alt"
-          >
+          />
         </div>
       </div>
     </div>
