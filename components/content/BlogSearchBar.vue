@@ -20,7 +20,7 @@
         id="default-search"
         v-model="filterText"
         type="search"
-        class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:border-primary-600 focus:ring-primary-600 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        class="block w-full p-4 pl-10 text-sm text-black-600 border border-gray-300 rounded-lg bg-gray-50 transition ease-in-out duration-300 focus:border-gray-300 focus:ring-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
       >
       <!-- <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-primary-600 hover:bg-primary-700 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
         Search
