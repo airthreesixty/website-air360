@@ -26,32 +26,32 @@
 const logos = [
   {
     id: 1,
-    src: 'https://www.air360.io/wp-content/uploads/2022/05/Club_Med_Logo_Black-1.png',
+    src: '/clubMedLogo.png',
     alt: 'Company Logo',
   },
   {
     id: 2,
-    src: 'https://www.air360.io/wp-content/uploads/2022/05/Copy-of-logo_aristocrazy-1.png',
+    src: 'aristocrazyLogo.png',
     alt: 'Company Logo',
   },
   {
     id: 3,
-    src: 'https://www.air360.io/wp-content/uploads/2022/05/olympique-1.png',
+    src: 'olympiqueLogo.png',
     alt: 'Company Logo',
   },
   {
     id: 4,
-    src: 'https://www.air360.io/wp-content/uploads/2022/05/Copy-of-MaisonM.png',
+    src: 'maisonMargielaLogo.png',
     alt: 'Company Logo',
   },
   {
     id: 5,
-    src: 'https://www.air360.io/wp-content/uploads/2022/05/logo_qoqa-black-1.png',
+    src: 'qoqaLogo.png',
     alt: 'Company Logo',
   },
   {
     id: 6,
-    src: 'https://www.air360.io/wp-content/uploads/2022/05/suarez_relojeria-1-1.png',
+    src: 'suarezLogo.png',
     alt: 'Company Logo',
   },
 ]
