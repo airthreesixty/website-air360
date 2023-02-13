@@ -11,6 +11,13 @@
           width="583"
           height="349"
         >
+        <nuxt-img
+          format="webp"
+          src="https://www.air360.io/wp-content/uploads/2022/08/hero-illustration.webp"
+          alt="hero image"
+          width="583"
+          height="349"
+        />
       </div>
       <div class="mr-auto place-self-center lg:col-span-7 md:flex-1">
         <h1
@@ -40,11 +47,11 @@
         </div>
       </div>
       <div class="hidden md:block md:flex lg:mt-0 lg:col-span-5">
-        <img
+        <nuxt-img
           src="https://www.air360.io/wp-content/uploads/2022/08/hero-illustration.webp"
-          alt="mockup"
+          alt="Hero image"
           class="object-scale-down"
-        >
+        />
       </div>
     </div>
   </section>

@@ -3,11 +3,7 @@
     <div
       class="gap-8 items-center py-10 px-4 mx-auto max-w-screen-[1400px] xl:gap-16 md:grid md:grid-cols-2 md:py-16 lg:px-8 lg:pt-6 lg:pb-14"
     >
-      <img
-        class="w-full rounded-lg md:hidden dark:hidden"
-        src="https://media-server.clubmed.com/image/jpeg/1024/auto/crop/center/70/https%3A%2F%2Fns.clubmed.com%2Fesap%2F2022%2F206%2Fimg%2Foffer%2FW23.jpg"
-        :alt="$t('clubmed-pic')"
-      >
+      <nuxt-img format="webp" class="w-full rounded-lg md:hidden dark:hidden" src="https://media-server.clubmed.com/image/jpeg/1024/auto/crop/center/70/https%3A%2F%2Fns.clubmed.com%2Fesap%2F2022%2F206%2Fimg%2Foffer%2FW23.jpg" :alt="$t('clubmed-pic')" />
       <div class="mt-4 md:mt-0">
         <h2
           class="mb-4 text-2xl font-semibold text-black-600 text-left md:text-3xl lg:text-4xl dark:text-white"
@@ -43,30 +39,8 @@
             </div>
           </dl>
         </div>
-        <!-- <a
-          href="#"
-          class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-blue-400 transition ease-in-out duration-300 hover:bg-blue-500 dark:focus:ring-primary-900"
-        >
-          {{ $t("more") }}
-          <svg
-            class="ml-2 -mr-1 w-5 h-5"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </a> -->
       </div>
-      <img
-        class="hidden w-full rounded-lg md:block dark:hidden"
-        src="https://media-server.clubmed.com/image/jpeg/1024/auto/crop/center/70/https%3A%2F%2Fns.clubmed.com%2Fesap%2F2022%2F206%2Fimg%2Foffer%2FW23.jpg"
-        :alt="$t('clubmed-pic')"
-      >
+      <nuxt-img format="webp" class="hidden w-full rounded-lg md:block dark:hidden" src="https://media-server.clubmed.com/image/jpeg/1024/auto/crop/center/70/https%3A%2F%2Fns.clubmed.com%2Fesap%2F2022%2F206%2Fimg%2Foffer%2FW23.jpg" :alt="$t('clubmed-pic')" />
     </div>
   </section>
 </template>
