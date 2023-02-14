@@ -3,8 +3,8 @@
     <div
       class="grid max-w-screen-[1400px] px-4 py-10 mx-auto md:gap-8 md:py-16 md:grid-cols-12 lg:py-18 lg:px-8"
     >
-      <div :class="`md:${props.imageStatus} md:mt-0 md:col-span-7 md:flex lg:w-11/12`">
-        <nuxt-img format="webp" :src="props.imagePath" :alt="props.alt" />
+      <div :class="`md:${props.imageStatus} md:mt-0 md:col-span-7 md:flex md:mx-auto lg:w-10/12`">
+        <nuxt-img format="webp" :src="props.imagePath" :alt="props.alt" class="rounded-lg shadow-lg" />
       </div>
       <div class="md:col-span-5">
         <p class="font-bold text-base my-2 lg:text-lg" :class="subtextColor">
@@ -40,8 +40,8 @@
           </svg>
         </a>
       </div>
-      <div :class="`hidden md:${props.imageStatus2} md:mt-0 md:col-span-7 md:flex lg:w-11/12`">
-        <nuxt-img format="webp" :src="props.imagePath" :alt="props.alt" />
+      <div :class="`hidden md:${props.imageStatus2} md:mt-0 md:col-span-7 md:flex md:mx-auto lg:w-10/12`">
+        <nuxt-img format="webp" :src="props.imagePath" :alt="props.alt" class="rounded-lg shadow-lg" />
       </div>
     </div>
   </section>
