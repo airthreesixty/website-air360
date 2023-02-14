@@ -1,6 +1,6 @@
 ---
 title: eコマースブランドが顧客獲得について知っておくべきこと
-published: 2023-2-7
+published: 2023-2-07
 tags: 
   - product
 readingTime: 3
