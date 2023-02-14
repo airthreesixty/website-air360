@@ -20,22 +20,24 @@ Features
 ユーザーのウェブ上の行動を動画で確認し、ユーザーが持つ不満を素早く発見できます。スクリーニングすることで、あなたの気になる特定のユーザーに絞れます。
 ::
 
-::single-description{imagePath="/intuitiveDescription.jpeg" imageStatus="block" imageStatus2="hidden" buttonStatus="hidden" alt="ページ上分析"}
+::single-description{imagePath="/intuitiveDescription.jpeg" imageStatus="block" imageStatus2="hidden" buttonStatus="hidden" alt="ウェブページ上で分析"}
 #subtext
 直感的
 #title
-ページ上分析
+ウェブページ上で分析
 #description
-Chrome拡張機能を使えば、クリック一つでコンバージョンに影響を与える重要な要素を明らかにできます。今までにないアナリティクスを体験してください。
+<!-- Chrome拡張機能を使えば、クリック一つでコンバージョンに影響を与える重要な要素を明らかにできます。今までにないアナリティクスを体験してください。 -->
+気になる箇所をクリックするだけで、実際のウェブサイト上でコンバージョン率(CVR)に影響を与える重要な要素を明らかにできます。
 ::
 
 ::single-description{imagePath="/funnel.png" buttonStatus="hidden" alt="ファネル"}
 #subtext
 視覚的
 #title
-ファネル
+離脱率の確認
 #description
-ファネルはどのステップで多くのユーザーが離脱してしまったかを分析するのに便利な機能です。あなたのオリジナルのファネルを作成できます。
+<!-- ファネルはどのステップで多くのユーザーが離脱してしまったかを分析するのに便利な機能です。あなたのオリジナルのファネルを作成できます。 -->
+ページごと、あるいはボタンのクリックなどユーザーのアクションごとにグラフを作成し、どこに離脱の原因があるかすぐにわかります。
 ::
 
 ::single-description{imagePath="/sunburst.png" imageStatus="block" imageStatus2="hidden" buttonStatus="hidden" alt="カスタマージャーニー"}
@@ -44,7 +46,8 @@ Chrome拡張機能を使えば、クリック一つでコンバージョンに�
 #title
 カスタマージャーニー
 #description
-ウェブサイト、アプリ上でユーザーが商品やサービスに出会い購入に至るまで、どのような経路を辿っているか、その全体像を把握できます。
+<!-- ウェブサイト、アプリ上でユーザーが商品やサービスに出会い購入に至るまで、どのような経路を辿っているか、その全体像を把握できます。 -->
+ユーザーのウェブサイト上の行動をグラフ化して確認できます。全体像を把握し、どこから改善していくべきか判断できます。
 ::
 
 ::single-description{imagePath="/dataIntegration.png"  buttonStatus="hidden" alt="連携性"}
