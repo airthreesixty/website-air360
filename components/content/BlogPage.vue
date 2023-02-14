@@ -19,6 +19,11 @@
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         <BlogCard v-for="article in filteredArticles" :key="article._path" :data="article" />
       </div>
+      <div v-if="!filteredArticles.length">
+        <p class="text-center text-black-600">
+          {{ $t('no-search-result') }}
+        </p>
+      </div>
     </div>
   </section>
 </template>
