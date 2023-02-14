@@ -5,13 +5,13 @@
         <h2
           class="mb-4 text-2xl tracking-tight font-extrabold text-black-600 lg:text-4xl dark:text-white"
         >
-          Air360 ブログ
+          Air360 {{ $t('blog') }}
         </h2>
         <!-- <h3 v-if="tagList.includes(tag)" class="text-xl mb-3 text-black-600 md:text-2xl">
           {{ $t(`tag.${tag}`) }}
         </h3> -->
         <p class="font-light mb-6 text-gray-500 md:text-xl dark:text-gray-400">
-          コンバージョン率を向上させるには
+          {{ $t('how-to-increase-conversion') }}
         </p>
         <BlogTagsFilter />
         <BlogSearchBar v-model="searchedArticles" />
