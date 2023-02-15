@@ -14,7 +14,7 @@
             </div>
             <NuxtLink :to="$localePath('/request-demo')">
               <button class="mt-8 rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-primary-600 shadow transition ease-in-out duration-300 hover:bg-primary-100">
-                Air360を試してみる
+                {{ $t('try-air360') }}
               </button>
             </NuxtLink>
           </div>
