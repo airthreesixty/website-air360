@@ -3,7 +3,7 @@
     <div
       class="grid max-w-screen-[1400px] px-4 py-10 mx-auto md:gap-8 md:py-16 md:grid-cols-12 lg:py-18 lg:px-8"
     >
-      <div :class="`md:${props.imageStatus} md:mt-0 md:col-span-7 md:flex md:mx-auto lg:w-10/12`">
+      <div :class="`flex justify-center md:${props.imageStatus} md:mt-0 md:col-span-7 md:flex md:mx-auto lg:w-10/12`">
         <nuxt-img format="webp" :src="props.imagePath" :alt="props.alt" class="rounded-lg shadow-lg my-auto h-46 w-80 lg:h-69 lg:w-120 xl:h-76 xl:w-132" />
       </div>
       <div class="md:col-span-5">
