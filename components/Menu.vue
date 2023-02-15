@@ -35,7 +35,7 @@
         </svg>
       </button>
       <div
-        v-if="!isActive"
+        v-if="isActive"
         id="navbar-default"
         class="w-full transition ease-in-out duration-500 lg:block lg:w-auto"
       >
