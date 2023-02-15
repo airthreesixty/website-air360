@@ -17,7 +17,6 @@
         class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
         aria-controls="navbar-default"
         aria-expanded="false"
-        @click="toggleMenu"
       >
         <span class="sr-only">Open main menu</span>
         <svg
@@ -35,9 +34,8 @@
         </svg>
       </button>
       <div
-        v-if="isActive"
         id="navbar-default"
-        class="w-full transition ease-in-out duration-500 lg:block lg:w-auto"
+        class="hidden w-full transition ease-in-out duration-500 lg:block lg:w-auto"
       >
         <ul
           class="flex flex-col p-4 mt-4 border items-center border-none lg:flex-row lg:space-x-8 lg:mt-0 lg:text-base lg:font-medium lg:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
@@ -113,11 +111,11 @@
 <script setup lang="ts">
 const { $localePath } = useNuxtApp()
 
-const isActive = ref(false)
+// const isActive = ref(false)
 
-const toggleMenu = () => {
-  isActive.value = !isActive.value
-}
+// const toggleMenu = () => {
+//   isActive.value = !isActive.value
+// }
 </script>
 
 <style lang="postcss">
