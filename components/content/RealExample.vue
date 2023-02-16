@@ -3,7 +3,7 @@
     <div
       class="gap-8 items-center py-10 px-4 mx-auto max-w-screen-[1400px] xl:gap-16 md:grid md:grid-cols-2 md:py-16 lg:px-8 lg:pt-6 lg:pb-14"
     >
-      <nuxt-img loading="lazy" format="webp" class="w-full rounded-lg md:hidden dark:hidden" src="https://media-server.clubmed.com/image/jpeg/1024/auto/crop/center/70/https%3A%2F%2Fns.clubmed.com%2Fesap%2F2022%2F206%2Fimg%2Foffer%2FW23.jpg" :alt="$t('clubmed-pic')" />
+      <nuxt-img loading="lazy" format="webp" class="w-full shadow-lg rounded-lg md:hidden dark:hidden" src="https://media-server.clubmed.com/image/jpeg/1024/auto/crop/center/70/https%3A%2F%2Fns.clubmed.com%2Fesap%2F2022%2F206%2Fimg%2Foffer%2FW23.jpg" :alt="$t('clubmed-pic')" />
       <div class="mt-4 md:mt-0">
         <h2
           class="mb-4 text-2xl font-semibold text-black-600 text-left md:text-3xl lg:text-4xl dark:text-white"
@@ -40,7 +40,7 @@
           </dl>
         </div>
       </div>
-      <nuxt-img loading="lazy" format="webp" class="hidden w-full rounded-lg md:block dark:hidden" src="https://media-server.clubmed.com/image/jpeg/1024/auto/crop/center/70/https%3A%2F%2Fns.clubmed.com%2Fesap%2F2022%2F206%2Fimg%2Foffer%2FW23.jpg" :alt="$t('clubmed-pic')" />
+      <nuxt-img loading="lazy" format="webp" class="hidden shadow-lg w-full rounded-lg md:block dark:hidden" src="https://media-server.clubmed.com/image/jpeg/1024/auto/crop/center/70/https%3A%2F%2Fns.clubmed.com%2Fesap%2F2022%2F206%2Fimg%2Foffer%2FW23.jpg" :alt="$t('clubmed-pic')" />
     </div>
   </section>
 </template>
