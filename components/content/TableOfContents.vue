@@ -2,7 +2,7 @@
   <div class="flex justify-center border-2 px-1 my-16 py-5 rounded-md">
     <div class="">
       <h2 class="text-center">
-        目次
+        {{ $t('contents') }}
       </h2>
       <ul v-for="(title, index) in props.paragraphTitles" :key="index">
         <li>
