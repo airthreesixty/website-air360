@@ -5,7 +5,7 @@
   >
     <div class="px-4 mx-auto max-w-screen-[1400px] lg:px-8">
       <h2 class="mb-8 text-2xl font-bold text-gray-900 dark:text-white">
-        関連記事
+        {{ $t('related-articles') }}
       </h2>
       <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
         <BlogCard v-for="article in data" :key="article._path" :data="article" />

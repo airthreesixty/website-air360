@@ -6,7 +6,6 @@
 
 <script setup lang="ts">
 const { $i18n } = useNuxtApp()
-// console.log($i18n.locale)
 const route = useRoute()
 
 const pathWithoutLocale = computed(() => getPathWithoutLocale(route.path))
