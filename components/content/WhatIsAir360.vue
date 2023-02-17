@@ -14,7 +14,7 @@
         <div class="wistia_responsive_padding mx-auto md:w-9/12 lg:w-8/12" style="padding:56.25% 0 0 0;position:relative;">
           <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
             <iframe
-              src="https://fast.wistia.net/embed/iframe/4vg5g5jgct?videoFoam=true"
+              src="https://fast.wistia.net/embed/iframe/uzru2drtmd"
               title="Air360 by Scalefast Creating Conversion Rate Heroes Video"
               allow="autoplay; fullscreen"
               allowtransparency="true"
