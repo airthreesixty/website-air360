@@ -14,7 +14,6 @@ useHead({
   script: [
     {
       src: 'https://fast.wistia.net/assets/external/E-v1.js',
-      async: true,
       body: true,
       defer: true,
     },
