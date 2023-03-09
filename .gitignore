@@ -6,6 +6,7 @@ node_modules
 .output
 .env
 dist
+google2625e80e868f68eb.html
 
 .yarn/*
 # !.yarn/cache
