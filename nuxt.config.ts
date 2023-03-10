@@ -1,6 +1,12 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   modules: ['@nuxt/content', 'nuxt-windicss', '@nuxtjs/i18n', 'nuxt-font-loader', '@nuxtjs/algolia', '@nuxt/image-edge', '~/modules/sitemap', '@nuxtjs/robots'],
+  nitro: {
+    compressPublicAssets: true,
+    prerender: {
+      crawlLinks: true,
+    },
+  },
   algolia: {
     apiKey: process.env.ALGOLIA_SEARCH_API_KEY,
     applicationId: process.env.ALGOLIA_APPLICATION_ID,
