@@ -8,17 +8,17 @@
       </div>
       <div class="md:col-span-5">
         <p class="font-bold text-base my-2 lg:text-lg" :class="subtextColor">
-          <slot name="subtext" />
+          <ContentSlot :use="$slots.subtext" unwrap="p" />
         </p>
-        <h1
+        <h3
           class="mb-4 mt-[22px] text-xl font-semibold text-black-600 text-left border-deco md:text-2xl lg:text-3xl dark:text-white"
         >
-          <slot name="title" />
-        </h1>
+        <ContentSlot :use="$slots.title" unwrap="p" />
+        </h3>
         <p
           class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-base lg:text-xl xl:leading-8 dark:text-gray-400"
         >
-          <slot name="description" />
+        <ContentSlot :use="$slots.description" unwrap="p" />
         </p>
         <a
           href="#"

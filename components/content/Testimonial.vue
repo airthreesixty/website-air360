@@ -17,7 +17,7 @@
               class="text-2xl font-medium leading-9 text-black-600 lg:text-3xl"
             >
               <p>
-                <ContentSlot :use="$slots.title" />
+                <ContentSlot :use="$slots.title" unwrap="p" />
               </p>
             </div>
             <footer class="mt-8">

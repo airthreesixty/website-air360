@@ -16,7 +16,7 @@
           Contact Us
         </h2>
         <p class="font-light text-gray-600 dark:text-gray-400 sm:text-xl">
-          <ContentSlot :use="$slots.subtext" />
+          <ContentSlot :use="$slots.subtext" unwrap="p" />
         </p>
       </div>
       <div class="grid grid-cols-1 lg:gap-8 lg:grid-cols-3">
@@ -32,7 +32,7 @@
               <label
                 for="name"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-              ><ContentSlot :use="$slots.name" /></label>
+              ><ContentSlot :use="$slots.name" unwrap="p" /></label>
               <input
                 id="name"
                 v-model="formData.name"
@@ -47,7 +47,7 @@
               <label
                 for="email"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-              ><ContentSlot :use="$slots.email" /></label>
+              ><ContentSlot :use="$slots.email" unwrap="p" /></label>
               <input
                 id="email"
                 v-model="formData.email"
@@ -62,7 +62,7 @@
               <label
                 for="job-title"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-              ><ContentSlot :use="$slots.jobTitle" /></label>
+              ><ContentSlot :use="$slots.jobTitle" unwrap="p" /></label>
               <input
                 id="job-title"
                 v-model="formData.jobTitle"
@@ -77,7 +77,7 @@
               <label
                 for="message"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
-              ><ContentSlot :use="$slots.message" /></label>
+              ><ContentSlot :use="$slots.message" unwrap="p" /></label>
               <textarea
                 id="message"
                 v-model="formData.message"
@@ -88,7 +88,7 @@
                 {{ v$.message.$errors[0].$message }}
               </span>
               <p class="mt-4 text-xs text-gray-500">
-                <ContentSlot :use="$slots.rule" />
+                <ContentSlot :use="$slots.rule" unwrap="p" />
               </p>
             </div>
             <button
@@ -97,7 +97,7 @@
               :class="{'opacity-25 cursor-not-allowed': !isFormValid }"
               :disabled="!isFormValid"
             >
-              <ContentSlot :use="$slots.submitButton" />
+              <ContentSlot :use="$slots.submitButton" unwrap="p" />
             </button>
           </form>
         </div>
@@ -122,10 +122,10 @@
               </svg>
             </div>
             <p class="mb-2 text-xl font-bold text-gray-900 dark:text-white">
-              <ContentSlot :use="$slots.companyInfo" />
+              <ContentSlot :use="$slots.companyInfo" unwrap="p" />
             </p>
             <p class="text-gray-500 dark:text-gray-400">
-              <ContentSlot :use="$slots.companyName" />
+              <ContentSlot :use="$slots.companyName" unwrap="p" />
             </p>
           </div>
           <div>
@@ -146,10 +146,10 @@
               </svg>
             </div>
             <p class="mb-2 text-xl font-bold text-gray-900 dark:text-white">
-              <ContentSlot :use="$slots.location" />
+              <ContentSlot :use="$slots.location" unwrap="p" />
             </p>
             <p class="text-gray-500 dark:text-gray-400">
-              <ContentSlot :use="$slots.address" />
+              <ContentSlot :use="$slots.address" unwrap="p" />
             </p>
           </div>
         </div>

@@ -8,12 +8,12 @@
         <h2
           class="mb-4 text-2xl font-semibold text-black-600 text-left md:text-3xl lg:text-4xl dark:text-white"
         >
-          <ContentSlot :use="$slots.title" />
+          <ContentSlot :use="$slots.title" unwrap="p" />
         </h2>
         <p
           class="mb-6 font-light text-gray-500 md:text-base lg:text-xl xl:leading-8 dark:text-gray-400"
         >
-          <ContentSlot :use="$slots.description" />
+          <ContentSlot :use="$slots.description" unwrap="p" />
         </p>
         <div
           class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6"
@@ -26,7 +26,7 @@
                 +100%
               </dt>
               <dd class="font-light text-gray-500 dark:text-gray-400">
-                <ContentSlot :use="$slots.achievement1" />
+                <ContentSlot :use="$slots.achievement1" unwrap="p" />
               </dd>
             </div>
             <div class="flex flex-col items-center justify-center">
@@ -34,7 +34,7 @@
                 +50%
               </dt>
               <dd class="font-light text-gray-500 dark:text-gray-400">
-                <ContentSlot :use="$slots.achievement2" />
+                <ContentSlot :use="$slots.achievement2" unwrap="p" />
               </dd>
             </div>
           </dl>

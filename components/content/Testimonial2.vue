@@ -15,7 +15,7 @@
         </svg>
         <blockquote>
           <p class="text-2xl font-medium text-gray-900 dark:text-white">
-            <ContentSlot :use="$slots.title" />
+            <ContentSlot :use="$slots.title" unwrap="p" />
           </p>
         </blockquote>
         <figcaption class="flex items-center justify-center mt-6 space-x-3">
@@ -34,7 +34,7 @@
             <div
               class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400"
             >
-              <ContentSlot :use="$slots.role" />
+              <ContentSlot :use="$slots.role" unwrap="p" />
             </div>
           </div>
         </figcaption>

@@ -4,10 +4,10 @@
       <div>
         <!-- <h2 class="text-md font-semibold text-primary-600 lg:text-xl">次世代型UXアナリティクスツール</h2> -->
         <h2 class="mt-2 text-2xl font-semibold text-black-600 md:text-3xl lg:text-4xl">
-          <ContentSlot :use="$slots.title" />
+          <ContentSlot :use="$slots.title" unwrap="p" />
         </h2>
         <p class="mx-auto mt-5 max-w-prose text-md text-gray-500 lg:text-xl xl:leading-8">
-          <ContentSlot :use="$slots.description" />
+          <ContentSlot :use="$slots.description" unwrap="p" />
         </p>
       </div>
       <div class="mt-12">

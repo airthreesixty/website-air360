@@ -24,29 +24,29 @@
             />
           </div>
           <h1 class="mb-3 font-semibold bg-gradient-to-r from-[#6278DF] to-blue-[#3DDC97] bg-clip-text text-transparent text-xl md:text-2xl lg:text-3xl">
-            <ContentSlot :use="$slots.title1" />
+            <ContentSlot :use="$slots.title1" unwrap="p" />
           </h1>
           <h2 class="mb-4 text-black-600 font-semibold lg:text-lg">
-            <ContentSlot :use="$slots.subtitle1" />
+            <ContentSlot :use="$slots.subtitle1" unwrap="p" />
           </h2>
           <div class="flex">
             <div>
               <p class="mb-2 font-light text-gray-500 dark:text-gray-400">
-                <ContentSlot :use="$slots.description1" />
+                <ContentSlot :use="$slots.description1" unwrap="p" />
               </p>
             </div>
           </div>
           <div class="flex pt-4">
             <div>
               <p class="mb-2 font-light text-gray-500 dark:text-gray-400">
-                <ContentSlot :use="$slots.description2" />
+                <ContentSlot :use="$slots.description2" unwrap="p" />
               </p>
             </div>
           </div>
           <div class="flex pt-4">
             <div>
               <p class="mb-2 font-light text-gray-500 dark:text-gray-400">
-                <ContentSlot :use="$slots.description3" />
+                <ContentSlot :use="$slots.description3" unwrap="p" />
               </p>
             </div>
           </div>
@@ -69,17 +69,17 @@
         class="w-full mx-auto bg-white rounded-lg shadow dark:bg-gray-800 md:mt-0 sm:max-w-lg xl:p-0 lg:col-span-6"
       >
         <div class="p-6 space-y-4 lg:space-y-6 md:p-8">
-          <h1
+          <h2
             class="text-xl font-bold leading-tight tracking-tight text-center text-black-600 md:text-2xl dark:text-white"
           >
-            <ContentSlot :use="$slots.title" />
-          </h1>
+            <ContentSlot :use="$slots.title" unwrap="p" />
+          </h2>
           <form class="space-y-4 lg:space-y-6" action="" method="post" @submit.prevent="submitForm">
             <div>
               <label
                 for="name"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-              ><ContentSlot :use="$slots.name" /></label>
+              ><ContentSlot :use="$slots.name" unwrap="p" /></label>
               <input
                 id="name"
                 v-model="formData.name"
@@ -95,7 +95,7 @@
               <label
                 for="email"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-              ><ContentSlot :use="$slots.email" /></label>
+              ><ContentSlot :use="$slots.email" unwrap="p" /></label>
               <input
                 id="email"
                 v-model="formData.email"
@@ -112,7 +112,7 @@
               <label
                 for="job-title"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-              ><ContentSlot :use="$slots.jobTitle" /></label>
+              ><ContentSlot :use="$slots.jobTitle" unwrap="p" /></label>
               <input
                 id="job-title"
                 v-model="formData.jobTitle"
@@ -138,7 +138,7 @@
                 <div
                   class="font-light text-xs text-gray-500 dark:text-gray-300"
                 >
-                  <ContentSlot :use="$slots.rule" />
+                  <ContentSlot :use="$slots.rule" unwrap="p" />
                 </div>
               </div>
             </div>
