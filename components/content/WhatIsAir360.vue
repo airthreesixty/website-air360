@@ -20,7 +20,7 @@
               allowtransparency="true"
               frameborder="0"
               scrolling="no"
-              class="wistia_embed h-full md:h-[75%] lg:h-[67%]"
+              class="wistia_embed"
               name="wistia_embed"
               msallowfullscreen
               width="100%"
