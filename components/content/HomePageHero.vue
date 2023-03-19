@@ -23,12 +23,10 @@
         >
           <ContentSlot :use="$slots.description" unwrap="p" />
         </h2>
-        <div class="pt-3  md:items-center md:w-1/2">
-          <NuxtLink :to="$localePath('/request-demo')">
-            <ButtonPrimary>
-              {{ $t("request-demo") }}
-            </ButtonPrimary>
-          </NuxtLink>
+        <div class="pt-3 md:items-center md:w-1/2">
+          <ButtonPrimary slug="/request-demo">
+            {{ $t("request-demo") }}
+          </ButtonPrimary>
         </div>
       </div>
       <div class="hidden md:block md:flex lg:mt-0 lg:col-span-5">
@@ -41,10 +39,6 @@
     </div>
   </section>
 </template>
-
-<script setup lang="ts">
-const { $localePath } = useNuxtApp()
-</script>
 
 <style scoped>
 img {
