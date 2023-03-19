@@ -38,17 +38,11 @@
               の一員です
             </p>
           </div>
-          <!-- <p class="mt-6 text-base leading-7 text-gray-300">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas
-              tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim
-              et fermentum, augue. Aliquet amet volutpat quisque ut interdum
-              tincidunt duis.
-            </p> -->
           <div class="mt-8">
             <a
               href="https://esw.com/"
               target="_blank"
-              class="text-white bg-primary-600 text-base font-bold mt-5 inline-block transition ease-in-out duration-300 hover:bg-primary-700 font-medium rounded-lg text-sm px-6 py-3 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+              class="text-white bg-primary-600 text-base font-bold mt-5 inline-block transition ease-in-out duration-300 hover:bg-primary-700 rounded-lg px-6 py-3 mb-2 focus:outline-none"
             >ESWのホームページ</a>
           </div>
         </div>

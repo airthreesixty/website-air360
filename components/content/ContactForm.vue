@@ -93,7 +93,7 @@
             </div>
             <button
               type="submit"
-              class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg transition ease-in-out duration-300 bg-primary-600 sm:w-fit hover:bg-primary-700 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+              class="py-3 px-5 font-bold text-center text-white rounded-lg transition ease-in-out duration-300 bg-primary-600 sm:w-fit hover:bg-primary-700 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
               :class="{'opacity-25 cursor-not-allowed': !isFormValid }"
               :disabled="!isFormValid"
             >
