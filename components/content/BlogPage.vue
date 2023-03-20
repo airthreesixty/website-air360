@@ -17,9 +17,21 @@
         <BlogSearchBar v-model="searchedArticles" />
       </div>
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        <BlogCard v-for="article in filteredArticles" :key="article._path" :data="article" />
+        <BlogCard v-for="article in displayedArticles" :key="article._path" :data="article" />
       </div>
-      <div v-if="!filteredArticles.length">
+      <div class="flex justify-center">
+        <button
+          v-if="canLoadMore"
+          class="text-gray-500 bg-white w-[178px] h-[50px] flex justify-center border-gray-200 border text-base font-bold mt-16 mb-0 inline-block transition ease-in-out duration-300 rounded-lg px-6 py-3 mb-2 focus:outline-none"
+          @click="loadMore"
+        >
+          <div v-if="!isLoading">
+            {{ $t('load-articles') }}
+          </div>
+          <Loading v-if="isLoading" class="w-20 h-5" :is-full-page="false" />
+        </button>
+      </div>
+      <div v-if="!articles.length">
         <p class="text-center text-black-600">
           {{ $t('no-search-result') }}
         </p>
@@ -29,21 +41,55 @@
 </template>
 
 <script setup lang="ts">
+// @ts-ignore
+import _ from 'lodash'
 import { BlogArticle } from '~~/interfaces/blog'
 
+const route = useRoute()
 const props = defineProps({
   articles: {
     type: Array as () => BlogArticle[],
     required: true,
   },
 })
+const isLoading = ref(false)
 
+const numArticlesPerLoad = 6
 const searchedArticles = ref<string[] | null>(null)
+const articles = ref<BlogArticle[]>(props.articles)
+const displayedArticles = ref<BlogArticle[]>(props.articles.slice(0, numArticlesPerLoad))
 
-const filteredArticles = computed(() => {
-  if (searchedArticles.value !== null) {
-    return props.articles.filter(article => searchedArticles.value?.includes(article._path))
-  }
-  return props.articles
+const canLoadMore = computed(() => {
+  return displayedArticles.value.length < articles.value.length && searchedArticles.value === null
 })
+
+watch([searchedArticles, articles], () => {
+  if (searchedArticles.value !== null) {
+    displayedArticles.value = articles.value.filter(article => searchedArticles.value?.includes(article._path))
+  } else {
+    displayedArticles.value = articles.value.slice(0, numArticlesPerLoad)
+  }
+},
+{ immediate: true },
+)
+
+const loadMore = () => {
+  isLoading.value = true
+  _.debounce(async () => {
+    const currentArticlesCount = displayedArticles.value.length
+    const newArticles = articles.value.slice(
+      currentArticlesCount,
+      currentArticlesCount + numArticlesPerLoad,
+    )
+    displayedArticles.value.push(...newArticles)
+    isLoading.value = false
+    const currentPage = Number(route.query.page) || 0
+    await navigateTo({
+      path: '/blog',
+      query: {
+        page: currentPage + 1,
+      },
+    })
+  }, 500)()
+}
 </script>
