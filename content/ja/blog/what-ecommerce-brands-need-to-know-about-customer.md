@@ -2,7 +2,7 @@
 title: eコマースブランドが顧客獲得について知っておくべきこと
 published: 2023-2-07
 tags: 
-  - product
+  - ecommerce
 readingTime: 3
 image: https://www.air360.io/wp-content/uploads/2022/05/Air360-blog-Customer-Acquisition-Strategy-1024x539.jpeg
 metaDesc: eコマースブランドの課題は大きくわけて2つに集約されます。それは「サイトに訪問者を誘導すること（顧客獲得戦略）」と「購入、登録、契約などをさせること（コンバージョン戦略）」です。

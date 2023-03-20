@@ -10,7 +10,7 @@
         <!-- <h3 v-if="tagList.includes(tag)" class="text-xl mb-3 text-black-600 md:text-2xl">
           {{ $t(`tag.${tag}`) }}
         </h3> -->
-        <p class="font-light mb-6 text-gray-500 md:text-xl dark:text-gray-400">
+        <p class="font-light mb-1 text-gray-500 md:text-xl dark:text-gray-400">
           {{ $t('how-to-increase-conversion') }}
         </p>
         <BlogTagsFilter />
