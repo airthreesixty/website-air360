@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     compressPublicAssets: true,
     prerender: {
       crawlLinks: true,
+      routes: ['/sitemap.xml'],
     },
   },
   algolia: {
