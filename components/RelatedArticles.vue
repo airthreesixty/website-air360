@@ -19,11 +19,34 @@ const { $i18n } = useNuxtApp()
 const { path } = useRoute()
 const route = useRoute()
 
-const { data } = await useAsyncData(`${route.params.slug}`, () =>
-  queryContent($i18n.locale._value, '/blog')
-    .sort({ published: -1 })
+const { data } = await useAsyncData(`${route.params.slug}`, async () => {
+  const randomPosts = await queryContent($i18n.locale._value, '/blog')
     .where({ _path: { $ne: `/${$i18n.locale._value}${path}` } })
-    .limit(3)
-    .find(),
-)
+    .sort({ published: -1 })
+    .limit(100)
+    .find()
+
+  const selectedPosts = shuffle(randomPosts).slice(0, 3)
+
+  return selectedPosts
+})
+
+function shuffle (array:any[]) {
+  let currentIndex = array.length
+  let temporaryValue, randomIndex
+
+  // While there remain elements to shuffle...
+  while (currentIndex !== 0) {
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex)
+    currentIndex -= 1
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex]
+    array[currentIndex] = array[randomIndex]
+    array[randomIndex] = temporaryValue
+  }
+
+  return array
+}
 </script>

@@ -27,7 +27,6 @@
       </button> -->
     </div>
   </div>
-  <!-- <div>{{ result }}</div> -->
 </template>
 
 <script lang="ts" setup>
@@ -37,7 +36,7 @@ import _ from 'lodash'
 defineProps({
   modelValue: {
     type: Array as () => string[] | null,
-    required: true,
+    default: null,
   },
 })
 

@@ -42,8 +42,8 @@ const searchedArticles = ref<string[] | null>(null)
 
 const filteredArticles = computed(() => {
   if (searchedArticles.value !== null) {
-    return props.articles.filter(article => searchedArticles.value?.includes(article._path))
+    return props.articles.filter(article => searchedArticles.value?.includes(article._path)) || []
   }
-  return props.articles
+  return props.articles || []
 })
 </script>
