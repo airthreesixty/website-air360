@@ -73,9 +73,16 @@ watch([searchedArticles, articles], () => {
 { immediate: true },
 )
 
-const loadMore = () => {
+const loadMore = async () => {
   isLoading.value = true
-  _.debounce(async () => {
+  const currentPage = Number(route.query.page) || 0
+  await navigateTo({
+    path: '/blog',
+    query: {
+      page: currentPage + 1,
+    },
+  })
+  _.debounce(() => {
     const currentArticlesCount = displayedArticles.value.length
     const newArticles = articles.value.slice(
       currentArticlesCount,
@@ -83,13 +90,6 @@ const loadMore = () => {
     )
     displayedArticles.value.push(...newArticles)
     isLoading.value = false
-    const currentPage = Number(route.query.page) || 0
-    await navigateTo({
-      path: '/blog',
-      query: {
-        page: currentPage + 1,
-      },
-    })
   }, 500)()
 }
 </script>
