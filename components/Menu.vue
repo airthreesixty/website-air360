@@ -61,16 +61,16 @@
             </NuxtLink>
           </li> -->
           <li class="py-2">
-            <NuxtLink :to="$localePath('/product/')">
+            <nuxt-link :to="$localePath('/product')">
               <div
                 class="menu__link"
               >
                 {{ $t("product") }}
               </div>
-            </NuxtLink>
+            </nuxt-link>
           </li>
           <li class="py-2">
-            <NuxtLink :to="$localePath('/blog/')">
+            <NuxtLink :to="$localePath('/blog')">
               <div
                 class="menu__link"
               >
@@ -96,7 +96,7 @@
             >{{ $t("login") }}</a>
           </li>
           <li class="py-2">
-            <ButtonPrimary slug="/request-demo/">
+            <ButtonPrimary slug="/request-demo">
               {{ $t("request-demo") }}
             </ButtonPrimary>
           </li>
