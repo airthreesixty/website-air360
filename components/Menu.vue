@@ -61,13 +61,13 @@
             </NuxtLink>
           </li> -->
           <li class="py-2">
-            <nuxt-link :to="$localePath('/product')">
+            <NuxtLink :to="$localePath('/product')">
               <div
                 class="menu__link"
               >
                 {{ $t("product") }}
               </div>
-            </nuxt-link>
+            </NuxtLink>
           </li>
           <li class="py-2">
             <NuxtLink :to="$localePath('/blog')">
