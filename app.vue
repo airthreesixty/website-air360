@@ -12,4 +12,5 @@ import 'dayjs/locale/ja'
 useHead({
   titleTemplate: 'Air360 - %s',
 })
+
 </script>
