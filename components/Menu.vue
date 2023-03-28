@@ -61,7 +61,7 @@
             </NuxtLink>
           </li> -->
           <li class="py-2">
-            <NuxtLink :to="$localePath('/product/')">
+            <NuxtLink :to="$localePath(`/product`)">
               <div
                 class="menu__link"
               >
