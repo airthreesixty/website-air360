@@ -34,7 +34,6 @@ export default defineNuxtConfig({
       siteName: 'Air360 - eコマースに最適なUX分析ツール',
       siteDescription: 'Air360はウェブサイト上の顧客体験を分析するツールです。 データによって隠れているユーザーの行動を明らかにし、それに基づいてコンバージョン率を改善します。',
       language: 'ja-JP',
-      strict: false,
     },
   },
   app: {
@@ -91,4 +90,9 @@ export default defineNuxtConfig({
   extends: [
     'nuxt-seo-kit',
   ],
+  router: {
+    options: {
+      strict: true,
+    },
+  },
 })
