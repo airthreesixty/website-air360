@@ -56,6 +56,7 @@ export default defineNuxtConfig({
       fallbackLocale: 'en',
     },
     detectBrowserLanguage: false,
+    trailingSlash: true,
   },
 
   fontLoader: {
@@ -89,9 +90,4 @@ export default defineNuxtConfig({
   extends: [
     'nuxt-seo-kit',
   ],
-  router: {
-    options: {
-      strict: false,
-    },
-  },
 })
