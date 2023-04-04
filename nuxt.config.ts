@@ -90,9 +90,4 @@ export default defineNuxtConfig({
   extends: [
     'nuxt-seo-kit',
   ],
-  router: {
-    options: {
-      strict: true,
-    },
-  },
 })
