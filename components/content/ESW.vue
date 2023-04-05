@@ -38,7 +38,7 @@
               の一員です
             </p>
           </div>
-          <div class="mt-8">
+          <div class="mt-8 flex justify-center md:justify-start">
             <a
               href="https://esw.com/"
               target="_blank"

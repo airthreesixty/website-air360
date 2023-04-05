@@ -12,7 +12,7 @@
                 <ContentSlot :use="$slots.description" unwrap="p" />
               </p>
             </div>
-            <div class="flex justify-center mt-8 md:w-2/3 lg: ">
+            <div class="flex justify-center mt-8 md:w-2/3">
               <!-- <NuxtLink :to="$localePath('/request-demo')" class="mt-8 rounded-lg border border-transparent bg-white px-6 py-3 text-base font-bold text-primary-600 shadow transition ease-in-out duration-300 hover:bg-primary-100">
                 {{ $t('try-air360') }}
               </NuxtLink> -->
