@@ -184,7 +184,7 @@ onMounted(() => {
 }
 
 .button-primary .lines>div svg:nth-child(1) {
-  stroke: #fd79a8;
+  stroke: #4ba6e7
 }
 
 .button-primary .lines>div svg:nth-child(2) {
