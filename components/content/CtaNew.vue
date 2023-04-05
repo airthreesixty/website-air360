@@ -29,7 +29,3 @@
     </div>
   </section>
 </template>
-
-<script setup lang="ts">
-const { $localePath } = useNuxtApp()
-</script>
