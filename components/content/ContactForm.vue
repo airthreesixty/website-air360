@@ -210,6 +210,21 @@ const submitForm = async () => {
     Object.assign(formData, { name: '', email: '', jobTitle: '', message: '' })
   }
 }
+
+useSchemaOrg([
+  defineOrganization({
+    name: 'Scalefast Japan',
+    address: {
+      streetAddress: '京橋3-1-1 東京スクエアガーデン 14F',
+      addressLocality: '中央区',
+      addressRegion: '東京都',
+      postalCode: '104-0031',
+      addressCountry: '日本',
+
+    },
+    sameAs: ['https://www.linkedin.com/company/air360/', 'https://twitter.com/weareair360', 'https://www.instagram.com/weareair360/'],
+  }),
+])
 </script>
 
 <style lang="postcss">
