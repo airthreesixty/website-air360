@@ -184,24 +184,39 @@ onMounted(() => {
 }
 
 .button-primary .lines>div svg:nth-child(1) {
-  stroke: #e74b91;
+  stroke: #fd79a8;
+}
+
+.button-primary .lines>div svg:nth-child(2) {
+  stroke-width: 2px;
+  filter: blur(6px);
+}
+
+.button-primary .lines>div svg:nth-child(3) {
+  stroke-width: 2px;
+  filter: blur(3px);
+}
+
+.button-primary .lines>div svg:nth-child(4) {
+  stroke-width: 3px;
+  filter: blur(8px);
 }
 
 .button-transparent .lines > div svg:nth-child(1) {
-  stroke: #01ffc2
+  stroke: #01ffc2;
 }
 
-.button-primary .lines>div svg:nth-child(2), .button-transparent .lines>div svg:nth-child(2) {
+.button-transparent .lines>div svg:nth-child(2) {
   stroke-width: 6px;
   filter: blur(20px);
 }
 
-.button-primary .lines>div svg:nth-child(3), .button-transparent .lines>div svg:nth-child(3) {
+.button-transparent .lines>div svg:nth-child(3) {
   stroke-width: 5px;
   filter: blur(6px);
 }
 
-.button-primary .lines>div svg:nth-child(4), .button-transparent .lines>div svg:nth-child(4) {
+.button-transparent .lines>div svg:nth-child(4) {
   stroke-width: 10px;
   filter: blur(56px);
 }
