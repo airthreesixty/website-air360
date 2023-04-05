@@ -1,88 +1,221 @@
 <template>
-  <!-- <NuxtLink :to="$localePath(prop.slug)" class="text-white text-center bg-primary-600 text-base font-bold w-full px-6 py-3 inline-block transition ease-in-out duration-300 hover:bg-primary-700 rounded-lg focus:outline-none"> -->
-  <NuxtLink :to="$localePath(prop.slug)" class="button">
-    <slot />
+  <NuxtLink v-if="props.theme === 'primary'" :to="$localePath(props.slug)" class="button button-primary home-hero__button-download">
+    <div class="button-text text-white font-bold text-base">
+      <slot />
+    </div>
+  </NuxtLink>
+  <NuxtLink v-if="props.theme === 'transparent'" :to="$localePath(props.slug)" class="button button-transparent home-hero__button-download">
+    <div class="button-text text-primary-600 font-bold text-base">
+      <slot />
+    </div>
   </NuxtLink>
 </template>
 
-<script setup lang="ts">
+<script setup>
 const { $localePath } = useNuxtApp()
 
-const prop = defineProps({
+const props = defineProps({
   slug: {
     type: String,
     required: true,
   },
+  theme: {
+    type: String,
+    required: true,
+  },
 })
+
+const createSVG = (width, height, radius) => {
+  const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg')
+  const rectangle = document.createElementNS(
+    'http://www.w3.org/2000/svg',
+    'rect',
+  )
+
+  svg.setAttributeNS(
+    'http://www.w3.org/2000/svg',
+    'viewBox',
+    `0 0 ${width} ${height}`,
+  )
+
+  rectangle.setAttribute('x', '0')
+  rectangle.setAttribute('y', '0')
+  rectangle.setAttribute('width', '100%')
+  rectangle.setAttribute('height', '100%')
+  rectangle.setAttribute('rx', `${radius}`)
+  rectangle.setAttribute('ry', `${radius}`)
+  rectangle.setAttribute('pathLength', '10')
+
+  svg.appendChild(rectangle)
+
+  return svg
+}
+
+onMounted(() => {
+  document.querySelectorAll('.button-primary, .button-transparent').forEach((button) => {
+    const style = getComputedStyle(button)
+
+    const lines = document.createElement('div')
+
+    lines.classList.add('lines')
+
+    const groupTop = document.createElement('div')
+    const groupBottom = document.createElement('div')
+
+    const svg = createSVG(
+      button.offsetWidth,
+      button.offsetHeight,
+      parseInt(style.borderRadius, 10),
+    )
+
+    groupTop.appendChild(svg)
+    groupTop.appendChild(svg.cloneNode(true))
+    groupTop.appendChild(svg.cloneNode(true))
+    groupTop.appendChild(svg.cloneNode(true))
+
+    groupBottom.appendChild(svg.cloneNode(true))
+    groupBottom.appendChild(svg.cloneNode(true))
+    groupBottom.appendChild(svg.cloneNode(true))
+    groupBottom.appendChild(svg.cloneNode(true))
+
+    lines.appendChild(groupTop)
+    lines.appendChild(groupBottom)
+
+    button.appendChild(lines)
+
+    button.addEventListener('pointerenter', () => {
+      button.classList.add('start')
+    })
+
+    svg.addEventListener('animationend', () => {
+      button.classList.remove('start')
+    })
+  })
+})
+
 </script>
 
-<style scoped>
-  /* svg {
-    stroke-dasharray: 150 480;
-    stroke-dashoffset: 150;
-    transition: 1s ease-in-out;
-  }
-
-  .btn {
-    --width: 180px;
-    --height: 60px;
-    position: relative;
-  }
-
-  .btn:hover svg {
-    stroke-dashoffset: -480;
-  } */
-
-  a.button {
-    display: block;
-    text-align: center;
-    vertical-align: middle;
-    text-decoration: none;
-    width: 100%;
-    margin: auto;
-    padding: 12px 24px;
-    color: #fff;
-    font-weight: bold;
-    background: #e74b91;
-    position: relative;
-    transition: 0.3s ease-in-out;
-    border-radius: 8px;
-}
-a.button:hover {
-    background: #fff;
-    color: #e74b91;
-    border-radius: 8px;
-}
-a.button:before, a.button:after {
-  box-sizing: inherit;
-  content: "";
-  position: absolute;
-  border: 2px solid transparent;
-  width: 0;
-  height: 0;
+<style>
+.button {
+  display: flex;
+  height: 48px;
+  padding: 12px 24px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  width: 100%;
 }
-a.button:before {
-  top: 0;
-  left: 0;
+
+.button-primary {
+  -webkit-tap-highlight-color: transparent;
+  appearance: none;
+  outline: none;
+  border: none;
+  background: #e74b91;
+  position: relative;
+  color: #000000;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, ), 0 4px 16px rgba(0, 0, 0, ), 0 4px 24px rgba(0, 0, 0, );
 }
-a.button:after {
-  bottom: 0;
-  right: 0;
+
+.button-transparent {
+  -webkit-tap-highlight-color: transparent;
+  background-color: white;
+  appearance: none;
+  outline: none;
+  position: relative;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, ), 0 4px 16px rgba(0, 0, 0, ), 0 4px 24px rgba(0, 0, 0, );
 }
-a.button:hover:before, a.button:hover:after {
+
+.button-primary.start .lines svg, .button-transparent.start .lines svg {
+  animation: stroke 0.3s linear;
+}
+
+.button-primary .lines, .button-transparent .lines {
+  position: absolute;
+  inset: 0;
+  mix-blend-mode: hard-light;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.button-primary .lines>div, .button-transparent .lines>div {
+  position: absolute;
+  inset: 0;
+}
+
+.button-primary .lines>div:last-child, .button-transparent .lines>div:last-child {
+  transform: rotate(180deg);
+}
+
+.button-primary .lines>div svg, .button-transparent .lines>div svg {
+  display: block;
+  position: absolute;
+  inset: 0;
+  overflow: visible;
+  fill: none;
+  stroke-width: 2;
+  stroke: #e74b91;
   width: 100%;
   height: 100%;
-}
-a.button:hover:before {
-  border-top-color: #e74b91;
-  border-right-color: #e74b91;
-  transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
-}
-a.button:hover:after {
-  border-bottom-color: #e74b91;
-  border-left-color: #e74b91;
-  transition: border-color 0s ease-out 0.2s, width 0.15s ease-out 0.2s, height 0.15s ease-out 0.3s;
+  stroke-dasharray: 12 12;
+  stroke-dashoffset: 12;
+  opacity: 0;
+  transform: rotate(-1deg) translate3d(0, 0, 0);
 }
 
+.button-transparent .lines > div svg {
+  display: block;
+  position: absolute;
+  inset: 0;
+  overflow: visible;
+  fill: none;
+  stroke-width: 2;
+  stroke: #c9e9ff;
+  width: 100%;
+  height: 100%;
+  stroke-dasharray: 12 12;
+  stroke-dashoffset: 12;
+  opacity: 0;
+  transform: rotate(-1deg) translate3d(0, 0, 0);
+}
+
+.button-primary .lines>div svg:nth-child(1) {
+  stroke: #e74b91;
+}
+
+.button-transparent .lines > div svg:nth-child(1) {
+  stroke: #01ffc2
+}
+
+.button-primary .lines>div svg:nth-child(2), .button-transparent .lines>div svg:nth-child(2) {
+  stroke-width: 6px;
+  filter: blur(20px);
+}
+
+.button-primary .lines>div svg:nth-child(3), .button-transparent .lines>div svg:nth-child(3) {
+  stroke-width: 5px;
+  filter: blur(6px);
+}
+
+.button-primary .lines>div svg:nth-child(4), .button-transparent .lines>div svg:nth-child(4) {
+  stroke-width: 10px;
+  filter: blur(56px);
+}
+
+@keyframes stroke {
+
+  30%,
+  55% {
+    opacity: 1;
+  }
+
+  100% {
+    stroke-dashoffset: 5;
+    opacity: 0;
+  }
+}
 </style>

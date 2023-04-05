@@ -96,7 +96,7 @@
             >{{ $t("login") }}</a>
           </li>
           <li class="py-2">
-            <ButtonPrimary slug="/request-demo">
+            <ButtonPrimary slug="/request-demo" theme="primary">
               {{ $t("request-demo") }}
             </ButtonPrimary>
           </li>
