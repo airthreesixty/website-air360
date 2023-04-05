@@ -10,7 +10,6 @@
 
 <script setup lang="ts">
 import { useClipboard } from '@vueuse/core'
-
 const route = useRoute()
 
 const source = computed(() => `https://jp.air360.io${route.fullPath}/`)

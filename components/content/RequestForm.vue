@@ -144,7 +144,7 @@
             </div>
             <button
               type="submit"
-              class="w-full text-base text-white bg-primary-600 disabled font-bold rounded-lg px-5 py-2.5 text-center transition ease-in-out duration-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+              class="w-full text-base text-white bg-primary-600 disabled font-bold rounded-lg px-5 py-2.5 text-center transition ease-in-out duration-300 dark:bg-primary-600 hover:bg-primary-700 dark:focus:ring-primary-800"
               :class="{'opacity-25 cursor-not-allowed': !isFormValid }"
               :disabled="!isFormValid"
             >
