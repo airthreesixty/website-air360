@@ -12,10 +12,13 @@
                 <ContentSlot :use="$slots.description" unwrap="p" />
               </p>
             </div>
-            <div class="flex justify-center md:justify-start">
-              <NuxtLink :to="$localePath('/request-demo')" class="mt-8 rounded-lg border border-transparent bg-white px-6 py-3 text-base font-bold text-primary-600 shadow transition ease-in-out duration-300 hover:bg-primary-100">
+            <div class="flex justify-center mt-8 md:w-2/3 lg: ">
+              <!-- <NuxtLink :to="$localePath('/request-demo')" class="mt-8 rounded-lg border border-transparent bg-white px-6 py-3 text-base font-bold text-primary-600 shadow transition ease-in-out duration-300 hover:bg-primary-100">
                 {{ $t('try-air360') }}
-              </NuxtLink>
+              </NuxtLink> -->
+              <ButtonPrimary slug="/request-demo" theme="transparent">
+                {{ $t('try-air360') }}
+              </ButtonPrimary>
             </div>
           </div>
         </div>
@@ -26,7 +29,3 @@
     </div>
   </section>
 </template>
-
-<script setup lang="ts">
-const { $localePath } = useNuxtApp()
-</script>

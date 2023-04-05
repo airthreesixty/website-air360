@@ -24,7 +24,7 @@
           <ContentSlot :use="$slots.description" unwrap="p" />
         </h2>
         <div class="pt-3 mt-5 mb-2 md:items-center md:w-1/2">
-          <ButtonPrimary slug="/request-demo">
+          <ButtonPrimary slug="/request-demo" theme="primary">
             {{ $t("request-demo") }}
           </ButtonPrimary>
         </div>
