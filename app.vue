@@ -1,6 +1,5 @@
 <template>
   <NuxtLayout>
-    <SeoKit />
     <NuxtPage />
   </NuxtLayout>
 </template>
@@ -12,5 +11,4 @@ import 'dayjs/locale/ja'
 useHead({
   titleTemplate: 'Air360 - %s',
 })
-
 </script>

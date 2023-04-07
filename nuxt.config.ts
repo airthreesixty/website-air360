@@ -30,10 +30,6 @@ export default defineNuxtConfig({
       algoliaApplicationId: process.env.ALGOLIA_APPLICATION_ID,
       algoliaDocsearchIndexName: process.env.ALGOLIA_DOCSEARCH_INDEX_NAME,
       trailingSlash: true,
-      siteUrl: 'https://jp.air360.io/',
-      siteName: 'Air360 - eコマースに最適なUX分析ツール',
-      siteDescription: 'Air360はウェブサイト上の顧客体験を分析するツールです。 データによって隠れているユーザーの行動を明らかにし、それに基づいてコンバージョン率を改善します。',
-      language: 'ja-JP',
     },
   },
   app: {
@@ -87,7 +83,4 @@ export default defineNuxtConfig({
       '@fortawesome/free-solid-svg-icons',
     ],
   },
-  extends: [
-    'nuxt-seo-kit',
-  ],
 })
