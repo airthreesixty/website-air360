@@ -42,6 +42,7 @@
     "lodash": "^4.17.21",
     "nuxt-font-loader": "^2.2.2",
     "nuxt-fontawesome": "^0.4.0",
+    "nuxt-schema-org": "^2.1.2",
     "unhead": "1.0.21",
     "vue-i18n": "next",
     "vue-loading-overlay": "^6.0"
