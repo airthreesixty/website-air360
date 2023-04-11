@@ -97,12 +97,13 @@ const loadMore = async () => {
 }
 
 const beforeEnter = (el) => {
-  el.style.opacity = 0
+  el.style.opacity = '0'
   el.style.transform = 'translateY(100px)'
 }
 
+// set TypeScript type for done callback and el.dataset.index
+
 const enter = (el, done) => {
-  console.log(el.dataset.index)
   gsap.to(el, {
     opacity: 1,
     y: 0,
