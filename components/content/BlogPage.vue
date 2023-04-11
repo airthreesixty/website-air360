@@ -7,9 +7,6 @@
         >
           Air360 {{ $t('blog') }}
         </h2>
-        <!-- <h3 v-if="tagList.includes(tag)" class="text-xl mb-3 text-black-600 md:text-2xl">
-          {{ $t(`tag.${tag}`) }}
-        </h3> -->
         <p class="font-light mb-1 text-gray-500 md:text-xl dark:text-gray-400">
           {{ $t('how-to-increase-conversion') }}
         </p>
@@ -17,7 +14,12 @@
         <BlogSearchBar v-model="searchedArticles" />
       </div>
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        <BlogCard v-for="article in displayedArticles" :key="article._path" :data="article" />
+        <transition-group
+          @before-enter="beforeEnter"
+          @enter="enter"
+        >
+          <BlogCard v-for="(article, index) in displayedArticles" :key="article._path" :data="article" :data-index="index" />
+        </transition-group>
       </div>
       <div class="flex justify-center">
         <button
@@ -43,6 +45,7 @@
 <script setup lang="ts">
 // @ts-ignore
 import _ from 'lodash'
+import gsap from 'gsap'
 import { BlogArticle } from '~~/interfaces/blog'
 
 const route = useRoute()
@@ -90,6 +93,22 @@ const loadMore = async () => {
     )
     displayedArticles.value.push(...newArticles)
     isLoading.value = false
-  }, 500)()
+  }, 300)()
+}
+
+const beforeEnter = (el) => {
+  el.style.opacity = 0
+  el.style.transform = 'translateY(100px)'
+}
+
+const enter = (el, done) => {
+  console.log(el.dataset.index)
+  gsap.to(el, {
+    opacity: 1,
+    y: 0,
+    duration: 0.8,
+    onComplete: done,
+    delay: (el.dataset.index - 6) * 0.2,
+  })
 }
 </script>
