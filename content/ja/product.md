@@ -14,7 +14,7 @@ Air360では顧客の行動を自動でトラッキングし、Chrome拡張機�
 レイ等様々な機能で簡単に顧客にとって最善のウェブサイトを目指せます。
 ::
 
-::single-description{imagePath="/sessionReplay.png" buttonStatus="hidden" alt="セッションリプレイ" col="start"}
+::single-description{imagePath="/sessionReplay.png" buttonStatus="hidden" alt="セッションリプレイ"}
 #subtext
 スマート
 #title
@@ -36,7 +36,7 @@ Air360では顧客の行動を自動でトラッキングし、Chrome拡張機�
 Chrome拡張機能で実際のウェブサイトと隣り合わせて分析。気になる箇所をクリックするだけで、顧客の行動心理や購買率等を明らかにできます。
 ::
 
-::single-description{imagePath="/funnel.png" buttonStatus="hidden" alt="ファネル" col="start"}
+::single-description{imagePath="/funnel.png" buttonStatus="hidden" alt="ファネル"}
 #subtext
 視覚的
 #title
@@ -56,7 +56,7 @@ Chrome拡張機能で実際のウェブサイトと隣り合わせて分析。�
 ファネル分析で特定した離脱原因の大枠をもとに、離脱後の行動把握などより詳細な顧客の行動理解が可能になります
 ::
 
-::single-description{imagePath="/dataIntegration.png"  buttonStatus="hidden" alt="連携性" col="start"}
+::single-description{imagePath="/dataIntegration.png"  buttonStatus="hidden" alt="連携性"}
 #subtext
 連携性
 #title

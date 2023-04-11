@@ -5,7 +5,7 @@
     >
       <ContentSlot :use="$slots.mainTitle" unwrap="p" />
     </h2>
-    <SingleDescription image-path="/sessionReplay.png" button-status="hidden" :alt="$t('how-air360-helps1')" col="start">
+    <SingleDescription image-path="/sessionReplay.png" button-status="hidden" :alt="$t('how-air360-helps1')">
       <template #subtext>
         <ContentSlot :use="$slots.subtext1" unwrap="p" />
       </template>
@@ -33,7 +33,7 @@
         <ContentSlot :use="$slots.description2" unwrap="p" />
       </template>
     </SingleDescription>
-    <SingleDescription image-path="/dataIntegration.png" button-status="hidden" :alt="$t('how-air360-helps3')" col="start">
+    <SingleDescription image-path="/dataIntegration.png" button-status="hidden" :alt="$t('how-air360-helps3')">
       <template #subtext>
         <ContentSlot :use="$slots.subtext3" unwrap="p" />
       </template>
