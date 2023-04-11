@@ -1,5 +1,6 @@
 ---
 title: 製品
+col: true
 ---
 
 ::product-header
@@ -11,7 +12,7 @@ Features
 複雑で終わりのない分析レポートにうんざりしていませんか？Air360はより多くの収益を上げるための隠れたインサイトを発見するお手伝いをします。
 ::
 
-::single-description{imagePath="/sessionReplay.png" buttonStatus="hidden" alt="セッションリプレイ"}
+::single-description{imagePath="/sessionReplay.png" buttonStatus="hidden" alt="セッションリプレイ" col="start"}
 #subtext
 スマート
 #title
@@ -30,7 +31,7 @@ Features
 気になる箇所をクリックするだけで、実際のウェブサイト上でコンバージョン率(CVR)に影響を与える重要な要素を明らかにできます。
 ::
 
-::single-description{imagePath="/funnel.png" buttonStatus="hidden" alt="ファネル"}
+::single-description{imagePath="/funnel.png" buttonStatus="hidden" alt="ファネル" col="start"}
 #subtext
 視覚的
 #title
@@ -50,7 +51,7 @@ Features
 ユーザーのウェブサイト上の行動をグラフ化して確認できます。全体像を把握し、どこから改善していくべきか判断できます。
 ::
 
-::single-description{imagePath="/dataIntegration.png"  buttonStatus="hidden" alt="連携性"}
+::single-description{imagePath="/dataIntegration.png"  buttonStatus="hidden" alt="連携性" col="start"}
 #subtext
 連携性
 #title
