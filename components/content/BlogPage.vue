@@ -97,7 +97,7 @@ const loadMore = async () => {
 }
 
 const beforeEnter = (el) => {
-  el.style.opacity = '0'
+  el.style.opacity = 0
   el.style.transform = 'translateY(100px)'
 }
 
