@@ -3,8 +3,18 @@
     <div
       class="max-w-screen-[1400px] px-4 py-10 mx-auto md:py-12 md:flex md:justify-between md:items-center lg:py-18 lg:px-8"
     >
-      <div :class="`flex justify-center md:${props.imageStatus} md:mt-0 md:flex md:w-[58%] md:p-6 lg:max-w-2xl`">
-        <nuxt-img format="webp" :src="props.imagePath" :alt="props.alt" class="rounded-lg shadow-lg my-auto w-full object-cover" />
+      <div :class="`flex justify-center md:${props.imageStatus} md:mt-0 md:flex md:w-[58%] md:p-5`">
+        <nuxt-img v-if="!isVideo" format="webp" :src="props.imagePath" :alt="props.alt" class="rounded-lg shadow-lg my-auto w-full object-cover" />
+        <video
+          v-if="isVideo"
+          autoplay
+          class="shadow-lg my-auto w-full rounded-lg object-cover"
+          loop
+          muted
+          playsinline
+        >
+          <source :data-src="videoSrc" type="video/mp4" :src="videoSrc">
+        </video>
       </div>
       <div class="md:w-[41%] md:p-7">
         <p class="font-bold text-base my-2 lg:text-lg" :class="subtextColor">
@@ -40,8 +50,18 @@
           </svg>
         </a>
       </div>
-      <div :class="`hidden md:${props.imageStatus2} md:mt-0 md:flex md:w-[58%] md:p-6 lg:max-w-2xl`">
-        <nuxt-img format="webp" :src="props.imagePath" :alt="props.alt" class="rounded-lg shadow-lg my-auto w-full object-cover" />
+      <div :class="`hidden md:${props.imageStatus2} md:mt-0 md:flex md:w-[58%] md:p-5`">
+        <nuxt-img v-if="!isVideo" format="webp" :src="props.imagePath" :alt="props.alt" class="rounded-lg shadow-lg my-auto w-full object-cover" />
+        <video
+          v-if="isVideo"
+          autoplay
+          class="shadow-lg my-auto w-full rounded-lg object-cover"
+          loop
+          muted
+          playsinline
+        >
+          <source :data-src="videoSrc" type="video/mp4" :src="videoSrc">
+        </video>
       </div>
     </div>
   </section>
@@ -76,6 +96,14 @@ const props = defineProps({
   alt: {
     type: String,
     default: 'Picture',
+  },
+  isVideo: {
+    type: Boolean,
+    default: false,
+  },
+  videoSrc: {
+    type: String,
+    default: '',
   },
 })
 </script>
