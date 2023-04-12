@@ -3,7 +3,7 @@
     id="newsletter-modal"
     class="w-full py-10 flex justify-center md:h-full"
   >
-    <div class="p-4 w-full bg-white max-w-screen-[1000px] h-full rounded-lg md:h-auto">
+    <div class="px-6 w-full bg-white max-w-screen-[1000px] h-full rounded-lg md:h-auto">
       <div
         class="flex items-center justify-center bg-white rounded-lg shadow dark:bg-gray-800"
       >

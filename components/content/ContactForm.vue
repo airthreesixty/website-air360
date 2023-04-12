@@ -6,7 +6,7 @@
       </div>
     </transition>
     <Loading v-if="loading" :is-full-page="true" />
-    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+    <div class="py-8 px-6 mx-auto max-w-screen-xl sm:py-16 lg:px-8">
       <div
         class="px-4 mx-auto max-w-screen-sm text-center lg:px-6 mb-8 lg:mb-16"
       >

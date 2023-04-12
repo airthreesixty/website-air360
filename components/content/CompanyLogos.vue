@@ -1,6 +1,6 @@
 <template>
   <section class="bg-white dark:bg-gray-900">
-    <div :class="`pb-16 lg:${paddingBottom} mx-auto max-w-screen-[1400px] px-4 lg:px-8`">
+    <div :class="`pb-16 lg:${paddingBottom} mx-auto max-w-screen-[1400px] px-6 lg:px-8`">
       <h2
         class="mb-10 text-black-600 lg:mb-16 lg:text-2xl text-xl font-bold tracking-tight leading-tight text-center dark:text-white md:text-2xl"
       >

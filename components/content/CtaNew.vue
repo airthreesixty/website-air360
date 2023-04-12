@@ -1,6 +1,6 @@
 <template>
   <section class="bg-white">
-    <div class="max-w-screen-[1400px] mx-auto pb-16 pt-10 px-4 lg:px-8">
+    <div class="max-w-screen-[1400px] mx-auto pb-16 pt-10 px-6 lg:px-8">
       <div class="overflow-hidden rounded-lg bg-primary-600 shadow-xl md:grid md:grid-cols-2 md:gap-4">
         <div class="px-6 pt-10 pb-12 md:px-12 md:py-12 lg:px-14 lg:py-16 md:pr-0 xl:py-20 xl:px-20">
           <div class="lg:self-center">

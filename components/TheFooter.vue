@@ -1,5 +1,5 @@
 <template>
-  <footer class="px-4 py-6 border-gray-200 border-t-1 dark:bg-gray-900">
+  <footer class="px-6 py-6 border-gray-200 border-t-1 lg:px-8 dark:bg-gray-900">
     <div class="md:flex md:justify-between">
       <div class="mb-6 md:mb-0">
         <NuxtLink :to="$localePath('/')">
@@ -55,7 +55,7 @@
           </a> -->
         </div>
       </div>
-      <div class="grid grid-cols-2 gap-x-3 gap-y-6 sm:gap-6 sm:grid-cols-3">
+      <div class="grid grid-cols-2 gap-x-2 gap-y-6 md:gap-6 md:grid-cols-3">
         <div>
           <h2
             class="mb-6 text-sm font-semibold text-black-600 uppercase dark:text-white"

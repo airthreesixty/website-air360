@@ -1,6 +1,6 @@
 <template>
   <section class="bg-white pt-6 md:pt-10">
-    <div class="mx-auto max-w-screen-[1400px] px-4 text-center lg:px-8">
+    <div class="mx-auto max-w-screen-[1400px] px-6 text-center lg:px-8">
       <div>
         <!-- <h2 class="text-md font-semibold text-primary-600 lg:text-xl">次世代型UXアナリティクスツール</h2> -->
         <h2 class="mt-2 text-2xl font-semibold text-black-600 md:text-3xl lg:text-4xl">

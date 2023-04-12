@@ -3,7 +3,7 @@
     aria-label="Related articles"
     class="py-8 lg:py-24 bg-white dark:bg-gray-900"
   >
-    <div class="px-4 mx-auto max-w-screen-[1400px] lg:px-8">
+    <div class="px-6 mx-auto max-w-screen-[1400px] lg:px-8">
       <h2 class="mb-8 text-2xl font-bold text-gray-900 dark:text-white">
         {{ $t('related-articles') }}
       </h2>
