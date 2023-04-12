@@ -17,7 +17,7 @@
       </template>
     </SingleDescription>
     <SingleDescription
-      image-path="/noCode.png"
+      image-path="/sessionReplay.png"
       button-status="hidden"
       image-status="block"
       image-status2="hidden"
@@ -33,7 +33,7 @@
         <ContentSlot :use="$slots.description2" unwrap="p" />
       </template>
     </SingleDescription>
-    <SingleDescription image-path="/sessionReplay.png" button-status="hidden" :alt="$t('how-air360-helps3')">
+    <SingleDescription image-path="/noCode.png" button-status="hidden" :alt="$t('how-air360-helps3')">
       <template #subtext>
         <ContentSlot :use="$slots.subtext3" unwrap="p" />
       </template>
