@@ -22,6 +22,8 @@
       image-status="block"
       image-status2="hidden"
       :alt="$t('how-air360-helps2')"
+      :is-video="true"
+      video-src="/sessionReplay.mp4"
     >
       <template #subtext>
         <ContentSlot :use="$slots.subtext2" unwrap="p" />
