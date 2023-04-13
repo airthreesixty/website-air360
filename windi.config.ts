@@ -80,16 +80,7 @@ export default defineConfig({
           900: '#082615',
         },
         orange: {
-          50: '#FFF4EB',
-          100: '#FFEDDB',
-          200: '#FFD7B3',
-          300: '#FFC58F',
-          400: '#FFB066',
-          500: '#FF9F43',
-          600: '#FF7B00',
-          700: '#C25E00',
-          800: '#803E00',
-          900: '#422000',
+          600: '#FA734C',
         },
         cyan: {
           50: '#E5FCFF',
@@ -107,6 +98,9 @@ export default defineConfig({
           100: '#6E84A3',
           200: '#4B4B4B',
           600: '#232e4a',
+        },
+        purple: {
+          600: '#BF45A8',
         },
       },
     },

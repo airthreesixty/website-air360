@@ -17,11 +17,12 @@
         </video>
       </div>
       <div class="md:w-[37%] md:py-7">
-        <p class="font-bold text-base my-2 lg:text-lg" :class="subtextColor">
+        <!-- <p class="font-bold text-base my-2 lg:text-lg" :class="subtextColor">
           <ContentSlot :use="$slots.subtext" unwrap="p" />
-        </p>
+        </p> -->
+        <img :src="icon" alt="icon" class="w-8 md:w-9 lg:w-11 mt-4">
         <h3
-          class="mb-4 mt-[22px] text-xl font-semibold text-black-600 text-left border-deco md:text-2xl lg:text-3xl dark:text-white"
+          class="border-deco test mb-4 mt-4 text-xl font-semibold text-black-600 text-left md:text-2xl lg:text-3xl dark:text-white"
         >
           <ContentSlot :use="$slots.title" unwrap="p" />
         </h3>
@@ -78,11 +79,27 @@ const props = defineProps({
     type: String,
     default: '',
   },
+  icon: {
+    type: String,
+    required: true,
+  },
+  themeColor: {
+    type: String,
+    default: '#e74b91',
+  },
 })
+
+const theme = {
+  backgroundColor: props.themeColor,
+}
 </script>
 
 <style lang="postcss">
 .border-deco {
-  @apply after:content-[''] after:block after:w-25 after:h-[5px] after:rounded-[7px] after:static after:mt-[30px] after:bg-primary-600;
+  @apply after:content-[''] after:block after:w-25 after:h-[5px] after:rounded-[7px] after:static after:mt-[30px] after:;
+}
+
+.test:after {
+  background-color: v-bind('theme.backgroundColor');
 }
 </style>

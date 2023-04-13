@@ -13,7 +13,7 @@ Features
 Air360では顧客の行動を自動でトラッキングし、Chrome拡張機能やセッションリプレイ等様々な機能で簡単に顧客にとって最善のウェブサイトを目指せます。
 ::
 
-::single-description{imagePath="/sessionReplay.png" alt="セッションリプレイ"}
+::single-description{imagePath="/sessionReplay.png" alt="セッションリプレイ" icon="/icons/iconSessionReplay.svg"}
 #subtext
 スマート
 #title
@@ -24,7 +24,7 @@ Air360では顧客の行動を自動でトラッキングし、Chrome拡張機�
 ます。
 ::
 
-::single-description{imagePath="/smartDescription.png" imageStatus="block" imageStatus2="hidden" alt="ウェブページ上で分析"}
+::single-description{imagePath="/smartDescription.png" imageStatus="block" imageStatus2="hidden" alt="ウェブページ上で分析" icon="/icons/iconOnPage.svg" themeColor="#FA734C"}
 #subtext
 直感的
 #title
@@ -35,7 +35,7 @@ Air360では顧客の行動を自動でトラッキングし、Chrome拡張機�
 Chrome拡張機能で実際のウェブサイトと隣り合わせて分析。気になる箇所をクリックするだけで、顧客の行動心理や購買率等を明らかにできます。
 ::
 
-::single-description{imagePath="/funnel.png" alt="ファネル"}
+::single-description{imagePath="/funnel.png" alt="ファネル" icon="/icons/iconFunnel.svg" themeColor="#3C8BFF" }
 #subtext
 視覚的
 #title
@@ -45,7 +45,7 @@ Chrome拡張機能で実際のウェブサイトと隣り合わせて分析。�
 ウェブページや顧客が行ったイベントごとにグラフで、どこに離脱の原因があるがグラフで確認し、原因の全体像を把握します。
 ::
 
-::single-description{imagePath="/sunburst.png" imageStatus="block" imageStatus2="hidden" alt="カスタマージャーニー"}
+::single-description{imagePath="/sunburst.png" imageStatus="block" imageStatus2="hidden" alt="カスタマージャーニー" icon="/icons/iconCustomerJourney.svg"}
 #subtext
 視覚的
 #title
@@ -55,7 +55,7 @@ Chrome拡張機能で実際のウェブサイトと隣り合わせて分析。�
 ファネル分析で特定した離脱原因の大枠をもとに、離脱後の行動把握などより詳細な顧客の行動理解が可能になります
 ::
 
-::single-description{imagePath="/dataIntegration.png" alt="連携性"}
+::single-description{imagePath="/dataIntegration.png" alt="連携性" :icon="/icons/iconOpenSource.svg" themeColor="#FA734C"}
 #subtext
 連携性
 #title

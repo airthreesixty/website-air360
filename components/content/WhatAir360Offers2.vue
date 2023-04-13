@@ -5,10 +5,7 @@
     >
       <ContentSlot :use="$slots.mainTitle" unwrap="p" />
     </h2>
-    <SingleDescription image-path="/smartDescription.png" :alt="$t('how-air360-helps1')" :is-video="true" video-src="/opaVideo.mp4">
-      <template #subtext>
-        <ContentSlot :use="$slots.subtext1" unwrap="p" />
-      </template>
+    <SingleDescription image-path="/smartDescription.png" :alt="$t('how-air360-helps1')" :is-video="true" video-src="/opaVideo.mp4" icon="/icons/iconCustomer.svg">
       <template #title>
         <ContentSlot :use="$slots.title1" unwrap="p" />
       </template>
@@ -23,10 +20,9 @@
       :alt="$t('how-air360-helps2')"
       :is-video="true"
       video-src="/sessionReplay.mp4"
+      icon="/icons/iconSmile.svg"
+      theme-color="#FA734C"
     >
-      <template #subtext>
-        <ContentSlot :use="$slots.subtext2" unwrap="p" />
-      </template>
       <template #title>
         <ContentSlot :use="$slots.title2" unwrap="p" />
       </template>
@@ -34,10 +30,7 @@
         <ContentSlot :use="$slots.description2" unwrap="p" />
       </template>
     </SingleDescription>
-    <SingleDescription image-path="/noCode.png" :alt="$t('how-air360-helps3')">
-      <template #subtext>
-        <ContentSlot :use="$slots.subtext3" unwrap="p" />
-      </template>
+    <SingleDescription image-path="/noCode.png" :alt="$t('how-air360-helps3')" icon="/icons/iconQuick.svg" theme-color="#3C8BFF">
       <template #title>
         <ContentSlot :use="$slots.title3" unwrap="p" />
       </template>
