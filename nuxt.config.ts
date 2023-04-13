@@ -55,6 +55,7 @@ export default defineNuxtConfig({
     },
     detectBrowserLanguage: false,
     trailingSlash: true,
+    baseUrl: 'https://jp.air360.io/',
   },
 
   fontLoader: {

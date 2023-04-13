@@ -99,7 +99,7 @@ const loadMore = async () => {
 // solve the typescript errors on el and done
 
 const beforeEnter = (el) => {
-  el.style.opacity = '0'
+  el.style.opacity = 0
   el.style.transform = 'translateY(100px)'
 }
 
