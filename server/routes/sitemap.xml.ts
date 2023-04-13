@@ -5,12 +5,12 @@ export default defineEventHandler(async (event) => {
   // Fetch all documents
   const docs = await serverQueryContent(event).find()
   const sitemap = new SitemapStream({
-    hostname: 'https://jp.air360.io',
+    hostname: 'https://jp.air360.io/',
   })
 
   for (const doc of docs) {
     sitemap.write({
-      url: doc._path,
+      url: doc._path + '/',
       changefreq: 'monthly',
     })
   }
