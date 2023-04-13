@@ -11,9 +11,9 @@ export default defineEventHandler(async (event) => {
   for (const doc of docs) {
     if (doc._path) {
       if (doc._path.includes('/ja/')) {
-        doc._path = doc._path?.replace('/ja/', '/')
+        doc._path = doc._path.replace('/ja/', '/')
       } else if (doc._path === '/ja') {
-        doc._path = doc._path?.replace('/ja', '')
+        doc._path = doc._path.replace('/ja', '')
       }
       sitemap.write({
         url: doc._path + '/',

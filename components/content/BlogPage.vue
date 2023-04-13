@@ -96,20 +96,21 @@ const loadMore = async () => {
   }, 300)()
 }
 
-// solve the typescript errors on el and done
-
-const beforeEnter = (el) => {
-  el.style.opacity = 0
-  el.style.transform = 'translateY(100px)'
+const beforeEnter = (el: Element) => {
+  (el as HTMLElement).style.opacity = '0';
+  (el as HTMLElement).style.transform = 'translateY(100px)'
 }
 
-const enter = (el, done) => {
-  gsap.to(el, {
-    opacity: 1,
-    y: 0,
-    duration: 0.8,
-    onComplete: done,
-    delay: (el.dataset.index - 6) * 0.2,
-  })
+const enter = (el: Element, done: () => void) => {
+  if (el instanceof HTMLElement && el.dataset.index) {
+    const index = Number(el.dataset.index)
+    gsap.to(el, {
+      opacity: 1,
+      y: 0,
+      duration: 0.8,
+      onComplete: done,
+      delay: (index - 6) * 0.2,
+    })
+  }
 }
 </script>
