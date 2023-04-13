@@ -6,12 +6,12 @@
       </div>
     </transition>
     <Loading v-if="loading" :is-full-page="true" />
-    <div class="py-8 px-6 mx-auto max-w-screen-xl sm:py-16 lg:px-8">
+    <div class="py-8 px-6 mx-auto max-w-screen-[1400px] md:py-16 lg:px-8">
       <div
         class="px-4 mx-auto max-w-screen-sm text-center lg:px-6 mb-8 lg:mb-16"
       >
         <h2
-          class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 md:text-4xl dark:text-white"
+          class="mb-4 text-3xl font-bold text-black-600 md:text-4xl dark:text-white"
         >
           Contact Us
         </h2>
@@ -31,13 +31,13 @@
             <div>
               <label
                 for="name"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                class="block mb-2 text-sm font-medium text-black-600 dark:text-gray-300"
               ><ContentSlot :use="$slots.name" unwrap="p" /></label>
               <input
                 id="name"
                 v-model="formData.name"
                 type="text"
-                class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                class="block p-3 w-full text-sm text-black-600 bg-gray-50 rounded-lg border border-gray-300 shadow-sm transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
               >
               <span v-if="v$.name.$error" class="error-alert">
                 {{ v$.name.$errors[0].$message }}
@@ -46,13 +46,13 @@
             <div>
               <label
                 for="email"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                class="block mb-2 text-sm font-medium text-black-600 dark:text-gray-300"
               ><ContentSlot :use="$slots.email" unwrap="p" /></label>
               <input
                 id="email"
                 v-model="formData.email"
                 type="text"
-                class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                class="block p-3 w-full text-sm text-black-600 bg-gray-50 rounded-lg border border-gray-300 shadow-sm transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
               >
               <span v-if="v$.email.$error" class="error-alert">
                 {{ v$.email.$errors[0].$message }}
@@ -61,13 +61,13 @@
             <div>
               <label
                 for="job-title"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                class="block mb-2 text-sm font-medium text-black-600 dark:text-gray-300"
               ><ContentSlot :use="$slots.jobTitle" unwrap="p" /></label>
               <input
                 id="job-title"
                 v-model="formData.jobTitle"
                 type="text"
-                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                class="shadow-sm bg-gray-50 border border-gray-300 text-black-600 text-sm rounded-lg block w-full p-2.5 transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
               >
               <span v-if="v$.jobTitle.$error" class="error-alert">
                 {{ v$.jobTitle.$errors[0].$message }}
@@ -76,13 +76,13 @@
             <div class="md:col-span-2">
               <label
                 for="message"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+                class="block mb-2 text-sm font-medium text-black-600 dark:text-gray-400"
               ><ContentSlot :use="$slots.message" unwrap="p" /></label>
               <textarea
                 id="message"
                 v-model="formData.message"
                 rows="6"
-                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                class="block p-2.5 w-full text-sm text-black-600 bg-gray-50 rounded-lg shadow-sm border border-gray-300 transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
               />
               <span v-if="v$.message.$error" class="error-alert">
                 {{ v$.message.$errors[0].$message }}
@@ -102,7 +102,7 @@
           </form>
         </div>
         <div
-          class="grid grid-cols-1 col-span-1 gap-8 text-center sm:grid-cols-2 lg:grid-cols-1"
+          class="grid col-span-1 gap-8 text-center grid-cols-2 py-15 lg:py-0 lg:grid-cols-1"
         >
           <div>
             <div

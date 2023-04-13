@@ -1,7 +1,7 @@
 <template>
   <section class="bg-white">
     <div
-      class="max-w-screen-[1400px] px-6 py-7 mx-auto md:py-10 md:flex md:justify-between md:items-center lg:py-18 lg:px-8"
+      class="max-w-screen-[1400px] px-6 py-7 mx-auto md:flex md:justify-between md:items-center lg:py-13 lg:px-8"
     >
       <div :class="`flex justify-center md:${props.imageStatus} md:mt-0 md:flex md:w-[58%] md:p-5`">
         <nuxt-img v-if="!isVideo" format="webp" :src="props.imagePath" :alt="props.alt" class="rounded-lg shadow-lg my-auto w-full object-cover" />
@@ -20,7 +20,7 @@
         <!-- <p class="font-bold text-base my-2 lg:text-lg" :class="subtextColor">
           <ContentSlot :use="$slots.subtext" unwrap="p" />
         </p> -->
-        <img :src="icon" alt="icon" class="w-8 md:w-9 lg:w-11 mt-4">
+        <img :src="icon" alt="icon" class="w-7 md:w-8 lg:w-10 mt-4">
         <h3
           class="border-deco test mb-4 mt-4 text-xl font-semibold text-black-600 text-left md:text-2xl lg:text-3xl dark:text-white"
         >

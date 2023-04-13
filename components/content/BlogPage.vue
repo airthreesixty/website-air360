@@ -96,12 +96,12 @@ const loadMore = async () => {
   }, 300)()
 }
 
+// solve the typescript errors on el and done
+
 const beforeEnter = (el) => {
-  el.style.opacity = 0
+  el.style.opacity = '0'
   el.style.transform = 'translateY(100px)'
 }
-
-// set TypeScript type for done callback and el.dataset.index
 
 const enter = (el, done) => {
   gsap.to(el, {

@@ -14,7 +14,7 @@
 
 ::
 
-::company-logos{gridColsSm="grid-cols-2" gridColsMd="grid-cols-3" gridColsLg="grid-cols-6" paddingBottom="pb-20"}
+::company-logos
 
 ::
 

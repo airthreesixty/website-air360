@@ -51,19 +51,20 @@
             </div>
           </div>
         </div>
-        <CompanyLogos grid-cols-sm="grid-cols-2" grid-cols-md="grid-cols-3" grid-cols-lg="grid-cols-3" padding-bottom="pb-1" />
+        <CompanyLogos />
       </div>
       <div class="mb-6 text-center lg:hidden">
-        <a
-          href="#"
+        <NuxtLink
+          to="/"
           class="inline-flex items-center text-2xl font-semibold text-gray-900 lg:hidden dark:text-white"
         >
-          <img
-            class="mr-2"
-            src="https://www.air360.io/wp-content/uploads/2022/05/air360-logo-bk.svg"
+          <nuxt-img
+            class="h-6"
+            format="webp"
+            src="/air360Logo.png"
             alt="Air360 logo"
-          >
-        </a>
+          />
+        </NuxtLink>
       </div>
       <div
         class="w-full mx-auto bg-white rounded-lg shadow dark:bg-gray-800 md:mt-0 sm:max-w-lg xl:p-0 lg:col-span-6"

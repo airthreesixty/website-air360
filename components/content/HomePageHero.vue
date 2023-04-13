@@ -1,7 +1,7 @@
 <template>
   <section class="bg-white dark:bg-gray-900">
     <div
-      class="grid max-w-screen-[1400px] px-6 py-12 mx-auto md:gap-4 md:grid-cols-2 lg:gap-8 xl:gap-0 lg:py-16 lg:px-8 lg:grid-cols-12"
+      class="grid max-w-screen-[1400px] px-6 pt-12 pb-22 mx-auto md:gap-4 md:grid-cols-2 lg:gap-8 xl:gap-0 lg:py-16 lg:px-8 lg:grid-cols-12"
     >
       <div class="pb-6 md:hidden lg:mt-0 lg:col-span-5">
         <nuxt-img

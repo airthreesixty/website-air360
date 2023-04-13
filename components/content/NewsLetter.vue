@@ -75,11 +75,12 @@
             </form>
           </div>
         </div>
-        <img
+        <nuxt-img
           src="https://www.air360.io/wp-content/uploads/2022/05/mochi-binoculars.png"
+          format="webp"
           class="hidden rounded-r-lg md:flex h-30"
-          alt="office"
-        >
+          alt="mochi"
+        />
       </div>
     </div>
   </div>

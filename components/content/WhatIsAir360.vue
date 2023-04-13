@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white pt-6 md:pt-10">
+  <section class="bg-white pt-22">
     <div class="mx-auto max-w-screen-[1400px] px-6 text-center lg:px-8">
       <div>
         <!-- <h2 class="text-md font-semibold text-primary-600 lg:text-xl">次世代型UXアナリティクスツール</h2> -->
