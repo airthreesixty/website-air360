@@ -57,7 +57,7 @@
         >
           <div class="p-6 space-y-4 lg:space-y-6 md:p-8 flex flex-col items-center">
             <h2
-              class="text-xl font-bold text-center text-black-600 md:text-2xl dark:text-white"
+              class="text-xl font-bold text-center text-black-600 lg:text-2xl dark:text-white"
             >
               <ContentSlot :use="$slots.title" unwrap="p" />
             </h2>
