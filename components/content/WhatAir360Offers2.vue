@@ -6,11 +6,10 @@
       <ContentSlot :use="$slots.mainTitle" unwrap="p" />
     </h2>
     <SingleDescription
-      image-path="/smartDescription.png"
       :alt="$t('how-air360-helps1')"
       :is-video="true"
       video-src="/videos/opaVideo.mp4"
-      poster="/smartDescription.png"
+      poster="/smartDescription.webp"
       icon="/icons/iconCustomer.svg"
     >
       <template #title>
@@ -21,13 +20,12 @@
       </template>
     </SingleDescription>
     <SingleDescription
-      image-path="/sessionReplay.png"
       image-status="block"
       image-status2="hidden"
       :alt="$t('how-air360-helps2')"
       :is-video="true"
       video-src="/videos/sessionReplay.mp4"
-      poster="/sessionReplay.png"
+      poster="/sessionReplay.webp"
       icon="/icons/iconSmile.svg"
       theme-color="#FA734C"
     >

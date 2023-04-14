@@ -13,7 +13,7 @@ Features
 Air360では顧客の行動を自動でトラッキングし、Chrome拡張機能やセッションリプレイ等様々な機能で簡単に顧客にとって最善のウェブサイトを目指せます。
 ::
 
-::single-description{imagePath="/sessionReplay.png" alt="セッションリプレイ" icon="/icons/iconSessionReplay.svg"}
+::single-description{imagePath="/sessionReplay.webp" alt="セッションリプレイ" icon="/icons/iconSessionReplay.svg"}
 #subtext
 スマート
 #title
@@ -23,7 +23,7 @@ Air360では顧客の行動を自動でトラッキングし、Chrome拡張機�
 顧客のウェブサイト上の行動を動画で確認可能。実際の顧客体験を確認することで、顧客の離脱原因やイライラの原因が簡単に把握できます。
 ::
 
-::single-description{imagePath="/smartDescription.png" imageStatus="block" imageStatus2="hidden" alt="ウェブページ上で分析" icon="/icons/iconOnPage.svg" themeColor="#FA734C"}
+::single-description{imagePath="/smartDescription.webp" imageStatus="block" imageStatus2="hidden" alt="ウェブページ上で分析" icon="/icons/iconOnPage.svg" themeColor="#FA734C"}
 #subtext
 直感的
 #title

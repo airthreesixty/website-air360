@@ -55,7 +55,7 @@
 const props = defineProps({
   imagePath: {
     type: String,
-    required: true,
+    default: '',
   },
   imageStatus: {
     type: String,
