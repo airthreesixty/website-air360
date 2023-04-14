@@ -100,6 +100,13 @@
                 </div>
               </NuxtLink>
             </li>
+            <li class="mb-4">
+              <NuxtLink :to="$localePath('/product')">
+                <div class="hover:underline">
+                  {{ $t("product") }}
+                </div>
+              </NuxtLink>
+            </li>
           </ul>
         </div>
         <div>
