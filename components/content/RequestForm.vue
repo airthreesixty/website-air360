@@ -12,7 +12,7 @@
       <div
         class="flex-col justify-between hidden mr-auto lg:flex lg:col-span-6 xl:mb-0"
       >
-        <div>
+        <div class="mb-10">
           <div
             class="inline-flex items-center mb-6 text-2xl font-semibold text-gray-900 lg:mb-10 dark:text-white"
           >
