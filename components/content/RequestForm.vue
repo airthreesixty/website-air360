@@ -7,7 +7,7 @@
     </transition>
     <Loading v-if="loading" :is-full-page="true" />
     <div
-      class="max-w-screen-[1400px] px-6 py-8 mx-auto lg:flex lg:gap-5 lg:pt-16 lg:pb-0 lg:px-8"
+      class="max-w-screen-[1400px] px-6 py-8 mx-auto lg:flex lg:justify-center lg:gap-5 lg:pt-16 lg:pb-0 lg:px-8"
     >
       <div
         class="flex-col hidden lg:flex lg:items-center"
@@ -23,7 +23,7 @@
             <ContentSlot :use="$slots.subtitle1" unwrap="p" />
           </h2>
         </div>
-        <div class="w-[80%]">
+        <div class="w-110 h-30">
           <CompanyLogos />
         </div>
       </div>
