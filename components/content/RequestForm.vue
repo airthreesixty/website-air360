@@ -19,7 +19,7 @@
           <h1 class="mb-3 font-semibold text-center bg-gradient-to-r from-[#6278DF] to-blue-[#3DDC97] bg-clip-text text-transparent text-xl md:text-2xl lg:text-3xl">
             <ContentSlot :use="$slots.title1" unwrap="p" />
           </h1>
-          <h2 class="mb-4 text-black-600 max-w-lg font-semibold text-center lg:text-lg">
+          <h2 class="mb-4 text-black-600 max-w-[500px] font-semibold text-center lg:text-lg">
             <ContentSlot :use="$slots.subtitle1" unwrap="p" />
           </h2>
         </div>
