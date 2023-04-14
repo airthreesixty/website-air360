@@ -19,6 +19,8 @@ const { $i18n } = useNuxtApp()
 const { path } = useRoute()
 const route = useRoute()
 
+// typescript complains about the useAsyncData type
+
 const { data } = await useAsyncData(`${route.params.slug}`, async () => {
   const randomPosts = await queryContent($i18n.locale._value, '/blog')
     .where({ _path: { $ne: `/${$i18n.locale._value}${path}` } })

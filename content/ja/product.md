@@ -20,8 +20,7 @@ Air360では顧客の行動を自動でトラッキングし、Chrome拡張機�
 セッションリプレイ
 #description
 <!-- ユーザーのウェブ上の行動を動画で確認し、ユーザーが持つ不満を素早く発見できます。スクリーニングすることで、あなたの気になる特定のユーザーに絞れます。 -->
-顧客のウェブサイト上の行動を動画で確認可能。実際の顧客体験を確認することで、顧客の離脱原因やイライラの原因が簡単に把握でき
-ます。
+顧客のウェブサイト上の行動を動画で確認可能。実際の顧客体験を確認することで、顧客の離脱原因やイライラの原因が簡単に把握できます。
 ::
 
 ::single-description{imagePath="/smartDescription.png" imageStatus="block" imageStatus2="hidden" alt="ウェブページ上で分析" icon="/icons/iconOnPage.svg" themeColor="#FA734C"}
@@ -42,17 +41,17 @@ Chrome拡張機能で実際のウェブサイトと隣り合わせて分析。�
 ファネル分析
 #description
 <!-- ページごと、あるいはボタンのクリックなどユーザーのアクションごとにグラフを作成し、どこに離脱の原因があるかすぐにわかります。 -->
-ウェブページや顧客が行ったイベントごとにグラフで、どこに離脱の原因があるがグラフで確認し、原因の全体像を把握します。
+ウェブページや顧客が行ったイベントごとに、どこに離脱の原因があるかグラフで確認し、原因の全体像を把握します。
 ::
 
-::single-description{imagePath="/sunburst.png" imageStatus="block" imageStatus2="hidden" alt="カスタマージャーニー" icon="/icons/iconCustomerJourney.svg"}
+::single-description{imagePath="/sunburst.png" imageStatus="block" imageStatus2="hidden" alt="ユーザージャーニー" icon="/icons/iconCustomerJourney.svg"}
 #subtext
 視覚的
 #title
-カスタマージャーニー
+ユーザージャーニー
 #description
 <!-- ユーザーのウェブサイト上の行動をグラフ化して確認できます。全体像を把握し、どこから改善していくべきか判断できます。 -->
-ファネル分析で特定した離脱原因の大枠をもとに、離脱後の行動把握などより詳細な顧客の行動理解が可能になります
+ファネル分析で特定した離脱原因の大枠をもとに、離脱後の行動把握などより詳細な顧客の行動理解が可能になります。
 ::
 
 ::single-description{imagePath="/dataIntegration.png" alt="連携性" :icon="/icons/iconOpenSource.svg" themeColor="#FA734C"}

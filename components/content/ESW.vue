@@ -14,9 +14,6 @@
       </div>
       <div class="relative py-24 md:py-32 lg:py-40 lg:px-8">
         <div class="pr-6 pl-6 md:ml-auto md:pl-16 md:w-1/2 lg:pr-0 xl:pl-32">
-          <!-- <h2 class="text-base font-semibold leading-7 text-indigo-400">
-              Award winning support
-            </h2> -->
           <div class="grid grid-cols-12 gird-rows-3">
             <p
               class="col-start-1 col-end-7 mt-2 text-4xl font-bold tracking-tight text-black-600"
