@@ -7,7 +7,7 @@
         <div v-for="logo in logos" :key="logo.id" class="flex justify-center items-center">
           <nuxt-img
             format="webp"
-            class="h-6 object-contain w-full lg:h-7 xl:h-8 dark:hover:text-white"
+            class="h-6 object-contain w-full lg:h-7"
             :src="logo.src"
             :alt="logo.alt"
           />

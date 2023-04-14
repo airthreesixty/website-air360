@@ -47,7 +47,7 @@
         <div class="flex justify-center hidden mb-3 lg:block lg:flex">
           <nuxt-img
             format="webp"
-            class="h-6 mr-2 sm:h-7 xl:h-8"
+            class="h-6 mr-2 h-7"
             src="/air360Logo.png"
             alt="Air360 logo"
           />
