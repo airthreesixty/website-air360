@@ -7,51 +7,25 @@
     </transition>
     <Loading v-if="loading" :is-full-page="true" />
     <div
-      class="max-w-screen-[1400px] px-6 py-8 mx-auto lg:grid lg:gap-20 lg:py-16 lg:px-8 lg:grid-cols-12"
+      class="max-w-screen-[1400px] px-6 py-8 mx-auto lg:flex lg:gap-5 lg:pt-16 lg:pb-0 lg:px-8"
     >
       <div
-        class="flex-col justify-between hidden mr-auto lg:flex lg:col-span-6 xl:mb-0"
+        class="flex-col hidden lg:flex lg:items-center"
       >
-        <div class="mb-10">
-          <div
-            class="inline-flex items-center mb-6 text-2xl font-semibold text-gray-900 lg:mb-10 dark:text-white"
-          >
-            <nuxt-img
-              format="webp"
-              class="h-6 mr-2 sm:h-7 xl:h-8"
-              src="/air360Logo.png"
-              alt="Air360 logo"
-            />
+        <div class="mb-8 flex flex-col items-center">
+          <div class="flex justify-center">
+            <nuxt-img src="/getStarted.webp" class="w-80 mb-6" />
           </div>
-          <h1 class="mb-3 font-semibold bg-gradient-to-r from-[#6278DF] to-blue-[#3DDC97] bg-clip-text text-transparent text-xl md:text-2xl lg:text-3xl">
+          <h1 class="mb-3 font-semibold text-center bg-gradient-to-r from-[#6278DF] to-blue-[#3DDC97] bg-clip-text text-transparent text-xl md:text-2xl lg:text-3xl">
             <ContentSlot :use="$slots.title1" unwrap="p" />
           </h1>
-          <h2 class="mb-4 text-black-600 font-semibold lg:text-lg">
+          <h2 class="mb-4 text-black-600 max-w-lg font-semibold text-center lg:text-lg">
             <ContentSlot :use="$slots.subtitle1" unwrap="p" />
           </h2>
-          <div class="flex">
-            <div>
-              <p class="mb-2 font-light text-gray-500 dark:text-gray-400">
-                <ContentSlot :use="$slots.description1" unwrap="p" />
-              </p>
-            </div>
-          </div>
-          <div class="flex pt-4">
-            <div>
-              <p class="mb-2 font-light text-gray-500 dark:text-gray-400">
-                <ContentSlot :use="$slots.description2" unwrap="p" />
-              </p>
-            </div>
-          </div>
-          <div class="flex pt-4">
-            <div>
-              <p class="mb-2 font-light text-gray-500 dark:text-gray-400">
-                <ContentSlot :use="$slots.description3" unwrap="p" />
-              </p>
-            </div>
-          </div>
         </div>
-        <CompanyLogos />
+        <div class="w-[80%]">
+          <CompanyLogos />
+        </div>
       </div>
       <div class="mb-6 text-center lg:hidden">
         <NuxtLink
@@ -66,92 +40,105 @@
           />
         </NuxtLink>
       </div>
+
       <div
-        class="w-full mx-auto bg-white rounded-lg shadow dark:bg-gray-800 md:mt-0 sm:max-w-lg xl:p-0 lg:col-span-6"
+        class="items-center flex flex-col mb-6 text-2xl font-semibold text-black-600 lg:mb-10 dark:text-white"
       >
-        <div class="p-6 space-y-4 lg:space-y-6 md:p-8">
-          <h2
-            class="text-xl font-bold leading-tight tracking-tight text-center text-black-600 md:text-2xl dark:text-white"
-          >
-            <ContentSlot :use="$slots.title" unwrap="p" />
-          </h2>
-          <form class="space-y-4 lg:space-y-6" action="" method="post" @submit.prevent="submitForm">
-            <div>
-              <label
-                for="name"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-              ><ContentSlot :use="$slots.name" unwrap="p" /></label>
-              <input
-                id="name"
-                v-model="formData.name"
-                type="text"
-                name="name"
-                class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              >
-              <span v-if="v$.name.$error" class="error-alert">
-                {{ v$.name.$errors[0].$message }}
-              </span>
-            </div>
-            <div>
-              <label
-                for="email"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-              ><ContentSlot :use="$slots.email" unwrap="p" /></label>
-              <input
-                id="email"
-                v-model="formData.email"
-                type="text"
-                name="email"
-                class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                autocomplete="email"
-              >
-            </div>
-            <span v-if="v$.email.$error" class="error-alert">
-              {{ v$.email.$errors[0].$message }}
-            </span>
-            <div>
-              <label
-                for="job-title"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-              ><ContentSlot :use="$slots.jobTitle" unwrap="p" /></label>
-              <input
-                id="job-title"
-                v-model="formData.jobTitle"
-                type="text"
-                name="job"
-                class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              >
-              <span v-if="v$.jobTitle.$error" class="error-alert">
-                {{ v$.jobTitle.$errors[0].$message }}
-              </span>
-            </div>
-            <div class="flex items-start">
-              <div class="flex items-center h-5">
+        <div class="flex justify-center hidden mb-3 lg:block lg:flex">
+          <nuxt-img
+            format="webp"
+            class="h-6 mr-2 sm:h-7 xl:h-8"
+            src="/air360Logo.png"
+            alt="Air360 logo"
+          />
+        </div>
+        <div
+          class="w-full mx-auto bg-white"
+        >
+          <div class="p-6 space-y-4 lg:space-y-6 md:p-8 flex flex-col items-center">
+            <h2
+              class="text-xl font-bold text-center text-black-600 md:text-2xl dark:text-white"
+            >
+              <ContentSlot :use="$slots.title" unwrap="p" />
+            </h2>
+            <form class="space-y-4 lg:space-y-6 max-w-md" action="" method="post" @submit.prevent="submitForm">
+              <div>
+                <label
+                  for="name"
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                ><ContentSlot :use="$slots.name" unwrap="p" /></label>
                 <input
-                  id="terms"
-                  v-model="formData.terms"
-                  aria-describedby="terms"
-                  type="checkbox"
-                  class="w-4 h-4 border text-primary-600 border-gray-300 rounded bg-gray-50 focus:ring-offset-0 focus:ring-0 dark:bg-gray-700 dark:border-gray-600 focus:ring-primary-600 dark:ring-offset-gray-800"
+                  id="name"
+                  v-model="formData.name"
+                  type="text"
+                  name="name"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                >
+                <span v-if="v$.name.$error" class="error-alert">
+                  {{ v$.name.$errors[0].$message }}
+                </span>
+              </div>
+              <div>
+                <label
+                  for="email"
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                ><ContentSlot :use="$slots.email" unwrap="p" /></label>
+                <input
+                  id="email"
+                  v-model="formData.email"
+                  type="text"
+                  name="email"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  autocomplete="email"
                 >
               </div>
-              <div class="ml-3 error-alert">
-                <div
-                  class="font-light text-xs text-gray-500 dark:text-gray-300"
+              <span v-if="v$.email.$error" class="error-alert">
+                {{ v$.email.$errors[0].$message }}
+              </span>
+              <div>
+                <label
+                  for="job-title"
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                ><ContentSlot :use="$slots.jobTitle" unwrap="p" /></label>
+                <input
+                  id="job-title"
+                  v-model="formData.jobTitle"
+                  type="text"
+                  name="job"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 >
-                  <ContentSlot :use="$slots.rule" unwrap="p" />
+                <span v-if="v$.jobTitle.$error" class="error-alert">
+                  {{ v$.jobTitle.$errors[0].$message }}
+                </span>
+              </div>
+              <div class="flex items-start">
+                <div class="flex items-center h-5">
+                  <input
+                    id="terms"
+                    v-model="formData.terms"
+                    aria-describedby="terms"
+                    type="checkbox"
+                    class="w-4 h-4 border text-primary-600 border-gray-300 rounded bg-gray-50 focus:ring-offset-0 focus:ring-0 dark:bg-gray-700 dark:border-gray-600 focus:ring-primary-600 dark:ring-offset-gray-800"
+                  >
+                </div>
+                <div class="ml-3 error-alert">
+                  <div
+                    class="font-light text-xs text-gray-500 dark:text-gray-300"
+                  >
+                    <ContentSlot :use="$slots.rule" unwrap="p" />
+                  </div>
                 </div>
               </div>
-            </div>
-            <button
-              type="submit"
-              class="w-full text-base text-white bg-primary-600 disabled font-bold rounded-lg px-5 py-2.5 text-center transition ease-in-out duration-300 dark:bg-primary-600 hover:bg-primary-700 dark:focus:ring-primary-800"
-              :class="{'opacity-25 cursor-not-allowed': !isFormValid }"
-              :disabled="!isFormValid"
-            >
-              {{ $t('request-demo') }}
-            </button>
-          </form>
+              <button
+                type="submit"
+                class="w-full text-base text-white bg-primary-600 disabled font-bold rounded-lg px-5 py-2.5 text-center transition ease-in-out duration-300 dark:bg-primary-600 hover:bg-primary-700 dark:focus:ring-primary-800"
+                :class="{'opacity-25 cursor-not-allowed': !isFormValid }"
+                :disabled="!isFormValid"
+              >
+                {{ $t('request-demo') }}
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
