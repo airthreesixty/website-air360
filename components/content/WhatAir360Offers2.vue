@@ -5,7 +5,14 @@
     >
       <ContentSlot :use="$slots.mainTitle" unwrap="p" />
     </h2>
-    <SingleDescription image-path="/smartDescription.png" :alt="$t('how-air360-helps1')" :is-video="true" video-src="/videos/opaVideo.mp4" icon="/icons/iconCustomer.svg">
+    <SingleDescription
+      image-path="/smartDescription.png"
+      :alt="$t('how-air360-helps1')"
+      :is-video="true"
+      video-src="/videos/opaVideo.mp4"
+      poster="/smartDescription.png"
+      icon="/icons/iconCustomer.svg"
+    >
       <template #title>
         <ContentSlot :use="$slots.title1" unwrap="p" />
       </template>
@@ -20,6 +27,7 @@
       :alt="$t('how-air360-helps2')"
       :is-video="true"
       video-src="/videos/sessionReplay.mp4"
+      poster="/sessionReplay.png"
       icon="/icons/iconSmile.svg"
       theme-color="#FA734C"
     >

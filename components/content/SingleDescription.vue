@@ -12,6 +12,7 @@
           loop
           muted
           playsinline
+          :poster="poster"
         >
           <source :data-src="videoSrc" type="video/mp4" :src="videoSrc">
         </video>
@@ -41,6 +42,7 @@
           loop
           muted
           playsinline
+          :poster="poster"
         >
           <source :data-src="videoSrc" type="video/mp4" :src="videoSrc">
         </video>
@@ -86,6 +88,10 @@ const props = defineProps({
   themeColor: {
     type: String,
     default: '#e74b91',
+  },
+  poster: {
+    type: String,
+    default: '',
   },
 })
 
