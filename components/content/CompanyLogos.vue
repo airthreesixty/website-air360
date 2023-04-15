@@ -1,8 +1,8 @@
 <template>
-  <section class="bg-white dark:bg-gray-900">
+  <section class="bg-white">
     <div class="mx-auto max-w-screen-[1400px] px-6 lg:px-8">
       <div
-        class="grid grid-cols-2 gap-14 gap-x-12 text-gray-500 md:grid-cols-3 dark:text-gray-400"
+        class="grid grid-cols-2 gap-14 gap-x-12 md:grid-cols-3"
       >
         <div v-for="logo in logos" :key="logo.id" class="flex justify-center items-center">
           <nuxt-img

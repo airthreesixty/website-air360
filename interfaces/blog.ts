@@ -7,3 +7,9 @@ export interface BlogArticle {
   _path: string
   metaDesc: string
 }
+
+export interface Title {
+  id: string
+  text: string
+  children: Title[]
+}

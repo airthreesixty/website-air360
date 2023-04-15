@@ -4,7 +4,7 @@
       <h2 class="text-center">
         {{ $t('contents') }}
       </h2>
-      <ul v-for="(title, index) in props.paragraphTitles" :key="index">
+      <ul v-for="(title, index) in paragraphTitles" :key="index">
         <li>
           <nuxt-link :to="`#${title.id}`">
             {{ title.text }}
@@ -26,10 +26,12 @@
   </div>
 </template>
 
-<script setup>
-const props = defineProps({
+<script setup lang="ts">
+import { Title } from '~~/interfaces/blog'
+
+defineProps({
   paragraphTitles: {
-    type: Array,
+    type: Array as () => Title[],
     required: true,
   },
 })

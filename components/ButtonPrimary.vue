@@ -1,10 +1,10 @@
 <template>
-  <NuxtLink v-if="props.theme === 'primary'" :to="$localePath(props.slug)" class="button button-primary home-hero__button-download">
+  <NuxtLink v-if="theme === 'primary'" :to="$localePath(slug)" class="button button-primary home-hero__button-download">
     <div class="button-text text-white font-bold text-base">
       <slot />
     </div>
   </NuxtLink>
-  <NuxtLink v-if="props.theme === 'transparent'" :to="$localePath(props.slug)" class="button button-transparent home-hero__button-download">
+  <NuxtLink v-if="theme === 'transparent'" :to="$localePath(slug)" class="button button-transparent home-hero__button-download">
     <div class="button-text text-primary-600 font-bold text-base">
       <slot />
     </div>
@@ -14,7 +14,7 @@
 <script setup>
 const { $localePath } = useNuxtApp()
 
-const props = defineProps({
+defineProps({
   slug: {
     type: String,
     required: true,

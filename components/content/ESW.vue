@@ -1,4 +1,3 @@
-<!-- This example requires Tailwind CSS v3.0+ -->
 <template>
   <section>
     <div class="relative max-w-screen-[1400px] mx-auto bg-white">
@@ -23,11 +22,12 @@
             <div
               class="col-start-4 col-end-9 row-start-2 md:col-start-4 md:col-end-9 lg:col-start-4"
             >
-              <img
+              <nuxt-img
+                format="webp"
                 src="https://esw.com/wp-content/themes/esw_com/img/logo_esw_a.svg"
                 alt="esw Logo"
                 class="w-40 py-8"
-              >
+              />
             </div>
             <p
               class="col-start-6 col-end-13 md:col-start-5 lg:col-start-7 lg:col-end-14 row-start-3 mt-2 text-4xl font-bold tracking-tight text-black-600"

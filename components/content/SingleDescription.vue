@@ -51,7 +51,7 @@
   </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const props = defineProps({
   imagePath: {
     type: String,
