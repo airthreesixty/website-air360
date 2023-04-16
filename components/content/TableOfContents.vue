@@ -4,23 +4,25 @@
       <h2 class="text-center">
         {{ $t('contents') }}
       </h2>
-      <ul v-for="(title, index) in paragraphTitles" :key="index">
-        <li>
+      <ul>
+        <li v-for="(title, index) in paragraphTitles" :key="index">
           <nuxt-link :to="`#${title.id}`">
             {{ title.text }}
           </nuxt-link>
+          <section v-if="title.children">
+            <ul>
+              <li
+                v-for="(subTitle, num) in title.children"
+                :key="num"
+                class="pl-11"
+              >
+                <nuxt-link :to="`#${subTitle.id}`">
+                  {{ subTitle.text }}
+                </nuxt-link>
+              </li>
+            </ul>
+          </section>
         </li>
-        <div v-if="title.children">
-          <li
-            v-for="(subTitle, num) in title.children"
-            :key="num"
-            class="pl-11"
-          >
-            <nuxt-link :to="`#${subTitle.id}`">
-              {{ subTitle.text }}
-            </nuxt-link>
-          </li>
-        </div>
       </ul>
     </div>
   </div>
