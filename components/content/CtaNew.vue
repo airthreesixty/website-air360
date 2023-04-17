@@ -5,11 +5,11 @@
         <div class="px-6 pt-10 pb-12 md:px-12 md:py-12 lg:px-14 lg:py-16 md:pr-0 xl:py-20 xl:px-20">
           <div class="lg:self-center">
             <h2 class="text-2xl text-center font-bold tracking-tight text-white md:text-left md:text-3xl lg:text-4xl">
-              <ContentSlot :use="$slots.title" unwrap="p" />
+              {{ $t('get-started') }}
             </h2>
             <div>
               <p class="mt-4 text-md text-center leading-6 text-primary-100 md:text-left lg:text-xl">
-                <ContentSlot :use="$slots.description" unwrap="p" />
+                {{ $t('cta-description') }}
               </p>
             </div>
             <div class="flex justify-center mt-8 md:w-2/3">
