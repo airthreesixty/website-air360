@@ -59,7 +59,7 @@
                     type="email"
                     placeholder="Your Email"
                     name="EMAIL"
-                    class="required email block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                    class="required email block p-3 pl-10 w-full text-sm text-black-600 bg-gray-50 rounded-lg border border-gray-300 transition ease-in-out duration-300 focus:border-primary-600 focus:ring-primary-600 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                     required
                   >
                 </div>
