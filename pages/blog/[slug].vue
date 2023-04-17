@@ -3,8 +3,8 @@
     <main v-if="data">
       <ContentRenderer :value="data">
         <div class="bg-white dark:bg-gray-900">
-          <nuxt-img format="webp" :src="data.image" :alt="data.title" class="h-90 mb-10 w-full object-cover" />
-          <div class="flex justify-center">
+          <!-- <nuxt-img format="webp" :src="data.image" :alt="data.title" class="h-90 mb-10 w-full object-cover" /> -->
+          <div class="flex justify-center pt-10">
             <div class="lg:flex lg:justify-between gap-8 px-6 max-w-screen-[1400px]">
               <div class="mx-auto">
                 <article
@@ -94,10 +94,11 @@
                       </div>
                     </div>
                     <h1
-                      class="mb-6 text-3xl font-semibold text-[#111827] lg:text-4xl dark:text-white"
+                      class="mb-8 text-2xl font-semibold text-[#111827] lg:text-3xl dark:text-white"
                     >
                       {{ data.title }}
                     </h1>
+                    <nuxt-img format="webp" :src="data.image" :alt="data.title" class="h-90 mb-10 rounded-lg w-full object-cover" />
                   </header>
                   <div class="prose">
                     <TableOfContents :paragraph-titles="paragraphTitles" class="lg:hidden" />

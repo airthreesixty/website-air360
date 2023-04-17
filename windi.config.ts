@@ -29,6 +29,36 @@ export default defineConfig({
               'text-decoration': 'none',
             },
             maxWidth: '100%',
+            ul: {
+              li: {
+                '&:before': {
+                  backgroundColor: '#6b7280',
+                },
+                paddingLeft: '1.5em',
+              },
+            },
+            color: '#232e4a',
+            h1: {
+              color: '#232e4a',
+            },
+            h2: {
+              a: {
+                color: '#232e4a',
+                fontWeight: 'bold',
+              },
+              backgroundColor: '#f7f7f7',
+              borderLeft: '5px solid #e74b91',
+              padding: '14px 12px',
+              borderBottom: '3px solid #dadada',
+            },
+            h3: {
+              a: {
+                color: '#232e4a',
+                fontWeight: 'bold',
+              },
+              padding: '12px 10px',
+              borderBottom: '3px solid #e74b91',
+            },
           },
         },
       },
