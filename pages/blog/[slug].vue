@@ -4,7 +4,7 @@
       <ContentRenderer :value="data">
         <div class="bg-white flex justify-center dark:bg-gray-900">
           <div class="pt-10 pb-5 max-w-screen-[1400px]">
-            <div class="lg:flex lg:justify-between gap-8 px-6">
+            <div class="lg:flex lg:justify-between gap-8 px-6 lg:px-8">
               <div class="w-[64%]">
                 <article
                   class="mx-auto format format-sm sm:format-base lg:format-lg format-blue dark:format-invert"
