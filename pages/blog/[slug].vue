@@ -5,7 +5,7 @@
         <div class="bg-white dark:bg-gray-900">
           <nuxt-img format="webp" :src="data.image" :alt="data.title" class="h-90 mb-10 w-full object-cover" />
           <div class="flex justify-center">
-            <div class="flex justify-between gap-8 px-6 max-w-screen-[1400px]">
+            <div class="lg:flex lg:justify-between gap-8 px-6 max-w-screen-[1400px]">
               <div class="mx-auto">
                 <article
                   class="mx-auto w-full max-w-screen-[700px] format format-sm sm:format-base lg:format-lg format-blue dark:format-invert"
@@ -100,12 +100,13 @@
                     </h1>
                   </header>
                   <div class="prose">
+                    <TableOfContents :paragraph-titles="paragraphTitles" class="lg:hidden" />
                     <ContentRendererMarkdown :value="data" />
                   </div>
                 </article>
               </div>
-              <div class="w-[33%]">
-                <div class="prose sticky top-20">
+              <div class="hidden lg:block w-[33%]">
+                <div class="prose sticky top-30">
                   <TableOfContents :paragraph-titles="paragraphTitles" />
                 </div>
               </div>
