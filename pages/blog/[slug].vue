@@ -1,10 +1,11 @@
 <template>
-  <div>
+  <div class="">
     <main v-if="data">
       <ContentRenderer :value="data">
         <div class="bg-white dark:bg-gray-900">
           <nuxt-img format="webp" :src="data.image" :alt="data.title" class="h-90 mb-10 w-full object-cover" />
-          <div class="flex justify-between px-6 mx-auto">
+
+          <div class="px-6 mx-auto">
             <article
               class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert"
             >
@@ -21,10 +22,7 @@
                 </div>
                 <aside aria-label="Share social media">
                   <div class="flex items-center">
-                    <!-- <p class="text-primary-600">
-                      {{ $t('share') }}:
-                    </p> -->
-                    <button data-tooltip-target="tooltip-linkedin" class="inline-flex items-center p-[7px] md:p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button">
+                    <button data-tooltip-target="tooltip-linkedin" class="inline-flex items-center p-[5.5px] md:p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button">
                       <a
                         :href="`https://www.linkedin.com/sharing/share-offsite/?url=https://jp.air360.io${fullPath}/`"
                         class="text-primary-600 transition ease-in-out duration-300 hover:text-primary-700 dark:hover:text-white"
@@ -38,7 +36,7 @@
                       {{ $t('share-on-linkedin') }}
                       <div class="tooltip-arrow" data-popper-arrow />
                     </div>
-                    <button data-tooltip-target="tooltip-twitter" class="inline-flex items-center p-[7px] md:p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button">
+                    <button data-tooltip-target="tooltip-twitter" class="inline-flex items-center p-[5.5px] md:p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button">
                       <a
                         :href="`https://twitter.com/intent/tweet?text=https://jp.air360.io${fullPath}/`"
                         class="text-primary-600 transition ease-in-out duration-300 hover:text-primary-700 dark:hover:text-white"
@@ -52,7 +50,7 @@
                       {{ $t('share-on-twitter') }}
                       <div class="tooltip-arrow" data-popper-arrow />
                     </div>
-                    <button data-tooltip-target="tooltip-facebook" class="inline-flex items-center p-[7px] md:p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button">
+                    <button data-tooltip-target="tooltip-facebook" class="inline-flex items-center p-[5.5px] md:p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button">
                       <a
                         :href="`http://www.facebook.com/share.php?u=https://jp.air360.io${fullPath}/`"
                         class="text-primary-600 transition ease-in-out duration-300 hover:text-primary-700 dark:hover:text-white"

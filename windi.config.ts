@@ -28,6 +28,7 @@ export default defineConfig({
             a: {
               'text-decoration': 'none',
             },
+            maxWidth: '100%',
           },
         },
       },
