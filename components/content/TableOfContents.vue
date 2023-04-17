@@ -1,12 +1,12 @@
 <template>
-  <div class="flex justify-center border-2 px-1 my-16 py-5 rounded-lg">
+  <div class="flex justify-center my-16 py-5">
     <div class="px-2 -mt-6">
       <h2 class="text-center">
         {{ $t('contents') }}
       </h2>
       <ul>
         <li v-for="(title, index) in paragraphTitles" :key="index">
-          <nuxt-link :to="`#${title.id}`">
+          <nuxt-link :to="`#${title.id}`" class="text-primary-600">
             {{ title.text }}
           </nuxt-link>
           <section v-if="title.children">
