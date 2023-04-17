@@ -1,5 +1,4 @@
 html {
-  scroll-margin-top: 61px;
   scroll-behavior: smooth;
 }
 
@@ -32,4 +31,8 @@ th:nth-child(4) {
 
 td {
   word-break: break-all;
+}
+
+h2, h3 {
+  scroll-margin-top: 100px;
 }
