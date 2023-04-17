@@ -35,6 +35,9 @@ export default defineConfig({
                   backgroundColor: '#6b7280',
                 },
                 paddingLeft: '1.5em',
+                a: {
+                  color: '#232e4a',
+                },
               },
             },
             color: '#232e4a',

@@ -75,12 +75,12 @@
                   <header class="my-4 lg:mb-10 not-format">
                     <div class="flex items-center justify-between mb-6 not-italic">
                       <div
-                        class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white"
+                        class="inline-flex items-center mr-3 text-sm text-black-600 dark:text-white"
                       >
                         <nuxt-img class="mr-4 w-16 h-16 rounded-full" src="https://secure.gravatar.com/avatar/8970d6f80cecf680b09d491937b1623f?s=96&d=mm&r=g" />
                         <div>
                           <div
-                            class="text-xl font-bold text-gray-900 dark:text-white"
+                            class="text-xl font-bold text-black-600 dark:text-white"
                           >
                             {{ $t('air360-team') }}
                           </div>
@@ -93,7 +93,7 @@
                       </div>
                     </div>
                     <h1
-                      class="mb-8 text-2xl font-semibold text-[#111827] lg:text-3xl dark:text-white"
+                      class="mb-8 text-2xl font-semibold text-black-600 lg:text-3xl dark:text-white"
                     >
                       {{ data.title }}
                     </h1>
