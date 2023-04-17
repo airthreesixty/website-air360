@@ -3,11 +3,11 @@
     <main v-if="data">
       <ContentRenderer :value="data">
         <div class="bg-white flex justify-center dark:bg-gray-900">
-          <div class="pt-10 max-w-screen-[1400px]">
+          <div class="pt-10 pb-5 max-w-screen-[1400px]">
             <div class="lg:flex lg:justify-between gap-8 px-6">
-              <div class="mx-auto">
+              <div class="w-[64%]">
                 <article
-                  class="mx-auto w-full max-w-screen-[700px] format format-sm sm:format-base lg:format-lg format-blue dark:format-invert"
+                  class="mx-auto format format-sm sm:format-base lg:format-lg format-blue dark:format-invert"
                 >
                   <div class="flex items-center justify-between">
                     <div>
@@ -105,7 +105,7 @@
                   </div>
                 </article>
               </div>
-              <div class="hidden lg:block w-[33%]">
+              <div class="hidden lg:block w-[34%]">
                 <div class="prose sticky top-30">
                   <TableOfContents :paragraph-titles="paragraphTitles" />
                 </div>
