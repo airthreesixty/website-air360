@@ -1,7 +1,7 @@
 <template>
   <div
     id="newsletter-modal"
-    class="w-full py-10 flex justify-center md:h-full"
+    class="w-full pb-10 flex justify-center md:h-full"
   >
     <div class="px-6 w-full bg-white max-w-screen-[1000px] h-full rounded-lg md:h-auto">
       <div

@@ -2,10 +2,9 @@
   <div class="">
     <main v-if="data">
       <ContentRenderer :value="data">
-        <div class="bg-white dark:bg-gray-900">
-          <!-- <nuxt-img format="webp" :src="data.image" :alt="data.title" class="h-90 mb-10 w-full object-cover" /> -->
-          <div class="flex justify-center pt-10">
-            <div class="lg:flex lg:justify-between gap-8 px-6 max-w-screen-[1400px]">
+        <div class="bg-white flex justify-center dark:bg-gray-900">
+          <div class="pt-10 max-w-screen-[1400px]">
+            <div class="lg:flex lg:justify-between gap-8 px-6">
               <div class="mx-auto">
                 <article
                   class="mx-auto w-full max-w-screen-[700px] format format-sm sm:format-base lg:format-lg format-blue dark:format-invert"
@@ -116,8 +115,8 @@
         </div>
       </ContentRenderer>
     </main>
-    <NewsLetter />
     <RelatedArticles />
+    <NewsLetter />
   </div>
 </template>
 
