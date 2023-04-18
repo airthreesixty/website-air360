@@ -8,11 +8,7 @@
 import { useSeoMeta } from '@unhead/vue'
 
 useHead({
-  title: 'Air360 - eコマースに最適なUX分析ツール',
   titleTemplate: '',
-  meta: [
-    { hid: 'description', name: 'description', content: 'Air360はウェブサイト上の顧客体験を分析するツールです。 データによって隠れているユーザーの行動を明らかにし、それに基づいてコンバージョン率を改善します。' },
-  ],
   script: [
     {
       src: 'https://fast.wistia.net/assets/external/E-v1.js',
@@ -23,10 +19,13 @@ useHead({
 })
 
 useSeoMeta({
+  title: 'Air360 - eコマースに最適なUX分析ツール',
+  description: 'Air360はウェブサイト上の顧客体験を分析するツールです。 データによって隠れているユーザーの行動を明らかにしコンバージョン率を改善します。',
+  ogDescription: 'Air360はウェブサイト上の顧客体験を分析するツールです。 データによって隠れているユーザーの行動を明らかにしコンバージョン率を改善します。',
+  ogTitle: 'Air360 - eコマースに最適なUX分析ツール',
   ogImage: 'https://www.air360.io/wp-content/uploads/2022/08/hero-illustration.webp',
   twitterCard: 'summary_large_image',
   ogUrl: 'https://jp.air360.io/',
-  title: 'Air360 - eコマースに最適なUX分析ツール',
 })
 </script>
 
