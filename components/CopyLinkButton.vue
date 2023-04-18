@@ -12,6 +12,6 @@
 import { useClipboard } from '@vueuse/core'
 const route = useRoute()
 
-const source = computed(() => `https://jp.air360.io${route.fullPath}/`)
+const source = computed(() => `https://jp.air360.io${route.fullPath}`)
 const { copy } = useClipboard({ source })
 </script>

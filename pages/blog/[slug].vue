@@ -24,7 +24,7 @@
                       <div class="flex items-center">
                         <button data-tooltip-target="tooltip-linkedin" class="inline-flex items-center p-[5.5px] md:p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button">
                           <a
-                            :href="`https://www.linkedin.com/sharing/share-offsite/?url=https://jp.air360.io${fullPath}/`"
+                            :href="`https://www.linkedin.com/sharing/share-offsite/?url=https://jp.air360.io${fullPath}`"
                             class="text-primary-600 transition ease-in-out duration-300 hover:text-primary-700 dark:hover:text-white"
                             rel="nofollow noopener"
                             target="_blank"
@@ -38,7 +38,7 @@
                         </div>
                         <button data-tooltip-target="tooltip-twitter" class="inline-flex items-center p-[5.5px] md:p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button">
                           <a
-                            :href="`https://twitter.com/intent/tweet?text=https://jp.air360.io${fullPath}/`"
+                            :href="`https://twitter.com/intent/tweet?text=https://jp.air360.io${fullPath}`"
                             class="text-primary-600 transition ease-in-out duration-300 hover:text-primary-700 dark:hover:text-white"
                             rel="nofollow noopener"
                             target="_blank"
@@ -52,7 +52,7 @@
                         </div>
                         <button data-tooltip-target="tooltip-facebook" class="inline-flex items-center p-[5.5px] md:p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button">
                           <a
-                            :href="`http://www.facebook.com/share.php?u=https://jp.air360.io${fullPath}/`"
+                            :href="`http://www.facebook.com/share.php?u=https://jp.air360.io${fullPath}`"
                             class="text-primary-600 transition ease-in-out duration-300 hover:text-primary-700 dark:hover:text-white"
                             rel="nofollow noopener"
                             target="_blank"
@@ -131,7 +131,7 @@ const router = useRouter()
 const fullPath = route.fullPath
 
 // TODO the value from the plugin is wrong, remove _value when it's fixed
-const { data } = await useAsyncData(`blog-${route.params.slug}`, () =>
+const { data } = await useAsyncData(`blog-${route.params.slug}/`, () =>
   queryContent<BlogArticle>(
     `/${$i18n.locale?._value}${getPathWithoutLocale(route.path)}`,
   ).findOne(),
@@ -144,12 +144,12 @@ if (!data.value) {
 }
 
 useSeoMeta({
+  title: data.value?.title,
+  ogTitle: data.value?.title,
   description: data.value?.metaDesc,
+  ogDescription: data.value?.metaDesc,
   ogImage: data.value?.image,
   twitterCard: 'summary_large_image',
-})
-
-useHead({
-  title: data.value?.title,
+  ogUrl: `https://jp.air360.io${fullPath}`,
 })
 </script>
