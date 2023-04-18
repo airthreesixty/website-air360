@@ -28,21 +28,3 @@ useSeoMeta({
   ogUrl: 'https://jp.air360.io/',
 })
 </script>
-
-<style scoped>
-  svg {
-    stroke-dasharray: 150 480;
-    stroke-dashoffset: 150;
-    transition: 1s ease-in-out;
-  }
-
-  .btn {
-    --width: 180px;
-    --height: 60px;
-    position: relative;
-  }
-
-  .btn:hover svg {
-    stroke-dashoffset: -480;
-  }
-</style>
