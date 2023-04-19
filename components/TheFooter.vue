@@ -1,12 +1,12 @@
 <template>
-  <footer class="px-6 py-6 border-gray-200 border-t-1 lg:px-8 dark:bg-gray-900">
+  <footer class="px-4 py-6 border-gray-200 border-t-1 dark:bg-gray-900">
     <div class="md:flex md:justify-between">
       <div class="mb-6 md:mb-0">
         <NuxtLink :to="$localePath('/')">
           <div class="flex items-center">
             <nuxt-img
               format="webp"
-              src="https://www.air360.io/wp-content/uploads/2022/05/air360-logo-bk.svg"
+              src="/air360Logo.png"
               class="mr-3 h-6 w-auto sm:h-7 xl:h-8"
               alt="Air360 Logo"
             />
