@@ -93,7 +93,7 @@
                       </div>
                     </div>
                     <h1
-                      class="start mb-8 text-2xl font-semibold text-black-600 lg:text-3xl dark:text-white"
+                      class="mb-8 text-2xl font-semibold text-black-600 lg:text-3xl dark:text-white"
                     >
                       {{ data.title }}
                     </h1>
@@ -123,7 +123,6 @@
 
 <script setup lang="ts">
 import { useSeoMeta } from '@unhead/vue'
-import gsap from 'gsap'
 import { BlogArticle } from '~~/interfaces/blog'
 
 const { $i18n, $localePath } = useNuxtApp()
@@ -143,12 +142,6 @@ const paragraphTitles = data._rawValue.body.toc.links
 if (!data.value) {
   router.push($localePath('/blog'))
 }
-
-gsap.to('.start', {
-  scrollTrigger: '.start',
-  opacity: 0.5,
-  markers: true,
-})
 
 useSeoMeta({
   title: data.value?.title,
