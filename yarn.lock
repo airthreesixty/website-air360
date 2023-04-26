@@ -1969,16 +1969,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxtjs/robots@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@nuxtjs/robots@npm:3.0.0"
-  dependencies:
-    "@nuxt/kit": ^3.0.0
-    h3: ^1.0.1
-  checksum: eb6b81b786059136030c2e06f3ed5494f60bbcfe7930774d4a2304bd3f343a7dd2c37d3f4d6edbd276f74ea3bed8b4df2303ecf6abcf3991aed619b7aaf5b189
-  languageName: node
-  linkType: hard
-
 "@pkgr/utils@npm:^2.3.1":
   version: 2.3.1
   resolution: "@pkgr/utils@npm:2.3.1"
@@ -10467,7 +10457,6 @@ __metadata:
     "@nuxtjs/algolia": ^1.5.0
     "@nuxtjs/eslint-config-typescript": ^12.0.0
     "@nuxtjs/i18n": next
-    "@nuxtjs/robots": ^3.0.0
     "@vuelidate/core": ^2.0.0
     "@vuelidate/validators": ^2.0.0
     "@vueuse/core": 9.12.0
