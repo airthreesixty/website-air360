@@ -21,32 +21,32 @@
 const logos = [
   {
     id: 1,
-    src: '/logos/clubmed.svg',
+    src: '/clubMedLogo.png',
     alt: 'Company Logo',
   },
   {
     id: 2,
-    src: '/logos/aristocrazyLogo.png',
+    src: '/aristocrazyLogo.png',
     alt: 'Company Logo',
   },
   {
     id: 3,
-    src: '/logos/olympique.webp',
+    src: '/olympiqueLogo.png',
     alt: 'Company Logo',
   },
   {
     id: 4,
-    src: '/logos/maisonMargielaLogo.png',
+    src: '/maisonMargielaLogo.png',
     alt: 'Company Logo',
   },
   {
     id: 5,
-    src: '/logos/qoqa.svg',
+    src: '/qoqaLogo.png',
     alt: 'Company Logo',
   },
   {
     id: 6,
-    src: '/logos/suarezLogo.png',
+    src: '/suarezLogo.png',
     alt: 'Company Logo',
   },
 ]
