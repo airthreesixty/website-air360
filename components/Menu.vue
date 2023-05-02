@@ -2,7 +2,7 @@
   <nav
     class="bg-white border-gray-200 border-b-1 px-4 sticky py-2 top-0 rounded z-10 md:py-3 lg:py-0 dark:bg-gray-900"
   >
-    <div class="flex flex-wrap items-center justify-between">
+    <div class="flex flex-wrap items-center justify-between max-w-screen-[1400px] mx-auto">
       <NuxtLink :to="$localePath('/')">
         <nuxt-img
           format="webp"

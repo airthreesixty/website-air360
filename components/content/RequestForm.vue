@@ -16,7 +16,7 @@
           <div class="flex justify-center">
             <nuxt-img src="/getStarted.webp" class="w-80 mb-6" />
           </div>
-          <h1 class="mb-3 font-semibold text-center bg-gradient-to-r from-[#6278DF] to-blue-[#3DDC97] bg-clip-text text-transparent text-xl md:text-2xl lg:text-3xl">
+          <h1 class="mb-3 font-semibold text-center text-gradient text-xl md:text-2xl lg:text-3xl">
             <ContentSlot :use="$slots.title1" unwrap="p" />
           </h1>
           <h2 class="mb-4 text-black-600 max-w-[500px] font-semibold text-center lg:text-lg">
@@ -207,5 +207,11 @@ const submitForm = async () => {
 }
 .bar-enter, .bar-leave-to {
   opacity: 0;
+}
+
+.text-gradient {
+    background: linear-gradient(126deg, rgba(45,146,233,1) 0%, rgba(100,74,213,1) 20%, rgba(193,65,172,1) 40%, rgba(231,33,146,1) 60%, rgba(240,77,102,1) 80%, rgba(253,112,67,1) 100%);
+   color: transparent;
+   background-clip: text;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <footer class="px-4 py-6 border-gray-200 border-t-1 dark:bg-gray-900">
-    <div class="md:flex md:justify-between">
+    <div class="max-w-screen-[1400px] mx-auto md:flex md:justify-between">
       <div class="mb-6 md:mb-0">
         <NuxtLink :to="$localePath('/')">
           <div class="flex items-center">
