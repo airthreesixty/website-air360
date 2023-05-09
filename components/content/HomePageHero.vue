@@ -96,7 +96,7 @@
         >
           <ContentSlot :use="$slots.description" unwrap="p" />
         </h2>
-        <div class="pt-3 mt-4 mb-2 w-44 mx-auto md:items-center">
+        <div class="pt-3 mt-4 mb-2 w-52 mx-auto md:items-center">
           <ButtonPrimary slug="/request-demo" theme="primary">
             {{ $t("request-demo") }}
           </ButtonPrimary>
