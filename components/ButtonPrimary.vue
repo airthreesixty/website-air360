@@ -1,11 +1,16 @@
 <template>
-  <NuxtLink v-if="theme === 'primary'" :to="$localePath(slug)" class="button button-primary home-hero__button-download">
-    <div class="button-text text-white font-bold text-base">
+  <NuxtLink v-if="theme === 'primary'" :to="$localePath(slug)" class="button bg-primary-600 transition ease-in-out duration-300 hover:bg-primary-700">
+    <div class=" text-white font-bold text-base">
       <slot />
     </div>
   </NuxtLink>
-  <NuxtLink v-if="theme === 'transparent'" :to="$localePath(slug)" class="button button-transparent home-hero__button-download">
-    <div class="button-text text-primary-600 font-bold text-base">
+  <NuxtLink v-if="theme === 'transparent'" :to="$localePath(slug)" class="button button-transparent bg-white home-hero__button-download">
+    <div class=" text-primary-600 font-bold text-base">
+      <slot />
+    </div>
+  </NuxtLink>
+  <NuxtLink v-if="theme === 'outline'" :to="$localePath(slug)" class="button border-2 transition ease-in-out duration-300 hover:opacity-80">
+    <div class="text-white font-bold text-base">
       <slot />
     </div>
   </NuxtLink>
@@ -123,7 +128,6 @@ onMounted(() => {
 
 .button-transparent {
   -webkit-tap-highlight-color: transparent;
-  background-color: white;
   appearance: none;
   outline: none;
   position: relative;

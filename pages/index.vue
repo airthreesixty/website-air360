@@ -1,11 +1,15 @@
 <template>
-  <div>
+  <NuxtLayout name="landing-page">
     <ContentPage />
-  </div>
+  </NuxtLayout>
 </template>
 
 <script setup lang="ts">
 import { useSeoMeta } from '@unhead/vue'
+
+definePageMeta({
+  layout: false,
+})
 
 useHead({
   titleTemplate: '',
