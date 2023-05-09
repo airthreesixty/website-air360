@@ -2,15 +2,15 @@
   <div class="bg-white">
     <div class="mx-auto max-w-screen-[1400px] py-15 px-6 lg:px-8">
       <div class="text-center">
-        <p class="text-lg font-semibold text-primary-600 lg:text-xl">
+        <p class="text-lg font-semibold text-primary-600 md:text-xl">
           <ContentSlot :use="$slots.subtext" unwrap="p" />
         </p>
         <h1
-          class="mt-1 text-2xl font-semibold text-black-600 tracking-tight md:text-3xl lg:text-4xl"
+          class="mt-1 text-[34px] font-semibold text-black-600 tracking-tight md:text-5xl lg:text-6xl"
         >
           <ContentSlot :use="$slots.title" unwrap="p" />
         </h1>
-        <p class="mx-auto mt-5 max-w-xl text-gray-500 md:text-base lg:text-xl xl:leading-8">
+        <p class="mx-auto mt-5 max-w-xl text-gray-500 md:text-lg lg:text-xl xl:leading-8">
           <ContentSlot :use="$slots.description" unwrap="p" />
         </p>
       </div>
