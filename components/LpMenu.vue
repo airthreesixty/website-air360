@@ -4,12 +4,11 @@
   >
     <div class="relative flex flex-wrap items-center justify-between max-w-screen-[1400px] mx-auto">
       <NuxtLink :to="$localePath('/')">
-        <nuxt-img
-          format="webp"
+        <img
           src="/air360Logo.svg"
           class="h-6 mr-3 w-auto sm:h-7 xl:h-8"
           alt="Air360 Logo"
-        />
+        >
       </NuxtLink>
       <button
         data-collapse-toggle="navbar-default"
