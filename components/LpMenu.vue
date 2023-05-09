@@ -40,7 +40,7 @@
       >
         <div v-if="isActive" class="flex justify-center mt-6">
           <div class="max-w-[100px]">
-            <nuxt-img src="favicon.png" format="webp" />
+            <img src="favicon.png">
           </div>
         </div>
         <ul
