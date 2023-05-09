@@ -35,7 +35,7 @@
       </button>
       <div
         id="navbar-default"
-        class="w-full transition ease-in-out rounded-lg duration-500 lg:block lg:w-auto lg:menu-active:hidden"
+        class="w-full transition ease-in-out rounded-lg duration-500 lg:block lg:w-auto"
         :class="{hidden: !isActive,'menu-active': isActive, 'sm:max-w-[300px]': isActive}"
       >
         <div v-if="isActive" class="flex justify-center mt-6">

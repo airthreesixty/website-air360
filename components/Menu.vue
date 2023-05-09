@@ -2,7 +2,7 @@
   <nav
     class="bg-white border-gray-200 border-b-1 px-4 sticky py-2 top-0 rounded z-10 md:py-3 lg:py-0 dark:bg-gray-900"
   >
-    <div class="flex flex-wrap items-center justify-between max-w-screen-[1400px] mx-auto">
+    <div class="relative flex flex-wrap items-center justify-between max-w-screen-[1400px] mx-auto">
       <NuxtLink :to="$localePath('/')">
         <nuxt-img
           format="webp"
@@ -36,9 +36,14 @@
       </button>
       <div
         id="navbar-default"
-        class="w-full transition ease-in-out duration-500 lg:block lg:w-auto"
-        :class="{block: isActive, hidden: !isActive}"
+        class="w-full transition ease-in-out duration-500 rounded-lg lg:block lg:w-auto"
+        :class="{hidden: !isActive,'menu-active': isActive, 'sm:max-w-[300px]': isActive}"
       >
+        <div v-if="isActive" class="flex justify-center mt-6">
+          <div class="max-w-[100px]">
+            <img src="/favicon.png">
+          </div>
+        </div>
         <ul
           class="flex flex-col p-4 mt-4 border items-center border-none lg:flex-row lg:space-x-8 lg:mt-0 lg:text-base lg:font-medium lg:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
         >
@@ -51,6 +56,7 @@
               </div>
             </NuxtLink>
           </li>
+          <hr v-if="isActive" class="h-1 w-2/3">
           <li class="py-2">
             <NuxtLink :to="$localePath('/blog')">
               <div
@@ -60,6 +66,7 @@
               </div>
             </NuxtLink>
           </li>
+          <hr v-if="isActive" class="h-1 w-2/3">
           <li class="py-2">
             <a
               href="https://beta.air360.io/"
@@ -68,6 +75,7 @@
               rel="noopener noreferrer"
             >{{ $t("login") }}</a>
           </li>
+          <hr v-if="isActive" class="h-1 w-2/3">
           <li class="py-2">
             <ButtonPrimary slug="/request-demo" theme="primary">
               {{ $t("request-demo") }}
@@ -90,10 +98,18 @@ const toggleMenu = () => {
 </script>
 
 <style lang="postcss">
-.menu__link {
+.menu-active {
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  margin: auto 0px;
+  display: block;
+  background-color: white;
+  height: 330px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.menu__modal {
   @apply block py-2 pl-3 pr-4 font-semibold text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-600 md:px-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent;
-  .router-link-exact-active & {
-    @apply text-primary-600;
-  }
 }
 </style>
