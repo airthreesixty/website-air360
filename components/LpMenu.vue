@@ -49,7 +49,7 @@
           <li class="py-2">
             <NuxtLink :to="$localePath('/product')">
               <div
-                :class="isActive ? 'menu__link' : 'lp-menu__link'"
+                :class="isActive ? 'menu__modal' : 'lp-menu__link'"
               >
                 {{ $t("product") }}
               </div>
@@ -59,7 +59,7 @@
           <li class="py-2">
             <NuxtLink :to="$localePath('/blog')">
               <div
-                :class="isActive ? 'menu__link' : 'lp-menu__link'"
+                :class="isActive ? 'menu__modal' : 'lp-menu__link'"
               >
                 {{ $t("blog") }}
               </div>
@@ -69,7 +69,7 @@
           <li class="py-2">
             <a
               href="https://beta.air360.io/"
-              :class="isActive ? 'menu__link' : 'lp-menu__link'"
+              :class="isActive ? 'menu__modal' : 'lp-menu__link'"
               target="_blank"
               rel="noopener noreferrer"
             >{{ $t("login") }}</a>
@@ -128,5 +128,9 @@ const toggleMenu = () => {
   background-color: white;
   height: 300px;
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.menu__modal {
+  @apply block py-2 pl-3 pr-4 font-semibold text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-600 md:px-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent;
 }
 </style>
