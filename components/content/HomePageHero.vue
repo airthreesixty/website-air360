@@ -98,7 +98,7 @@
         >
           <ContentSlot :use="$slots.description" unwrap="p" />
         </h2>
-        <div class="pt-3 mt-4 mb-2 w-52 mx-auto md:items-center">
+        <div class="pt-3 mt-6 mb-2 w-52 mx-auto md:items-center">
           <!-- <ButtonPrimary slug="/request-demo" theme="primary">
             {{ $t("request-demo") }}
           </ButtonPrimary> -->
@@ -133,6 +133,7 @@ const { $localePath } = useNuxtApp()
   text-decoration: none;
   cursor: pointer;
   width: 100%;
+  box-shadow: 0 4px 4px 0 #00000010;
 }
 
 .bg-gradient {
@@ -289,6 +290,19 @@ linear-gradient(0deg, #232E4A, #232E4A);
     position: absolute;
     z-index: -2;
     border-radius: 8px;
+}
+
+.bg-button::before {
+  background-image: linear-gradient(90deg,var(--start-color),var(--end-color));
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border: 12px solid transparent;
+  background-clip: padding-box;
+  content: "";
+  filter:blur(36px);
+  z-index: -1;
+  opacity: 0.8;
 }
 
 @keyframes button-change-color1 {

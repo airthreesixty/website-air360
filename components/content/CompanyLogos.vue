@@ -5,7 +5,7 @@
         TRUSTED BY
       </p>
       <div
-        class="grid grid-cols-2 gap-y-14 gap-x-5 md:grid-cols-3"
+        class="grid grid-cols-2 gap-y-14 gap-x-6 md:grid-cols-3"
       >
         <div v-for="logo in logos" :key="logo.id" class="flex justify-center items-center">
           <img
