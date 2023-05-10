@@ -1,8 +1,11 @@
 <template>
   <section class="bg-white">
-    <div class="mx-auto max-w-screen-[1400px] px-6 lg:px-8">
+    <div class="mx-auto max-w-screen-[500px] md:max-w-screen-[560px] lg:max-w-screen-[800px] px-6 lg:px-8">
+      <p class="text-center text-sm font-bold font-sans2 text-black-600 mb-8 tracking-widest">
+        TRUSTED BY
+      </p>
       <div
-        class="grid grid-cols-2 gap-14 gap-x-12 md:grid-cols-3"
+        class="grid grid-cols-2 gap-y-14 gap-x-5 md:grid-cols-3"
       >
         <div v-for="logo in logos" :key="logo.id" class="flex justify-center items-center">
           <img

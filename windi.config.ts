@@ -14,6 +14,13 @@ export default defineConfig({
         '-apple-system',
         'sans-serif',
       ],
+      sans2: [
+        'Qanelas',
+        'ui-sans-serif',
+        'system-ui',
+        '-apple-system',
+        'sans-serif',
+      ],
     },
     extend: {
       typography: {
