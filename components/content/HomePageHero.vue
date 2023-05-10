@@ -3,7 +3,7 @@
     <div class="bg-gradient h-75 lg:h-82" />
     <LpMenu />
     <div
-      class="max-w-screen-[1400px] px-6 pt-55 lg:pt-60 pb-22 mx-auto lg:pb-16 lg:px-8"
+      class="max-w-screen-[1400px] px-6 pt-55 lg:pt-65 pb-22 mx-auto lg:pb-16 lg:px-8"
     >
       <!-- <div class="md:hidden lg:mt-0 lg:col-span-5">
         <nuxt-img
@@ -18,7 +18,7 @@
         <div class="flex justify-center">
           <div class="relative inline-block">
             <h1
-              class="mb-6 font-bold text-[34px] md:text-5xl lg:text-6xl text-center text-black-600 lg:mb-8"
+              class="mb-6 font-bold text-[34px] md:text-5xl lg:text-7xl text-center text-black-600 lg:mb-8"
             >
               <div class="flex justify-center">
                 <span class="bg-animation1"><span class="letter1"><ContentSlot :use="$slots.title1" unwrap="p" /></span></span>
