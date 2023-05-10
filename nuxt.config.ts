@@ -55,14 +55,14 @@ export default defineNuxtConfig({
       { code: 'en', iso: 'en-US', file: 'en.json', name: 'English' },
       { code: 'ja', iso: 'ja-JP', file: 'ja.json', name: '日本語' },
     ],
-    defaultLocale: 'ja',
+    defaultLocale: 'en',
     langDir: 'locales',
     vueI18n: {
       fallbackLocale: 'en',
     },
     detectBrowserLanguage: false,
     trailingSlash: true,
-    baseUrl: 'https://jp.air360.io/',
+    baseUrl: 'https://air360.io/',
   },
 
   fontLoader: {
