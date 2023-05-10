@@ -3,7 +3,7 @@
     <div class="bg-gradient h-75 lg:h-82" />
     <LpMenu />
     <div
-      class="max-w-screen-[1400px] px-6 pt-55 lg:pt-65 pb-22 mx-auto lg:pb-16 lg:px-8"
+      class="max-w-screen-[1400px] px-6 pt-55 md:pt-58 lg:pt-66 pb-22 mx-auto lg:pb-16 lg:px-8"
     >
       <!-- <div class="md:hidden lg:mt-0 lg:col-span-5">
         <nuxt-img
