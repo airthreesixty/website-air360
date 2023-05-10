@@ -18,7 +18,7 @@
         <div class="flex justify-center">
           <div class="relative inline-block">
             <h1
-              class="mb-6 font-bold text-[34px] md:text-5xl lg:text-6xl text-center text-black-600 lg:mb-8 md:text-3xl lg:text-4xl"
+              class="mb-6 font-bold text-[34px] md:text-5xl lg:text-6xl text-center text-black-600 lg:mb-8"
             >
               <span class="bg-animation1"><span class="letter1"><ContentSlot :use="$slots.title1" unwrap="p" /></span></span>
               <span class="bg-animation2"><span class="letter2"><ContentSlot :use="$slots.title2" unwrap="p" /></span></span><br>
@@ -155,6 +155,23 @@ linear-gradient(0deg, #232E4A, #232E4A);
   color: transparent;
   background-clip: text;
   animation: color-change1 8s infinite;
+  z-index: 1;
+}
+
+.letter2 {
+  background-image: linear-gradient(90.2deg, #2D92E9 14.96%, #644AD5 78.93%);
+  color: transparent;
+  background-clip: text;
+  animation:color-change2 8s infinite;
+  z-index: 1;
+}
+
+.letter3 {
+  background-image: linear-gradient(90deg, #F04D66 12.54%, #FD7043 85.97%);
+  color: transparent;
+  background-clip: text;
+  animation:color-change3 8s infinite;
+  z-index: 1;
 }
 
 .bg-animation1 {
@@ -173,14 +190,30 @@ linear-gradient(0deg, #232E4A, #232E4A);
 .bg-animation1::before {
   content: "顧客に";
   position: absolute;
+  display: block;
+  width: 100%;
+  top:3px;
+  left:0;
+  bottom:0;
+  z-index: 0;
 }
 .bg-animation2::before {
   content: "最高の";
   position: absolute;
+  width: 100%;
+  top:3px;
+  left:0;
+  bottom:0;
+  z-index: 0;
 }
 .bg-animation3::before {
   content: "eコマース体験を";
   position: absolute;
+  width: 100%;
+  top:3px;
+  left:0;
+  bottom:0;
+  z-index: 0;
 }
 
 .button1 {
@@ -191,20 +224,6 @@ linear-gradient(0deg, #232E4A, #232E4A);
 }
 .button3 {
   background-image: linear-gradient(90deg, #F04D66 0%, #FD7043 100%);
-}
-
-.letter2 {
-  background-image: linear-gradient(90.2deg, #2D92E9 14.96%, #644AD5 78.93%);
-  color: transparent;
-  background-clip: text;
-  animation:color-change2 8s infinite;
-}
-
-.letter3 {
-  background-image: linear-gradient(90deg, #F04D66 12.54%, #FD7043 85.97%);
-  color: transparent;
-  background-clip: text;
-  animation:color-change3 8s infinite;
 }
 
 @keyframes color-change1 {
