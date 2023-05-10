@@ -20,9 +20,9 @@
             <h1
               class="mb-6 font-bold text-[34px] md:text-5xl lg:text-6xl text-center text-black-600 lg:mb-8 md:text-3xl lg:text-4xl"
             >
-              <span><ContentSlot :use="$slots.title1" unwrap="p" /></span>
-              <span class=""><ContentSlot :use="$slots.title2" unwrap="p" /></span><br>
-              <span><ContentSlot :use="$slots.title3" unwrap="p" /></span>
+              <span class="bg-animation1"><span class="letter1"><ContentSlot :use="$slots.title1" unwrap="p" /></span></span>
+              <span class="bg-animation2"><span class="letter2"><ContentSlot :use="$slots.title2" unwrap="p" /></span></span><br>
+              <span class="bg-animation3"><span class="letter3"><ContentSlot :use="$slots.title3" unwrap="p" /></span></span>
             </h1>
             <svg
               viewBox="0 0 568 505"
@@ -97,25 +97,40 @@
           <ContentSlot :use="$slots.description" unwrap="p" />
         </h2>
         <div class="pt-3 mt-4 mb-2 w-52 mx-auto md:items-center">
-          <ButtonPrimary slug="/request-demo" theme="primary">
+          <!-- <ButtonPrimary slug="/request-demo" theme="primary">
             {{ $t("request-demo") }}
-          </ButtonPrimary>
+          </ButtonPrimary> -->
+          <span class="bg-button bg-button1" />
+          <span class="bg-button bg-button2" />
+          <span class="bg-button bg-button3" />
+          <NuxtLink :to="$localePath('/request-demo')" class="button transition ease-in-out duration-300 hover:opacity-80">
+            <div class="text-white font-bold text-base">
+              {{ $t("request-demo") }}
+            </div>
+          </NuxtLink>
         </div>
       </div>
-      <!-- <div class="hidden md:block md:flex lg:mt-0 lg:col-span-5">
-        <nuxt-img
-          src="https://www.air360.io/wp-content/uploads/2022/08/hero-illustration.webp"
-          alt="Hero image"
-          class="object-scale-down"
-        />
-      </div> -->
     </div>
   </section>
 </template>
 
+<script lang="ts" setup>
+const { $localePath } = useNuxtApp()
+</script>
+
 <style scoped>
-img {
-  transform: scale(-1, 1)
+.button {
+  display: flex;
+  height: 48px;
+  padding: 12px 24px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  width: 100%;
 }
 
 .bg-gradient {
@@ -131,5 +146,154 @@ img {
   position: absolute;
   right: -45px;
   top: -60px;
+}
+
+.letter1 {
+  position: relative;
+  background-image: linear-gradient(90.42deg, #C141AC 20.31%, #E72192 49.67%),
+linear-gradient(0deg, #232E4A, #232E4A);
+  color: transparent;
+  background-clip: text;
+  animation: color-change1 8s infinite;
+}
+
+.bg-animation1 {
+  position: relative;
+  user-select: none;
+}
+.bg-animation2 {
+  position: relative;
+  user-select: none;
+}
+.bg-animation3 {
+  position: relative;
+  user-select: none;
+}
+
+.bg-animation1::before {
+  content: "顧客に";
+  position: absolute;
+}
+.bg-animation2::before {
+  content: "最高の";
+  position: absolute;
+}
+.bg-animation3::before {
+  content: "eコマース体験を";
+  position: absolute;
+}
+
+.button1 {
+  background-image: linear-gradient(90deg, #C141AC 0%, #E72192 100%);
+}
+.button2 {
+  background-image: linear-gradient(90deg, #2D92E9 -2.62%, #644AD5 100%);
+}
+.button3 {
+  background-image: linear-gradient(90deg, #F04D66 0%, #FD7043 100%);
+}
+
+.letter2 {
+  background-image: linear-gradient(90.2deg, #2D92E9 14.96%, #644AD5 78.93%);
+  color: transparent;
+  background-clip: text;
+  animation:color-change2 8s infinite;
+}
+
+.letter3 {
+  background-image: linear-gradient(90deg, #F04D66 12.54%, #FD7043 85.97%);
+  color: transparent;
+  background-clip: text;
+  animation:color-change3 8s infinite;
+}
+
+@keyframes color-change1 {
+    0%,16.667%,to {
+        opacity: 1
+    }
+
+    33.333%,83.333% {
+        opacity: 0
+    }
+}
+
+@keyframes color-change2 {
+    0%,to {
+        opacity: 0
+    }
+
+    33.333%,50% {
+        opacity: 1
+    }
+
+    16.667%,66.667% {
+        opacity: 0
+    }
+}
+
+@keyframes color-change3 {
+    0%,50%,to {
+        opacity: 0
+    }
+
+    66.667%,83.333% {
+        opacity: 1
+    }
+}
+
+.bg-button1 {
+    --start-color: #C141AC;
+    --end-color: #E72192;
+    animation: button-change-color1 8s infinite;
+}
+.bg-button2 {
+    --start-color: #2D92E9;
+    --end-color: #644AD5;
+    animation: button-change-color2 8s infinite;
+}
+.bg-button3 {
+    --start-color: #F04D66;
+    --end-color: #FD7043;
+    animation: button-change-color3 8s infinite;
+}
+
+.bg-button {
+    background-image: linear-gradient(90deg,var(--start-color),var(--end-color));
+    content: "";
+    height: 48px;
+    width: 208px;
+    position: absolute;
+    z-index: -2;
+    border-radius: 8px;
+}
+
+@keyframes button-change-color1 {
+    0%,16.667%,to {
+        opacity: 1
+    }
+
+    33%,83.333% {
+        opacity: 0
+    }
+}
+
+@keyframes button-change-color2 {
+    0%,16.667%,66.667%,to {
+        opacity: 0
+    }
+
+    33.333%,50% {
+        opacity: 1
+    }
+}
+
+@keyframes button-change-color3 {
+    0%,50%,to {
+        opacity: 0
+    }
+
+    66.667%,83.333% {
+        opacity: 1
+    }
 }
 </style>
