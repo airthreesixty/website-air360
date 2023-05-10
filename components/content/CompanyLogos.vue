@@ -5,12 +5,11 @@
         class="grid grid-cols-2 gap-14 gap-x-12 md:grid-cols-3"
       >
         <div v-for="logo in logos" :key="logo.id" class="flex justify-center items-center">
-          <nuxt-img
-            format="webp"
+          <img
             class="h-6 object-contain w-full lg:h-7"
             :src="logo.src"
             :alt="logo.alt"
-          />
+          >
         </div>
       </div>
     </div>
@@ -21,27 +20,27 @@
 const logos = [
   {
     id: 1,
-    src: '/clubMedLogo.png',
+    src: '/logos/clubMed.svg',
     alt: 'Company Logo',
   },
   {
     id: 2,
-    src: '/aristocrazyLogo.png',
+    src: '/logos/aristocrazy.svg',
     alt: 'Company Logo',
   },
   {
     id: 3,
-    src: '/olympiqueLogo.png',
+    src: '/logos/OlympiqueLyonnais.svg',
     alt: 'Company Logo',
   },
   {
     id: 4,
-    src: '/maisonMargielaLogo.png',
+    src: '/logos/MaisonMargiela.svg',
     alt: 'Company Logo',
   },
   {
     id: 5,
-    src: '/qoqaLogo.png',
+    src: '/logos/Qoqa.svg',
     alt: 'Company Logo',
   },
   {
