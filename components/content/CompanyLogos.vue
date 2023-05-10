@@ -20,7 +20,7 @@
 const logos = [
   {
     id: 1,
-    src: '/logos/clubMed.svg',
+    src: '/logos/ClubMed.svg',
     alt: 'Company Logo',
   },
   {
