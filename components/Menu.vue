@@ -95,6 +95,20 @@ const isActive = ref(false)
 const toggleMenu = () => {
   isActive.value = !isActive.value
 }
+
+const handleResize = () => {
+  if (window.innerWidth >= 1024) {
+    isActive.value = false
+  }
+}
+
+onMounted(() => {
+  window.addEventListener('resize', handleResize)
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', handleResize)
+})
 </script>
 
 <style lang="postcss">
@@ -105,11 +119,14 @@ const toggleMenu = () => {
   margin: auto 0px;
   display: block;
   background-color: white;
-  height: 330px;
+  height: 380px;
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
-.menu__modal {
+.menu__link {
   @apply block py-2 pl-3 pr-4 font-semibold text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-600 md:px-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent;
+  .router-link-exact-active & {
+    @apply text-primary-600;
+  }
 }
 </style>
