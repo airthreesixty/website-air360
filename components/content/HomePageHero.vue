@@ -20,8 +20,10 @@
             <h1
               class="mb-6 font-bold text-[34px] md:text-5xl lg:text-6xl text-center text-black-600 lg:mb-8"
             >
-              <span class="bg-animation1"><span class="letter1"><ContentSlot :use="$slots.title1" unwrap="p" /></span></span>
-              <span class="bg-animation2"><span class="letter2"><ContentSlot :use="$slots.title2" unwrap="p" /></span></span><br>
+              <div class="flex justify-center">
+                <span class="bg-animation1"><span class="letter1"><ContentSlot :use="$slots.title1" unwrap="p" /></span></span>
+                <span class="bg-animation2"><span class="letter2"><ContentSlot :use="$slots.title2" unwrap="p" /></span></span>
+              </div>
               <span class="bg-animation3"><span class="letter3"><ContentSlot :use="$slots.title3" unwrap="p" /></span></span>
             </h1>
             <svg
@@ -177,14 +179,17 @@ linear-gradient(0deg, #232E4A, #232E4A);
 .bg-animation1 {
   position: relative;
   user-select: none;
+  display: block;
 }
 .bg-animation2 {
   position: relative;
   user-select: none;
+  display: block;
 }
 .bg-animation3 {
   position: relative;
   user-select: none;
+  display: block;
 }
 
 .bg-animation1::before {
@@ -192,7 +197,7 @@ linear-gradient(0deg, #232E4A, #232E4A);
   position: absolute;
   display: block;
   width: 100%;
-  top:3px;
+  top:0;
   left:0;
   bottom:0;
   z-index: 0;
@@ -201,7 +206,7 @@ linear-gradient(0deg, #232E4A, #232E4A);
   content: "最高の";
   position: absolute;
   width: 100%;
-  top:3px;
+  top:0;
   left:0;
   bottom:0;
   z-index: 0;
@@ -210,7 +215,7 @@ linear-gradient(0deg, #232E4A, #232E4A);
   content: "eコマース体験を";
   position: absolute;
   width: 100%;
-  top:3px;
+  top:0;
   left:0;
   bottom:0;
   z-index: 0;
