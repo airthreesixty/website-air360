@@ -6,7 +6,7 @@
       >
         <div v-for="logo in logos" :key="logo.id" class="flex justify-center items-center">
           <img
-            class="h-6 object-contain w-full lg:h-7"
+            class="h-6.5 object-contain w-full lg:h-7.5"
             :src="logo.src"
             :alt="logo.alt"
           >
