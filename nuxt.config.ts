@@ -40,6 +40,9 @@ export default defineNuxtConfig({
         {
           rel: 'icon', type: 'image/x-icon', href: '/favicon2.png',
         },
+        {
+          rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@700;800;900&family=Noto+Sans+JP:wght@700;800;900&display=swap',
+        },
       ],
       meta: [{ name: 'google-site-verification', content: '27ObPnDVXKchsfaXmRUOoP8wVKLPvIDb30oXYHDgPVU' }],
       htmlAttrs: {
@@ -76,7 +79,6 @@ export default defineNuxtConfig({
   //   locales: ['ja', 'en'],
   //   defaultLocale: ['ja'],
   // },
-
   css: [
     '@fortawesome/fontawesome-svg-core/styles.css',
     '~/assets/css/style.css',
