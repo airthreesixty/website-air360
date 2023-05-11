@@ -9,7 +9,7 @@
       <slot />
     </div>
   </NuxtLink>
-  <NuxtLink v-if="theme === 'outline'" :to="$localePath(slug)" class="button border-2 transition ease-in-out duration-300 hover:opacity-80">
+  <NuxtLink v-if="theme === 'outline'" :to="$localePath(slug)" class="button border-2 button-transparent transition ease-in-out duration-300 hover:opacity-80">
     <div class="text-white font-bold text-base">
       <slot />
     </div>
@@ -207,7 +207,7 @@ onMounted(() => {
 }
 
 .button-transparent .lines > div svg:nth-child(1) {
-  stroke: #01ffc2;
+  /* stroke: #01ffc2; */
 }
 
 .button-transparent .lines>div svg:nth-child(2) {
