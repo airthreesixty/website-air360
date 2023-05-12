@@ -40,7 +40,7 @@
               href="https://esw.com/"
               target="_blank"
               class="text-white bg-primary-600 text-base font-bold mt-5 inline-block transition ease-in-out duration-300 hover:bg-primary-700 rounded-lg px-6 py-3 mb-2 focus:outline-none"
-            >ESWのホームページ</a>
+            >{{ $t('esw-homepage') }}</a>
           </div>
         </div>
       </div>

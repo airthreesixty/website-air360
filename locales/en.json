@@ -38,13 +38,13 @@
   "how-air360-helps3": "オープンソースデータ",
   "clubmed-manager": "クラブメッドのデジタルアナリティクスマネージャー",
   "clubmed-pic": "クラブメッドのリゾート地写真",
-  "moz-founder": "Moz.comの創設者",
+  "moz-founder": "Founder, Moz.com",
   "avatar": "アバター",
   "air360-team": "Air360 team",
   "successfully-submitted": "フォームの送信に成功しました。",
   "newsletter-title": "最新のコンテンツを受信トレイに直接お届けします",
   "newsletter-subtitle": "ニュースレターに登録して、最新のコンテンツを手に入れましょう。購読停止はいつでも可能です。",
-  "error-message": "お探しのページは見つかりませんでした",
+  "error-message": "The page you are looking for was not found.",
   "no-search-result": "no articles found",
   "how-to-increase-conversion": "Inspiration for conversion heroes",
   "try-air360": "Try Air360",
@@ -52,5 +52,6 @@
   "related-articles": "Related articles",
   "load-articles": "Load articles",
   "get-started": "Get Started",
-  "cta-description": "If you want to improve user experience and increase conversions, Air360 allows you to add a few lines of code to start analyzing and gaining insights quickly."
+  "cta-description": "If you want to improve user experience and increase conversions, Air360 allows you to add a few lines of code to start analyzing and gaining insights quickly.",
+  "esw-homepage": "ESW Homepage"
 }
