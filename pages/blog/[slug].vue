@@ -106,7 +106,7 @@
                 </article>
               </div>
               <div class="hidden lg:block w-[34%]">
-                <div class="prose sticky top-30">
+                <div class="prose sticky top-30 h-[60vh] overflow-scroll">
                   <TableOfContents :paragraph-titles="paragraphTitles" />
                 </div>
               </div>
