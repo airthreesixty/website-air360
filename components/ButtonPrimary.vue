@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink v-if="theme === 'primary'" :to="$localePath(slug)" class="button bg-primary-600 transition ease-in-out duration-300 hover:bg-primary-700">
+  <NuxtLink v-if="theme === 'primary'" :to="$localePath(slug)" class="button button-primary transition ease-in-out duration-300 hover:bg-primary-700">
     <div class=" text-white font-bold text-base">
       <slot />
     </div>
@@ -188,7 +188,7 @@ onMounted(() => {
 }
 
 .button-primary .lines>div svg:nth-child(1) {
-  stroke: #4ba6e7
+  /* stroke: #4ba6e7 */
 }
 
 .button-primary .lines>div svg:nth-child(2) {
