@@ -129,7 +129,7 @@ const { $i18n, $localePath } = useNuxtApp()
 const route = useRoute()
 const router = useRouter()
 const fullPath = route.fullPath
-const activeTocId = ref(null)
+const activeTocId = ref<String | null>(null)
 const nuxtContent = ref(null)
 
 // TODO the value from the plugin is wrong, remove _value when it's fixed

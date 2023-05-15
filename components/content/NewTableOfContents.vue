@@ -123,11 +123,11 @@ li > ul {
   position: absolute;
   top: 11.5px;
   background: #B1D1FF;
-  width: 9px;
-  height: 9px;
-  left: -14.5px;
+  width: 12px;
+  height: 12px;
+  left: -15.5px;
   border-radius: 100%;
-  border: 2px solid #fff;
+  border: 3.5px solid #fff;
 }
 
 .active::before {
