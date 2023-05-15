@@ -1,10 +1,10 @@
 <template>
   <div class="flex justify-center my-16">
-    <div class="border-2 border-blue-300 max-w-md">
-      <h2 class="text-center !bg-blue-300 !border-none toc">
+    <div class="max-w-md">
+      <!-- <h2 class="text-center !bg-blue-300 !border-none toc">
         <fa-icon class="" :icon="['fa', 'table']" />
         {{ $t('contents') }}
-      </h2>
+      </h2> -->
       <div class="px-3">
         <ul class="toc-lists">
           <li v-for="{id, text, children} in paragraphTitles" :key="id" class="bullet-point" :class="{ 'active': id === activeTocId } ">
