@@ -18,13 +18,23 @@
         <div class="flex justify-center">
           <div class="relative inline-block">
             <h1
+              v-if="locale === 'ja'"
               class="mb-6 font-title text-[34px] tracking-wide md:text-5xl lg:text-7xl text-center text-black-600 lg:mb-8"
             >
               <div class="flex justify-center">
-                <span class="bg-animation1" style="--content: 'The best'"><span class="letter1">{{ $t('title1') }}</span></span>
-                <span class="bg-animation2" style="--content: 'CX'"><span class="letter2">{{ $t('title2') }}</span></span>
+                <span class="bg-animation1" style="--content: '顧客に'"><span class="letter1">{{ $t('title1') }}</span></span>
+                <span class="bg-animation2" style="--content: '最高の'"><span class="letter2">{{ $t('title2') }}</span></span>
               </div>
-              <span class="bg-animation3" style="--content: 'for customers'"><span class="letter3">{{ $t('title3') }}</span></span>
+              <span class="bg-animation3" style="--content: 'eコマース体験を'"><span class="letter3">{{ $t('title3') }}</span></span>
+            </h1>
+            <h1
+              v-if="locale === 'en'"
+              class="mb-6 font-title text-[34px] tracking-wide md:text-5xl lg:text-7xl text-center text-black-600 lg:mb-8"
+            >
+              <span class="bg-animation1" style="--content: 'The best'"><span class="letter1">{{ $t('title1') }}</span></span>
+              <span class="bg-animation2" style="--content: 'CX'"><span class="letter2">{{ $t('title2') }}</span></span>
+
+              <span class="bg-animation3" style="--content: 'for your customers'"><span class="letter3">{{ $t('title3') }}</span></span>
             </h1>
             <svg
               viewBox="0 0 568 505"
@@ -118,6 +128,7 @@
 
 <script lang="ts" setup>
 const { $localePath } = useNuxtApp()
+const { locale } = useI18n()
 </script>
 
 <style scoped>
