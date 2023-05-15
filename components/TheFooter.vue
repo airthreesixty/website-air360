@@ -72,7 +72,7 @@
             </li>
             <li class="mb-4">
               <a
-                href="https://en-jp.wantedly.com/companies/company_4114459"
+                :href="url"
                 class="hover:underline"
                 target="_blank"
               >{{ $t("careers") }}<fa-icon class="fa-sm pl-1" :icon="['fas', 'arrow-up-right-from-square']" /></a>
@@ -142,4 +142,13 @@
 
 <script setup lang="ts">
 const { $localePath } = useNuxtApp()
+const { locale } = useI18n()
+const lang = locale.value
+const url = computed(() => {
+  if (lang === 'en') {
+    return 'https://careers.scalefast.com/'
+  }
+
+  return 'https://www.wantedly.com/companies/company_4114459'
+})
 </script>

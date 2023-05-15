@@ -14,7 +14,7 @@ Job title*
 #message
 Message*
 #companyInfo
-会社情報：
+Company：
 #companyName
 Scalefast
 #location

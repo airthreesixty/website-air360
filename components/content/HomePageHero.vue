@@ -21,10 +21,10 @@
               class="mb-6 font-title text-[34px] tracking-wide md:text-5xl lg:text-7xl text-center text-black-600 lg:mb-8"
             >
               <div class="flex justify-center">
-                <span class="bg-animation1"><span class="letter1"><ContentSlot :use="$slots.title1" unwrap="p" /></span></span>
-                <span class="bg-animation2"><span class="letter2"><ContentSlot :use="$slots.title2" unwrap="p" /></span></span>
+                <span class="bg-animation1" style="--content: 'The best'"><span class="letter1">{{ $t('title1') }}</span></span>
+                <span class="bg-animation2" style="--content: 'CX'"><span class="letter2">{{ $t('title2') }}</span></span>
               </div>
-              <span class="bg-animation3"><span class="letter3"><ContentSlot :use="$slots.title3" unwrap="p" /></span></span>
+              <span class="bg-animation3" style="--content: 'for customers'"><span class="letter3">{{ $t('title3') }}</span></span>
             </h1>
             <svg
               viewBox="0 0 568 505"
@@ -144,7 +144,6 @@ const { $localePath } = useNuxtApp()
   width: 100%;
   background: linear-gradient(101.87deg, #2D92E9 4.15%, #644AD5 22.36%, #C141AC 41.56%, #E72192 61.75%, #F04D66 78.49%, #FD7043 98.68%);
   transform: skewY(-8deg) translateY(-150px);
-  /* transform-origin: top left; */
   position: absolute;
   top: auto;
 }
@@ -198,7 +197,7 @@ linear-gradient(0deg, #232E4A, #232E4A);
 }
 
 .bg-animation1::before {
-  content: "顧客に";
+  content: var(--content);
   position: absolute;
   display: block;
   width: 100%;
@@ -208,7 +207,7 @@ linear-gradient(0deg, #232E4A, #232E4A);
   z-index: 0;
 }
 .bg-animation2::before {
-  content: "最高の";
+  content: var(--content);
   position: absolute;
   width: 100%;
   top:0;
@@ -217,7 +216,7 @@ linear-gradient(0deg, #232E4A, #232E4A);
   z-index: 0;
 }
 .bg-animation3::before {
-  content: "eコマース体験を";
+  content: var(--content);
   position: absolute;
   width: 100%;
   top:0;

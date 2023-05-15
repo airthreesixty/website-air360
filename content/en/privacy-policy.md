@@ -3,7 +3,7 @@ title: Privacy Policy
 ---
 
 # Scalefast Privacy Policy
-更新日： 2022-12
+Updated： December, 2022
 ## Preamble 
 This Privacy policy applies to the website www.air360.io. 
 
