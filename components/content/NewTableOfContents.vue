@@ -8,7 +8,7 @@
       <div class="px-3">
         <ul class="toc-lists">
           <li v-for="{id, text, children} in paragraphTitles" :key="id" class="bullet-point" :class="{ 'active': id === activeTocId } ">
-            <nuxt-link :to="`#${id}`" :class="{ '!font-bold': id === activeTocId, '!text-black-600': id === activeTocId } ">
+            <nuxt-link :to="`#${id}`" class="!font-bold" :class="{'!text-black-600': id === activeTocId } ">
               {{ text }}
             </nuxt-link>
             <ul v-if="children">
