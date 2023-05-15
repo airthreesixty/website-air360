@@ -99,15 +99,15 @@
                     </h1>
                     <nuxt-img format="webp" :src="data.image" :alt="data.title" class="h-90 mb-10 rounded-lg w-full object-cover" />
                   </header>
-                  <div class="prose">
-                    <TableOfContents :paragraph-titles="paragraphTitles" class="lg:hidden" />
-                    <ContentRendererMarkdown :value="data" />
+                  <div class="prose nuxt-content">
+                    <NewTableOfContents :paragraph-titles="paragraphTitles" class="lg:hidden" />
+                    <ContentRendererMarkdown ref="nuxtContent" :value="data" />
                   </div>
                 </article>
               </div>
               <div class="hidden lg:block w-[34%]">
-                <div class="prose sticky top-30 h-[60vh] overflow-scroll">
-                  <TableOfContents :paragraph-titles="paragraphTitles" />
+                <div class="prose sticky top-30">
+                  <NewTableOfContents :paragraph-titles="paragraphTitles" :active-toc-id="activeTocId" />
                 </div>
               </div>
             </div>
@@ -129,6 +129,8 @@ const { $i18n, $localePath } = useNuxtApp()
 const route = useRoute()
 const router = useRouter()
 const fullPath = route.fullPath
+const activeTocId = ref(null)
+const nuxtContent = ref(null)
 
 // TODO the value from the plugin is wrong, remove _value when it's fixed
 const { data } = await useAsyncData(`blog-${route.params.slug}/`, () =>
@@ -137,7 +139,32 @@ const { data } = await useAsyncData(`blog-${route.params.slug}/`, () =>
   ).findOne(),
 )
 
-const paragraphTitles = data._rawValue.body.toc.links
+const paragraphTitles = computed(() => data._rawValue.body.toc.links ?? [])
+
+const observer: Ref<IntersectionObserver | null | undefined> = ref(null)
+const observerOptions = reactive({
+  root: nuxtContent.value,
+  threshold: 0.5,
+})
+
+onMounted(() => {
+  observer.value = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      const id = entry.target.getAttribute('id')
+      if (entry.isIntersecting) {
+        activeTocId.value = id
+      }
+    })
+  }, observerOptions)
+
+  document.querySelectorAll('.nuxt-content h2[id], .nuxt-content h3[id]').forEach((section) => {
+    observer.value?.observe(section)
+  })
+})
+
+onUnmounted(() => {
+  observer.value?.disconnect()
+})
 
 if (!data.value) {
   router.push($localePath('/blog'))
