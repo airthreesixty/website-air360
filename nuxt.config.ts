@@ -51,9 +51,6 @@ export default defineNuxtConfig({
     ],
     defaultLocale: 'en',
     langDir: 'locales',
-    vueI18n: {
-      fallbackLocale: 'en',
-    },
     detectBrowserLanguage: {
       useCookie: true,
     },
