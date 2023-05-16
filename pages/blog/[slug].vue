@@ -126,6 +126,7 @@ import { useSeoMeta } from '@unhead/vue'
 import { BlogArticle } from '~~/interfaces/blog'
 
 const { $i18n, $localePath } = useNuxtApp()
+const runtimeConfig = useRuntimeConfig()
 const route = useRoute()
 const router = useRouter()
 const fullPath = route.fullPath
@@ -150,6 +151,6 @@ useSeoMeta({
   ogDescription: data.value?.metaDesc,
   ogImage: data.value?.image,
   twitterCard: 'summary_large_image',
-  ogUrl: `https://air360.io/${$i18n.locale._value}${fullPath}`,
+  ogUrl: `${runtimeConfig.public.baseUrl}${fullPath}`,
 })
 </script>

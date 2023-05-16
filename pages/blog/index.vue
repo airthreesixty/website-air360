@@ -9,27 +9,15 @@ const { $i18n } = useNuxtApp()
 const route = useRoute()
 const runtimeConfig = useRuntimeConfig()
 
-if ($i18n.locale.value === 'ja') {
-  useSeoMeta({
-    title: 'ブログ',
-    description: 'eコマースUXの最新トレンド、コンバージョン率向上のためのヒントやコツ、Air360がどのように提供できるかをご紹介します。',
-    ogDescription: 'eコマースUXの最新トレンド、コンバージョン率向上のためのヒントやコツ、Air360がどのように提供できるかをご紹介します。',
-    ogTitle: 'Air360 - ブログ',
-    ogImage: 'https://air360.io/wp-content/uploads/2022/11/conversion-rate-optimization.jpg',
-    twitterCard: 'summary_large_image',
-    ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
-  })
-} else {
-  useSeoMeta({
-    title: 'Blog',
-    description: 'Learn about the latest trends in eCommerce UX, tips and tricks for improving conversion rates, and how Air360 can help you deliver.',
-    ogDescription: 'Learn about the latest trends in eCommerce UX, tips and tricks for improving conversion rates, and how Air360 can help you deliver.',
-    ogTitle: 'Air360 - Blog',
-    ogImage: 'https://air360.io/wp-content/uploads/2022/11/conversion-rate-optimization.jpg',
-    twitterCard: 'summary_large_image',
-    ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
-  })
-}
+useSeoMeta({
+  title: $i18n.t('blog-index.title'),
+  description: $i18n.t('blog-index.description'),
+  ogDescription: $i18n.t('blog-index.ogDescription'),
+  ogTitle: `Air360 - ${$i18n.t('blog-index.title')}`,
+  ogImage: $i18n.t('blog-index.ogImage'),
+  twitterCard: 'summary_large_image',
+  ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
+})
 
 // TODO the value from the plugin is wrong, remove _value when it's fixed
 const { data } = await useAsyncData('blog', () =>

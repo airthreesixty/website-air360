@@ -82,10 +82,21 @@
     "product": {
       "title": "製品",
       "description": "Air360では顧客の行動を自動でトラッキングし、Chrome拡張機能やセッションリプレイ等様々な機能で簡単に顧客にとって最善のウェブサイトを目指せます。",
-      "ogDescription": "Air360では顧客の行動を自動でトラッキングし、Chrome拡張機能やセッションリプレイ等様々な機能で簡単に顧客にとって最善のウェブサイトを目指せます。"
+      "ogDescription": "Air360では顧客の行動を自動でトラッキングし、Chrome拡張機能やセッションリプレイ等様々な機能で簡単に顧客にとって最善のウェブサイトを目指せます。",
+      "ogImage": "/en/sunburst.png"
   },
   "request-demo": {
     "title": "デモのリクエスト",
     "content": "簡単なフォームにご記入いただければ、お客様のニーズに合わせたAir360のご提案をさせていただきます。"
+  },
+    "blog-index": {
+    "title": "ブログ",
+    "description": "eコマースUXの最新トレンド、コンバージョン率向上のためのヒントやコツ、Air360がどのように提供できるかをご紹介します。",
+    "ogDescription": "eコマースUXの最新トレンド、コンバージョン率向上のためのヒントやコツ、Air360がどのように提供できるかをご紹介します。",
+    "ogImage": "https://air360.io/wp-content/uploads/2022/11/conversion-rate-optimization.jpg"
+  },
+  "blog-name": {
+    "description": "eコマースUXの最新トレンド、コンバージョン率向上のためのヒントやコツ、Air360がどのように提供できるかをご紹介します。",
+    "ogDescription": "eコマースUXの最新トレンド、コンバージョン率向上のためのヒントやコツ、Air360がどのように提供できるかをご紹介します。"
   }
 }
