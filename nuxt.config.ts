@@ -29,10 +29,11 @@ export default defineNuxtConfig({
       algoliaApplicationId: process.env.ALGOLIA_APPLICATION_ID,
       algoliaDocsearchIndexName: process.env.ALGOLIA_DOCSEARCH_INDEX_NAME,
       trailingSlash: true,
+      baseUrl: process.env.BASE_URL,
     },
   },
   schemaOrg: {
-    host: 'https://air360.io/',
+    host: process.env.BASE_URL,
   },
   app: {
     head: {
@@ -48,6 +49,7 @@ export default defineNuxtConfig({
     },
   },
   i18n: {
+    strategy: 'prefix',
     locales: [
       { code: 'en', iso: 'en-US', file: 'en.json', name: 'English' },
       { code: 'ja', iso: 'ja-JP', file: 'ja.json', name: '日本語' },
@@ -57,7 +59,9 @@ export default defineNuxtConfig({
     vueI18n: {
       fallbackLocale: 'en',
     },
-    detectBrowserLanguage: false,
+    detectBrowserLanguage: {
+      useCookie: true,
+    },
     trailingSlash: true,
     baseUrl: 'https://air360.io/',
   },

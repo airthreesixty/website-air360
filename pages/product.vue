@@ -13,7 +13,7 @@ if ($i18n.locale._value === 'ja') {
     ogTitle: 'Air360 - 製品',
     ogImage: '/sunburst.png',
     twitterCard: 'summary_large_image',
-    ogUrl: 'https://air360.io/product/ja/',
+    ogUrl: 'https://air360.io/ja/product/',
   })
 } else {
   useSeoMeta({
@@ -23,7 +23,7 @@ if ($i18n.locale._value === 'ja') {
     ogTitle: 'Air360 - Product',
     ogImage: '/en/sunburst.png',
     twitterCard: 'summary_large_image',
-    ogUrl: 'https://air360.io/product/en/',
+    ogUrl: 'https://air360.io/en/product/',
   })
 }
 
