@@ -212,36 +212,19 @@ const submitForm = async () => {
   }
 }
 
-if ($i18n.locale._value === 'ja') {
-  useSchemaOrg([
-    defineOrganization({
-      name: 'Scalefast Japan',
-      address: {
-        streetAddress: '京橋3-1-1 東京スクエアガーデン 14F',
-        addressLocality: '中央区',
-        addressRegion: '東京都',
-        postalCode: '104-0031',
-        addressCountry: '日本',
-
-      },
-      sameAs: ['https://www.linkedin.com/company/air360/', 'https://twitter.com/weareair360', 'https://www.instagram.com/weareair360/'],
-    }),
-  ])
-} else {
-  useSchemaOrg([
-    defineOrganization({
-      name: 'Scalefast',
-      address: {
-        streetAddress: 'Calle de Méndez Álvaro, 9, Pl, 4ª',
-        addressRegion: 'Madrid',
-        postalCode: '28045',
-        addressCountry: 'Spain',
-
-      },
-      sameAs: ['https://www.linkedin.com/company/air360/', 'https://twitter.com/weareair360', 'https://www.instagram.com/weareair360/'],
-    }),
-  ])
-}
+useSchemaOrg([
+  defineOrganization({
+    name: $i18n.t('organization.name'),
+    address: {
+      streetAddress: $i18n.t('organization.address.streetAddress'),
+      addressLocality: $i18n.t('organization.address.addressLocality') || '',
+      addressRegion: $i18n.t('organization.address.addressRegion'),
+      postalCode: $i18n.t('organization.address.postalCode'),
+      addressCountry: $i18n.t('organization.address.addressCountry'),
+    },
+    sameAs: ['https://www.linkedin.com/company/air360/', 'https://twitter.com/weareair360', 'https://www.instagram.com/weareair360/'],
+  }),
+])
 </script>
 
 <style lang="postcss">

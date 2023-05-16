@@ -52,7 +52,7 @@
               <div
                 class="menu__link"
               >
-                {{ $t("product") }}
+                {{ $t("product.title") }}
               </div>
             </NuxtLink>
           </li>
@@ -78,7 +78,7 @@
           <hr v-if="isActive" class="h-1 w-2/3">
           <li class="py-2">
             <ButtonPrimary slug="/request-demo" theme="primary">
-              {{ $t("request-demo") }}
+              {{ $t("request-demo.title") }}
             </ButtonPrimary>
           </li>
         </ul>

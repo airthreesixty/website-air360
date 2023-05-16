@@ -117,7 +117,7 @@
           <span class="bg-button bg-button3" />
           <NuxtLink :to="$localePath('/request-demo')" class="button transition ease-in-out duration-300 hover:opacity-80">
             <div class="text-white font-bold text-base">
-              {{ $t("request-demo") }}
+              {{ $t("request-demo.title") }}
             </div>
           </NuxtLink>
         </div>

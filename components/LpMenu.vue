@@ -51,7 +51,7 @@
               <div
                 :class="isActive ? 'menu__modal' : 'lp-menu__link'"
               >
-                {{ $t("product") }}
+                {{ $t("product.title") }}
               </div>
             </NuxtLink>
           </li>
@@ -77,7 +77,7 @@
           <hr v-if="isActive" class="h-1 w-2/3">
           <li v-if="!isActive" class="py-2">
             <ButtonPrimary slug="/request-demo" theme="outline">
-              {{ $t("request-demo") }}
+              {{ $t("request-demo.title") }}
             </ButtonPrimary>
           </li>
         </ul>

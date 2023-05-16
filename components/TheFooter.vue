@@ -80,7 +80,7 @@
             <li>
               <NuxtLink :to="$localePath('/privacy-policy')">
                 <div class="hover:underline">
-                  {{ $t("privacy-policy") }}
+                  {{ $t("privacy-policy.title") }}
                 </div>
               </NuxtLink>
             </li>
@@ -103,7 +103,7 @@
             <li class="mb-4">
               <NuxtLink :to="$localePath('/product')">
                 <div class="hover:underline">
-                  {{ $t("product") }}
+                  {{ $t("product.title") }}
                 </div>
               </NuxtLink>
             </li>
@@ -119,7 +119,7 @@
             <li class="mb-4">
               <NuxtLink :to="$localePath('/request-demo')">
                 <div class="hover:underline">
-                  {{ $t("request-demo") }}
+                  {{ $t("request-demo.title") }}
                 </div>
               </NuxtLink>
             </li>

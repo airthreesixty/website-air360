@@ -135,7 +135,7 @@
                 :class="{'opacity-25 cursor-not-allowed': !isFormValid }"
                 :disabled="!isFormValid"
               >
-                {{ $t('request-demo') }}
+                {{ $t('request-demo.title') }}
               </button>
             </form>
           </div>

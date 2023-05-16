@@ -1,6 +1,5 @@
 {
   "home": "Home",
-  "product": "Product",
   "pricing": "Price",
   "inspiration": "Inspiration",
   "login": "Login",
@@ -11,12 +10,10 @@
   "open-data": "オープンデータ",
   "behavioral-segments": "行動セグメンテーション",
   "careers": "Careers",
-  "privacy-policy": "Privacy Policy",
   "blog": "Blog",
   "contact-us": "Contact",
   "company": "Company",
   "help": "Help",
-  "request-demo": "Request Demo",
   "more": "もっと詳しく",
   "tag": {
     "all": "All",
@@ -58,5 +55,37 @@
   "part-of": "part of",
   "title1": "The best",
   "title2": "CX",
-  "title3": "for customers"
+  "title3": "for customers",
+  "organization": {
+    "name": "Scalefast",
+    "address": {
+      "streetAddress": "Calle de Méndez Álvaro, 9, Pl, 4ª",
+      "addressRegion": "Madrid",
+      "postalCode": "28045",
+      "addressCountry": "Spain"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "content": "How can we help you. Linkedin Twitter Instagram About Us ESW - Careers - Privacy Policy - Inspiration - Blog - Help - Request a Demo - Contact Us - Login"
+  },
+  "index": {
+    "title": "Air360 - The best UX analysis tool for e-commerce",
+    "description": "Air360 is a tool for analyzing the customer experience on your website. Data reveals hidden user behavior and improves conversion rates.",
+    "ogDescription": "Air360 is a tool for analyzing the customer experience on your website. Data reveals hidden user behavior and improves conversion rates.",
+    "ogTitle": "Air360 - The best UX analysis tool for e-commerce"
+  },
+  "privacy-policy": {
+    "title": "Privacy Policy",
+    "content": "We respect the privacy of our customers, partners, suppliers of products or services, and clients. The purpose of this Privacy Policy is to provide you with information about how we collect personal information when you use this Web site; how we collect other information about your interactions with this Web site without identifying you as an individual; how we use, process, and disclose the information we collect; and your choices about how the information information about your choices regarding how the information is collected and used."
+  },
+  "product": {
+    "title": "Product",
+    "description": "Air360 automatically tracks customer behavior and makes it easy to create the best website for your customers with a variety of features such as Chrome extensions and session replay.",
+    "ogDescription": "Air360 automatically tracks customer behavior and makes it easy to create the best website for your customers with a variety of features such as Chrome extensions and session replay."
+  },
+  "request-demo": {
+    "title": "Request Demo",
+    "content": "Fill out the short form and book a quick call with a CRO expert so we can tailor our Air360 offer to your needs. "
+  }
 }
