@@ -135,6 +135,18 @@
             </li>
           </ul>
         </div>
+        <div>
+          <h2
+            class="mb-6 text-sm font-semibold text-black-600 uppercase dark:text-white"
+          >
+            {{ $t("language") }}
+          </h2>
+          <ul class="text-gray-700 dark:text-gray-400">
+            <li class="mb-4">
+              <LangSwitcher />
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </footer>
