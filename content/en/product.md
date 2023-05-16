@@ -11,28 +11,28 @@ Easy customer behavior analysis
 Air360 automatically tracks customer behavior and makes it easy to create the best website for your customers with a variety of features such as Chrome extensions and session replay.
 ::
 
-::single-description{imagePath="/sessionReplay.webp" alt="Session replay" icon="/icons/iconSessionReplay.svg"}
+::single-description{imagePath="/en/sessionReplay.jpeg" alt="Session replay" icon="/icons/iconSessionReplay.svg"}
 #title
 Session Replay
 #description
 Video of customer behavior on the website can be viewed. By confirming the actual customer experience, the causes of customer disengagement and frustration can be easily identified.
 ::
 
-::single-description{imagePath="/smartDescription.webp" imageStatus="block" imageStatus2="hidden" alt="On-page analytics" icon="/icons/iconOnPage.svg" themeColor="#FA734C"}
+::single-description{imagePath="/en/smartDescription.webp" imageStatus="block" imageStatus2="hidden" alt="On-page analytics" icon="/icons/iconOnPage.svg" themeColor="#FA734C"}
 #title
 On-page analytics
 #description
 Analyze next to the actual website with the Chrome Extension. Simply click on the areas of interest to reveal customer behavior, purchase rates, and more.
 ::
 
-::single-description{imagePath="/funnel.png" alt="Funnel" icon="/icons/iconFunnel.svg" themeColor="#3C8BFF" }
+::single-description{imagePath="/en/funnel.png" alt="Funnel" icon="/icons/iconFunnel.svg" themeColor="#3C8BFF" }
 #title
 Funnel analysis
 #description
 For each web page or event that a customer has performed, a graph will show where the cause of disengagement is located and provide an overall picture of the cause.
 ::
 
-::single-description{imagePath="/sunburst.png" imageStatus="block" imageStatus2="hidden" alt="User journey" icon="/icons/iconCustomerJourney.svg"}
+::single-description{imagePath="/en/sunburst.png" imageStatus="block" imageStatus2="hidden" alt="User journey" icon="/icons/iconCustomerJourney.svg"}
 #title
 User journey
 #description

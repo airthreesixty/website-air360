@@ -7,10 +7,21 @@
 </template>
 
 <script setup lang="ts">
-useHead({
-  title: 'プライバシーポリシー',
-  meta: [
-    { hid: 'description', name: 'description', content: '当社は、当社の顧客、パートナー、製品またはサービスの供給者、および顧客のプライバシーを尊重します。このプライバシーポリシーの目的は、お客様がこのウェブサイトを利用する際に、個人情報をどのように収集するか、また、お客様を個人として特定せずにこのウェブサイトとのやり取りに関するその他の情報をどのように収集するか、収集した情報の使用、処理、開示方法、および情報の収集と使用の方法に関するお客様の選択肢に関する情報をお客様に提供することです。' },
-  ],
-})
+const { $i18n } = useNuxtApp()
+
+if ($i18n.locale._value === 'ja') {
+  useHead({
+    title: 'プライバシーポリシー',
+    meta: [
+      { hid: 'description', name: 'description', content: 'We respect the privacy of our customers, partners, suppliers of products or services, and clients. The purpose of this Privacy Policy is to provide you with information about how we collect personal information when you use this Web site; how we collect other information about your interactions with this Web site without identifying you as an individual; how we use, process, and disclose the information we collect; and your choices about how the information information about your choices regarding how the information is collected and used.' },
+    ],
+  })
+} else {
+  useHead({
+    title: 'Privacy Policy',
+    meta: [
+      { hid: 'description', name: 'description', content: 'We respect the privacy of our customers, partners, suppliers of products or services, and clients. The purpose of this Privacy Policy is to provide you with information about how we collect personal information when you use this Web site; how we collect other information about your interactions with this Web site without identifying you as an individual; how we use, process, and disclose the information we collect; and your choices about how the information information about your choices regarding how the information is collected and used.' },
+    ],
+  })
+}
 </script>

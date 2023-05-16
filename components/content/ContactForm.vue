@@ -163,6 +163,8 @@ import axios from 'axios'
 import { useVuelidate } from '@vuelidate/core'
 import { required, email } from '~/utils/i18n-validators'
 
+const { $i18n } = useNuxtApp()
+
 const formData = reactive({
   name: '',
   email: '',
@@ -210,20 +212,36 @@ const submitForm = async () => {
   }
 }
 
-useSchemaOrg([
-  defineOrganization({
-    name: 'Scalefast Japan',
-    address: {
-      streetAddress: '京橋3-1-1 東京スクエアガーデン 14F',
-      addressLocality: '中央区',
-      addressRegion: '東京都',
-      postalCode: '104-0031',
-      addressCountry: '日本',
+if ($i18n.locale._value === 'ja') {
+  useSchemaOrg([
+    defineOrganization({
+      name: 'Scalefast Japan',
+      address: {
+        streetAddress: '京橋3-1-1 東京スクエアガーデン 14F',
+        addressLocality: '中央区',
+        addressRegion: '東京都',
+        postalCode: '104-0031',
+        addressCountry: '日本',
 
-    },
-    sameAs: ['https://www.linkedin.com/company/air360/', 'https://twitter.com/weareair360', 'https://www.instagram.com/weareair360/'],
-  }),
-])
+      },
+      sameAs: ['https://www.linkedin.com/company/air360/', 'https://twitter.com/weareair360', 'https://www.instagram.com/weareair360/'],
+    }),
+  ])
+} else {
+  useSchemaOrg([
+    defineOrganization({
+      name: 'Scalefast',
+      address: {
+        streetAddress: 'Calle de Méndez Álvaro, 9, Pl, 4ª',
+        addressRegion: 'Madrid',
+        postalCode: '28045',
+        addressCountry: 'Spain',
+
+      },
+      sameAs: ['https://www.linkedin.com/company/air360/', 'https://twitter.com/weareair360', 'https://www.instagram.com/weareair360/'],
+    }),
+  ])
+}
 </script>
 
 <style lang="postcss">
