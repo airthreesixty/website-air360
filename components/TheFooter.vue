@@ -131,7 +131,7 @@
               </NuxtLink>
             </li>
             <li>
-              <a href="https://beta.air360.io/" target="_blank" class="hover:underline">{{ $t("login") }}<fa-icon class="fa-sm pl-1" :icon="['fas', 'arrow-up-right-from-square']" /></a>
+              <a :href="runtimeConfig.public.appUrl" target="_blank" class="hover:underline">{{ $t("login") }}<fa-icon class="fa-sm pl-1" :icon="['fas', 'arrow-up-right-from-square']" /></a>
             </li>
           </ul>
         </div>
@@ -143,6 +143,8 @@
 <script setup lang="ts">
 const { $localePath } = useNuxtApp()
 const { locale } = useI18n()
+const runtimeConfig = useRuntimeConfig()
+
 const lang = locale.value
 const url = computed(() => {
   if (lang === 'en') {

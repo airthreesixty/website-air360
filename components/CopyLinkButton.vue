@@ -11,9 +11,8 @@
 <script setup lang="ts">
 import { useClipboard } from '@vueuse/core'
 const runtimeConfig = useRuntimeConfig()
-const { $i18n } = useNuxtApp()
 const route = useRoute()
 
-const source = computed(() => `${runtimeConfig.public.baseUrl}/${$i18n.locale._value}${route.fullPath}`)
+const source = computed(() => `${runtimeConfig.public.baseUrl}${route.fullPath}`)
 const { copy } = useClipboard({ source })
 </script>

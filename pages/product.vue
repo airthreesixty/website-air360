@@ -4,6 +4,8 @@
 
 <script setup lang="ts">
 const { $i18n } = useNuxtApp()
+const route = useRoute()
+const runtimeConfig = useRuntimeConfig()
 
 if ($i18n.locale._value === 'ja') {
   useSeoMeta({
@@ -13,7 +15,7 @@ if ($i18n.locale._value === 'ja') {
     ogTitle: 'Air360 - 製品',
     ogImage: '/sunburst.png',
     twitterCard: 'summary_large_image',
-    ogUrl: 'https://air360.io/ja/product/',
+    ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
   })
 } else {
   useSeoMeta({
@@ -23,7 +25,7 @@ if ($i18n.locale._value === 'ja') {
     ogTitle: 'Air360 - Product',
     ogImage: '/en/sunburst.png',
     twitterCard: 'summary_large_image',
-    ogUrl: 'https://air360.io/en/product/',
+    ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
   })
 }
 

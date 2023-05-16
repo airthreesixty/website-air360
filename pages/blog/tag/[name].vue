@@ -8,8 +8,8 @@
 const { $i18n, $localePath } = useNuxtApp()
 const route = useRoute()
 const router = useRouter()
+const runtimeConfig = useRuntimeConfig()
 
-// TODO english version as well
 if ($i18n.locale.value === 'ja') {
   useSeoMeta({
     title: route.params.name as string,
@@ -17,7 +17,7 @@ if ($i18n.locale.value === 'ja') {
     description: 'eコマースUXの最新トレンド、コンバージョン率向上のためのヒントやコツ、Air360がどのように提供できるかをご紹介します。',
     ogDescription: 'eコマースUXの最新トレンド、コンバージョン率向上のためのヒントやコツ、Air360がどのように提供できるかをご紹介します。',
     twitterCard: 'summary_large_image',
-    ogUrl: `https://air360.io/ja/blog/tag/${route.params.name}/`,
+    ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
   })
 } else {
   useSeoMeta({
@@ -26,7 +26,7 @@ if ($i18n.locale.value === 'ja') {
     description: 'Learn about the latest trends in eCommerce UX, tips and tricks for improving conversion rates, and how Air360 can help you deliver.',
     ogDescription: 'Learn about the latest trends in eCommerce UX, tips and tricks for improving conversion rates, and how Air360 can help you deliver.',
     twitterCard: 'summary_large_image',
-    ogUrl: `https://air360.io/en/blog/tag/${route.params.name}/`,
+    ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
   })
 }
 // TODO the value from the plugin is wrong, remove _value when it's fixed

@@ -7,6 +7,7 @@
 <script setup lang="ts">
 import { useSeoMeta } from '@unhead/vue'
 const { $i18n } = useNuxtApp()
+const runtimeConfig = useRuntimeConfig()
 
 definePageMeta({
   layout: false,
@@ -31,7 +32,7 @@ if ($i18n.locale._value === 'ja') {
     ogTitle: 'Air360 - eコマースに最適なUX分析ツール',
     ogImage: 'https://www.air360.io/wp-content/uploads/2022/08/hero-illustration.webp',
     twitterCard: 'summary_large_image',
-    ogUrl: 'https://air360.io/jp/',
+    ogUrl: `${runtimeConfig.public.baseUrl}/${$i18n.locale._value}/`,
   })
 } else {
   useSeoMeta({
@@ -41,7 +42,7 @@ if ($i18n.locale._value === 'ja') {
     ogTitle: 'Air360 - The best UX analysis tool for e-commerce',
     ogImage: 'https://www.air360.io/wp-content/uploads/2022/08/hero-illustration.webp',
     twitterCard: 'summary_large_image',
-    ogUrl: 'https://air360.io/en/',
+    ogUrl: `${runtimeConfig.public.baseUrl}/${$i18n.locale._value}/`,
   })
 }
 

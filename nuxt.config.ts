@@ -30,6 +30,7 @@ export default defineNuxtConfig({
       algoliaDocsearchIndexName: process.env.ALGOLIA_DOCSEARCH_INDEX_NAME,
       trailingSlash: true,
       baseUrl: process.env.BASE_URL,
+      appUrl: process.env.APP_URL,
     },
   },
   schemaOrg: {
@@ -63,7 +64,7 @@ export default defineNuxtConfig({
       useCookie: true,
     },
     trailingSlash: true,
-    baseUrl: 'https://air360.io/',
+    baseUrl: process.env.BASE_URL,
   },
 
   fontLoader: {

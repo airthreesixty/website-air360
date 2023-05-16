@@ -6,7 +6,9 @@
 
 <script setup lang="ts">
 const { $i18n } = useNuxtApp()
-// TODO english version as well
+const route = useRoute()
+const runtimeConfig = useRuntimeConfig()
+
 if ($i18n.locale.value === 'ja') {
   useSeoMeta({
     title: 'ブログ',
@@ -15,7 +17,7 @@ if ($i18n.locale.value === 'ja') {
     ogTitle: 'Air360 - ブログ',
     ogImage: 'https://air360.io/wp-content/uploads/2022/11/conversion-rate-optimization.jpg',
     twitterCard: 'summary_large_image',
-    ogUrl: 'https://air360.io/ja/blog/',
+    ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
   })
 } else {
   useSeoMeta({
@@ -25,7 +27,7 @@ if ($i18n.locale.value === 'ja') {
     ogTitle: 'Air360 - Blog',
     ogImage: 'https://air360.io/wp-content/uploads/2022/11/conversion-rate-optimization.jpg',
     twitterCard: 'summary_large_image',
-    ogUrl: 'https://air360.io/en/blog/',
+    ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
   })
 }
 

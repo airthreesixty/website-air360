@@ -68,7 +68,7 @@
           <hr v-if="isActive" class="h-1 w-2/3">
           <li class="py-2">
             <a
-              href="https://beta.air360.io/"
+              :href="runtimeConfig.public.appUrl"
               :class="isActive ? 'menu__modal' : 'lp-menu__link'"
               target="_blank"
               rel="noopener noreferrer"
@@ -89,6 +89,7 @@
 <script setup lang="ts">
 const { $localePath } = useNuxtApp()
 
+const runtimeConfig = useRuntimeConfig()
 const isActive = ref(false)
 
 const handleResize = () => {
