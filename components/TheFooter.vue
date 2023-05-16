@@ -55,7 +55,7 @@
           </a> -->
         </div>
       </div>
-      <div class="grid grid-cols-2 gap-x-2 gap-y-6 md:gap-6 md:grid-cols-3">
+      <div class="grid grid-cols-2 gap-x-2 gap-y-6 md:gap-6 md:grid-cols-4">
         <div>
           <h2
             class="mb-6 text-sm font-semibold text-black-600 uppercase dark:text-white"

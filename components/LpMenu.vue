@@ -80,6 +80,10 @@
               {{ $t("request-demo.title") }}
             </ButtonPrimary>
           </li>
+          <li :class="isActive ? 'menu__modal' : 'lp-menu__link'">
+            <LangSwitcher />
+          </li>
+          <hr v-if="isActive" class="h-1 w-2/3">
         </ul>
       </div>
     </div>
@@ -127,7 +131,7 @@ const toggleMenu = () => {
   margin: auto 0px;
   display: block;
   background-color: white;
-  height: 300px;
+  height: 350px;
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
