@@ -4,11 +4,9 @@
       <div class="mb-6 md:mb-0">
         <NuxtLink :to="$localePath('/')">
           <div class="flex items-center">
-            <nuxt-img
-              format="webp"
-              src="/air360Logo.png"
+            <Logo
               class="mr-3 h-6 w-auto sm:h-7 xl:h-8"
-              alt="Air360 Logo"
+              :is-dark="true"
             />
           </div>
         </NuxtLink>
