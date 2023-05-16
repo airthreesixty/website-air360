@@ -13,9 +13,6 @@ export default defineNuxtConfig({
     instantSearch: {
       theme: 'satellite',
     },
-    docSearch: {
-      indexName: process.env.ALGOLIA_DOCSEARCH_INDEX_NAME,
-    },
     crawler: {
       apiKey: process.env.ALGOLIA_WRITE_API_KEY ?? '',
       indexName: process.env.ALGOLIA_DOCSEARCH_INDEX_NAME ?? '',

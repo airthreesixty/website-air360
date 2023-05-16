@@ -5,34 +5,6 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"@algolia/autocomplete-core@npm:1.7.4":
-  version: 1.7.4
-  resolution: "@algolia/autocomplete-core@npm:1.7.4"
-  dependencies:
-    "@algolia/autocomplete-shared": 1.7.4
-  checksum: cd7c0badec2dd7f32eb1c567e740473df41d0b5cfdc009efc2b44d2c72e30d90a05882ca0616d6dc29326177d5183a7fd9c6189e5eab3abe26936e232ac5f43a
-  languageName: node
-  linkType: hard
-
-"@algolia/autocomplete-preset-algolia@npm:1.7.4":
-  version: 1.7.4
-  resolution: "@algolia/autocomplete-preset-algolia@npm:1.7.4"
-  dependencies:
-    "@algolia/autocomplete-shared": 1.7.4
-  peerDependencies:
-    "@algolia/client-search": ">= 4.9.1 < 6"
-    algoliasearch: ">= 4.9.1 < 6"
-  checksum: 4ea134757d611d1b7489f34b4366d103fb981dde3f75f39762fb71142f23bd024825f7541ab756ead9c87e223184616fd74b7762982054c96927fecd5a6e6e3e
-  languageName: node
-  linkType: hard
-
-"@algolia/autocomplete-shared@npm:1.7.4":
-  version: 1.7.4
-  resolution: "@algolia/autocomplete-shared@npm:1.7.4"
-  checksum: d304b1e3523ccf36a4a21ef9c116c83360fc1bffc595e888f05c35ab00de293104184dafebd9b9ed8ac5ffa5c416ddd4b1139e9794a253f52863c1ae544c2c9c
-  languageName: node
-  linkType: hard
-
 "@algolia/cache-browser-local-storage@npm:4.16.0":
   version: 4.16.0
   resolution: "@algolia/cache-browser-local-storage@npm:4.16.0"
@@ -585,46 +557,6 @@ __metadata:
   dependencies:
     mime: ^3.0.0
   checksum: 6d3754096728d082765a7eb08f50e7cebcadee9224896beaee0e998ee43d919aa2e1447c69fb0934ed9df7acc3f8125992653af07522546bb3217086e249f0fb
-  languageName: node
-  linkType: hard
-
-"@docsearch/css@npm:3.3.3, @docsearch/css@npm:^3.3.2":
-  version: 3.3.3
-  resolution: "@docsearch/css@npm:3.3.3"
-  checksum: c3e678dd5e05a962d3e29b4c953632a013af3a352ad99d0e630546409e665684e122265034bca1619d9bd659e42d35c7cc90ee373836fcfb2614aae2057c5dc1
-  languageName: node
-  linkType: hard
-
-"@docsearch/js@npm:^3.3.2":
-  version: 3.3.3
-  resolution: "@docsearch/js@npm:3.3.3"
-  dependencies:
-    "@docsearch/react": 3.3.3
-    preact: ^10.0.0
-  checksum: 445bb7f66f9ca4b385a28fd78bcbac048acd20d925978a1c23cc1ef74022ec4e3ff93d58819eae9a721dc1ac6eed17e40de536ec67ab99b87fff6e4db6b78a96
-  languageName: node
-  linkType: hard
-
-"@docsearch/react@npm:3.3.3":
-  version: 3.3.3
-  resolution: "@docsearch/react@npm:3.3.3"
-  dependencies:
-    "@algolia/autocomplete-core": 1.7.4
-    "@algolia/autocomplete-preset-algolia": 1.7.4
-    "@docsearch/css": 3.3.3
-    algoliasearch: ^4.0.0
-  peerDependencies:
-    "@types/react": ">= 16.8.0 < 19.0.0"
-    react: ">= 16.8.0 < 19.0.0"
-    react-dom: ">= 16.8.0 < 19.0.0"
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-    react:
-      optional: true
-    react-dom:
-      optional: true
-  checksum: 8a31c175853b61ee80748abc0cebdc33d247483643c4151a430e05d37f159bf59ea08cb69f878cff7787d3ca122b664701575543914d3c3692b448b63d3ad716
   languageName: node
   linkType: hard
 
@@ -3000,7 +2932,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"algoliasearch@npm:^4.0.0, algoliasearch@npm:^4.11.0, algoliasearch@npm:^4.12.0, algoliasearch@npm:^4.14.3":
+"algoliasearch@npm:^4.11.0, algoliasearch@npm:^4.12.0, algoliasearch@npm:^4.14.3":
   version: 4.16.0
   resolution: "algoliasearch@npm:4.16.0"
   dependencies:
@@ -9825,7 +9757,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"preact@npm:^10.0.0, preact@npm:^10.10.0":
+"preact@npm:^10.10.0":
   version: 10.13.1
   resolution: "preact@npm:10.13.1"
   checksum: a10555d18f60a42e29b4ef5bf42f7a6ce4097a2e772c047fab53226e3edef4cfceb6d709452485a41017479750aa6834ab02b6a8269ceb06d489d7c3495b3d04
@@ -10445,8 +10377,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    "@docsearch/css": ^3.3.2
-    "@docsearch/js": ^3.3.2
     "@fortawesome/fontawesome-svg-core": ^6.2.1
     "@fortawesome/free-brands-svg-icons": ^6.2.1
     "@fortawesome/free-solid-svg-icons": ^6.2.1
