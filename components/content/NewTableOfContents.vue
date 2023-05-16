@@ -29,11 +29,9 @@
     </div>
   </div>
 </template>
-
 <script setup lang="ts">
 import { watchDebounced } from '@vueuse/shared'
 import { Title } from '~~/interfaces/blog'
-
 const props = defineProps({
   paragraphTitles: {
     type: Array as () => Title[],
@@ -44,16 +42,13 @@ const props = defineProps({
     default: null,
   },
 })
-
 const sliderHeight = useState('sliderHeight', () => 0)
 const sliderTop = useState('sliderTop', () => 0)
 const tocLinksH2: Ref<Array<HTMLElement>> = ref([])
 const tocLinksH3: Ref<Array<HTMLElement>> = ref([])
-
 watchDebounced(() => props.activeTocId, (newActiveTocId) => {
   const h2Link = tocLinksH2.value.find((el: HTMLElement) => el.id === `toc-${newActiveTocId}`)
   const h3Link = tocLinksH3.value.find((el: HTMLElement) => el.id === `toc-${newActiveTocId}`)
-
   if (h2Link) {
     sliderHeight.value = h2Link.offsetHeight
     sliderTop.value = h2Link.offsetTop - 100
@@ -63,13 +58,11 @@ watchDebounced(() => props.activeTocId, (newActiveTocId) => {
   }
 }, { debounce: 200, immediate: true })
 </script>
-
 <style scoped>
 li > a {
   padding-left: 5px;
   font-size: 14px;
 }
-
 li > ul {
   margin: 0;
 }
@@ -79,15 +72,12 @@ li > ul {
   margin-top: 0;
   margin-bottom: 0;
 }
-
 .toc-lists {
   position: relative;
 }
-
 .toc-lists > li {
   padding: 0 20px;
 }
-
 .toc-lists::before {
   position: absolute;
   content: "";
@@ -97,16 +87,13 @@ li > ul {
   width: 2px;
   background: #B1D1FF;
 }
-
 .bullet-point-child {
   padding-left: 0;
   margin: 2px 0;
 }
-
 .bullet-point {
   margin: 2px 0;
 }
-
 .bullet-point::before {
   content: "";
   position: absolute;
@@ -117,7 +104,6 @@ li > ul {
   border-radius: 100%;
   border: 2px solid #fff;
 }
-
 .bullet-point-child::before {
   content: "";
   position: absolute;
@@ -129,7 +115,6 @@ li > ul {
   border-radius: 100%;
   border: 3.5px solid #fff;
 }
-
 .active::before {
   border-color: #6EA8FA;
   background: #6EA8FA;
