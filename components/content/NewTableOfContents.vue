@@ -111,7 +111,7 @@ li > ul {
   background: #B1D1FF;
   width: 12px;
   height: 12px;
-  left: -15.5px;
+  left: -16px;
   border-radius: 100%;
   border: 3.5px solid #fff;
 }
