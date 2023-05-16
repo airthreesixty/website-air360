@@ -8,13 +8,17 @@
 
 <script setup lang="ts">
 const route = useRoute()
+const { $i18n } = useNuxtApp()
 
 useHead(() => ({
   link: [
     {
       rel: 'canonical',
-      href: `https://jp.air360.io${route.path}`,
+      href: `https://air360.io/${$i18n.locale._value}${route.path}`,
     },
   ],
+  htmlAttrs: {
+    lang: $i18n.locale._value,
+  },
 }))
 </script>

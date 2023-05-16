@@ -6,12 +6,17 @@
 </template>
 
 <script setup lang="ts">
+const { $i18n } = useNuxtApp()
+
 useHead(() => ({
   link: [
     {
       rel: 'canonical',
-      href: 'https://jp.air360.io/',
+      href: `https://air360.io/${$i18n.locale._value}/`,
     },
   ],
+  htmlAttrs: {
+    lang: $i18n.locale._value,
+  },
 }))
 </script>

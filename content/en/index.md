@@ -1,11 +1,4 @@
 ::home-page-hero
-#title1
-顧客に
-#title2
-最高の
-#title3
-eコマース体験を
-
 #description
 Air360 allows you to maximize the potential of your e-commerce site and increase conversion rates while maintaining traffic.
 ::

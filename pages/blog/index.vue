@@ -15,7 +15,7 @@ if ($i18n.locale.value === 'ja') {
     ogTitle: 'Air360 - ブログ',
     ogImage: 'https://air360.io/wp-content/uploads/2022/11/conversion-rate-optimization.jpg',
     twitterCard: 'summary_large_image',
-    ogUrl: 'https://jp.air360.io/blog/',
+    ogUrl: 'https://air360.io/ja/blog/',
   })
 } else {
   useSeoMeta({
@@ -25,7 +25,7 @@ if ($i18n.locale.value === 'ja') {
     ogTitle: 'Air360 - Blog',
     ogImage: 'https://air360.io/wp-content/uploads/2022/11/conversion-rate-optimization.jpg',
     twitterCard: 'summary_large_image',
-    ogUrl: 'https://jp.air360.io/en/blog/',
+    ogUrl: 'https://air360.io/en/blog/',
   })
 }
 

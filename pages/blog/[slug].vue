@@ -24,7 +24,7 @@
                       <div class="flex items-center">
                         <button data-tooltip-target="tooltip-linkedin" class="inline-flex items-center p-[5.5px] md:p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button">
                           <a
-                            :href="`https://www.linkedin.com/sharing/share-offsite/?url=https://jp.air360.io${fullPath}`"
+                            :href="`https://www.linkedin.com/sharing/share-offsite/?url=https://air360.io/${$i18n.locale._value}${fullPath}`"
                             class="text-primary-600 transition ease-in-out duration-300 hover:text-primary-700 dark:hover:text-white"
                             rel="nofollow noopener"
                             target="_blank"
@@ -38,7 +38,7 @@
                         </div>
                         <button data-tooltip-target="tooltip-twitter" class="inline-flex items-center p-[5.5px] md:p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button">
                           <a
-                            :href="`https://twitter.com/intent/tweet?text=https://jp.air360.io${fullPath}`"
+                            :href="`https://twitter.com/intent/tweet?text=https://air360.io/${$i18n.locale._value}${fullPath}`"
                             class="text-primary-600 transition ease-in-out duration-300 hover:text-primary-700 dark:hover:text-white"
                             rel="nofollow noopener"
                             target="_blank"
@@ -52,7 +52,7 @@
                         </div>
                         <button data-tooltip-target="tooltip-facebook" class="inline-flex items-center p-[5.5px] md:p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button">
                           <a
-                            :href="`http://www.facebook.com/share.php?u=https://jp.air360.io${fullPath}`"
+                            :href="`http://www.facebook.com/share.php?u=https://air360.io/${$i18n.locale._value}${fullPath}`"
                             class="text-primary-600 transition ease-in-out duration-300 hover:text-primary-700 dark:hover:text-white"
                             rel="nofollow noopener"
                             target="_blank"
@@ -150,6 +150,6 @@ useSeoMeta({
   ogDescription: data.value?.metaDesc,
   ogImage: data.value?.image,
   twitterCard: 'summary_large_image',
-  ogUrl: `https://jp.air360.io${fullPath}`,
+  ogUrl: `https://air360.io/${$i18n.locale._value}${fullPath}`,
 })
 </script>

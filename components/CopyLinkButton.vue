@@ -10,8 +10,9 @@
 
 <script setup lang="ts">
 import { useClipboard } from '@vueuse/core'
+const { $i18n } = useNuxtApp()
 const route = useRoute()
 
-const source = computed(() => `https://jp.air360.io${route.fullPath}`)
+const source = computed(() => `https://air360.io/${$i18n.locale._value}${route.fullPath}`)
 const { copy } = useClipboard({ source })
 </script>

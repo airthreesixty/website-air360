@@ -1,5 +1,5 @@
 ---
-title: 製品
+title: Product
 ---
 
 ::product-header

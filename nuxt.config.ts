@@ -32,7 +32,7 @@ export default defineNuxtConfig({
     },
   },
   schemaOrg: {
-    host: 'https://jp.air360.io/',
+    host: 'https://air360.io/',
   },
   app: {
     head: {
@@ -45,9 +45,6 @@ export default defineNuxtConfig({
         },
       ],
       meta: [{ name: 'google-site-verification', content: '27ObPnDVXKchsfaXmRUOoP8wVKLPvIDb30oXYHDgPVU' }],
-      htmlAttrs: {
-        lang: 'ja',
-      },
     },
   },
   i18n: {

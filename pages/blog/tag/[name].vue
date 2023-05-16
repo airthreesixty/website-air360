@@ -17,11 +17,16 @@ if ($i18n.locale.value === 'ja') {
     description: 'eコマースUXの最新トレンド、コンバージョン率向上のためのヒントやコツ、Air360がどのように提供できるかをご紹介します。',
     ogDescription: 'eコマースUXの最新トレンド、コンバージョン率向上のためのヒントやコツ、Air360がどのように提供できるかをご紹介します。',
     twitterCard: 'summary_large_image',
-    ogUrl: `https://jp.air360.io/blog/tag/${route.params.name}/`,
+    ogUrl: `https://air360.io/ja/blog/tag/${route.params.name}/`,
   })
 } else {
-  useHead({
-    title: 'Blog',
+  useSeoMeta({
+    title: route.params.name as string,
+    ogTitle: route.params.name as string,
+    description: 'Learn about the latest trends in eCommerce UX, tips and tricks for improving conversion rates, and how Air360 can help you deliver.',
+    ogDescription: 'Learn about the latest trends in eCommerce UX, tips and tricks for improving conversion rates, and how Air360 can help you deliver.',
+    twitterCard: 'summary_large_image',
+    ogUrl: `https://air360.io/en/blog/tag/${route.params.name}/`,
   })
 }
 // TODO the value from the plugin is wrong, remove _value when it's fixed
