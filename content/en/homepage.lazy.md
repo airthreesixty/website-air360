@@ -1,12 +1,3 @@
-::home-page-hero
-#description
-Air360 allows you to maximize the potential of your e-commerce site and increase conversion rates while maintaining traffic.
-::
-
-::company-logos
-
-::
-
 ::what-is-air360
 #title
 Visualization of previously invisible customer behavior
