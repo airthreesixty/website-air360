@@ -4,6 +4,9 @@ import flowbite from 'flowbite-windicss-plugin'
 
 export default defineConfig({
   darkMode: 'class',
+  shortcuts: {
+    container: 'max-w-screen-[1400px] px-6 lg:px-8',
+  },
   plugins: [require('windicss/plugin/typography'), flowbite],
   theme: {
     fontFamily: {

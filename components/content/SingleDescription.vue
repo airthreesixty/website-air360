@@ -1,7 +1,7 @@
 <template>
   <section class="bg-white">
     <div
-      class="max-w-screen-[1400px] px-6 py-7 mx-auto md:flex md:justify-between md:items-center lg:py-13 lg:px-8"
+      class="container py-7 mx-auto md:flex md:justify-between md:items-center lg:py-13"
     >
       <div :class="`flex justify-center md:${imageStatus} md:mt-0 md:flex md:w-[58%] md:p-5`">
         <nuxt-img v-if="!isVideo" format="webp" :src="imagePath" :alt="alt" class="rounded-lg shadow-lg my-auto w-full object-cover" />
