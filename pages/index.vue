@@ -1,7 +1,5 @@
 <template>
-  <NuxtLayout name="landing-page">
-    <AsyncPage page="homepage" />
-  </NuxtLayout>
+  <AsyncPage page="homepage" />
 </template>
 
 <script setup lang="ts">
@@ -10,7 +8,7 @@ const { locale, t } = useI18n()
 const runtimeConfig = useRuntimeConfig()
 
 definePageMeta({
-  layout: false,
+  layout: 'landing-page',
 })
 
 useHead({
