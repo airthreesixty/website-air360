@@ -11,8 +11,10 @@
             <h1
               class="mb-6 font-title text-[34px] tracking-wide md:text-5xl lg:text-7xl text-center text-black-600 lg:mb-8"
             >
-              <span class="bg-animation1" :style="`--content: '${$t('title1')}'`"><span class="letter1">{{ $t('title1') }}</span></span>
-              <span class="bg-animation2" :style="`--content: '${$t('title2')}'`"><span class="letter2">{{ $t('title2') }}</span></span>
+              <div class="flex justify-center flex-col" :class="{'!flex-row': locale === 'ja'}">
+                <span class="bg-animation1" :style="`--content: '${$t('title1')}'`"><span class="letter1">{{ $t('title1') }}</span></span>
+                <span class="bg-animation2" :style="`--content: '${$t('title2')}'`"><span class="letter2">{{ $t('title2') }}</span></span>
+              </div>
 
               <span class="bg-animation3" :style="`--content: '${$t('title3')}'`"><span class="letter3">{{ $t('title3') }}</span></span>
             </h1>
@@ -43,6 +45,7 @@
 
 <script lang="ts" setup>
 const { $localePath } = useNuxtApp()
+const { locale } = useI18n()
 </script>
 
 <style scoped>
