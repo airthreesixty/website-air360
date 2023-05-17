@@ -23,7 +23,7 @@ useSeoMeta({
   description: t('index.description'),
   ogDescription: t('index.ogDescription'),
   ogTitle: t('index.ogTitle'),
-  ogImage: 'https://www.air360.io/wp-content/uploads/2022/08/hero-illustration.webp',
+  ogImage: '/heroIllustration.webp',
   twitterCard: 'summary_large_image',
   ogUrl: `${runtimeConfig.public.baseUrl}/${locale}/`,
 })

@@ -3,16 +3,16 @@
 </template>
 
 <script setup lang="ts">
-const { $i18n } = useNuxtApp()
+const { t } = useI18n()
 const route = useRoute()
 const runtimeConfig = useRuntimeConfig()
 
 useSeoMeta({
-  title: $i18n.t('product.title'),
-  description: $i18n.t('product.description'),
-  ogDescription: $i18n.t('product.ogDescription'),
-  ogTitle: `Air360 - ${$i18n.t('product.title')}`,
-  ogImage: $i18n.t('product.ogImage'),
+  title: t('product.title'),
+  description: t('product.description'),
+  ogDescription: t('product.ogDescription'),
+  ogTitle: `Air360 - ${t('product.title')}`,
+  ogImage: t('product.ogImage'),
   twitterCard: 'summary_large_image',
   ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
 })

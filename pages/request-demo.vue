@@ -5,16 +5,16 @@
 </template>
 
 <script setup>
-const { $i18n } = useNuxtApp()
+const { t } = useI18n()
 
 definePageMeta({
   layout: false,
 })
 
 useHead({
-  title: $i18n.t('request-demo.title'),
+  title: t('request-demo.title'),
   meta: [
-    { hid: 'description', name: 'description', content: $i18n.t('request-demo.content') },
+    { hid: 'description', name: 'description', content: t('request-demo.content') },
   ],
 })
 </script>

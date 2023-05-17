@@ -5,7 +5,8 @@
 </template>
 
 <script setup lang="ts">
-const { $i18n, $localePath } = useNuxtApp()
+const { $localePath, $i18n } = useNuxtApp()
+const { t } = useI18n()
 const route = useRoute()
 const router = useRouter()
 const runtimeConfig = useRuntimeConfig()
@@ -13,8 +14,8 @@ const runtimeConfig = useRuntimeConfig()
 useSeoMeta({
   title: route.params.name as string,
   ogTitle: route.params.name as string,
-  description: $i18n.t('blog-index.description'),
-  ogDescription: $i18n.t('blog-index.ogDescription'),
+  description: t('blog-index.description'),
+  ogDescription: t('blog-index.ogDescription'),
   twitterCard: 'summary_large_image',
   ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
 })

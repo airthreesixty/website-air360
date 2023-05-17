@@ -163,7 +163,7 @@ import axios from 'axios'
 import { useVuelidate } from '@vuelidate/core'
 import { required, email } from '~/utils/i18n-validators'
 
-const { $i18n } = useNuxtApp()
+const { t } = useI18n()
 
 const formData = reactive({
   name: '',
@@ -214,13 +214,13 @@ const submitForm = async () => {
 
 useSchemaOrg([
   defineOrganization({
-    name: $i18n.t('organization.name'),
+    name: t('organization.name'),
     address: {
-      streetAddress: $i18n.t('organization.address.streetAddress'),
-      addressLocality: $i18n.t('organization.address.addressLocality') || '',
-      addressRegion: $i18n.t('organization.address.addressRegion'),
-      postalCode: $i18n.t('organization.address.postalCode'),
-      addressCountry: $i18n.t('organization.address.addressCountry'),
+      streetAddress: t('organization.address.streetAddress'),
+      addressLocality: t('organization.address.addressLocality') || '',
+      addressRegion: t('organization.address.addressRegion'),
+      postalCode: t('organization.address.postalCode'),
+      addressCountry: t('organization.address.addressCountry'),
     },
     sameAs: ['https://www.linkedin.com/company/air360/', 'https://twitter.com/weareair360', 'https://www.instagram.com/weareair360/'],
   }),

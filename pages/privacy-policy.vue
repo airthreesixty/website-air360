@@ -7,12 +7,12 @@
 </template>
 
 <script setup lang="ts">
-const { $i18n } = useNuxtApp()
+const { t } = useI18n()
 
 useHead({
-  title: $i18n.t('privacy-policy.title'),
+  title: t('privacy-policy.title'),
   meta: [
-    { hid: 'description', name: 'description', content: $i18n.t('privacy-policy.content') },
+    { hid: 'description', name: 'description', content: t('privacy-policy.content') },
   ],
 })
 </script>

@@ -6,15 +6,16 @@
 
 <script setup lang="ts">
 const { $i18n } = useNuxtApp()
+const { t } = useI18n()
 const route = useRoute()
 const runtimeConfig = useRuntimeConfig()
 
 useSeoMeta({
-  title: $i18n.t('blog-index.title'),
-  description: $i18n.t('blog-index.description'),
-  ogDescription: $i18n.t('blog-index.ogDescription'),
-  ogTitle: `Air360 - ${$i18n.t('blog-index.title')}`,
-  ogImage: $i18n.t('blog-index.ogImage'),
+  title: t('blog-index.title'),
+  description: t('blog-index.description'),
+  ogDescription: t('blog-index.ogDescription'),
+  ogTitle: `Air360 - ${t('blog-index.title')}`,
+  ogImage: t('blog-index.ogImage'),
   twitterCard: 'summary_large_image',
   ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
 })

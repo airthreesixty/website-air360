@@ -3,12 +3,12 @@
 </template>
 
 <script setup lang="ts">
-const { $i18n } = useNuxtApp()
+const { t } = useI18n()
 
 useHead({
-  title: $i18n.t('contact.title'),
+  title: t('contact.title'),
   meta: [
-    { hid: 'description', name: 'description', content: $i18n.t('contact.content') },
+    { hid: 'description', name: 'description', content: t('contact.content') },
   ],
 })
 </script>
