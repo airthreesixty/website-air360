@@ -18,6 +18,7 @@
           type="button"
           class="inline-flex items-center p-2 md:ml-2.5 lg:ml-3 text-sm rounded-lg order-2 transition-shadow lg:hidden hover:ring-2 hover:ring-opacity-20 focus:outline-none focus:ring-2"
           :class="{'text-white hover:ring-white focus:ring-white': isHomepage, 'text-gray-500 hover:ring-gray-500 focus:ring-gray-500': !isHomepage}"
+
           aria-controls="navbar-default"
           :aria-expanded="isActive"
           @click="toggleMenu"

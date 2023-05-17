@@ -17,12 +17,12 @@
 
 <script setup lang="ts">
 const { $localePath } = useNuxtApp()
-const tagList = ['marketing', 'ux', 'ecommerce', 'other']
+const tagList = ['marketing', 'ux', 'ecommerce', 'data', 'other']
 </script>
 
 <style scoped lang="postcss">
 .tag__link {
-  @apply py-3 px-5 mt-5 inline-block text-base lg:text-lg bg-blue-100 text-blue-400 font-semibold rounded mx-2;
+  @apply py-3 px-4 mt-5 md:px-5 inline-block text-sm lg:text-lg bg-blue-100 text-blue-400 font-semibold rounded mx-1 md:mx-2;
 }
 
 .router-link-exact-active {

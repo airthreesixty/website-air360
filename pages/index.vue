@@ -25,6 +25,6 @@ useSeoMeta({
   ogTitle: t('index.ogTitle'),
   ogImage: '/heroIllustration.webp',
   twitterCard: 'summary_large_image',
-  ogUrl: `${runtimeConfig.public.baseUrl}/${locale}/`,
+  ogUrl: `${runtimeConfig.public.baseUrl}/${locale.value}/`,
 })
 </script>

@@ -6,7 +6,6 @@
 </template>
 
 <script setup lang="ts">
-const { $i18n } = useNuxtApp()
 const { locale } = useI18n()
 const runtimeConfig = useRuntimeConfig()
 
@@ -14,11 +13,11 @@ useHead(() => ({
   link: [
     {
       rel: 'canonical',
-      href: `${runtimeConfig.public.baseUrl}/${$i18n.locale._value}/`,
+      href: `${runtimeConfig.public.baseUrl}/${locale.value}/`,
     },
   ],
   htmlAttrs: {
-    lang: locale,
+    lang: locale.value,
   },
 }))
 </script>

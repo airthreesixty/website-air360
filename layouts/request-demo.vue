@@ -18,7 +18,7 @@ useHead(() => ({
     },
   ],
   htmlAttrs: {
-    lang: locale,
+    lang: locale.value,
   },
 }))
 </script>
