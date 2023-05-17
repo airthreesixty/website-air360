@@ -7,7 +7,8 @@
     <div class="relative flex flex-wrap items-center justify-between max-w-screen-[1400px] mx-auto">
       <NuxtLink :to="$localePath('/')">
         <Logo
-          class="h-6 mr-3 w-auto sm:h-7 xl:h-8 transition-opacity hover:opacity-80"
+          class="h-6 mr-3 w-auto sm:h-7 xl:h-8 filter homepage-logo"
+          :class="{'hover:drop-shadow-white': isHomepage, 'hover:(drop-shadow-primary)': !isHomepage}"
           :is-dark="!isHomepage"
         />
       </NuxtLink>
@@ -18,7 +19,7 @@
           class="inline-flex items-center p-2 md:ml-2.5 lg:ml-3 text-sm rounded-lg order-2 transition-shadow lg:hidden hover:ring-2 hover:ring-opacity-20 focus:outline-none focus:ring-2"
           :class="{'text-white hover:ring-white focus:ring-white': isHomepage, 'text-gray-500 hover:ring-gray-500 focus:ring-gray-500': !isHomepage}"
           aria-controls="navbar-default"
-          aria-expanded="false"
+          :aria-expanded="isActive"
           @click="toggleMenu"
         >
           <span class="sr-only">Open main menu</span>
@@ -38,16 +39,16 @@
         </button>
         <div
           id="navbar-default"
-          class="w-full transition ease-in-out duration-500 rounded-lg lg:flex items-center"
-          :class="{hidden: !isActive,'menu-active': isActive, 'sm:max-w-[300px]': isActive}"
+          class="w-full lg:flex items-center"
+          :class="{hidden: !isActive,'menu-active dropdown sm:max-w-[300px]': isActive}"
         >
           <div v-if="isActive" class="flex justify-center mt-6">
             <div class="max-w-[100px]">
-              <img src="/favicon.png">
+              <nuxt-img src="/favicon.png" width="200" />
             </div>
           </div>
           <ul
-            class="flex flex-col p-4 pb-6 mt-4 border items-center border-none space-y-2 lg:(flex-row space-x-8 mt-0 space-y-0 text-base font-medium border-0 pb-4)"
+            class="flex flex-col pb-2 mt-4 border items-center border-none space-y-2 lg:(flex-row space-x-8 mt-0 space-y-0 text-base font-medium border-0 p-4)"
           >
             <li>
               <NuxtLink :to="$localePath('/product')" class="menu__link">
@@ -77,9 +78,19 @@
             </li>
           </ul>
         </div>
-        <div class="relative menu__link order-1 lg:order-3 !lg:pr-4" @click="toggleLang">
-          <fa-icon class="fa-lg" :icon="['fa', 'earth-americas']" />
-          <LanguageModal v-if="isLangActive" :is-dark="true" />
+        <div class="relative order-1 lg:order-3 !lg:pr-4">
+          <button
+            class="menu__link svg"
+            aria-controls="language-modal"
+            :aria-expanded="isLangActive"
+            @click="toggleLang"
+          >
+            <span class="sr-only">Open language menu</span>
+            <fa-icon class="fa-lg" :icon="['fa', 'earth-americas']" :aria-hidden="true" />
+          </button>
+          <div v-if="isLangActive" id="language-modal" class="dropdown top-full mt-2 right-0 w-40 flex justify-center items-center" @click="toggleLang">
+            <LangSwitcher />
+          </div>
         </div>
       </div>
     </div>
@@ -131,13 +142,7 @@ onBeforeUnmount(() => {
 }
 
 .menu-active {
-  position: absolute;
-  top: 60px;
-  right: 0px;
-  margin: auto 0px;
-  display: block;
-  background-color: white;
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  @apply top-full mt-1 right-0;
 }
 
 .menu__link {
@@ -149,6 +154,30 @@ onBeforeUnmount(() => {
 
   &.router-link-exact-active {
     @apply text-primary-600;
+  }
+
+  :not(.is-homepage) &.svg:hover svg {
+    @apply filter drop-shadow-primary;
+  }
+
+  .is-homepage &.svg{
+    @apply !text-white;
+
+    &:hover svg {
+      @apply filter drop-shadow-white;
+    }
+  }
+}
+
+.homepage-logo:hover {
+  path {
+    @apply fill-primary-600;
+  }
+}
+
+.is-homepage .homepage-logo:hover {
+  path {
+      @apply fill-white;
   }
 }
 </style>

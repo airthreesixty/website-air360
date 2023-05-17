@@ -148,6 +148,10 @@ export default defineConfig({
         white: '0px 0px 14px rgba(255, 255, 255, 0.7)',
         primary: '0px 0px 14px rgba(231, 75, 145, 0.5)',
       },
+      dropShadow: {
+        white: '0px 0px 14px rgba(255, 255, 255, 0.7)',
+        primary: '0px 0px 14px rgba(231, 75, 145, 0.5)',
+      },
     },
   },
 })
