@@ -9,29 +9,35 @@
           :is-dark="true"
         />
       </NuxtLink>
-      <button
-        data-collapse-toggle="navbar-default"
-        type="button"
-        class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-        aria-controls="navbar-default"
-        aria-expanded="false"
-        @click="toggleMenu"
-      >
-        <span class="sr-only">Open main menu</span>
-        <svg
-          class="w-6 h-6"
-          aria-hidden="true"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
+      <div class="flex items-center lg:hidden">
+        <div class="relative" @click="toggleLang">
+          <fa-icon class="fa-lg text-gray-600" :icon="['fa', 'earth-americas']" />
+          <LanguageModal v-if="isLangActive" :is-dark="true" />
+        </div>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 md:ml-2.5 lg:ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+          @click="toggleMenu"
         >
-          <path
-            fill-rule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-            clip-rule="evenodd"
-          />
-        </svg>
-      </button>
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-6 h-6"
+            aria-hidden="true"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </div>
       <div
         id="navbar-default"
         class="w-full transition ease-in-out duration-500 rounded-lg lg:block lg:w-auto"
@@ -79,6 +85,12 @@
               {{ $t("request-demo.title") }}
             </ButtonPrimary>
           </li>
+          <li :class="{hidden: isActive}">
+            <div class="relative" @click="toggleLang">
+              <fa-icon class="fa-lg text-gray-600" :icon="['fa', 'earth-americas']" />
+              <LanguageModal v-if="isLangActive" :is-dark="true" />
+            </div>
+          </li>
         </ul>
       </div>
     </div>
@@ -90,9 +102,16 @@ const { $localePath } = useNuxtApp()
 const runtimeConfig = useRuntimeConfig()
 
 const isActive = ref(false)
+const isLangActive = ref(false)
 
 const toggleMenu = () => {
   isActive.value = !isActive.value
+  isLangActive.value = false
+}
+
+const toggleLang = () => {
+  isLangActive.value = !isLangActive.value
+  isActive.value = false
 }
 
 const handleResize = () => {

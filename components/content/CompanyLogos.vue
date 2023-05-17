@@ -25,11 +25,11 @@ const LogoBrandSuarez = resolveComponent('LogoBrandSuarez')
 
 const logos = [{
   component: LogoBrandClubMed,
-  scale: .8,
+  scale: 0.8,
 },
 {
   component: LogoBrandAristocrazy,
-  scale: .85,
+  scale: 0.85,
 },
 {
   component: LogoBrandOlympiqueLyonnais,
@@ -41,11 +41,11 @@ const logos = [{
 },
 {
   component: LogoBrandQoqa,
-  scale: .75,
+  scale: 0.75,
 },
 {
   component: LogoBrandSuarez,
-  scale: .7,
+  scale: 0.7,
 }]
 </script>
 
