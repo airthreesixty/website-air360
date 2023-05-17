@@ -4,7 +4,7 @@ published: 2023-2-28
 tags: 
   - ecommerce
 readingTime: 6
-image: https://www.air360.io/wp-content/uploads/2022/10/how-a-b-testing-reduces-cart-abandonment.webp
+image: /blog/how-a-b-testing-reduces-cart-abandonment.webp
 metaDesc: Shopping cart abandonment is one of the biggest challenges to plague today’s eCommerce businesses. In March 2021, an astonishing 80% of online shopping carts worldwide were abandoned before the purchase was completed.
 ---
 
@@ -31,7 +31,7 @@ A/B testing is one of the most effective ways to reduce cart abandonment. How? B
 By running ongoing A/B tests, eCommerce brands can discover the absolute best way to set up their website to encourage customers to complete the purchase. Every change to the website can be made based on sound data, rather than a guessing game in which the developers aim to read the customer’s mind.
 
 ## 5 Website A/B Tests to Reduce Cart Abandonment 
-![A red abandoned cart sits on a curb](https://www.air360.io/wp-content/uploads/2022/10/how-a-b-testing-reduces-cart-abandonment-1.webp)
+![A red abandoned cart sits on a curb](/blog/how-a-b-testing-reduces-cart-abandonment-1.webp)
 The possibilities for A/B testing on your website are endless — but if you need some ideas to get you going, here are a few:
 
 1. Steps to checkout: Test the number of steps the customer must take to complete the checkout process. Ideally, the fewer steps, the better!

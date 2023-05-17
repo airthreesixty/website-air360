@@ -4,7 +4,7 @@ published: 2023-1-24
 tags: 
   - data
 readingTime: 5
-image: https://air360.io/wp-content/uploads/2022/12/first-party-data.jpg
+image: /blog/first-party-data.jpg
 metaDesc: Data is the lifeblood of any business. You collect data about your revenue, merchandise, promotions, marketing, website and perhaps most importantly, your customers. 
 ---
 
@@ -42,7 +42,7 @@ You can also use first-party information to retarget customers who abandoned the
 You can use first-party data to attract new customers and move them through the purchase journey. Here’s how to get started. 
 
 ### Identify your target audience 
-![](https://air360.io/wp-content/uploads/2023/01/first-party-acquisition-1.jpg)
+![](/blog/first-party-acquisition-1.jpg)
 Chances are your products or services appeal to some people but not to everyone everywhere. To reach new customers, you must know who you are trying to reach and what they need. Luxury vacation packages may appeal to a specific audience while adventure trips may appeal to another audience. Understanding your target audience will help you create marketing and social media campaigns that are more likely to resonate. 
 
 ### Define your content strategy

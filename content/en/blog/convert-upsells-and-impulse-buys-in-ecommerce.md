@@ -4,7 +4,7 @@ published: 2023-2-21
 tags: 
   - other
 readingTime: 4
-image: https://www.air360.io/wp-content/uploads/2022/09/convert-upsells-and-impulse-buys-in-ecommerce.webp
+image: /blog/convert-upsells-and-impulse-buys-in-ecommerce.webp
 metaDesc: Seeing is selling. Brick-and-mortar locations have impulse buying and upselling down to a science. Americans spend $182.98 per month on impulse buys. From shelf placement to endcaps and checkout displays, in-person shopping is an impulse buying minefield. 
 ---
 
@@ -17,7 +17,7 @@ Shelley Kohan, retail consultant and professor at the Fashion Institute of Techn
 Design eCommerce sites for upselling and impulse purchases with the help of user experience, analytics, personalization, AI and dynamic content. Here’s how to leverage an eCommerce platform to put the products your customers want to buy right where they’ll see them before checkout.
 
 ## Analytics and Personalization Drive eCommerce Impulse Buys
-![close up of a tablet screen with bar graphs and pie charts illustrating analytics](https://www.air360.io/wp-content/uploads/2022/09/convert-upsells-and-impulse-buys-in-ecommerce-1.webp)
+![close up of a tablet screen with bar graphs and pie charts illustrating analytics](/blog/convert-upsells-and-impulse-buys-in-ecommerce-1.webp)
 When cross-selling and upselling in eCommerce you need to know who your customers are and what they want. This seems simple, but it can be tricky to get the data you need to truly understand your customers. Many eCommerce platforms can create events for major actions on your website like visiting a product, adding it to the cart and checking out.
 
 Kohan believes, “Chatbots, machine learning and virtual stylist assistance are all ways to not only encourage purchasing and upselling but can also be used to make sure the correct clothing sizes are selected which ultimately reduces returns.” 

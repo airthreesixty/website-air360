@@ -4,7 +4,7 @@ published: 2023-4-04
 tags: 
   - other
 readingTime: 4
-image: https://air360.io/wp-content/uploads/2022/11/conversion-rate-optimization.jpg
+image: /blog/conversion-rate-optimization.jpg
 metaDesc: As eCommerce grows more competitive by the minute, it is important to take the time to optimize your store to make sure you can battle the competition, increase your eCommerce conversion rates and gain revenue. Here are 6 ways to get started.
 ---
 
@@ -34,7 +34,7 @@ For example, if you were looking to simplify the buyer journey, you could view t
 People love sale events and all good ones come with expiry dates. Shoppers – especially brand super-fans – love being the first to get their hands on the latest thing from their favorite brands.
 
 Hosting flash sales and product drops lets you tap into shopper FOMO, delight fans and improve eCommerce conversion rates. You can segment your audience to make sure you’re offering access to customers that are the most likely to buy.
-![](https://air360.io/wp-content/uploads/2022/11/conversion-rate-optimization-1.jpg)
+![](/blog/conversion-rate-optimization-1.jpg)
 
 ## Abandoned cart reminders
 Abandoned cart reminders are a great way to get ‘almost customers’ to make purchases. Visitors tend to add items to their cart, get distracted, and navigate off your site without completing checkout. 

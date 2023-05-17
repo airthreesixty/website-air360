@@ -4,7 +4,7 @@ published: 2023-3-14
 tags: 
   - ecommerce
 readingTime: 6
-image: https://air360.io/wp-content/uploads/2022/10/DTC-inclusion-1024x607.webp
+image: /blog/DTC-inclusion.webp
 metaDesc: Z 世代（2022 年の時点で10 歳～25 歳程度の若者）の購買力が高まっています。2021 年のブルームバーグの記事によると、Z 世代の可処分所得は3600 億ドル以上。これは数年前に比べて2 倍以上の規模であると推定されています。
 ---
 

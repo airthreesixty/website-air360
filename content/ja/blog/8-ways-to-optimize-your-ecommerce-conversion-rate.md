@@ -4,7 +4,7 @@ published: 2023-1-31
 tags: 
   - ux
 readingTime: 6
-image: https://www.air360.io/wp-content/uploads/2022/05/Air360-Optimize-eCommerce-Conversion-Rates-e1661920055831-1024x560.jpeg
+image: /blog/conversion-rate-optimization.jpg
 metaDesc: eコマース市場における競争は年々激しくなっています。そのため時間を費やしてでもサイトなどを最適化して、eコマースのコンバージョン率を高めることが重要です。ここでは、そのための8つの方法を紹介します。
 ---
 
@@ -14,7 +14,7 @@ eコマース市場における競争は年々激しくなっています。そ�
 そのためEコマースストアでも、購入完了までの手順をできる限りシンプルにする必要があります。
 
 例えば、物理的な製品を購入する場合は、住所を入力する必要があります。しかしデジタル製品を買うのであれば、物理的な住所はいらないはずです。また、プログレスバー（進行状況を視覚的に伝える棒状のもの）を使えば、ユーザーに対して「購入までのステップ数」「現在どこまで進んだか」などをわかりやすく提示できます。
-![購入や登録までの手順を減らす](https://lh3.googleusercontent.com/hAVwI20EyqNQFpc_uOVT3x_OzotR8jfgpT-szlWRoBG71oDwCv9Yma3y1Z0fm3rYC0myJx_bgtptLVcdu1XQncAVseZ7GR8q0XWF72SmAGfAit8K5vgaYEegXM3B2ab0uRXMpiFc7ByV3fO7Yw)
+![購入や登録までの手順を減らす](/blog/amazon.png)
 ## すべてにおいてA/Bテストをする
 A/Bテスト（比較テスト）は、コンバージョン率を高めるために非常に役立ちます。このテストには様々な種類があります。一般的なものをいくつか紹介しましょう。
 

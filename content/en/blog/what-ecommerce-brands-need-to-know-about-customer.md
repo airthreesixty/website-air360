@@ -4,7 +4,7 @@ published: 2023-2-07
 tags: 
   - ecommerce
 readingTime: 3
-image: https://www.air360.io/wp-content/uploads/2022/05/Air360-blog-Customer-Acquisition-Strategy-1024x539.jpeg
+image: /blog/Customer-Acquisition-Strategy.jpeg
 metaDesc: The most significant challenges facing eCommerce brands can be distilled into two essential questions  How do we drive visitors to our website (customer acquisition strategy) and then convince them to complete the checkout process (conversion strategy)?
 ---
 

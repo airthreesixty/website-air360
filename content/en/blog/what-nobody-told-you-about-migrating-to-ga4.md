@@ -4,7 +4,7 @@ published: 2023-4-26
 tags: 
   - data
 readingTime: 4
-image: https://air360.io/wp-content/uploads/2023/04/Diseno-sin-titulo-1-1024x461.png
+image: /blog/Diseno-sin-titulo.webp
 metaDesc: Migrating to Google Analytics 4 (GA4) can be daunting, especially if you are unfamiliar with the new platform. While there are many benefits to using GA4, there are some things that nobody tells you about migrating to this new platform. While GA4 is excellent for tracking ad spending and web behavior, it has some limitations when it comes to seeing what users do once they reach your site.
 ---
 

@@ -4,7 +4,7 @@ published: 2023-3-21
 tags: 
   - ux
 readingTime: 6
-image: https://air360.io/wp-content/uploads/2022/10/Rage-Clicks.webp
+image: /blog/Rage-Clicks.webp
 metaDesc: 「それらしいボタンやリンクをクリックしても何も有意義なことが起きない現象」のことをレイジクリックと言います。具体的にはリンクが機能しなかったり、404ページにつながったり、ページの読み込みが遅すぎて利用できなかったり、サイトがクラッシュしたりするのがレイジクリックです。
 ---
 
@@ -33,7 +33,7 @@ Despite their negative impacts, rage clicks aren’t necessarily bad. Identifyin
 
 ## How to Identify the Sources of Rage Clicks
 Before brands can cure UX problems, they must first uncover where rage clicks occur on a website. The best and most efficient way is through usability testing and behavior analytics tools. Both approaches give detailed insight into users’ actions and how they experience a website or app. They can help brands increase conversion rates and average order value and decrease cart abandonment and customer churn.
-![a group of young professionals looks at a computer screen](https://air360.io/wp-content/uploads/2022/10/rage-clicks-1.webp)
+![a group of young professionals looks at a computer screen](/blog/rage-clicks-1.webp)
 Usability testing can give a complete picture of users’ click events. During a usability test, UX researchers observe people using a website in real-time. Researchers also identify user behavior by asking detailed questions and listening to what users say while interacting with a website. In addition to uncovering where people rage click on a site, usability testing uncovers why.
 
 Behavior analytics tools are the quickest way to identify website usability issues. Here are three of the most effective:

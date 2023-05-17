@@ -4,7 +4,7 @@ published: 2023-2-14
 tags: 
   - ux
 readingTime: 6
-image: https://www.air360.io/wp-content/uploads/2022/09/what-to-look-for-in-a-ux-analytics-partner-2.webp
+image: /blog/what-to-look-for-in-a-ux-analytics-partner-2.webp
 metaDesc: eコマース市場は、顧客にシームレスで楽しいユーザー体験（UX、ユーザーエクスペリエンス）を提供することが非常に重要です。UXが最適化されていれば、顧客は必要なものを素早く、かつ簡単に見つけて購入できます。
 ---
 
@@ -57,7 +57,7 @@ eコマースブランドにとっての「良いUX」のメリットをまと�
 サーチが必要ですから、決して簡単なことではありません。ただ、それを補って余りあるほどのリターンがあります。
 
 UXアナリティクス・パートナーを探す際のポイントを挙げていきます。
-![UXアナリティクス・パートナーを探す際のポイント](https://www.air360.io/wp-content/uploads/2022/09/what-to-look-for-in-a-ux-analytics-partner-1.webp)
+![UXアナリティクス・パートナーを探す際のポイント](/blog/what-to-look-for-in-a-ux-analytics-partner-1.webp)
 
 ### 専門知識について
 狭い範囲での専門知識を持つプロバイダーを探しましょう。「広く浅く知識を持っている人」はおすすめしません。「多くの業界にサービスを提供するプロバイダー」よりも「ニッチな分野に特化したプロバイダー」と仕事をする方が結果に繋がりやすいです。「ブランド側」と「プロバイダー側」の「業界に関する知識」が共通していれば、eコマースブランドとUXパートナーは良好な関係を築くことができます。また、もちろん「UXアナリティクスや測定基準に関する専門知識」を十分に持っているかどうかも確認してください。

@@ -4,7 +4,7 @@ published: 2023-4-26
 tags: 
   - data
 readingTime: 10
-image: https://air360.io/wp-content/uploads/2023/04/migrate-GA4-1024x461.jpg
+image: /blog/migrate-GA4.jpeg
 metaDesc: While that may not be welcome news to countless GA3 users (28.1 million websites currently use Google Analytics), the clock is ticking, and Google is urging users to migrate to GA4 immediately.  
 ---
 
@@ -30,7 +30,7 @@ The key difference between Google’s analytics platforms is that GA4 is an enti
 According to Google, this architecture change allows GA4 to collect much more data than UA with a shorter measuring process. And of interest to ecommerce brands, GA4 gathers deeper insights into user activity on websites or apps. In fact, Google says GA4 can track just about anything, not just web traffic. 
 
 ## The 7 Challenges of Migrating to GA4
-![](https://air360.io/wp-content/uploads/2023/04/migrate-GA4-1.jpg)
+![](/blog/migrate-GA4-1.webp)
 Switching over to GA4 comes with many headaches, including data security concerns, compatibility issues, downtime during the migration, and the overall complexity of the process. These issues can be especially concerning for digital ecommerce marketers who need constant access to up-to-date data. Here are five headaches reported by users who have already migrated to GA4. 
 
 1. Running Out of Time 

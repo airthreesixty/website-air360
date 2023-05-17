@@ -5,7 +5,7 @@ tags:
   - marketing
   - ecommerce
 readingTime: 6
-image: https://air360.io/wp-content/uploads/2022/11/Customer-acquisition-vector-image-1024x1024.webp
+image: /blog/Customer-acquisition-vector-image-1024x1024.webp
 metaDesc: Brands spend an average of 12-15% of their annual revenue on customer acquisition. And since acquisition costs can quickly get out of hand and eat into the bottom line, it’s no surprise that most brands are looking for ways to reduce customer acquisition costs.
 ---
 
@@ -25,7 +25,7 @@ You can calculate customer acquisition costs by adding up the total amount spent
 **CAC = Total spent on sales and marketing / Total customers**
 ## Ideas for Reducing Customer Acquisition Costs
 Ready to start increasing those profit margins? Check out these 10 proven strategies to reduce customer acquisition costs at any business.
-![](https://air360.io/wp-content/uploads/2022/10/personas-ecommerce-1024x562.webp)
+![](/blog/personas-ecommerce.webp)
 
 ### 1. Segment Audiences
 By segmenting your audiences into smaller groups based on attributes and characteristics, you’ll create more relevant and effective marketing messages. Experts at Gartner recommend creating 4-7 segments based on needs and values. From there, you can tailor the website experience, email marketing, and social media or digital ads to reflect those needs and values.

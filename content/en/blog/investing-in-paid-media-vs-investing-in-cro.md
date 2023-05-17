@@ -4,7 +4,7 @@ published: 2023-3-07
 tags: 
   - marketing
 readingTime: 5
-image: https://air360.io/wp-content/uploads/2023/03/paid-ads-vs-cro-1024x683.jpg
+image: /blog/paid-ads-vs-cro.jpeg
 metaDesc: The cost of everything is going up. And that includes the cost of winning a new customer. Last year, the cost per lead for Google ads went up for 91% of sectors.
 ---
 
@@ -21,7 +21,7 @@ Shifting to organic search investments like SEO is the next logical step. Optimi
 So the shopper has found you. Now what? You’ve invested time and money into getting customers to your site and now you want them to buy. You want them to go from browsers to buyers. You want them to convert. For that, you need to focus on conversion rate optimization (CRO). 
 
 ## What is CRO?
-![vector image of a laptop screen with different webpage layouts](https://air360.io/wp-content/uploads/2023/03/paid-ads-vs-cro-1-1024x753.jpg)
+![vector image of a laptop screen with different webpage layouts](/blog/paid-ads-vs-cro-1.webp)
 CRO is the process of evaluating and making changes to your website that reduce barriers to purchase.  
 
 ### What Kind of Barriers?

@@ -5,7 +5,7 @@ tags:
   - marketing
   - ecommerce
 readingTime: 6
-image: https://air360.io/wp-content/uploads/2022/11/Customer-acquisition-vector-image-1024x1024.webp
+image: /blog/Customer-acquisition-vector-image-1024x1024.webp
 metaDesc: ブランドは年間売上高の平均12～15％を顧客獲得に費やしており、経営を圧迫する可能性があるため、ほとんどのブランドがこのコストをカットする方法を模索しています。ただ、製品の価格設定、販売、マーケティング費用など、あらゆるものが顧客獲得に影響しますから、このコストを常に把握することは困難です。
 ---
 
@@ -26,7 +26,7 @@ metaDesc: ブランドは年間売上高の平均12～15％を顧客獲得に費
 
 ## 顧客獲得コスト削減のための10の方法
 それでは、どのようなビジネスでも顧客獲得コストを削減できる、実績のある方法を紹介します。
-![顧客獲得コスト削減のための10の方法](https://air360.io/wp-content/uploads/2022/10/personas-ecommerce-1024x562.webp)
+![顧客獲得コスト削減のための10の方法](/blog/personas-ecommerce.webp)
 
 ### 1. 顧客をセグメント化する
 顧客を属性や特徴によって小さなグループにセグメント（区分け）することで、より適切で効果的なマーケティングメッセージを作成できるようになります。

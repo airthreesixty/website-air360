@@ -4,7 +4,7 @@ published: 2023-1-17
 tags: 
   - other
 readingTime: 7
-image: https://www.air360.io/wp-content/uploads/2022/05/Air360-Leverage-CRO-e1661920168596-1024x543.jpeg
+image: /blog/Leverage-CRO.jpeg
 metaDesc: Retail and eCommerce merchants are being squeezed between shifting customer demands and supply chain headaches. One way to steady the ship is to leverage CRO tools to make sure your online experience is top-notch.
 ---
 
@@ -23,7 +23,7 @@ The Ukrainian conflict has raised logistical and moral questions for eCommerce r
 Russia has one of the world’s fastest-growing eCommerce markets, with 81% of the population making an online purchase at least once a month. The Russian eCommerce market was worth US $30 billion in 2021 and is estimated to reach US $28.2 billion by 2024. Russia is the world’s 9th largest eCommerce market.
 
 ### Inflation
-![an upward trend line appears to be knocking over a bag of groceries](https://www.air360.io/wp-content/uploads/2022/05/leverate-cro-for-predictability-in-uncertain-times-1.webp)
+![an upward trend line appears to be knocking over a bag of groceries](/blog/leverate-cro-for-predictability-in-uncertain-times-1.webp)
 Rising inflation rates have hit the eCommerce industry hard. The annual inflation rate in the United States has increased from 3.2% in 2011 to 8.5% in March of 2022, the highest since 1981. As a result, the purchasing power of the U.S. dollar has weakened considerably. 
 
 Rising prices are predictably leading to changes in consumer spending habits. Reports show that 80% of consumers expect to change their shopping habits if inflation continues. Consumers will likely cut back on spending, buy in bulk and forgo high-priced purchases and luxury items. Unfortunately, inflation causes more inflation, creating a challenge for eCommerce brands that is not going away any time soon.
@@ -42,7 +42,7 @@ Rising prices due to supply chain shortages will change customer spending habits
 
 The good news for the DTC eCommerce industry is that supply chain issues can’t get much worse. The bad news is that they will continue into the foreseeable future. Experts predict that the supply chain crises could linger well into 2022 and 2023.
 ## How Do DTC eCommerce Brands Work Through Global Issues?
-![a woman is on her ell phone selecting highly satisfied customer rating](https://air360.io/wp-content/uploads/2022/05/leverage-cro-for-stability-in-unpredictable-times-2.webp)
+![a woman is on her ell phone selecting highly satisfied customer rating](/blog/leverage-cro-for-stability-in-unpredictable-times-2.webp)
 eCommerce brands can not control many global challenges that affect their growth, revenue and financial planning. But the one thing they can control is giving customers viable reasons to shop with them and remain loyal. In today’s unpredictable business climate, every single customer is important. So winning new customers and holding on to existing customers need to be at the heart of every business strategy. 
 
 The best way to ensure customer loyalty and retention is to give the customers pleasurable and enticing online experiences. Happy customers will buy more and remain loyal to brands they like, which will boost those all-important conversion rates. And the straight path to customer retention is investing in website conversion rate optimization and user experience practices.

@@ -4,7 +4,7 @@ published: 2023-2-28
 tags: 
   - ecommerce
 readingTime: 6
-image: https://www.air360.io/wp-content/uploads/2022/10/how-a-b-testing-reduces-cart-abandonment.webp
+image: /blog/how-a-b-testing-reduces-cart-abandonment.webp
 metaDesc: カート放棄（商品をカートに入れたまま離脱すること）は、eコマースビジネスの大きな課題です。2021年3月時点の全世界のオンラインショップのカート放棄率の平均は実に80％となっています。
 ---
 
@@ -29,7 +29,7 @@ A/Bテストによってカート放棄を大きく減らすことができま�
 継続的にA/Bテストを行うことで、「ユーザーが購入を完了すること」を促すための最適なサイト設定方法を発見できます。サイト内のあらゆる変更を、確実なデータに基づいて行うことができます。「勘」や「なんとなく」を排除できるのです。
 
 ## カート放棄を減らすための5つのサイトA/Bテスト 
-![カート放棄を減らすための5つのサイトA/Bテスト](https://www.air360.io/wp-content/uploads/2022/10/how-a-b-testing-reduces-cart-abandonment-1.webp)
+![カート放棄を減らすための5つのサイトA/Bテスト](/blog/how-a-b-testing-reduces-cart-abandonment-1.webp)
 ウェブサイトのA/Bテストにはさまざまな種類がありますが、ここではいくつか代表的なものを紹介します。
 
 1. **決済完了までのステップ数**　「決済完了までのステップ数」をテストします。ステップ数が少ないほど良いです。

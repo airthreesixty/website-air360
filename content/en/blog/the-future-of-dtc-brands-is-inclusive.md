@@ -4,7 +4,7 @@ published: 2023-3-14
 tags: 
   - ecommerce
 readingTime: 6
-image: https://air360.io/wp-content/uploads/2022/10/DTC-inclusion-1024x607.webp
+image: /blog/DTC-inclusion.webp
 metaDesc: The purchasing power of Gen Z grows, brands are paying more attention to what makes them tick. According to a 2021 Bloomberg article, Gen Z has more than $360 billion in disposable income, an estimate that’s more than twice as large as it was a few years ago.
 ---
 

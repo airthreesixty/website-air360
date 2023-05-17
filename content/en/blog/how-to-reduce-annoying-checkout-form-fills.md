@@ -4,7 +4,7 @@ published: 2023-3-07
 tags: 
   - ux
 readingTime: 5
-image: https://www.air360.io/wp-content/uploads/2022/10/how-to-reduce-checkout-form-fills.webp
+image: /blog/how-to-reduce-checkout-form-fills.webp
 metaDesc: Form fills are a necessary part of the eCommerce checkout process. eCommerce businesses rely on them to gather required transaction data like shipping and billing addresses. Forms also help merchants achieve website conversions and gather important consumer information. For many online companies, form conversions are a key business-success metric because the information in form fills is valuable first-party data. 
 ---
 
@@ -34,7 +34,7 @@ Users sometimes make spelling mistakes when typing their city name, resulting in
 To avoid these complexities, eCommerce brands can implement a zip code field that will auto-populate a user’s city and state. But, users should be able to override that input in case autodetection is wrong or fails. Doing so can result in a 13% reduction in the total number of open form fields.
 
 ### Include Clickable Coupon or Promotion Codes
-![screenshot of a retailer that contains clickable promo codes](https://www.air360.io/wp-content/uploads/2022/10/how-to-reduce-checkout-form-fills-1.webp)
+![screenshot of a retailer that contains clickable promo codes](/blog/how-to-reduce-checkout-form-fills-1.webp)
 Coupon or promotion code fields can be as disruptive to the checkout path as the “Single Name” field. That’s because coupon fields take customers’ focus away from the checkout page. Lured by attractive savings, many users will leave a site entirely to search for the appropriate coupon code. If they cannot find it, they very often won’t return to the checkout page.
 
 A good solution is to not include an open coupon code field on the checkout page. Instead, create a button that shoppers can click to use the applicable promo code. Despite the risk of abandonment, 48% of eCommerce sites display coupon code fields as open form fields.

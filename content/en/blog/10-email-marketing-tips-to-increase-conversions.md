@@ -4,8 +4,8 @@ published: 2023-1-24
 tags: 
   - marketing
 readingTime: 6
-image: https://www.air360.io/wp-content/uploads/2022/05/email-marketing-1024x614-1.webp
-metaDesc: 現代でもメールマーケティングは有効です。メールマーケティングがターゲットオーディエンス（想定している客層）に働きかける効果は、ソーシャルメディアマーケティングの40倍もあると言われています。
+image: /blog/email-marketing-tips.webp
+metaDesc: Impressively, email marketing is still 40 times more effective at reaching your target audience than social media marketing efforts. Perhaps even more incredibly, the number of emails sent and received annually has increased every year since 2017, with 333.2 billion emails sent every day in 2022. 
 ---
 
 Is email marketing still relevant in 2022? We’ll answer that with a resounding yes.
@@ -31,7 +31,7 @@ In 2022, there’s no need to play the guessing game when it comes to the best t
 If you’ve ever run a contest or a promotion in order to grow your email list, it’s important to scrub the list from time to time. Though these tactics are a great way to bring in more potential customers, they also might attract irrelevant subscribers who are never going to engage with your emails. Keep in mind that a focused, engaged audience is always more advantageous than a larger audience. By narrowing down your email list, you’ll also increase your conversion rates.
 
 ## A/B Test Your Emails
-![image of a mobile phone with two screenshots illustrating a/b testing](https://www.air360.io/wp-content/uploads/2022/05/10-emil-marketing-tips-to-increase-conversions-1.webp)
+![image of a mobile phone with two screenshots illustrating a/b testing](/blog/10-emil-marketing-tips-to-increase-conversions-1.webp)
 *Whether you’re testing social media ads, landing pages or email campaigns, A/B testing is always a smart move. Astonishingly, brands that always A/B test their emails create an ROI of 48:1. It pays to invest a little extra time and effort to find out which emails are resonating with your audience most.*
 
 ## Send Cart Abandonment Emails

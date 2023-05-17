@@ -4,7 +4,7 @@ published: 2023-2-14
 tags: 
   - ux
 readingTime: 6
-image: https://www.air360.io/wp-content/uploads/2022/09/what-to-look-for-in-a-ux-analytics-partner-2.webp
+image: /blog/what-to-look-for-in-a-ux-analytics-partner-2.webp
 metaDesc: In today’s consumer-centric eCommerce marketplace, giving customers a seamless and dynamic user experience (UX) has never been more important. Optimized UX ensures customers can easily navigate a website, quickly find what they need and buy it.
 ---
 
@@ -39,7 +39,7 @@ Providers who specialize in working with eCommerce businesses also bring a highe
 
 ## 4 Tips for Picking the Right UX Analytics Partner
 Finding the right UX provider takes time, patience and considerable research. Considering the potential benefits, doing due diligence will be worth the effort. Here are some key aspects to consider when looking for a UX partner.
-![illustration of a woman standing in front of a life-sized clipboard holding a pencil](https://www.air360.io/wp-content/uploads/2022/09/what-to-look-for-in-a-ux-analytics-partner-1.webp)
+![illustration of a woman standing in front of a life-sized clipboard holding a pencil](/blog/what-to-look-for-in-a-ux-analytics-partner-1.webp)
 ### Learn About Their Expertise
 When researching UX providers, look for one with narrow expertise rather than a jack of all trades. It is often better to work with a provider with a focus on a single niche than one that services a number of industries. Speaking the same language can dramatically strengthen the professional relationship between an eCommerce brand and their UX partner. Also learn about their expertise with UX analytics and metrics.
 

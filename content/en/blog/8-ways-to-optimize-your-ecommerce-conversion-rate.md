@@ -4,7 +4,7 @@ published: 2023-1-31
 tags: 
   - ux
 readingTime: 6
-image: https://www.air360.io/wp-content/uploads/2022/05/Air360-Optimize-eCommerce-Conversion-Rates-e1661920055831-1024x560.jpeg
+image: /blog/conversion-rate-optimization.jpg
 metaDesc: As the eCommerce space grows more competitive by the minute, it is important to take the time to optimize your store to make sure you can battle the competition and increase your eCommerce conversion rate. Here are 8 ways to get started.
 ---
 
@@ -16,7 +16,7 @@ We all like to follow simple steps on a website, particularly when we’re tryin
 The number of steps you need will depend on the products you’re selling or the products a customer wants to purchase. For example, if a customer is purchasing a physical product, you’ll need a stage in your checkout process where they can input their address; if a customer is purchasing a digital product, then entering a physical address won’t be necessary. 
 
 An easy way to give your customers an estimation of how many steps there will be in your checkout process is by displaying a progress bar.
-![](https://lh3.googleusercontent.com/hAVwI20EyqNQFpc_uOVT3x_OzotR8jfgpT-szlWRoBG71oDwCv9Yma3y1Z0fm3rYC0myJx_bgtptLVcdu1XQncAVseZ7GR8q0XWF72SmAGfAit8K5vgaYEegXM3B2ab0uRXMpiFc7ByV3fO7Yw)
+![](/blog/amazon.png)
 
 ## A/B test everything
 A/B testing is one of the best ways to improve your store’s conversion rate. And there are numerous ways to do this. Some of the common are:
