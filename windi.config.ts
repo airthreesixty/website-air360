@@ -144,6 +144,10 @@ export default defineConfig({
           600: '#BF45A8',
         },
       },
+      textShadow: {
+        white: '0px 0px 14px rgba(255, 255, 255, 0.7)',
+        primary: '0px 0px 14px rgba(231, 75, 145, 0.5)',
+      },
     },
   },
 })

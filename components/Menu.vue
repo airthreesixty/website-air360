@@ -1,23 +1,22 @@
 <template>
   <nav
-    class="bg-white border-gray-200 border-b-1 px-4 sticky py-2 top-0 rounded z-10 md:py-3 lg:py-0 dark:bg-gray-900"
+    class="bg-white px-4 py-2 top-0 z-10"
+    :class="{'is-homepage absolute w-full' : isHomepage, 'border-gray-200 border-b-1 sticky': !isHomepage}"
   >
+    <div v-if="isHomepage" class="bg-gradient h-60 md:h-70 lg:h-82" />
     <div class="relative flex flex-wrap items-center justify-between max-w-screen-[1400px] mx-auto">
       <NuxtLink :to="$localePath('/')">
         <Logo
-          class="h-6 mr-3 w-auto sm:h-7 xl:h-8"
-          :is-dark="true"
+          class="h-6 mr-3 w-auto sm:h-7 xl:h-8 transition-opacity hover:opacity-80"
+          :is-dark="!isHomepage"
         />
       </NuxtLink>
-      <div class="flex items-center lg:hidden">
-        <div class="relative" @click="toggleLang">
-          <fa-icon class="fa-lg text-gray-600" :icon="['fa', 'earth-americas']" />
-          <LanguageModal v-if="isLangActive" :is-dark="true" />
-        </div>
+      <div class="flex items-center space-x-4">
         <button
           data-collapse-toggle="navbar-default"
           type="button"
-          class="inline-flex items-center p-2 md:ml-2.5 lg:ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          class="inline-flex items-center p-2 md:ml-2.5 lg:ml-3 text-sm rounded-lg order-2 transition-shadow lg:hidden hover:ring-2 hover:ring-opacity-20 focus:outline-none focus:ring-2"
+          :class="{'text-white hover:ring-white focus:ring-white': isHomepage, 'text-gray-500 hover:ring-gray-500 focus:ring-gray-500': !isHomepage}"
           aria-controls="navbar-default"
           aria-expanded="false"
           @click="toggleMenu"
@@ -37,61 +36,51 @@
             />
           </svg>
         </button>
-      </div>
-      <div
-        id="navbar-default"
-        class="w-full transition ease-in-out duration-500 rounded-lg lg:block lg:w-auto"
-        :class="{hidden: !isActive,'menu-active': isActive, 'sm:max-w-[300px]': isActive}"
-      >
-        <div v-if="isActive" class="flex justify-center mt-6">
-          <div class="max-w-[100px]">
-            <img src="/favicon.png">
-          </div>
-        </div>
-        <ul
-          class="flex flex-col p-4 mt-4 border items-center border-none lg:flex-row lg:space-x-8 lg:mt-0 lg:text-base lg:font-medium lg:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+        <div
+          id="navbar-default"
+          class="w-full transition ease-in-out duration-500 rounded-lg lg:flex items-center"
+          :class="{hidden: !isActive,'menu-active': isActive, 'sm:max-w-[300px]': isActive}"
         >
-          <li class="py-2">
-            <NuxtLink :to="$localePath('/product')">
-              <div
-                class="menu__link"
-              >
-                {{ $t("product.title") }}
-              </div>
-            </NuxtLink>
-          </li>
-          <hr v-if="isActive" class="h-1 w-2/3">
-          <li class="py-2">
-            <NuxtLink :to="$localePath('/blog')">
-              <div
-                class="menu__link"
-              >
-                {{ $t("blog") }}
-              </div>
-            </NuxtLink>
-          </li>
-          <hr v-if="isActive" class="h-1 w-2/3">
-          <li class="py-2">
-            <a
-              :href="runtimeConfig.public.appUrl"
-              class="menu__link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >{{ $t("login") }}</a>
-          </li>
-          <hr v-if="isActive" class="h-1 w-2/3">
-          <li class="py-2">
-            <ButtonPrimary slug="/request-demo" theme="primary">
-              {{ $t("request-demo.title") }}
-            </ButtonPrimary>
-          </li>
-          <li :class="{hidden: isActive}">
-            <div class="relative" @click="toggleLang">
-              <fa-icon class="fa-lg text-gray-600" :icon="['fa', 'earth-americas']" />
-              <LanguageModal v-if="isLangActive" :is-dark="true" />
+          <div v-if="isActive" class="flex justify-center mt-6">
+            <div class="max-w-[100px]">
+              <img src="/favicon.png">
             </div>
-          </li>
-        </ul>
+          </div>
+          <ul
+            class="flex flex-col p-4 pb-6 mt-4 border items-center border-none space-y-2 lg:(flex-row space-x-8 mt-0 space-y-0 text-base font-medium border-0 pb-4)"
+          >
+            <li>
+              <NuxtLink :to="$localePath('/product')" class="menu__link">
+                {{ $t("product.title") }}
+              </NuxtLink>
+            </li>
+            <hr v-if="isActive" class="h-1 w-2/3">
+            <li>
+              <NuxtLink :to="$localePath('/blog')" class="menu__link">
+                {{ $t("blog") }}
+              </NuxtLink>
+            </li>
+            <hr v-if="isActive" class="h-1 w-2/3">
+            <li>
+              <a
+                :href="runtimeConfig.public.appUrl"
+                class="menu__link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >{{ $t("login") }}</a>
+            </li>
+            <hr v-if="isActive" class="h-1 w-2/3">
+            <li class="pt-2 lg:pt-0">
+              <ButtonPrimary slug="/request-demo" :theme="isHomepage && !isActive ? 'outline' : 'primary'">
+                {{ $t("request-demo.title") }}
+              </ButtonPrimary>
+            </li>
+          </ul>
+        </div>
+        <div class="relative menu__link order-1 lg:order-3 !lg:pr-4" @click="toggleLang">
+          <fa-icon class="fa-lg" :icon="['fa', 'earth-americas']" />
+          <LanguageModal v-if="isLangActive" :is-dark="true" />
+        </div>
       </div>
     </div>
   </nav>
@@ -100,9 +89,11 @@
 <script setup lang="ts">
 const { $localePath } = useNuxtApp()
 const runtimeConfig = useRuntimeConfig()
+const route = useRoute()
 
 const isActive = ref(false)
 const isLangActive = ref(false)
+const isHomepage = computed(() => getPathWithoutLocale(route.fullPath) === '/')
 
 const toggleMenu = () => {
   isActive.value = !isActive.value
@@ -130,6 +121,15 @@ onBeforeUnmount(() => {
 </script>
 
 <style lang="postcss">
+.bg-gradient {
+  width: 100%;
+  background: linear-gradient(101.87deg, #2D92E9 4.15%, #644AD5 22.36%, #C141AC 41.56%, #E72192 61.75%, #F04D66 78.49%, #FD7043 98.68%);
+  transform: skewY(-8deg) translateY(-150px);
+  position: absolute;
+  left: 0;
+  top: auto;
+}
+
 .menu-active {
   position: absolute;
   top: 60px;
@@ -137,13 +137,17 @@ onBeforeUnmount(() => {
   margin: auto 0px;
   display: block;
   background-color: white;
-  height: 380px;
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
 .menu__link {
-  @apply block py-2 pl-3 pr-4 font-semibold text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-600 md:px-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent;
-  .router-link-exact-active & {
+  @apply block py-2 font-semibold text-gray-500 transition-all hover:(text-shadow-primary text-primary-600);
+
+  .is-homepage & {
+    @apply !lg:text-white !hover:text-shadow-white;
+  }
+
+  &.router-link-exact-active {
     @apply text-primary-600;
   }
 }

@@ -1,14 +1,16 @@
 <template>
   <div>
     <Menu />
-    <slot />
+    <main>
+      <slot />
+    </main>
     <TheFooter />
   </div>
 </template>
 
 <script setup lang="ts">
 const route = useRoute()
-const { $i18n } = useNuxtApp()
+const { locale } = useI18n()
 const runtimeConfig = useRuntimeConfig()
 
 useHead(() => ({
@@ -19,7 +21,7 @@ useHead(() => ({
     },
   ],
   htmlAttrs: {
-    lang: $i18n.locale._value,
+    lang: locale.value,
   },
 }))
 </script>

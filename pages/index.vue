@@ -7,10 +7,6 @@ import { useSeoMeta } from '@unhead/vue'
 const { locale, t } = useI18n()
 const runtimeConfig = useRuntimeConfig()
 
-definePageMeta({
-  layout: 'landing-page',
-})
-
 useHead({
   titleTemplate: '',
   script: [

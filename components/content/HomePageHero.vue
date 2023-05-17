@@ -1,9 +1,7 @@
 <template>
   <section class="relative">
-    <div class="bg-gradient h-75 lg:h-82" />
-    <LpMenu />
     <div
-      class="max-w-screen-[1400px] px-6 pt-55 md:pt-58 lg:pt-66 pb-22 mx-auto lg:pb-16 lg:px-8"
+      class="max-w-screen-[1400px] px-6 pt-46 md:pt-58 lg:pt-70 pb-22 mx-auto lg:pb-16 lg:px-8"
     >
       <div class="place-self-center">
         <div class="flex justify-center">
@@ -66,14 +64,6 @@ const { locale } = useI18n()
   cursor: pointer;
   width: 100%;
   box-shadow: 0 4px 4px 0 #00000010;
-}
-
-.bg-gradient {
-  width: 100%;
-  background: linear-gradient(101.87deg, #2D92E9 4.15%, #644AD5 22.36%, #C141AC 41.56%, #E72192 61.75%, #F04D66 78.49%, #FD7043 98.68%);
-  transform: skewY(-8deg) translateY(-150px);
-  position: absolute;
-  top: auto;
 }
 
 .svg-position {
