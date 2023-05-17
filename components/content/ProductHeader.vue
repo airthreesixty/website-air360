@@ -6,7 +6,7 @@
           <ContentSlot :use="$slots.subtext" unwrap="p" />
         </p>
         <h1
-          class="mt-1 text-[34px] font-semibold text-black-600 tracking-tight md:text-5xl lg:text-6xl"
+          class="mt-1 text-4xl font-semibold text-black-600 tracking-tight md:text-5xl lg:text-6xl"
         >
           <ContentSlot :use="$slots.title" unwrap="p" />
         </h1>

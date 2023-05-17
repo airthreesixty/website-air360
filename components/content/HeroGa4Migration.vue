@@ -1,10 +1,28 @@
 <template>
   <section>
     <div class="bg-gradient">
-      <div class="container">
-        <h1 class="text-white">
-          The eCommerce experience analytics solution that will help you simplify your Google Analytics 4 Migration
+      <div class="container mx-auto py-15 lg:py-20">
+        <h1 class="text-white font-semibold text-2xl md:text-3xl lg:text-4xl">
+          <ContentSlot :use="$slots.title" unwrap="p" />
         </h1>
+        <div class="md:flex md:items-center md:mt-12 lg:mt-18 md:gap-x-8">
+          <div class="text-white my-10 md:my-0 lg:text-lg">
+            <p class="mb-4">
+              <ContentSlot :use="$slots.description1" unwrap="p" />
+            </p>
+            <p class="my-4">
+              <ContentSlot :use="$slots.description2" unwrap="p" />
+            </p>
+            <p class="my-4">
+              <ContentSlot :use="$slots.description3" unwrap="p" />
+            </p>
+          </div>
+          <div class="max-w-[700px]">
+            <video controls controlslist="nodownload">
+              <source data-src="/videos/GA4-migration-video.mp4" src="/videos/GA4-migration-video.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
       </div>
     </div>
   </section>
