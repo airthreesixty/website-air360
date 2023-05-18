@@ -7,7 +7,7 @@
     </transition>
     <Loading v-if="loading" :is-full-page="true" />
     <div
-      class="container py-8 mx-auto lg:flex lg:justify-center lg:gap-5 lg:py-16"
+      class="container py-8 mx-auto lg:flex lg:justify-center lg:gap-5 lg:pt-16 lg:pb-0"
     >
       <div
         class="flex-col hidden lg:flex lg:items-center"

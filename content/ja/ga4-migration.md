@@ -9,9 +9,9 @@ Google Analytics 4移行を簡略化するeコマース体験分析ソリュー�
 この移行における課題をどのように解決できるかを説明した簡単なビデオをご覧ください。
 ::
 
-::request-form
+::ga-4-form-section
 #title1
-eコマース体験を向上させ、Google Analytics 4への移行を<br>簡素化したいですか？
+eコマース体験を向上させ、Google Analytics 4への移行を簡素化したいですか？
 #subtitle1
 Air360の詳細については、当社のエキスパートと15分間のクイックコールをご予約ください。
 #name
@@ -25,4 +25,6 @@ Air360の詳細については、当社のエキスパートと15分間のクイ
 
 #rule
 Air360の<span class="text-primary-600 hover:underline">[利用規約とプライバシーポリシー](/privacy-policy)</span>に同意するものとします。
+#cta
+ミーティングを予約
 ::

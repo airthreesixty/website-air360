@@ -1,10 +1,16 @@
 <template>
-  <form class="space-y-4 lg:space-y-6 max-w-md" action="" method="post" @submit.prevent="submitForm">
+  <transition name="bar">
+    <div v-if="isSuccess">
+      <SuccessNotification :is-success="isSuccess" @close="close" />
+    </div>
+  </transition>
+  <Loading v-if="loading" :is-full-page="true" />
+  <form class="space-y-4 lg:space-y-6 max-w-md" method="post" @submit.prevent="$emit('submitForm', {v$, loading, isSuccess, formData})">
     <div>
       <label
         for="name"
         class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-      ><ContentSlot :use="$slots.name" unwrap="p" /></label>
+      >{{ $t('form.name') }}*</label>
       <input
         id="name"
         v-model="formData.name"
@@ -20,7 +26,7 @@
       <label
         for="email"
         class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-      ><ContentSlot :use="$slots.email" unwrap="p" /></label>
+      >{{ $t('form.email') }}*</label>
       <input
         id="email"
         v-model="formData.email"
@@ -37,7 +43,7 @@
       <label
         for="job-title"
         class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-      ><ContentSlot :use="$slots.jobTitle" unwrap="p" /></label>
+      >{{ $t('form.jobTitle') }}*</label>
       <input
         id="job-title"
         v-model="formData.jobTitle"
@@ -63,7 +69,7 @@
         <div
           class="font-light text-xs text-gray-500 dark:text-gray-300"
         >
-          <ContentSlot :use="$slots.rule" unwrap="p" />
+          <slot name="rule" />
         </div>
       </div>
     </div>
@@ -73,7 +79,7 @@
       :class="{'opacity-25 cursor-not-allowed': !isFormValid }"
       :disabled="!isFormValid"
     >
-      {{ $t('request-demo') }}
+      <slot name="cta" />
     </button>
   </form>
 </template>
@@ -103,6 +109,10 @@ const rules = computed(() => {
 
 const v$ = useVuelidate(rules, formData)
 
+const close = () => {
+  isSuccess.value = !isSuccess.value
+}
+
 const isFormValid = computed(() => {
   if (formData.name && formData.email && formData.jobTitle && formData.terms) {
     return true
@@ -111,19 +121,24 @@ const isFormValid = computed(() => {
   }
 })
 
-const submitForm = async () => {
-  const isFormCorrect = await v$.value.$validate()
-  if (isFormCorrect) {
-    loading.value = true
-    await axios.post('https://api.form-data.com/f/gq31layf9m65mw704tcnmm', formData)
-    // @ts-ignore
-    Air360.identify(formData.email)
-    loading.value = false
-    isSuccess.value = !isSuccess.value
-    v$.value.$reset()
-    Object.assign(formData, { name: '', email: '', jobTitle: '', terms: false })
-  }
-}
+defineEmits(['submitForm'])
+
+// const submitForm = async () => {
+//   const isFormCorrect = await v$.value.$validate()
+//   if (isFormCorrect) {
+//     loading.value = true
+//     // await axios.post('https://api.form-data.com/f/gq31layf9m65mw704tcnmm', formData)
+//     // // @ts-ignore
+//     // Air360.identify(formData.email)
+//     setTimeout(() => {
+//       loading.value = false
+//       isSuccess.value = !isSuccess.value
+//       console.log(formData.name, formData.email, formData.jobTitle)
+//       v$.value.$reset()
+//       Object.assign(formData, { name: '', email: '', jobTitle: '', terms: false })
+//     }, 3000)
+//   }
+// }
 </script>
 
 <style lang="postcss">
