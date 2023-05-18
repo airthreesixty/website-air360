@@ -48,6 +48,7 @@ import _ from 'lodash'
 import gsap from 'gsap'
 import { BlogArticle } from '~~/interfaces/blog'
 
+const { locale } = useI18n()
 const route = useRoute()
 const props = defineProps({
   articles: {
@@ -55,6 +56,9 @@ const props = defineProps({
     required: true,
   },
 })
+
+console.log(locale.value)
+
 const isLoading = ref(false)
 let loadButtonClickCount = 0
 
@@ -82,7 +86,7 @@ const loadMore = async () => {
   loadButtonClickCount++
   const currentPage = Number(route.query.page) || 0
   await navigateTo({
-    path: '/blog',
+    path: `/${locale.value}/blog`,
     query: {
       page: currentPage + 1,
     },
