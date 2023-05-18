@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white pt-22">
+  <section ref="target" class="bg-white pt-22">
     <div class="mx-auto max-w-screen-[1400px] px-6 text-center lg:px-8">
       <div>
         <!-- <h2 class="text-md font-semibold text-primary-600 lg:text-xl">次世代型UXアナリティクスツール</h2> -->
@@ -14,6 +14,7 @@
         <div class="wistia_responsive_padding mx-auto md:w-9/12 lg:w-8/12" style="padding:56.25% 0 0 0;position:relative;">
           <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
             <iframe
+              v-if="showIframe"
               src="https://fast.wistia.net/embed/iframe/uzru2drtmd?videoFoam=true"
               title="Air360 by Scalefast Creating Conversion Rate Heroes Video"
               allow="autoplay; fullscreen"
@@ -31,3 +32,19 @@
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+import { useIntersectionObserver } from '@vueuse/core'
+
+const target = ref(null)
+const showIframe = ref(false)
+
+useIntersectionObserver(
+  target,
+  ([{ isIntersecting }]) => {
+    if (!showIframe.value && isIntersecting) {
+      showIframe.value = true
+    }
+  },
+)
+</script>

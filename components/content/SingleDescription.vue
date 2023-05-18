@@ -1,12 +1,19 @@
 <template>
-  <section class="bg-white">
+  <section ref="target" class="bg-white">
     <div
       class="max-w-screen-[1400px] px-6 py-7 mx-auto md:flex md:justify-between md:items-center lg:py-13 lg:px-8"
     >
       <div :class="`flex justify-center md:${imageStatus} md:mt-0 md:flex md:w-[58%] md:p-5`">
-        <nuxt-img v-if="!isVideo" format="webp" :src="imagePath" :alt="alt" class="rounded-lg shadow-lg my-auto w-full object-cover" />
+        <nuxt-img
+          v-if="!isVideo"
+          format="webp"
+          :src="imagePath"
+          :alt="alt"
+          loading="lazy"
+          class="rounded-lg shadow-lg my-auto w-full object-cover"
+        />
         <video
-          v-if="isVideo"
+          v-else-if="showVideo"
           autoplay
           class="shadow-lg my-auto w-full rounded-lg object-cover"
           loop
@@ -34,9 +41,16 @@
         </p>
       </div>
       <div :class="`hidden md:${imageStatus2} md:mt-0 md:flex md:w-[58%] md:p-5`">
-        <nuxt-img v-if="!isVideo" format="webp" :src="imagePath" :alt="alt" class="rounded-lg shadow-lg my-auto w-full object-cover" />
+        <nuxt-img
+          v-if="!isVideo"
+          format="webp"
+          :src="imagePath"
+          :alt="alt"
+          loading="lazy"
+          class="rounded-lg shadow-lg my-auto w-full object-cover"
+        />
         <video
-          v-if="isVideo"
+          v-else-if="showVideo"
           autoplay
           class="shadow-lg my-auto w-full rounded-lg object-cover"
           loop
@@ -52,6 +66,8 @@
 </template>
 
 <script setup lang="ts">
+import { useIntersectionObserver } from '@vueuse/core'
+
 const props = defineProps({
   imagePath: {
     type: String,
@@ -98,6 +114,17 @@ const props = defineProps({
 const theme = {
   backgroundColor: props.themeColor,
 }
+const target = ref(null)
+const showVideo = ref(false)
+
+useIntersectionObserver(
+  target,
+  ([{ isIntersecting }]) => {
+    if (!showVideo.value && isIntersecting) {
+      showVideo.value = true
+    }
+  },
+)
 </script>
 
 <style lang="postcss">
