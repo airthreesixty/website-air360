@@ -10,6 +10,7 @@
           :src="imagePath"
           :alt="alt"
           loading="lazy"
+          sizes="xl:1390px lg:1034px md:754px sm:1184px xs:277px"
           class="rounded-lg shadow-lg my-auto w-full object-cover"
         />
         <video
@@ -47,6 +48,7 @@
           :src="imagePath"
           :alt="alt"
           loading="lazy"
+          sizes="xl:1390px lg:1034px md:754px sm:1184px xs:277px"
           class="rounded-lg shadow-lg my-auto w-full object-cover"
         />
         <video
