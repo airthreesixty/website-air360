@@ -1,3 +1,5 @@
+import crawler from './crawler'
+
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   modules: ['@nuxt/content', 'nuxt-windicss', '@nuxtjs/i18n', 'nuxt-font-loader', '@nuxtjs/algolia', '@nuxt/image-edge', 'nuxt-schema-org'],
@@ -10,14 +12,11 @@ export default defineNuxtConfig({
   algolia: {
     apiKey: process.env.ALGOLIA_SEARCH_API_KEY,
     applicationId: process.env.ALGOLIA_APPLICATION_ID,
-    instantSearch: {
-      theme: 'satellite',
-    },
     crawler: {
       apiKey: process.env.ALGOLIA_WRITE_API_KEY ?? '',
       indexName: process.env.ALGOLIA_DOCSEARCH_INDEX_NAME ?? '',
-      meta: ['title', 'description'],
-      include: [/\/blog/g],
+      meta: crawler,
+      include: [/^\/\w{2}\/blog\/.*(?<!\.(json|js|html))$/g],
     },
   },
   runtimeConfig: {

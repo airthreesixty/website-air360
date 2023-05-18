@@ -30,6 +30,8 @@
 // @ts-ignore
 import _ from 'lodash'
 
+const { locale } = useI18n()
+
 defineProps({
   modelValue: {
     type: Array as () => string[] | null,
@@ -49,8 +51,13 @@ watch(filterText, (value) => {
   isLoading.value = true
   _.debounce(async () => {
     if (value) {
-      await search({ query: value })
-      emit('update:modelValue', result.value.hits.map(h => `/${h.lang}/blog/${h.slug}`))
+      await search({
+        query: value,
+        requestOptions: {
+          facetFilters: [`language:${locale.value}`],
+        },
+      })
+      emit('update:modelValue', result.value.hits.map(h => h.href))
     } else {
       emit('update:modelValue', null)
     }
