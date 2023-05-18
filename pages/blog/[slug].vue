@@ -3,8 +3,8 @@
     <main v-if="data">
       <ContentRenderer :value="data">
         <div class="bg-white flex justify-center dark:bg-gray-900">
-          <div class="pt-10 pb-5 max-w-screen-[1400px]">
-            <div class="lg:flex lg:justify-between gap-8 px-6 lg:px-8">
+          <div class="pt-10 pb-5">
+            <div class="container lg:flex lg:justify-between gap-8">
               <div class="lg:w-[64%]">
                 <article
                   class="mx-auto format format-sm sm:format-base lg:format-lg format-blue dark:format-invert"
@@ -99,15 +99,15 @@
                     </h1>
                     <nuxt-img format="webp" :src="data.image" :alt="data.title" class="h-90 mb-10 rounded-lg w-full object-cover" />
                   </header>
-                  <div class="prose">
-                    <TableOfContents :paragraph-titles="paragraphTitles" class="lg:hidden" />
-                    <ContentRendererMarkdown :value="data" />
+                  <div class="prose nuxt-content">
+                    <NewTableOfContents :paragraph-titles="paragraphTitles" class="lg:hidden" />
+                    <ContentRendererMarkdown ref="nuxtContent" :value="data" />
                   </div>
                 </article>
               </div>
               <div class="hidden lg:block w-[34%]">
                 <div class="prose sticky top-30">
-                  <TableOfContents :paragraph-titles="paragraphTitles" />
+                  <NewTableOfContents :paragraph-titles="paragraphTitles" :active-toc-id="activeTocId" />
                 </div>
               </div>
             </div>
@@ -130,6 +130,8 @@ const runtimeConfig = useRuntimeConfig()
 const route = useRoute()
 const router = useRouter()
 const fullPath = route.fullPath
+const activeTocId = ref<String | null>(null)
+const nuxtContent = ref(null)
 
 // TODO the value from the plugin is wrong, remove _value when it's fixed
 const { data } = await useAsyncData(`blog-${route.params.slug}/`, () =>
@@ -138,7 +140,32 @@ const { data } = await useAsyncData(`blog-${route.params.slug}/`, () =>
   ).findOne(),
 )
 
-const paragraphTitles = data._rawValue.body.toc.links
+const paragraphTitles = computed(() => data._rawValue.body.toc.links ?? [])
+
+const observer: Ref<IntersectionObserver | null | undefined> = ref(null)
+const observerOptions = reactive({
+  root: nuxtContent.value,
+  threshold: 0.5,
+})
+
+onMounted(() => {
+  observer.value = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      const id = entry.target.getAttribute('id')
+      if (entry.isIntersecting) {
+        activeTocId.value = id
+      }
+    })
+  }, observerOptions)
+
+  document.querySelectorAll('.nuxt-content h2[id], .nuxt-content h3[id]').forEach((section) => {
+    observer.value?.observe(section)
+  })
+})
+
+onUnmounted(() => {
+  observer.value?.disconnect()
+})
 
 if (!data.value) {
   router.push($localePath('/blog'))

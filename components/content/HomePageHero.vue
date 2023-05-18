@@ -1,7 +1,7 @@
 <template>
   <section class="relative">
     <div
-      class="max-w-screen-[1400px] px-6 pt-46 md:pt-58 lg:pt-70 pb-22 mx-auto lg:pb-16 lg:px-8"
+      class="container pt-46 md:pt-58 lg:pt-70 pb-22 mx-auto lg:pb-16"
     >
       <div class="place-self-center">
         <div class="flex justify-center">

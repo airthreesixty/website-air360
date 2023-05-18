@@ -1,11 +1,11 @@
 <template>
   <section
-    class="overflow-hidden max-w-screen-[1400px] mx-auto bg-cover md:bg-[rgba(255,255,255,0.59)] bg-blend-lighten md:justify-center md:flex"
+    class="container overflow-hidden mx-auto bg-cover md:bg-[rgba(255,255,255,0.59)] bg-blend-lighten md:justify-center md:flex"
     style="
       background-image: url(/BgTestimonial.svg)
     "
   >
-    <div class="mx-auto px-6 py-16 lg:px-8 lg:pb-20">
+    <div class="mx-auto py-16 lg:pb-20">
       <div class="lg:flex lg:items-center">
         <div class="hidden lg:block lg:flex-shrink-0">
           <nuxt-img

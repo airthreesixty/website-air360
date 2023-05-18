@@ -1,6 +1,6 @@
 <template>
   <section class="bg-white dark:bg-gray-900">
-    <div class="max-w-screen-xl px-6 py-10 mx-auto text-center lg:py-16 lg:px-8">
+    <div class="container py-10 mx-auto text-center lg:py-16">
       <figure class="max-w-screen-md mx-auto">
         <svg
           class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600"
