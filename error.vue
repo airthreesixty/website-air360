@@ -3,7 +3,7 @@
     <div class="container py-8 mx-auto lg:py-16">
       <div class="mx-auto max-w-screen-sm text-center">
         <div class="flex justify-center">
-          <img src="/favicon.png" alt="mochi" class="w-25 lg:w-45">
+          <img src="/favicon.webp" alt="mochi" class="w-25 lg:w-45">
         </div>
         <h1 class="mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-primary-600 dark:text-primary-500">
           {{ error?.statusCode }}

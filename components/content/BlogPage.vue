@@ -57,8 +57,6 @@ const props = defineProps({
   },
 })
 
-console.log(locale.value)
-
 const isLoading = ref(false)
 let loadButtonClickCount = 0
 
