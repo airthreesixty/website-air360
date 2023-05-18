@@ -36,7 +36,7 @@
         <ContentSlot :use="$slots.description2" unwrap="p" />
       </template>
     </SingleDescription>
-    <SingleDescription image-path="/noCode.png" :alt="$t('how-air360-helps3')" icon="/icons/iconQuick.svg" theme-color="#3C8BFF">
+    <SingleDescription :image-path="image" :alt="$t('how-air360-helps3')" icon="/icons/iconQuick.svg" theme-color="#3C8BFF">
       <template #title>
         <ContentSlot :use="$slots.title3" unwrap="p" />
       </template>
@@ -63,5 +63,9 @@ const videoSrc2 = computed(() => {
 
 const posterSrc2 = computed(() => {
   return locale.value === 'en' ? '/en/sessionReplay.jpeg' : '/sessionReplay.webp'
+})
+
+const image = computed(() => {
+  return locale.value === 'en' ? '/mockup-dashboard.jpeg' : '/noCode.png'
 })
 </script>
