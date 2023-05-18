@@ -87,4 +87,7 @@ export default defineNuxtConfig({
       '@fortawesome/free-solid-svg-icons',
     ],
   },
+  image: {
+    provider: 'ipx',
+  },
 })
