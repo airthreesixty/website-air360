@@ -4,7 +4,7 @@ published: 2023-5-15
 tags: 
   - data
 readingTime: 4
-image: https://air360.io/wp-content/uploads/2023/04/Diseno-sin-titulo-1-1024x461.png
+image: /blog/Diseno-sin-titulo.webp
 metaDesc: GA4には多くのメリットがあり、広告費を抑えたり、ユーザーのウェブ上でのアクションを追跡したりすることは得意です。しかし、新しいプラットフォームに慣れていない場合、グーグルアナリティクス4（GA4）への移行は特に大変な作業になる可能性が高いです。
 ---
 
