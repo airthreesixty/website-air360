@@ -69,7 +69,7 @@ const canLoadMore = computed(() => {
 
 watch([searchedArticles, articles], () => {
   if (searchedArticles.value !== null) {
-    displayedArticles.value = articles.value.filter(article => searchedArticles.value?.includes(article._path))
+    displayedArticles.value = articles.value.filter(article => searchedArticles.value?.includes(`${article._path}/`))
   } else {
     displayedArticles.value = articles.value.slice(0, numArticlesPerLoad)
   }

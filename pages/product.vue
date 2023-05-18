@@ -3,13 +3,17 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n()
+const route = useRoute()
+const runtimeConfig = useRuntimeConfig()
+
 useSeoMeta({
-  title: '製品',
-  description: 'Air360では顧客の行動を自動でトラッキングし、Chrome拡張機能やセッションリプレイ等様々な機能で簡単に顧客にとって最善のウェブサイトを目指せます。',
-  ogDescription: 'Air360では顧客の行動を自動でトラッキングし、Chrome拡張機能やセッションリプレイ等様々な機能で簡単に顧客にとって最善のウェブサイトを目指せます。',
-  ogTitle: 'Air360 - 製品',
-  ogImage: '/sunburst.png',
+  title: t('product.title'),
+  description: t('product.description'),
+  ogDescription: t('product.ogDescription'),
+  ogTitle: `Air360 - ${t('product.title')}`,
+  ogImage: t('product.ogImage'),
   twitterCard: 'summary_large_image',
-  ogUrl: 'https://jp.air360.io/product/',
+  ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
 })
 </script>

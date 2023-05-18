@@ -4,7 +4,7 @@ published: 2023-4-04
 tags: 
   - other
 readingTime: 4
-image: https://air360.io/wp-content/uploads/2022/11/conversion-rate-optimization.jpg
+image: /blog/conversion-rate-optimization.jpg
 metaDesc: eコマースのコンバージョン率を高め、収益を得て、競合他社に勝つためには、時間をかけてストアを最適化することが重要です。ここでは、そのための方法を6つ紹介します。
 ---
 
@@ -45,7 +45,7 @@ A/Bテストには、「サイトや店舗の様々な部分を徐々にテス�
 また、特にそのブランドに対する愛着が強いユーザーは、ブランドの最新商品をいち早く手に入れたいと思っています。
 
 そして、ユーザーをセグメント化（特徴やニーズに沿ってユーザーを区分けすること）することで、購買意欲の高いユーザーをアクセスさせることができます。
-![商品値下げや期間限定セールを開催する](https://air360.io/wp-content/uploads/2022/11/conversion-rate-optimization-1.jpg)
+![商品値下げや期間限定セールを開催する](/blog/conversion-rate-optimization-1.jpg)
 
 ## カート放棄をしているユーザーへの通知
 カート放棄（カートに入れたまま買わずに離脱すること）をしたユーザーに対してそのことを通知することにより、「ほぼ購入者だった人」に効率よく購入を促すことができます。

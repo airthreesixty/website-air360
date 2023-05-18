@@ -32,11 +32,9 @@
           to="/"
           class="inline-flex items-center text-2xl font-semibold text-gray-900 lg:hidden dark:text-white"
         >
-          <nuxt-img
+          <Logo
             class="h-6"
-            format="webp"
-            src="/air360Logo.png"
-            alt="Air360 logo"
+            :is-dark="true"
           />
         </NuxtLink>
       </div>
@@ -45,11 +43,9 @@
         class="items-center flex flex-col mb-6 text-2xl font-semibold text-black-600 lg:mb-10 dark:text-white"
       >
         <div class="flex justify-center hidden mb-3 lg:block lg:flex">
-          <nuxt-img
-            format="webp"
+          <Logo
             class="h-6 mr-2 h-7"
-            src="/air360Logo.png"
-            alt="Air360 logo"
+            :is-dark="true"
           />
         </div>
         <div
@@ -135,7 +131,7 @@
                 :class="{'opacity-25 cursor-not-allowed': !isFormValid }"
                 :disabled="!isFormValid"
               >
-                {{ $t('request-demo') }}
+                {{ $t('request-demo.title') }}
               </button>
             </form>
           </div>

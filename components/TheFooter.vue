@@ -1,14 +1,12 @@
 <template>
-  <footer class="px-4 py-6 border-gray-200 border-t-1 dark:bg-gray-900">
+  <footer class="px-8 py-6 border-gray-200 border-t-1 dark:bg-gray-900">
     <div class="max-w-screen-[1400px] mx-auto md:flex md:justify-between">
       <div class="mb-6 md:mb-0">
         <NuxtLink :to="$localePath('/')">
           <div class="flex items-center">
-            <nuxt-img
-              format="webp"
-              src="/air360Logo.png"
+            <Logo
               class="mr-3 h-6 w-auto sm:h-7 xl:h-8"
-              alt="Air360 Logo"
+              :is-dark="true"
             />
           </div>
         </NuxtLink>
@@ -55,7 +53,7 @@
           </a> -->
         </div>
       </div>
-      <div class="grid grid-cols-2 gap-x-2 gap-y-6 md:gap-6 md:grid-cols-3">
+      <div class="grid grid-cols-2 gap-x-2 gap-y-6 md:gap-6 md:grid-cols-4">
         <div>
           <h2
             class="mb-6 text-sm font-semibold text-black-600 uppercase dark:text-white"
@@ -72,7 +70,7 @@
             </li>
             <li class="mb-4">
               <a
-                href="https://en-jp.wantedly.com/companies/company_4114459"
+                :href="url"
                 class="hover:underline"
                 target="_blank"
               >{{ $t("careers") }}<fa-icon class="fa-sm pl-1" :icon="['fas', 'arrow-up-right-from-square']" /></a>
@@ -80,7 +78,7 @@
             <li>
               <NuxtLink :to="$localePath('/privacy-policy')">
                 <div class="hover:underline">
-                  {{ $t("privacy-policy") }}
+                  {{ $t("privacy-policy.title") }}
                 </div>
               </NuxtLink>
             </li>
@@ -103,7 +101,7 @@
             <li class="mb-4">
               <NuxtLink :to="$localePath('/product')">
                 <div class="hover:underline">
-                  {{ $t("product") }}
+                  {{ $t("product.title") }}
                 </div>
               </NuxtLink>
             </li>
@@ -119,7 +117,7 @@
             <li class="mb-4">
               <NuxtLink :to="$localePath('/request-demo')">
                 <div class="hover:underline">
-                  {{ $t("request-demo") }}
+                  {{ $t("request-demo.title") }}
                 </div>
               </NuxtLink>
             </li>
@@ -131,7 +129,19 @@
               </NuxtLink>
             </li>
             <li>
-              <a href="https://beta.air360.io/" target="_blank" class="hover:underline">{{ $t("login") }}<fa-icon class="fa-sm pl-1" :icon="['fas', 'arrow-up-right-from-square']" /></a>
+              <a :href="runtimeConfig.public.appUrl" target="_blank" class="hover:underline">{{ $t("login") }}<fa-icon class="fa-sm pl-1" :icon="['fas', 'arrow-up-right-from-square']" /></a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2
+            class="mb-6 text-sm font-semibold text-black-600 uppercase dark:text-white"
+          >
+            {{ $t("language") }}
+          </h2>
+          <ul class="text-gray-700 dark:text-gray-400">
+            <li class="mb-4">
+              <LangSwitcher />
             </li>
           </ul>
         </div>
@@ -142,4 +152,15 @@
 
 <script setup lang="ts">
 const { $localePath } = useNuxtApp()
+const { locale } = useI18n()
+const runtimeConfig = useRuntimeConfig()
+
+const lang = locale.value
+const url = computed(() => {
+  if (lang === 'en') {
+    return 'https://careers.scalefast.com/'
+  }
+
+  return 'https://www.wantedly.com/companies/company_4114459'
+})
 </script>

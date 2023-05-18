@@ -10,8 +10,9 @@
 
 <script setup lang="ts">
 import { useClipboard } from '@vueuse/core'
+const runtimeConfig = useRuntimeConfig()
 const route = useRoute()
 
-const source = computed(() => `https://jp.air360.io${route.fullPath}`)
+const source = computed(() => `${runtimeConfig.public.baseUrl}${route.fullPath}`)
 const { copy } = useClipboard({ source })
 </script>

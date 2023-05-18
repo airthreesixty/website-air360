@@ -35,7 +35,7 @@
                     for="mce-EMAIL"
                     class="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                   >
-                    メールアドレス <span class="asterisk">*</span>
+                    {{ $t('email') }} <span class="asterisk">*</span>
                   </label>
                   <div
                     class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
@@ -76,7 +76,7 @@
           </div>
         </div>
         <nuxt-img
-          src="https://www.air360.io/wp-content/uploads/2022/05/mochi-binoculars.png"
+          src="/mochi-binoculars.webp"
           format="webp"
           class="hidden rounded-r-lg md:flex h-30"
           alt="mochi"

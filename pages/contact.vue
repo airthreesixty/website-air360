@@ -3,10 +3,12 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n()
+
 useHead({
-  title: 'コンタクト',
+  title: t('contact.title'),
   meta: [
-    { hid: 'description', name: 'description', content: 'どのようなご用件でしょうか？Linkedin Twitter Instagram 会社案内 ESW - 採用情報 - プライバシーポリシー　- インスピレーション - ブログ - ヘルプ - デモを依頼する - お問い合わせ - ログイン' },
+    { hid: 'description', name: 'description', content: t('contact.content') },
   ],
 })
 </script>

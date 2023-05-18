@@ -1,0 +1,41 @@
+---
+title: What eCommerce Brands Need to Know about Customer Acquisition
+published: 2023-2-07
+tags: 
+  - ecommerce
+readingTime: 3
+image: /blog/Customer-Acquisition-Strategy.jpeg
+metaDesc: The most significant challenges facing eCommerce brands can be distilled into two essential questions  How do we drive visitors to our website (customer acquisition strategy) and then convince them to complete the checkout process (conversion strategy)?
+---
+
+The most significant challenges facing eCommerce brands can be distilled into two essential questions: How do we drive visitors to our website (customer acquisition strategy) and then convince them to complete the checkout process (conversion strategy)?
+
+These two factors can be the difference between success and failure for any eCommerce site or campaign. So, to understand how to increase revenue, optimize ad spend and build a delightful customer journey, eCommerce brands need to understand what traffic acquisition and conversion strategies are and how to use them to their advantage.
+
+## What Is a Traffic and Customer Acquisition Strategy?
+Simply put, traffic acquisition is driving users to your eCommerce website. It’s the step between clicking an ad or other external link and completing a conversion or purchase. Traffic acquisition is the moment when you have a potential customer’s attention.
+
+Building a robust traffic acquisition strategy is vital because, without website traffic, conversions won’t happen. And, as you increase traffic to your website, you’ll convert more visitors.
+
+## Build a Solid Acquisition Strategy
+Simply bringing in more traffic isn’t enough; a healthy acquisition strategy builds a balance of the right channels, manages a budget and brings quality leads that are more likely to convert. After all, all traffic isn’t created equal, and an influx of visitors can drive down your conversion rate if they’re not the right visitors for your products. To optimize your paid media spend, find and attract your ideal buyer and keep your website traffic healthy, incorporate these tips into your strategy:
+
+- **Know your target market.** Personas and customer profiles really do matter. If you know your ideal customer, you can better understand and tailor your advertising messaging. This means learning which online communities they frequently visit, what they’re searching for and how they like to shop.
+- **Test, optimize and repeat.** Track user experience and reference metrics to understand where your ideal customer comes from to get to your website — Facebook ad, Google ad, email, etc. — and how they behave once they arrive.
+- **Keep it mobile friendly.** No matter what device your customers use, the experience should be stellar. Reduce loading times for your site and clear the clutter. Customers expect a clear, easy path to get to what they want.
+
+## What Is a Conversion Strategy?
+Conversion is the moneymaker in eCommerce. Once you have a visitor’s attention, the window of opportunity to make the sale begins to shrink. But increasing your conversion rate lets your ad dollars stretch farther. Conversion rate is often one of the most important metrics for any eCommerce site since it’s the one with a direct connection to revenue and sales.
+
+Conversion rate optimization (CRO) has other advantages. For instance, increasing conversion rates means that the buying experience is simpler and more enjoyable for customers. A smooth checkout experience is one of the first steps to building engaged and loyal customers. And since customer acquisition can be pricey, keeping customers is just as important as converting them the first time.
+
+## Optimize Your Conversion Strategy
+User-experience metrics tell an important story about your customer’s journey. Here’s how to use that data to build a better buying experience for your eCommerce visitors:
+
+- View the customer journey from start to finish with on-page analytics. Take these insights further by creating segments and personas based on this behavior.
+- Build smart funnels with your customer and visitor persona data to serve up the content your customers want to see most.
+Monitor abandoned cart rates and discover which pages and experiences cause your customers to bounce.
+- Replay visitor sessions to see where roadblocks exist and create a seamless customer journey.
+
+Attracting and converting the ideal customer is one of the most challenging problems for any eCommerce brand. *Air360 helps you gain a greater understanding of your website visitors. Armed with this information, you can continue testing, optimizing and converting more of your website visitors and growing your business exponentially.*
+

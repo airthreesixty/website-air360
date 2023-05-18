@@ -163,6 +163,8 @@ import axios from 'axios'
 import { useVuelidate } from '@vuelidate/core'
 import { required, email } from '~/utils/i18n-validators'
 
+const { t } = useI18n()
+
 const formData = reactive({
   name: '',
   email: '',
@@ -212,14 +214,13 @@ const submitForm = async () => {
 
 useSchemaOrg([
   defineOrganization({
-    name: 'Scalefast Japan',
+    name: t('organization.name'),
     address: {
-      streetAddress: '京橋3-1-1 東京スクエアガーデン 14F',
-      addressLocality: '中央区',
-      addressRegion: '東京都',
-      postalCode: '104-0031',
-      addressCountry: '日本',
-
+      streetAddress: t('organization.address.streetAddress'),
+      addressLocality: t('organization.address.addressLocality') || '',
+      addressRegion: t('organization.address.addressRegion'),
+      postalCode: t('organization.address.postalCode'),
+      addressCountry: t('organization.address.addressCountry'),
     },
     sameAs: ['https://www.linkedin.com/company/air360/', 'https://twitter.com/weareair360', 'https://www.instagram.com/weareair360/'],
   }),

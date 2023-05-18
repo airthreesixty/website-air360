@@ -1,3 +1,5 @@
+import crawler from './crawler'
+
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   modules: ['@nuxt/content', 'nuxt-windicss', '@nuxtjs/i18n', 'nuxt-font-loader', '@nuxtjs/algolia', '@nuxt/image-edge', 'nuxt-schema-org'],
@@ -10,17 +12,11 @@ export default defineNuxtConfig({
   algolia: {
     apiKey: process.env.ALGOLIA_SEARCH_API_KEY,
     applicationId: process.env.ALGOLIA_APPLICATION_ID,
-    instantSearch: {
-      theme: 'satellite',
-    },
-    docSearch: {
-      indexName: process.env.ALGOLIA_DOCSEARCH_INDEX_NAME,
-    },
     crawler: {
       apiKey: process.env.ALGOLIA_WRITE_API_KEY ?? '',
       indexName: process.env.ALGOLIA_DOCSEARCH_INDEX_NAME ?? '',
-      meta: ['title', 'description'],
-      include: [/\/blog/g],
+      meta: crawler,
+      include: [/^\/\w{2}\/blog\/.*(?<!\.(json|js|html))$/g],
     },
   },
   runtimeConfig: {
@@ -29,10 +25,12 @@ export default defineNuxtConfig({
       algoliaApplicationId: process.env.ALGOLIA_APPLICATION_ID,
       algoliaDocsearchIndexName: process.env.ALGOLIA_DOCSEARCH_INDEX_NAME,
       trailingSlash: true,
+      baseUrl: process.env.BASE_URL,
+      appUrl: process.env.APP_URL,
     },
   },
   schemaOrg: {
-    host: 'https://jp.air360.io/',
+    host: process.env.BASE_URL,
   },
   app: {
     head: {
@@ -40,29 +38,23 @@ export default defineNuxtConfig({
         {
           rel: 'icon', type: 'image/x-icon', href: '/favicon2.png',
         },
-        {
-          rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@700;800;900&family=Noto+Sans+JP:wght@700;800;900&display=swap',
-        },
       ],
       meta: [{ name: 'google-site-verification', content: '27ObPnDVXKchsfaXmRUOoP8wVKLPvIDb30oXYHDgPVU' }],
-      htmlAttrs: {
-        lang: 'ja',
-      },
     },
   },
   i18n: {
+    strategy: 'prefix',
     locales: [
       { code: 'en', iso: 'en-US', file: 'en.json', name: 'English' },
       { code: 'ja', iso: 'ja-JP', file: 'ja.json', name: '日本語' },
     ],
-    defaultLocale: 'ja',
+    defaultLocale: 'en',
     langDir: 'locales',
-    vueI18n: {
-      fallbackLocale: 'en',
+    detectBrowserLanguage: {
+      useCookie: true,
     },
-    detectBrowserLanguage: false,
     trailingSlash: true,
-    baseUrl: 'https://jp.air360.io/',
+    baseUrl: process.env.BASE_URL,
   },
 
   fontLoader: {

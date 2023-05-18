@@ -6,28 +6,19 @@
 
 <script setup lang="ts">
 const { $i18n } = useNuxtApp()
-// TODO english version as well
-if ($i18n.locale.value === 'ja') {
-  useSeoMeta({
-    title: 'ブログ',
-    description: 'eコマースUXの最新トレンド、コンバージョン率向上のためのヒントやコツ、Air360がどのように提供できるかをご紹介します。',
-    ogDescription: 'eコマースUXの最新トレンド、コンバージョン率向上のためのヒントやコツ、Air360がどのように提供できるかをご紹介します。',
-    ogTitle: 'Air360 - ブログ',
-    ogImage: 'https://air360.io/wp-content/uploads/2022/11/conversion-rate-optimization.jpg',
-    twitterCard: 'summary_large_image',
-    ogUrl: 'https://jp.air360.io/blog/',
-  })
-} else {
-  useSeoMeta({
-    title: 'Blog',
-    description: 'Learn about the latest trends in eCommerce UX, tips and tricks for improving conversion rates, and how Air360 can help you deliver.',
-    ogDescription: 'Learn about the latest trends in eCommerce UX, tips and tricks for improving conversion rates, and how Air360 can help you deliver.',
-    ogTitle: 'Air360 - Blog',
-    ogImage: 'https://air360.io/wp-content/uploads/2022/11/conversion-rate-optimization.jpg',
-    twitterCard: 'summary_large_image',
-    ogUrl: 'https://jp.air360.io/en/blog/',
-  })
-}
+const { t } = useI18n()
+const route = useRoute()
+const runtimeConfig = useRuntimeConfig()
+
+useSeoMeta({
+  title: t('blog-index.title'),
+  description: t('blog-index.description'),
+  ogDescription: t('blog-index.ogDescription'),
+  ogTitle: `Air360 - ${t('blog-index.title')}`,
+  ogImage: t('blog-index.ogImage'),
+  twitterCard: 'summary_large_image',
+  ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
+})
 
 // TODO the value from the plugin is wrong, remove _value when it's fixed
 const { data } = await useAsyncData('blog', () =>
