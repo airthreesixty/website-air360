@@ -1,9 +1,9 @@
 <template>
-  <NuxtLink v-for="l in availableLocales" :key="l.code" :to="switchLocalePath(l.code)" class="text-gray-600 transition-all hover:(text-primary-600 text-shadow-primary)">
+  <a v-for="l in availableLocales" :key="l.code" :href="switchLocalePath(l.code)" class="text-gray-600 transition-all hover:(text-primary-600 text-shadow-primary)">
     {{
       l.name
     }}
-  </NuxtLink>
+  </a>
 </template>
 
 <script setup lang="ts">
