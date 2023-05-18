@@ -6,10 +6,12 @@
     <div v-if="isHomepage" class="bg-gradient h-60 md:h-70 lg:h-82" />
     <div class="relative flex flex-wrap items-center justify-between max-w-screen-[1400px] mx-auto">
       <NuxtLink :to="$localePath('/')">
+        <span class="sr-only">Air360</span>
         <Logo
           class="h-6 mr-3 w-auto sm:h-7 xl:h-8 filter homepage-logo"
           :class="{'hover:drop-shadow-white': isHomepage, 'hover:(drop-shadow-primary)': !isHomepage}"
           :is-dark="!isHomepage"
+          :aria-hidden="true"
         />
       </NuxtLink>
       <div class="flex items-center space-x-4">
