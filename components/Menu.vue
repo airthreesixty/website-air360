@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="bg-white px-4 py-2 top-0 z-10"
+    class="bg-white pl-8 pr-4 py-2 top-0 z-10"
     :class="{'is-homepage absolute w-full' : isHomepage, 'border-gray-200 border-b-1 sticky': !isHomepage}"
   >
     <div v-if="isHomepage" class="bg-gradient h-60 md:h-70 lg:h-82" />
