@@ -6,6 +6,7 @@
 import { useSeoMeta } from '@unhead/vue'
 const { locale, t } = useI18n()
 const runtimeConfig = useRuntimeConfig()
+const route = useRoute()
 
 useHead({
   titleTemplate: '',
@@ -19,5 +20,11 @@ useSeoMeta({
   ogImage: '/heroIllustration.webp',
   twitterCard: 'summary_large_image',
   ogUrl: `${runtimeConfig.public.baseUrl}/${locale.value}/`,
+})
+
+onMounted(() => {
+  if (route.fullPath === '/') {
+    document.location = '/en/'
+  }
 })
 </script>

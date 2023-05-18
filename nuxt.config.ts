@@ -50,11 +50,12 @@ export default defineNuxtConfig({
     ],
     defaultLocale: 'en',
     langDir: 'locales',
-    detectBrowserLanguage: {
-      useCookie: true,
-      redirectOn: 'root',
-      alwaysRedirect: true,
-    },
+    detectBrowserLanguage: false,
+    // detectBrowserLanguage: {
+    //   useCookie: true,
+    //   redirectOn: 'root',
+    //   alwaysRedirect: true,
+    // },
     trailingSlash: true,
     baseUrl: process.env.BASE_URL,
   },
