@@ -12,12 +12,12 @@ export default defineNuxtConfig({
   algolia: {
     apiKey: process.env.ALGOLIA_SEARCH_API_KEY,
     applicationId: process.env.ALGOLIA_APPLICATION_ID,
-    crawler: {
-      apiKey: process.env.ALGOLIA_WRITE_API_KEY ?? '',
-      indexName: process.env.ALGOLIA_DOCSEARCH_INDEX_NAME ?? '',
-      meta: crawler,
-      include: [/^\/\w{2}\/blog\/.*(?<!\.(json|js|html))$/g],
-    },
+    // crawler: {
+    //   apiKey: process.env.ALGOLIA_WRITE_API_KEY ?? '',
+    //   indexName: process.env.ALGOLIA_DOCSEARCH_INDEX_NAME ?? '',
+    //   meta: crawler,
+    //   include: [/^\/\w{2}\/blog\/.*(?<!\.(json|js|html))$/g],
+    // },
   },
   runtimeConfig: {
     public: {
@@ -88,6 +88,6 @@ export default defineNuxtConfig({
     ],
   },
   image: {
-    domains: ['jp.air360.io'],
+    provider: 'ipx',
   },
 })

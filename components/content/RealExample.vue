@@ -3,7 +3,7 @@
     <div
       class="container gap-8 items-center pt-7 mx-auto xl:gap-16 md:grid md:grid-cols-2 md:py-16 lg:pt-6 lg:pb-14"
     >
-      <nuxt-img loading="lazy" format="webp" class="w-full h-auto shadow-lg rounded-lg md:hidden dark:hidden" src="/clubmedResort.jpg" :alt="$t('clubmed-pic')" />
+      <img class="w-full h-auto shadow-lg rounded-lg md:hidden dark:hidden" src="/clubmedResort.webp" :alt="$t('clubmed-pic')">
       <div class="mt-4 md:mt-0">
         <h2
           class="mb-4 text-2xl font-semibold text-black-600 text-left md:text-3xl lg:text-4xl dark:text-white"
@@ -40,7 +40,7 @@
           </dl>
         </div>
       </div>
-      <nuxt-img loading="lazy" format="webp" class="hidden shadow-lg w-full h-auto rounded-lg md:block dark:hidden" src="/clubmedResort.jpg" :alt="$t('clubmed-pic')" />
+      <img class="hidden shadow-lg w-full h-auto rounded-lg md:block dark:hidden" src="/clubmedResort.webp" :alt="$t('clubmed-pic')">
     </div>
   </section>
 </template>
