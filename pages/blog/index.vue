@@ -15,7 +15,7 @@ useSeoMeta({
   description: t('blog-index.description'),
   ogDescription: t('blog-index.ogDescription'),
   ogTitle: `Air360 - ${t('blog-index.title')}`,
-  ogImage: t('blog-index.ogImage'),
+  ogImage: '/heroIllustration.webp',
   twitterCard: 'summary_large_image',
   ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
 })

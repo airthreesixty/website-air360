@@ -12,7 +12,7 @@ useSeoMeta({
   description: t('product.description'),
   ogDescription: t('product.ogDescription'),
   ogTitle: `Air360 - ${t('product.title')}`,
-  ogImage: t('product.ogImage'),
+  ogImage: '/en/sunburst.png',
   twitterCard: 'summary_large_image',
   ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
 })
