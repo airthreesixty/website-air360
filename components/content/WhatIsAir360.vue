@@ -43,6 +43,10 @@ useIntersectionObserver(
   target,
   ([{ isIntersecting }]) => {
     if (!showIframe.value && isIntersecting) {
+      const s = document.createElement('script')
+      s.setAttribute('src', 'https://fast.wistia.net/assets/external/E-v1.js')
+      document.body.appendChild(s)
+
       showIframe.value = true
     }
   },
