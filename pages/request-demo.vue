@@ -1,14 +1,12 @@
 <template>
-  <NuxtLayout name="request-demo">
-    <ContentPage />
-  </NuxtLayout>
+  <ContentPage />
 </template>
 
 <script setup>
 const { t } = useI18n()
 
 definePageMeta({
-  layout: false,
+  layout: 'request-demo',
 })
 
 useHead({
