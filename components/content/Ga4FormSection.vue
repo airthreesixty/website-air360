@@ -67,10 +67,6 @@
 </template>
 
 <script setup lang="ts">
-const LogoBrandDubreuil = resolveComponent('LogoBrandDubreuil')
-const LogoBrandAirCaraibes = resolveComponent('LogoBrandAirCaraibes')
-const LogoBrandVerychic = resolveComponent('LogoBrandVerychic')
-
 // import axios from 'axios'
 // import { useVuelidate } from '@vuelidate/core'
 // import { required, email } from '~/utils/i18n-validators'
@@ -103,9 +99,9 @@ const LogoBrandVerychic = resolveComponent('LogoBrandVerychic')
 //   }
 // })
 
-// const close = () => {
-//   isSuccess.value = !isSuccess.value
-// }
+const close = () => {
+  isSuccess.value = !isSuccess.value
+}
 
 const props = defineProps({
   isSuccess: {
