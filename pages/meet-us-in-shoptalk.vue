@@ -28,8 +28,8 @@
 const route = useRoute()
 const runtimeConfig = useRuntimeConfig()
 
-const title = 'Air 360 eBook: Five Conversion Blockers and How to Fix Them'
-const description = 'Five Conversion Blockers and How to Fix Them Improving Your UX Design with the Consumer in Mind Many conversion concerns can be solved with strategic choices in flow and function. In Part 1 of our three-part series, we take a look at the most impactful conversion blockers, and how companies can easily fix them. This […]'
+const title = 'Learn how Air360 can help you increase your conversion rate by 50% in less than 3 months.'
+const description = 'Our eCommerce experience analytics platform helps you spot all opportunities to increase conversion & prioritize decisions to boost revenue fast. Meet Mochi, our mascot, in Barcelona and talk to one of our CRO experts to become a conversion hero.See you there!'
 
 definePageMeta({
   layout: 'request-demo',
@@ -40,7 +40,7 @@ useSeoMeta({
   description,
   ogDescription: description,
   ogTitle: title,
-  ogImage: `${runtimeConfig.public.baseUrl}/five-conversion-blockers.webp`,
+  ogImage: `${runtimeConfig.public.baseUrl}/shoptalk.webp`,
   twitterCard: 'summary_large_image',
   ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
 })
