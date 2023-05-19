@@ -6,9 +6,11 @@ title: Product
 #subtext
 Features
 #title
-Easy customer behavior analysis
+Get the real thing about your users' behavior.
 #description
-Air360 automatically tracks customer behavior and makes it easy to create the best website for your customers with a variety of features such as Chrome extensions and session replay.
+Air360 automatically tracks customer behavior so that you can 
+optimize the paths affecting your conversion the most and make 
+it easy to create the best website for your users.
 ::
 
 ::single-description{imagePath="/en/sessionReplay.jpeg" alt="Session replay" icon="/icons/iconSessionReplay.svg"}
