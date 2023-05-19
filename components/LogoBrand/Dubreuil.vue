@@ -11,22 +11,53 @@
     xml:space="preserve"
   >
     <rect id="BASE" class="st0" width="220" height="150" />
-    <path
+    <linearGradient
+      id="SVGID_1_"
+      gradientUnits="userSpaceOnUse"
+      x1="110.3491"
+      y1="103.4739"
+      x2="110.3491"
+      y2="28.864"
+    >
+      <stop offset="0" style="stop-color:#FFFFFF;stop-opacity:0" />
+      <stop offset="9.335366e-02" style="stop-color:#FFF7C4;stop-opacity:0.1951" />
+      <stop offset="0.2342" style="stop-color:#FFEC71;stop-opacity:0.4893" />
+      <stop offset="0.3498" style="stop-color:#FFE334;stop-opacity:0.731" />
+      <stop offset="0.4342" style="stop-color:#FFDE0E;stop-opacity:0.9073" />
+      <stop offset="0.4785" style="stop-color:#FFDC00" />
+      <stop offset="1" style="stop-color:#FFDC00" />
+    </linearGradient>
+    <!-- <path
       class="st1"
       d="M161.8,107c7-10.1,11.1-22.3,11.1-35.6c0-34.5-28-62.5-62.5-62.5c-34.5,0-62.5,28-62.5,62.5
-c0,13.2,4.1,25.5,11.1,35.6H161.8z"
-    />
+	c0,13.2,4.1,25.5,11.1,35.6H161.8z"
+    /> -->
+    <radialGradient
+      id="SVGID_2_"
+      cx="22.6335"
+      cy="99.0964"
+      r="116.2824"
+      gradientTransform="matrix(1.0073 4.750000e-02 -0.1919 1.1198 41.4491 -27.0392)"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop offset="0" style="stop-color:#003381" />
+      <stop offset="0.1661" style="stop-color:#003986" />
+      <stop offset="0.3772" style="stop-color:#004894" />
+      <stop offset="0.6126" style="stop-color:#0062AB" />
+      <stop offset="0.8638" style="stop-color:#0086CB" />
+      <stop offset="1" style="stop-color:#009DDF" />
+    </radialGradient>
     <path
       class="st2"
       d="M87.2,92.8c0,0-13.3-35.8-55.1-40.9c25.1-5.4,43.6,1.4,61.4,21.9c18.8-20.1,45.6-23.2,61.6-20.9
-C118.3,61.7,112.9,78.7,87.2,92.8z"
+	C118.3,61.7,112.9,78.7,87.2,92.8z"
     />
     <g>
       <path
         class="st3"
         d="M19.1,105.9L19.1,105.9c-0.9,1.1-2.3,1.4-3.8,1.4c-3.3,0-5.3-1.9-5.3-4.6c0-2.3,1.9-4.6,5.3-4.6
-c2.2,0,4.2,0.9,4.9,2.6l-1.4,0.3c-0.5-1.1-1.6-1.9-3.5-1.9c-2.3,0-3.8,1.6-3.8,3.5c0,1.9,1.2,3.7,3.8,3.7c2.2,0,3.7-0.9,3.7-2.8
-h-3.6v-1h4.9v4.7h-1.2V105.9z"
+		c2.2,0,4.2,0.9,4.9,2.6l-1.4,0.3c-0.5-1.1-1.6-1.9-3.5-1.9c-2.3,0-3.8,1.6-3.8,3.5c0,1.9,1.2,3.7,3.8,3.7c2.2,0,3.7-0.9,3.7-2.8
+		h-3.6v-1h4.9v4.7h-1.2V105.9z"
       />
       <path
         class="st3"
@@ -83,3 +114,10 @@ h-3.6v-1h4.9v4.7h-1.2V105.9z"
     </g>
   </svg>
 </template>
+
+<style type="text/css">
+.st0{fill:#FFFFFF;}
+.st1{fill:url(#SVGID_1_);}
+.st2{fill:url(#SVGID_2_);}
+.st3{fill:#003381;}
+</style>

@@ -103,5 +103,6 @@
     "name": "Name",
     "email": "Email",
     "jobTitle": "Job title"
-  }
+  },
+  "trusted-by": "Trusted by"
 }

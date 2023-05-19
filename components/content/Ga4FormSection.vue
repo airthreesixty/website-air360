@@ -10,7 +10,7 @@
       class="container py-8 mx-auto lg:flex lg:justify-center lg:gap-5 xl:gap-0 lg:py-16"
     >
       <div
-        class="flex-col lg:flex lg:items-center lg:flex-1"
+        class="flex-col hidden lg:block lg:justify-center lg:flex lg:items-center lg:flex-1"
       >
         <div class="mb-8 flex flex-col items-center">
           <div class="flex justify-center">
@@ -23,9 +23,8 @@
             <ContentSlot :use="$slots.subtitle1" unwrap="p" />
           </h2>
         </div>
-        <div class="mb-30 lg:mb-0 company-logos-list">
-          <!-- <CompanyLogos /> -->
-          <component :is="LogoBrandDubreuil" class="h-7.5 object-contain w-full lg:h-9.5" />
+        <div class="mb-30 lg:mb-0">
+          <CompanyLogos2 />
         </div>
       </div>
       <div class="mb-6 text-center lg:hidden">
@@ -69,6 +68,8 @@
 
 <script setup lang="ts">
 const LogoBrandDubreuil = resolveComponent('LogoBrandDubreuil')
+const LogoBrandAirCaraibes = resolveComponent('LogoBrandAirCaraibes')
+const LogoBrandVerychic = resolveComponent('LogoBrandVerychic')
 
 // import axios from 'axios'
 // import { useVuelidate } from '@vuelidate/core'
