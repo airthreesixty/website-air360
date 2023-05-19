@@ -5,11 +5,11 @@
       <h2>Improving Your UX Design with the Consumer in Mind</h2>
       <nuxt-img src="/five-conversion-blockers.webp" loading="lazy" width="456" class="w-35 sm:w-57 float-right shadow ml-5" />
       <p>Many conversion concerns can be solved with strategic choices in flow and function. In Part 1 of our three-part series, we take a look at the most impactful conversion blockers, and how companies can easily fix them.</p>
-      <p>This eBook uncovers:&nbsp;</p>
+      <p>This eBook uncovers:</p>
       <ul>
-        <li>The most common causes of low conversion rates&nbsp;</li>
-        <li>How to easily vanquish conversion rate killers&nbsp;</li>
-        <li>Examples of successful UX design that quickly solve customer needs&nbsp;</li>
+        <li>The most common causes of low conversion rates</li>
+        <li>How to easily vanquish conversion rate killers</li>
+        <li>Examples of successful UX design that quickly solve customer needs</li>
       </ul>
       <p>Download the eBook to learn more!</p>
     </template>
