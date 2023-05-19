@@ -1,11 +1,14 @@
 <template>
-  <section
-    class="landing-page container mx-auto grid grid-cols-1 lg:grid-cols-[3fr,2fr] gap-10 pt-6 pb-12"
+  <main
+    class="landing-page container mx-auto grid grid-cols-1 lg:grid-cols-[3fr,2fr] gap-10 pt-4 lg:pt-6 pb-12"
   >
-    <div class="">
-      <Logo
-        class="h-8 mb-16 h-7"
-      />
+    <div>
+      <NuxtLink :to="$localePath('/')">
+        <span class="sr-only">Air360</span>
+        <Logo
+          class="h-6 lg:h-8 mb-16 h-7 filter hover:drop-shadow-white"
+        />
+      </NuxtLink>
 
       <div
         class="prose"
@@ -15,26 +18,25 @@
     </div>
 
     <div
-      class="items-center flex flex-col mb-6 text-2xl font-semibold text-black-600 lg:mb-10 dark:text-white"
+      class="rounded-lg bg-gray-100 shadow-lg px-8 py-9 lg:mt-8"
     >
-      <div class="flex justify-center hidden mb-3 lg:block lg:flex" />
-      <div
-        class="w-full mx-auto bg-white"
-      >
-        <slot name="form" />
-      </div>
+      <slot name="form" />
     </div>
-  </section>
+  </main>
 </template>
+
+<script setup lang="ts">
+const { $localePath } = useNuxtApp()
+</script>
 
 <style lang="postcss">
 .landing-page {
   &:before {
-    @apply absolute left-0 top-0 h-38 w-full -z-1;
+    @apply absolute left-0 top-10 sm:top-8 md:top-5 lg:top-3 xl:top-0 h-38 w-full -z-1;
 
     content: '';
     background: linear-gradient(101.87deg, #2D92E9 4.15%, #644AD5 22.36%, #C141AC 41.56%, #E72192 61.75%, #F04D66 78.49%, #FD7043 98.68%);
-    transform: skewY(-8deg) translateY(-150px);
+    transform: skewY(-6deg) translateY(-130px);
   }
 }
 </style>
