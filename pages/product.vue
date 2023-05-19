@@ -1,5 +1,5 @@
 <template>
-  <ContentPage />
+  <AsyncPage page="product" />
 </template>
 
 <script setup lang="ts">
