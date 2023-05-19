@@ -30,13 +30,6 @@ definePageMeta({
   layout: 'request-demo',
 })
 
-// useHead({
-//   title: 'Air 360 eBook: Five Conversion Blockers and How to Fix Them',
-//   meta: [
-//     { hid: 'description', name: 'description', content:  },
-//   ],
-// })
-
 useSeoMeta({
   title,
   description,
