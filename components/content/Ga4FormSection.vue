@@ -23,8 +23,9 @@
             <ContentSlot :use="$slots.subtitle1" unwrap="p" />
           </h2>
         </div>
-        <div class="mb-30 lg:mb-0">
-          <CompanyLogos />
+        <div class="mb-30 lg:mb-0 company-logos-list">
+          <!-- <CompanyLogos /> -->
+          <component :is="LogoBrandDubreuil" class="h-7.5 object-contain w-full lg:h-9.5" />
         </div>
       </div>
       <div class="mb-6 text-center lg:hidden">
@@ -32,12 +33,7 @@
           to="/"
           class="inline-flex items-center text-2xl font-semibold text-gray-900 lg:hidden dark:text-white"
         >
-          <nuxt-img
-            class="h-6"
-            format="webp"
-            src="/air360Logo.png"
-            alt="Air360 logo"
-          />
+          <Logo is-dark class="h-6" />
         </NuxtLink>
       </div>
 
@@ -45,12 +41,7 @@
         class="items-center justify-center flex flex-col flex-1 mb-6 text-2xl font-semibold text-black-600 lg:mb-0 dark:text-white"
       >
         <div class="flex justify-center hidden mb-3 lg:block lg:flex">
-          <nuxt-img
-            format="webp"
-            class="h-6 mr-2 h-7"
-            src="/air360Logo.png"
-            alt="Air360 logo"
-          />
+          <Logo is-dark class="h-6 lg:h-7" />
         </div>
         <div
           class="w-full mx-auto bg-white"
@@ -77,7 +68,7 @@
 </template>
 
 <script setup lang="ts">
-import { Console } from 'console'
+const LogoBrandDubreuil = resolveComponent('LogoBrandDubreuil')
 
 // import axios from 'axios'
 // import { useVuelidate } from '@vuelidate/core'
