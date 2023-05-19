@@ -1,5 +1,5 @@
 <template>
-  <main
+  <div
     class="landing-page container mx-auto grid grid-cols-1 lg:grid-cols-[3fr,2fr] gap-10 pt-4 lg:pt-6 pb-12"
   >
     <div>
@@ -22,7 +22,7 @@
     >
       <slot name="form" />
     </div>
-  </main>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -35,7 +35,7 @@ const { $localePath } = useNuxtApp()
     @apply absolute left-0 top-10 sm:top-8 md:top-5 lg:top-3 xl:top-0 h-38 w-full -z-1;
 
     content: '';
-    background: linear-gradient(101.87deg, #2D92E9 4.15%, #644AD5 22.36%, #C141AC 41.56%, #E72192 61.75%, #F04D66 78.49%, #FD7043 98.68%);
+    background: linear-gradient(101.87deg, #2D92E9 0%, #644AD5 14.36%, #C141AC 27.56%, #E72192 43.75%, #F04D66 57.49%, #FD7043 69.68%);
     transform: skewY(-6deg) translateY(-130px);
   }
 }
