@@ -18,7 +18,7 @@
       <p>Download the eBook to learn more!</p>
     </template>
     <template #form>
-      TODO form
+      <div id="form" />
     </template>
   </LandingPage>
 </template>
@@ -26,12 +26,22 @@
 <script setup>
 const route = useRoute()
 const runtimeConfig = useRuntimeConfig()
+const { locale } = useI18n()
 
 const title = 'Air 360 eBook: Why Google Analytics is Not Enough to Grow Your Brand'
 const description = 'Why Google Analytics is Not Enough to Grow Your Brand Getting the Full Picture of Site Performance Next-generation user experience analytics tools are a necessary complement to Google Analytics.   To get the best results from your GA setup, consider a tool that offers the customer insights that Google Analytics lacks. This eBook identifies eight […]'
 
 definePageMeta({
   layout: 'request-demo',
+})
+
+useHead({
+  titleTemplate: '',
+  script: [
+    {
+      src: '//js-eu1.hsforms.net/forms/embed/v2.js',
+    },
+  ],
 })
 
 useSeoMeta({
@@ -42,5 +52,15 @@ useSeoMeta({
   ogImage: `${runtimeConfig.public.baseUrl}/why-ga-is-not-enought.jpg`,
   twitterCard: 'summary_large_image',
   ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
+})
+
+onMounted(() => {
+  hbspt.forms.create({
+    region: 'eu1',
+    portalId: '27037851',
+    formId: '7a92931e-0c8f-4067-a2d4-b436308f0073',
+    target: '#form',
+    redirectUrl: `${runtimeConfig.public.baseUrl}/${locale.value}/air360-ebook-2-thank-you/`,
+  })
 })
 </script>

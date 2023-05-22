@@ -15,7 +15,7 @@
       <p>Download it now!</p>
     </template>
     <template #form>
-      TODO form
+      <div id="form" />
     </template>
   </LandingPage>
 </template>
@@ -23,12 +23,22 @@
 <script setup>
 const route = useRoute()
 const runtimeConfig = useRuntimeConfig()
+const { locale } = useI18n()
 
 const title = 'Air 360 eBook: Why you need a UX Analytics Tool & How to Get it'
 const description = 'Why you need a UX Analytics Tool & How to Get it Businesses both large and small benefit from detailed and actionable CX insights. Yet many companies are reluctant to invest, and many stakeholders may need convincing. Inside this eBook, learn more about: Preparing your business case Identifying the biggest opportunity Choosing the feature set Pinpointing […]'
 
 definePageMeta({
   layout: 'request-demo',
+})
+
+useHead({
+  titleTemplate: '',
+  script: [
+    {
+      src: '//js-eu1.hsforms.net/forms/embed/v2.js',
+    },
+  ],
 })
 
 useSeoMeta({
@@ -39,5 +49,15 @@ useSeoMeta({
   ogImage: `${runtimeConfig.public.baseUrl}/air360-ebook-3-cover.webp`,
   twitterCard: 'summary_large_image',
   ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
+})
+
+onMounted(() => {
+  hbspt.forms.create({
+    region: 'eu1',
+    portalId: '27037851',
+    formId: '9a76f158-eb8a-4858-9216-38cd0c3c441f',
+    target: '#form',
+    redirectUrl: `${runtimeConfig.public.baseUrl}/${locale.value}/air360-ebook-3-thank-you/`,
+  })
 })
 </script>
