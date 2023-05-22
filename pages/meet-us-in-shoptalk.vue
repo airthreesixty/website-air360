@@ -19,7 +19,7 @@
       </p>
     </template>
     <template #form>
-      TODO form
+      <div id="form" />
     </template>
   </LandingPage>
 </template>
@@ -27,12 +27,22 @@
 <script setup>
 const route = useRoute()
 const runtimeConfig = useRuntimeConfig()
+const { locale } = useI18n()
 
 const title = 'Learn how Air360 can help you increase your conversion rate by 50% in less than 3 months.'
 const description = 'Our eCommerce experience analytics platform helps you spot all opportunities to increase conversion & prioritize decisions to boost revenue fast. Meet Mochi, our mascot, in Barcelona and talk to one of our CRO experts to become a conversion hero.See you there!'
 
 definePageMeta({
   layout: 'request-demo',
+})
+
+useHead({
+  titleTemplate: '',
+  script: [
+    {
+      src: '//js-eu1.hsforms.net/forms/embed/v2.js',
+    },
+  ],
 })
 
 useSeoMeta({
@@ -43,5 +53,15 @@ useSeoMeta({
   ogImage: `${runtimeConfig.public.baseUrl}/shoptalk.webp`,
   twitterCard: 'summary_large_image',
   ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
+})
+
+onMounted(() => {
+  hbspt.forms.create({
+    region: 'eu1',
+    portalId: '27037851',
+    formId: 'd0f2183f-f624-434d-abda-8e723186a681',
+    target: '#form',
+    redirectUrl: `${runtimeConfig.public.baseUrl}/${locale.value}/meet-us-in-shoptalk-thank-you/`,
+  })
 })
 </script>
