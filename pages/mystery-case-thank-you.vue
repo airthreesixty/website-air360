@@ -8,11 +8,9 @@
       <p class="page-thank-you__description">
         Thank you for downloading the Air360 Conversion rate mysteries use case
       </p>
-      <p class="page-thank-you__description">
-        <a class="page-thank-you__button" href="https://go.scalefast.com/hubfs/Air360%202023%20Content/Air360%20Conversion%20Rate%20Mysteries%20_%20The%20Big%20Checkout%20Dropoff%202023.pdf" target="_blank">
-          Download the use case
-        </a>
-      </p>
+      <a class="page-thank-you__button" href="https://go.scalefast.com/hubfs/Air360%202023%20Content/Air360%20Conversion%20Rate%20Mysteries%20_%20The%20Big%20Checkout%20Dropoff%202023.pdf" target="_blank">
+        Download the use case
+      </a>
     </div>
   </ThankYouPage>
 </template>
