@@ -108,5 +108,10 @@
   "ga4-migration": {
     "title": "The eCommerce experience analytics solution that will help you simplify your Google Analytics 4 migrationThe eCommerce experience analytics solution that will help you simplify your Google Analytics 4 migration",
     "description": "If you are here, it is because you are feeling under pressure with the sunset of Universal Analytics in July 2023.This Google Analytics 4 migration might be overwhelming, but Air360 can help.Watch our quick video that explains how you can solve your challenges in this migration."
+  },
+  "ga4-thank-you": {
+    "title": "Woohoo!Thank you for booking a meeting with us!",
+    "p1": "We will be reaching out to you shortly to. ",
+    "p2": "In the meantime, grab a cup of coffee and find more inspiration with these blog posts about Google Analytics Migration"
   }
 }
