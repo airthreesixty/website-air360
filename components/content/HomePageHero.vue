@@ -7,7 +7,7 @@
         <div class="flex justify-center">
           <div class="relative inline-block">
             <h1
-              class="mb-6 font-title text-[34px] tracking-wide md:text-5xl lg:text-7xl text-center text-black-600 lg:mb-8"
+              class="mb-6 font-title font-extrabold text-[34px] tracking-wide md:text-5xl lg:text-7xl text-center text-black-600 lg:mb-8"
             >
               <div class="flex justify-center flex-col" :class="{'!flex-row': locale === 'ja'}">
                 <span class="bg-animation1" :style="`--content: '${$t('title1')}'`"><span class="letter1">{{ $t('title1') }}</span></span>
@@ -47,10 +47,6 @@ const { locale } = useI18n()
 </script>
 
 <style scoped>
-.font-title {
-  font-family: 'Noto Sans JP', 'ui-sans-serif', 'system-ui', '-apple-system', 'sans-serif';
-  font-weight: 800;
-}
 .button {
   display: flex;
   height: 48px;

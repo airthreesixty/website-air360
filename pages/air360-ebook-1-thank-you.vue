@@ -1,25 +1,35 @@
 <template>
-  <ThankYouPage />
+  <ThankYouPage>
+    <div class="flex flex-col justify-center items-center text-center">
+      <h1 class="page-thank-you__title">
+        You rock! Your eBook is on its way!
+      </h1>
+      <MochiFlying class="mt-12 mb-10" />
+      <p class="page-thank-you__description">
+        Thanks for requesting ‘Five Conversion Blockers and How to Fix Them’.
+      </p>
+      <a class="page-thank-you__button" href="https://go.scalefast.com/hubfs/eBooks/Ebook1_Air360-update.pdf" target="_blank">
+        Download your eBook
+      </a>
+    </div>
+  </ThankYouPage>
 </template>
 
 <script setup>
 const route = useRoute()
 const runtimeConfig = useRuntimeConfig()
 
-// const title = 'Air 360 eBook: Five Conversion Blockers and How to Fix Them'
-// const description = 'Five Conversion Blockers and How to Fix Them Improving Your UX Design with the Consumer in Mind Many conversion concerns can be solved with strategic choices in flow and function. In Part 1 of our three-part series, we take a look at the most impactful conversion blockers, and how companies can easily fix them. This […]'
+const title = 'Thank you'
+const description = 'You rock! Your eBook is on its way! Thanks for requesting ‘Five Conversion Blockers and How to Fix Them’'
 
-// definePageMeta({
-//   layout: 'request-demo',
-// })
-
-// useSeoMeta({
-//   title,
-//   description,
-//   ogDescription: description,
-//   ogTitle: title,
-//   ogImage: `${runtimeConfig.public.baseUrl}/five-conversion-blockers.webp`,
-//   twitterCard: 'summary_large_image',
-//   ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
-// })
+useSeoMeta({
+  title,
+  description,
+  ogDescription: description,
+  ogTitle: title,
+  ogImage: `${runtimeConfig.public.baseUrl}/five-conversion-blockers.webp`,
+  twitterCard: 'summary_large_image',
+  ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
+  robots: 'noindex, follow',
+})
 </script>
