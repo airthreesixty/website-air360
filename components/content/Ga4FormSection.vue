@@ -4,7 +4,7 @@
       class="container py-8 mx-auto lg:flex lg:justify-center lg:gap-5 xl:gap-0 lg:py-16"
     >
       <div
-        class="flex-col hidden lg:block lg:justify-center lg:flex lg:items-center lg:flex-1"
+        class="flex-col hidden mr-8 lg:block lg:justify-center lg:flex lg:items-center lg:flex-1"
       >
         <div class="mb-8 flex flex-col items-center">
           <div class="flex justify-center">
@@ -30,7 +30,7 @@
           <div
             class="rounded-lg bg-gray-100 shadow-lg px-8 py-9 lg:mt-8"
           >
-            <div v-if="isLoaded" id="form" />
+            <div id="form" />
           </div>
         </div>
       </div>
@@ -42,14 +42,11 @@
 const runtimeConfig = useRuntimeConfig()
 const { locale } = useI18n()
 
-const isLoaded = ref(false)
-
 useHead({
   titleTemplate: '',
   script: [
     {
       src: '//js-eu1.hsforms.net/forms/embed/v2.js',
-      callback: () => { isLoaded.value = true },
     },
   ],
 })
@@ -57,7 +54,7 @@ useHead({
 onMounted(() => {
   hbspt.forms.create({
     region: 'eu1',
-    portalId: '27037851"',
+    portalId: '27037851',
     formId: '463df4e6-56a3-471b-970f-ea5632614406',
     target: '#form',
     redirectUrl: `${runtimeConfig.public.baseUrl}/${locale.value}/ga4-migration-thank-you/`,
