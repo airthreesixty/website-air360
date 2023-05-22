@@ -31,5 +31,6 @@ useSeoMeta({
   ogImage: `${runtimeConfig.public.baseUrl}/en/ga4-migration.webp`,
   twitterCard: 'summary_large_image',
   ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
+  robots: 'noindex, follow',
 })
 </script>

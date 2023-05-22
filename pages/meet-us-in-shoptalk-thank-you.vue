@@ -30,5 +30,6 @@ useSeoMeta({
   ogImage: `${runtimeConfig.public.baseUrl}/shoptalk.webp`,
   twitterCard: 'summary_large_image',
   ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
+  robots: 'noindex, follow',
 })
 </script>
