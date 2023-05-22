@@ -1,6 +1,7 @@
 ::what-is-air360
 #title
-Visualization of previously invisible customer behavior
+Say Hello to insights<br>
+Say Goodbye to headaches
 #description
 Air360 is a digital experience analysis tool that makes it easy to understand customer experience on your website. It reveals customer behaviors that are invisible to conventional analysis methods, enabling you to create a more user-friendly website.
 ::
@@ -19,7 +20,10 @@ Both the initial setup and the actual analysis can be done by anyone: a simple 5
 #title3
 Quick Results
 #description3
-All behavioral logs are tracked automatically, so you don't have to wait months for data collection; you can find insights in as little as 7 days and aim to increase purchase rates by up to +55% in 3 months.
+Don’t wait months for data collection; find 
+insights in as little as 7 days and aim to 
+increase conversion rate by up to +55% in 3 
+months.
 ::
 
 ::real-example
