@@ -1,0 +1,3 @@
+<template>
+  <ThankYouPage />
+</template>
