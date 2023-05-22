@@ -42,13 +42,6 @@
 const runtimeConfig = useRuntimeConfig()
 const { locale } = useI18n()
 
-const formId = computed(() => {
-  if (locale.value === 'en') {
-    return '463df4e6-56a3-471b-970f-ea5632614406'
-  }
-  return ''
-})
-
 useHead({
   titleTemplate: '',
   script: [
@@ -58,6 +51,7 @@ useHead({
   ],
 })
 
+// formId has to be fixed after JP form is ready.
 onMounted(() => {
   hbspt.forms.create({
     region: 'eu1',
