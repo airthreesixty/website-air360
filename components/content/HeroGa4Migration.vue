@@ -18,7 +18,7 @@
             </p>
           </div>
           <div class="max-w-[700px]">
-            <video controls controlslist="nodownload">
+            <video controls controlslist="nodownload" :poster="posterSrc">
               <source :data-src="videoSrc" :src="videoSrc" type="video/mp4">
             </video>
           </div>
@@ -36,6 +36,14 @@ const videoSrc = computed(() => {
     return '/en/videos/GA4-migration-video.mp4'
   } else {
     return '/videos/GA4-migration-video.mp4'
+  }
+})
+
+const posterSrc = computed(() => {
+  if (locale.value === 'en') {
+    return '/en/ga4-migration.webp'
+  } else {
+    return '/ga4-migration.webp'
   }
 })
 </script>

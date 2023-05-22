@@ -15,7 +15,7 @@
       <p>Meet Mochi, our mascot, in Barcelona and talk to one of our CRO experts to become a conversion hero.</p>
       <p>See you there!</p>
       <p class="font-bold">
-        9 – 11 MAY – FIRA GRAN VÍA – BARCELONA
+        9 - 11 MAY - FIRA GRAN VÍA - BARCELONA
       </p>
     </template>
     <template #form>
