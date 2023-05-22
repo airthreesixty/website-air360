@@ -18,7 +18,7 @@
     </div>
 
     <div
-      class="rounded-lg bg-gray-100 shadow-lg px-8 py-9 lg:mt-8"
+      class="rounded-lg bg-gray-100 border-2 border-gray-200 shadow-lg px-8 pt-10 pb-6 lg:mt-8"
     >
       <slot name="form" />
     </div>
