@@ -1,5 +1,5 @@
 <template>
-  <section class="relative">
+  <div class="relative">
     <div
       class="container pt-46 md:pt-58 lg:pt-70 pb-22 mx-auto lg:pb-16"
     >
@@ -39,7 +39,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script lang="ts" setup>

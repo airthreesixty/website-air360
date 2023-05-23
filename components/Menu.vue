@@ -1,19 +1,21 @@
 <template>
-  <nav
+  <div
     class="bg-white py-2 top-0 z-10"
     :class="{'is-homepage absolute w-full' : isHomepage, 'border-gray-200 border-b-1 sticky': !isHomepage}"
   >
     <div v-if="isHomepage" class="bg-gradient h-60 md:h-70 lg:h-82" />
     <div class="relative flex flex-wrap items-center justify-between container mx-auto">
-      <NuxtLink :to="$localePath('/')">
-        <span class="sr-only">Air360</span>
-        <Logo
-          class="h-6 mr-3 w-auto sm:h-7 xl:h-8 filter homepage-logo"
-          :class="{'hover:drop-shadow-white': isHomepage, 'hover:(drop-shadow-primary)': !isHomepage}"
-          :is-dark="!isHomepage"
-          :aria-hidden="true"
-        />
-      </NuxtLink>
+      <header role="banner">
+        <NuxtLink :to="$localePath('/')">
+          <span class="sr-only">Air360</span>
+          <Logo
+            class="h-6 mr-3 w-auto sm:h-7 xl:h-8 filter homepage-logo"
+            :class="{'hover:drop-shadow-white': isHomepage, 'hover:(drop-shadow-primary)': !isHomepage}"
+            :is-dark="!isHomepage"
+            :aria-hidden="true"
+          />
+        </NuxtLink>
+      </header>
       <div class="flex items-center space-x-4">
         <button
           data-collapse-toggle="navbar-default"
@@ -40,10 +42,11 @@
             />
           </svg>
         </button>
-        <div
+        <nav
           id="navbar-default"
           class="w-full lg:flex items-center"
           :class="{hidden: !isActive,'menu-active dropdown sm:max-w-[300px]': isActive}"
+          arial-label="Main menu"
         >
           <div v-if="isActive" class="flex justify-center mt-6">
             <div class="max-w-[100px]">
@@ -80,7 +83,7 @@
               </ButtonPrimary>
             </li>
           </ul>
-        </div>
+        </nav>
         <div class="relative order-1 lg:order-3 !lg:pr-4">
           <button
             class="menu__link svg"
@@ -97,7 +100,7 @@
         </div>
       </div>
     </div>
-  </nav>
+  </div>
 </template>
 
 <script setup lang="ts">

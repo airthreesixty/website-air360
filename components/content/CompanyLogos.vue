@@ -1,16 +1,16 @@
 <template>
   <section>
     <div class="mx-auto max-w-screen-[500px] md:max-w-screen-[560px] lg:max-w-screen-[800px] px-6 lg:px-8">
-      <p class="text-center text-sm font-bold font-sans2 text-black-600 mb-8 tracking-widest">
+      <h3 class="text-center text-sm font-bold font-sans2 text-black-600 mb-8 tracking-widest">
         TRUSTED BY
-      </p>
-      <div
+      </h3>
+      <ul
         class="grid grid-cols-2 gap-y-10 gap-x-6 md:grid-cols-3"
       >
-        <div v-for="(logo, index) in logos" :key="index" class="flex justify-center items-center company-logos-list">
+        <li v-for="(logo, index) in logos" :key="index" class="flex justify-center items-center company-logos-list">
           <component :is="logo.component" class="h-7.5 object-contain w-full lg:h-9.5" :style="`transform: scale(${logo.scale})`" />
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
   </section>
 </template>
