@@ -1,25 +1,59 @@
-::single-description{imagePath="/en/smartDescription.webp" imageStatus="block" imageStatus2="hidden" alt="On-page analytics" icon="/icons/iconOnPage.svg" themeColor="#FA734C"}
-#title
-On-page analytics
-#description
-Analyze next to the actual website with the Chrome Extension. Simply click on the areas of interest to reveal customer behavior, purchase rates, and more.
-::
-
-::single-description{imagePath="/en/funnel.png" alt="Funnel" icon="/icons/iconFunnel.svg" themeColor="#3C8BFF" }
+::single-description{imagePath="/en/funnel.png" imageStatus="block" imageStatus2="hidden" alt="Funnel" icon="/icons/iconFunnel.svg" themeColor="#FA734C"}
 #title
 Funnel analysis
 #description
-For each web page or event that a customer has performed, a graph will show where the cause of disengagement is located and provide an overall picture of the cause.
+Know how users or segments navigate and find where to remove friction.Easy to create page view, click and custom event funnels without any 
+tagging allowing a big level of detail.
 ::
 
-::single-description{imagePath="/en/sunburst.png" imageStatus="block" imageStatus2="hidden" alt="User journey" icon="/icons/iconCustomerJourney.svg"}
+::single-description{imagePath="/en/sunburst.png" theme-color="#3C8BFF" alt="User journey" icon="/icons/iconCustomerJourney.svg"}
 #title
 User journey
 #description
-Based on the general framework of causes of abandonment identified in the funnel analysis, it is possible to gain a more detailed understanding of customer behavior, such as understanding behavior after abandonment.
+Not just another sunburst, the only user journey that tells it all.
+#description2
+Visualize user paths by page view and by user interactions (clicks, scrolls, errors, ...) and discover why your users are not converting.
 ::
 
-::single-description{imagePath="/dataIntegration.png" alt="Extensive integration features" :icon="/icons/iconOpenSource.svg" themeColor="#FA734C"}
+::single-description{imagePath="/en/smartDescription.webp" imageStatus="block" imageStatus2="hidden" alt="On-page analytics" icon="/icons/iconOnPage.svg"}
+#title
+On-page analytics
+#description
+Forget about useless heatmaps and get real on-page insights.
+#description2
+An additional interface loved business profiles  that will allow you to retrieve business, engagement, & frustration metrics with a simple click on your website.
+::
+
+::single-description{imagePath="/en/sessionReplay.jpeg" themeColor="#FA734C" alt="Session replay" icon="/icons/iconSessionReplay.svg"}
+#title
+Advanced Session Replay
+#description
+Confirm your hypothesis faster. Our session replay engine  has Advanced filters to get to relevant replays for your analysis.  Go directly session replays transcripts to save time. No need to watch replays, all interactions are available in written.
+::
+
+::single-description{imagePath="/en/userSegments.jpeg" imageStatus="block" imageStatus2="hidden" alt="On-page analytics" icon="/icons/iconStar.svg" theme-color="#3C8BFF" :isShadow="false"}
+#title
+User segments
+#description
+Create, export and activate your segments with Air360. Our technology allows you to filter all 
+users by any specific criteria like purchase behavior, user journeys, frustration or engagement with your 
+website, events and page views, even by sequence of events.
+#description2
+Create the segments and push them to your MarTech stack through our integrations.
+::
+
+::single-description{imagePath="/en/errorDetection.jpeg" alt="Extensive integration features" :icon="/icons/iconBubble.svg"}
+#title
+No code error detection
+#description
+Track JavaScript , 404, & Click errors via Google Tag Manager to understand the impact of errors on your audience.
+#description2
+Use error events inside funnels & user journeys to reveal the segments of users impacted by specific errors.
+#description3
+Create & Export error impacted segments and push them to your MarTech.
+::
+
+::single-description{imagePath="/dataIntegration.webp" imageStatus="block" imageStatus2="hidden" alt="Extensive integration features" :icon="/icons/iconOpenSource.svg" themeColor="#FA734C"}
 #title
 Extensive integration features
 #description

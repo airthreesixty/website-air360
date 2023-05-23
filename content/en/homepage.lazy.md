@@ -1,9 +1,9 @@
 ::what-is-air360
 #title
-Say Hello to insights<br>
-Say Goodbye to headaches
+Say hello to insights<br>
+Say goodbye to headaches
 #description
-Air360 is a digital experience analysis tool that makes it easy to understand customer experience on your website. It reveals customer behaviors that are invisible to conventional analysis methods, enabling you to create a more user-friendly website.
+Air360 is an eCommerce experience analysis tool that makes it easy to understand customer experience on your website. It reveals customer behaviors that are invisible to conventional analysis methods, enabling you to create a more user-friendly website.
 ::
 
 ::what-air360-offers2
@@ -20,10 +20,8 @@ Both the initial setup and the actual analysis can be done by anyone: a simple 5
 #title3
 Quick Results
 #description3
-Don’t wait months for data collection; find 
-insights in as little as 7 days and aim to 
-increase conversion rate by up to +55% in 3 
-months.
+Don’t wait months for data collection. Find insights in as little as 7 days and aim to 
+increase conversion rate by up to +55% in 3 months.
 ::
 
 ::real-example

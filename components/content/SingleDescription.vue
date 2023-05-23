@@ -8,7 +8,8 @@
           v-if="!responsiveImage && imagePath"
           :src="imagePath"
           :alt="alt"
-          class="rounded-lg shadow-lg my-auto w-full object-cover"
+          class="rounded-lg my-auto w-full object-cover"
+          :class="{'shadow-lg': isShadow}"
         >
         <nuxt-img
           v-else-if="!isVideo"
@@ -17,7 +18,8 @@
           :alt="alt"
           loading="lazy"
           sizes="xl:1390px lg:1034px md:754px sm:1184px xs:277px"
-          class="rounded-lg shadow-lg my-auto w-full object-cover"
+          class="rounded-lg my-auto w-full object-cover"
+          :class="{'shadow-lg': isShadow}"
         />
         <video
           v-else-if="showVideo"
@@ -46,13 +48,24 @@
         >
           <ContentSlot :use="$slots.description" unwrap="p" />
         </p>
+        <p
+          class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-base lg:text-xl xl:leading-8 dark:text-gray-400"
+        >
+          <ContentSlot :use="$slots.description2" unwrap="p" />
+        </p>
+        <p
+          class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-base lg:text-xl xl:leading-8 dark:text-gray-400"
+        >
+          <ContentSlot :use="$slots.description3" unwrap="p" />
+        </p>
       </div>
       <div :class="`hidden md:${imageStatus2} md:mt-0 md:flex md:w-[58%] md:p-5`">
         <img
           v-if="!responsiveImage && imagePath"
           :src="imagePath"
           :alt="alt"
-          class="rounded-lg shadow-lg my-auto w-full object-cover"
+          class="rounded-lg my-auto w-full object-cover"
+          :class="{'shadow-lg': isShadow}"
         >
         <nuxt-img
           v-else-if="!isVideo"
@@ -61,7 +74,8 @@
           :alt="alt"
           loading="lazy"
           sizes="xl:1390px lg:1034px md:754px sm:1184px xs:277px"
-          class="rounded-lg shadow-lg my-auto w-full object-cover"
+          class="rounded-lg my-auto w-full object-cover"
+          :class="{'shadow-lg': isShadow}"
         />
         <video
           v-else-if="showVideo"
@@ -124,6 +138,10 @@ const props = defineProps({
     default: '',
   },
   responsiveImage: {
+    type: Boolean,
+    default: true,
+  },
+  isShadow: {
     type: Boolean,
     default: true,
   },

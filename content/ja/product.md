@@ -13,12 +13,11 @@ Features
 Air360では顧客の行動を自動でトラッキングし、Chrome拡張機能やセッションリプレイ等様々な機能で簡単に顧客にとって最善のウェブサイトを目指せます。
 ::
 
-::single-description{imagePath="/sessionReplay.webp" alt="セッションリプレイ" icon="/icons/iconSessionReplay.svg"}
-#subtext
-スマート
+::single-description{imagePath="/en/autoTracking.jpeg" alt="On-page analytics" icon="/icons/iconFlag.svg" :isShadow="false"}
 #title
-セッションリプレイ
+Air360 オートトラッキング
 #description
-<!-- ユーザーのウェブ上の行動を動画で確認し、ユーザーが持つ不満を素早く発見できます。スクリーニングすることで、あなたの気になる特定のユーザーに絞れます。 -->
-顧客のウェブサイト上の行動を動画で確認可能。実際の顧客体験を確認することで、顧客の離脱原因やイライラの原因が簡単に把握できます。
+Air360 Pixelをインストールするだけで、今まで気づかなかったデータを追跡できます。
+#description2
+コードレス、タグレスのソリューションでは、ユーザーの動き（クリック、スクロール、ページビュー、マウスの動きなど）を追跡するだけでなく eコマースとデジタルマーケティングのKPIも同時にトラッキングします。
 ::
