@@ -6,7 +6,7 @@
           <ContentSlot :use="$slots.title" unwrap="p" />
         </h1>
         <div class="md:flex md:items-center md:mt-12 lg:mt-18 md:gap-x-8">
-          <div class="text-white my-10 md:my-0 lg:text-lg">
+          <div class="text-white my-10 md:flex-1  md:my-0 lg:text-lg">
             <p class="mb-4">
               <ContentSlot :use="$slots.description1" unwrap="p" />
             </p>
@@ -17,8 +17,8 @@
               <ContentSlot :use="$slots.description3" unwrap="p" />
             </p>
           </div>
-          <div class="max-w-[700px]">
-            <video controls controlslist="nodownload" :poster="posterSrc">
+          <div class="max-w-[700px] flex-1">
+            <video controls controlslist="nodownload" :poster="posterSrc" class="rounded-lg">
               <source :data-src="videoSrc" :src="videoSrc" type="video/mp4">
             </video>
           </div>
