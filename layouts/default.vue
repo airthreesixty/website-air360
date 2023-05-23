@@ -10,15 +10,27 @@
 
 <script setup lang="ts">
 const route = useRoute()
-const { locale } = useI18n()
+const { locale, locales } = useI18n()
 const runtimeConfig = useRuntimeConfig()
+const { $localePath } = useNuxtApp()
+
+const hrefAlternate = computed(() => {
+  return locales.value
+    .filter(l => l.code !== locale.value)
+    .map(l => ({
+      ref: 'alternate',
+      hreflang: l.iso,
+      href: `${runtimeConfig.public.baseUrl}${$localePath(getPathWithoutLocale(route.fullPath), l.code)}`,
+    }))
+})
 
 useHead(() => ({
   link: [
     {
       rel: 'canonical',
-      href: `${runtimeConfig.public.baseUrl}${route.path}`,
+      href: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
     },
+    ...hrefAlternate.value,
   ],
   htmlAttrs: {
     lang: locale.value,
