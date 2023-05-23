@@ -84,6 +84,6 @@ export default defineNuxtConfig({
     ],
   },
   image: {
-    domains: ['jp.air360.io'],
+    provider: 'ipx',
   },
 })
