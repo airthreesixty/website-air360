@@ -26,7 +26,7 @@ const { data } = await useAsyncData(props.page, () =>
   ).findOne(),
 )
 
-const { data: lazyData, pending } = useLazyAsyncData(`${props.page}.lazy`, () =>
+const { data: lazyData, pending } = await useLazyAsyncData(`${props.page}.lazy`, () =>
   queryContent(
     `/${locale.value}/${props.page}.lazy`,
   ).findOne(),
