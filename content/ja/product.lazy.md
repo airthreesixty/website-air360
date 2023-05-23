@@ -43,20 +43,18 @@ Chrome拡張機能で実際のウェブサイトと隣り合わせて分析。�
 #title
 ユーザーセグメント
 #description
-すべてのユーザーの購入行動、不満、エンゲージメントなどの特定の基準でフィルタリングできます。
+ユーザーの行動やウェブサイトに対する不満、購入履歴などでユーザーをフィルタリングできます。
 #description2
-セグメントを作成し、当社の統合機能を使ってMarTechスタックにプッシュします。
+当社の統合機能を使ってマーケティングツールに繋げて、マーケティングのためにお使いいただけます。
 ::
 
 ::single-description{imagePath="/en/errorDetection.jpeg" alt="Extensive integration features" :icon="/icons/iconBubble.svg"}
 #title
 ノーコードでエラーを検出
 #description
-Google Tag ManagerでJavaScript、404、クリックエラーを追跡し、エラーによるユーザーへの影響を把握できます。
+Google Tag ManagerでJavaScript、404、クリックエラーを追跡し、エラーがユーザーに与える影響を把握できます。
 #description2
 ファネルやユーザージャーニー内のエラーイベントを利用し、特定のエラーによって影響を受けるユーザーのセグメントを明らかにしましょう。
-#description3
-エラーインパクトのあるセグメントを作成＆エクスポートし、MarTechにプッシュします。
 ::
 
 
