@@ -52,25 +52,24 @@
         >
           <div v-if="isActive" class="flex justify-center mt-6">
             <div class="max-w-[100px]">
-              <img src="/favicon.webp" width="200">
+              <img src="/favicon.webp" width="200" alt="">
             </div>
           </div>
           <ul
-            class="flex flex-col pb-2 mt-4 border items-center border-none space-y-2 lg:(flex-row space-x-8 mt-0 space-y-0 text-base font-medium border-0 p-4)"
+            class="flex flex-col pb-2 mt-4 border items-center border-none lg:(flex-row space-x-8 mt-0 text-base font-medium border-0 p-4)"
+            :class="{ 'w-2/3 text-center mx-auto items-stretch': isActive }"
           >
-            <li>
+            <li :class="{ 'border-b border-gray-100 py-1': isActive }">
               <NuxtLink :to="$localePath('/product')" class="menu__link">
                 {{ $t("product.title") }}
               </NuxtLink>
             </li>
-            <hr v-if="isActive" class="h-1 w-2/3">
-            <li>
+            <li :class="{ 'border-b border-gray-100 py-1': isActive }">
               <NuxtLink :to="$localePath('/blog')" class="menu__link">
                 {{ $t("blog") }}
               </NuxtLink>
             </li>
-            <hr v-if="isActive" class="h-1 w-2/3">
-            <li>
+            <li :class="{ 'border-b border-gray-100 py-1': isActive }">
               <a
                 :href="runtimeConfig.public.appUrl"
                 class="menu__link"
@@ -78,7 +77,6 @@
                 rel="noopener noreferrer"
               >{{ $t("login") }}</a>
             </li>
-            <hr v-if="isActive" class="h-1 w-2/3">
             <li class="pt-2 lg:pt-0">
               <ButtonPrimary slug="/request-demo" :theme="isHomepage && !isActive ? 'outline' : 'primary'">
                 {{ $t("request-demo.title") }}
