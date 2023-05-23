@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-center">
     <div class="prose max-w-screen-md px-6 py-12 lg:px-8 lg:py-16">
-      <ContentPage />
+      <ContentDoc />
     </div>
   </div>
 </template>

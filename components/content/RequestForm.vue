@@ -14,7 +14,7 @@
       >
         <div class="mb-8 flex flex-col items-center">
           <div class="flex justify-center">
-            <nuxt-img src="/getStarted.webp" class="w-80 mb-6" />
+            <nuxt-img src="/getStarted.webp" class="w-80 mb-6" alt="" />
           </div>
           <h1 class="mb-3 font-semibold text-center text-gradient text-xl md:text-2xl lg:text-3xl">
             <ContentSlot :use="$slots.title1" unwrap="p" />
@@ -118,11 +118,12 @@
                   >
                 </div>
                 <div class="ml-3 error-alert">
-                  <div
+                  <label
                     class="font-light text-xs text-gray-500 dark:text-gray-300"
+                    for="terms"
                   >
                     <ContentSlot :use="$slots.rule" unwrap="p" />
-                  </div>
+                  </label>
                 </div>
               </div>
               <button

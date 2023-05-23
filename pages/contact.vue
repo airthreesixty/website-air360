@@ -1,5 +1,5 @@
 <template>
-  <ContentPage />
+  <ContentDoc />
 </template>
 
 <script setup lang="ts">

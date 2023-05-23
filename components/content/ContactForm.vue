@@ -10,11 +10,11 @@
       <div
         class="px-4 mx-auto max-w-screen-sm text-center lg:px-6 mb-8 lg:mb-16"
       >
-        <h2
+        <h1
           class="mb-4 text-3xl font-bold text-black-600 md:text-4xl"
         >
           Contact Us
-        </h2>
+        </h1>
         <p class="font-light text-gray-600 md:text-xl">
           <ContentSlot :use="$slots.subtext" unwrap="p" />
         </p>
