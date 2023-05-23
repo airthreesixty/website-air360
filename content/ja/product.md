@@ -10,16 +10,16 @@ Features
 簡単に顧客の行動分析を実現
 #description
 <!-- 複雑で終わりのない分析レポートにうんざりしていませんか？Air360はより多くの収益を上げるための隠れたインサイトを発見するお手伝いをします。 -->
-Air360では顧客の行動を自動でトラッキングし、Chrome拡張機能やセッションリプレイ等様々な機能で簡単に顧客にとって最善のウェブサイトを目指せます。
+<span class="sm:inline-block">Air360では顧客の行動を自動でトラッキングし、</span><span class="sm:inline-block">Chrome拡張機能やセッションリプレイ等様々な機能で</span><span class="sm:inline-block">簡単に顧客にとって最善のウェブサイトを目指せます。</span>
 ::
 
 ::single-description{imagePath="/en/autoTracking.jpeg" alt="On-page analytics" icon="/icons/iconFlag.svg" :isShadow="false"}
 #title
-Air360 オートトラッキング
+自動トラッキング
 #description
-Air360 Pixelをインストールするだけで、今まで気づかなかったデータを追跡できます。
+Air360のピクセルを一行追加するだけで、簡単にウェブサイト上のデータを追跡できます。
 #description2
-コードレス、タグレスのソリューションでは、ユーザーの動き（クリック、スクロール、ページビュー、マウスの動きなど）を追跡するだけでなく eコマースとデジタルマーケティングのKPIも同時にトラッキングします。
+クリック、スクロール、ページ閲覧、マウスの動きなどのユーザーの動きを追跡するだけでなく、 eコマースビジネスとデジタルマーケティングのためのKPIも同時にトラッキングします。
 ::
 
 ::single-description{imagePath="/funnel.png" imageStatus="block" imageStatus2="hidden" alt="ファネル" icon="/icons/iconFunnel.svg" themeColor="#FA734C" }
@@ -67,20 +67,18 @@ Chrome拡張機能で実際のウェブサイトと隣り合わせて分析。�
 #title
 ユーザーセグメント
 #description
-すべてのユーザーの購入行動、不満、エンゲージメントなどの特定の基準でフィルタリングできます。
+ユーザーの行動やウェブサイトに対する不満、購入履歴などでユーザーをフィルタリングできます。
 #description2
-セグメントを作成し、当社の統合機能を使ってMarTechスタックにプッシュします。
+当社の統合機能を使ってマーケティングツールに繋げて、マーケティングのためにお使いいただけます。
 ::
 
 ::single-description{imagePath="/en/errorDetection.jpeg" alt="Extensive integration features" :icon="/icons/iconBubble.svg"}
 #title
 ノーコードでエラーを検出
 #description
-Google Tag ManagerでJavaScript、404、クリックエラーを追跡し、エラーによるユーザーへの影響を把握できます。
+Google Tag ManagerでJavaScript、404、クリックエラーを追跡し、エラーがユーザーに与える影響を把握できます。
 #description2
 ファネルやユーザージャーニー内のエラーイベントを利用し、特定のエラーによって影響を受けるユーザーのセグメントを明らかにしましょう。
-#description3
-エラーインパクトのあるセグメントを作成＆エクスポートし、MarTechにプッシュします。
 ::
 
 
