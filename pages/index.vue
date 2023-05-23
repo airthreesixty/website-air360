@@ -22,9 +22,7 @@ useSeoMeta({
   ogUrl: `${runtimeConfig.public.baseUrl}/${locale.value}/`,
 })
 
-onMounted(() => {
-  if (route.fullPath === '/') {
-    document.location = '/en/'
-  }
-})
+if (route.fullPath === '/') {
+  document.location = '/en/'
+}
 </script>
