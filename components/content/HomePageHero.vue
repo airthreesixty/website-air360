@@ -17,7 +17,8 @@
               <span class="bg-animation3" :style="`--content: '${$t('title3')}'`"><span class="letter3">{{ $t('title3') }}</span></span>
             </h1>
             <MochiFlyingReverse
-              class="svg-position w-21 h-21 md:w-24 lg:h-24"
+              class="absolute right-[-26px] top-[-60px] w-21 h-21 md:w-24 lg:h-24 lg:w-28"
+              :class="{'!right-[-45px]': locale === 'ja'}"
             />
           </div>
         </div>
