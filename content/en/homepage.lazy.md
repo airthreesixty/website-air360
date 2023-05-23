@@ -20,10 +20,8 @@ Both the initial setup and the actual analysis can be done by anyone: a simple 5
 #title3
 Quick Results
 #description3
-Don’t wait months for data collection; find 
-insights in as little as 7 days and aim to 
-increase conversion rate by up to +55% in 3 
-months.
+Don’t wait months for data collection. Find insights in as little as 7 days and aim to 
+increase conversion rate by up to +55% in 3 months.
 ::
 
 ::real-example

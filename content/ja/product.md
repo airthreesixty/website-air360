@@ -13,17 +13,36 @@ Features
 Air360では顧客の行動を自動でトラッキングし、Chrome拡張機能やセッションリプレイ等様々な機能で簡単に顧客にとって最善のウェブサイトを目指せます。
 ::
 
-::single-description{imagePath="/sessionReplay.webp" alt="セッションリプレイ" icon="/icons/iconSessionReplay.svg"}
-#subtext
-スマート
+::single-description{imagePath="/en/autoTracking.jpeg" alt="On-page analytics" icon="/icons/iconFlag.svg"}
 #title
-セッションリプレイ
+Air360 オートトラッキング
 #description
-<!-- ユーザーのウェブ上の行動を動画で確認し、ユーザーが持つ不満を素早く発見できます。スクリーニングすることで、あなたの気になる特定のユーザーに絞れます。 -->
-顧客のウェブサイト上の行動を動画で確認可能。実際の顧客体験を確認することで、顧客の離脱原因やイライラの原因が簡単に把握できます。
+Air360 Pixelをインストールするだけで、今まで気づかなかったデータを追跡できます。
+#description2
+コードレス、タグレスのソリューションでは、ユーザーの動き（クリック、スクロール、ページビュー、マウスの動きなど）を追跡するだけでなく eコマースとデジタルマーケティングのKPIも同時にトラッキングします。
 ::
 
-::single-description{imagePath="/smartDescription.webp" imageStatus="block" imageStatus2="hidden" alt="ウェブページ上で分析" icon="/icons/iconOnPage.svg" themeColor="#FA734C"}
+::single-description{imagePath="/funnel.png" imageStatus="block" imageStatus2="hidden" alt="ファネル" icon="/icons/iconFunnel.svg" themeColor="#FA734C" }
+#subtext
+視覚的
+#title
+ファネル分析
+#description
+<!-- ページごと、あるいはボタンのクリックなどユーザーのアクションごとにグラフを作成し、どこに離脱の原因があるかすぐにわかります。 -->
+ウェブページや顧客が行ったイベントごとに、どこに離脱の原因があるかグラフで確認し、原因の全体像を把握します。
+::
+
+::single-description{imagePath="/sunburst.png" alt="ユーザージャーニー" icon="/icons/iconCustomerJourney.svg" themeColor="#3C8BFF"}
+#subtext
+視覚的
+#title
+ユーザージャーニー
+#description
+<!-- ユーザーのウェブサイト上の行動をグラフ化して確認できます。全体像を把握し、どこから改善していくべきか判断できます。 -->
+ファネル分析で特定した離脱原因の大枠をもとに、離脱後の行動把握など、より詳細な顧客の行動理解が可能になります。
+::
+
+::single-description{imagePath="/smartDescription.webp" imageStatus="block" imageStatus2="hidden" alt="ウェブページ上で分析" icon="/icons/iconOnPage.svg"}
 #subtext
 直感的
 #title
@@ -34,27 +53,38 @@ Air360では顧客の行動を自動でトラッキングし、Chrome拡張機�
 Chrome拡張機能で実際のウェブサイトと隣り合わせて分析。気になる箇所をクリックするだけで、顧客の行動心理や購買率等を明らかにできます。
 ::
 
-::single-description{imagePath="/funnel.png" alt="ファネル" icon="/icons/iconFunnel.svg" themeColor="#3C8BFF" }
+::single-description{imagePath="/sessionReplay.webp" alt="セッションリプレイ" icon="/icons/iconSessionReplay.svg" themeColor="#FA734C"}
 #subtext
-視覚的
+スマート
 #title
-ファネル分析
+セッションリプレイ
 #description
-<!-- ページごと、あるいはボタンのクリックなどユーザーのアクションごとにグラフを作成し、どこに離脱の原因があるかすぐにわかります。 -->
-ウェブページや顧客が行ったイベントごとに、どこに離脱の原因があるかグラフで確認し、原因の全体像を把握します。
+<!-- ユーザーのウェブ上の行動を動画で確認し、ユーザーが持つ不満を素早く発見できます。スクリーニングすることで、あなたの気になる特定のユーザーに絞れます。 -->
+顧客のウェブサイト上の行動を動画で確認可能。実際の顧客体験を確認することで、顧客の離脱原因やイライラの原因が簡単に把握できます。
 ::
 
-::single-description{imagePath="/sunburst.png" imageStatus="block" imageStatus2="hidden" alt="ユーザージャーニー" icon="/icons/iconCustomerJourney.svg"}
-#subtext
-視覚的
+::single-description{imagePath="/en/userSegments.jpeg" imageStatus="block" imageStatus2="hidden" alt="On-page analytics" icon="/icons/iconStar.svg" themeColor="#3C8BFF"}
 #title
-ユーザージャーニー
+ユーザーセグメント
 #description
-<!-- ユーザーのウェブサイト上の行動をグラフ化して確認できます。全体像を把握し、どこから改善していくべきか判断できます。 -->
-ファネル分析で特定した離脱原因の大枠をもとに、離脱後の行動把握など、より詳細な顧客の行動理解が可能になります。
+すべてのユーザーの購入行動、不満、エンゲージメントなどの特定の基準でフィルタリングできます。
+#description2
+セグメントを作成し、当社の統合機能を使ってMarTechスタックにプッシュします。
 ::
 
-::single-description{imagePath="/dataIntegration.png" alt="連携性" :icon="/icons/iconOpenSource.svg" themeColor="#FA734C"}
+::single-description{imagePath="/en/errorDetection.jpeg" alt="Extensive integration features" :icon="/icons/iconBubble.svg"}
+#title
+ノーコードでエラーを検出
+#description
+Google Tag ManagerでJavaScript、404、クリックエラーを追跡し、エラーによるユーザーへの影響を把握できます。
+#description2
+ファネルやユーザージャーニー内のエラーイベントを利用し、特定のエラーによって影響を受けるユーザーのセグメントを明らかにしましょう。
+#description3
+エラーインパクトのあるセグメントを作成＆エクスポートし、MarTechにプッシュします。
+::
+
+
+::single-description{imagePath="/dataIntegration.webp" imageStatus="block" imageStatus2="hidden" alt="連携性" :icon="/icons/iconOpenSource.svg" themeColor="#FA734C"}
 #subtext
 連携性
 #title

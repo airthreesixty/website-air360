@@ -46,6 +46,16 @@
         >
           <ContentSlot :use="$slots.description" unwrap="p" />
         </p>
+        <p
+          class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-base lg:text-xl xl:leading-8 dark:text-gray-400"
+        >
+          <ContentSlot :use="$slots.description2" unwrap="p" />
+        </p>
+        <p
+          class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-base lg:text-xl xl:leading-8 dark:text-gray-400"
+        >
+          <ContentSlot :use="$slots.description3" unwrap="p" />
+        </p>
       </div>
       <div :class="`hidden md:${imageStatus2} md:mt-0 md:flex md:w-[58%] md:p-5`">
         <img
