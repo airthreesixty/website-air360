@@ -38,7 +38,6 @@
     </SingleDescription>
     <SingleDescription
       :image-path="image"
-      :responsive-image="false"
       :alt="$t('how-air360-helps3')"
       icon="/icons/iconQuick.svg"
       theme-color="#3C8BFF"
@@ -73,6 +72,6 @@ const posterSrc2 = computed(() => {
 })
 
 const image = computed(() => {
-  return locale.value === 'en' ? '/mockup-dashboard.1390.webp' : '/noCode.1390.webp'
+  return locale.value === 'en' ? '/mockup-dashboard.jpeg' : '/noCode.png'
 })
 </script>
