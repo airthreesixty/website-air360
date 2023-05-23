@@ -3,12 +3,12 @@
     <div class="container mx-auto md:flex md:justify-between">
       <div class="mb-6 md:mb-0">
         <NuxtLink :to="$localePath('/')">
-          <div class="flex items-center">
-            <Logo
-              class="mr-3 h-6 w-auto sm:h-7 xl:h-8"
-              :is-dark="true"
-            />
-          </div>
+          <span class="sr-only">Air360</span>
+          <Logo
+            class="mr-3 h-6 w-auto sm:h-7 xl:h-8"
+            :is-dark="true"
+            :aria-hidden="true"
+          />
         </NuxtLink>
         <div class="flex my-6 space-x-4 md:justify-start md:mt-4 lg:mt-6">
           <a

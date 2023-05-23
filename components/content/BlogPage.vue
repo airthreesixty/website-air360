@@ -2,14 +2,14 @@
   <section class="bg-white dark:bg-gray-900">
     <div class="container py-8  mx-auto lg:py-16">
       <div class="mx-auto max-w-screen-[1400px] text-center mb-8 lg:mb-16">
-        <h2
+        <h1
           class="mb-4 text-2xl tracking-tight font-extrabold text-black-600 lg:text-4xl dark:text-white"
         >
           Air360 {{ $t('blog') }}
-        </h2>
-        <p class="font-light mb-1 text-gray-500 md:text-xl dark:text-gray-400">
+        </h1>
+        <h2 class="font-light mb-1 text-gray-500 md:text-xl dark:text-gray-400">
           {{ $t('how-to-increase-conversion') }}
-        </p>
+        </h2>
         <BlogTagsFilter />
         <BlogSearchBar v-model="searchedArticles" />
       </div>

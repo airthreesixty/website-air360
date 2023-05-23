@@ -1,7 +1,5 @@
 <template>
-  <main>
-    <BlogPage :articles="data" />
-  </main>
+  <BlogPage :articles="data" />
 </template>
 
 <script setup lang="ts">
