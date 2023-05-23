@@ -27,6 +27,7 @@ export default defineNuxtConfig({
       trailingSlash: true,
       baseUrl: process.env.BASE_URL,
       appUrl: process.env.APP_URL,
+      platform: process.env.PLATFORM,
     },
   },
   schemaOrg: {

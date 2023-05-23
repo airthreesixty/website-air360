@@ -11,6 +11,7 @@ env:
   ALGOLIA_DOCSEARCH_INDEX_NAME: ${{ vars.ALGOLIA_DOCSEARCH_INDEX_NAME }}
   BASE_URL: ${{ vars.BASE_URL }}
   APP_URL: ${{ vars.APP_URL }}
+  PLATFORM: ${{ vars.PLATFORM }}
 
 on:
   # Runs on pushes targeting the default branch
