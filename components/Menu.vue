@@ -6,11 +6,13 @@
     <div v-if="isHomepage" class="bg-gradient h-60 md:h-70 lg:h-82" />
     <div class="relative flex flex-wrap items-center justify-between container mx-auto">
       <header role="banner">
-        <NuxtLink :to="$localePath('/')">
+        <NuxtLink
+          :to="$localePath('/')"
+          class="h-6 w-auto sm:h-7 xl:h-8 filter homepage-logo"
+          :class="{'hover:drop-shadow-white focus:drop-shadow-white': isHomepage, 'hover:drop-shadow-primary focus:drop-shadow-primary': !isHomepage}"
+        >
           <span class="sr-only">Air360</span>
           <Logo
-            class="h-6 mr-3 w-auto sm:h-7 xl:h-8 filter homepage-logo"
-            :class="{'hover:drop-shadow-white': isHomepage, 'hover:(drop-shadow-primary)': !isHomepage}"
             :is-dark="!isHomepage"
             :aria-hidden="true"
           />
@@ -152,25 +154,33 @@ onBeforeUnmount(() => {
 }
 
 .menu__link {
-  @apply block py-2 font-semibold text-gray-500 transition-all hover:(text-shadow-primary text-primary-600);
+  @apply block py-2 font-semibold text-gray-500 transition-all hover:(text-shadow-primary text-primary-600) focus:text-shadow-primary;
 
   .is-homepage & {
-    @apply !lg:text-white !hover:text-shadow-white;
+    @apply !lg:text-white !hover:text-shadow-white !focus:text-shadow-white;
   }
 
   &.router-link-exact-active {
     @apply text-primary-600;
   }
 
-  :not(.is-homepage) &.svg:hover svg {
-    @apply filter drop-shadow-primary;
+  :not(.is-homepage) &.svg {
+    &:hover,
+    &:focus {
+      svg {
+        @apply filter drop-shadow-primary;
+      }
+    }
   }
 
-  .is-homepage &.svg{
+  .is-homepage &.svg {
     @apply !text-white;
 
-    &:hover svg {
-      @apply filter drop-shadow-white;
+    &:hover,
+    &:focus {
+      svg {
+        @apply filter drop-shadow-white;
+      }
     }
   }
 }

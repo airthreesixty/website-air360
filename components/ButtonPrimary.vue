@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink v-if="theme === 'primary'" :to="$localePath(slug)" class="button button-primary transition ease-in-out duration-300 hover:bg-primary-700">
+  <NuxtLink v-if="theme === 'primary'" :to="$localePath(slug)" class="button button-primary transition ease-in-out duration-300 hover:bg-primary-700 focus:bg-primary-700">
     <div class=" text-white font-bold text-base">
       <slot />
     </div>
@@ -9,7 +9,7 @@
       <slot />
     </div>
   </NuxtLink>
-  <NuxtLink v-if="theme === 'outline'" :to="$localePath(slug)" class="button border-2 button-transparent transition ease-in-out duration-300 hover:opacity-80">
+  <NuxtLink v-if="theme === 'outline'" :to="$localePath(slug)" class="button border-2 button-transparent transition ease-in-out duration-300 hover:opacity-80 focus:opacity-80">
     <div class="text-white font-bold text-base">
       <slot />
     </div>
