@@ -2,10 +2,10 @@
   <div v-if="data">
     <ContentRenderer :value="data" />
     <!-- <ClientOnly> -->
-      <div v-if="pending" class="mt-30 mb-15 flex justify-center">
-        <Loading class="w-20 h-5" :is-full-page="false" />
-      </div>
-      <ContentRenderer v-else-if="lazyData" :value="lazyData" />
+    <div v-if="pending" class="mt-30 mb-15 flex justify-center">
+      <Loading class="w-20 h-5" :is-full-page="false" />
+    </div>
+    <ContentRenderer v-else-if="lazyData" :value="lazyData" />
     <!-- </ClientOnly> -->
   </div>
 </template>

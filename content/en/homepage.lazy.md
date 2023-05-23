@@ -32,7 +32,7 @@ Achievement
 #achievement1
 Conversion rate
 #achievement2
-Option preservation rate
+Retention rate
 ::
 
 ::testimonial
