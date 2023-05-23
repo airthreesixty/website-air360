@@ -133,8 +133,8 @@
 import { useSeoMeta } from '@unhead/vue'
 import { BlogArticle } from '~~/interfaces/blog'
 
-const { $localePath } = useNuxtApp()
-const { locale } = useI18n()
+const { $localePath, $dayjs } = useNuxtApp()
+const { locale, t } = useI18n()
 const runtimeConfig = useRuntimeConfig()
 const route = useRoute()
 const router = useRouter()
@@ -188,6 +188,22 @@ useSeoMeta({
   twitterCard: 'summary_large_image',
   ogUrl: `${runtimeConfig.public.baseUrl}${fullPath}`,
 })
+
+const breadcrumbs = [
+  { name: t('home'), item: $localePath('/') },
+  { name: t('blog'), item: $localePath('/blog/') },
+  { name: data.value?.title },
+]
+
+useSchemaOrg([
+  defineArticle({
+    '@type': 'BlogPosting',
+    image: data.value?.image,
+    datePublished: $dayjs(data.value?.published)
+      .locale(locale).format('YYYY-MM-DD'),
+  }),
+  defineBreadcrumb({ itemListElement: breadcrumbs }),
+])
 </script>
 
 <style lang="postcss">

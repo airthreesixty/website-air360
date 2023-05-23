@@ -211,20 +211,6 @@ const submitForm = async () => {
     Object.assign(formData, { name: '', email: '', jobTitle: '', message: '' })
   }
 }
-
-useSchemaOrg([
-  defineOrganization({
-    name: t('organization.name'),
-    address: {
-      streetAddress: t('organization.address.streetAddress'),
-      addressLocality: t('organization.address.addressLocality') || '',
-      addressRegion: t('organization.address.addressRegion'),
-      postalCode: t('organization.address.postalCode'),
-      addressCountry: t('organization.address.addressCountry'),
-    },
-    sameAs: ['https://www.linkedin.com/company/air360/', 'https://twitter.com/weareair360', 'https://www.instagram.com/weareair360/'],
-  }),
-])
 </script>
 
 <style lang="postcss">

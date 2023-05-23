@@ -6,7 +6,7 @@
 const { t, locale } = useI18n()
 const route = useRoute()
 const runtimeConfig = useRuntimeConfig()
-
+const { $localePath } = useNuxtApp()
 
 useSeoMeta({
   title: t('blog-index.title'),
@@ -24,4 +24,16 @@ const { data } = await useAsyncData('blog', () =>
     .sort({ published: -1 })
     .find(),
 )
+
+const breadcrumbs = [
+  { name: t('home'), item: $localePath('/') },
+  { name: t('blog') },
+]
+
+useSchemaOrg([
+  defineWebPage({
+    '@type': 'ItemPage',
+  }),
+  defineBreadcrumb({ itemListElement: breadcrumbs }),
+])
 </script>
