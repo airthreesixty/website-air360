@@ -29,8 +29,8 @@
           <div>{{ $t('air360-team') }}</div>
           <div class="text-sm font-normal text-gray-500 dark:text-gray-400">
             {{
-              dayjs(data.published)
-                .locale($i18n.locale._value)
+              $dayjs(data.published)
+                .locale(locale)
                 .format("YYYY-MM-DD")
             }}
             · {{ data.readingTime }} min
@@ -42,9 +42,9 @@
 </template>
 
 <script setup lang="ts">
-import dayjs from 'dayjs'
 import { BlogArticle } from '~~/interfaces/blog'
-const { $localePath, $i18n } = useNuxtApp()
+const { $localePath } = useNuxtApp()
+const { locale } = useI18n()
 
 const props = defineProps({
   data: {
