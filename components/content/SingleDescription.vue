@@ -8,7 +8,8 @@
           v-if="!responsiveImage && imagePath"
           :src="imagePath"
           :alt="alt"
-          class="rounded-lg shadow-lg my-auto w-full object-cover"
+          class="rounded-lg my-auto w-full object-cover"
+          :class="{'shadow-lg': isShadow}"
         >
         <nuxt-img
           v-else-if="!isVideo"
@@ -17,7 +18,8 @@
           :alt="alt"
           loading="lazy"
           sizes="xl:1390px lg:1034px md:754px sm:1184px xs:277px"
-          class="rounded-lg shadow-lg my-auto w-full object-cover"
+          class="rounded-lg my-auto w-full object-cover"
+          :class="{'shadow-lg': isShadow}"
         />
         <video
           v-else-if="showVideo"
@@ -62,7 +64,8 @@
           v-if="!responsiveImage && imagePath"
           :src="imagePath"
           :alt="alt"
-          class="rounded-lg shadow-lg my-auto w-full object-cover"
+          class="rounded-lg my-auto w-full object-cover"
+          :class="{'shadow-lg': isShadow}"
         >
         <nuxt-img
           v-else-if="!isVideo"
@@ -71,7 +74,8 @@
           :alt="alt"
           loading="lazy"
           sizes="xl:1390px lg:1034px md:754px sm:1184px xs:277px"
-          class="rounded-lg shadow-lg my-auto w-full object-cover"
+          class="rounded-lg my-auto w-full object-cover"
+          :class="{'shadow-lg': isShadow}"
         />
         <video
           v-else-if="showVideo"
@@ -134,6 +138,10 @@ const props = defineProps({
     default: '',
   },
   responsiveImage: {
+    type: Boolean,
+    default: true,
+  },
+  isShadow: {
     type: Boolean,
     default: true,
   },

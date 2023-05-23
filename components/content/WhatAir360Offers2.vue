@@ -36,7 +36,14 @@
         <ContentSlot :use="$slots.description2" unwrap="p" />
       </template>
     </SingleDescription>
-    <SingleDescription :image-path="image" :responsive-image="false" :alt="$t('how-air360-helps3')" icon="/icons/iconQuick.svg" theme-color="#3C8BFF">
+    <SingleDescription
+      :image-path="image"
+      :responsive-image="false"
+      :alt="$t('how-air360-helps3')"
+      icon="/icons/iconQuick.svg"
+      theme-color="#3C8BFF"
+      :is-shadow="false"
+    >
       <template #title>
         <ContentSlot :use="$slots.title3" unwrap="p" />
       </template>

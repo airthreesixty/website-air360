@@ -13,7 +13,7 @@ optimize the paths affecting your conversion the most and make
 it easy to create the best website for your users.
 ::
 
-::single-description{imagePath="/en/autoTracking.jpeg" alt="On-page analytics" icon="/icons/iconFlag.svg"}
+::single-description{imagePath="/en/autoTracking.jpeg" alt="On-page analytics" icon="/icons/iconFlag.svg" :isShadow="false"}
 #title
 Air360 Auto-tracking
 #description
@@ -59,7 +59,7 @@ Advanced Session Replay
 Confirm your hypothesis faster. Our session replay engine  has Advanced filters to get to relevant replays for your analysis.  Go directly session replays transcripts to save time. No need to watch replays, all interactions are available in written.
 ::
 
-::single-description{imagePath="/en/userSegments.jpeg" imageStatus="block" imageStatus2="hidden" alt="On-page analytics" icon="/icons/iconStar.svg" theme-color="#3C8BFF"}
+::single-description{imagePath="/en/userSegments.jpeg" imageStatus="block" imageStatus2="hidden" alt="On-page analytics" icon="/icons/iconStar.svg" theme-color="#3C8BFF" :isShadow="false"}
 #title
 User segments
 #description
