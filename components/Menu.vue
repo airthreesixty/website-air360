@@ -1,19 +1,23 @@
 <template>
-  <nav
-    class="bg-white pl-8 pr-4 py-2 top-0 z-10"
+  <div
+    class="bg-white py-2 top-0 z-10"
     :class="{'is-homepage absolute w-full' : isHomepage, 'border-gray-200 border-b-1 sticky': !isHomepage}"
   >
     <div v-if="isHomepage" class="bg-gradient h-60 md:h-70 lg:h-82" />
-    <div class="relative flex flex-wrap items-center justify-between max-w-screen-[1400px] mx-auto">
-      <NuxtLink :to="$localePath('/')">
-        <span class="sr-only">Air360</span>
-        <Logo
-          class="h-6 mr-3 w-auto sm:h-7 xl:h-8 filter homepage-logo"
-          :class="{'hover:drop-shadow-white': isHomepage, 'hover:(drop-shadow-primary)': !isHomepage}"
-          :is-dark="!isHomepage"
-          :aria-hidden="true"
-        />
-      </NuxtLink>
+    <div class="relative flex flex-wrap items-center justify-between container mx-auto">
+      <header role="banner">
+        <NuxtLink
+          :to="$localePath('/')"
+          class="h-6 w-auto sm:h-7 xl:h-8 filter homepage-logo"
+          :class="{'hover:drop-shadow-white focus:drop-shadow-white': isHomepage, 'hover:drop-shadow-primary focus:drop-shadow-primary': !isHomepage}"
+        >
+          <span class="sr-only">Air360</span>
+          <Logo
+            :is-dark="!isHomepage"
+            :aria-hidden="true"
+          />
+        </NuxtLink>
+      </header>
       <div class="flex items-center space-x-4">
         <button
           data-collapse-toggle="navbar-default"
@@ -40,32 +44,32 @@
             />
           </svg>
         </button>
-        <div
+        <nav
           id="navbar-default"
           class="w-full lg:flex items-center"
           :class="{hidden: !isActive,'menu-active dropdown sm:max-w-[300px]': isActive}"
+          arial-label="Main menu"
         >
           <div v-if="isActive" class="flex justify-center mt-6">
             <div class="max-w-[100px]">
-              <img src="/favicon.webp" width="200">
+              <img src="/favicon.webp" width="200" alt="">
             </div>
           </div>
           <ul
-            class="flex flex-col pb-2 mt-4 border items-center border-none space-y-2 lg:(flex-row space-x-8 mt-0 space-y-0 text-base font-medium border-0 p-4)"
+            class="flex flex-col pb-2 mt-4 border items-center border-none lg:(flex-row space-x-8 mt-0 text-base font-medium border-0 p-4)"
+            :class="{ 'w-2/3 text-center mx-auto items-stretch': isActive }"
           >
-            <li>
+            <li :class="{ 'border-b border-gray-100 py-1': isActive }">
               <NuxtLink :to="$localePath('/product')" class="menu__link">
                 {{ $t("product.title") }}
               </NuxtLink>
             </li>
-            <hr v-if="isActive" class="h-1 w-2/3">
-            <li>
+            <li :class="{ 'border-b border-gray-100 py-1': isActive }">
               <NuxtLink :to="$localePath('/blog')" class="menu__link">
                 {{ $t("blog") }}
               </NuxtLink>
             </li>
-            <hr v-if="isActive" class="h-1 w-2/3">
-            <li>
+            <li :class="{ 'border-b border-gray-100 py-1': isActive }">
               <a
                 :href="runtimeConfig.public.appUrl"
                 class="menu__link"
@@ -73,14 +77,13 @@
                 rel="noopener noreferrer"
               >{{ $t("login") }}</a>
             </li>
-            <hr v-if="isActive" class="h-1 w-2/3">
             <li class="pt-2 lg:pt-0">
               <ButtonPrimary slug="/request-demo" :theme="isHomepage && !isActive ? 'outline' : 'primary'">
                 {{ $t("request-demo.title") }}
               </ButtonPrimary>
             </li>
           </ul>
-        </div>
+        </nav>
         <div class="relative order-1 lg:order-3 !lg:pr-4">
           <button
             class="menu__link svg"
@@ -91,13 +94,13 @@
             <span class="sr-only">Open language menu</span>
             <fa-icon class="fa-lg" :icon="['fa', 'earth-americas']" :aria-hidden="true" />
           </button>
-          <div v-show="isLangActive" id="language-modal" class="dropdown top-full mt-2 right-0 w-40 flex justify-center items-center" @click="toggleLang">
+          <div v-show="isLangActive" id="language-modal" class="dropdown top-full mt-2 right-0 w-40 text-center" @click="toggleLang">
             <LangSwitcher />
           </div>
         </div>
       </div>
     </div>
-  </nav>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -149,25 +152,33 @@ onBeforeUnmount(() => {
 }
 
 .menu__link {
-  @apply block py-2 font-semibold text-gray-500 transition-all hover:(text-shadow-primary text-primary-600);
+  @apply block py-2 font-semibold text-gray-500 transition-all hover:(text-shadow-primary text-primary-600) focus:text-shadow-primary;
 
   .is-homepage & {
-    @apply !lg:text-white !hover:text-shadow-white;
+    @apply !lg:text-white !hover:text-shadow-white !focus:text-shadow-white;
   }
 
   &.router-link-exact-active {
     @apply text-primary-600;
   }
 
-  :not(.is-homepage) &.svg:hover svg {
-    @apply filter drop-shadow-primary;
+  :not(.is-homepage) &.svg {
+    &:hover,
+    &:focus {
+      svg {
+        @apply filter drop-shadow-primary;
+      }
+    }
   }
 
-  .is-homepage &.svg{
+  .is-homepage &.svg {
     @apply !text-white;
 
-    &:hover svg {
-      @apply filter drop-shadow-white;
+    &:hover,
+    &:focus {
+      svg {
+        @apply filter drop-shadow-white;
+      }
     }
   }
 }

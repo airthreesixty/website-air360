@@ -37,7 +37,7 @@
         <!-- <p class="font-bold text-base my-2 lg:text-lg" :class="subtextColor">
           <ContentSlot :use="$slots.subtext" unwrap="p" />
         </p> -->
-        <img :src="icon" alt="icon" class="w-7 md:w-8 lg:w-10 mt-4">
+        <img :src="icon" alt="" class="w-7 md:w-8 lg:w-10 mt-4" aria-hidden="true">
         <h3
           class="border-deco test mb-4 mt-4 text-xl font-semibold text-black-600 text-left md:text-2xl lg:text-3xl dark:text-white"
         >

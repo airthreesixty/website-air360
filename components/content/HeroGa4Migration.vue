@@ -18,8 +18,8 @@
             </p>
           </div>
           <div class="max-w-[700px]">
-            <video controls controlslist="nodownload">
-              <source data-src="/videos/GA4-migration-video.mp4" src="/videos/GA4-migration-video.mp4" type="video/mp4">
+            <video controls controlslist="nodownload" :poster="posterSrc">
+              <source :data-src="videoSrc" :src="videoSrc" type="video/mp4">
             </video>
           </div>
         </div>
@@ -27,6 +27,26 @@
     </div>
   </section>
 </template>
+
+<script lang="ts" setup>
+const { locale } = useI18n()
+
+const videoSrc = computed(() => {
+  if (locale.value === 'en') {
+    return '/en/videos/GA4-migration-video.mp4'
+  } else {
+    return '/videos/GA4-migration-video.mp4'
+  }
+})
+
+const posterSrc = computed(() => {
+  if (locale.value === 'en') {
+    return '/en/ga4-migration.webp'
+  } else {
+    return '/ga4-migration.webp'
+  }
+})
+</script>
 
 <style scoped>
 .bg-gradient-head {

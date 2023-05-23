@@ -24,6 +24,7 @@ export default defineConfig({
         '-apple-system',
         'sans-serif',
       ],
+      title: ['Noto Sans JP', 'ui-sans-serif', 'system-ui', '-apple-system', 'sans-serif'],
     },
     extend: {
       typography: {

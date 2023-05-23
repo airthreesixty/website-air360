@@ -1,11 +1,12 @@
 <template>
-  <ContentPage />
+  <AsyncPage page="product" />
 </template>
 
 <script setup lang="ts">
 const { t } = useI18n()
 const route = useRoute()
 const runtimeConfig = useRuntimeConfig()
+const { $localePath } = useNuxtApp()
 
 useSeoMeta({
   title: t('product.title'),
@@ -16,4 +17,16 @@ useSeoMeta({
   twitterCard: 'summary_large_image',
   ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
 })
+
+const breadcrumbs = [
+  { name: t('home'), item: $localePath('/') },
+  { name: t('product.title') },
+]
+
+useSchemaOrg([
+  defineWebPage({
+    '@type': 'WebPage',
+  }),
+  defineBreadcrumb({ itemListElement: breadcrumbs }),
+])
 </script>
