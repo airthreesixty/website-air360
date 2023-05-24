@@ -1,12 +1,10 @@
 <template>
-  <div v-if="data">
+  <div v-if="data && lazyData">
     <ContentRenderer :value="data" />
-    <!-- <ClientOnly> -->
-    <div v-if="pending" class="mt-30 mb-15 flex justify-center">
-      <Loading class="w-20 h-5" :is-full-page="false" />
-    </div>
-    <ContentRenderer v-else-if="lazyData" :value="lazyData" />
-    <!-- </ClientOnly> -->
+    <ClientOnly v-if="useClientOnly">
+      <ContentRenderer :value="lazyData" />
+    </ClientOnly>
+    <ContentRenderer v-else :value="lazyData" />
   </div>
 </template>
 
@@ -18,6 +16,10 @@ const props = defineProps({
     type: String,
     required: true,
   },
+  useClientOnly: {
+    type: Boolean,
+    default: true,
+  },
 })
 
 const { data } = await useAsyncData(props.page, () =>
@@ -26,7 +28,7 @@ const { data } = await useAsyncData(props.page, () =>
   ).findOne(),
 )
 
-const { data: lazyData, pending } = await useLazyAsyncData(`${props.page}.lazy`, () =>
+const { data: lazyData } = await useAsyncData(`${props.page}.lazy`, () =>
   queryContent(
     `/${locale.value}/${props.page}.lazy`,
   ).findOne(),
