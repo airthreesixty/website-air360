@@ -65,7 +65,6 @@ const formId = computed(() => {
   return 'faf8af66-25a2-4dd7-8cc6-af39483cc61c'
 })
 
-// formId has to be fixed after JP form is ready.
 onMounted(() => {
   hbspt.forms.create({
     region: 'eu1',

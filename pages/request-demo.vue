@@ -4,15 +4,18 @@
 
 <script setup>
 const { t } = useI18n()
+const route = useRoute()
+const runtimeConfig = useRuntimeConfig()
 
 definePageMeta({
   layout: 'request-demo',
 })
 
-useHead({
+useSeoMeta({
   title: t('request-demo.title'),
-  meta: [
-    { hid: 'description', name: 'description', content: t('request-demo.content') },
-  ],
+  description: t('request-demo.content'),
+  ogDescription: t('request-demo.content'),
+  ogTitle: t('request-demo.title'),
+  ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
 })
 </script>
