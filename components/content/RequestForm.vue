@@ -1,13 +1,13 @@
 <template>
   <section class="bg-white dark:bg-gray-900">
     <div
-      class="container py-8 mx-auto lg:flex lg:justify-center lg:gap-5 lg:py-16"
+      class="container py-14 mx-auto lg:flex lg:justify-center lg:gap-5 lg:py-16"
     >
       <div
-        class="flex-col hidden lg:flex lg:flex-1 lg:items-center"
+        class="flex-col lg:flex lg:flex-1 lg:items-center"
       >
         <div class="mb-8 flex flex-col items-center">
-          <div class="flex justify-center">
+          <div class="hidden lg:flex lg:justify-center">
             <nuxt-img src="/getStarted.webp" class="w-80 mb-6" alt="" />
           </div>
           <h1 class="mb-3 font-semibold text-center text-gradient text-xl md:text-2xl lg:text-3xl">
@@ -17,7 +17,7 @@
             <ContentSlot :use="$slots.subtitle1" unwrap="p" />
           </h2>
         </div>
-        <div class="w-110 h-30">
+        <div class="hidden w-110 h-30 lg:block">
           <CompanyLogos />
         </div>
       </div>
