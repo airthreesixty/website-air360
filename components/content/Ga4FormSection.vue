@@ -4,7 +4,7 @@
       class="container py-14 mx-auto lg:flex lg:justify-center lg:gap-5 xl:gap-0 lg:py-16"
     >
       <div
-        class="flex-col mr-8 lg:block lg:justify-center lg:flex lg:items-center lg:flex-1"
+        class="flex-col lg:mr-8 lg:block lg:justify-center lg:flex lg:items-center lg:flex-1"
       >
         <div class="mb-8 flex flex-col items-center">
           <div class="hidden lg:flex lg:justify-center">
