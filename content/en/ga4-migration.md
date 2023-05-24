@@ -14,17 +14,4 @@ Watch our quick video that explains how you can solve your challenges in this mi
 Want to improve your eCommerce experience and simplify your Google Analytics 4 migration?
 #subtitle1
 Book a quick 15 min call with one of our experts to learn more about Air360.
-#name
-お名前*
-#email
-メールアドレス*
-#jobTitle
-職種*
-#phone
-電話番号（ハイフンなし）*
-
-#rule
-Air360の<span class="text-primary-600 hover:underline">[利用規約とプライバシーポリシー](/privacy-policy)</span>に同意するものとします。
-#cta
-ミーティングを予約
 ::

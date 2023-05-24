@@ -14,17 +14,4 @@ Air360がどのように課題を解決できるかビデオで説明してお�
 顧客に最高のeコマース体験を
 #subtitle1
 Air360にご興味お持ちいただきありがとうございます！ぜひデモをリクエストしてAir360を体験してみてください。
-#name
-お名前*
-#email
-メールアドレス*
-#jobTitle
-職種*
-#phone
-電話番号（ハイフンなし）*
-
-#rule
-Air360の<span class="text-primary-600 hover:underline">[利用規約とプライバシーポリシー](/privacy-policy)</span>に同意するものとします。
-#cta
-ミーティングを予約
 ::

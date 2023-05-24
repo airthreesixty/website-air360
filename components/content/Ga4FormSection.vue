@@ -73,6 +73,10 @@ onMounted(() => {
     formId: formId.value,
     target: '#form',
     redirectUrl: redirectUrl.value,
+    onFormSubmit: function ($form) {
+      // @ts-ignore
+      Air360.identify($form.email.value)
+    },
   })
 })
 </script>
