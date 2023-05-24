@@ -6,7 +6,6 @@
 import { useSeoMeta } from '@unhead/vue'
 const { locale, t } = useI18n()
 const runtimeConfig = useRuntimeConfig()
-const route = useRoute()
 
 useHead({
   titleTemplate: '',
@@ -42,8 +41,4 @@ useSchemaOrg([
     image: '/heroIllustration.webp',
   }),
 ])
-
-if (route.fullPath === '/') {
-  document.location = '/en/'
-}
 </script>

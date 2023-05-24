@@ -85,6 +85,7 @@ export default defineNuxtConfig({
 
   sitemap: {
     siteUrl: process.env.BASE_URL,
+    autoAlternativeLangPrefixes: ['en', 'ja'],
     exclude: [
       '*-thank-you/',
     ],
