@@ -1,11 +1,5 @@
 <template>
   <section class="relative bg-white">
-    <transition name="bar">
-      <div v-if="isSuccess">
-        <SuccessNotification :is-success="isSuccess" @close="close" />
-      </div>
-    </transition>
-    <Loading v-if="loading" :is-full-page="true" />
     <div class="container py-8 mx-auto md:py-16">
       <div
         class="px-4 mx-auto max-w-screen-sm text-center lg:px-6 mb-8 lg:mb-16"
@@ -21,85 +15,15 @@
       </div>
       <div class="grid grid-cols-1 lg:gap-8 lg:grid-cols-3">
         <div class="col-span-2 mb-8 lg:mb-0">
-          <form
-            ref="form"
-            action=""
-            class="grid grid-cols-1 gap-8 mx-auto max-w-screen-md md:grid-cols-2"
-            method="post"
-            @submit.prevent="submitForm"
+          <div
+            class="w-full mx-auto bg-white lg:flex-1"
           >
-            <div>
-              <label
-                for="name"
-                class="block mb-2 text-sm font-medium text-black-600"
-              ><ContentSlot :use="$slots.name" unwrap="p" /></label>
-              <input
-                id="name"
-                v-model="formData.name"
-                type="text"
-                class="block p-3 w-full text-sm text-black-600 bg-gray-50 rounded-lg border border-gray-300 shadow-sm transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600"
-              >
-              <span v-if="v$.name.$error" class="error-alert">
-                {{ v$.name.$errors[0].$message }}
-              </span>
-            </div>
-            <div>
-              <label
-                for="email"
-                class="block mb-2 text-sm font-medium text-black-600"
-              ><ContentSlot :use="$slots.email" unwrap="p" /></label>
-              <input
-                id="email"
-                v-model="formData.email"
-                type="text"
-                class="block p-3 w-full text-sm text-black-600 bg-gray-50 rounded-lg border border-gray-300 shadow-sm transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600"
-              >
-              <span v-if="v$.email.$error" class="error-alert">
-                {{ v$.email.$errors[0].$message }}
-              </span>
-            </div>
-            <div>
-              <label
-                for="job-title"
-                class="block mb-2 text-sm font-medium text-black-600"
-              ><ContentSlot :use="$slots.jobTitle" unwrap="p" /></label>
-              <input
-                id="job-title"
-                v-model="formData.jobTitle"
-                type="text"
-                class="shadow-sm bg-gray-50 border border-gray-300 text-black-600 text-sm rounded-lg block w-full p-2.5 transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600"
-              >
-              <span v-if="v$.jobTitle.$error" class="error-alert">
-                {{ v$.jobTitle.$errors[0].$message }}
-              </span>
-            </div>
-            <div class="md:col-span-2">
-              <label
-                for="message"
-                class="block mb-2 text-sm font-medium text-black-600 dark:text-gray-400"
-              ><ContentSlot :use="$slots.message" unwrap="p" /></label>
-              <textarea
-                id="message"
-                v-model="formData.message"
-                rows="6"
-                class="block p-2.5 w-full text-sm text-black-600 bg-gray-50 rounded-lg shadow-sm border border-gray-300 transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600"
-              />
-              <span v-if="v$.message.$error" class="error-alert">
-                {{ v$.message.$errors[0].$message }}
-              </span>
-              <p class="mt-4 text-xs text-gray-500">
-                <ContentSlot :use="$slots.rule" unwrap="p" />
-              </p>
-            </div>
-            <button
-              type="submit"
-              class="py-3 px-5 font-bold text-center text-white rounded-lg transition ease-in-out duration-300 bg-primary-600 hover:bg-primary-700"
-              :class="{'opacity-25 cursor-not-allowed': !isFormValid }"
-              :disabled="!isFormValid"
+            <div
+              class="rounded-lg bg-gray-100 shadow-lg px-8 py-9 lg:mt-8"
             >
-              <ContentSlot :use="$slots.submitButton" unwrap="p" />
-            </button>
-          </form>
+              <div id="form" />
+            </div>
+          </div>
         </div>
         <div
           class="grid col-span-1 gap-8 text-center grid-cols-2 py-15 lg:py-0 lg:grid-cols-1"
@@ -158,71 +82,35 @@
   </section>
 </template>
 
-<script setup lang="ts">
-import axios from 'axios'
-import { useVuelidate } from '@vuelidate/core'
-import { required, email } from '~/utils/i18n-validators'
+<script setup>
+const { locale } = useI18n()
 
-const { t } = useI18n()
-
-const formData = reactive({
-  name: '',
-  email: '',
-  jobTitle: '',
-  message: '',
+const formId = computed(() => {
+  if (locale.value === 'en') {
+    return 'f9720a4d-f173-42fc-8f58-12526b327053'
+  }
+  return '969cb5d5-01ee-4311-8c51-3bc02924eadf'
 })
 
-const loading = ref(false)
-const isSuccess = ref(false)
-
-const rules = computed(() => {
-  return {
-    name: { required },
-    email: { required, email },
-    jobTitle: { required },
-    message: { required },
-  }
+useHead({
+  titleTemplate: '',
+  script: [
+    {
+      src: '//js-eu1.hsforms.net/forms/embed/v2.js',
+    },
+  ],
 })
 
-const v$ = useVuelidate(rules, formData)
-
-const isFormValid = computed(() => {
-  if (formData.name && formData.email && formData.jobTitle && formData.message) {
-    return true
-  } else {
-    return false
-  }
+onMounted(() => {
+  hbspt.forms.create({
+    region: 'eu1',
+    portalId: '27037851',
+    formId: formId.value,
+    target: '#form',
+    onFormSubmit: function ($form) {
+      // @ts-ignore
+      Air360.identify($form.email.value)
+    },
+  })
 })
-
-const close = () => {
-  isSuccess.value = !isSuccess.value
-}
-
-const submitForm = async () => {
-  const isFormCorrect = await v$.value.$validate()
-  if (isFormCorrect) {
-    loading.value = true
-    await axios.post('https://api.form-data.com/f/fhrtrdprid7cc823m483ku', formData)
-    // @ts-ignore
-    Air360.identify(formData.email)
-    loading.value = false
-    isSuccess.value = !isSuccess.value
-    v$.value.$reset()
-    Object.assign(formData, { name: '', email: '', jobTitle: '', message: '' })
-  }
-}
 </script>
-
-<style lang="postcss">
-.error-alert {
-  @apply text-xs text-red-500;
-}
-
-.bar-enter-active, .bar-leave-active {
-  transition: opacity .3s;
-}
-
-.bar-enter, .bar-leave-to {
-  opacity: 0;
-}
-</style>

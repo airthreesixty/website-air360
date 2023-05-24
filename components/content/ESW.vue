@@ -43,7 +43,7 @@
                 {{ $t('we-are') }}
               </p>
               <div
-                class="col-start-4 col-end-9 row-start-2 md:col-start-4 md:col-end-11 lg:col-start-4"
+                class="col-start-4 col-end-11 row-start-2 md:col-start-4 md:col-end-11 lg:col-start-4"
               >
                 <p class="mt-7 text-6xl font-bold tracking-tight text-black-600">
                   {{ $t('part-of') }}
