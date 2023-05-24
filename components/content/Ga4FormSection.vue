@@ -1,23 +1,23 @@
 <template>
   <section class="bg-white dark:bg-gray-900">
     <div
-      class="container py-8 mx-auto lg:flex lg:justify-center lg:gap-5 xl:gap-0 lg:py-16"
+      class="container py-14 mx-auto lg:flex lg:justify-center lg:gap-5 xl:gap-0 lg:py-16"
     >
       <div
-        class="flex-col hidden mr-8 lg:block lg:justify-center lg:flex lg:items-center lg:flex-1"
+        class="flex-col mr-8 lg:block lg:justify-center lg:flex lg:items-center lg:flex-1"
       >
         <div class="mb-8 flex flex-col items-center">
-          <div class="flex justify-center">
+          <div class="hidden lg:flex lg:justify-center">
             <nuxt-img src="/getStarted.webp" class="w-80 mb-6" />
           </div>
-          <h1 class="mb-3 font-semibold text-center text-gradient text-xl md:text-2xl lg:text-3xl">
+          <h1 class="mb-3 font-semibold text-center text-gradient text-2xl md:text-3xl">
             <ContentSlot :use="$slots.title1" unwrap="p" />
           </h1>
           <h2 class="mb-4 text-black-600 max-w-[500px] font-semibold text-center lg:text-lg">
             <ContentSlot :use="$slots.subtitle1" unwrap="p" />
           </h2>
         </div>
-        <div class="mb-30 lg:mb-0">
+        <div class="hidden lg:block mb-30 lg:mb-0">
           <CompanyLogos2 />
         </div>
       </div>
@@ -62,7 +62,7 @@ const formId = computed(() => {
   if (locale.value === 'en') {
     return '463df4e6-56a3-471b-970f-ea5632614406'
   }
-  return '463df4e6-56a3-471b-970f-ea5632614406'
+  return 'faf8af66-25a2-4dd7-8cc6-af39483cc61c'
 })
 
 // formId has to be fixed after JP form is ready.
