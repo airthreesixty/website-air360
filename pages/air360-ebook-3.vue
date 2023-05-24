@@ -15,12 +15,16 @@
       <p>Download it now!</p>
     </template>
     <template #form>
-      <div id="form" />
+      <div id="form">
+        <Loading class="w-20 h-5 mx-auto" :is-full-page="false" />
+      </div>
     </template>
   </LandingPage>
 </template>
 
 <script setup>
+import { useScriptTag } from '@vueuse/core'
+
 const route = useRoute()
 const runtimeConfig = useRuntimeConfig()
 const { locale } = useI18n()
@@ -34,11 +38,6 @@ definePageMeta({
 
 useHead({
   titleTemplate: '',
-  script: [
-    {
-      src: '//js-eu1.hsforms.net/forms/embed/v2.js',
-    },
-  ],
 })
 
 useSeoMeta({
@@ -51,17 +50,20 @@ useSeoMeta({
   ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
 })
 
-onMounted(() => {
-  hbspt.forms.create({
-    region: 'eu1',
-    portalId: '27037851',
-    formId: '9a76f158-eb8a-4858-9216-38cd0c3c441f',
-    target: '#form',
-    redirectUrl: `${runtimeConfig.public.baseUrl}/${locale.value}/air360-ebook-3-thank-you/`,
-    onFormSubmit: function ($form) {
-      // @ts-ignore
-      Air360.identify($form.email.value)
-    },
+useScriptTag(
+  '//js-eu1.hsforms.net/forms/embed/v2.js',
+  () => {
+    hbspt.forms.create({
+      region: 'eu1',
+      portalId: '27037851',
+      formId: '9a76f158-eb8a-4858-9216-38cd0c3c441f',
+      target: '#form',
+      redirectUrl: `${runtimeConfig.public.baseUrl}/${locale.value}/air360-ebook-3-thank-you/`,
+      onFormSubmit: function ($form) {
+        if (Air360) {
+          Air360.identify($form.email.value)
+        }
+      },
+    })
   })
-})
 </script>

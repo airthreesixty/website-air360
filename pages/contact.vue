@@ -8,6 +8,7 @@ const { $localePath } = useNuxtApp()
 
 useHead({
   title: t('contact.title'),
+  titleTemplate: '',
   meta: [
     { hid: 'description', name: 'description', content: t('contact.content') },
   ],

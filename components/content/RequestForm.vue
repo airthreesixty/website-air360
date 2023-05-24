@@ -27,7 +27,9 @@
         <div
           class="rounded-lg bg-gray-100 shadow-lg px-8 py-9 lg:mt-8"
         >
-          <div id="form" />
+          <div id="form">
+            <Loading class="w-20 h-5 mx-auto" :is-full-page="false" />
+          </div>
         </div>
       </div>
     </div>
@@ -35,6 +37,8 @@
 </template>
 
 <script setup>
+import { useScriptTag } from '@vueuse/core'
+
 const { locale } = useI18n()
 const redirectUrl = computed(() => {
   if (locale.value === 'en') {
@@ -49,32 +53,23 @@ const formId = computed(() => {
   return '0bc4b5ca-41ac-4dfa-ad20-fbe71d2a1b6a'
 })
 
-definePageMeta({
-  layout: 'request-demo',
-})
-
-useHead({
-  titleTemplate: '',
-  script: [
-    {
-      src: '//js-eu1.hsforms.net/forms/embed/v2.js',
-    },
-  ],
-})
-
-onMounted(() => {
-  hbspt.forms.create({
-    region: 'eu1',
-    portalId: '27037851',
-    formId: formId.value,
-    target: '#form',
-    redirectUrl: redirectUrl.value || '',
-    onFormSubmit: function ($form) {
-      // @ts-ignore
-      Air360.identify($form.email.value)
-    },
-  })
-})
+useScriptTag(
+  '//js-eu1.hsforms.net/forms/embed/v2.js',
+  () => {
+    hbspt.forms.create({
+      region: 'eu1',
+      portalId: '27037851',
+      formId: formId.value,
+      target: '#form',
+      redirectUrl: redirectUrl.value || '',
+      onFormSubmit: function ($form) {
+        if (Air360) {
+          Air360.identify($form.email.value)
+        }
+      },
+    })
+  },
+)
 </script>
 
 <style lang="postcss">

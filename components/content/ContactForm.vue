@@ -21,7 +21,9 @@
             <div
               class="rounded-lg bg-gray-100 shadow-lg px-8 py-9 lg:mt-8"
             >
-              <div id="form" />
+              <div id="form">
+                <Loading class="w-20 h-5 mx-auto" :is-full-page="false" />
+              </div>
             </div>
           </div>
         </div>
@@ -83,6 +85,8 @@
 </template>
 
 <script setup>
+import { useScriptTag } from '@vueuse/core'
+
 const { locale } = useI18n()
 
 const formId = computed(() => {
@@ -92,25 +96,19 @@ const formId = computed(() => {
   return '969cb5d5-01ee-4311-8c51-3bc02924eadf'
 })
 
-useHead({
-  titleTemplate: '',
-  script: [
-    {
-      src: '//js-eu1.hsforms.net/forms/embed/v2.js',
-    },
-  ],
-})
-
-onMounted(() => {
-  hbspt.forms.create({
-    region: 'eu1',
-    portalId: '27037851',
-    formId: formId.value,
-    target: '#form',
-    onFormSubmit: function ($form) {
-      // @ts-ignore
-      Air360.identify($form.email.value)
-    },
+useScriptTag(
+  '//js-eu1.hsforms.net/forms/embed/v2.js',
+  () => {
+    hbspt.forms.create({
+      region: 'eu1',
+      portalId: '27037851',
+      formId: formId.value,
+      target: '#form',
+      onFormSubmit: function ($form) {
+        if (Air360) {
+          Air360.identify($form.email.value)
+        }
+      },
+    })
   })
-})
 </script>
