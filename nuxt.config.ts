@@ -2,13 +2,7 @@ import crawler from './crawler'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  modules: ['@nuxt/content', 'nuxt-windicss', '@nuxtjs/i18n', 'nuxt-font-loader', '@nuxtjs/algolia', '@nuxt/image-edge', 'nuxt-schema-org'],
-  nitro: {
-    compressPublicAssets: true,
-    prerender: {
-      routes: ['/sitemap.xml'],
-    },
-  },
+  modules: ['@nuxt/content', 'nuxt-windicss', '@nuxtjs/i18n', 'nuxt-font-loader', '@nuxtjs/algolia', '@nuxt/image-edge', 'nuxt-schema-org', 'nuxt-simple-sitemap'],
   algolia: {
     apiKey: process.env.ALGOLIA_SEARCH_API_KEY,
     applicationId: process.env.ALGOLIA_APPLICATION_ID,
@@ -59,6 +53,7 @@ export default defineNuxtConfig({
     // },
     trailingSlash: true,
     baseUrl: process.env.BASE_URL,
+    vueI18n: './i18n.config.ts',
   },
 
   fontLoader: {
@@ -86,5 +81,12 @@ export default defineNuxtConfig({
   },
   image: {
     provider: 'ipx',
+  },
+
+  sitemap: {
+    siteUrl: process.env.BASE_URL,
+    exclude: [
+      '*-thank-you/',
+    ],
   },
 })

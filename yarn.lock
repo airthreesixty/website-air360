@@ -8569,6 +8569,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"nuxt-simple-sitemap@npm:^2.6.1":
+  version: 2.6.1
+  resolution: "nuxt-simple-sitemap@npm:2.6.1"
+  dependencies:
+    "@nuxt/kit": 3.5.0
+    chalk: ^5.2.0
+    defu: ^6.1.2
+    escape-string-regexp: ^5.0.0
+    globby: ^13.1.4
+    knitwork: ^1.0.0
+    pathe: ^1.1.0
+    radix3: ^1.0.1
+    ufo: ^1.1.2
+  checksum: 82254969e63acec9c7be84d8011ba59b0fb8ffc7f96825893bc59d177f1b4ecf5c42a5eb0c60cac1e2428ad7436392e19dcd83f428b3d175b15241a5a36c0b73
+  languageName: node
+  linkType: hard
+
 "nuxt-unhead@npm:^1.4.17":
   version: 1.4.17
   resolution: "nuxt-unhead@npm:1.4.17"
@@ -10190,6 +10207,7 @@ __metadata:
     nuxt-fontawesome: ^0.4.0
     nuxt-schema-org: ^2.1.2
     nuxt-seo-kit: 1.3.8
+    nuxt-simple-sitemap: ^2.6.1
     nuxt-windicss: ^2.6.0
     sitemap: ^7.1.1
     typescript: 5.0.4
