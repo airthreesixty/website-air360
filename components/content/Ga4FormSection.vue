@@ -55,7 +55,7 @@ const redirectUrl = computed(() => {
   if (locale.value === 'en') {
     return `${runtimeConfig.public.baseUrl}/${locale.value}/ga4-migration-thank-you/`
   }
-  return 'https://calendly.com/d/yjn-vr5-gk4/air360'
+  return 'https://calendly.com/moe-85/15-minute-meeting'
 })
 
 const formId = computed(() => {
