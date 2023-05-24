@@ -10,7 +10,7 @@
           <div class="hidden lg:flex lg:justify-center">
             <nuxt-img src="/getStarted.webp" class="w-80 mb-6" alt="" />
           </div>
-          <h1 class="mb-3 font-semibold text-center text-gradient text-xl md:text-2xl lg:text-3xl">
+          <h1 class="mb-3 font-semibold text-center text-gradient text-2xl md:text-3xl">
             <ContentSlot :use="$slots.title1" unwrap="p" />
           </h1>
           <h2 class="mb-4 text-black-600 max-w-[500px] font-semibold text-center lg:text-lg">
