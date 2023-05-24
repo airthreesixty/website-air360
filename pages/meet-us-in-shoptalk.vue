@@ -62,6 +62,10 @@ onMounted(() => {
     formId: 'd0f2183f-f624-434d-abda-8e723186a681',
     target: '#form',
     redirectUrl: `${runtimeConfig.public.baseUrl}/${locale.value}/meet-us-in-shoptalk-thank-you/`,
+    onFormSubmit: function ($form) {
+      // @ts-ignore
+      Air360.identify($form.email.value)
+    },
   })
 })
 </script>

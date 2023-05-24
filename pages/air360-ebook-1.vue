@@ -57,6 +57,10 @@ onMounted(() => {
     formId: 'c1d6a2eb-4458-487c-9d87-672d6e981c7c',
     target: '#form',
     redirectUrl: `${runtimeConfig.public.baseUrl}/${locale.value}/air360-ebook-1-thank-you/`,
+    onFormSubmit: function ($form) {
+      // @ts-ignore
+      Air360.identify($form.email.value)
+    },
   })
 })
 </script>

@@ -54,6 +54,10 @@ onMounted(() => {
     formId: '05426765-641a-4511-a475-9965ff681658',
     target: '#form',
     redirectUrl: `${runtimeConfig.public.baseUrl}/${locale.value}/mystery-case-thank-you/`,
+    onFormSubmit: function ($form) {
+      // @ts-ignore
+      Air360.identify($form.email.value)
+    },
   })
 })
 </script>
