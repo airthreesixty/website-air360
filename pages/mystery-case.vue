@@ -1,9 +1,9 @@
 <template>
   <LandingPage>
     <template #content>
-      <h1>Conversion Rate Mysteries</h1>
+      <h1>Conversion rate mysteries</h1>
       <h2>
-        The Big Checkout Drop off
+        The big checkout drop off
       </h2>
       <nuxt-img src="/air360-cr-mysteries.jpg" loading="lazy" width="456" class="w-35 sm:w-57 float-right shadow ml-5" />
       <p>It is no mystery that checkout abandonment is usually a significant pain or a common challenge in the eCommerce industry.</p>

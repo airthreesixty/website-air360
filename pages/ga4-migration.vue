@@ -19,10 +19,6 @@ const ogImage = computed(() => {
   return `${runtimeConfig.public.baseUrl}/ga4-migration.webp`
 })
 
-definePageMeta({
-  layout: 'request-demo',
-})
-
 useSeoMeta({
   title,
   description,

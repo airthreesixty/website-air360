@@ -1,8 +1,8 @@
 <template>
   <LandingPage>
     <template #content>
-      <h1>Why Google Analytics is Not Enough to Grow Your Brand</h1>
-      <h2>Getting the Full Picture of Site Performance</h2>
+      <h1>Why Google Analytics is not enough to grow your brand</h1>
+      <h2>Getting the full picture of site performance</h2>
       <nuxt-img src="/why-ga-is-not-enought.jpg" format="webp" loading="lazy" width="456" class="w-35 sm:w-57 float-right shadow ml-5" />
       <p>Next-generation user experience analytics tools are a necessary complement to Google Analytics.</p>
       <p>To get the best results from your GA setup, consider a tool that offers the customer insights that Google Analytics lacks. This eBook identifies eight areas where Google Analytics alone comes up short and explains how CRO tools bridge the gap with:</p>
