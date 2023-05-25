@@ -115,7 +115,7 @@
   </svg>
 </template>
 
-<style type="text/css">
+<style scoped type="text/css">
    .st0{fill:#FFFFFF;}
    .st1{fill:url(#SVGID_1_);}
    .st2{fill:url(#SVGID_2_);}
