@@ -15,3 +15,20 @@
     </div>
   </ThankYouPage>
 </template>
+
+<script setup lang="ts">
+const route = useRoute()
+const runtimeConfig = useRuntimeConfig()
+
+const title = 'Thank you for booking a meeting with us!'
+const description = 'We will be reaching out to you shortly to tailor our offer to your needs.In the meantime grab a cup of coffee and find more inspiration with these blog posts.'
+
+useSeoMeta({
+  title,
+  description,
+  ogDescription: description,
+  ogTitle: title,
+  ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
+  robots: 'noindex, follow',
+})
+</script>
