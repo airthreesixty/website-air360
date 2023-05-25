@@ -17,18 +17,18 @@
 
 <script setup lang="ts">
 const LogoBrandClubMed = resolveComponent('LogoBrandClubMed')
-const LogoBrandAristocrazy = resolveComponent('LogoBrandAristocrazy')
+const LogoBrandVerychic = resolveComponent('LogoBrandVerychic')
 const LogoBrandOlympiqueLyonnais = resolveComponent('LogoBrandOlympiqueLyonnais')
-const LogoBrandMaisonMargiela = resolveComponent('LogoBrandMaisonMargiela')
-const LogoBrandQoqa = resolveComponent('LogoBrandQoqa')
-const LogoBrandSuarez = resolveComponent('LogoBrandSuarez')
+const LogoBrandMaVilleMonShopping = resolveComponent('LogoBrandMaVilleMonShopping')
+const LogoBrandAirCaraibes = resolveComponent('LogoBrandAirCaraibes')
+const LogoBrandDubreuil = resolveComponent('LogoBrandDubreuil')
 
 const logos = [{
   component: LogoBrandClubMed,
   scale: 0.8,
 },
 {
-  component: LogoBrandAristocrazy,
+  component: LogoBrandVerychic,
   scale: 0.85,
 },
 {
@@ -36,16 +36,16 @@ const logos = [{
   scale: 1,
 },
 {
-  component: LogoBrandMaisonMargiela,
+  component: LogoBrandMaVilleMonShopping,
   scale: 1,
 },
 {
-  component: LogoBrandQoqa,
-  scale: 0.75,
+  component: LogoBrandDubreuil,
+  scale: 1,
 },
 {
-  component: LogoBrandSuarez,
-  scale: 0.7,
+  component: LogoBrandAirCaraibes,
+  scale: 0.75,
 }]
 </script>
 

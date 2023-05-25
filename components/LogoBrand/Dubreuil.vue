@@ -27,11 +27,11 @@
       <stop offset="0.4785" style="stop-color:#FFDC00" />
       <stop offset="1" style="stop-color:#FFDC00" />
     </linearGradient>
-    <!-- <path
-      class="st1"
+    <path
+      class="st1 opacity-25"
       d="M161.8,107c7-10.1,11.1-22.3,11.1-35.6c0-34.5-28-62.5-62.5-62.5c-34.5,0-62.5,28-62.5,62.5
 	c0,13.2,4.1,25.5,11.1,35.6H161.8z"
-    /> -->
+    />
     <radialGradient
       id="SVGID_2_"
       cx="22.6335"
@@ -116,8 +116,8 @@
 </template>
 
 <style type="text/css">
-.st0{fill:#FFFFFF;}
-.st1{fill:url(#SVGID_1_);}
-.st2{fill:url(#SVGID_2_);}
-.st3{fill:#003381;}
+   .st0{fill:#FFFFFF;}
+   .st1{fill:url(#SVGID_1_);}
+   .st2{fill:url(#SVGID_2_);}
+   .st3{fill:#003381;}
 </style>

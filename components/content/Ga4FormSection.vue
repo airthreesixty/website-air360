@@ -18,7 +18,7 @@
           </h2>
         </div>
         <div class="hidden lg:block mb-30 lg:mb-0">
-          <CompanyLogos2 />
+          <CompanyLogos />
         </div>
       </div>
       <div

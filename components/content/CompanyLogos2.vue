@@ -51,9 +51,9 @@ const logos = [{
 </script>
 
 <style lang="postcss">
-.company-logos-list {
+/* .company-logos-list {
   path {
     @apply !fill-gray-500;
   }
-}
+} */
 </style>
