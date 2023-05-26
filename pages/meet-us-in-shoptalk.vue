@@ -42,11 +42,6 @@ definePageMeta({
 
 useHead({
   titleTemplate: '',
-  script: [
-    {
-      src: '//js-eu1.hsforms.net/forms/embed/v2.js',
-    },
-  ],
 })
 
 useSeoMeta({
