@@ -10,9 +10,11 @@
           <h2 class="text-black-600 font-bold text-xl mb-5">
             Calculate
           </h2>
-          <CalculatorInput id="sessions" label="Online store's monthly sessions" type="text" class="mb-4" />
-          <CalculatorInput id="conversion-rate" label="Current conversion rate(%)" type="text" class="mb-4" />
-          <CalculatorInput id="average-order-value" label="Average order value" type="text" />
+          <div class="flex flex-col gap-4">
+            <CalculatorInputComponent id="sessions" label="Online store's monthly sessions" type="text" />
+            <CalculatorInputComponent id="conversion-rate" label="Current conversion rate(%)" type="text" />
+            <CalculatorInputComponent id="average-order-value" :label="`Average order value(${currency})`" type="text" />
+          </div>
           <div class="flex justify-center">
             <button
               class="text-white bg-primary-600 my-8 text-base font-bold inline-block transition ease-in-out duration-300 hover:bg-primary-700 rounded-lg w-full py-3 focus:outline-none"
@@ -29,6 +31,12 @@
 </template>
 
 <script lang="ts" setup>
+defineProps({
+  currency: {
+    type: String,
+    required: true,
+  },
+})
 const runtimeConfig = useRuntimeConfig()
 const route = useRoute()
 const { t } = useI18n()

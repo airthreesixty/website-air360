@@ -1,3 +1,3 @@
 <template>
-  <CalculatorRoiCalculator />
+  <CalculatorRoiCalculator currency="€" />
 </template>
