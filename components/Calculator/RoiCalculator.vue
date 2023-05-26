@@ -11,9 +11,9 @@
             Calculate
           </h2>
           <div class="flex flex-col gap-4">
-            <CalculatorInputComponent id="sessions" :label="$t('roi-calc.label1')" type="text" />
-            <CalculatorInputComponent id="conversion-rate" :label="$t('roi-calc.label2')" type="text" />
-            <CalculatorInputComponent id="average-order-value" :label="$t('roi-calc.label3') + `(${currency})`" type="text" />
+            <CalculatorInputComponent id="sessions" :label="$t('roi-calc.label1')" type="number" />
+            <CalculatorInputComponent id="conversion-rate" :label="$t('roi-calc.label2')" type="number" />
+            <CalculatorInputComponent id="average-order-value" :label="$t('roi-calc.label3') + `(${currency})`" type="number" />
           </div>
           <div class="flex justify-center">
             <button
