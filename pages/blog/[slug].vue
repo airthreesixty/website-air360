@@ -109,7 +109,7 @@
                   <nuxt-img format="webp" :src="data.image" :alt="data.title" class="h-90 mb-10 rounded-lg w-full object-cover" />
                 </header>
                 <div class="prose nuxt-content">
-                  <NewTableOfContents :paragraph-titles="paragraphTitles" class="lg:hidden" />
+                  <!-- <NewTableOfContents :paragraph-titles="paragraphTitles" class="lg:hidden" /> -->
                   <ContentRendererMarkdown ref="nuxtContent" :value="data" />
                 </div>
               </article>
