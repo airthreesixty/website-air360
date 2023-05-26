@@ -34,10 +34,6 @@ export default defineNuxtConfig({
           rel: 'icon', type: 'image/x-icon', href: '/favicon2.png',
         },
       ],
-      // script: [
-      //   { src: '//js-eu1.hsforms.net/forms/embed/v2.js' },
-      // ],
-      meta: [{ name: 'google-site-verification', content: '27ObPnDVXKchsfaXmRUOoP8wVKLPvIDb30oXYHDgPVU' }],
     },
   },
   i18n: {
