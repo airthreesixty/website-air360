@@ -11,9 +11,9 @@
             Calculate
           </h2>
           <div class="flex flex-col gap-4">
-            <CalculatorInputComponent id="sessions" :label="$t('roi-calc.label1')" type="number" />
-            <CalculatorInputComponent id="conversion-rate" :label="$t('roi-calc.label2')" type="number" />
-            <CalculatorInputComponent id="average-order-value" :label="$t('roi-calc.label3') + `(${currency})`" type="number" />
+            <CalculatorInputComponent id="sessions" v-model="num1" :label="$t('roi-calc.label1')" type="number" />
+            <CalculatorInputComponent id="conversion-rate" v-model="num2" :label="$t('roi-calc.label2')" type="number" />
+            <CalculatorInputComponent id="average-order-value" v-model="num3" :label="$t('roi-calc.label3') + `(${currency})`" type="number" />
           </div>
           <div class="flex justify-center">
             <button
@@ -23,6 +23,9 @@
             </button>
           </div>
           <p>Blablabla</p>
+          <p>{{ num1 }}</p>
+          <p>{{ num2 }}</p>
+          <p>{{ num3 }}</p>
           <hr>
         </div>
       </div>
@@ -31,6 +34,10 @@
 </template>
 
 <script lang="ts" setup>
+const num1 = ref<number | null>(null)
+const num2 = ref<number | null>(null)
+const num3 = ref<number | null>(null)
+
 defineProps({
   currency: {
     type: String,
@@ -40,6 +47,7 @@ defineProps({
 const runtimeConfig = useRuntimeConfig()
 const route = useRoute()
 const { t } = useI18n()
+
 useSeoMeta({
   title: t('roi-calc.title'),
   description: t('roi-calc.description'),
