@@ -4,6 +4,7 @@
       v-model:active="isLoading"
       loader="dots"
       color="#E74B91"
+      background-color="transparent"
       :is-full-page="isFullPage"
     />
   </div>
