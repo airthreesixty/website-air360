@@ -115,7 +115,12 @@
     "p2": "In the meantime, grab a cup of coffee and find more inspiration with these blog posts about Google Analytics Migration"
   },
   "roi-calc": {
+    "header": "How much additional revenue can you generate thanks to Air360 in the next 6 months?",
+    "label1": "Online store's monthly sessions",
+    "label2": "Current conversion rate(%)",
+    "label3": "Average order value",
     "title": "ROI Calculator",
     "description": "Calculate your ROI with Air360",
+     "calculate": "Calculate"
   }
 }
