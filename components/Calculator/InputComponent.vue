@@ -17,7 +17,7 @@ interface Props {
   modelValue: number | null;
   id: string;
   label: string;
-  type?: 'text' | 'password' | 'email' | 'number';
+  type?: 'text' | 'number';
 }
 
 defineProps<Props>()

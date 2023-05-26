@@ -6,9 +6,9 @@
           {{ $t('roi-calc.header') }}
         </h1>
         <CalculatorToggleCurrency />
-        <div class="border-1 border-gray-200 rounded-lg shadow-md px-5 py-5 mt-12">
-          <h2 class="text-black-600 font-bold text-xl mb-5">
-            Calculate
+        <div class="border-1 border-gray-200 rounded-lg shadow-md px-5 py-8 mt-12">
+          <h2 class="text-black-600 font-bold text-2xl mb-8">
+            Conversion calculation
           </h2>
           <div class="flex flex-col gap-4">
             <CalculatorInputComponent id="sessions" v-model="num1" :label="$t('roi-calc.label1')" type="number" />
@@ -22,11 +22,25 @@
               {{ $t('roi-calc.calculate') }}
             </button>
           </div>
-          <p>Blablabla</p>
+          <hr>
+          <div class="flex justify-between items-center mt-8 mb-5">
+            <p class="text-gray-500">
+              You can achieve an Additional Revenue
+            </p>
+            <span class="text-black-600 font-bold">$297,000.00</span>
+          </div>
+          <div class="flex justify-between items-center mb-8">
+            <p class="text-gray-500">
+              How many times the return on your Air360 investment
+            </p>
+            <span class="text-black-600 font-bold">8 times</span>
+          </div>
+          <p class="text-xs text-black-600">
+            This Calculator is a non binding simulation of the results you could get using our Solution. We projected your results with a 50% increase in your average conversion rate.
+          </p>
           <p>{{ num1 }}</p>
           <p>{{ num2 }}</p>
           <p>{{ num3 }}</p>
-          <hr>
         </div>
       </div>
     </div>
