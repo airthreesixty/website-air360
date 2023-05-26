@@ -113,5 +113,9 @@
     "title": "Woohoo!Thank you for booking a meeting with us!",
     "p1": "We will be reaching out to you shortly to. ",
     "p2": "In the meantime, grab a cup of coffee and find more inspiration with these blog posts about Google Analytics Migration"
+  },
+  "roi-calc": {
+    "title": "ROI Calculator",
+    "description": "Calculate your ROI with Air360",
   }
 }
