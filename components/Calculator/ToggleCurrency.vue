@@ -8,7 +8,8 @@
 
 <script setup lang="ts">
 const { $localePath } = useNuxtApp()
-const tagList = ['USD', 'EUR', 'Yen']
+// Add YEN later
+const tagList = ['USD', 'EUR']
 </script>
 
 <style scoped lang="postcss">
