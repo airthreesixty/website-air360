@@ -30,7 +30,7 @@
             <p class="text-gray-500">
               {{ $t('roi-calc.additional-revenue') }}
             </p>
-            <span class="text-black-600 font-bold">{{ currency }}{{ additionalRevenue }}</span>
+            <span class="text-black-600 font-bold">{{ currency }}{{ additionalRevenue.toLocaleString() }}</span>
           </div>
           <div class="flex justify-between items-center mb-8">
             <p class="text-gray-500">
