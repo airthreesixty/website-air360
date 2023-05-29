@@ -34,6 +34,7 @@ export default defineNuxtConfig({
           rel: 'icon', type: 'image/x-icon', href: '/favicon2.png',
         },
       ],
+      meta: [{ name: 'google-site-verification', content: '27ObPnDVXKchsfaXmRUOoP8wVKLPvIDb30oXYHDgPVU' }],
     },
   },
   i18n: {
@@ -54,7 +55,6 @@ export default defineNuxtConfig({
     baseUrl: process.env.BASE_URL,
     vueI18n: './i18n.config.ts',
   },
-
   fontLoader: {
     external: [
       {
