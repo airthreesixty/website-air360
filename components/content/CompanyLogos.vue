@@ -5,7 +5,7 @@
         TRUSTED BY
       </h3>
       <ul
-        class="grid grid-cols-2 gap-y-10 gap-x-6 md:grid-cols-3"
+        class="grid grid-cols-2 gap-y-10 gap-x-6 md:grid-cols-4"
       >
         <li v-for="(logo, index) in logos" :key="index" class="flex justify-center items-center company-logos-list">
           <component :is="logo.component" class="h-7.5 object-contain w-full lg:h-9.5" :style="`transform: scale(${logo.scale})`" />
@@ -22,6 +22,8 @@ const LogoBrandOlympiqueLyonnais = resolveComponent('LogoBrandOlympiqueLyonnais'
 const LogoBrandMaVilleMonShopping = resolveComponent('LogoBrandMaVilleMonShopping')
 const LogoBrandAirCaraibes = resolveComponent('LogoBrandAirCaraibes')
 const LogoBrandDubreuil = resolveComponent('LogoBrandDubreuil')
+const LogoBrandPsaBank = resolveComponent('LogoBrandPsaBank')
+const LogoBrandProduct = resolveComponent('LogoBrandProduct')
 
 const logos = [{
   component: LogoBrandClubMed,
@@ -40,13 +42,22 @@ const logos = [{
   scale: 1,
 },
 {
+  component: LogoBrandAirCaraibes,
+  scale: 0.75,
+},
+{
   component: LogoBrandDubreuil,
   scale: 1,
 },
 {
-  component: LogoBrandAirCaraibes,
+  component: LogoBrandPsaBank,
+  scale: 2.7,
+},
+{
+  component: LogoBrandProduct,
   scale: 0.75,
-}]
+},
+]
 </script>
 
 <style lang="postcss">

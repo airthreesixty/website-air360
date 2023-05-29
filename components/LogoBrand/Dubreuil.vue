@@ -8,6 +8,7 @@
     y="0px"
     viewBox="0 0 220 150"
     style="enable-background:new 0 0 220 150;"
+    alt="dubreuil"
     xml:space="preserve"
   >
     <rect id="BASE" class="st0" width="220" height="150" />
