@@ -1,3 +1,3 @@
-export default {
+export default defineI18nConfig(() => ({
   fallbackLocale: 'en',
-}
+}))
