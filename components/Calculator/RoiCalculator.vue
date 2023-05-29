@@ -119,7 +119,7 @@ const canCalculate = computed(() => {
 })
 
 const onCalculate = () => {
-  additionalRevenue.value = newRevenue.value - currentRevenue.value
+  additionalRevenue.value = parseFloat((newRevenue.value - currentRevenue.value).toFixed(0))
   roi.value = parseFloat((additionalRevenue.value / costOfAir360.value!).toFixed(1))
 }
 
@@ -131,15 +131,3 @@ useSeoMeta({
   ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
 })
 </script>
-
-<style scoped>
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type="number"] {
-  -moz-appearance:textfield;
-}
-</style>
