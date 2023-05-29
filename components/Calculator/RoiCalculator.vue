@@ -8,7 +8,7 @@
         <CalculatorToggleCurrency />
         <div class="border-1 border-gray-200 rounded-lg shadow-md px-5 py-8 mt-12">
           <h2 class="text-black-600 font-bold text-2xl mb-8">
-            Conversion calculation
+            {{ $t('roi-calc.subtitle') }}
           </h2>
           <div class="flex flex-col gap-4">
             <CalculatorInputComponent id="sessions" v-model="monthlySessions" :label="$t('roi-calc.label1')" type="number" />
@@ -19,6 +19,7 @@
             <button
               class="text-white bg-primary-600 my-8 text-base font-bold inline-block transition ease-in-out duration-300 hover:bg-primary-700 rounded-lg w-full py-3 focus:outline-none"
               :class="{'opacity-70 cursor-not-allowed': !canCalculate}"
+              :disabled="!canCalculate"
               @click="onCalculate"
             >
               {{ $t('roi-calc.calculate') }}
@@ -27,18 +28,18 @@
           <hr>
           <div class="flex justify-between items-center mt-8 mb-5">
             <p class="text-gray-500">
-              You can achieve an Additional Revenue
+              {{ $t('roi-calc.additional-revenue') }}
             </p>
             <span class="text-black-600 font-bold">{{ currency }}{{ additionalRevenue }}</span>
           </div>
           <div class="flex justify-between items-center mb-8">
             <p class="text-gray-500">
-              How many times the return on your Air360 investment
+              {{ $t('roi-calc.roi') }}
             </p>
-            <span class="text-black-600 font-bold">{{ roi }} times</span>
+            <span class="text-black-600 font-bold">{{ roi }} {{ $t('roi-calc.times') }}</span>
           </div>
           <p class="text-xs text-black-600">
-            This Calculator is a non binding simulation of the results you could get using our Solution. We projected your results with a 50% increase in your average conversion rate.
+            {{ $t('roi-calc.caution') }}
           </p>
         </div>
       </div>

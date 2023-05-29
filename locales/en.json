@@ -120,7 +120,12 @@
     "label2": "Current conversion rate(%)",
     "label3": "Average order value",
     "title": "ROI Calculator",
+    "subtitle": "ROI Calculator",
     "description": "Calculate your ROI with Air360",
-     "calculate": "Calculate"
+    "calculate": "Calculate",
+    "additional-revenue": "You can achieve an Additional Revenue",
+    "roi": "How many times the return on your Air360 investment",
+    "times": "times",
+    "caution": "This Calculator is a non binding simulation of the results you could get using our Solution. We projected your results with a 50% increase in your average conversion rate."
   }
 }
