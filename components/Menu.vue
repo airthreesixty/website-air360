@@ -64,10 +64,7 @@
                 {{ $t("product.title") }}
               </NuxtLink>
             </li>
-            <li :class="{ 'border-b border-gray-100 py-1': isActive }" class="relative">
-              <!-- <NuxtLink :to="$localePath('/blog')" class="menu__link">
-                {{ $t("blog") }}
-              </NuxtLink> -->
+            <li :class="{ 'border-b border-gray-100 py-1': isActive }" class="relative hidden lg:block">
               <button class="menu__link" aria-controls="inspiration-modal" :aria-expanded="isInspirationActive" @click="toggleInspiration">
                 <span class="sr-only">Open Inspiration menu</span>
                 {{ $t("inspiration") }}
@@ -80,6 +77,11 @@
                   {{ $t('gallery') }}
                 </nuxt-link>
               </div>
+            </li>
+            <li :class="{ 'border-b border-gray-100 py-1': isActive }" class="lg:hidden">
+              <NuxtLink :to="$localePath('/blog')" class="menu__link">
+                {{ $t("blog") }}
+              </NuxtLink>
             </li>
             <li :class="{ 'border-b border-gray-100 py-1': isActive }">
               <a
