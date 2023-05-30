@@ -1,7 +1,7 @@
 <template>
   <div class="container mt-15 mx-auto">
     <div class="mb-5">
-      <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl text-center mb-10">
+      <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl text-center mb-10 lg:mb-15">
         Content Gallery
       </h1>
       <div class="border shadow-md rounded-lg mx-auto px-3 lg:px-4 py-5 md:(grid grid-cols-2 gap-10)">
@@ -18,7 +18,9 @@
             <span class="font-bold">More</span><fa-icon class="fa-sm pl-1" :icon="['fas', 'chevron-right']" />
           </nuxt-link>
         </div>
-        <nuxt-img src="/en/ga4-migration.webp" class="w-full object-cover rounded-lg" />
+        <div class="md:self-center">
+          <nuxt-img src="/en/ga4-migration.webp" class="w-full object-cover rounded-lg" />
+        </div>
       </div>
     </div>
 
@@ -42,6 +44,30 @@
 
 <script setup>
 const { $localePath } = useNuxtApp()
+const { locale } = useI18n()
+const route = useRoute()
+const runtimeConfig = useRuntimeConfig()
+const { t } = useI18n()
+
+const title = t('content-gallery.title')
+const description = t('content-gallery.description')
+
+const ogImage = computed(() => {
+  if (locale.value === 'en') {
+    return `${runtimeConfig.public.baseUrl}/en/ga4-migration.webp`
+  }
+  return `${runtimeConfig.public.baseUrl}/ga4-migration.webp`
+})
+
+useSeoMeta({
+  title,
+  description,
+  ogDescription: description,
+  ogTitle: title,
+  ogImage: ogImage.value,
+  twitterCard: 'summary_large_image',
+  ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
+})
 </script>
 
 <style lang="postcss">
