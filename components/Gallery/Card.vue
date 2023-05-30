@@ -9,7 +9,7 @@
         :src="imageSrc"
       />
       <h2
-        class="mt-2 mb-2 text-2xl font-bold tracking-tight text-black-600 dark:text-white"
+        class="mt-2 mb-2 text-2xl font-bold tracking-tight text-black-600 hover:underline dark:text-white"
       >
         {{ title }}
       </h2>

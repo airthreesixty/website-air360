@@ -4,24 +4,23 @@
       <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl text-center mb-10 lg:mb-15">
         Content Gallery
       </h1>
-      <div class="border shadow-md rounded-lg mx-auto px-3 lg:px-4 py-5 md:(grid grid-cols-2 gap-10)">
-        <div class="flex flex-col justify-center">
-          <h2 class="border-deco-gallery text-2xl md:text-3xl font-bold">
-            The eCommerce experience analytics solution that will help you simplify your Google Analytics 4 migration
-          </h2>
-          <p class="text-gray-500 text-base lg:text-lg mb-4">
-            If you are here, it is because you are feeling under pressure with the sunset of Universal Analytics in July 2023.
-            This Google Analytics 4 migration might be overwhelming, but Air360 can help.
-            Watch our quick video that explains how you can solve your challenges in this migration.
-          </p>
-          <nuxt-link class="text-primary-600 mb-4" :to="$localePath('/ga4-migration')">
-            <span class="font-bold">More</span><fa-icon class="fa-sm pl-1" :icon="['fas', 'chevron-right']" />
-          </nuxt-link>
+      <nuxt-link :to="$localePath('/ga4-migration')">
+        <div class="border shadow-md rounded-lg mx-auto px-3 lg:px-8 py-5 md:(grid grid-cols-2 gap-10)">
+          <div class="flex flex-col justify-center">
+            <h2 class="border-deco-gallery text-2xl md:text-3xl font-bold hover:underline">
+              The eCommerce experience analytics solution that will help you simplify your Google Analytics 4 migration
+            </h2>
+            <p class="text-gray-500 text-base lg:text-lg mb-4">
+              If you are here, it is because you are feeling under pressure with the sunset of Universal Analytics in July 2023.
+              This Google Analytics 4 migration might be overwhelming, but Air360 can help.
+              Watch our quick video that explains how you can solve your challenges in this migration.
+            </p>
+          </div>
+          <div class="md:self-center">
+            <nuxt-img src="/en/ga4-migration.webp" class="w-full object-cover rounded-lg" />
+          </div>
         </div>
-        <div class="md:self-center">
-          <nuxt-img src="/en/ga4-migration.webp" class="w-full object-cover rounded-lg" />
-        </div>
-      </div>
+      </nuxt-link>
     </div>
 
     <section class="bg-white">
