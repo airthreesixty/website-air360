@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <div class="container mx-auto">
+    <!-- <div class="container mx-auto">
       <nuxt-link :to="$localePath('/ga4-migration')" class="card transform hover:scale-95">
         <div class="mx-auto px-3 lg:px-8 py-15 md:(grid grid-cols-2 gap-10)">
           <div class="flex flex-col justify-center">
@@ -13,9 +13,8 @@
           </div>
         </div>
       </nuxt-link>
-    </div>
-
-    <section class="bg-gray-50 mx-auto py-10">
+    </div> -->
+    <section class="bg-white mx-auto py-10">
       <div class="container mx-auto">
         <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl text-center mt-8 lg:mt-10">
           Content Gallery
@@ -38,7 +37,7 @@
 </template>
 
 <script setup>
-const { $localePath } = useNuxtApp()
+// const { $localePath } = useNuxtApp()
 const { locale } = useI18n()
 const route = useRoute()
 const runtimeConfig = useRuntimeConfig()
@@ -49,9 +48,9 @@ const description = t('content-gallery.description')
 
 const ogImage = computed(() => {
   if (locale.value === 'en') {
-    return `${runtimeConfig.public.baseUrl}/en/ga4-migration.webp`
+    return `${runtimeConfig.public.baseUrl}/five-conversion-blockers.webp`
   }
-  return `${runtimeConfig.public.baseUrl}/ga4-migration.webp`
+  return `${runtimeConfig.public.baseUrl}/five-conversion-blockers.webp`
 })
 
 useSeoMeta({
