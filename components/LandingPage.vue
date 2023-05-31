@@ -3,7 +3,7 @@
     class="landing-page container mx-auto grid grid-cols-1 lg:grid-cols-[3fr,2fr] gap-10 pt-4 lg:pt-6 pb-12"
   >
     <div>
-      <NuxtLink :to="$localePath('/')">
+      <NuxtLink :to="localePath('/')">
         <span class="sr-only">Air360</span>
         <Logo
           class="h-6 lg:h-8 mb-16 h-7 filter hover:drop-shadow-white"
@@ -26,7 +26,7 @@
 </template>
 
 <script setup lang="ts">
-const { $localePath } = useNuxtApp()
+const localePath = useLocalePath()
 </script>
 
 <style lang="postcss">

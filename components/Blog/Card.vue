@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link :to="$localePath(pathWithoutLocale)">
+  <nuxt-link :to="localePath(pathWithoutLocale)">
     <article
       class="relative p-4 bg-white h-full rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
     >
@@ -43,7 +43,7 @@
 
 <script setup lang="ts">
 import { BlogArticle } from '~~/interfaces/blog'
-const { $localePath } = useNuxtApp()
+const localePath = useLocalePath()
 const { locale } = useI18n()
 
 const props = defineProps({

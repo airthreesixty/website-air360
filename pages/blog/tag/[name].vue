@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-const { $localePath } = useNuxtApp()
+const localePath = useLocalePath()
 const { t, locale } = useI18n()
 const route = useRoute()
 const router = useRouter()
@@ -23,6 +23,6 @@ useSeoMeta({
 const { data } = await useAsyncData(`tag-${route.params.name}`, () => queryContent(locale.value, 'blog/').where({ tags: { $contains: route.params.name } }).sort({ published: -1 }).only(['published', 'tags', 'readingTime', 'title', 'image', '_path', 'metaDesc']).find())
 
 if (!data.value) {
-  router.push($localePath('/blog'))
+  router.push(localePath('/blog'))
 }
 </script>

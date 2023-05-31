@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link :to="$localePath(slug)">
+  <nuxt-link :to="localePath(slug)">
     <article
       class="relative p-4 bg-white h-full rounded-lg border border-gray-200 shadow-md"
     >
@@ -21,7 +21,7 @@
 </template>
 
 <script setup lang="ts">
-const { $localePath } = useNuxtApp()
+const localePath = useLocalePath()
 interface Props {
   title: string,
   imageSrc: string,

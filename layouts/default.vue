@@ -12,7 +12,7 @@
 const route = useRoute()
 const { locale, locales } = useI18n()
 const runtimeConfig = useRuntimeConfig()
-const { $localePath } = useNuxtApp()
+const localePath = useLocalePath()
 
 const hrefAlternate = computed(() => {
   return locales.value
@@ -20,7 +20,7 @@ const hrefAlternate = computed(() => {
     .map(l => ({
       ref: 'alternate',
       hreflang: l.iso,
-      href: `${runtimeConfig.public.baseUrl}${$localePath(getPathWithoutLocale(route.fullPath), l.code)}`,
+      href: `${runtimeConfig.public.baseUrl}${localePath(getPathWithoutLocale(route.fullPath), l.code)}`,
     }))
 })
 
