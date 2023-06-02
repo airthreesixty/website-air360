@@ -94,42 +94,43 @@ const props = defineProps({
 //   }
 // })
 
+// calculate the monthly cost
 const costOfAir360 = computed(() => {
   if (monthlySessions.value) {
     // Yearly sessions
-    const sessions = monthlySessions.value * 12
+    const yearlySessions = monthlySessions.value * 12
 
-    if (sessions <= 5000000) {
-      if (sessions <= 1000000) {
+    if (yearlySessions <= 5000000) {
+      if (yearlySessions <= 1000000) {
         return 500
       }
-      return Math.ceil(sessions / 1000000) * 500
-    } else if (sessions <= 10000000) {
+      return Math.ceil(yearlySessions / 1000000) * 500
+    } else if (yearlySessions <= 10000000) {
       // The price for 5M sessions
       const firstTierCost = 2500
-      const remainingSessions = sessions - 5000000
+      const remainingSessions = yearlySessions - 5000000
       return firstTierCost + (Math.ceil(remainingSessions / 1000000) * 300)
-    } else if (sessions <= 50000000) {
+    } else if (yearlySessions <= 50000000) {
       const firstTierCost = 2500
       const secondTierCost = 1500
-      const remainingSessions = sessions - 10000000
+      const remainingSessions = yearlySessions - 10000000
       return firstTierCost + secondTierCost + (Math.ceil(remainingSessions / 1000000) * 100)
     } else {
       const firstTierCost = 2500
       const secondTierCost = 1500
       const thirdTierCost = Math.ceil(40000000 / 10000) * 100
-      const remainingSessions = sessions - 50000000
+      const remainingSessions = yearlySessions - 50000000
       return firstTierCost + secondTierCost + thirdTierCost + (Math.ceil(remainingSessions / 10000) * 60)
     }
   }
 })
 
 const currentOrders = computed(() => {
-  return (monthlySessions.value! * 6) * (currentConversionRate.value! / 100)
+  return monthlySessions.value! * (currentConversionRate.value! / 100)
 })
 
 const currentRevenue = computed(() => {
-  return currentOrders.value * aov.value!
+  return currentOrders.value * 6 * aov.value!
 })
 
 const newConversionRate = computed(() => {
@@ -152,7 +153,7 @@ const canCalculate = computed(() => {
 
 const onCalculate = () => {
   additionalRevenue.value = parseFloat((newRevenue.value - currentRevenue.value).toFixed(0))
-  roi.value = parseFloat((additionalRevenue.value / ((costOfAir360.value! * 6) / 0.8)).toFixed(1))
+  roi.value = parseFloat((additionalRevenue.value / ((costOfAir360.value! / 0.8) * 6)).toFixed(1))
 }
 
 useSeoMeta({
