@@ -131,13 +131,13 @@
             <li class="mb-4">
               <a :href="runtimeConfig.public.appUrl" target="_blank" class="hover:underline">{{ $t("login") }}<fa-icon class="fa-sm pl-1" :icon="['fas', 'arrow-up-right-from-square']" /></a>
             </li>
-            <li>
+            <!-- <li>
               <NuxtLink :to="localePath('/roi-calculator-usd')">
                 <div class="hover:underline">
                   {{ $t("roi-calc.title") }}
                 </div>
               </NuxtLink>
-            </li>
+            </li> -->
           </ul>
         </div>
         <div>

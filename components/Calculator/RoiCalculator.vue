@@ -41,6 +41,8 @@
           <p class="text-xs text-black-600">
             {{ $t('roi-calc.caution') }}
           </p>
+          <p>Monthly {{ costOfAir360 / 0.8 }}</p>
+          <p>Saved(Yearly) {{ (costOfAir360 / 0.8) - costOfAir360 }}</p>
         </div>
       </div>
     </div>
@@ -63,32 +65,62 @@ const props = defineProps({
   },
 })
 
+// const costOfAir360 = computed(() => {
+//   const yearly = (monthlySessions.value || 0) * 12
+//   const currency = props.currency
+
+//   if (yearly < 5000000 && currency === '$') {
+//     return 35000
+//   } else if (yearly < 5000000 && currency === '€') {
+//     return 30000
+//   }
+
+//   if (yearly < 20000000 && currency === '$') {
+//     return 60000
+//   } else if (yearly < 20000000 && currency === '€') {
+//     return 50000
+//   }
+
+//   if (yearly < 50000000 && currency === '$') {
+//     return 85000
+//   } else if (yearly < 50000000 && currency === '€') {
+//     return 70000
+//   }
+
+//   if (yearly < 120000000 && currency === '$') {
+//     return 145000
+//   } else if (yearly < 120000000 && currency === '€') {
+//     return 120000
+//   }
+// })
+
 const costOfAir360 = computed(() => {
-  const yearly = (monthlySessions.value || 0) * 12
-  const currency = props.currency
+  if (monthlySessions.value) {
+    // Yearly sessions
+    const sessions = monthlySessions.value * 12
 
-  if (yearly < 5000000 && currency === '$') {
-    return 35000
-  } else if (yearly < 5000000 && currency === '€') {
-    return 30000
-  }
-
-  if (yearly < 20000000 && currency === '$') {
-    return 60000
-  } else if (yearly < 20000000 && currency === '€') {
-    return 50000
-  }
-
-  if (yearly < 50000000 && currency === '$') {
-    return 85000
-  } else if (yearly < 50000000 && currency === '€') {
-    return 70000
-  }
-
-  if (yearly < 120000000 && currency === '$') {
-    return 145000
-  } else if (yearly < 120000000 && currency === '€') {
-    return 120000
+    if (sessions <= 5000000) {
+      if (sessions <= 1000000) {
+        return 500
+      }
+      return Math.ceil(sessions / 1000000) * 500
+    } else if (sessions <= 10000000) {
+      // The price for 5M sessions
+      const firstTierCost = 2500
+      const remainingSessions = sessions - 5000000
+      return firstTierCost + (Math.ceil(remainingSessions / 1000000) * 300)
+    } else if (sessions <= 50000000) {
+      const firstTierCost = 2500
+      const secondTierCost = 1500
+      const remainingSessions = sessions - 10000000
+      return firstTierCost + secondTierCost + (Math.ceil(remainingSessions / 1000000) * 100)
+    } else {
+      const firstTierCost = 2500
+      const secondTierCost = 1500
+      const thirdTierCost = Math.ceil(40000000 / 10000) * 100
+      const remainingSessions = sessions - 50000000
+      return firstTierCost + secondTierCost + thirdTierCost + (Math.ceil(remainingSessions / 10000) * 60)
+    }
   }
 })
 
@@ -120,7 +152,7 @@ const canCalculate = computed(() => {
 
 const onCalculate = () => {
   additionalRevenue.value = parseFloat((newRevenue.value - currentRevenue.value).toFixed(0))
-  roi.value = parseFloat((additionalRevenue.value / costOfAir360.value!).toFixed(1))
+  roi.value = parseFloat((additionalRevenue.value / ((costOfAir360.value! * 6) / 0.8)).toFixed(1))
 }
 
 useSeoMeta({
