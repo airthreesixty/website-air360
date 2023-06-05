@@ -30,7 +30,7 @@ Air360の個人情報の保護について
 
 ::handling-protection
 #title
-安全なデータの取り扱いと保護
+安全なデータの取扱いと保護
 #subtitle
 お客様のデータへのアクセスを制限する
 #description
