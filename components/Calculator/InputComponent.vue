@@ -10,13 +10,13 @@
       @focus="$emit('focus')"
       @blur="$emit('blur')"
     >
-    <label :for="id" class="absolute text-md text-gray-500 duration-150 scale-75 transform -translate-y-3 top-4 z-10 origin-top-left left-6 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-3">{{ label }}</label>
+    <label :for="id" class="absolute text-md text-gray-500 duration-150 scale-75 transform -translate-y-3 top-4 origin-top-left left-6 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-3">{{ label }}</label>
   </div>
 </template>
 
 <script setup lang="ts">
 interface Props {
-  modelValue: number | null;
+  modelValue: string | number | null;
   id: string;
   label: string;
   type?: 'text' | 'number';

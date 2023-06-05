@@ -66,7 +66,7 @@ const currentConversionRate = ref<number | null>(null)
 const aov = ref<number | null>(null)
 const numberedMonthlySessions = ref<number>()
 
-const props = defineProps({
+defineProps({
   currency: {
     type: String,
     required: true,
@@ -87,35 +87,6 @@ const onBlur = () => {
     numberedMonthlySessions.value = parseInt(monthlySessions.value.replace(/,/g, ''))
   }
 }
-
-// const costOfAir360 = computed(() => {
-//   const yearly = (monthlySessions.value || 0) * 12
-//   const currency = props.currency
-
-//   if (yearly < 5000000 && currency === '$') {
-//     return 35000
-//   } else if (yearly < 5000000 && currency === '€') {
-//     return 30000
-//   }
-
-//   if (yearly < 20000000 && currency === '$') {
-//     return 60000
-//   } else if (yearly < 20000000 && currency === '€') {
-//     return 50000
-//   }
-
-//   if (yearly < 50000000 && currency === '$') {
-//     return 85000
-//   } else if (yearly < 50000000 && currency === '€') {
-//     return 70000
-//   }
-
-//   if (yearly < 120000000 && currency === '$') {
-//     return 145000
-//   } else if (yearly < 120000000 && currency === '€') {
-//     return 120000
-//   }
-// })
 
 // calculate the monthly cost
 const costOfAir360 = computed(() => {
