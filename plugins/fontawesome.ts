@@ -1,7 +1,7 @@
 import { library, config } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faTwitter, faLinkedin, faInstagram, faFacebook, faYoutube, faTiktok } from '@fortawesome/free-brands-svg-icons'
-import { faLink, faArrowUpRightFromSquare, faTable, faEarthAmerica, faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faLink, faArrowUpRightFromSquare, faTable, faEarthAmerica, faChevronRight, faAngleUp } from '@fortawesome/free-solid-svg-icons'
 // This is important, we are going to let Nuxt worry about the CSS
 config.autoAddCss = false
 
@@ -18,6 +18,7 @@ library.add(faArrowUpRightFromSquare)
 library.add(faTable)
 library.add(faEarthAmerica)
 library.add(faChevronRight)
+library.add(faAngleUp)
 
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.component('FaIcon', FontAwesomeIcon)

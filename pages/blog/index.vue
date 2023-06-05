@@ -6,7 +6,7 @@
 const { t, locale } = useI18n()
 const route = useRoute()
 const runtimeConfig = useRuntimeConfig()
-const { $localePath } = useNuxtApp()
+const localePath = useLocalePath()
 
 useSeoMeta({
   title: t('blog-index.title'),
@@ -26,7 +26,7 @@ const { data } = await useAsyncData('blog', () =>
 )
 
 const breadcrumbs = [
-  { name: t('home'), item: $localePath('/') },
+  { name: t('home'), item: localePath('/') },
   { name: t('blog') },
 ]
 

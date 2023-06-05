@@ -14,7 +14,7 @@
                       v-for="(tag, index) in data.tags"
                       :key="index"
                       class="bg-blue-100 text-blue-400 text-xs font-semibold px-2.5 py-0.5 mr-2 rounded"
-                      :to="$localePath(`/blog/tag/${tag}`)"
+                      :to="localePath(`/blog/tag/${tag}`)"
                     >
                       {{ $t(`tag.${tag}`) }}
                     </nuxt-link>
@@ -133,7 +133,8 @@
 import { useSeoMeta } from '@unhead/vue'
 import { BlogArticle } from '~~/interfaces/blog'
 
-const { $localePath, $dayjs } = useNuxtApp()
+const { $dayjs } = useNuxtApp()
+const localePath = useLocalePath()
 const { locale, t } = useI18n()
 const runtimeConfig = useRuntimeConfig()
 const route = useRoute()
@@ -176,7 +177,7 @@ onUnmounted(() => {
 })
 
 if (!data.value) {
-  router.push($localePath('/blog'))
+  router.push(localePath('/blog'))
 }
 
 useSeoMeta({
@@ -190,8 +191,8 @@ useSeoMeta({
 })
 
 const breadcrumbs = [
-  { name: t('home'), item: $localePath('/') },
-  { name: t('blog'), item: $localePath('/blog/') },
+  { name: t('home'), item: localePath('/') },
+  { name: t('blog'), item: localePath('/blog/') },
   { name: data.value?.title },
 ]
 

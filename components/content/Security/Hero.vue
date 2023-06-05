@@ -1,5 +1,5 @@
 <template>
-  <div class="container py-10">
+  <div class="container pt-10 pb-5">
     <div class="md:(grid grid-cols-2)">
       <div class="">
         <span class="font-bold text-primary-600 text-base">SECURITY & COMPLIANCE</span>

@@ -4,7 +4,7 @@
 
 <script setup lang="ts">
 const { t } = useI18n()
-const { $localePath } = useNuxtApp()
+const localePath = useLocalePath()
 
 useHead({
   title: t('contact.title'),
@@ -15,7 +15,7 @@ useHead({
 })
 
 const breadcrumbs = [
-  { name: t('home'), item: $localePath('/') },
+  { name: t('home'), item: localePath('/') },
   { name: t('contact.title') },
 ]
 

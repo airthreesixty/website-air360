@@ -7,7 +7,7 @@
     <div class="relative flex flex-wrap items-center justify-between container mx-auto">
       <header role="banner">
         <NuxtLink
-          :to="$localePath('/')"
+          :to="localePath('/')"
           class="h-6 w-auto sm:h-7 xl:h-8 filter homepage-logo"
           :class="{'hover:drop-shadow-white focus:drop-shadow-white': isHomepage, 'hover:drop-shadow-primary focus:drop-shadow-primary': !isHomepage}"
         >
@@ -60,12 +60,26 @@
             :class="{ 'w-2/3 text-center mx-auto items-stretch': isActive }"
           >
             <li :class="{ 'border-b border-gray-100 py-1': isActive }">
-              <NuxtLink :to="$localePath('/product')" class="menu__link">
+              <NuxtLink :to="localePath('/product')" class="menu__link">
                 {{ $t("product.title") }}
               </NuxtLink>
             </li>
-            <li :class="{ 'border-b border-gray-100 py-1': isActive }">
-              <NuxtLink :to="$localePath('/blog')" class="menu__link">
+            <li :class="{ 'border-b border-gray-100 py-1': isActive }" class="relative hidden lg:block">
+              <button class="menu__link" aria-controls="inspiration-modal" :aria-expanded="isInspirationActive" @click="toggleInspiration">
+                <span class="sr-only">Open Inspiration menu</span>
+                {{ $t("inspiration") }}
+              </button>
+              <div v-show="isInspirationActive" id="inspiration-modal" class="dropdown right-1 mt-1 w-49 text-center" @click="toggleInspiration">
+                <nuxt-link :to="localePath('/blog')" class="block text-gray-600 transition-all mb-2 border-b border-gray-100 py-1 hover:(text-primary-600 text-shadow-primary)">
+                  {{ $t("blog") }}
+                </nuxt-link>
+                <nuxt-link :to="localePath('/content-gallery')" class="block text-gray-600 transition-all hover:(text-primary-600 text-shadow-primary)">
+                  {{ $t('gallery') }}
+                </nuxt-link>
+              </div>
+            </li>
+            <li :class="{ 'border-b border-gray-100 py-1': isActive }" class="lg:hidden">
+              <NuxtLink :to="localePath('/blog')" class="menu__link">
                 {{ $t("blog") }}
               </NuxtLink>
             </li>
@@ -104,21 +118,30 @@
 </template>
 
 <script setup lang="ts">
-const { $localePath } = useNuxtApp()
+const localePath = useLocalePath()
 const runtimeConfig = useRuntimeConfig()
 const route = useRoute()
 
 const isActive = ref(false)
 const isLangActive = ref(false)
+const isInspirationActive = ref(false)
 const isHomepage = computed(() => getPathWithoutLocale(route.fullPath) === '/')
 
 const toggleMenu = () => {
   isActive.value = !isActive.value
   isLangActive.value = false
+  isInspirationActive.value = false
 }
 
 const toggleLang = () => {
   isLangActive.value = !isLangActive.value
+  isActive.value = false
+  isInspirationActive.value = false
+}
+
+const toggleInspiration = () => {
+  isInspirationActive.value = !isInspirationActive.value
+  isLangActive.value = false
   isActive.value = false
 }
 

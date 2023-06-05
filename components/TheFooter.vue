@@ -2,7 +2,7 @@
   <footer class="border-gray-200 border-t-1 pt-8 pb-12">
     <div class="container mx-auto md:flex md:justify-between">
       <div class="mb-6 md:mb-0">
-        <NuxtLink :to="$localePath('/')">
+        <NuxtLink :to="localePath('/')">
           <span class="sr-only">Air360</span>
           <Logo
             class="mr-3 h-6 w-auto sm:h-7 xl:h-8"
@@ -76,7 +76,7 @@
               >{{ $t("careers") }}<fa-icon class="fa-sm pl-1" :icon="['fas', 'arrow-up-right-from-square']" /></a>
             </li>
             <li>
-              <NuxtLink :to="$localePath('/privacy-policy')">
+              <NuxtLink :to="localePath('/privacy-policy')">
                 <div class="hover:underline">
                   {{ $t("privacy-policy.title") }}
                 </div>
@@ -92,14 +92,14 @@
           </h2>
           <ul class="text-gray-600 dark:text-gray-400">
             <li class="mb-4">
-              <NuxtLink :to="$localePath('/blog')">
+              <NuxtLink :to="localePath('/blog')">
                 <div class="hover:underline">
                   {{ $t("blog") }}
                 </div>
               </NuxtLink>
             </li>
             <li class="mb-4">
-              <NuxtLink :to="$localePath('/product')">
+              <NuxtLink :to="localePath('/product')">
                 <div class="hover:underline">
                   {{ $t("product.title") }}
                 </div>
@@ -115,14 +115,14 @@
           </h2>
           <ul class="text-gray-700 dark:text-gray-400">
             <li class="mb-4">
-              <NuxtLink :to="$localePath('/request-demo')">
+              <NuxtLink :to="localePath('/request-demo')">
                 <div class="hover:underline">
                   {{ $t("request-demo.title") }}
                 </div>
               </NuxtLink>
             </li>
             <li class="mb-4">
-              <NuxtLink :to="$localePath('/contact')">
+              <NuxtLink :to="localePath('/contact')">
                 <div class="hover:underline">
                   {{ $t("contact-us") }}
                 </div>
@@ -131,13 +131,13 @@
             <li class="mb-4">
               <a :href="runtimeConfig.public.appUrl" target="_blank" class="hover:underline">{{ $t("login") }}<fa-icon class="fa-sm pl-1" :icon="['fas', 'arrow-up-right-from-square']" /></a>
             </li>
-            <li>
-              <NuxtLink :to="$localePath('/roi-calculator-usd')">
+            <!-- <li>
+              <NuxtLink :to="localePath('/roi-calculator-usd')">
                 <div class="hover:underline">
                   {{ $t("roi-calc.title") }}
                 </div>
               </NuxtLink>
-            </li>
+            </li> -->
           </ul>
         </div>
         <div>
@@ -158,7 +158,7 @@
 </template>
 
 <script setup lang="ts">
-const { $localePath } = useNuxtApp()
+const localePath = useLocalePath()
 const { locale } = useI18n()
 const runtimeConfig = useRuntimeConfig()
 

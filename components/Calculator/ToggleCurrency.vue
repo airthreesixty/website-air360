@@ -1,13 +1,13 @@
 <template>
   <div class="flex justify-around">
-    <nuxt-link v-for="tag in tagList" :key="tag" :to="$localePath(`/roi-calculator-${tag.toLowerCase()}`)" class="tag__link">
+    <nuxt-link v-for="tag in tagList" :key="tag" :to="localePath(`/roi-calculator-${tag.toLowerCase()}`)" class="tag__link">
       {{ tag }}
     </nuxt-link>
   </div>
 </template>
 
 <script setup lang="ts">
-const { $localePath } = useNuxtApp()
+const localePath = useLocalePath()
 // Add YEN later
 const tagList = ['USD', 'EUR']
 </script>

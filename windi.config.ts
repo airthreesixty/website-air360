@@ -6,6 +6,7 @@ export default defineConfig({
   darkMode: 'class',
   shortcuts: {
     container: 'max-w-screen-[1400px] px-6 lg:px-8',
+    title2: 'font-bold text-2xl text-black-600',
   },
   plugins: [require('windicss/plugin/typography'), flowbite],
   theme: {

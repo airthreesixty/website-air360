@@ -5,13 +5,20 @@
         <h1 class="text-black-600 font-bold text-2xl mb-6 md:text-3xl lg:text-4xl">
           {{ $t('roi-calc.header') }}
         </h1>
-        <CalculatorToggleCurrency />
+        <!-- <CalculatorToggleCurrency /> -->
         <div class="border-1 border-gray-200 rounded-lg shadow-md px-5 py-8 mt-12">
           <h2 class="text-black-600 font-bold text-2xl mb-8">
             {{ $t('roi-calc.subtitle') }}
           </h2>
           <div class="flex flex-col gap-4">
-            <CalculatorInputComponent id="sessions" v-model="monthlySessions" :label="$t('roi-calc.label1')" type="number" />
+            <CalculatorInputComponent
+              id="sessions"
+              v-model="monthlySessions"
+              :label="$t('roi-calc.label1')"
+              :type="type"
+              @focus="onFocus"
+              @blur="onBlur"
+            />
             <CalculatorInputComponent id="conversion-rate" v-model="currentConversionRate" :label="$t('roi-calc.label2')" type="number" />
             <CalculatorInputComponent id="average-order-value" v-model="aov" :label="$t('roi-calc.label3') + `(${currency})`" type="number" />
           </div>
@@ -52,52 +59,72 @@ const runtimeConfig = useRuntimeConfig()
 const route = useRoute()
 const { t } = useI18n()
 
-const monthlySessions = ref<number | null>(null)
+const type = ref<'text' | 'number'>('text')
+
+const monthlySessions = ref<number | string | null>(null)
 const currentConversionRate = ref<number | null>(null)
 const aov = ref<number | null>(null)
+const numberedMonthlySessions = ref<number>()
 
-const props = defineProps({
+defineProps({
   currency: {
     type: String,
     required: true,
   },
 })
 
+const onFocus = () => {
+  if (typeof monthlySessions.value === 'string') {
+    monthlySessions.value = parseInt(monthlySessions.value?.replace(/,/g, ''))
+  }
+  type.value = 'number'
+}
+
+const onBlur = () => {
+  type.value = 'text'
+  if (typeof monthlySessions.value === 'string') {
+    monthlySessions.value = monthlySessions.value?.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, '$1,')
+    numberedMonthlySessions.value = parseInt(monthlySessions.value.replace(/,/g, ''))
+  }
+}
+
+// calculate the monthly cost
 const costOfAir360 = computed(() => {
-  const yearly = (monthlySessions.value || 0) * 12
-  const currency = props.currency
+  if (numberedMonthlySessions) {
+    // Yearly sessions
+    const yearlySessions = numberedMonthlySessions.value! * 12
 
-  if (yearly < 5000000 && currency === '$') {
-    return 35000
-  } else if (yearly < 5000000 && currency === '€') {
-    return 30000
-  }
-
-  if (yearly < 20000000 && currency === '$') {
-    return 60000
-  } else if (yearly < 20000000 && currency === '€') {
-    return 50000
-  }
-
-  if (yearly < 50000000 && currency === '$') {
-    return 85000
-  } else if (yearly < 50000000 && currency === '€') {
-    return 70000
-  }
-
-  if (yearly < 120000000 && currency === '$') {
-    return 145000
-  } else if (yearly < 120000000 && currency === '€') {
-    return 120000
+    if (yearlySessions <= 5000000) {
+      if (yearlySessions <= 1000000) {
+        return 500
+      }
+      return Math.ceil(yearlySessions / 1000000) * 500
+    } else if (yearlySessions <= 10000000) {
+      // The price for 5M sessions
+      const firstTierCost = 2500
+      const remainingSessions = yearlySessions - 5000000
+      return firstTierCost + (Math.ceil(remainingSessions / 1000000) * 300)
+    } else if (yearlySessions <= 50000000) {
+      const firstTierCost = 2500
+      const secondTierCost = 1500
+      const remainingSessions = yearlySessions - 10000000
+      return firstTierCost + secondTierCost + (Math.ceil(remainingSessions / 1000000) * 100)
+    } else {
+      const firstTierCost = 2500
+      const secondTierCost = 1500
+      const thirdTierCost = Math.ceil(40000000 / 10000) * 100
+      const remainingSessions = yearlySessions - 50000000
+      return firstTierCost + secondTierCost + thirdTierCost + (Math.ceil(remainingSessions / 10000) * 60)
+    }
   }
 })
 
 const currentOrders = computed(() => {
-  return (monthlySessions.value! * 6) * (currentConversionRate.value! / 100)
+  return numberedMonthlySessions.value! * (currentConversionRate.value! / 100)
 })
 
 const currentRevenue = computed(() => {
-  return currentOrders.value * aov.value!
+  return currentOrders.value * 6 * aov.value!
 })
 
 const newConversionRate = computed(() => {
@@ -105,7 +132,7 @@ const newConversionRate = computed(() => {
 })
 
 const newRevenue = computed(() => {
-  return monthlySessions.value! * 6 * (newConversionRate.value / 100) * aov.value!
+  return numberedMonthlySessions.value! * 6 * (newConversionRate.value / 100) * aov.value!
 })
 
 const additionalRevenue = ref(0)
@@ -120,7 +147,7 @@ const canCalculate = computed(() => {
 
 const onCalculate = () => {
   additionalRevenue.value = parseFloat((newRevenue.value - currentRevenue.value).toFixed(0))
-  roi.value = parseFloat((additionalRevenue.value / costOfAir360.value!).toFixed(1))
+  roi.value = parseFloat((additionalRevenue.value / ((costOfAir360.value! / 0.8) * 6)).toFixed(1))
 }
 
 useSeoMeta({

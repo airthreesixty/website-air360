@@ -1,7 +1,7 @@
 <template>
   <nav aria-label="Tags">
     <nuxt-link
-      :to="$localePath(`/blog`)"
+      :to="localePath(`/blog`)"
       class="tag__link"
     >
       {{ $t(`tag.all`) }}
@@ -9,7 +9,7 @@
     <nuxt-link
       v-for="tag in tagList"
       :key="tag"
-      :to="$localePath(`/blog/tag/${tag}`)"
+      :to="localePath(`/blog/tag/${tag}`)"
       class="tag__link"
     >
       {{ $t(`tag.${tag}`) }}
@@ -18,7 +18,7 @@
 </template>
 
 <script setup lang="ts">
-const { $localePath } = useNuxtApp()
+const localePath = useLocalePath()
 const tagList = ['marketing', 'ux', 'ecommerce', 'data', 'other']
 </script>
 
