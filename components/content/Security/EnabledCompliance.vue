@@ -2,20 +2,20 @@
   <div class="container py-10">
     <div class="grid grid-cols-1 md:grid-cols-2">
       <div>
-        <h2 class="title2 uppercase mb-5">
-          Enabled Compliance
+        <h2 class="title2 mb-5">
+          <ContentSlot :use="$slots.title" unwrap="p" />
         </h2>
         <h3 class="font-bold text-lg text-black-600 mb-3">
-          Lawful basis and transparency
+          <ContentSlot :use="$slots.subtitle1" unwrap="p" />
         </h3>
         <p class="text-black-600 mb-3 text-gray-600">
-          As part of our compliance to GDPR, we enter into Data Processing Agreements (DPAs) with all our customers. The DPA, a binding agreement signed between the controller and the processor when the latter processes data from the controller, details the standard contractual terms required under the GDPR.
+          <ContentSlot :use="$slots.description1" unwrap="p" />
         </p>
         <h3 class="font-bold text-lg text-black-600 mb-3">
-          Accountability and Governance
+          <ContentSlot :use="$slots.subtitle2" unwrap="p" />
         </h3>
         <p class="text-black-600 mb-3 text-gray-600">
-          Air360 has appointed a Data Protection Officer to monitor GDPR compliance, assess data protection risks, advise on data protection impact assessments, and cooperate with regulators.
+          <ContentSlot :use="$slots.description2" unwrap="p" />
         </p>
       </div>
       <div class="self-center">

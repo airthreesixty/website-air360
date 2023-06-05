@@ -132,5 +132,57 @@
   "content-gallery": {
     "title": "Discover Air360",
     "description": "Content Gallery showcases air360's contents"
+  },
+  "compliance": {
+    "title": "Compliance",
+    "desc": "Fully compliant with GDPR & CCPA privacy acts"
+  },
+  "security": {
+    "title": "Security",
+    "desc": "Your data is safe, secure, and always available​"
+  },
+  "privacy": {
+    "card1": {
+      "title": "Privacy by default",
+      "desc": "Air360 automatically disallows the capture of any sensitive or personal data that a user enters in an input field of your web store"
+    },
+    "card2": {
+      "title": "Right to erasure",
+      "desc": "GDPR requires you to be able to delete a given user and all its related data. Air360 offers a function that will allow you to delete a specific user and related sessions with just a single click."
+    },
+    "card3": {
+      "title": "Right to object",
+      "desc": "Air360 enables you to go further by also hiding explicitly parts of your pages from being recorded during session replays"
+    },
+    "card4": {
+      "title": "Right of access & data portability",
+      "desc": "You can retrieve specific user details simply by going through our application or using our API"
+    }
+  },
+  "security-measures": {
+    "card1": {
+      "title": "Monitoring of our Tracking pixel",
+      "desc": "Constantly conducted to detect any malicious modification and ensure its delivery, integrity and safety"
+    },
+    "card2": {
+      "title": "State-of-the-art encryption",
+      "desc": "Used in all Air360 products for data in transit and at rest"
+    },
+    "card3": {
+      "title": "Multi-Factor Authentication (MFA)",
+      "desc": "Required for all our users to access to Air360 application adding an extra layer of security and keeping your accounts safe"
+    },
+    "card4": {
+      "title": "Third-party security audits",
+      "desc": "Conducted regularly and before major releases, including penetration tests and vulnerability scans"
+    },
+    "card5": {
+      "title": "Security best practices",
+      "desc": "Reviewed by third party companies regularly when important updates are performed on our systems"
+    },
+    "card6": {
+      "title": "Customer data processed & stored in the EU",
+      "desc": "Air360 core systems are hosted on OVHcloud and Amazon Web Services (AWS) servers located in France and Ireland and leverage all the security and compliance provided by OVHcloud/AWS: ISO (9001, 27001, 27017, and 27018), SOC 1, 2, and 3, PCI DSS"
+    }
   }
 }
