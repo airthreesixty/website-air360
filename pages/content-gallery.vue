@@ -15,7 +15,7 @@
       </nuxt-link>
     </div> -->
     <section class="bg-white mx-auto py-10">
-      <div class="container mx-auto">
+      <div class="container">
         <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl text-center mt-8 lg:mt-10">
           Content Gallery
         </h1>

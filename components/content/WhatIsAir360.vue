@@ -1,6 +1,6 @@
 <template>
   <section ref="target" class="bg-white pt-22">
-    <div class="mx-auto container text-center">
+    <div class="container text-center">
       <div>
         <!-- <h2 class="text-md font-semibold text-primary-600 lg:text-xl">次世代型UXアナリティクスツール</h2> -->
         <h2 class="mt-2 text-2xl font-semibold text-black-600 md:text-3xl lg:text-4xl">

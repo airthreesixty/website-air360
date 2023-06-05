@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="bg-gradient-head">
-      <div class="container mx-auto py-15 lg:py-20">
+      <div class="container py-15 lg:py-20">
         <h1 class="text-white font-semibold text-2xl md:text-3xl lg:text-4xl">
           <ContentSlot :use="$slots.title" unwrap="p" />
         </h1>

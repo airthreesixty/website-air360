@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white">
-    <div class="container mx-auto py-15">
+    <div class="container py-15">
       <div class="text-center">
         <p class="text-lg font-semibold text-primary-600 md:text-xl">
           <ContentSlot :use="$slots.subtext" unwrap="p" />

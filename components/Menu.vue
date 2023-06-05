@@ -4,7 +4,7 @@
     :class="{'is-homepage absolute w-full' : isHomepage, 'border-gray-200 border-b-1 sticky': !isHomepage}"
   >
     <div v-if="isHomepage" class="bg-gradient h-60 md:h-70 lg:h-82" />
-    <div class="relative flex flex-wrap items-center justify-between container mx-auto">
+    <div class="relative flex flex-wrap items-center justify-between container">
       <header role="banner">
         <NuxtLink
           :to="localePath('/')"

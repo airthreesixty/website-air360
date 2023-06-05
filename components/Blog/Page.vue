@@ -1,6 +1,6 @@
 <template>
   <section class="bg-white dark:bg-gray-900">
-    <div class="container py-8  mx-auto lg:py-16">
+    <div class="container py-8 lg:py-16">
       <div class="mx-auto max-w-screen-[1400px] text-center mb-8 lg:mb-16">
         <h1
           class="mb-4 text-2xl tracking-tight font-extrabold text-black-600 lg:text-4xl dark:text-white"

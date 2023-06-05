@@ -1,6 +1,6 @@
 <template>
   <footer class="border-gray-200 border-t-1 pt-8 pb-12">
-    <div class="container mx-auto md:flex md:justify-between">
+    <div class="container md:flex md:justify-between">
       <div class="mb-6 md:mb-0">
         <NuxtLink :to="localePath('/')">
           <span class="sr-only">Air360</span>

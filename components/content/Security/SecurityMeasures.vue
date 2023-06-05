@@ -1,11 +1,13 @@
 <template>
-  <div class="container py-5">
-    <h2 class="title2 text-center mb-5">
-      Air360 Security  Measures
-    </h2>
-    <div class="grid gap-5 grid-cols-1">
-      <div v-for="card in cards" :key="card.title">
-        <Card :title="card.title" :description="card.description" />
+  <div class="bg-gray-50">
+    <div class="container py-10">
+      <h2 class="title2 text-center mb-5 md:mb-8">
+        Air360 Security  Measures
+      </h2>
+      <div class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div v-for="card in cards" :key="card.title" class="flex items-stretch">
+          <Card :title="card.title" :description="card.description" />
+        </div>
       </div>
     </div>
   </div>

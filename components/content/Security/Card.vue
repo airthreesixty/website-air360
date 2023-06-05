@@ -1,9 +1,9 @@
 <template>
-  <div class="border rounded-lg p-4 shadow-md">
+  <div class="bg-white border rounded-lg w-full p-4 sm:py-6 shadow-md max-w-[500px] mx-auto">
     <div class="flex flex-col items-center">
-      <h2 class="font-bold text-black-600 mb-1">
+      <h3 class="font-bold text-lg text-black-600 mb-1">
         {{ title }}
-      </h2>
+      </h3>
       <p class="text-center text-black-600 mb-3">
         {{ description }}
       </p>

@@ -1,5 +1,5 @@
 <template>
-  <div class="container flex justify-center mx-auto">
+  <div class="container flex justify-center">
     <div class="py-20 max-w-[600px]">
       <div class="">
         <h1 class="text-black-600 font-bold text-2xl mb-6 md:text-3xl lg:text-4xl">

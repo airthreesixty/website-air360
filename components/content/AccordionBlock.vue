@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white">
-    <div class="w-full border-left-[5px] border-primary-600 p-5 rounded-lg shadow-sm" @click="toggle">
+    <div class="w-full border-left-[5px] border-[1px] border-left-primary-600 p-5 rounded-lg shadow-sm" @click="toggle">
       <div class="flex justify-between">
         <h3 class="text-black-600 font-semibold">
           What data is collected?

@@ -1,6 +1,6 @@
 <template>
   <section class="relative bg-white">
-    <div class="container py-8 mx-auto md:py-16">
+    <div class="container py-8 md:py-16">
       <div
         class="px-4 mx-auto max-w-screen-sm text-center lg:px-6 mb-8 lg:mb-16"
       >

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="landing-page container mx-auto grid grid-cols-1 lg:grid-cols-[3fr,2fr] gap-10 pt-4 lg:pt-6 pb-12"
+    class="landing-page container grid grid-cols-1 lg:grid-cols-[3fr,2fr] gap-10 pt-4 lg:pt-6 pb-12"
   >
     <div>
       <NuxtLink :to="localePath('/')">

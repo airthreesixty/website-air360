@@ -1,6 +1,6 @@
 <template>
   <section
-    class="container overflow-hidden mx-auto bg-cover md:bg-[rgba(255,255,255,0.59)] bg-blend-lighten md:justify-center md:flex"
+    class="container overflow-hidden bg-cover md:bg-[rgba(255,255,255,0.59)] bg-blend-lighten md:justify-center md:flex"
     style="
       background-image: url(/BgTestimonial.svg)
     "
