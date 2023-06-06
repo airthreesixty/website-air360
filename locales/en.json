@@ -133,13 +133,15 @@
     "title": "Discover Air360",
     "description": "Content Gallery showcases air360's contents"
   },
-  "compliance": {
-    "title": "Compliance",
-    "desc": "Fully compliant with GDPR & CCPA privacy acts"
-  },
-  "security": {
-    "title": "Security",
-    "desc": "Your data is safe, secure, and always available​"
+  "security-compliance": {
+    "compliance": {
+      "title": "Compliance",
+      "desc": "Fully compliant with GDPR & CCPA privacy acts"
+    },
+    "security": {
+      "title": "Security",
+      "desc": "Your data is safe, secure, and always available​"
+    }
   },
   "privacy": {
     "card1": {
@@ -184,5 +186,9 @@
       "title": "Customer data processed & stored in the EU",
       "desc": "Air360 core systems are hosted on OVHcloud and Amazon Web Services (AWS) servers located in France and Ireland and leverage all the security and compliance provided by OVHcloud/AWS: ISO (9001, 27001, 27017, and 27018), SOC 1, 2, and 3, PCI DSS"
     }
+  },
+  "security": {
+    "title": "Security & Compliance",
+    "desc": "We are fully committed to providing features that help you be compliant with GDPR by taking a privacy by design approach. As well as partnering with the best in class security providers to keep all your data safe."
   }
 }
