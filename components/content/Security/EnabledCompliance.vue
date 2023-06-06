@@ -5,13 +5,13 @@
         <h2 class="title2 mb-5 lg:mb-8">
           <ContentSlot :use="$slots.title" unwrap="p" />
         </h2>
-        <h3 class="font-bold border-b-[3px] border-primary-600 text-lg lg:text-xl text-black-600 mb-3">
+        <h3 class="font-bold text-lg lg:text-xl text-black-600 mb-3">
           <ContentSlot :use="$slots.subtitle1" unwrap="p" />
         </h3>
         <p class="text-black-600 mb-5 text-gray-600">
           <ContentSlot :use="$slots.description1" unwrap="p" />
         </p>
-        <h3 class="font-bold text-lg border-b-[3px] border-primary-600 lg:text-xl text-black-600 mb-3">
+        <h3 class="font-bold text-lg lg:text-xl text-black-600 mb-3">
           <ContentSlot :use="$slots.subtitle2" unwrap="p" />
         </h3>
         <p class="text-black-600 mb-3 text-gray-600">

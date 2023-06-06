@@ -124,7 +124,7 @@ const currentOrders = computed(() => {
 })
 
 const currentRevenue = computed(() => {
-  return currentOrders.value * 6 * aov.value!
+  return currentOrders.value * 3 * aov.value!
 })
 
 const newConversionRate = computed(() => {
@@ -132,7 +132,7 @@ const newConversionRate = computed(() => {
 })
 
 const newRevenue = computed(() => {
-  return numberedMonthlySessions.value! * 6 * (newConversionRate.value / 100) * aov.value!
+  return numberedMonthlySessions.value! * 3 * (newConversionRate.value / 100) * aov.value!
 })
 
 const additionalRevenue = ref(0)
@@ -147,7 +147,7 @@ const canCalculate = computed(() => {
 
 const onCalculate = () => {
   additionalRevenue.value = parseFloat((newRevenue.value - currentRevenue.value).toFixed(0))
-  roi.value = parseFloat((additionalRevenue.value / ((costOfAir360.value! / 0.8) * 6)).toFixed(1))
+  roi.value = parseFloat((additionalRevenue.value / ((costOfAir360.value! / 0.8) * 3)).toFixed(1))
 }
 
 useSeoMeta({
