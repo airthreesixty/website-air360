@@ -43,4 +43,8 @@ Air360のセキュリティ対策について
 ::
 
 ::faqs
+#question1
+What data is collected?
+#answer1
+sadsada
 ::

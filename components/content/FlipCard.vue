@@ -11,7 +11,7 @@
           </h3>
         </div>
       </div>
-      <div class="backSide shadow rounded-lg px-4 border-[2px]">
+      <div class="backSide justify-evenly shadow rounded-lg px-4 border-[2px]">
         <p class="text-gray-500 md:text-lg">
           {{ description }}
         </p>
@@ -45,9 +45,6 @@ defineProps<Props>()
   position: absolute;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
-  /* gap: 8px;
-  justify-content: space-evenly; */
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden;
