@@ -2,7 +2,7 @@
   <section class="bg-gray-50">
     <div class="container text-center py-10 lg:py-15">
       <h2 class="mb-4 title2 font-bold text-black-600">
-        Security
+        <ContentSlot :use="$slots.title" unwrap="p" />
       </h2>
       <div class="mt-8 lg:mt-16 mb-8 space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0">
         <div>

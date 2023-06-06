@@ -8,6 +8,8 @@ We are fully committed to providing features that help you be compliant with GDP
 ::
 
 ::compliance-security
+#title
+Security
 ::
 
 ::enabled-compliance
@@ -46,7 +48,7 @@ Air360 Security Measures
 #question1
 How does Air360 work? 
 #answer1
-Once Air360 pixel is installed on your website when a new visitor lands on it, Air360 will generate a random unique identifier and it will be stored in a cookie. All the data collected by default is considered anonymous data as there is no information that can relate to an identified user (e.g. tracks all pages users visited, all mouse movements, clicks, scrolls
+Once Air360 pixel is installed on your website when a new visitor lands on it, Air360 will generate a random unique identifier and it will be stored in a cookie. All the data collected by default is considered anonymous data as there is no information that can relate to an identified user (e.g. tracks all pages users visited, all mouse movements, clicks, scrolls.
 
 #question2
 How does Air360 track a user?
@@ -107,5 +109,4 @@ Where is Air360 data stored? (Data Hosting and Storage)
 Air360 production data is hosted in OVHcloud, France.
 
 Air360 backup data is hosted in Amazon Web Services (AWS) facilities in Dublin, Ireland.
-
 ::
