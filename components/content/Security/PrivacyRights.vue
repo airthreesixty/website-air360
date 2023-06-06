@@ -1,12 +1,15 @@
 <template>
-  <div class="bg-gray-50">
+  <div class="bg-white">
     <div class="container py-10 lg:py-15">
       <h2 class="title2 text-center mb-5 md:mb-10">
         <ContentSlot :use="$slots.title" unwrap="p" />
       </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-5">
-        <div v-for="{title, description} in cards" :key="title" class="flex items-stretch">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+        <!-- <div v-for="{title, description} in cards" :key="title" class="flex items-stretch">
           <Card :title="title" :description="description" />
+        </div> -->
+        <div v-for="{title, description} in cards" :key="title">
+          <FlipCard :title="title" :description="description" />
         </div>
       </div>
     </div>
