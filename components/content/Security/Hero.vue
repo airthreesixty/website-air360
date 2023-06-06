@@ -11,7 +11,7 @@
         </p>
       </div>
       <div class="">
-        <nuxt-img format="webp" src="/security/heroImage.png" class="lg:w-140" />
+        <nuxt-img format="webp" src="/security/heroImage.png" class="lg:w-140 mx-auto" />
       </div>
     </div>
   </div>
