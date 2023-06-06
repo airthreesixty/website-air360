@@ -1,15 +1,5 @@
 <template>
-  <!-- <div class="">
-    <div class="container py-10 lg:py-15">
-      <div class="flex flex-col gap-5 sm:flex-row md:justify-around">
-        <Card :title="$t('compliance.title')" :description="$t('compliance.desc')" :more="true" href="#enabled-compliance" />
-        <Card :title="$t('security.title')" :description="$t('security.desc')" :more="true" href="#handling-protection" />
-        <FlipCard />
-        <FlipCard />
-      </div>
-    </div>
-  </div> -->
-  <section class="bg-white">
+  <section class="bg-gray-50">
     <div class="container text-center py-10 lg:py-15">
       <h2 class="mb-4 title2 font-bold text-black-600">
         Security

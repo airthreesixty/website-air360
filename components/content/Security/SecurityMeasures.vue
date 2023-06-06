@@ -5,8 +5,8 @@
         <ContentSlot :use="$slots.title" unwrap="p" />
       </h2>
       <div class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        <div v-for="card in cards" :key="card.title" class="flex items-stretch">
-          <Card :title="card.title" :description="card.description" />
+        <div v-for="card in cards" :key="card.title">
+          <FlipCard :title="card.title" :description="card.description" />
         </div>
       </div>
     </div>

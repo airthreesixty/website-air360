@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white">
+  <div class="bg-gray-50">
     <div class="container py-10 lg:py-15">
       <h2 class="title2 text-center mb-5 md:mb-10">
         <ContentSlot :use="$slots.title" unwrap="p" />
