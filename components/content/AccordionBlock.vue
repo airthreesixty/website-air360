@@ -1,19 +1,17 @@
 <template>
-  <div class="bg-white">
-    <div class="w-full border-left-[5px] border-[1px] border-left-primary-600 p-5 rounded-lg shadow-sm" @click="toggle">
-      <div class="flex justify-between">
-        <h3 class="text-black-600 font-semibold">
-          <slot name="question" />
-        </h3>
-        <span><fa-icon :class="{'rotate-180': isOpen}" class="fa-xl pl-1 transform transition-all text-primary-600" :icon="['fa', 'angle-up']" /></span>
-      </div>
-      <p
-        v-show="isOpen"
-        class="mt-4 text-gray-600"
-      >
-        <slot name="answer" />
-      </p>
-    </div>
+  <div class="bg-white border-left-[5px] border-[1px] py-3 border-left-primary-600 px-5 rounded-lg shadow-sm">
+    <button class="flex justify-between w-full py-2" :aria-expanded="isOpen" data-toggle="collapse" @click="toggle">
+      <h3 class="text-black-600 text-left font-semibold transition-all text-lg">
+        <slot name="question" />
+      </h3>
+      <span><fa-icon :class="{'rotate-180': isOpen}" class="fa-xl transform transition-all text-primary-600" :icon="['fa', 'angle-up']" /></span>
+    </button>
+    <p
+      class="text-gray-600 max-h-0 overflow-hidden transition-all duration-800 ease"
+      :class="{'max-h-screen': isOpen}"
+    >
+      <slot name="answer" />
+    </p>
   </div>
 </template>
 
