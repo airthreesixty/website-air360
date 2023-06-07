@@ -7,7 +7,7 @@
       <span><fa-icon :class="{'rotate-180': isOpen}" class="fa-xl transform transition-all text-primary-600" :icon="['fa', 'angle-up']" /></span>
     </button>
     <p
-      class="text-gray-600 max-h-0 overflow-hidden transition-all duration-800 ease"
+      class="text-gray-600 max-h-0 overflow-hidden transition-all duration-400 ease"
       :class="{'max-h-screen': isOpen}"
     >
       <slot name="answer" />
