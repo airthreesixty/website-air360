@@ -30,7 +30,7 @@ Accountability and Governance
 Air360 has appointed a Data Protection Officer to monitor GDPR compliance, assess data protection risks, advise on data protection impact assessments, and cooperate with regulators.
 ::
 
-::privacy-rights
+::privacy-rights2
 #title
 Air360 Privacy Rights
 ::
@@ -44,7 +44,7 @@ Limit Access to your data
 Air360 follows strict data security regulations to ensure that we secure and limit access to your data.
 ::
 
-::security-measures
+::security-measures2
 #title
 Air360 Security Measures
 ::
