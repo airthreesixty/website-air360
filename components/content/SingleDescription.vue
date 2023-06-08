@@ -27,10 +27,9 @@
         </video>
       </div>
       <div class="md:w-[37%] md:py-7">
-        <!-- <p class="font-bold text-base my-2 lg:text-lg" :class="subtextColor">
-          <ContentSlot :use="$slots.subtext" unwrap="p" />
-        </p> -->
-        <img :src="icon" alt="" class="w-7 md:w-8 lg:w-10 mt-4" aria-hidden="true">
+        <!-- <img :src="icon" alt="" class="w-7 md:w-8 lg:w-10 mt-4" aria-hidden="true"> -->
+        <!-- <fa-icon v-if="!pro" class="text-4xl lg:text-5xl mt-4 icon-color" :icon="['fa', icon]" /> -->
+        <fa-icon class="text-4xl lg:text-5xl mt-4 icon-color" :icon="['far', icon]" />
         <h3
           class="border-deco test mb-4 mt-4 text-xl font-semibold text-black-600 text-left md:text-2xl lg:text-3xl dark:text-white"
         >
@@ -95,10 +94,6 @@ const props = defineProps({
     type: String,
     default: 'block',
   },
-  subtextColor: {
-    type: String,
-    default: 'text-primary-600',
-  },
   alt: {
     type: String,
     default: 'Picture',
@@ -127,10 +122,15 @@ const props = defineProps({
     type: Boolean,
     default: true,
   },
+  // pro: {
+  //   type: Boolean,
+  //   default: false,
+  // },
 })
 
 const theme = {
   backgroundColor: props.themeColor,
+  color: props.themeColor,
 }
 const target = ref(null)
 const showVideo = ref(false)
@@ -147,10 +147,14 @@ useIntersectionObserver(
 
 <style lang="postcss">
 .border-deco {
-  @apply after:content-[''] after:block after:w-25 after:h-[5px] after:rounded-[7px] after:static after:mt-[30px] after:;
+  @apply after:content-[''] after:block after:w-25 after:h-[4px] after:rounded-[7px] after:static after:mt-[30px] after:;
 }
 
 .test:after {
   background-color: v-bind('theme.backgroundColor');
+}
+
+.icon-color {
+  color: v-bind('theme.color');
 }
 </style>

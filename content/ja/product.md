@@ -13,7 +13,7 @@ Features
 <span class="sm:inline-block">Air360では顧客の行動を自動でトラッキングし、</span><span class="sm:inline-block">Chrome拡張機能やセッションリプレイ等様々な機能で</span><span class="sm:inline-block">簡単に顧客にとって最善のウェブサイトを目指せます。</span>
 ::
 
-::single-description{imagePath="/en/autoTracking.jpeg" alt="On-page analytics" icon="/icons/iconFlag.svg" :isShadow="false"}
+::single-description{imagePath="/en/autoTracking.jpeg" alt="On-page analytics" icon="robot-astromech" :isShadow="false"}
 #title
 自動トラッキング
 #description

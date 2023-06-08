@@ -1,4 +1,4 @@
-::single-description{imagePath="/funnel.png" imageStatus="block" imageStatus2="hidden" alt="ファネル" icon="/icons/iconFunnel.svg" themeColor="#FA734C" }
+::single-description{imagePath="/funnel.png" imageStatus="block" imageStatus2="hidden" alt="ファネル" icon="filter-circle-dollar" themeColor="#FA734C" }
 #subtext
 視覚的
 #title
@@ -8,7 +8,7 @@
 ウェブページや顧客が行ったイベントごとに、どこに離脱の原因があるかグラフで確認し、原因の全体像を把握します。
 ::
 
-::single-description{imagePath="/sunburst.png" alt="ユーザージャーニー" icon="/icons/iconCustomerJourney.svg" themeColor="#3C8BFF"}
+::single-description{imagePath="/sunburst.png" alt="ユーザージャーニー" icon="cart-shopping" themeColor="#3C8BFF"}
 #subtext
 視覚的
 #title
@@ -18,7 +18,7 @@
 ファネル分析で特定した離脱原因の大枠をもとに、離脱後の行動把握など、より詳細な顧客の行動理解が可能になります。
 ::
 
-::single-description{imagePath="/smartDescription.webp" imageStatus="block" imageStatus2="hidden" alt="ウェブページ上で分析" icon="/icons/iconOnPage.svg"}
+::single-description{imagePath="/smartDescription.webp" imageStatus="block" imageStatus2="hidden" alt="ウェブページ上で分析" icon="magnifying-glass"}
 #subtext
 直感的
 #title
@@ -29,7 +29,7 @@
 Chrome拡張機能で実際のウェブサイトと隣り合わせて分析。気になる箇所をクリックするだけで、顧客の行動心理や購買率等を明らかにできます。
 ::
 
-::single-description{imagePath="/sessionReplay.webp" alt="セッションリプレイ" icon="/icons/iconSessionReplay.svg" themeColor="#FA734C"}
+::single-description{imagePath="/sessionReplay.webp" alt="セッションリプレイ" :pro="true" icon="clapperboard-play" themeColor="#FA734C"}
 #subtext
 スマート
 #title
@@ -39,7 +39,7 @@ Chrome拡張機能で実際のウェブサイトと隣り合わせて分析。�
 顧客のウェブサイト上の行動を動画で確認可能。実際の顧客体験を確認することで、顧客の離脱原因やイライラの原因が簡単に把握できます。
 ::
 
-::single-description{imagePath="/en/userSegments.jpeg" imageStatus="block" imageStatus2="hidden" alt="On-page analytics" icon="/icons/iconStar.svg" themeColor="#3C8BFF" :isShadow="false"}
+::single-description{imagePath="/en/userSegments.jpeg" imageStatus="block" imageStatus2="hidden" alt="On-page analytics" icon="user-magnifying-glass" themeColor="#3C8BFF" :isShadow="false"}
 #title
 ユーザーセグメント
 #description
@@ -48,7 +48,7 @@ Chrome拡張機能で実際のウェブサイトと隣り合わせて分析。�
 当社の統合機能を使ってマーケティングツールに繋げて、マーケティングのためにお使いいただけます。
 ::
 
-::single-description{imagePath="/en/errorDetection.jpeg" alt="Extensive integration features" :icon="/icons/iconBubble.svg"}
+::single-description{imagePath="/en/errorDetection.jpeg" alt="Extensive integration features" :icon="message-exclamation"}
 #title
 ノーコードでエラーを検出
 #description
@@ -58,7 +58,7 @@ Google Tag ManagerでJavaScript、404、クリックエラーを追跡し、エ�
 ::
 
 
-::single-description{imagePath="/dataIntegration.webp" imageStatus="block" imageStatus2="hidden" alt="連携性" :icon="/icons/iconOpenSource.svg" themeColor="#FA734C"}
+::single-description{imagePath="/dataIntegration.webp" imageStatus="block" imageStatus2="hidden" alt="連携性" :icon="sliders" themeColor="#FA734C"}
 #subtext
 連携性
 #title

@@ -13,7 +13,7 @@ optimize the paths affecting your conversion the most and make
 it easy to create the best website for your users.
 ::
 
-::single-description{imagePath="/en/autoTracking.jpeg" alt="On-page analytics" icon="/icons/iconFlag.svg" :isShadow="false"}
+::single-description{imagePath="/en/autoTracking.jpeg" alt="On-page analytics" icon="robot-astromech" :isShadow="false"}
 #title
 Air360 Auto-tracking
 #description

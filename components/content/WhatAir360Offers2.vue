@@ -10,7 +10,7 @@
       :is-video="true"
       :video-src="videoSrc1"
       :poster="posterSrc1"
-      icon="/icons/iconCustomer.svg"
+      icon="lightbulb-on"
     >
       <template #title>
         <ContentSlot :use="$slots.title1" unwrap="p" />
@@ -26,7 +26,7 @@
       :is-video="true"
       :video-src="videoSrc2"
       :poster="posterSrc2"
-      icon="/icons/iconSmile.svg"
+      icon="message-smile"
       theme-color="#FA734C"
     >
       <template #title>
@@ -39,7 +39,7 @@
     <SingleDescription
       :image-path="image"
       :alt="$t('how-air360-helps3')"
-      icon="/icons/iconQuick.svg"
+      icon="cart-shopping-fast"
       theme-color="#3C8BFF"
       :is-shadow="false"
     >
