@@ -27,8 +27,6 @@
         </video>
       </div>
       <div class="md:w-[37%] md:py-7">
-        <!-- <img :src="icon" alt="" class="w-7 md:w-8 lg:w-10 mt-4" aria-hidden="true"> -->
-        <!-- <fa-icon v-if="!pro" class="text-4xl lg:text-5xl mt-4 icon-color" :icon="['fa', icon]" /> -->
         <fa-icon class="text-4xl lg:text-5xl mt-4 icon-color" :icon="['far', icon]" />
         <h3
           class="border-deco test mb-4 mt-4 text-xl font-semibold text-black-600 text-left md:text-2xl lg:text-3xl dark:text-white"
@@ -122,10 +120,6 @@ const props = defineProps({
     type: Boolean,
     default: true,
   },
-  // pro: {
-  //   type: Boolean,
-  //   default: false,
-  // },
 })
 
 const theme = {
