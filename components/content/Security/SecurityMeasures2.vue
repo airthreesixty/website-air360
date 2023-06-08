@@ -9,7 +9,7 @@
       <div class="p-4 mt-8 rounded-lg sm:p-12 lg:mt-16 bg-gray-50 dark:bg-gray-800">
         <div class="grid grid-cols-1 gap-8 sm:gap-12 lg:grid-cols-2">
           <div v-for="{title, description} in cards" :key="title" class="flex flex-col items-start gap-4 sm:gap-5 sm:flex-row">
-            <div class="bg-gray-100 dark:bg-gray-700 rounded-full w-16 h-16 lg:w-24 lg:h-24 flex items-center justify-center shrink-0">
+            <div class="bg-gray-100 p-4 lg:p-6 rounded-full">
               <svg
                 aria-hidden="true"
                 class="w-10 lg:w-12 h-10 lg:h-12 text-primary-600 dark:text-primary-500"

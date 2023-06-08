@@ -6,12 +6,12 @@
         <h1 class="title1 my-5 font-bold text-black-600">
           <ContentSlot :use="$slots.title" unwrap="p" />
         </h1>
-        <p class="text-gray-500 lg:text-lg xl:text-xl max-w-[550px] xl:leading-8">
+        <p class="text-gray-500 lg:text-lg xl:text-xl xl:leading-8">
           <ContentSlot :use="$slots.description" unwrap="p" />
         </p>
       </div>
       <div class="">
-        <nuxt-img format="webp" src="/security/heroImage.png" class="lg:w-140 mx-auto" />
+        <nuxt-img format="webp" src="/security/heroImage.png" class="lg:w-135" />
       </div>
     </div>
   </div>

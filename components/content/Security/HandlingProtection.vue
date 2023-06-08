@@ -5,10 +5,10 @@
         <h2 class="title2 mb-5 mt-2 md:text-left">
           <ContentSlot :use="$slots.title" unwrap="p" />
         </h2>
-        <span class="font-bold text-primary-600 lg:text-lg">
+        <span class="font-bold text-primary-600">
           <ContentSlot :use="$slots.subtitle" unwrap="p" />
         </span>
-        <p class="text-gray-600 lg:text-lg">
+        <p class="text-gray-500 lg:text-lg">
           <ContentSlot :use="$slots.description" unwrap="p" />
         </p>
       </div>
