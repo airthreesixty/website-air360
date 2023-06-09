@@ -42,7 +42,7 @@ const slides = [
 
 <style scoped>
 .bg-slider {
-    background-image: linear-gradient(160.87deg, #2D92E9 4.15%, #644AD5 22.36%, #C141AC 41.56%, #E72192 61.75%, #F04D66 78.49%, #FD7043 98.68%);
+  background-image: linear-gradient(101.13deg, #FD7043 0%, #F04D66 19.06%, #E72192 50.04%, #C141AC 71.33%, #644AD5 99.11%, #2D92E9 100.63%);
 }
 
 .autoplay-slider{

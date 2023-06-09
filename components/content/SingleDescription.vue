@@ -48,9 +48,19 @@
         >
           <ContentSlot :use="$slots.description3" unwrap="p" />
         </p>
-        <div>
-          <Dropdown text="Auto-Tracking">
+        <div class="mb-2">
+          <Dropdown :text="dropdownTitle">
             <slot name="dropdownDesc" />
+          </Dropdown>
+        </div>
+        <div class="mb-2">
+          <Dropdown text="dropdownTitle2">
+            <slot name="dropdownDesc" />
+          </Dropdown>
+        </div>
+        <div>
+          <Dropdown :text="dropdownTitle">
+            <!-- <slot name="dropdownDesc" /> -->
           </Dropdown>
         </div>
       </div>
@@ -124,6 +134,10 @@ const props = defineProps({
   isShadow: {
     type: Boolean,
     default: true,
+  },
+  dropdownTitle: {
+    type: String,
+    required: true,
   },
 })
 

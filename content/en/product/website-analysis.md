@@ -11,9 +11,12 @@ Increase conversion, unlock missed revenue, and turn frustrated users into loyal
 ::slider
 ::
 
-::single-description{imagePath="/en/autoTracking.jpeg" alt="On-page analytics" icon="robot-astromech" :isShadow="false"}
+::single-description{imagePath="/en/autoTracking.jpeg" alt="On-page analytics" icon="robot-astromech" :isShadow="false" dropdownTitle="Auto-Tracking"}
 #title
 Air360 Auto-tracking
 #dropdownDesc
-Hell
+Capture what you didn’t know you needed to track by  simply installing the Air360 Pixel.
+
+<br />
+Air360 not only tracks user interactions( clicks, scrolls, page views, mouse movements...), but also all eCommerce and digital marketing KPIs simultaneously by default.
 ::
