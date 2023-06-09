@@ -1,5 +1,5 @@
 <template>
-  <div class="container pt-10 md:pb-10 lg:pt-14">
+  <div class="container pt-10 pb-6 md:pb-10 lg:pt-14">
     <div class="md:(grid grid-cols-2)">
       <div class="text-center md:text-left">
         <span class="font-bold text-primary-600 text-base"><ContentSlot :use="$slots.subtext" unwrap="p" /></span>
@@ -10,7 +10,7 @@
           <ContentSlot :use="$slots.description" unwrap="p" />
         </p>
         <div class="flex justify-center md:justify-start">
-          <div class="w-52 my-5">
+          <div class="w-52 my-5 md:mb-0">
             <ButtonPrimary theme="primary">
               Request a demo
             </ButtonPrimary>
