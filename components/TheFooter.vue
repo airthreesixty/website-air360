@@ -75,10 +75,17 @@
                 target="_blank"
               >{{ $t("careers") }}<fa-icon class="fa-sm pl-1" :icon="['fas', 'arrow-up-right-from-square']" /></a>
             </li>
-            <li>
+            <li class="mb-4">
               <NuxtLink :to="localePath('/privacy-policy')">
                 <div class="hover:underline">
                   {{ $t("privacy-policy.title") }}
+                </div>
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink :to="localePath('/security-compliance')">
+                <div class="hover:underline">
+                  {{ $t("security.title") }}
                 </div>
               </NuxtLink>
             </li>

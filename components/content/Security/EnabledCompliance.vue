@@ -54,7 +54,7 @@
           </div>
         </div>
       </div>
-      <nuxt-img class="mb-4 w-full lg:mb-0 rounded-lg" src="/boostConversion.png" alt="" />
+      <nuxt-img class="mb-4 w-full md:w-3/4 lg:w-full lg:mb-0" src="/gdpr.jpeg" format="webp" alt="GDPR" />
     </div>
   </section>
 </template>
