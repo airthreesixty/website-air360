@@ -10,3 +10,10 @@ Increase conversion, unlock missed revenue, and turn frustrated users into loyal
 
 ::slider
 ::
+
+::single-description{imagePath="/en/autoTracking.jpeg" alt="On-page analytics" icon="robot-astromech" :isShadow="false"}
+#title
+Air360 Auto-tracking
+#dropdownDesc
+Hell
+::

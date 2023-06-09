@@ -48,6 +48,11 @@
         >
           <ContentSlot :use="$slots.description3" unwrap="p" />
         </p>
+        <div>
+          <Dropdown text="Auto-Tracking">
+            <slot name="dropdownDesc" />
+          </Dropdown>
+        </div>
       </div>
       <div :class="`hidden md:${imageStatus2} md:mt-0 md:flex md:w-[58%] md:p-5`">
         <nuxt-img

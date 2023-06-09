@@ -4,7 +4,7 @@
       <h3 class="text-black-600 text-left font-semibold transition-all text-lg lg:text-xl">
         <slot name="question" />
       </h3>
-      <span><fa-icon :class="{'rotate-180': isOpen}" class="fa-xl transform transition-all text-primary-600" :icon="['fa', 'angle-up']" /></span>
+      <span><fa-icon :class="{'rotate-180': isOpen}" class="fa-xl transform transition-all text-primary-600" :icon="['far', 'angle-down']" /></span>
     </button>
     <p
       class="text-gray-600 max-h-0 overflow-hidden transition-all duration-400 ease"
