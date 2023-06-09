@@ -13,7 +13,7 @@
         </p>
       </div>
       <div class="max-w-[250px] mx-auto lg:max-w-[350px]">
-        <nuxt-img src="/database.jpeg" format="webp" alt="database" />
+        <nuxt-img src="/database.jpeg" format="webp" alt="database" loading="lazy" />
       </div>
     </div>
   </div>

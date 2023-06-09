@@ -11,7 +11,7 @@
         </p>
       </div>
       <div class="max-w-[500px] mx-auto">
-        <nuxt-img format="webp" src="/security/heroImage.png" class="lg:w-135" />
+        <nuxt-img format="webp" src="/security/heroImage.png" class="" loading="lazy" sizes="xl:1390px lg:1034px md:754px sm:1184px xs:277px" />
       </div>
     </div>
   </div>
