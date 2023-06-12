@@ -34,21 +34,11 @@
           <ContentSlot :use="$slots.title" unwrap="p" />
         </h3>
         <p
-          class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-base lg:text-lg xl:leading-8 dark:text-gray-400"
+          v-for="(description, index) in descriptions"
+          :key="index"
+          class="max-w-2xl mb-6 font-light text-gray-500 md:text-base lg:text-xl xl:leading-8 dark:text-gray-400"
         >
-          <ContentSlot :use="$slots.description" unwrap="p" />
-        </p>
-        <p
-          v-if="$slots.description2"
-          class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-base lg:text-xl xl:leading-8 dark:text-gray-400"
-        >
-          <ContentSlot :use="$slots.description2" unwrap="p" />
-        </p>
-        <p
-          v-if="$slots.description3"
-          class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-base lg:text-xl xl:leading-8 dark:text-gray-400"
-        >
-          <ContentSlot :use="$slots.description3" unwrap="p" />
+          <ContentSlot :use="description" unwrap="p" />
         </p>
         <Dropdown :text="dropdownTitle">
           <template #dropdownDesc>
@@ -88,6 +78,14 @@
 
 <script setup lang="ts">
 import { useIntersectionObserver } from '@vueuse/core'
+
+const slots = useSlots()
+
+const descriptions = [
+  slots.description,
+  slots.description2,
+  slots.description3,
+]
 
 const props = defineProps({
   imagePath: {
