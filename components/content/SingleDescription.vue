@@ -29,20 +29,29 @@
       <div class="md:w-[37%] md:py-7">
         <fa-icon class="text-4xl lg:text-5xl mt-4 icon-color" :icon="['far', icon]" />
         <h3
-          class="border-deco test mb-4 mt-4 text-xl font-semibold text-black-600 text-left md:text-2xl lg:text-3xl dark:text-white"
+          class="border-deco test mb-4 mt-4 text-xl font-semibold text-black-600 text-left md:text-2xl lg:text-3xl"
         >
           <ContentSlot :use="$slots.title" unwrap="p" />
         </h3>
         <p
           v-for="(description, index) in descriptions"
           :key="index"
-          class="max-w-2xl mb-6 font-light text-gray-500 md:text-base lg:text-xl xl:leading-8 dark:text-gray-400"
+          class="max-w-2xl mt-5 font-light text-gray-500 md:text-base lg:text-xl xl:leading-8"
         >
           <ContentSlot :use="description" unwrap="p" />
+          <br v-if="(index + 1) !== numberOfDescriptions">
         </p>
-        <Dropdown :text="dropdownTitle">
+        <!-- <Dropdown :text="dropdownTitle">
           <template #dropdownDesc>
             <ContentSlot :use="$slots.dropdownDesc" />
+          </template>
+          <template #dropdownDesc2>
+            <ContentSlot :use="$slots.dropdownDesc2" />
+          </template>
+        </Dropdown> -->
+        <Dropdown text="Hello">
+          <template #dropdownDesc1>
+            <ContentSlot :use="$slots.dropdownDesc1" />
           </template>
           <template #dropdownDesc2>
             <ContentSlot :use="$slots.dropdownDesc2" />
@@ -81,11 +90,28 @@ import { useIntersectionObserver } from '@vueuse/core'
 
 const slots = useSlots()
 
-const descriptions = [
-  slots.description,
-  slots.description2,
-  slots.description3,
-]
+const descriptions = computed(() => {
+  if (slots.description && slots.description2 && slots.description3) {
+    return [
+      slots.description,
+      slots.description2,
+      slots.description3,
+    ]
+  } else if (slots.description && slots.description2) {
+    return [
+      slots.description,
+      slots.description2,
+    ]
+  } else {
+    return [slots.description]
+  }
+})
+
+const numberOfDescriptions = computed(() => {
+  return descriptions.value.length
+})
+
+console.log(numberOfDescriptions.value)
 
 const props = defineProps({
   imagePath: {
@@ -127,10 +153,6 @@ const props = defineProps({
   isShadow: {
     type: Boolean,
     default: true,
-  },
-  dropdownTitle: {
-    type: String,
-    required: true,
   },
 })
 
