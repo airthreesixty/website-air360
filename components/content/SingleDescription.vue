@@ -41,15 +41,7 @@
           <ContentSlot :use="description" unwrap="p" />
           <br v-if="(index + 1) !== numberOfDescriptions">
         </p>
-        <!-- <Dropdown :text="dropdownTitle">
-          <template #dropdownDesc>
-            <ContentSlot :use="$slots.dropdownDesc" />
-          </template>
-          <template #dropdownDesc2>
-            <ContentSlot :use="$slots.dropdownDesc2" />
-          </template>
-        </Dropdown> -->
-        <Dropdown text="Hello">
+        <Dropdown :text="dropdownTitle">
           <template #dropdownDesc1>
             <ContentSlot :use="$slots.dropdownDesc1" />
           </template>
@@ -153,6 +145,10 @@ const props = defineProps({
   isShadow: {
     type: Boolean,
     default: true,
+  },
+  dropdownTitle: {
+    type: String,
+    required: true,
   },
 })
 
