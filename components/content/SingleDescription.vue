@@ -34,35 +34,30 @@
           <ContentSlot :use="$slots.title" unwrap="p" />
         </h3>
         <p
-          class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-base lg:text-xl xl:leading-8 dark:text-gray-400"
+          class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-base lg:text-lg xl:leading-8 dark:text-gray-400"
         >
           <ContentSlot :use="$slots.description" unwrap="p" />
         </p>
         <p
+          v-if="$slots.description2"
           class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-base lg:text-xl xl:leading-8 dark:text-gray-400"
         >
           <ContentSlot :use="$slots.description2" unwrap="p" />
         </p>
         <p
+          v-if="$slots.description3"
           class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-base lg:text-xl xl:leading-8 dark:text-gray-400"
         >
           <ContentSlot :use="$slots.description3" unwrap="p" />
         </p>
-        <div class="mb-2">
-          <Dropdown :text="dropdownTitle">
-            <slot name="dropdownDesc" />
-          </Dropdown>
-        </div>
-        <div class="mb-2">
-          <Dropdown text="dropdownTitle2">
-            <slot name="dropdownDesc" />
-          </Dropdown>
-        </div>
-        <div>
-          <Dropdown :text="dropdownTitle">
-            <!-- <slot name="dropdownDesc" /> -->
-          </Dropdown>
-        </div>
+        <Dropdown :text="dropdownTitle">
+          <template #dropdownDesc>
+            <ContentSlot :use="$slots.dropdownDesc" />
+          </template>
+          <template #dropdownDesc2>
+            <ContentSlot :use="$slots.dropdownDesc2" />
+          </template>
+        </Dropdown>
       </div>
       <div :class="`hidden md:${imageStatus2} md:mt-0 md:flex md:w-[58%] md:p-5`">
         <nuxt-img

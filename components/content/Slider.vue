@@ -31,7 +31,7 @@ const slides = [
   },
   {
     name: 'Dashboards',
-    icon: 'cart-shopping',
+    icon: 'square-kanban',
   },
   {
     name: 'Auto-Tracking',

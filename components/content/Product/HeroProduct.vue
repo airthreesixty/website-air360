@@ -11,7 +11,7 @@
         </p>
         <div class="flex justify-center md:justify-start">
           <div class="w-52 my-5 md:mb-0">
-            <ButtonPrimary theme="primary">
+            <ButtonPrimary theme="primary" slug="/request-demo">
               Request a demo
             </ButtonPrimary>
           </div>

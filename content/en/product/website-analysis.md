@@ -13,10 +13,11 @@ Increase conversion, unlock missed revenue, and turn frustrated users into loyal
 
 ::single-description{imagePath="/en/autoTracking.jpeg" alt="On-page analytics" icon="robot-astromech" :isShadow="false" dropdownTitle="Auto-Tracking"}
 #title
-Air360 Auto-tracking
+Air360 simplifies data collection
+#description
+Air360 is a codeless & tagless solution so easy to set up anybody could do it. Forget about  making efforts on  tagging, mapping or grouping ever again. 
 #dropdownDesc
-Capture what you didn’t know you needed to track by  simply installing the Air360 Pixel.
-
-<br />
+Capture what you didn’t know you needed to track by  simply installing the Air360 Pixel. 
+#dropdownDesc2
 Air360 not only tracks user interactions( clicks, scrolls, page views, mouse movements...), but also all eCommerce and digital marketing KPIs simultaneously by default.
 ::
