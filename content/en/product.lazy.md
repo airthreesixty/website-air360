@@ -11,7 +11,7 @@ tagging allowing a big level of detail.
 User journey
 #description
 Not just another sunburst, the only user journey that tells it all.
-#description2
+
 Visualize user paths by page view and by user interactions (clicks, scrolls, errors, ...) and discover why your users are not converting.
 ::
 
@@ -20,7 +20,7 @@ Visualize user paths by page view and by user interactions (clicks, scrolls, err
 On-page analytics
 #description
 Forget about useless heatmaps and get real on-page insights.
-#description2
+
 An additional interface loved business profiles  that will allow you to retrieve business, engagement, & frustration metrics with a simple click on your website.
 ::
 
@@ -38,7 +38,7 @@ User segments
 Create, export and activate your segments with Air360. Our technology allows you to filter all 
 users by any specific criteria like purchase behavior, user journeys, frustration or engagement with your 
 website, events and page views, even by sequence of events.
-#description2
+
 Create the segments and push them to your MarTech stack through our integrations.
 ::
 
@@ -47,9 +47,9 @@ Create the segments and push them to your MarTech stack through our integrations
 No code error detection
 #description
 Track JavaScript , 404, & Click errors via Google Tag Manager to understand the impact of errors on your audience.
-#description2
+
 Use error events inside funnels & user journeys to reveal the segments of users impacted by specific errors.
-#description3
+
 Create & Export error impacted segments and push them to your MarTech.
 ::
 

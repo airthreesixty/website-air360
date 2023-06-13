@@ -42,3 +42,12 @@ Track JavaScript , 404, & Click errors via Google Tag Manager to understand the 
 Create & Export error impacted segments and push them to your MarTech.
 ::
 ::
+
+::single-description{imagePath="/en/product/define.png" alt="" icon="tags" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C"}
+#title
+Your users at the heart of Air360
+#description
+Air360 allows you to have an unified user vision  weather you are collecting data from multiple devices or domains.  
+
+Create high quality first-party data segments that can be pushed to your tech stack, or used in your analysis.
+::

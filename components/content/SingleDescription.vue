@@ -33,14 +33,9 @@
         >
           <ContentSlot :use="$slots.title" unwrap="p" />
         </h3>
-        <p
-          v-for="(description, index) in descriptions"
-          :key="index"
-          class="max-w-2xl mt-5 font-light text-gray-500 md:text-base lg:text-xl xl:leading-8"
-        >
-          <ContentSlot :use="description" unwrap="p" />
-          <br v-if="(index + 1) !== numberOfDescriptions">
-        </p>
+        <div class="max-w-2xl mt-5 prose font-light text-gray-500 md:text-base lg:text-xl xl:leading-8">
+          <slot name="description" />
+        </div>
         <slot name="dropdowns" />
       </div>
       <div :class="`hidden md:${imageStatus2} md:mt-0 md:flex md:w-[58%] md:p-5`">
@@ -72,31 +67,6 @@
 
 <script setup lang="ts">
 import { useIntersectionObserver } from '@vueuse/core'
-
-const slots = useSlots()
-
-const descriptions = computed(() => {
-  if (slots.description && slots.description2 && slots.description3) {
-    return [
-      slots.description,
-      slots.description2,
-      slots.description3,
-    ]
-  } else if (slots.description && slots.description2) {
-    return [
-      slots.description,
-      slots.description2,
-    ]
-  } else {
-    return [slots.description]
-  }
-})
-
-const numberOfDescriptions = computed(() => {
-  return descriptions.value.length
-})
-
-console.log(numberOfDescriptions.value)
 
 const props = defineProps({
   imagePath: {

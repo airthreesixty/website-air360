@@ -18,7 +18,7 @@ it easy to create the best website for your users.
 Air360 Auto-tracking
 #description
 Capture what you didn’t know you needed to track simply installing the Air360 Pixel.
-#description2
+
 Our codeless and tag-less solution not only 
 tracks user interactions( clicks, scrolls, 
 page views, mouse movements...), but 
