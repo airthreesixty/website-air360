@@ -65,25 +65,21 @@ What data is collected?
 #answer3
 We automatically track every single interaction your users may have on your site.
 
-- ・Clicks
-- ・Scrolling
-- ・Mouse over
-- ・Pageview
+- Clicks
+- Scrolling
+- Mouse over
+- Pageview
 
-<br />
 There is only one exception. We will never record what the user types in any text area of your website or app. This is for a very simple reason: We can never know how this information is.
 
-<br />
-<br />
 We also collect information from users’ browsers as:
 
-- ・Browser language
-- ・Platform
-- ・Device
-- ・Operating system
-- ・IP address (*)
+- Browser language
+- Platform
+- Device
+- Operating system
+- IP address (*)
 
-<br />
 (*) IP address is only used to retrieve user’s geolocation, but it is not stored in our database.
 
 #question4
