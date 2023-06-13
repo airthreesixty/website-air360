@@ -33,9 +33,10 @@
         >
           <ContentSlot :use="$slots.title" unwrap="p" />
         </h3>
-        <div class="max-w-2xl mt-5 prose font-light text-gray-500 md:text-base lg:text-xl xl:leading-8">
+        <div class="max-w-2xl mt-5 font-light prose text-gray-500 md:text-base lg:text-xl xl:leading-8">
           <slot name="description" />
         </div>
+
         <slot name="dropdowns" />
       </div>
       <div :class="`hidden md:${imageStatus2} md:mt-0 md:flex md:w-[58%] md:p-5`">
@@ -108,10 +109,6 @@ const props = defineProps({
   isShadow: {
     type: Boolean,
     default: true,
-  },
-  dropdownTitle: {
-    type: String,
-    required: true,
   },
 })
 
