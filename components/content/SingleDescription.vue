@@ -41,14 +41,7 @@
           <ContentSlot :use="description" unwrap="p" />
           <br v-if="(index + 1) !== numberOfDescriptions">
         </p>
-        <Dropdown :text="dropdownTitle">
-          <template #dropdownDesc1>
-            <ContentSlot :use="$slots.dropdownDesc1" />
-          </template>
-          <template #dropdownDesc2>
-            <ContentSlot :use="$slots.dropdownDesc2" />
-          </template>
-        </Dropdown>
+        <slot name="dropdowns" />
       </div>
       <div :class="`hidden md:${imageStatus2} md:mt-0 md:flex md:w-[58%] md:p-5`">
         <nuxt-img
