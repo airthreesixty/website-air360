@@ -6,7 +6,7 @@
         <span><fa-icon :class="{'rotate-180': isOpen}" class="text-2xl ml-1 transform transition-all text-primary-600" :icon="['far', 'angle-down']" /></span>
       </div>
     </button>
-    <div v-if="isOpen" class="text-gray-600 prose mt-3">
+    <div :class="{'max-h-screen': isOpen}" class="text-gray-500 prose max-h-0 overflow-hidden transition-all duration-400 ease mt-3">
       <slot name="description" />
     </div>
   </div>
