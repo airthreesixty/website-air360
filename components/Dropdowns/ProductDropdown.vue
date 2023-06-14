@@ -1,5 +1,5 @@
 <template>
-  <nav class="dropdown w-100">
+  <nav class="dropdown w-91">
     <div class="grid grid-cols-2">
       <div>
         <div class="font-bold text-black-600">
