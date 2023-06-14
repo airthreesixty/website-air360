@@ -130,6 +130,9 @@ Identify segments that are more relevant for your business, and  push them out  
 ::
 ::
 
+::mobile-privacy
+::
+
 ::testimonial2
 #title
 "For a company seeking rapid growth, Conversion Rate Optimization (CRO) is simply a must-have. CRO is the most important marketing activity because it makes every visitor exponentially more valuable."
