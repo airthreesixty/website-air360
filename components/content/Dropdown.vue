@@ -15,7 +15,6 @@
 <script setup lang="ts">
 interface Props {
   index: number
-  collapseStatus: boolean[]
 }
 
 const props = defineProps<Props>()
