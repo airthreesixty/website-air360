@@ -59,7 +59,7 @@
             class="flex flex-col pb-2 mt-4 border items-center border-none lg:(flex-row space-x-8 mt-0 text-base font-medium border-0 p-4)"
             :class="{ 'w-2/3 text-center mx-auto items-stretch': isActive }"
           >
-            <li :class="{ 'border-b border-gray-100 py-1': isActive }" class="relative">
+            <li :class="{ 'border-b border-gray-100 py-1': isActive }" class="relative hidden lg:block">
               <!-- <NuxtLink :to="localePath('/product')" class="menu__link svg">
                 {{ $t("product.title") }} <fa-icon :icon="['far', 'angle-down']" />
               </NuxtLink> -->
@@ -68,6 +68,11 @@
                 {{ $t("product.title") }}
               </button>
               <DropdownsProductDropdown v-show="isProductActive" />
+            </li>
+            <li :class="{ 'border-b border-gray-100 py-1': isActive }" class="lg:hidden">
+              <NuxtLink :to="localePath('/product/website-analysis')" class="menu__link">
+                {{ $t("product.title") }}
+              </NuxtLink>
             </li>
             <li :class="{ 'border-b border-gray-100 py-1': isActive }" class="relative hidden lg:block">
               <button class="menu__link" aria-controls="inspiration-modal" :aria-expanded="isInspirationActive" @click="toggleInspiration">
