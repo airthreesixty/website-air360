@@ -13,3 +13,12 @@ Available for:
 
 ::slider
 ::
+
+::mobile-insights
+#description1
+Uncover poor app experiences
+#description2
+Prioritize quick wins
+#description3
+Watch app revenue grow
+::
