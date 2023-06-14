@@ -7,13 +7,13 @@
         </div>
         <div class="text-sm text-black-600 mt-4">
           <span><fa-icon class="text-lg text-primary-600 w-5 mr-2" :icon="['far', 'laptop']" /></span>
-          <NuxtLink :to="localePath('/product/website-analysis')">
+          <NuxtLink :to="localePath('/product/website-analysis')" class="hover:(text-primary-600 text-shadow-primary)">
             Website analysis
           </NuxtLink>
         </div>
         <div class="text-sm text-black-600 mt-4">
           <span><fa-icon class="text-lg text-orange-600 w-5 mr-2" :icon="['far', 'mobile']" /></span>
-          <NuxtLink :to="localePath('/product/app-analysis')">
+          <NuxtLink :to="localePath('/product/app-analysis')" class="hover:(text-primary-600 text-shadow-primary)">
             App analysis
           </NuxtLink>
         </div>
@@ -24,7 +24,7 @@
         </div>
         <div class="text-sm text-black-600 mt-4">
           <span><fa-icon class="text-lg text-blue-400 mr-2" :icon="['far', 'file-contract']" /></span>
-          <NuxtLink :to="localePath('/security-compliance')">
+          <NuxtLink :to="localePath('/security-compliance')" class="hover:(text-primary-600 text-shadow-primary)">
             Security & Compliance
           </NuxtLink>
         </div>
