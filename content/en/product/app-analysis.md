@@ -15,6 +15,8 @@ Available for:
 ::
 
 ::mobile-insights
+#title
+Mobile insights that will help you make better decisions
 #description1
 Uncover poor app experiences
 #description2
@@ -29,6 +31,8 @@ Easy data collection with Air360 SDK
 ::
 
 ::mobile-features
+#title
+Air360 features for mobile apps
 ::
 
 ::single-description{imagePath="/en/autoTracking.jpeg" alt="On-page analytics" icon="robot-astromech" :isShadow="false"}
@@ -131,6 +135,8 @@ Identify segments that are more relevant for your business, and  push them out  
 ::
 
 ::mobile-privacy
+#title
+We take privacy very seriously    
 ::
 
 ::testimonial2

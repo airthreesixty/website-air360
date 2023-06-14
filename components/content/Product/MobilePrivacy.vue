@@ -2,7 +2,7 @@
   <section class="bg-white container">
     <div class="bg-gray-50 px-4 py-8 text-center rounded-3xl sm:py-16">
       <h2 class="mb-10 md:mb-15 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-        We take privacy very seriously
+        <ContentSlot :use="$slots.title" />
       </h2>
       <div class="mt-8 lg:mt-12 space-y-8 md:grid md:grid-cols-3 md:gap-12 md:space-y-0">
         <div v-for="{title, icon} in cards" :key="title">
@@ -17,17 +17,19 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n()
+
 const cards = [
   {
-    title: 'GDPR compliant',
+    title: t('mobile-privacy.gdpr'),
     icon: 'file-contract',
   },
   {
-    title: 'Privacy by default approach',
+    title: t('mobile-privacy.privacy'),
     icon: 'user-secret',
   },
   {
-    title: 'Opt-in / Opt-out enabled',
+    title: t('mobile-privacy.opt'),
     icon: 'message-check',
   },
 ]

@@ -194,7 +194,7 @@
     "easyData": {
       "card1": {
         "title": "Auto-Tracking",
-        "desc": "Track every single interaction :screen view, single tap, double tap, swipe, pinch,.."
+        "desc": "Track every single interaction :screen view, single tap, double tap, swipe, pinch..."
       },
       "card2": {
         "title": "App crashes &  errors",
@@ -208,5 +208,18 @@
         "title": "Retroactive",
         "desc": "Our tagless technology allows you to keep track of all your user behaviors from the day Air360 was installed."
       }
+  },
+  "slides": {
+    "user-journey": "User Journey",
+    "on-page": "On-Page Analysis",
+    "session-replay": "Session Replay",
+    "funnels": "Funnels",
+    "dashboards": "Dashboards",
+    "auto-tracking": "Auto-Tracking"
+  },
+  "mobile-privacy": {
+    "gdpr": "GDPR compliant",
+    "privacy": "Privacy by default approach",
+    "opt": "Opt-in / Opt-out enabled"
   }
 }

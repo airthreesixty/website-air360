@@ -13,7 +13,7 @@
           <div class="flex flex-col mt-5 md:flex-row md:gap-4">
             <div class="w-52 md:mb-0">
               <ButtonPrimary theme="primary" slug="/request-demo">
-                Request a demo
+                {{ $t("request-demo.title") }}
               </ButtonPrimary>
             </div>
             <p v-if="app" class="mt-2 md:mt-0 text-black-600 flex items-center justify-center">

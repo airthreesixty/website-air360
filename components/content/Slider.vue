@@ -12,29 +12,31 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n()
+
 const slides = [
   {
-    name: 'User Journey',
+    name: t('slides.user-journey'),
     icon: 'cart-shopping',
   },
   {
-    name: 'On-Page Analysis',
+    name: t('slides.on-page'),
     icon: 'user-magnifying-glass',
   },
   {
-    name: 'Session Replay',
+    name: t('slides.session-replay'),
     icon: 'clapperboard-play',
   },
   {
-    name: 'Funnels',
+    name: t('slides.funnels'),
     icon: 'filter-circle-dollar',
   },
   {
-    name: 'Dashboards',
+    name: t('slides.dashboards'),
     icon: 'square-kanban',
   },
   {
-    name: 'Auto-Tracking',
+    name: t('slides.auto-tracking'),
     icon: 'robot-astromech',
   },
 ]
