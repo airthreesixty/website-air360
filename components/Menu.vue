@@ -63,11 +63,11 @@
               <!-- <NuxtLink :to="localePath('/product')" class="menu__link svg">
                 {{ $t("product.title") }} <fa-icon :icon="['far', 'angle-down']" />
               </NuxtLink> -->
-              <button class="menu__link" aria-controls="product-modal" :aria-expanded="isProductActive" @click="toggleInspiration">
+              <button class="menu__link" aria-controls="product-modal" :aria-expanded="isProductActive" @click="toggleProduct">
                 <span class="sr-only">Open Product menu</span>
                 {{ $t("product.title") }}
               </button>
-              <DropdownsProductDropdown />
+              <DropdownsProductDropdown v-show="isProductActive" />
             </li>
             <li :class="{ 'border-b border-gray-100 py-1': isActive }" class="relative hidden lg:block">
               <button class="menu__link" aria-controls="inspiration-modal" :aria-expanded="isInspirationActive" @click="toggleInspiration">
@@ -130,7 +130,7 @@ const route = useRoute()
 const isActive = ref(false)
 const isLangActive = ref(false)
 const isInspirationActive = ref(false)
-const isProductActive = ref(true)
+const isProductActive = ref(false)
 
 const isHomepage = computed(() => getPathWithoutLocale(route.fullPath) === '/')
 
@@ -138,16 +138,26 @@ const toggleMenu = () => {
   isActive.value = !isActive.value
   isLangActive.value = false
   isInspirationActive.value = false
+  isProductActive.value = false
 }
 
 const toggleLang = () => {
   isLangActive.value = !isLangActive.value
   isActive.value = false
   isInspirationActive.value = false
+  isProductActive.value = false
 }
 
 const toggleInspiration = () => {
   isInspirationActive.value = !isInspirationActive.value
+  isLangActive.value = false
+  isActive.value = false
+  isProductActive.value = false
+}
+
+const toggleProduct = () => {
+  isProductActive.value = !isProductActive.value
+  isInspirationActive.value = false
   isLangActive.value = false
   isActive.value = false
 }
