@@ -59,10 +59,15 @@
             class="flex flex-col pb-2 mt-4 border items-center border-none lg:(flex-row space-x-8 mt-0 text-base font-medium border-0 p-4)"
             :class="{ 'w-2/3 text-center mx-auto items-stretch': isActive }"
           >
-            <li :class="{ 'border-b border-gray-100 py-1': isActive }">
-              <NuxtLink :to="localePath('/product')" class="menu__link">
+            <li :class="{ 'border-b border-gray-100 py-1': isActive }" class="relative">
+              <!-- <NuxtLink :to="localePath('/product')" class="menu__link svg">
+                {{ $t("product.title") }} <fa-icon :icon="['far', 'angle-down']" />
+              </NuxtLink> -->
+              <button class="menu__link" aria-controls="product-modal" :aria-expanded="isProductActive" @click="toggleInspiration">
+                <span class="sr-only">Open Product menu</span>
                 {{ $t("product.title") }}
-              </NuxtLink>
+              </button>
+              <DropdownsProductDropdown />
             </li>
             <li :class="{ 'border-b border-gray-100 py-1': isActive }" class="relative hidden lg:block">
               <button class="menu__link" aria-controls="inspiration-modal" :aria-expanded="isInspirationActive" @click="toggleInspiration">
@@ -125,6 +130,8 @@ const route = useRoute()
 const isActive = ref(false)
 const isLangActive = ref(false)
 const isInspirationActive = ref(false)
+const isProductActive = ref(true)
+
 const isHomepage = computed(() => getPathWithoutLocale(route.fullPath) === '/')
 
 const toggleMenu = () => {
