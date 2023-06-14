@@ -1,6 +1,6 @@
 <template>
   <section class="bg-white container">
-    <div class="bg-gray-50 py-8 text-center rounded-3xl sm:py-16">
+    <div class="bg-gray-50 px-4 py-8 text-center rounded-3xl sm:py-16">
       <h2 class="mb-10 md:mb-15 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
         We take privacy very seriously
       </h2>
