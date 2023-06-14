@@ -190,5 +190,23 @@
   "security": {
     "title": "Security & Compliance",
     "desc": "We are fully committed to providing features that help you be compliant with GDPR by taking a privacy by design approach. As well as partnering with the best in class security providers to keep all your data safe."
+  },
+    "easyData": {
+      "card1": {
+        "title": "Auto-Tracking",
+        "desc": "Track every single interaction :screen view, single tap, double tap, swipe, pinch,.."
+      },
+      "card2": {
+        "title": "App crashes &  errors",
+        "desc": "Understand crashes better than ever. Automatically track errors, see the root cause to fix them right ahead."
+      },
+      "card3": {
+        "title": "Non-Sampled",
+        "desc": "Capture 100% of your data. Our Auto-tracking technology does not sample."
+      },
+      "card4": {
+        "title": "Retroactive",
+        "desc": "Our tagless technology allows you to keep track of all your user behaviors from the day Air360 was installed."
+      }
   }
 }
