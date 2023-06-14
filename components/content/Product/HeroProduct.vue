@@ -6,14 +6,20 @@
         <h1 class="title1 my-5 font-bold text-black-600">
           <ContentSlot :use="$slots.title" unwrap="p" />
         </h1>
-        <p class="text-gray-500 lg:text-lg xl:text-xl xl:leading-8">
-          <ContentSlot :use="$slots.description" unwrap="p" />
-        </p>
+        <div class="text-gray-500 prose lg:text-lg xl:text-xl xl:leading-8">
+          <ContentSlot :use="$slots.description" />
+        </div>
         <div class="flex justify-center md:justify-start">
-          <div class="w-52 my-5 md:mb-0">
-            <ButtonPrimary theme="primary" slug="/request-demo">
-              Request a demo
-            </ButtonPrimary>
+          <div class="flex flex-col md:flex-row md:gap-4">
+            <div class="w-52 my-5 md:mb-0">
+              <ButtonPrimary theme="primary" slug="/request-demo">
+                Request a demo
+              </ButtonPrimary>
+            </div>
+            <p v-if="app" class="mt-5 text-black-600 flex items-center justify-center">
+              <ContentSlot :use="$slots.subDescription" />
+              <span class="ml-1"><img src="/iosIcon.svg" class="w-10" alt="IOS icon"></span>
+            </p>
           </div>
         </div>
       </div>
@@ -23,3 +29,13 @@
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+interface Props {
+  app: boolean
+}
+
+withDefaults(defineProps<Props>(), {
+  app: false,
+})
+</script>
