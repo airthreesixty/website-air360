@@ -172,6 +172,11 @@ const handleResize = () => {
   }
 }
 
+watch(route, () => {
+  isActive.value = false
+  isProductActive.value = false
+})
+
 onMounted(() => {
   window.addEventListener('resize', handleResize)
 })
