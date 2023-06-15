@@ -83,7 +83,7 @@
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink :to="localePath('/security-compliance')">
+              <NuxtLink :to="localePath('/product/security-compliance')">
                 <div class="hover:underline">
                   {{ $t("security.title") }}
                 </div>

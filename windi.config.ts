@@ -151,6 +151,9 @@ export default defineConfig({
         purple: {
           600: '#BF45A8',
         },
+        blossom: {
+          600: '#644AD5',
+        },
       },
       textShadow: {
         white: '0px 0px 14px rgba(255, 255, 255, 0.7)',

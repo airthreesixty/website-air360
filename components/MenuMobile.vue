@@ -14,8 +14,6 @@
 </template>
 
 <script setup lang="ts">
-const localePath = useLocalePath()
-
 const isActive = ref(true)
 
 const toggle = () => {
