@@ -215,10 +215,14 @@
     "opt": "オプトイン/オプトアウト可能"
   },
   "product-dropdown": {
+    "product": "製品情報",
     "features": "特徴",
     "other": "その他",
+    "inspiration": "インスピレーション",
     "website-analysis": "ウェブサイト分析",
     "app-analysis": "アプリ分析",
-    "security-compliance": "セキュリティ & コンプライアンス"
+    "security-compliance": "セキュリティ & コンプライアンス",
+    "blog": "ブログ",
+    "content-gallery": "コンテントギャラリー"
   }
 }

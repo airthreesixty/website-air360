@@ -223,10 +223,14 @@
     "opt": "Opt-in / Opt-out enabled"
   },
   "product-dropdown": {
+    "product": "Product",
     "features": "Features",
     "other": "Other",
+    "inspiration": "Inspiration",
     "website-analysis": "Website analysis",
     "app-analysis": "App analysis",
-    "security-compliance": "Security & Compliance"
+    "security-compliance": "Security & Compliance",
+    "blog": "Blog",
+    "content-gallery": "Content gallery"
   }
 }

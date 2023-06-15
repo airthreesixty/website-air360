@@ -1,26 +1,26 @@
 <template>
   <ul>
-    <DropdownsItemBlock title="Product" @toggle="onToggle('product')">
+    <DropdownsItemBlock :title="$t('product-dropdown.product')" @toggle="onToggle('product')">
       <template v-if="show.product" #subItems>
-        <DropdownsSubItems title="Features">
+        <DropdownsSubItems :title="$t('product-dropdown.features')">
           <template #items>
-            <DropdownsItems slug="/product/website-analysis" icon="laptop" text="Website analysis" text-color="text-primary-600" />
-            <DropdownsItems slug="/product/app-analysis" icon="mobile" text="App analysis" text-color="text-orange-600" />
+            <DropdownsItems slug="/product/website-analysis" icon="laptop" :text="$t('product-dropdown.website-analysis')" text-color="text-primary-600" />
+            <DropdownsItems slug="/product/app-analysis" icon="mobile" :text="$t('product-dropdown.app-analysis')" text-color="text-orange-600" />
           </template>
         </DropdownsSubItems>
-        <DropdownsSubItems title="Other">
+        <DropdownsSubItems :title="$t('product-dropdown.other')">
           <template #items>
-            <DropdownsItems slug="/product/security-compliance" icon="file-contract" text="Security & Compliance" text-color="text-blue-400" />
+            <DropdownsItems slug="/product/security-compliance" icon="file-contract" :text="$t('product-dropdown.security-compliance')" text-color="text-blue-400" />
           </template>
         </DropdownsSubItems>
       </template>
     </DropdownsItemBlock>
-    <DropdownsItemBlock title="Inspiration" @toggle="onToggle('inspiration')">
+    <DropdownsItemBlock :title="$t('product-dropdown.inspiration')" @toggle="onToggle('inspiration')">
       <template v-if="show.inspiration" #subItems>
         <DropdownsSubItems>
           <template #items>
-            <DropdownsItems slug="/blog" icon="newspaper" text="Blog" text-color="text-blossom-600" />
-            <DropdownsItems slug="/content-gallery" icon="building-columns" text="Content gallery" text-color="text-purple-600" />
+            <DropdownsItems slug="/blog" icon="newspaper" :text="$t('product-dropdown.blog')" text-color="text-blossom-600" />
+            <DropdownsItems slug="/content-gallery" icon="building-columns" :text="$t('product-dropdown.content-gallery')" text-color="text-purple-600" />
           </template>
         </DropdownsSubItems>
       </template>
