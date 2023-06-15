@@ -5,6 +5,7 @@
   >
     <div v-if="isHomepage" class="bg-gradient h-60 md:h-70 lg:h-82" />
     <div class="relative flex flex-wrap items-center justify-between container">
+      <MenuMobile />
       <header role="banner">
         <NuxtLink
           :to="localePath('/')"
@@ -60,9 +61,6 @@
             :class="{ 'w-2/3 text-center mx-auto items-stretch': isActive }"
           >
             <li :class="{ 'border-b border-gray-100 py-1': isActive }" class="relative hidden lg:block">
-              <!-- <NuxtLink :to="localePath('/product')" class="menu__link svg">
-                {{ $t("product.title") }} <fa-icon :icon="['far', 'angle-down']" />
-              </NuxtLink> -->
               <button class="menu__link" aria-controls="product-modal" :aria-expanded="isProductActive" @click="toggleProduct">
                 <span class="sr-only">Open Product menu</span>
                 {{ $t("product.title") }}
