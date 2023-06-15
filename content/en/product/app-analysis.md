@@ -42,7 +42,7 @@ Air360 simplifies data collection
 Air360 is a codeless & tagless solution so easy to set up anybody could do it. Forget about  making efforts on  tagging, mapping or grouping ever again. 
 
 #dropdowns
-::dropdown{index=0}
+::dropdown
 #title
 Auto-Tracking
 #description

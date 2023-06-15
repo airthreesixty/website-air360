@@ -36,13 +36,7 @@
         <div class="max-w-2xl mt-5 font-light prose text-gray-500 text-lg lg:text-xl xl:leading-8">
           <slot name="description" />
         </div>
-
-        <!-- <slot name="dropdowns" /> -->
-        <Dropdowns>
-          <template #dropdowns>
-            <slot name="dropdowns" />
-          </template>
-        </Dropdowns>
+        <slot name="dropdowns" />
       </div>
       <div :class="`hidden md:${imageStatus2} md:mt-0 md:flex md:w-[58%] md:p-5`">
         <nuxt-img

@@ -8092,6 +8092,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mitt@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "mitt@npm:3.0.0"
+  checksum: f7be5049d27d18b1dbe9408452d66376fa60ae4a79fe9319869d1b90ae8cbaedadc7e9dab30b32d781411256d468be5538996bb7368941c09009ef6bbfa6bfc7
+  languageName: node
+  linkType: hard
+
 "mkdirp-classic@npm:^0.5.2, mkdirp-classic@npm:^0.5.3":
   version: 0.5.3
   resolution: "mkdirp-classic@npm:0.5.3"
@@ -10290,6 +10297,7 @@ __metadata:
     flowbite-windicss-plugin: ^0.1.3
     gsap: ^3.11.5
     lodash: ^4.17.21
+    mitt: ^3.0.0
     nuxt: ^3.5.0
     nuxt-font-loader: ^2.2.2
     nuxt-fontawesome: ^0.4.0

@@ -18,7 +18,7 @@ Air360 simplifies data collection
 Air360 is a codeless & tagless solution so easy to set up anybody could do it. Forget about  making efforts on  tagging, mapping or grouping ever again. 
 
 #dropdowns
-::dropdown{index=0}
+::dropdown
 #title
 Auto-Tracking
 #description
@@ -27,13 +27,13 @@ Capture what you didn’t know you needed to track by simply installing the Air3
 Air360 not only tracks user interactions( clicks, scrolls, page views, mouse movements...), but also all eCommerce and digital marketing KPIs simultaneously by default.
 ::
 
-::dropdown{index=1}
+::dropdown
 #title
 Custom data collection
 #description
 Skip technical resources or to collect user interactions Enrich Air360's data with other datasets such as CRM/CDP or  Data layer information to go beyond behavioral analysis.
 ::
-::dropdown{index=2}
+::dropdown
 #title
 No-code error detection
 #description
