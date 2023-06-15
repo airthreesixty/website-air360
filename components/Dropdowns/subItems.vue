@@ -2,7 +2,7 @@
   <p class="font-bold text-black-600 mt-1 mb-2">
     {{ title }}
   </p>
-  <ul>
+  <ul class="mb-3">
     <slot name="items" />
   </ul>
 </template>

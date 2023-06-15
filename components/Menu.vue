@@ -6,6 +6,9 @@
     <div v-if="isHomepage" class="bg-gradient h-60 md:h-70 lg:h-82" />
     <div class="relative flex flex-wrap items-center justify-between container">
       <MenuMobile :is-active="isActive" @close="onClose" />
+      <transition>
+        <div v-if="isActive" class="bg-neutral-800/70 fixed inset-0" />
+      </transition>
       <header role="banner">
         <NuxtLink
           :to="localePath('/')"
@@ -234,5 +237,15 @@ onBeforeUnmount(() => {
   path {
       @apply fill-white;
   }
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
 }
 </style>
