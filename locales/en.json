@@ -153,7 +153,7 @@
       "desc": "GDPR requires you to be able to delete a given user and all its related data. Air360 offers a function that will allow you to delete a specific user and related sessions with just a single click."
     },
     "card3": {
-      "title": "Right to object",
+      "title": "Restrict specific data acquisition",
       "desc": "Air360 enables you to go further by also hiding explicitly parts of your pages from being recorded during session replays."
     },
     "card4": {

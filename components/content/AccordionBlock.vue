@@ -6,12 +6,12 @@
       </h3>
       <span><fa-icon :class="{'rotate-180': isOpen}" class="fa-xl transform transition-all text-primary-600" :icon="['far', 'angle-down']" /></span>
     </button>
-    <p
-      class="text-gray-600 max-h-0 overflow-hidden transition-all duration-400 ease"
+    <div
+      class="text-gray-600 prose max-h-0 overflow-hidden transition-all duration-400 ease"
       :class="{'max-h-screen': isOpen}"
     >
       <slot name="answer" />
-    </p>
+    </div>
   </div>
 </template>
 
