@@ -24,7 +24,7 @@
         </div>
         <div class="text-sm text-black-600 mt-4">
           <span><fa-icon class="text-lg text-blue-400 mr-2" :icon="['far', 'file-contract']" /></span>
-          <NuxtLink :to="localePath('/security-compliance')" class="hover:(text-primary-600 text-shadow-primary)">
+          <NuxtLink :to="localePath('/product/security-compliance')" class="hover:(text-primary-600 text-shadow-primary)">
             Security & Compliance
           </NuxtLink>
         </div>
