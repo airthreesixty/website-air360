@@ -27,9 +27,28 @@
       <div>
         <ul>
           <DropdownsItems slug="/blog" icon="newspaper" text="Blog" text-color="text-blossom-600" />
-          <DropdownsItems slug="/content-gallery" icon="building-columns" text="Blog" text-color="text-purple-600" />
+          <DropdownsItems slug="/content-gallery" icon="building-columns" text="Content gallery" text-color="text-purple-600" />
         </ul>
       </div>
     </li>
+    <li class="mb-3 mt-5">
+      <!-- <NuxtLink class="button bg-primary-600 transition ease-in-out duration-300 hover:opacity-80 focus:opacity-80">
+        <div class="text-white font-bold text-base">
+          Get Started
+        </div>
+      </NuxtLink> -->
+      <ButtonPrimary theme="primary" slug="/request-demo">
+        {{ $t("request-demo.title") }}
+      </ButtonPrimary>
+    </li>
+    <li>
+      <a :href="runtimeConfig.public.appUrl" class="button border-2 text-primary-600 font-bold text-base border-primary-600 transition ease-in-out duration-300 hover:opacity-80 focus:opacity-80">
+        {{ $t("login") }}
+      </a>
+    </li>
   </ul>
 </template>
+
+<script setup lang="ts">
+const runtimeConfig = useRuntimeConfig()
+</script>

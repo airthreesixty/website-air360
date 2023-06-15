@@ -14,6 +14,11 @@
       <slot />
     </div>
   </NuxtLink>
+  <NuxtLink v-if="theme === 'outlinePrimary'" :to="$localePath(slug)" class="button border-2 border-primary-600 button-transparent transition ease-in-out duration-300 hover:opacity-80 focus:opacity-80">
+    <div class="text-primary-600 font-bold text-base">
+      <slot />
+    </div>
+  </NuxtLink>
 </template>
 
 <script setup>
@@ -161,14 +166,14 @@ onMounted(() => {
   inset: 0;
   overflow: visible;
   fill: none;
-  stroke-width: 2;
-  stroke: #e74b91;
+  /* stroke-width: 2;
+  stroke: #e74b91; */
   width: 100%;
   height: 100%;
-  stroke-dasharray: 12 12;
+  /* stroke-dasharray: 12 12;
   stroke-dashoffset: 12;
   opacity: 0;
-  transform: rotate(-1deg) translate3d(0, 0, 0);
+  transform: rotate(-1deg) translate3d(0, 0, 0); */
 }
 
 .button-transparent .lines > div svg {
@@ -187,8 +192,8 @@ onMounted(() => {
   transform: rotate(-1deg) translate3d(0, 0, 0);
 }
 
-.button-primary .lines>div svg:nth-child(1) {
-  /* stroke: #4ba6e7 */
+/* .button-primary .lines>div svg:nth-child(1) {
+  stroke: #4ba6e7
 }
 
 .button-primary .lines>div svg:nth-child(2) {
@@ -204,7 +209,7 @@ onMounted(() => {
 .button-primary .lines>div svg:nth-child(4) {
   stroke-width: 3px;
   filter: blur(8px);
-}
+} */
 
 .button-transparent .lines > div svg:nth-child(1) {
   /* stroke: #01ffc2; */
