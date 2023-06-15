@@ -38,7 +38,7 @@
         </div>
         <slot name="dropdowns" />
       </div>
-      <div :class="`hidden md:${imageStatus2} md:mt-0 md:flex md:w-[58%] md:p-5`">
+      <div :class="`hidden md:${imageStatus2}  md:mt-0 md:flex md:w-[58%] md:p-5`">
         <nuxt-img
           v-if="!isVideo"
           format="webp"
@@ -46,7 +46,7 @@
           :alt="alt"
           loading="lazy"
           sizes="xl:1390px lg:1034px md:754px sm:1184px xs:277px"
-          class="rounded-lg w-full object-cover"
+          class="rounded-lg my-auto w-full object-cover"
           :class="{'shadow-lg': isShadow}"
         />
         <video

@@ -11,7 +11,7 @@ Air360は、データアナリストとビジネスプロフィールを同じ�
 ::slider
 ::
 
-::single-description{imagePath="/en/autoTracking.jpeg" alt="On-page analytics" icon="robot-astromech" :isShadow="false"}
+::single-description{imagePath="/en/autoTracking.jpeg" alt="On-page analytics"  icon="robot-astromech" :isShadow="false"}
 #title
 Air360でデータ収集が簡単に
 #description
