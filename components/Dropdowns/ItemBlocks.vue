@@ -1,7 +1,7 @@
 <template>
   <ul>
-    <DropdownsItemBlock title="Product">
-      <template #subItems>
+    <DropdownsItemBlock title="Product" @toggle="onToggle('product')">
+      <template v-if="show.product" #subItems>
         <DropdownsSubItems title="Features">
           <template #items>
             <DropdownsItems slug="/product/website-analysis" icon="laptop" text="Website analysis" text-color="text-primary-600" />
@@ -15,8 +15,8 @@
         </DropdownsSubItems>
       </template>
     </DropdownsItemBlock>
-    <DropdownsItemBlock title="Inspiration">
-      <template #subItems>
+    <DropdownsItemBlock title="Inspiration" @toggle="onToggle('inspiration')">
+      <template v-if="show.inspiration" #subItems>
         <DropdownsSubItems>
           <template #items>
             <DropdownsItems slug="/blog" icon="newspaper" text="Blog" text-color="text-blossom-600" />
@@ -41,9 +41,12 @@
 <script setup lang="ts">
 const runtimeConfig = useRuntimeConfig()
 
-// const isActive = ref(false)
+const show = reactive({
+  product: false,
+  inspiration: false,
+})
 
-// const toggle = (index) => {
-//   isActive.value = !isActive.value
-// }
+const onToggle = (item: string) => {
+  show[item] = !show[item]
+}
 </script>
