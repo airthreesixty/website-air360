@@ -26,7 +26,7 @@
           <source :data-src="videoSrc" type="video/mp4" :src="videoSrc">
         </video>
       </div>
-      <div class="md:w-[37%] md:py-7">
+      <div class="md:w-[39%] md:py-7">
         <fa-icon class="text-4xl lg:text-5xl mt-4 icon-color" :icon="['far', icon]" />
         <h3
           class="border-deco test mb-4 mt-4 text-xl font-semibold text-black-600 text-left md:text-2xl lg:text-3xl"
