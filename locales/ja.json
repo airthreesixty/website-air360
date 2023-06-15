@@ -213,5 +213,12 @@
     "gdpr": "GDPRに準拠",
     "privacy": "初期設定からプライバシーを保護",
     "opt": "オプトイン/オプトアウト可能"
+  },
+  "product-dropdown": {
+    "features": "特徴",
+    "other": "その他",
+    "website-analysis": "ウェブサイト分析",
+    "app-analysis": "アプリ分析",
+    "security-compliance": "セキュリティ & コンプライアンス"
   }
 }

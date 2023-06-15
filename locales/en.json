@@ -221,5 +221,12 @@
     "gdpr": "GDPR compliant",
     "privacy": "Privacy by default approach",
     "opt": "Opt-in / Opt-out enabled"
+  },
+  "product-dropdown": {
+    "features": "Features",
+    "other": "Other",
+    "website-analysis": "Website analysis",
+    "app-analysis": "App analysis",
+    "security-compliance": "Security & Compliance"
   }
 }

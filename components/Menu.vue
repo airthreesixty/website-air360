@@ -74,10 +74,10 @@
                 {{ $t("inspiration") }}
               </button>
               <div v-show="isInspirationActive" id="inspiration-modal" class="dropdown right-1 mt-1 w-49 text-center" @click="toggleInspiration">
-                <nuxt-link :to="localePath('/blog')" class="block text-gray-600 transition-all mb-2 border-b border-gray-100 py-1 hover:(text-primary-600 text-shadow-primary)">
+                <nuxt-link :to="localePath('/blog')" class="block text-sm text-black-600 transition-all mb-2 border-b border-gray-100 py-1 hover:(text-primary-600 text-shadow-primary)">
                   {{ $t("blog") }}
                 </nuxt-link>
-                <nuxt-link :to="localePath('/content-gallery')" class="block text-gray-600 transition-all hover:(text-primary-600 text-shadow-primary)">
+                <nuxt-link :to="localePath('/content-gallery')" class="block text-sm text-black-600 transition-all hover:(text-primary-600 text-shadow-primary)">
                   {{ $t('gallery') }}
                 </nuxt-link>
               </div>
