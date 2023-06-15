@@ -12,7 +12,7 @@
 
 <script setup lang="ts">
 interface Props {
-  isActive: () => void
+  isActive: boolean
 }
 
 defineProps<Props>()
