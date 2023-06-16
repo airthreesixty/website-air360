@@ -1,3 +1,7 @@
+---
+title: アプリ分析
+---
+
 ::hero-product{:app=true}
 #subtext
 Air360 アプリ分析

@@ -127,7 +127,7 @@
     "additional-revenue": "You can achieve an Additional Revenue",
     "roi": "How many times the return on your Air360 investment",
     "times": "times",
-    "caution": "This Calculator is a non binding simulation of the results you could get using our Solution. We projected your results with a 50% increase in your average conversion rate.",
+    "caution": "This Calculator is a non binding simulation of the results you could get using our Solution. We projected your results with a 50% increase in your average conversion rate."
   },
   "content-gallery": {
     "title": "Discover Air360",
@@ -232,5 +232,13 @@
     "security-compliance": "Security & Compliance",
     "blog": "Blog",
     "content-gallery": "Content gallery"
+  },
+  "website-analysis": {
+    "title": "Get insights fast and turn them into actions",
+    "description": "Air360 brings data analysts and business profiles together on the same mission. Increase conversion, unlock missed revenue, and turn frustrated users into loyal customers."
+  },
+  "app-analysis": {
+    "title": "Discover your App user journey",
+    "description": "User behavior from your mobile app users won’t be a black hole anymore. With Air360 collect all user interactions , discover main paths of behavior, and reveal frictions & obstacles during their journey."
   }
 }
