@@ -57,18 +57,18 @@
             class="flex flex-col pb-2 mt-4 border items-center border-none lg:(flex-row space-x-8 mt-0 text-base font-medium border-0 p-4)"
           >
             <li class="relative hidden lg:block">
-              <button class="menu__link" aria-controls="product-modal" :aria-expanded="isProductActive" @click="toggleProduct">
+              <div class="menu__link" aria-controls="product-modal" :aria-expanded="isProductActive" @mouseover="openProduct">
                 <span class="sr-only">Open Product menu</span>
                 {{ $t("product.title") }}
-              </button>
-              <DropdownsProductDropdown v-show="isProductActive" />
+              </div>
+              <DropdownsProductDropdown v-show="isProductActive" @mouseleave="closeProduct" />
             </li>
             <li class="relative hidden lg:block">
-              <button class="menu__link" aria-controls="inspiration-modal" :aria-expanded="isInspirationActive" @click="toggleInspiration">
+              <div class="menu__link" aria-controls="inspiration-modal" :aria-expanded="isInspirationActive" @mouseover="openInspiration">
                 <span class="sr-only">Open Inspiration menu</span>
                 {{ $t("inspiration") }}
-              </button>
-              <div v-show="isInspirationActive" id="inspiration-modal" class="dropdown right-1 mt-1 w-49 text-center" @click="toggleInspiration">
+              </div>
+              <div v-show="isInspirationActive" id="inspiration-modal" class="dropdown right-1 mt-1 w-49 text-center" @mouseleave="closeInspiration">
                 <nuxt-link :to="localePath('/blog')" class="block text-sm text-black-600 transition-all mb-2 border-b border-gray-100 py-1 hover:(text-primary-600 text-shadow-primary)">
                   {{ $t("blog") }}
                 </nuxt-link>
@@ -93,16 +93,16 @@
           </ul>
         </nav>
         <div class="relative order-1 lg:order-3 !lg:pr-4">
-          <button
+          <div
             class="menu__link svg"
             aria-controls="language-modal"
             :aria-expanded="isLangActive"
-            @click="toggleLang"
+            @mouseover="openLang"
           >
             <span class="sr-only">Open language menu</span>
             <fa-icon class="fa-lg" :icon="['fa', 'earth-americas']" :aria-hidden="true" />
-          </button>
-          <div v-show="isLangActive" id="language-modal" class="dropdown top-full mt-2 right-0 w-40 text-center" @click="toggleLang">
+          </div>
+          <div v-show="isLangActive" id="language-modal" class="dropdown top-full mt-2 right-0 w-40 text-center" @mouseleave="closeLang">
             <LangSwitcher />
           </div>
         </div>
@@ -124,32 +124,44 @@ const isProductActive = ref(false)
 
 const isHomepage = computed(() => getPathWithoutLocale(route.fullPath) === '/')
 
+const openProduct = () => {
+  isProductActive.value = true
+  isInspirationActive.value = false
+  isLangActive.value = false
+  isActive.value = false
+}
+
+const closeProduct = () => {
+  isProductActive.value = false
+}
+
+const openInspiration = () => {
+  isInspirationActive.value = true
+  isLangActive.value = false
+  isActive.value = false
+  isProductActive.value = false
+}
+
+const closeInspiration = () => {
+  isInspirationActive.value = false
+}
+
+const openLang = () => {
+  isLangActive.value = true
+  isActive.value = false
+  isInspirationActive.value = false
+  isProductActive.value = false
+}
+
+const closeLang = () => {
+  isLangActive.value = false
+}
+
 const toggleMenu = () => {
   isActive.value = true
   isLangActive.value = false
   isInspirationActive.value = false
   isProductActive.value = false
-}
-
-const toggleLang = () => {
-  isLangActive.value = !isLangActive.value
-  isActive.value = false
-  isInspirationActive.value = false
-  isProductActive.value = false
-}
-
-const toggleInspiration = () => {
-  isInspirationActive.value = !isInspirationActive.value
-  isLangActive.value = false
-  isActive.value = false
-  isProductActive.value = false
-}
-
-const toggleProduct = () => {
-  isProductActive.value = !isProductActive.value
-  isInspirationActive.value = false
-  isLangActive.value = false
-  isActive.value = false
 }
 
 const onClose = () => {
