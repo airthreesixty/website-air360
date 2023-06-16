@@ -53,7 +53,7 @@
           </a> -->
         </div>
       </div>
-      <div class="grid grid-cols-2 gap-x-2 gap-y-6 md:gap-6 md:grid-cols-4">
+      <div class="grid grid-cols-2 gap-x-4 gap-y-6 md:gap-x-6 md:gap-y-8 md:grid-cols-3 xl:grid-cols-5 xl:ml-8">
         <div>
           <h2
             class="mb-6 text-sm font-semibold text-black-600 uppercase dark:text-white"
@@ -82,6 +82,29 @@
                 </div>
               </NuxtLink>
             </li>
+          </ul>
+        </div>
+        <div>
+          <h2
+            class="mb-6 text-sm font-semibold text-black-600 uppercase dark:text-white"
+          >
+            {{ $t("product-dropdown.product") }}
+          </h2>
+          <ul class="text-gray-700 dark:text-gray-400">
+            <li class="mb-4">
+              <NuxtLink :to="localePath('/product/website-analysis')">
+                <div class="hover:underline">
+                  {{ $t("product-dropdown.website-analysis") }}
+                </div>
+              </NuxtLink>
+            </li>
+            <li class="mb-4">
+              <NuxtLink :to="localePath('/product/app-analysis')">
+                <div class="hover:underline">
+                  {{ $t("product-dropdown.app-analysis") }}
+                </div>
+              </NuxtLink>
+            </li>
             <li>
               <NuxtLink :to="localePath('/product/security-compliance')">
                 <div class="hover:underline">
@@ -106,9 +129,9 @@
               </NuxtLink>
             </li>
             <li class="mb-4">
-              <NuxtLink :to="localePath('/product')">
+              <NuxtLink :to="localePath('/content-gallery')">
                 <div class="hover:underline">
-                  {{ $t("product.title") }}
+                  {{ $t("product-dropdown.content-gallery") }}
                 </div>
               </NuxtLink>
             </li>
