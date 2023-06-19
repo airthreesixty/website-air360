@@ -13,7 +13,7 @@ Air360 アプリ分析
 対応：
 ::
 
-::slider
+::slider{:mobile=true}
 ::
 
 ::mobile-insights

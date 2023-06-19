@@ -11,7 +11,7 @@ With Air360 collect all user interactions , discover main paths of behavior, and
 Available for:
 ::
 
-::slider
+::slider{:mobile=true}
 ::
 
 ::mobile-insights

@@ -12,34 +12,96 @@
 </template>
 
 <script setup lang="ts">
+interface Props {
+  mobile: boolean
+}
+
+const props = withDefaults(defineProps<Props>(), {
+  mobile: false,
+})
+
 const { t } = useI18n()
 
-const slides = [
-  {
-    name: t('slides.user-journey'),
-    icon: 'cart-shopping',
-  },
-  {
-    name: t('slides.on-page'),
-    icon: 'user-magnifying-glass',
-  },
-  {
-    name: t('slides.session-replay'),
-    icon: 'clapperboard-play',
-  },
-  {
-    name: t('slides.funnels'),
-    icon: 'filter-circle-dollar',
-  },
-  {
-    name: t('slides.dashboards'),
-    icon: 'square-kanban',
-  },
-  {
-    name: t('slides.auto-tracking'),
-    icon: 'robot-astromech',
-  },
-]
+const slides = computed(() => {
+  if (props.mobile) {
+    return [
+      {
+        name: t('slides.user-journey'),
+        icon: 'cart-shopping',
+      },
+      {
+        name: t('slides.funnels'),
+        icon: 'filter-circle-dollar',
+      },
+      {
+        name: t('slides.dashboards'),
+        icon: 'square-kanban',
+      },
+      {
+        name: t('slides.auto-tracking'),
+        icon: 'robot-astromech',
+      },
+      {
+        name: t('slides.user-journey'),
+        icon: 'cart-shopping',
+      },
+      {
+        name: t('slides.funnels'),
+        icon: 'filter-circle-dollar',
+      },
+      {
+        name: t('slides.dashboards'),
+        icon: 'square-kanban',
+      },
+      {
+        name: t('slides.auto-tracking'),
+        icon: 'robot-astromech',
+      },
+    ]
+  }
+
+  return [
+    {
+      name: t('slides.user-journey'),
+      icon: 'cart-shopping',
+    },
+    {
+      name: t('slides.on-page'),
+      icon: 'user-magnifying-glass',
+    },
+    {
+      name: t('slides.session-replay'),
+      icon: 'clapperboard-play',
+    },
+    {
+      name: t('slides.funnels'),
+      icon: 'filter-circle-dollar',
+    },
+    {
+      name: t('slides.dashboards'),
+      icon: 'square-kanban',
+    },
+    {
+      name: t('slides.auto-tracking'),
+      icon: 'robot-astromech',
+    },
+  ]
+})
+
+const slider = computed(() => {
+  if (props.mobile) {
+    return {
+      time: '30s',
+    }
+  }
+  return {
+    time: '25s',
+  }
+})
+
+// const slider = {
+//   time: '20s',
+// }
 </script>
 
 <style scoped>
@@ -51,7 +113,7 @@ const slides = [
   display: flex;
   min-width: 100%;
   width: min-content;
-  animation: 20s linear infinite sliderAnimation;
+  animation: v-bind('slider.time') linear infinite sliderAnimation;
 }
 
 @keyframes sliderAnimation {
