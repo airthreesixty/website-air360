@@ -16,6 +16,8 @@ Air360は、 コンバージョンを高め、逃した収益を取り戻し、�
 ::
 
 ::single-description{imagePath="/en/autoTracking.jpeg" alt="On-page analytics"  icon="robot-astromech" :isShadow="false"}
+#subtext
+収集
 #title
 データ収集が簡単に
 #description
@@ -50,6 +52,8 @@ Google Tag ManagerでJavaScript、404、クリックエラーを追跡し、エ�
 ::
 
 ::single-description{imagePath="/en/product/define.png" alt="" icon="tags" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C"}
+#subtext
+定義
 #title
 正確なユーザー情報を使用
 #description
@@ -75,6 +79,8 @@ Air360の技術により、購買行動、ユーザージャーニー、ウェ�
 ::
 
 ::single-description{imagePath="/en/product/analyze.png" alt="" icon="magnifying-glass" :isShadow="false" theme-color="#3C8BFF"}
+#subtext
+分析
 #title
 購買率向上のヒントをすぐに
 #description
@@ -119,6 +125,8 @@ Air360の技術により、購買行動、ユーザージャーニー、ウェ�
 ::
 
 ::single-description{imagePath="/en/product/dataIntegration.webp" alt="" icon="sliders" imageStatus="block" imageStatus2="hidden" }
+#subtext
+活用
 #title
 オープンなエコシステム
 #description

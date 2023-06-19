@@ -11,7 +11,11 @@
       :video-src="videoSrc1"
       :poster="posterSrc1"
       icon="lightbulb-on"
+      subtext=""
     >
+      <template #subtext>
+        <ContentSlot :use="$slots.subtext1" unwrap="p" />
+      </template>
       <template #title>
         <ContentSlot :use="$slots.title1" unwrap="p" />
       </template>
@@ -29,6 +33,9 @@
       icon="message-smile"
       theme-color="#FA734C"
     >
+      <template #subtext>
+        <ContentSlot :use="$slots.subtext2" unwrap="p" />
+      </template>
       <template #title>
         <ContentSlot :use="$slots.title2" unwrap="p" />
       </template>
@@ -43,6 +50,9 @@
       theme-color="#3C8BFF"
       :is-shadow="false"
     >
+      <template #subtext>
+        <ContentSlot :use="$slots.subtext3" unwrap="p" />
+      </template>
       <template #title>
         <ContentSlot :use="$slots.title3" unwrap="p" />
       </template>

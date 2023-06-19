@@ -12,6 +12,8 @@ Increase conversion, unlock missed revenue, and turn frustrated users into loyal
 ::
 
 ::single-description{imagePath="/en/autoTracking.jpeg" alt="On-page analytics" icon="robot-astromech" :isShadow="false"}
+#subtext
+COLLECT
 #title
 Air360 simplifies data collection
 #description
@@ -44,6 +46,8 @@ Create & Export error impacted segments and push them to your MarTech.
 ::
 
 ::single-description{imagePath="/en/product/define.png" alt="" icon="tags" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C"}
+#subtext
+DEFINE
 #title
 Your users at the heart of Air360
 #description
@@ -71,6 +75,8 @@ Our technology allows you to filter all users by any specific criteria like purc
 ::
 
 ::single-description{imagePath="/en/product/analyze.png" alt="" icon="magnifying-glass" :isShadow="false" theme-color="#3C8BFF"}
+#subtext
+ANALYZE
 #title
 Spot all your opportunities to increase revenue
 #description
@@ -112,6 +118,8 @@ Confirm your hypothesis faster. Our session replay engine has Advanced filters t
 ::
 
 ::single-description{imagePath="/en/product/dataIntegration.webp" alt="" icon="sliders" imageStatus="block" imageStatus2="hidden" }
+#subtext
+ACTIVATE
 #title
 An open ecosystem to turn insights into actions
 #description

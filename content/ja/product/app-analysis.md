@@ -38,6 +38,8 @@ Air360のモバイルアプリ向け機能
 ::
 
 ::single-description{imagePath="/en/autoTracking.jpeg" alt="On-page analytics" icon="robot-astromech" :isShadow="false"}
+#subtext
+収集
 #title
 データ収集が簡単に
 #description
@@ -57,6 +59,8 @@ Air360のピクセルをウェブサイトに埋め込むだけで、全ての�
 ::
 
 ::single-description{imagePath="/en/product/define.png" alt="" icon="tags" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C"}
+#subtext
+定義
 #title
 正確なユーザー情報を使用
 #description
@@ -84,6 +88,8 @@ Air360を使った自動化により、セグメントの作成、エクスポ�
 ::
 
 ::single-description{imagePath="/en/product/analyze.png" alt="" icon="magnifying-glass" :isShadow="false" theme-color="#3C8BFF"}
+#subtext
+分析
 #title
 購買率向上のヒントをすぐに
 #description
@@ -117,6 +123,8 @@ Air360を使った自動化により、セグメントの作成、エクスポ�
 ::
 
 ::single-description{imagePath="/en/product/dataIntegration.webp" alt="" icon="sliders" imageStatus="block" imageStatus2="hidden" }
+#subtext
+活用
 #title
 オープンなエコシステム
 #description
