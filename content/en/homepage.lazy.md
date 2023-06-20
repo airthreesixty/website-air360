@@ -16,13 +16,13 @@ Deeply understand your customers
 #description1
 Customer behavior data can be used to easily analyze the causes of abandonment. Not only do you know where to fix bugs, but you also facilitate a website experience that makes customers want to come back.
 #subtext2
-INTUITIVE
+Plug and Play
 #title2
 No-code, easy operation
 #description2
 Both the initial setup and the actual analysis can be done by anyone: a simple 5-minute initial setup automatically starts tracking and analyzing all activity logs.
 #subtext3
-SMART
+BOOST
 #title3
 Quick Results
 #description3
