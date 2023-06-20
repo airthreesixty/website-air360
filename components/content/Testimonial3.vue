@@ -1,9 +1,9 @@
 <template>
-  <section class="bg-white dark:bg-gray-900">
+  <section class="bg-white">
     <div class="container py-10 text-center lg:py-16">
       <figure class="max-w-screen-md mx-auto">
         <svg
-          class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600"
+          class="h-12 mx-auto mb-3 text-gray-400"
           viewBox="0 0 24 27"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -14,22 +14,22 @@
           />
         </svg>
         <blockquote>
-          <p class="text-2xl font-medium text-black-600 dark:text-white">
-            <ContentSlot :use="$slots.title" unwrap="p" />
+          <p class="text-2xl prose font-medium text-gray-600 dark:text-white">
+            <ContentSlot :use="$slots.title" />
           </p>
         </blockquote>
         <figcaption class="flex items-center justify-center mt-6 space-x-3">
           <nuxt-img
             format="webp"
             class="w-15 h-15"
-            src="/mozFounder.png"
-            :alt="$t('moz-founder')"
+            src="/ceo-journey-further.png"
+            :alt="$t('ceo-journey-further')"
           />
           <div
-            class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700"
+            class="flex items-center divide-x-2 divide-gray-500"
           >
             <div class="pr-3 font-medium text-black-600 dark:text-white">
-              Rand Fishkin
+              Jonny Longden
             </div>
             <div
               class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400"
