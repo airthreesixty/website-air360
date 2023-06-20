@@ -60,7 +60,7 @@
           >
             {{ $t("company") }}
           </h2>
-          <ul class="text-gray-700 dark:text-gray-400">
+          <ul class="text-gray-600">
             <li class="mb-4">
               <a
                 href="https://esw.com/"
@@ -90,7 +90,7 @@
           >
             {{ $t("product-dropdown.product") }}
           </h2>
-          <ul class="text-gray-700 dark:text-gray-400">
+          <ul class="text-gray-600">
             <li class="mb-4">
               <NuxtLink :to="localePath('/product/website-analysis')">
                 <div class="hover:underline">
@@ -120,7 +120,7 @@
           >
             {{ $t("inspiration") }}
           </h2>
-          <ul class="text-gray-600 dark:text-gray-400">
+          <ul class="text-gray-600">
             <li class="mb-4">
               <NuxtLink :to="localePath('/blog')">
                 <div class="hover:underline">
@@ -143,7 +143,7 @@
           >
             {{ $t("help") }}
           </h2>
-          <ul class="text-gray-700 dark:text-gray-400">
+          <ul class="text-gray-600">
             <li class="mb-4">
               <NuxtLink :to="localePath('/request-demo')">
                 <div class="hover:underline">
@@ -176,7 +176,7 @@
           >
             {{ $t("language") }}
           </h2>
-          <ul class="text-gray-700 dark:text-gray-400">
+          <ul class="text-gray-600">
             <li class="mb-4">
               <LangSwitcher />
             </li>
