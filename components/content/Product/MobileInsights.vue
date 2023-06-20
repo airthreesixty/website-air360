@@ -8,7 +8,7 @@
         </h2>
         <ul class="text-gray-500 font-bold text-lg lg:text-xl">
           <li v-for="{description, icon}, index in items" :key="index" class="flex items-center mb-3">
-            <span class="text-primary-600"><fa-icon class="text-xl lg:text-3xl mr-2" :icon="['far', icon]" /></span><ContentSlot :use="description" />
+            <span class="text-primary-600"><fa-icon class="text-xl w-9 lg:text-3xl mr-2" :icon="['far', icon]" /></span><ContentSlot :use="description" />
           </li>
         </ul>
       </div>
