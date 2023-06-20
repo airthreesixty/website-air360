@@ -79,6 +79,27 @@ watch([searchedArticles, articles], () => {
 { immediate: true },
 )
 
+onMounted(() => {
+  const query = Number(route.query.page)
+  if (query) {
+    for (let i = 0; i < query; i++) {
+      initialLoad()
+    }
+  }
+})
+
+const initialLoad = () => {
+  isLoading.value = true
+
+  const currentArticlesCount = displayedArticles.value.length
+  const newArticles = articles.value.slice(
+    currentArticlesCount,
+    currentArticlesCount + numArticlesPerLoad,
+  )
+  displayedArticles.value.push(...newArticles)
+  isLoading.value = false
+}
+
 const loadMore = async () => {
   isLoading.value = true
   loadButtonClickCount++

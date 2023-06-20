@@ -98,10 +98,6 @@ const slider = computed(() => {
     time: '25s',
   }
 })
-
-// const slider = {
-//   time: '20s',
-// }
 </script>
 
 <style scoped>
