@@ -1,7 +1,7 @@
 <template>
   <section class="bg-white">
     <div class="container py-10 text-center lg:py-16">
-      <figure class="max-w-screen-md mx-auto">
+      <figure class="max-w-[800px] mx-auto">
         <svg
           class="h-12 mx-auto mb-3 text-gray-400"
           viewBox="0 0 24 27"
