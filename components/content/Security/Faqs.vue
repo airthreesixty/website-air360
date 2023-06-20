@@ -10,7 +10,7 @@
             <ContentSlot :use="$slots.question1" unwrap="p" />
           </template>
           <template #answer>
-            <ContentSlot :use="$slots.answer1" unwrap="p" />
+            <slot name="answer1" />
           </template>
         </AccordionBlock>
         <AccordionBlock>
@@ -18,7 +18,7 @@
             <ContentSlot :use="$slots.question2" unwrap="p" />
           </template>
           <template #answer>
-            <ContentSlot :use="$slots.answer2" unwrap="p" />
+            <slot name="answer2" />
           </template>
         </AccordionBlock>
         <AccordionBlock>
@@ -34,7 +34,7 @@
             <ContentSlot :use="$slots.question4" unwrap="p" />
           </template>
           <template #answer>
-            <ContentSlot :use="$slots.answer4" unwrap="p" />
+            <slot name="answer4" />
           </template>
         </AccordionBlock>
         <AccordionBlock>
@@ -42,7 +42,7 @@
             <ContentSlot :use="$slots.question5" unwrap="p" />
           </template>
           <template #answer>
-            <ContentSlot :use="$slots.answer5" unwrap="p" />
+            <slot name="answer5" />
           </template>
         </AccordionBlock>
         <AccordionBlock>
@@ -58,7 +58,7 @@
             <ContentSlot :use="$slots.question7" unwrap="p" />
           </template>
           <template #answer>
-            <ContentSlot :use="$slots.answer7" unwrap="p" />
+            <slot name="answer7" />
           </template>
         </AccordionBlock>
         <AccordionBlock>
