@@ -6,16 +6,13 @@
           <ContentSlot :use="$slots.title" unwrap="p" />
         </h1>
         <div class="md:flex md:items-center md:mt-12 lg:mt-18 md:gap-x-8">
-          <div class="text-white my-10 md:flex-1  md:my-0 lg:text-lg">
-            <p class="mb-4">
-              <ContentSlot :use="$slots.description1" unwrap="p" />
-            </p>
-            <p class="my-4">
-              <ContentSlot :use="$slots.description2" unwrap="p" />
-            </p>
-            <p class="my-4">
-              <ContentSlot :use="$slots.description3" unwrap="p" />
-            </p>
+          <div class="text-white prose my-10 md:flex-1  md:my-0 lg:text-lg">
+            <div class="md:block" :class="{hidden: locale === 'ja'}">
+              <slot name="description" />
+            </div>
+            <div class="md:hidden">
+              <slot name="mobileDescription" />
+            </div>
           </div>
           <div class="max-w-[700px] flex-1">
             <video controls controlslist="nodownload" :poster="posterSrc" class="rounded-lg">
