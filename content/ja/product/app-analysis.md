@@ -19,7 +19,7 @@ Air360でモバイルアプリ上のユーザー行動を簡単に把握でき�
 
 ::mobile-insights
 #title
-発見したインサイトをより良い意思決定に活用
+<span class="inline-block">発見したインサイトを</span><span class="inline-block">より良い意思決定に活用</span>
 #description1
 快適でないアプリ体験を見つける
 #description2
@@ -30,8 +30,8 @@ Air360でモバイルアプリ上のユーザー行動を簡単に把握でき�
 
 ::easy-data
 #title
-Air360 SDKで簡単にデータ収集
-
+<span class="inline-block">Air360 SDKで</span> 
+<span class="inline-block">簡単にデータ収集</span>
 ::
 
 ::mobile-features
@@ -118,7 +118,7 @@ Air360の技術により、購買行動、ユーザージャーニー、ウェ�
 #title
 ダッシュボード
 #description
-目標別や必要項目に合わせてにダッシュボードを作成し、様々な指標を可視化することでアプリのパフォーマンスを把握することができます。
+目標別や必要項目に合わせてダッシュボードを作成し、様々な指標を可視化することでアプリのパフォーマンスを把握することができます。
 ::
 ::
 
