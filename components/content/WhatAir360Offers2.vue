@@ -6,26 +6,6 @@
       <ContentSlot :use="$slots.mainTitle" unwrap="p" />
     </h2>
     <SingleDescription
-      :alt="$t('how-air360-helps1')"
-      :is-video="true"
-      :video-src="videoSrc1"
-      :poster="posterSrc1"
-      icon="lightbulb-on"
-      subtext=""
-    >
-      <template #subtext>
-        <ContentSlot :use="$slots.subtext1" unwrap="p" />
-      </template>
-      <template #title>
-        <ContentSlot :use="$slots.title1" unwrap="p" />
-      </template>
-      <template #description>
-        <ContentSlot :use="$slots.description1" unwrap="p" />
-      </template>
-    </SingleDescription>
-    <SingleDescription
-      image-status="block"
-      image-status2="hidden"
       :alt="$t('how-air360-helps2')"
       :is-video="true"
       :video-src="videoSrc2"
@@ -41,6 +21,25 @@
       </template>
       <template #description>
         <ContentSlot :use="$slots.description2" unwrap="p" />
+      </template>
+    </SingleDescription>
+    <SingleDescription
+      image-status="block"
+      image-status2="hidden"
+      :alt="$t('how-air360-helps1')"
+      :is-video="true"
+      :video-src="videoSrc1"
+      :poster="posterSrc1"
+      icon="lightbulb-on"
+    >
+      <template #subtext>
+        <ContentSlot :use="$slots.subtext1" unwrap="p" />
+      </template>
+      <template #title>
+        <ContentSlot :use="$slots.title1" unwrap="p" />
+      </template>
+      <template #description>
+        <ContentSlot :use="$slots.description1" unwrap="p" />
       </template>
     </SingleDescription>
     <SingleDescription
