@@ -2,6 +2,7 @@ import mitt from 'mitt'
 
 type ApplicationEvents = {
   'dropdown:close': void
+  'tab:open': void
 };
 
 const emitter = mitt<ApplicationEvents>()

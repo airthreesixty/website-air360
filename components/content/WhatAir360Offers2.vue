@@ -11,7 +11,6 @@
       :video-src="videoSrc2"
       :poster="posterSrc2"
       icon="message-smile"
-      theme-color="#FA734C"
     >
       <template #subtext>
         <ContentSlot :use="$slots.subtext2" unwrap="p" />
@@ -31,6 +30,7 @@
       :video-src="videoSrc1"
       :poster="posterSrc1"
       icon="lightbulb-on"
+      theme-color="#FA734C"
     >
       <template #subtext>
         <ContentSlot :use="$slots.subtext1" unwrap="p" />
