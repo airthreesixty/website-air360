@@ -2,7 +2,7 @@
   <section>
     <div class="white">
       <div class="container pt-15 md:pb-10 lg:pt-20">
-        <h1 class="text-gradient text-center tracking-tight font-semibold text-3xl md:text-4xl lg:text-5xl">
+        <h1 class="text-gradient text-center font-semibold text-3xl md:text-[35px] lg:text-5xl">
           <ContentSlot :use="$slots.title" unwrap="p" />
         </h1>
         <div class="max-w-[1000px] mx-auto">
