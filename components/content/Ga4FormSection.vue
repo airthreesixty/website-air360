@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white dark:bg-gray-900">
+  <section class="bg-gray-50">
     <div
       class="container py-14 lg:flex lg:justify-center lg:gap-5 xl:gap-0 lg:py-16"
     >
@@ -13,7 +13,7 @@
           <h1 class="mb-3 font-semibold text-center text-gradient text-2xl md:text-3xl">
             <ContentSlot :use="$slots.title1" unwrap="p" />
           </h1>
-          <h2 class="mb-4 text-black-600 max-w-[500px] font-semibold text-center lg:text-lg">
+          <h2 class="mb-4 text-gray-500 max-w-[550px] font-semibold text-center lg:text-lg">
             <ContentSlot :use="$slots.subtitle1" unwrap="p" />
           </h2>
         </div>
@@ -28,7 +28,7 @@
           class="w-full mx-auto bg-white"
         >
           <div
-            class="rounded-lg bg-gray-100 shadow-lg px-8 py-9 lg:mt-8"
+            class="rounded-lg bg-gray-100 shadow-lg px-8 py-9"
           >
             <div id="form">
               <Loading class="w-20 h-5 mx-auto" :is-full-page="false" />
