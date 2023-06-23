@@ -15,10 +15,10 @@
             </div>
           </div>
           <div class="max-w-[700px] flex-1">
-            <!-- <video controls controlslist="nodownload" :poster="posterSrc" class="rounded-lg">
+            <video v-if="locale === 'en'" controls controlslist="nodownload" :poster="posterSrc" class="rounded-lg">
               <source :data-src="videoSrc" :src="videoSrc" type="video/mp4">
-            </video> -->
-            <nuxt-img src="/analyze.png" class="rounded-lg shadow-lg" format="webp" />
+            </video>
+            <nuxt-img v-if="locale === 'ja'" src="/analyze.png" class="rounded-lg shadow-lg" format="webp" />
           </div>
         </div>
       </div>
