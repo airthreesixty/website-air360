@@ -10309,6 +10309,7 @@ __metadata:
     unhead: 1.1.26
     vue-i18n: next
     vue-loading-overlay: ^6.0
+    vue3-tabs-component: ^1.3.2
   languageName: unknown
   linkType: soft
 
@@ -12209,6 +12210,15 @@ __metadata:
   peerDependencies:
     vue: ^3.2.0
   checksum: 2ae40a4dd86e9abf50596cf779640daf61da8d668ffccf063ccc8762f95149eec6784700a4f2aa9d8854b4a6a885f2e300ddc84e5c4069dbd4a6b0cfed9d8e1a
+  languageName: node
+  linkType: hard
+
+"vue3-tabs-component@npm:^1.3.2":
+  version: 1.3.2
+  resolution: "vue3-tabs-component@npm:1.3.2"
+  peerDependencies:
+    vue: ^3.0.0
+  checksum: d034f0a1d57e8e1a5cca29c9e2c964ba67c20e4a31b6a568f49cf2e9f5b6e2a48df44b81162feed0a3c4242cfc89881fca710aa95c599a039ed1c285fee433d7
   languageName: node
   linkType: hard
 

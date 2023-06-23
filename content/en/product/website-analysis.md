@@ -11,22 +11,6 @@ Increase conversion, unlock missed revenue, and turn frustrated users into loyal
 ::slider
 ::
 
-::product-description{imagePath="/en/autoTracking.jpeg" alt="On-page analytics"  icon="robot-astromech" :isShadow="false"}
-#tabs
-::tab{text="Auto-Tracking"}
-#description
-Test1
-::
-::tab{text="Custom data collection"}
-#description
-Test2
-::
-::tab{text="No-code error detection"}
-#description
-Test3
-::
-::
-
 ::single-description{imagePath="/en/autoTracking.jpeg" alt="On-page analytics" icon="robot-astromech" :isShadow="false"}
 #subtext
 COLLECT

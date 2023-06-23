@@ -11,24 +11,7 @@
         <p class="text-gray-500 max-w-[600px] mx-auto">
           Air360 is a codeless & tagless solution so easy to set up anybody could do it. Forget about making efforts on tagging, mapping or grouping ever again.
         </p>
-        <Tabs>
-          <!-- <Tab v-for="item in test" :key="item.id" :label="item.label" @open="select(item.id)" /> -->
-          <slot name="tabs" />
-        </Tabs>
-
-        <nuxt-img format="webp" src="/en/autoTracking.jpeg" />
-        <div class="text-gray-500">
-          <div v-if="show == 1">
-            <!-- <ContentSlot :use="slots.tabs." /> -->
-            Tab1
-          </div>
-          <div v-else-if="show == 2">
-            Tab2
-          </div>
-          <div v-else-if="show == 3">
-            Tab3
-          </div>
-        </div>
+        <slot name="tabs" />
       </div>
     </div>
   </section>
@@ -42,19 +25,17 @@ const showVideo = ref(false)
 
 const show = ref(1)
 
+// if the tab is clicked, show the content of it
 const select = (num:number) => {
   show.value = num
 }
 
+// test data
 const test = [
   { id: 1, label: 'Tab1', content: 'コンテンツ1' },
   { id: 2, label: 'Tab2', content: 'コンテンツ2' },
   { id: 3, label: 'Tab3', content: 'コンテンツ3' },
 ]
-
-// const slots = useSlots()
-
-// console.log(slots.tabs)
 
 useIntersectionObserver(
   target,

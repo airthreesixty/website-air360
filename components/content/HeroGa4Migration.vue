@@ -15,9 +15,10 @@
             </div>
           </div>
           <div class="max-w-[700px] flex-1">
-            <video controls controlslist="nodownload" :poster="posterSrc" class="rounded-lg">
+            <!-- <video controls controlslist="nodownload" :poster="posterSrc" class="rounded-lg">
               <source :data-src="videoSrc" :src="videoSrc" type="video/mp4">
-            </video>
+            </video> -->
+            <img src="/analyze.png" class="rounded-lg shadow-lg">
           </div>
         </div>
       </div>
