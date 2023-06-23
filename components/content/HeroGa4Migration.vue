@@ -18,7 +18,7 @@
             <!-- <video controls controlslist="nodownload" :poster="posterSrc" class="rounded-lg">
               <source :data-src="videoSrc" :src="videoSrc" type="video/mp4">
             </video> -->
-            <img src="/analyze.png" class="rounded-lg shadow-lg">
+            <nuxt-img src="/analyze.png" class="rounded-lg shadow-lg" format="webp" />
           </div>
         </div>
       </div>
