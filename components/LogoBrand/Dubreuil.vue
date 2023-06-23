@@ -117,7 +117,7 @@
 </template>
 
 <style scoped type="text/css">
-   .st0{fill:#FFFFFF;}
+   .st0{fill:transparent;}
    .st1{fill:url(#SVGID_1_);}
    .st2{fill:url(#SVGID_2_);}
    .st3{fill:#003381;}
