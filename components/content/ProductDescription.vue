@@ -65,6 +65,10 @@ useIntersectionObserver(
   color: #232E4A;
 }
 
+.tabs-component-tab-a:hover {
+  color: v-bind('themeColor.color');
+}
+
 .tabs-component-panel {
   color: #6B7280;
   max-width: 768px;
