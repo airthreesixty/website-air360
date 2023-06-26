@@ -34,120 +34,92 @@ Air360でモバイルアプリ上のユーザー行動を簡単に把握でき�
 <span class="inline-block">簡単にデータ収集</span>
 ::
 
-::mobile-features
-#title
-Air360のモバイルアプリ向け機能
+::product-description
+::tabs
+    ::tab{name="自動追跡"}
+    ::tab-image{src="/en/product/autoTracking.jpeg"}
+    ::
+    Air360のピクセルをウェブサイトに埋め込むだけで、全てのデータが追跡されます。
+    ユーザーの動き（クリック、スクロール、ページビュー、マウスの動きなど）だけでなく、デフォルトですべてのeコマースとデジタルマーケティングのKPIも同時に追跡します。
+    ::
 ::
-
-::single-description{imagePath="/en/autoTracking.jpeg" alt="On-page analytics" icon="robot-astromech" :isShadow="false"}
 #subtext
 収集
 #title
 データ収集が簡単に
 #description
-Air360はコードレスでタグレスなソリューションなので、誰でも簡単にセットアップができます。
-
-タグ付け、マッピング、グループ化などの作業は、もう二度と必要ありません。
-
-#dropdowns
-::dropdown
-#title
-自動追跡
-#description
-Air360のピクセルをウェブサイトに埋め込むだけで、全てのデータが追跡されます。
-
-ユーザーの動き（クリック、スクロール、ページビュー、マウスの動きなど）だけでなく、デフォルトですべてのeコマースとデジタルマーケティングのKPIも同時に追跡します。
-::
+Air360はコードレスでタグレスなソリューションなので、誰でも簡単にセットアップができます。タグ付け、マッピング、グループ化などの作業は、もう二度と必要ありません。
 ::
 
-::single-description{imagePath="/en/product/define.png" alt="" icon="tags" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C"}
+::product-description{color="#FA734C" order=0}
+::tabs
+    ::tab{name="イベントの作成"}
+    ::tab-image{src="/en/product/customEvents.jpeg"}
+    ::
+    ウェブサイトのデータを最大限に活用するために、詳細まで、そして過去に遡って可視化ができます。
+    Air360の技術では、誰でも、クリック、ページビュー、エラーなど、あらゆるタイプのイベントを簡単に作成可能です。
+    ::
+    ::tab{name="ユーザーセグメントの作成"}
+    ::tab-image{src="/en/product/advancedSegments.jpeg"}
+    ::
+    Air360の技術により、購買行動、ユーザージャーニー、ウェブサイトへの不満、あるいはどこのページを閲覧したかなど、あらゆる特定の基準ですべてのユーザーをセグメントに分けて確認できます。
+    ::
+::
 #subtext
 定義
 #title
 正確なユーザー情報を使用
 #description
-Air360では、複数のデバイスやドメインからデータを収集する場合でも、同一のユーザーを見分けられます。
-
-正確なユーザーセグメントを作成し、他の技術スタックに接続して活用したり、分析で使用可能です。
-#dropdowns
-::dropdown
-#title
-イベントの作成
-#description
-ウェブサイトのデータを最大限に活用するために、詳細まで、そして過去に遡って可視化ができます。
-
-Air360の技術では、誰でも、クリック、ページビュー、エラーなど、あらゆるタイプのイベントを簡単に作成可能です。
+Air360では、複数のデバイスやドメインからデータを収集する場合でも、同一のユーザーを見分けられます。正確なユーザーセグメントを作成し、他の技術スタックに接続して活用したり、分析で使用可能です。
 ::
 
-::dropdown
-#title
-ユーザーセグメントの作成
-#description
-Air360の技術により、購買行動、ユーザージャーニー、ウェブサイトへの不満、あるいはどこのページを閲覧したかなど、あらゆる特定の基準ですべてのユーザーをセグメントに分けて確認できます。
+::product-description{color="#3C8BFF"}
+::tabs
+    ::tab{name="ファネル分析"}
+    ::tab-image{src="/en/product/funnel.jpeg"}
+    ::
+    タグ付けなしで簡単にページ閲覧、クリック等のイベントを作成し、見たいファネルを作成。ユーザーがどこで離脱しているかすぐに把握できます。
+    ::
+    ::tab{name="ユーザージャーニー"}
+    ::tab-image{src="/en/product/userJourney.jpeg"}
+    ::
+    ユーザーのとった全てのステップをグラフで把握可能。
+    ページ閲覧、その他ユーザーの行った行動（クリック、スクロール、エラーなど）を可視化し、購入に至らなかった理由を明らかにします。
+    ::
+    ::tab{name="ダッシュボード"}
+    ::tab-image{src="/en/product/dashboards.webp"}
+    ::
+    目標別や必要項目に合わせてダッシュボードを作成し、様々な指標を可視化することでアプリのパフォーマンスを把握することができます。
+    ::
 ::
-::
-
-::single-description{imagePath="/en/product/analyze.png" alt="" icon="magnifying-glass" :isShadow="false" theme-color="#3C8BFF"}
 #subtext
 分析
 #title
 購買率向上のヒントをすぐに
 #description
-ビジネス上のあらゆる疑問に答えるために、ユーザーの足跡や指紋をデータでたどります。
-
-ユーザーが購入に至らず、ウェブサイトから離脱してしまった原因を素早く発見できます。
-
-#dropdowns
-::dropdown
-#title
-ファネル分析
-#description
-タグ付けなしで簡単にページ閲覧、クリック等のイベントを作成し、見たいファネルを作成。ユーザーがどこで離脱しているかすぐに把握できます。
+ビジネス上のあらゆる疑問に答えるために、ユーザーの足跡や指紋をデータでたどります。ユーザーが購入に至らず、ウェブサイトから離脱してしまった原因を素早く発見できます。
 ::
 
-::dropdown
-#title
-ユーザージャーニー
-#description
-ユーザーのとった全てのステップをグラフで把握可能。
-
-ページ閲覧、その他ユーザーの行った行動（クリック、スクロール、エラーなど）を可視化し、購入に至らなかった理由を明らかにします。
+::product-description{order=0}
+::tabs
+    ::tab{name="データ出力"}
+    ::tab-image{src="/en/product/dataExport.jpeg"}
+    ::
+    Air360上で作成したユーザーセグメントは他のツールにも簡単に接続できます。例えば、他のマーケティングツールに接続し、購入に至らなかったユーザーに向けてキャンペーンを行ったり、あるいはBIツールやCRMなどにも接続して自由に使えます。
+    ::
+    ::tab{name="マーケティングを自動化"}
+    ::tab-image{src="/en/product/marketingAutomation.jpeg"}
+    ::
+    Air360のオートメーション機能により、簡単にユーザーセグメントの情報を他ツールへ出力し、活用できます。
+    お客様のビジネスに関連性の高いユーザーセグメントを特定し、他のマーケティングツールに接続し、コンテンツの最適化、キャンペーンでユーザーを再ターゲットすることができます。
+    ::
 ::
-
-::dropdown
-#title
-ダッシュボード
-#description
-目標別や必要項目に合わせてダッシュボードを作成し、様々な指標を可視化することでアプリのパフォーマンスを把握することができます。
-::
-::
-
-::single-description{imagePath="/en/product/dataIntegration.webp" alt="" icon="sliders" imageStatus="block" imageStatus2="hidden" }
 #subtext
 活用
 #title
 オープンなエコシステム
 #description
 Air360上で作成したユーザーセグメントをA/Bテスト、マーケティング、パーソナライゼーションなどのソリューションに接続することで、より良いeコマース体験を生み出し、購買率を向上させることができます。
-
-#dropdowns
-::dropdown
-#title
-データ出力
-#description
-Air360上で作成したユーザーセグメントは他のツールにも簡単に接続できます。
-
-例えば、他のマーケティングツールに接続し、購入に至らなかったユーザーに向けてキャンペーンを行ったり、あるいはBIツールやCRMなどにも接続して自由に使えます。
-::
-
-::dropdown
-#title
-マーケティングを自動化
-#description
-Air360のオートメーション機能により、簡単にユーザーセグメントの情報を他ツールへ出力し、活用できます。
-
-お客様のビジネスに関連性の高いユーザーセグメントを特定し、他のマーケティングツールに接続し、コンテンツの最適化、キャンペーンでユーザーを再ターゲットすることができます。
-::
 ::
 
 ::mobile-privacy
