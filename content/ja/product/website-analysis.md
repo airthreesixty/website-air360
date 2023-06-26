@@ -18,18 +18,18 @@ Air360は、 コンバージョンを高め、逃した収益を取り戻し、�
 ::product-description
 ::tabs
     ::tab{name="自動追跡"}
-    ::tab-image{src="/en/product/autoTracking.jpeg"}
+    ::tab-image{src="/en/product/autoTracking.webp"}
     ::
     Air360のピクセルをウェブサイトに埋め込むだけで、全てのデータが追跡されます。
     ユーザーの動き（クリック、スクロール、ページビュー、マウスの動きなど）だけでなく、デフォルトですべてのeコマースとデジタルマーケティングのKPIも同時に追跡します。
     ::
     ::tab{name="データを追加"}
-    ::tab-image{src="/en/product/customTracking.jpeg"}
+    ::tab-image{src="/en/product/customTracking.webp"}
     ::
     Air360のデータをCRM/CDPやデータレイヤー情報など他のデータセットで充実させ、行動分析の枠を超えて分析が可能に。
     ::
     ::tab{name="ノーコードエラー検出機能"}
-    ::tab-image{src="/en/product/errorDetection.jpeg"}
+    ::tab-image{src="/en/product/errorDetection.webp"}
     ::
     Google Tag ManagerでJavaScript、404、クリックエラーを追跡し、エラーによるユーザーへの影響を把握します。
     エラーの影響を受けたユーザーセグメントを作成し、出力して、マーケティングツールに接続してマーケティング用途で活用することも可能です。
@@ -46,13 +46,13 @@ Air360はコードレスでタグレスなソリューションなので、誰�
 ::product-description{color="#FA734C" :order=0}
 ::tabs
     ::tab{name="イベントの作成"}
-    ::tab-image{src="/en/product/customEvents.jpeg"}
+    ::tab-image{src="/en/product/customEvents.webp"}
     ::
     ウェブサイトのデータを最大限に活用するために、詳細まで、そして過去に遡って可視化ができます。
     Air360の技術では、誰でも、クリック、ページビュー、エラーなど、あらゆるタイプのイベントを簡単に作成可能です。
     ::
     ::tab{name="ユーザーセグメントの作成"}
-    ::tab-image{src="/en/product/advancedSegments.jpeg"}
+    ::tab-image{src="/en/product/advancedSegments.webp"}
     ::
     Air360の技術により、購買行動、ユーザージャーニー、ウェブサイトへの不満、あるいはどこのページを閲覧したかなど、あらゆる特定の基準ですべてのユーザーをセグメントに分けて確認できます。
     ::
@@ -68,23 +68,23 @@ Air360では、複数のデバイスやドメインからデータを収集す�
 ::product-description{color="#3C8BFF"}
 ::tabs
     ::tab{name="ファネル分析"}
-    ::tab-image{src="/en/product/funnel.jpeg"}
+    ::tab-image{src="/en/product/funnel.webp"}
     ::
     タグ付けなしで簡単にページ閲覧、クリック等のイベントを作成し、見たいファネルを作成。ユーザーがどこで離脱しているかすぐに把握できます。
     ::
     ::tab{name="ユーザージャーニー"}
-    ::tab-image{src="/en/product/userJourney.jpeg"}
+    ::tab-image{src="/en/product/userJourney.webp"}
     ::
     ユーザーのとった全てのステップをグラフで把握可能。
     ページ閲覧、その他ユーザーの行った行動（クリック、スクロール、エラーなど）を可視化し、購入に至らなかった理由を明らかにします。
     ::
     ::tab{name="オンページ分析"}
-    ::tab-image{src="/en/product/onPage.jpeg"}
+    ::tab-image{src="/en/product/onPage.webp"}
     ::
     ウェブサイトで気になる箇所をクリックするだけで、ビジネスの指標、ユーザーの不満度を瞬時に把握できます。
     ::
     ::tab{name="セッションリプレイ"}
-    ::tab-image{src="/en/product/sessionReplays.jpeg"}
+    ::tab-image{src="/en/product/sessionReplays.webp"}
     ::
     ユーザーの実際の行動を動画で確認し、これまでの分析で立てた仮説をより早く立証できます。
     気になる行動を取ったユーザーをフィルタリングしたり、ユーザーの行動を動画だけではなく文字にも起こしてあるので、短時間で簡単に行動を把握し購入に至らなかった原因を追求できます。
@@ -101,13 +101,13 @@ Air360では、複数のデバイスやドメインからデータを収集す�
 ::product-description{:order=0}
 ::tabs
     ::tab{name="データ出力"}
-    ::tab-image{src="/en/product/dataExport.jpeg"}
+    ::tab-image{src="/en/product/dataExport.webp"}
     ::
     Air360上で作成したユーザーセグメントは他のツールにも簡単に接続できます。
     例えば、他のマーケティングツールに接続し、購入に至らなかったユーザーに向けてキャンペーンを行ったり、あるいはBIツールやCRMなどにも接続して自由に使えます。
     ::
     ::tab{name="マーケティングを自動化"}
-    ::tab-image{src="/en/product/marketingAutomation.jpeg"}
+    ::tab-image{src="/en/product/marketingAutomation.webp"}
     ::
     Air360のオートメーション機能により、簡単にユーザーセグメントの情報を他ツールへ出力し、活用できます。
     お客様のビジネスに関連性の高いユーザーセグメントを特定し、他のマーケティングツールに接続し、コンテンツの最適化、キャンペーンでユーザーを再ターゲットすることができます。

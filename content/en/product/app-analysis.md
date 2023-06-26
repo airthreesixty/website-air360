@@ -33,7 +33,7 @@ Easy data collection with Air360 SDK
 ::product-description
 ::tabs
     ::tab{name="Auto-Tracking"}
-    ::tab-image{src="/en/product/autoTracking.jpeg"}
+    ::tab-image{src="/en/product/autoTracking.webp"}
     ::
     Capture what you didn’t know you needed to track by simply installing the Air360 Pixel.
     Air360 not only tracks user interactions( clicks, scrolls, page views, mouse movements...), but also all eCommerce and digital marketing KPIs simultaneously by default.
@@ -50,13 +50,13 @@ Air360 is a codeless & tagless solution so easy to set up anybody could do it. F
 ::product-description{color="#FA734C" order=0}
 ::tabs
     ::tab{name="Custom events"}
-    ::tab-image{src="/en/product/customEvents.jpeg"}
+    ::tab-image{src="/en/product/customEvents.webp"}
     ::
     Make the best use of your web store data, with granular and retroactive visibility.
     Our Point & Name technology allows any type of business user to easily create any type of events like clicks, page views, and errors.
     ::
     ::tab{name="Advanced segments"}
-    ::tab-image{src="/en/product/advancedSegments.jpeg"}
+    ::tab-image{src="/en/product/advancedSegments.webp"}
     ::
     Create, export and activate your segments through our automations with Air360.
     Our technology allows you to filter all users by any specific criteria like purchase behavior, user journeys, frustration or engagement with your website, pageviews, and even by sequence of events.
@@ -73,12 +73,12 @@ Air360 allows you to have an unified user vision weather you are collecting data
 ::product-description{color="#3C8BFF"}
 ::tabs
     ::tab{name="Funnel analysis"}
-    ::tab-image{src="/en/product/funnel.jpeg"}
+    ::tab-image{src="/en/product/funnel.webp"}
     ::
     Know how users or segments navigate and find where to remove friction.Easy to create page view, click and custom event funnels without any tagging allowing a big level of detail.
     ::
     ::tab{name="User journeys"}
-    ::tab-image{src="/en/product/userJourney.jpeg"}
+    ::tab-image{src="/en/product/userJourney.webp"}
     ::
     Not just another sunburst, the only user journey that tells it all.
     Visualize user paths by page view and by user interactions (clicks, scrolls, errors, ...) and discover why your users are not converting.
@@ -100,12 +100,12 @@ Limitless answers to unsolved business questions Follow user footprints and fing
 ::product-description{order=0}
 ::tabs
     ::tab{name="Data export"}
-    ::tab-image{src="/en/product/dataExport.jpeg"}
+    ::tab-image{src="/en/product/dataExport.webp"}
     ::
     Either if you are trying to push out segments to your marketing cloud for a retargeting campaign or if you are trying to push out data to your CRM or Business Inteligence solution Air360 will offer you a solution to connect with all your TechStack.
     ::
     ::tab{name="Marketing automation"}
-    ::tab-image{src="/en/product/marketingAutomation.jpeg"}
+    ::tab-image{src="/en/product/marketingAutomation.webp"}
     ::
     Create, export and activate your segments through our automations with Air360.
     Identify segments that are more relevant for your business, and push them out to your favorite Mar-Tech to personalize your content, create experiments or retarget users with your campaigns.
