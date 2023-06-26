@@ -11,6 +11,34 @@ Increase conversion, unlock missed revenue, and turn frustrated users into loyal
 ::slider
 ::
 
+::product-description
+::tabs
+    ::tab{name="Auto-Tracking"}
+    ::tab-image{src="/en/product/autoTracking2.png"}
+    ::
+    Capture what you didn’t know you needed to track by simply installing the Air360 Pixel.
+    Air360 not only tracks user interactions( clicks, scrolls, page views, mouse movements...), but also all eCommerce and digital marketing KPIs simultaneously by default.
+    ::
+    ::tab{name="Custom data collection"}
+    ::tab-image{src="/en/product/customTracking.png"}
+    ::
+    Skip technical resources or to collect user interactions Enrich Air360's data with other datasets such as CRM/CDP or Data layer information to go beyond behavioral analysis.
+    ::
+    ::tab{name="No-code error detection"}
+    ::tab-image{src="/en/product/errorDetection.png"}
+    ::
+    Track JavaScript , 404, & Click errors via Google Tag Manager to understand the impact of errors on your audience.
+    Create & Export error impacted segments and push them to your MarTech.
+    ::
+::
+#subtext
+COLLECT
+#title
+Air360 simplifies data collection
+#description
+Air360 is a codeless & tagless solution so easy to set up anybody could do it. Forget about making efforts on tagging, mapping or grouping ever again.
+::
+
 ::single-description{imagePath="/en/autoTracking.jpeg" alt="On-page analytics" icon="robot-astromech" :isShadow="false"}
 #subtext
 COLLECT
