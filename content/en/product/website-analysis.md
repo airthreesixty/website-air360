@@ -39,6 +39,29 @@ Air360 simplifies data collection
 Air360 is a codeless & tagless solution so easy to set up anybody could do it. Forget about making efforts on tagging, mapping or grouping ever again.
 ::
 
+::product-description{color="#FA734C"}
+::tabs
+    ::tab{name="Custom events"}
+    ::tab-image{src="/en/product/autoTracking2.png"}
+    ::
+    make the best use of your web store data, with granular and retroactive visibility.
+    Our Point & Name technology allows any type of business user to easily create any type of events like clicks, page views, and errors.
+    ::
+    ::tab{name="Advanced segments"}
+    ::tab-image{src="/en/product/customTracking.png"}
+    ::
+    Create, export and activate your segments through our automations with Air360.
+    Our technology allows you to filter all users by any specific criteria like purchase behavior, user journeys, frustration or engagement with your website, pageviews, and even by sequence of events.
+    ::
+::
+#subtext
+DEFINE
+#title
+Your users at the heart of Air360
+#description
+Air360 allows you to have an unified user vision weather you are collecting data from multiple devices or domains.Create high quality first-party data segments that can be pushed to your tech stack, or used in your analysis.
+::
+
 ::single-description{imagePath="/en/autoTracking.jpeg" alt="On-page analytics" icon="robot-astromech" :isShadow="false"}
 #subtext
 COLLECT

@@ -2,7 +2,7 @@
   <section ref="target" class="bg-white">
     <div class="container py-7 lg:py-13">
       <div class="text-center">
-        <span class="text-primary-600 font-bold">
+        <span class="subtext-color font-bold">
           <ContentSlot :use="$slots.subtext" unwrap="p" />
         </span>
         <h2 class="title2 mb-5 mt-2">
@@ -22,14 +22,20 @@ import { useIntersectionObserver } from '@vueuse/core'
 
 interface Props {
   order: number
+  color: string
 }
 
 const props = withDefaults(defineProps<Props>(), {
   order: -1,
+  color: '#e74b91',
 })
 
 const order = {
   order: props.order,
+}
+
+const themeColor = {
+  color: props.color,
 }
 
 const target = ref(null)
@@ -66,8 +72,12 @@ useIntersectionObserver(
 }
 
 .is-active {
-  color: #e74b91;
+  color: v-bind('themeColor.color');
   font-weight: bold;
+}
+
+.subtext-color {
+  color: v-bind('themeColor.color');
 }
 
 @media (min-width: 768px) {
