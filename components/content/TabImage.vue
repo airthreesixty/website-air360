@@ -1,6 +1,6 @@
 <template>
   <div class="w-full mx-auto mb-5 mt-3 md:w-4/5 xl:w-full">
-    <nuxt-img :src="src" format="webp" class="shadow-lg rounded-lg" />
+    <img :src="src" class="shadow-lg rounded-lg">
   </div>
 </template>
 
