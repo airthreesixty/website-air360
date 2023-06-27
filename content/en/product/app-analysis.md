@@ -67,7 +67,7 @@ DEFINE
 #title
 Your users at the heart of Air360
 #description
-Air360 allows you to have an unified user vision weather you are collecting data from multiple devices or domains.Create high quality first-party data segments that can be pushed to your tech stack, or used in your analysis.
+Air360 allows you to have an unified user vision weather you are collecting data from multiple devices or domains. Create high quality first-party data segments that can be pushed to your tech stack, or used in your analysis.
 ::
 
 ::product-description{color="#3C8BFF"}
@@ -94,7 +94,7 @@ ANALYZE
 #title
 Spot all your opportunities to increase revenue
 #description
-Limitless answers to unsolved business questions Follow user footprints and fingerprints, and quickly discover the obstacles that make your audience leave your website without converting.
+Limitless answers to unsolved business questions. Follow user footprints and fingerprints, and quickly discover the obstacles that make your audience leave your website without converting.
 ::
 
 ::product-description{order=0}

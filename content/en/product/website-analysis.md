@@ -92,7 +92,7 @@ ANALYZE
 #title
 Spot all your opportunities to increase revenue
 #description
-Limitless answers to unsolved business questions Follow user footprints and fingerprints, and quickly discover the obstacles that make your audience leave your website without converting.
+Limitless answers to unsolved business questions. Follow user footprints and fingerprints, and quickly discover the obstacles that make your audience leave your website without converting.
 ::
 
 ::product-description{order=0}
