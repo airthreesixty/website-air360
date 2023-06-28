@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white dark:bg-gray-900">
+  <section class="bg-white">
     <div
       class="container py-14 lg:flex lg:justify-center lg:gap-5 lg:py-16"
     >
@@ -73,19 +73,8 @@ useScriptTag(
 </script>
 
 <style lang="postcss">
-.error-alert {
-  @apply text-xs text-red-500;
-}
-
-.bar-enter-active, .bar-leave-active {
-  transition: opacity .3s;
-}
-.bar-enter, .bar-leave-to {
-  opacity: 0;
-}
-
 .text-gradient {
-    background: linear-gradient(126deg, rgba(45,146,233,1) 0%, rgba(100,74,213,1) 20%, rgba(193,65,172,1) 40%, rgba(231,33,146,1) 60%, rgba(240,77,102,1) 80%, rgba(253,112,67,1) 100%);
+   background: linear-gradient(126deg, rgba(45,146,233,1) 0%, rgba(100,74,213,1) 20%, rgba(193,65,172,1) 40%, rgba(231,33,146,1) 60%, rgba(240,77,102,1) 80%, rgba(253,112,67,1) 100%);
    color: transparent;
    background-clip: text;
 }

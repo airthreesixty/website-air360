@@ -35,6 +35,26 @@ useHead(() => ({
   htmlAttrs: {
     lang: locale.value,
   },
+  script: [
+    {
+      src:
+          'https://cdn.jsdelivr.net/gh/manucaralmo/GlowCookies@3.1.8/src/glowCookies.min.js',
+      async: true,
+      defer: true,
+      hid: 'glow-cookies-script',
+    },
+    {
+      hid: 'glow-cookies-start',
+      innerHTML: `glowCookies.start('${locale.value}', {
+          style: 1,
+          analytics: 'G-FH87DE17XF',
+          facebookPixel: '990955817632355',
+          policyLink: 'https://link-to-your-policy.com',
+          acceptBtnBackground: '#e74b91',
+          hideAfterClick: true,
+        });`,
+    },
+  ],
 }))
 </script>
 
