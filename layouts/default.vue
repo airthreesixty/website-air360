@@ -39,12 +39,12 @@ useHead(() => ({
     {
       src:
           'https://cdn.jsdelivr.net/gh/manucaralmo/GlowCookies@3.1.8/src/glowCookies.min.js',
+      async: true,
       defer: true,
       hid: 'glow-cookies-script',
     },
     {
       hid: 'glow-cookies-start',
-      defer: true,
       innerHTML: `glowCookies.start('${locale.value}', {
           style: 1,
           analytics: 'G-FH87DE17XF',
