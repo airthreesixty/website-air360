@@ -45,6 +45,8 @@ useHead(() => ({
     },
     {
       hid: 'glow-cookies-start',
+      async: true,
+      defer: true,
       innerHTML: `glowCookies.start('${locale.value}', {
           style: 1,
           analytics: 'G-FH87DE17XF',
