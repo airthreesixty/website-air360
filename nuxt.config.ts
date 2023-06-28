@@ -35,6 +35,11 @@ export default defineNuxtConfig({
         },
       ],
       meta: [{ name: 'google-site-verification', content: '27ObPnDVXKchsfaXmRUOoP8wVKLPvIDb30oXYHDgPVU' }],
+      script: [
+        {
+          src: 'https://cdn.jsdelivr.net/gh/manucaralmo/GlowCookies@3.1.8/src/glowCookies.min.js',
+        },
+      ],
     },
   },
   i18n: {
