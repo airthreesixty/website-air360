@@ -1,19 +1,26 @@
 <template>
-  <div class="relative group bg-transparent h-[254px] perspect-[1000px]">
-    <div class="innerCard flex flex-col items-center p-6 transform group-hover:rotate-y-180">
-      <div class="frontSide shadow rounded-lg border-[2px]">
-        <div class="flex flex-col items-center">
-          <div class="inline-flex justify-center items-center mt-8 mb-6 w-24 h-24 rounded-lg bg-primary-100">
-            <svg class="mx-auto w-16 h-16 text-primary-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z" /><path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z" /></svg>
-          </div>
-          <h3 class="text-2xl px-4 font-bold text-center">
+  <div class="relative bg-transparent h-[254px] perspect-[1000px]" @click="flip">
+    <div :class="{'rotate-y-180': isActive}" class="innerCard flex flex-col items-center p-6 transform">
+      <div class="frontSide shadow rounded-lg">
+        <div class="relative flex flex-col p-8 h-full">
+          <component :is="logo" class="w-25 h-15 object-contain" :style="`transform: scale(${scale})`" />
+          <h3 class="text-2xl font-bold text-left mb-2 mt-1">
             {{ title }}
           </h3>
+          <p class="text-left text-black-600 mb-5">
+            {{ description }}
+          </p>
+          <p class="absolute bottom-4 text-primary-600 text-left">
+            Learn More
+          </p>
         </div>
       </div>
-      <div class="backSide justify-evenly shadow rounded-lg px-4 border-[2px]">
-        <p class="text-gray-500 md:text-lg">
-          {{ description }}
+      <div class="backSide shadow rounded-lg p-8">
+        <h3 class="text-2xl font-bold text-left mb-3">
+          {{ title }}
+        </h3>
+        <p class="text-gray-500 text-left md:text-lg">
+          {{ backDescription }}
         </p>
       </div>
     </div>
@@ -21,12 +28,23 @@
 </template>
 
 <script setup lang="ts">
+import { ConcreteComponent } from 'nuxt/dist/app/compat/capi'
+
 interface Props {
   title: string
   description: string
+  logo: string | ConcreteComponent
+  scale: number
+  backDescription: string
 }
 
 defineProps<Props>()
+
+const isActive = ref(false)
+
+const flip = () => {
+  isActive.value = !isActive.value
+}
 </script>
 
 <style scoped>

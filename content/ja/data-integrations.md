@@ -1,0 +1,2 @@
+::common-hero{src=""}
+::
