@@ -9,7 +9,6 @@
 </template>
 
 <script setup lang="ts">
-import { useScriptTag } from '@vueuse/core'
 const route = useRoute()
 const { locale, locales } = useI18n()
 const runtimeConfig = useRuntimeConfig()
@@ -29,6 +28,7 @@ useHead(() => ({
   script: [
     {
       hid: 'glow-cookies-start',
+      defer: true,
       innerHTML: `glowCookies.start('${locale.value}', {
             style: 1,
             analytics: 'G-FH87DE17XF',

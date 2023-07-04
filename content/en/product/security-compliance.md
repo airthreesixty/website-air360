@@ -3,7 +3,7 @@ title: Security & Compliance
 ---
 
 
-::hero
+::common-hero{src="/security/heroImage.png"}
 #subtext
 SECURITY & COMPLIANCE
 #title

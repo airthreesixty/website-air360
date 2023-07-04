@@ -2,7 +2,7 @@
 title: セキュリティ & コンプライアンス
 ---
 
-::hero
+::common-hero{src="/security/heroImage.png"}
 #subtext
 セキュリティ＆コンプライアンス
 #title
