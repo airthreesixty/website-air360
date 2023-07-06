@@ -2,7 +2,7 @@
 title: アプリ分析
 ---
 
-::hero-product{:app=true}
+::hero-product{:app=true src="/en/product/appHero.png"}
 #subtext
 Air360 アプリ分析
 #title

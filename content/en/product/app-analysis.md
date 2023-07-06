@@ -1,4 +1,4 @@
-::hero-product{:app=true}
+::hero-product{:app=true src="/en/product/appHero.png"}
 #subtext
 Air360 APP ANALYSIS
 #title

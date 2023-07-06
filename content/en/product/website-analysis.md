@@ -1,4 +1,4 @@
-::hero-product
+::hero-product{src="/en/product/hero.png"}
 #subtext
 COLLECT, DEFINE, ANALYZE & ACTIVATE
 #title

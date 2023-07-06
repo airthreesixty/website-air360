@@ -24,7 +24,7 @@
         </div>
       </div>
       <div class="flex items-center">
-        <nuxt-img format="webp" src="/en/product/hero.png" class="" loading="lazy" sizes="xl:1390px lg:1034px md:754px sm:1184px xs:277px" />
+        <nuxt-img format="webp" :src="src" loading="lazy" sizes="xl:1390px lg:1034px md:754px sm:1184px xs:277px" />
       </div>
     </div>
   </div>
@@ -33,6 +33,7 @@
 <script setup lang="ts">
 interface Props {
   app: boolean
+  src: string
 }
 
 withDefaults(defineProps<Props>(), {

@@ -2,7 +2,7 @@
 title: ウェブサイト分析
 ---
 
-::hero-product
+::hero-product{src="/en/product/hero.png"}
 #subtext
 収集、定義、分析、活用
 #title
