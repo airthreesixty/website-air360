@@ -31,9 +31,7 @@ useHead(() => ({
       defer: true,
       innerHTML: `glowCookies.start('${locale.value}', {
             style: 1,
-            analytics: 'G-FH87DE17XF',
-            facebookPixel: '990955817632355',
-            policyLink: 'https://link-to-your-policy.com',
+            policyLink: 'https://www.air360.io/${locale.value}/privacy-policy/',
             acceptBtnBackground: '#e74b91',
             hideAfterClick: true,
           });`,
