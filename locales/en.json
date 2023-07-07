@@ -247,5 +247,55 @@
     "analyze": "ANALYZE",
     "activate": "ACTIVATE"
   },
-  "ceo-journey-further": "Journey Further's CEO"
+  "ceo-journey-further": "Journey Further's CEO",
+  "logos": {
+    "salesforce": {
+      "desc": " Unify marketing, sales, service, commerce, and IT on the world's #1 CRM",
+      "back-desc": "Our  Integrations allows you to  enrich Air360 with Salesforce properties as well as push Air360 behavioral data to Salesforce to activate segments, and visualize users and metrics."
+    },
+    "ab-tasty": {
+      "desc": "Build end-to-end experiences that drive growth across all digital channels.",
+      "back-desc": "Our A/B Tasty connector allows you to push and pull campaign IDs, and segments  from Air360 to A/B Tasty and viceversa."
+    },
+    "coveo": {
+      "desc": "With the Coveo Relevance CloudTM, intelligent enterprise search is just the beginning.",
+      "back-desc": "Create behavioral segments inside Air360 that can be pushed to Coveo to create personalization campaigns."
+    },
+    "shopify": {
+      "desc": "Connect all your behavioral data and visualize it in Air360 in one click.",
+      "back-desc": "Use our Shopify plugin to connect Air360  to understand your users’ behavior.  If you are a Shopify Plus user, you will be able to track checkout behavior as well."
+    },
+    "mailchimp": {
+      "desc": "Bring your audience data, marketing channels, and insights together.",
+      "back-desc": "Activate Air360 Segments through Mailchimp  to make personalized email campaigns."
+    },
+    "looker": {
+      "desc": "Turn your data into compelling stories of data visualization art.",
+      "back-desc": "Extract all metrics and insights from Air360 and visualize them with beautiful dashboards  in Looker."
+    },
+    "one-trust": {
+      "desc": "OneTrust empowers tomorrow's leaders to succeed through trust and impact.",
+      "back-desc": "Our Integrations allows you to enrich Air360 with Salesforce properties as well as push Air360 behavioral data to Salesforce to activate segments, and visualize users and metrics."
+    },
+    "power-bi": {
+      "desc": "The unified, scalable platform for self-service and enterprise business intelligence (BI).",
+      "back-desc": "Extract all metrics and insights from Air360 and visualize them in PowerBI"
+    },
+    "segment": {
+      "desc": "Data governance, control and tools you need to manage your customer data.",
+      "back-desc": "Our Integrations allows you to  enrich Air360 with Segment by Twilio properties as well as push Air360 behavioral data to Segment by Twilio to activate segments, and visualize users and metrics."
+    },
+    "google": {
+      "desc": "Fully-managed, serverless data warehouse that enables scalable analysis over petabytes of data.",
+      "back-desc": "Push out all Air360 metrics and segments to Bigquery."
+    },
+    "sftp": {
+      "desc": "File protocol for transferring large files over the web.",
+      "back-desc": "Push out all Air360 segments to your SFTP solution."
+    },
+    "get-feedback": {
+      "desc": "Get in-the-moment feedback from your customers.",
+      "back-desc": "User or Get feedback connector to  to unlock the full potential of your service and link user feedback with their session replay to fully understand the root cause of their bad experiences"
+    }
+  }
 }
