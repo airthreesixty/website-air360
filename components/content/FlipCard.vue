@@ -1,5 +1,5 @@
 <template>
-  <div class="relative bg-transparent h-[254px] perspect-[1000px]" @click="flip">
+  <div class="relative bg-transparent h-[280px] perspect-[1000px]" @click="flip">
     <div :class="{'rotate-y-180': isActive}" class="innerCard flex flex-col items-center p-6 transform">
       <div class="frontSide shadow rounded-lg">
         <div class="relative flex flex-col p-8 h-full">
