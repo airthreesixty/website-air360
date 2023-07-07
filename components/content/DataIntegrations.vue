@@ -9,6 +9,8 @@
         :logo="logo.component"
         :scale="logo.scale"
         :back-description="logo.backDescription"
+        :is-active="isActive(index)"
+        @card-clicked="cardClicked(index)"
       />
     </div>
   </div>
@@ -42,4 +44,26 @@ const logos = [
     backDescription: 'With the Coveo Relevance CloudTM, intelligent enterprise search is just the beginning.',
   },
 ]
+
+interface Props {
+  isActive: boolean
+}
+
+defineProps<Props>()
+
+const activeIndex = ref(-1)
+
+const isActive = (index: number) => {
+  // console.log('index-is-active', index)
+  return index === activeIndex.value
+}
+
+const cardClicked = (index: number) => {
+  // console.log('index-card-clicked', index)
+  if (isActive(index)) {
+    activeIndex.value = -1
+  } else {
+    activeIndex.value = index
+  }
+}
 </script>

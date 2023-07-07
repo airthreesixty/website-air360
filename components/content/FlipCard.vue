@@ -36,14 +36,15 @@ interface Props {
   logo: string | ConcreteComponent
   scale: number
   backDescription: string
+  isActive: boolean
 }
 
 defineProps<Props>()
 
-const isActive = ref(false)
+const emit = defineEmits(['card-clicked'])
 
 const flip = () => {
-  isActive.value = !isActive.value
+  emit('card-clicked')
 }
 </script>
 

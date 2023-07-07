@@ -24,6 +24,8 @@ const hrefAlternate = computed(() => {
     }))
 })
 
+// Cookiesを受け入れる
+
 useHead(() => ({
   script: [
     {
