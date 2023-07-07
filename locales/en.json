@@ -302,5 +302,23 @@
   "data-integrations": {
     "title": "ユーザーの行動が、あなたのテックエコシステムの中心に",
     "content": "Air360では、すべてのビジネスや業界には独自のデジタルエコシステムとKPIが存在することを知っています。そのため、私たちはスタックアプローチを採用しています。複数のビジネステックソリューション間で、行動セグメントやインサイトを可能な限り柔軟に共有できます。"
+  },
+  "tagging-coding": {
+    "card1": {
+      "title": "Auto-Tracking",
+      "desc": "Capture every  click, scroll, pageview, tap,  any user interaction by default  with your CSS & html elements."
+    },
+    "card2": {
+      "title": "Plug and Play",
+      "desc": "Use Air360 total capacity from day 1, avoid extra configuration steps, and reduce time to insights."
+    },
+    "card3": {
+      "title": "Tagless",
+      "desc": "Forget about manual  tagging to track any product, purchase, or user interaction even if your  website changes its design constantly."
+    },
+    "card4": {
+      "title": "Codeless",
+      "desc": "User your tag management system to implement Air360 and track any data type without requiring technical deployment."
+    }
   }
 }

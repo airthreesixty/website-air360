@@ -5,6 +5,9 @@
         <h2 class="mb-4 title2 tracking-tight font-extrabold text-black-600 dark:text-white">
           <ContentSlot :use="$slots.title" unwrap="p" />
         </h2>
+        <p class="text-gray-500">
+          <ContentSlot :use="$slots.description" unwrap="p" />
+        </p>
       </div>
       <div class="col-span-2 space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0">
         <div v-for="{title, description, iconName} in cards" :key="title">
@@ -28,24 +31,24 @@ const { t } = useI18n()
 
 const cards = [
   {
-    title: t('privacy.card1.title'),
-    description: t('privacy.card1.desc'),
-    iconName: 'user-shield',
+    title: t('tagging-coding.card1.title'),
+    description: t('tagging-coding.card1.desc'),
+    iconName: 'robot-astromech',
   },
   {
-    title: t('privacy.card2.title'),
-    description: t('privacy.card2.desc'),
-    iconName: 'person-circle-minus',
+    title: t('tagging-coding.card2.title'),
+    description: t('tagging-coding.card2.desc'),
+    iconName: 'bolt',
   },
   {
-    title: t('privacy.card3.title'),
-    description: t('privacy.card3.desc'),
-    iconName: 'person-sign',
+    title: t('tagging-coding.card3.title'),
+    description: t('tagging-coding.card3.desc'),
+    iconName: 'tag',
   },
   {
-    title: t('privacy.card4.title'),
-    description: t('privacy.card4.desc'),
-    iconName: 'user-magnifying-glass',
+    title: t('tagging-coding.card4.title'),
+    description: t('tagging-coding.card4.desc'),
+    iconName: 'code',
   },
 ]
 </script>

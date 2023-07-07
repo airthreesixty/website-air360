@@ -1,7 +1,7 @@
 <template>
   <section ref="target" class="bg-white">
     <div
-      class="container py-7 md:h-full md:flex md:justify-between md:items-center lg:py-13"
+      class="py-7 md:h-full md:flex md:justify-between md:items-center lg:py-13"
     >
       <div :class="`flex justify-center md:${imageStatus} md:mt-0 md:flex md:w-[58%] md:p-5`">
         <nuxt-img
@@ -28,7 +28,7 @@
       </div>
       <div class="md:w-[39%] md:py-7">
         <!-- <fa-icon class="text-4xl lg:text-5xl mt-4 icon-color" :icon="['far', icon]" /> -->
-        <p class="font-bold text-lg my-2 icon-color">
+        <p class="font-bold text-lg my-2 icon-color text-left">
           <ContentSlot :use="$slots.subtext" unwrap="p" />
         </p>
         <h3
@@ -36,7 +36,7 @@
         >
           <ContentSlot :use="$slots.title" unwrap="p" />
         </h3>
-        <div class="max-w-2xl mt-5 font-light prose text-gray-500 text-lg lg:text-xl xl:leading-8">
+        <div class="max-w-2xl text-left mt-5 font-light prose text-gray-500 text-lg lg:text-xl xl:leading-8">
           <slot name="description" />
         </div>
         <slot name="dropdowns" />
