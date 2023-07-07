@@ -1,3 +1,7 @@
+---
+title: データ収集
+---
+
 ::common-hero{src="/en/product/dataIntegration.webp"}
 #subtext
 データ収集

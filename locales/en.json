@@ -322,5 +322,9 @@
       "title": "Codeless",
       "desc": "User your tag management system to implement Air360 and track any data type without requiring technical deployment."
     }
+  },
+  "data-collection": {
+    "title": "Collect & Visualize user behavior in 3 clicks",
+    "content": "Stop straggling with technical deployments, and start collecting all behavior and purchase data from your users with a simple and codeless installation through your tag management system."
   }
 }
