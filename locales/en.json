@@ -298,5 +298,9 @@
       "desc": "Get in-the-moment feedback from your customers.",
       "back-desc": "User or Get feedback connector to  to unlock the full potential of your service and link user feedback with their session replay to fully understand the root cause of their bad experiences"
     }
+  },
+  "data-integrations": {
+    "title": "ユーザーの行動が、あなたのテックエコシステムの中心に",
+    "content": "Air360では、すべてのビジネスや業界には独自のデジタルエコシステムとKPIが存在することを知っています。そのため、私たちはスタックアプローチを採用しています。複数のビジネステックソリューション間で、行動セグメントやインサイトを可能な限り柔軟に共有できます。"
   }
 }

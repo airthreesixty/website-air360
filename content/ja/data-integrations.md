@@ -1,3 +1,7 @@
+---
+title: データ統合機能
+---
+
 ::common-hero{src="/en/product/dataIntegration.webp"}
 #subtext
 データ統合

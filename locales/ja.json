@@ -290,5 +290,9 @@
       "desc": "お客様からリアルタイムのフィードバックを取得します。",
       "back-desc": "サービスのフルポテンシャルを引き出し、ユーザーフィードバックをセッション再生とリンクさせて、その悪い体験の原因を完全に理解するために、ユーザーやフィードバックを接続します。"
     }
+  },
+  "data-integrations": {
+    "title": "User behavior at the heart of your Tech Ecosystem",
+    "content": "At Air360, we know every business, and industry has its own digital ecosystem and KPIs. That is why we take a stacked approach. We are as flexible as possible in terms of sharing behavioral segments & insights across your multiple business tech solutions."
   }
 }
