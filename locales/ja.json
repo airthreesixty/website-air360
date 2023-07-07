@@ -294,5 +294,23 @@
   "data-integrations": {
     "title": "User behavior at the heart of your Tech Ecosystem",
     "content": "At Air360, we know every business, and industry has its own digital ecosystem and KPIs. That is why we take a stacked approach. We are as flexible as possible in terms of sharing behavioral segments & insights across your multiple business tech solutions."
+  },
+  "tagging-coding": {
+    "card1": {
+      "title": "自動トラッキング",
+      "desc": "デフォルトでCSSやHTML要素とのユーザーのクリック、スクロール、ページビュー、タップなどのすべての相互作用をキャプチャーします。"
+    },
+    "card2": {
+      "title": "すぐ始められる",
+      "desc": "初日からAir360の全機能を活用し、追加の設定手順を回避し、インサイトの取得にかかる時間を短縮します。"
+    },
+    "card3": {
+      "title": "タグ不要",
+      "desc": "ウェブサイトのデザインが頻繁に変更されても、手動のタグ付けをする必要なく、製品や購入、ユーザーの相互作用を追跡できます。"
+    },
+    "card4": {
+      "title": "コード不要",
+      "desc": "タグ管理システムを使用してAir360を実装し、技術的な展開を必要とせずにさまざまなデータタイプを追跡します。"
+    }
   }
 }
