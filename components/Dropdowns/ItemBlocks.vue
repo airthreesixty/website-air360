@@ -8,6 +8,11 @@
             <DropdownsItems slug="/product/app-analysis" icon="mobile" :text="$t('product-dropdown.app-analysis')" text-color="text-primary-600" />
           </template>
         </DropdownsSubItems>
+        <DropdownsSubItems :title="$t('product-dropdown.capabilities')">
+          <template #items>
+            <DropdownsItems slug="/product/capabilities/data-collection" icon="album-collection" :text="$t('product-dropdown.data-collection')" text-color="text-orange-600" />
+          </template>
+        </DropdownsSubItems>
         <DropdownsSubItems :title="$t('product-dropdown.other')">
           <template #items>
             <DropdownsItems slug="/product/security-compliance" icon="file-contract" :text="$t('product-dropdown.security-compliance')" text-color="text-blue-400" />

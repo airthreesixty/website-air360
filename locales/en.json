@@ -232,7 +232,9 @@
     "security-compliance": "Security & Compliance",
     "blog": "Blog",
     "content-gallery": "Content gallery",
-    "data-integrations": "Data integrations"
+    "data-integrations": "Data integrations",
+    "capabilities": "Capabilities",
+    "data-collection": "Data collection"
   },
   "website-analysis": {
     "title": "Get insights fast and turn them into actions",

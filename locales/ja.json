@@ -224,7 +224,9 @@
     "security-compliance": "セキュリティ & コンプライアンス",
     "blog": "ブログ",
     "content-gallery": "コンテントギャラリー",
-    "data-integrations": "データ統合機能"
+    "data-integrations": "データ統合機能",
+    "capabilities": "機能性",
+    "data-collection": "データ収集"
   },
   "website-analysis": {
     "title": "ウェブサイトの改善箇所が簡単に見つかる",

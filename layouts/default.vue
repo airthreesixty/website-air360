@@ -55,7 +55,7 @@ useHead(() => ({
 
 <style lang="postcss">
 .dropdown {
-  @apply absolute bg-white p-4 rounded-lg border-gray-100 border z-1;
+  @apply absolute bg-white p-4 rounded-lg -left-30 border-gray-100 border z-1;
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 </style>
