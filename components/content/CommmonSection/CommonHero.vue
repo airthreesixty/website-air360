@@ -1,5 +1,5 @@
 <template>
-  <div class="container pt-10 md:pb-10 lg:pt-14">
+  <div class="container py-10 lg:pt-14">
     <div class="md:(grid grid-cols-2 gap-x-8)">
       <div class="text-center md:text-left">
         <span class="font-bold text-primary-600 text-base"><ContentSlot :use="$slots.subtext" unwrap="p" /></span>
