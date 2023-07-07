@@ -231,7 +231,8 @@
     "app-analysis": "App analysis",
     "security-compliance": "Security & Compliance",
     "blog": "Blog",
-    "content-gallery": "Content gallery"
+    "content-gallery": "Content gallery",
+    "data-integrations": "Data integrations"
   },
   "website-analysis": {
     "title": "Get insights fast and turn them into actions",

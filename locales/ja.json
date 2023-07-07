@@ -223,7 +223,8 @@
     "app-analysis": "アプリ分析",
     "security-compliance": "セキュリティ & コンプライアンス",
     "blog": "ブログ",
-    "content-gallery": "コンテントギャラリー"
+    "content-gallery": "コンテントギャラリー",
+    "data-integrations": "データ統合機能"
   },
   "website-analysis": {
     "title": "ウェブサイトの改善箇所が簡単に見つかる",

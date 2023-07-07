@@ -68,13 +68,22 @@
                 <span class="sr-only">Open Inspiration menu</span>
                 {{ $t("inspiration") }}
               </div>
-              <div v-show="isInspirationActive" id="inspiration-modal" class="dropdown right-1 mt-1 w-49 text-center" @mouseleave="closeInspiration">
-                <nuxt-link :to="localePath('/blog')" class="block text-sm text-black-600 transition-all mb-2 border-b border-gray-100 py-1 hover:(text-primary-600 text-shadow-primary)">
-                  {{ $t("blog") }}
-                </nuxt-link>
-                <nuxt-link :to="localePath('/content-gallery')" class="block text-sm text-black-600 transition-all hover:(text-primary-600 text-shadow-primary)">
-                  {{ $t('gallery') }}
-                </nuxt-link>
+              <div v-show="isInspirationActive" id="inspiration-modal" class="dropdown right-1 mt-1 w-51 text-center" @mouseleave="closeInspiration">
+                <div class="font-bold text-black-600 text-left">
+                  {{ $t('product-dropdown.inspiration') }}
+                </div>
+                <div class="flex items-center mt-4 mb-2">
+                  <span><fa-icon class="text-lg text-blossom-600 w-5 mr-2" :icon="['far', 'newspaper']" /></span>
+                  <nuxt-link :to="localePath('/blog')" class="block text-sm text-black-600 transition-all py-1 hover:(text-primary-600 text-shadow-primary)">
+                    {{ $t("blog") }}
+                  </nuxt-link>
+                </div>
+                <div class="flex items-center mb-2">
+                  <span><fa-icon class="text-lg text-blossom-600 w-5 mr-2" :icon="['far', 'building-columns']" /></span>
+                  <nuxt-link :to="localePath('/content-gallery')" class="block text-sm text-black-600 transition-all hover:(text-primary-600 text-shadow-primary)">
+                    {{ $t('gallery') }}
+                  </nuxt-link>
+                </div>
               </div>
             </li>
             <li>
