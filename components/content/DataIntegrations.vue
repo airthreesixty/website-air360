@@ -33,7 +33,7 @@ const LogoBrandGetFeedback = resolveComponent('LogoBrandGetFeedback')
 const logos = [
   {
     component: LogoBrandSalesforce,
-    scale: 1,
+    scale: 0.9,
     title: 'Salesforce',
     description: "Unify marketing, sales, service, commerce, and IT on the world's #1 CRM",
     backDescription: 'Our  Integrations allows you to  enrich Air360 with Salesforce properties as well as push Air360 behavioral data to Salesforce to activate segments, and visualize users and metrics. ',
@@ -47,7 +47,7 @@ const logos = [
   },
   {
     component: LogoBrandCoveo,
-    scale: 1.2,
+    scale: 1.3,
     title: 'Coveo',
     description: 'With the Coveo Relevance CloudTM, intelligent enterprise search is just the beginning.',
     backDescription: 'With the Coveo Relevance CloudTM, intelligent enterprise search is just the beginning.',
@@ -61,21 +61,21 @@ const logos = [
   },
   {
     component: LogoBrandMailchimp,
-    scale: 1.2,
+    scale: 1.4,
     title: 'Mailchimp',
     description: 'Bring your audience data, marketing channels, and insights together.',
     backDescription: 'Activate Air360 Segments through Mailchimp  to make personalized email campaigns.',
   },
   {
     component: LogoBrandLooker,
-    scale: 1.2,
+    scale: 1.1,
     title: 'Looker',
     description: 'Turn your data into compelling stories of data visualization art.',
     backDescription: 'Extract all metrics and insights from Air360 and visualize them with beautiful dashboards  in Looker.',
   },
   {
     component: LogoBrandOneTrust,
-    scale: 1.2,
+    scale: 1.45,
     title: 'One Trust',
     description: "OneTrust empowers tomorrow's leaders to succeed through trust and impact.",
     backDescription: 'Our Integrations allows you to enrich Air360 with Salesforce properties as well as push Air360 behavioral data to Salesforce to activate segments, and visualize users and metrics.',
@@ -89,14 +89,14 @@ const logos = [
   },
   {
     component: LogoBrandTwillioSegment,
-    scale: 1.2,
+    scale: 1.5,
     title: 'Segment',
     description: 'Data governance, control and tools you need to manage your customer data.',
     backDescription: 'Our  Integrations allows you to  enrich Air360 with Segment by Twilio properties as well as push Air360 behavioral data to Segment by Twilio to activate segments, and visualize users and metrics.',
   },
   {
     component: LogoBrandGoogle,
-    scale: 1.2,
+    scale: 0.9,
     title: 'Google Big Query',
     description: 'Fully-managed, serverless data warehouse that enables scalable analysis over petabytes of data.',
     backDescription: 'Push out all Air360 metrics and segments to Bigquery.',
@@ -110,7 +110,7 @@ const logos = [
   },
   {
     component: LogoBrandGetFeedback,
-    scale: 1.2,
+    scale: 1.9,
     title: 'Get Feedback',
     description: 'Get in-the-moment feedback from your customers.',
     backDescription: 'User or Get feedback connector to  to unlock the full potential of your service and link user feedback with their session replay to fully understand the root cause of their bad experiences',

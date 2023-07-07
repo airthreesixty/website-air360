@@ -5,7 +5,7 @@
     xmlns="http://www.w3.org/2000/svg"
     x="0"
     y="0"
-    viewBox="0 0 300.1 59.1"
+    viewBox="-20 0 320.1 59.1"
     xml:space="preserve"
   ><linearGradient
     id="SVGID_1_"

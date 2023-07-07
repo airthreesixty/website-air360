@@ -5,7 +5,7 @@
     aria-label="Mailchimp"
     width="250"
     height="60"
-    viewBox="0 0 250 60"
+    viewBox="-30 0 250 60"
   >
     <g class="brandLogo__freddie">
       <g class="brandLogo__freddie-outline">
