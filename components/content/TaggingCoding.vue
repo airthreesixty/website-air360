@@ -2,7 +2,7 @@
   <section class="bg-white container">
     <div class="items-center py-10 lg:py-15 mx-auto lg:grid xl:grid-cols-3 lg:gap-8 xl:gap-24">
       <div class="mb-8 lg:mb-0">
-        <h2 class="mb-4 title2 tracking-tight font-extrabold text-black-600 dark:text-white">
+        <h2 class="mb-4 title2 font-extrabold">
           <ContentSlot :use="$slots.title" unwrap="p" />
         </h2>
         <p class="text-gray-500">

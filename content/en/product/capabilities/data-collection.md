@@ -48,7 +48,7 @@ NO SAMPLING
 #title
 Capture 100% of your traffic
 #description
-Our Autotracking technology does not sample any data to make sure all user interactions and behaviors are tracked and all  accurate to make the right decisions.
+Our Auto-Tracking technology does not sample any data to make sure all user interactions and behaviors are tracked and all  accurate to make the right decisions.
 ::
 ::single-description{imagePath="/sunburst.png" themeColor="#3C8BFF"}
 #subtext
@@ -56,7 +56,7 @@ FULLY RETROACTIVE
 #title
 Keep all your historic data
 #description
-Our taggless technology allows you to keep track of all your user behaviors from the day our pixel  was installed. This way you will not miss any data to make any business decision.
+Our tagless technology allows you to keep track of all your user behaviors from the day our pixel  was installed. This way you will not miss any data to make any business decision.
 ::
 ::single-description{imagePath="/sunburst.png" imageStatus="block" imageStatus2="hidden"}
 #subtext
