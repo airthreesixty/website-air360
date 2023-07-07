@@ -105,10 +105,17 @@
                 </div>
               </NuxtLink>
             </li>
-            <li>
+            <li class="mb-4">
               <NuxtLink :to="localePath('/product/security-compliance')">
                 <div class="hover:underline">
                   {{ $t("security.title") }}
+                </div>
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink :to="localePath('/data-integrations')">
+                <div class="hover:underline">
+                  {{ $t("product-dropdown.data-integrations") }}
                 </div>
               </NuxtLink>
             </li>
