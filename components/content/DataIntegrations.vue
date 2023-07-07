@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-50 py-10">
+  <div class="bg-gray-50 pt-10 pb-20">
     <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
       <FlipCard
         v-for="(logo, index) in logos"
