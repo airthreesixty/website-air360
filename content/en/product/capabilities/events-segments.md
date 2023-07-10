@@ -13,11 +13,11 @@ Our solution allows you to define behavioral events and segments to use for anal
 #title1
 EVENTS
 #desc1
-Visualize any user interaction you need inside Air360.
+Visualize any user interaction you need inside Air360
 #title2
 SEGMENTS
 #desc2
-Create powerful behavioral segments to enrich your analysis.
+Create powerful behavioral segments to enrich your analysis
 ::
 
 ::single-description{imagePath="/sunburst.png" :container="true" id="define-events"}
@@ -36,22 +36,22 @@ Define events inside Air360 to:
 #title1
 Visualize trends in real time 
 #desc1
-Create reports by event or event type to keep track of user behavior’s performance
+Create reports by event or event type to keep track of user behavior’s performance.
 #title2
 Discover behavioral patterns
 #desc2
-Create funnels to see where users drop-off and reveal where they go with our User Journeys
+Create funnels to see where users drop-off and reveal where they go with our User Journeys.
 #title3
 Validate Hypothesis
 #desc3
-Filter Session Replays by behavior and validate your hypothesis with relevant replays
+Filter Session Replays by behavior and validate your hypothesis with relevant replays.
 #title4
 Create powerful segments
 #desc4
-Define segments of users that triggered any type of event during their session
+Define segments of users that triggered any type of event during their session.
 ::
 
-::single-description{imagePath="/sunburst.png" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C" id="define-segments"}
+::single-description{imagePath="/sunburst.png" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C" id="define-segments" :container=true}
 #subtext
 SEGMENT DEFINITION
 #title
@@ -66,19 +66,19 @@ Define Segments inside Air360 to:
 #title1
 Avoid selection bias 
 #desc1
-Aggregate data does not tell you much of the story. Adding segments will give you full understanding
+Aggregate data does not tell you much of the story. Adding segments will give you full understanding.
 #title2
 Discover profitable segments
 #desc2
-Compare performance between segments and discover the most profitable ones for your business
+Compare performance between segments and discover the most profitable ones for your business.
 #title3
 Enhance your experience
 #desc3
-Push segments into your A/B testing and dynamic content solutions for personalization
+Push segments into your A/B testing and dynamic content solutions for personalization.
 #title4
 Retarget non-converted users
 #desc4
-Give a second chance to those users that did not convert on your eCommerce
+Give a second chance to those users that did not convert on your eCommerce.
 ::
 
 ::cta-new
