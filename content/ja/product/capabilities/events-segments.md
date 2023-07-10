@@ -1,3 +1,7 @@
+---
+title: データ定義
+---
+
 ::common-hero{src="/en/product/dataIntegration.webp"}
 #subtext
 データ定義

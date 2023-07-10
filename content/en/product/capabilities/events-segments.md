@@ -4,9 +4,7 @@ DATA DEFINITION
 #title
 Easily get the user behavior you need 
 #description
-Air360 is designed for data and business users to get full visibility of your users.
-
-Our solution allows you to define behavioral events and segments to use for analysis, marketing with just few clicks.
+Air360 is designed for data and business users to get full visibility of your users. Our solution allows you to define behavioral events and segments to use for analysis, marketing with just few clicks.
 ::
 
 ::two-features{icon1="calendar-exclamation" icon2="bullseye-pointer" id1="#define-events" id2="#define-segments"}

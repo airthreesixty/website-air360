@@ -326,5 +326,9 @@
   "data-collection": {
     "title": "Collect & Visualize user behavior in 3 clicks",
     "content": "Stop straggling with technical deployments, and start collecting all behavior and purchase data from your users with a simple and codeless installation through your tag management system."
+  },
+  "events-segments": {
+    "title": "Easily get the user behavior you need",
+    "content": "Air360 is designed for data and business users to get full visibility of your users. Our solution allows you to define behavioral events and segments to use for analysis, marketing with just few clicks."
   }
 }
