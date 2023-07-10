@@ -1,6 +1,7 @@
 <template>
-  <section ref="target" class="bg-white">
+  <section :id="id ? id : undefined" ref="target" class="bg-white">
     <div
+      :class="{container: container}"
       class="py-7 md:h-full md:flex md:justify-between md:items-center lg:py-13"
     >
       <div :class="`flex justify-center md:${imageStatus} md:mt-0 md:flex md:w-[58%] md:p-5`">
@@ -111,6 +112,14 @@ const props = defineProps({
   isShadow: {
     type: Boolean,
     default: true,
+  },
+  container: {
+    type: Boolean,
+    default: false,
+  },
+  id: {
+    type: String,
+    default: '',
   },
 })
 
