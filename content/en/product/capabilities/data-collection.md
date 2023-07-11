@@ -2,9 +2,9 @@
 #subtext
 DATA COLLECTION
 #title
-Collect & Visualize user behavior in 3 clicks
+Collect & Visualize customer behavior in 3 clicks
 #description
-Stop straggling with technical deployments, and start collecting all behavior and purchase data from your users with a simple and codeless installation through your tag management system.
+Get the complete view on your customers behavior with a simple and codeless UX analytics solution. Activate in less than 5 minutes with your tag manager.
 ::
 
 ::tagging-coding
@@ -88,7 +88,7 @@ Create custom events using metadata properties thar are already on your online s
 #title4
 API
 #desc4
-Identify users, push product or user properties and transactional data through an easy conexion with Air360’s APIs.
+Identify users, push product or user properties and transactional data through an easy connection with Air360’s APIs.
 ::
 
 ::cta-new
