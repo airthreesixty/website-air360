@@ -13,5 +13,7 @@ useSeoMeta({
   ogDescription: t('data-integrations.content'),
   ogTitle: t('data-integrations.title'),
   ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
+  ogImage: `${runtimeConfig.public.baseUrl}/en/product/dataIntegration.webp`,
+  twitterCard: 'summary_large_image',
 })
 </script>
