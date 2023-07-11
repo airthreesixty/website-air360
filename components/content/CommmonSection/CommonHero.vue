@@ -10,7 +10,7 @@
           <ContentSlot :use="$slots.description" unwrap="p" />
         </p>
       </div>
-      <div class="max-w-[500px] mt-5 mx-auto md:self-center">
+      <div class="max-w-[600px] mt-5 md:mt-0 mx-auto md:self-center">
         <nuxt-img format="webp" :src="src" sizes="xl:1390px lg:1034px md:754px sm:1184px xs:277px" />
       </div>
     </div>

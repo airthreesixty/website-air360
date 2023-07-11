@@ -1,4 +1,4 @@
-::common-hero{src="/en/product/dataIntegration.webp"}
+::common-hero{src="/en/data-collection/hero.png"}
 #subtext
 DATA COLLECTION
 #title
@@ -34,7 +34,7 @@ Understand the impact of your user behavior on your business results to improve 
 ::descriptions
 #title
 Meet Air360’s Auto-Tracking pixel
-::single-description{imagePath="/sunburst.png"}
+::single-description{imagePath="/en/data-collection/cookies.png" :is-shadow="false"}
 #subtext
 FIRST-PARTY DATA
 #title
@@ -42,7 +42,7 @@ Data you can trust
 #description
 Our first-party cookie technology allows us to capture all user interactions with your website CSS & HTML elements while ensuring data privacy compliance.
 ::
-::single-description{imagePath="/sunburst.png" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C"}
+::single-description{imagePath="/en/data-collection/noSample.png" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C" :is-shadow="false"}
 #subtext
 NO SAMPLING
 #title
@@ -50,7 +50,7 @@ Capture 100% of your traffic
 #description
 Our Auto-Tracking technology does not sample any data to make sure all user interactions and behaviors are tracked and all  accurate to make the right decisions.
 ::
-::single-description{imagePath="/sunburst.png" themeColor="#3C8BFF"}
+::single-description{imagePath="/en/data-collection/retroactive.png" themeColor="#3C8BFF" :is-shadow="false"}
 #subtext
 FULLY RETROACTIVE
 #title
@@ -58,7 +58,7 @@ Keep all your historic data
 #description
 Our tagless technology allows you to keep track of all your user behaviors from the day our pixel  was installed. This way you will not miss any data to make any business decision.
 ::
-::single-description{imagePath="/sunburst.png" imageStatus="block" imageStatus2="hidden"}
+::single-description{imagePath="/en/data-collection/performance.png" imageStatus="block" imageStatus2="hidden" :is-shadow="false"}
 #subtext
 HIGHEST PERFORMER
 #title

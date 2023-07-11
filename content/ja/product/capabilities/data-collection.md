@@ -2,7 +2,7 @@
 title: データ収集
 ---
 
-::common-hero{src="/en/product/dataIntegration.webp"}
+::common-hero{src="/en/data-collection/hero.png"}
 #subtext
 データ収集
 #title
@@ -38,7 +38,7 @@ Air360ピクセルをウェブサイトに実装するだけで、すべての�
 ::descriptions
 #title
 Air360の自動トラッキングをお試しください
-::single-description{imagePath="/sunburst.png"}
+::single-description{imagePath="/en/data-collection/cookies.png" :is-shadow="false"}
 #subtext
 ファーストパーティデータ
 #title
@@ -46,7 +46,7 @@ Air360の自動トラッキングをお試しください
 #description
 当社のファーストパーティークッキー技術により、データプライバシーの遵守を確保しながら、お客様のウェブサイトのCSSおよびHTML要素とのすべてのユーザーの相互作用をキャプチャすることができます。
 ::
-::single-description{imagePath="/sunburst.png" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C"}
+::single-description{imagePath="/en/data-collection/noSample.png" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C" :is-shadow="false"}
 #subtext
 サンプリングなし
 #title
@@ -54,7 +54,7 @@ Air360の自動トラッキングをお試しください
 #description
 当社の自動トラッキング技術は、すべてのユーザーの相互作用と行動が追跡され、正確なデータで正しい判断を行うために、データをサンプリングしません。
 ::
-::single-description{imagePath="/sunburst.png" themeColor="#3C8BFF"}
+::single-description{imagePath="/en/data-collection/retroactive.png" themeColor="#3C8BFF" :is-shadow="false"}
 #subtext
 完全な遡及性
 #title
@@ -62,7 +62,7 @@ Air360の自動トラッキングをお試しください
 #description
 当社のタグレス技術により、Air360ピクセルがインストールされた日からすべてのユーザーの行動を追跡することができます。これにより、ビジネスの意思決定に必要なデータを見逃すことはありません。
 ::
-::single-description{imagePath="/sunburst.png" imageStatus="block" imageStatus2="hidden"}
+::single-description{imagePath="/en/data-collection/performance.png" imageStatus="block" imageStatus2="hidden" :is-shadow="false"}
 #subtext
 最高のパフォーマンスを発揮
 #title
