@@ -24,7 +24,7 @@ const hrefAlternate = computed(() => {
     }))
 })
 
-// Cookiesを受け入れる
+// acceptBtnText: '<img src="/iosIcon.svg">'
 
 useHead(() => ({
   script: [

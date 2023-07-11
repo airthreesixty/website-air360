@@ -40,7 +40,7 @@ FIRST-PARTY DATA
 #title
 Data you can trust
 #description
-User interactions with your website CSS & HTML elements while ensuring data privacy compliance.
+Our first-party cookie technology allows us to capture all user interactions with your website CSS & HTML elements while ensuring data privacy compliance.
 ::
 ::single-description{imagePath="/sunburst.png" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C"}
 #subtext
@@ -64,13 +64,15 @@ HIGHEST PERFORMER
 #title
 Ensure your store’s performance
 #description
-Enrich Air360's data with other datasets such as CRM/CDP or datalayer information to go beyond behavioral analysis.
+Our Auto-tracking pixel is the lightest JS SDK  in the market. This will ensure you make the most out of your user's data without harming your store's performance level.
 ::
 ::
 
 ::four-features{icon1="layer-group" icon2="circle-question" icon3="print-magnifying-glass" icon4="cloud"}
 #title
 Data can be collected in many ways with Air360
+#description
+Enrich Air360's data with other datasets and go beyond behavioral analysis
 #title1
 Data Layer
 #desc1

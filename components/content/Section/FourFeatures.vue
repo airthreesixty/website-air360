@@ -4,9 +4,9 @@
       <h2 class="mb-4 title2">
         <ContentSlot :use="$slots.title" unwrap="p" />
       </h2>
-      <!-- <p class="text-gray-500 sm:text-xl">
+      <p class="text-gray-500 sm:text-xl">
         <ContentSlot :use="$slots.description" unwrap="p" />
-      </p> -->
+      </p>
       <div class="mt-8 lg:mt-12 space-y-8 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-12 md:space-y-0">
         <div class="flex flex-col">
           <fa-icon class="fa-3x text-primary-600 mb-2" :icon="['far', icon1]" />

@@ -44,7 +44,7 @@ Air360の自動トラッキングをお試しください
 #title
 信頼できるデータ
 #description
-データプライバシーの遵守を確保しながら、ウェブサイトのCSSおよびHTML要素とのユーザーの相互作用を追跡します。
+当社のファーストパーティークッキー技術により、データプライバシーの遵守を確保しながら、お客様のウェブサイトのCSSおよびHTML要素とのすべてのユーザーの相互作用をキャプチャすることができます。
 ::
 ::single-description{imagePath="/sunburst.png" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C"}
 #subtext
@@ -68,13 +68,15 @@ Air360の自動トラッキングをお試しください
 #title
 ショップのパフォーマンスを確保
 #description
-CRM/CDPやデータレイヤー情報など、他のデータセットをAir360のデータに組み込むことで、行動分析を超えた分析を行います。
+当社の自動トラッキングピクセルは、市場で最も軽量なJS SDKです。これにより、ストアのパフォーマンスレベルを損なうことなく、ユーザーのデータを最大限活用することが保証されます。
 ::
 ::
 
 ::four-features{icon1="layer-group" icon2="circle-question" icon3="print-magnifying-glass" icon4="cloud"}
 #title
-Air360では、さまざまな方法でデータを収集することが可能
+さまざまな方法でデータを収集することが可能
+#description
+他のデータセットを使用してEnrich Air360のデータを充実させ、行動分析を超えた分析を行います
 #title1
 データレイヤー
 #desc1
