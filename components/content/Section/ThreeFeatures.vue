@@ -1,7 +1,7 @@
 <template>
   <section class="bg-white">
     <div class="py-8 px-4 mx-auto max-w-screen-xl text-center sm:py-16 lg:px-6">
-      <h2 class="mb-4 title2">
+      <h2 class="mb-4 title2 max-w-[900px] mx-auto">
         <ContentSlot :use="$slots.title" unwrap="p" />
       </h2>
       <!-- <p class="text-gray-500 sm:text-xl dark:text-gray-400">
