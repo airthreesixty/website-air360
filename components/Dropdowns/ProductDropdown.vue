@@ -18,7 +18,7 @@
           </NuxtLink>
         </div>
       </div>
-      <!-- <div>
+      <div>
         <div class="font-bold text-black-600">
           {{ $t('product-dropdown.capabilities') }}
         </div>
@@ -28,7 +28,7 @@
             {{ $t('product-dropdown.data-collection') }}
           </NuxtLink>
         </div>
-      </div> -->
+      </div>
       <div>
         <div class="font-bold text-black-600">
           {{ $t('product-dropdown.other') }}

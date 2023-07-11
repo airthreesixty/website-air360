@@ -9,7 +9,8 @@
             </h2>
             <div>
               <p class="mt-4 text-md text-center leading-6 text-primary-100 md:text-left lg:text-xl">
-                {{ $t('cta-description') }}
+                <span v-if="!$slots.description">{{ $t('cta-description') }}</span>
+                <ContentSlot :use="$slots.description" unwrap="p" />
               </p>
             </div>
             <div class="flex justify-center mt-8 md:w-2/3">
@@ -18,6 +19,7 @@
               </NuxtLink> -->
               <ButtonPrimary slug="/request-demo" theme="transparent">
                 {{ $t('try-air360') }}
+                <!-- <ContentSlot :use="$slots.cta" unwrap="p" /> -->
               </ButtonPrimary>
             </div>
           </div>
