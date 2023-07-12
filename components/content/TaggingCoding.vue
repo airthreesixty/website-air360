@@ -14,7 +14,7 @@
           <div class="flex justify-center items-center mb-4 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
             <fa-icon class="fa-2x text-primary-600" :icon="['far', iconName]" />
           </div>
-          <h3 class="mb-2 text-xl font-bold dark:text-white">
+          <h3 class="mb-2 text-xl font-bold text-black-600">
             {{ title }}
           </h3>
           <p class="text-gray-500 dark:text-gray-400">

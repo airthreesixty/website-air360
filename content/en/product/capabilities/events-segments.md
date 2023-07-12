@@ -1,4 +1,4 @@
-::common-hero{src="/en/product/dataIntegration.webp"}
+::common-hero{src="/en/events-segments/hero.png"}
 #subtext
 DATA DEFINITION
 #title
@@ -18,7 +18,7 @@ SEGMENTS
 Create powerful behavioral segments to enrich your analysis
 ::
 
-::single-description{imagePath="/sunburst.png" :container="true" id="define-events"}
+::single-description{video-src="/en/videos/defineEvents.mp4" :is-video="true" :container="true" id="define-events" poster="/en/data-collection/defineEvents.jpeg"}
 #subtext
 EVENT DEFINITION
 #title
@@ -49,7 +49,7 @@ Create powerful segments
 Define segments of users that triggered any type of event during their session.
 ::
 
-::single-description{imagePath="/sunburst.png" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C" id="define-segments" :container=true}
+::single-description{imagePath="/en/events-segments/defineSegments.jpeg" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C" id="define-segments" :container=true}
 #subtext
 SEGMENT DEFINITION
 #title

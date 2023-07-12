@@ -18,11 +18,12 @@
         <video
           v-else-if="showVideo"
           autoplay
-          class="shadow-lg my-auto w-full rounded-lg object-cover"
+          class="my-auto w-full rounded-lg object-cover"
           loop
           muted
           playsinline
           :poster="poster"
+          :class="{'shadow-lg': isShadow}"
         >
           <source :data-src="videoSrc" type="video/mp4" :src="videoSrc">
         </video>
@@ -56,11 +57,12 @@
         <video
           v-else-if="showVideo"
           autoplay
-          class="shadow-lg my-auto w-full rounded-lg object-cover"
+          class="my-auto w-full rounded-lg object-cover"
           loop
           muted
           playsinline
           :poster="poster"
+          :class="{'shadow-lg': isShadow}"
         >
           <source :data-src="videoSrc" type="video/mp4" :src="videoSrc">
         </video>
