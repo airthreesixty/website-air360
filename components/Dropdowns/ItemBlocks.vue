@@ -11,6 +11,7 @@
         <DropdownsSubItems :title="$t('product-dropdown.capabilities')">
           <template #items>
             <DropdownsItems slug="/product/capabilities/data-collection" icon="album-collection" :text="$t('product-dropdown.data-collection')" text-color="text-orange-600" />
+            <DropdownsItems slug="/product/capabilities/events-segments" icon="calendar-circle-user" :text="$t('product-dropdown.events-segments')" text-color="text-orange-600" />
           </template>
         </DropdownsSubItems>
         <DropdownsSubItems :title="$t('product-dropdown.other')">

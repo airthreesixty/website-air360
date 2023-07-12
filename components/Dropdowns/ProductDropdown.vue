@@ -1,5 +1,5 @@
 <template>
-  <nav class="dropdown w-140">
+  <nav class="dropdown w-155">
     <div class="flex justify-around">
       <div>
         <div class="font-bold text-black-600">
@@ -26,6 +26,12 @@
           <span><fa-icon class="text-lg text-orange-600 mr-2 w-5" :icon="['far', 'album-collection']" /></span>
           <NuxtLink :to="localePath('/product/capabilities/data-collection')" class="text-black-600 hover:(text-primary-600 text-shadow-primary)">
             {{ $t('product-dropdown.data-collection') }}
+          </NuxtLink>
+        </div>
+        <div class="text-sm text-black-600 mt-4">
+          <span><fa-icon class="text-lg text-orange-600 mr-2 w-5" :icon="['far', 'calendar-circle-user']" /></span>
+          <NuxtLink :to="localePath('/product/capabilities/events-segments')" class="text-black-600 hover:(text-primary-600 text-shadow-primary)">
+            {{ $t('product-dropdown.events-segments') }}
           </NuxtLink>
         </div>
       </div>

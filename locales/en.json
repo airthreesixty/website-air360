@@ -234,7 +234,8 @@
     "content-gallery": "Content gallery",
     "data-integrations": "Data integrations",
     "capabilities": "Capabilities",
-    "data-collection": "Data collection"
+    "data-collection": "Data collection",
+    "events-segments": "Events & Segments"
   },
   "website-analysis": {
     "title": "Get insights fast and turn them into actions",

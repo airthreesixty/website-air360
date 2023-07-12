@@ -33,7 +33,7 @@ Air360内で必要な任意のユーザーの行動を可視化できます
 
 ::four-features{icon1="eyes" icon2="magnifying-glass" icon3="badge-check" icon4="sparkles"}
 #title
-以下の目的のために、Air360内でイベントを定義:
+Air360内でイベントを定義
 #title1
 リアルタイムでトレンドを可視化
 #desc1
@@ -63,7 +63,7 @@ Air360内で必要な任意のユーザーの行動を可視化できます
 
 ::four-features{icon1="person-walking-arrow-loop-left" icon2="magnifying-glass-dollar" icon3="dumbbell" icon4="crosshairs-simple"}
 #title
-以下の目的のために、Air360内でセグメントを定義:
+Air360内でセグメントを定義
 #title1
 選択バイアスを回避
 #desc1

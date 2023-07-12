@@ -1,13 +1,13 @@
 <template>
   <section class="bg-white">
-    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center sm:py-16 lg:px-6">
+    <div class="container py-8 text-center sm:py-16">
       <h2 class="mb-4 title2">
         <ContentSlot :use="$slots.title" unwrap="p" />
       </h2>
       <p v-if="$slots.description" class="text-gray-500 sm:text-xl">
         <ContentSlot :use="$slots.description" unwrap="p" />
       </p>
-      <div class="mt-8 lg:mt-12 space-y-8 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-12 md:space-y-0">
+      <div class="mt-8 lg:mt-12 space-y-8 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-9 md:space-y-0">
         <div class="flex flex-col">
           <fa-icon class="fa-3x text-primary-600 mb-2" :icon="['far', icon1]" />
           <h3 class="mb-2 text-xl font-bold text-black-600">
