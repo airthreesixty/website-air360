@@ -1,5 +1,5 @@
 ---
-title: データ定義
+title: イベント & セグメント
 ---
 
 ::common-hero{src="/en/events-segments/hero.png"}
