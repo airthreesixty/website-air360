@@ -2,7 +2,7 @@
 title: データ定義
 ---
 
-::common-hero{src="/en/product/dataIntegration.webp"}
+::common-hero{src="/en/events-segments/hero.png"}
 #subtext
 データ定義
 #title
@@ -22,7 +22,7 @@ Air360内で必要な任意のユーザーの行動を可視化できます
 強力な行動セグメントを作成して、分析の質を高めます
 ::
 
-::single-description{imagePath="/sunburst.png" :container="true" id="define-events"}
+::single-description{video-src="/en/videos/defineEvents.mp4" :is-video="true" :container="true" id="define-events" poster="/en/data-collection/defineEvents.jpeg"}
 #subtext
 イベント定義
 #title
@@ -52,7 +52,7 @@ Air360内で必要な任意のユーザーの行動を可視化できます
 セッション中に任意の種類のイベントをトリガーしたユーザーのセグメントを定義します。
 ::
 
-::single-description{imagePath="/sunburst.png" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C" id="define-segments" :container="true"}
+::single-description{imagePath="/en/events-segments/defineSegments.jpeg" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C" id="define-segments" :container=true}
 #subtext
 セグメント定義
 #title
