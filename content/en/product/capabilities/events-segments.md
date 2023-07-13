@@ -18,7 +18,7 @@ SEGMENTS
 Create powerful behavioral segments to enrich your analysis
 ::
 
-::single-description{video-src="/en/videos/defineEvents.mp4" :is-video="true" :container="true" id="define-events" poster="/en/events-segments/defineEvents.jpeg"}
+::single-description{gifSrc="/en/events-segments/defineEvents.gif" :container="true" id="define-events"}
 #subtext
 EVENT DEFINITION
 #title

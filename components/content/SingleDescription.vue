@@ -6,7 +6,7 @@
     >
       <div :class="`flex justify-center md:${imageStatus} md:mt-0 md:flex md:w-[58%] md:p-5`">
         <nuxt-img
-          v-if="!isVideo"
+          v-if="imagePath"
           format="webp"
           :src="imagePath"
           :alt="alt"
@@ -15,6 +15,7 @@
           class="rounded-lg my-auto w-full object-cover"
           :class="{'shadow-lg': isShadow}"
         />
+        <img v-else-if="gifSrc" :src="gifSrc" :class="{'shadow-lg': isShadow}" class="rounded-lg my-auto w-full object-cover">
         <video
           v-else-if="showVideo"
           autoplay
@@ -45,7 +46,7 @@
       </div>
       <div :class="`hidden md:${imageStatus2}  md:mt-0 md:flex md:w-[58%] md:p-5`">
         <nuxt-img
-          v-if="!isVideo"
+          v-if="imagePath"
           format="webp"
           :src="imagePath"
           :alt="alt"
@@ -54,6 +55,7 @@
           class="rounded-lg my-auto w-full object-cover"
           :class="{'shadow-lg': isShadow}"
         />
+        <img v-else-if="gifSrc" :src="gifSrc" :class="{'shadow-lg': isShadow}" class="rounded-lg my-auto w-full object-cover">
         <video
           v-else-if="showVideo"
           autoplay
@@ -120,6 +122,10 @@ const props = defineProps({
     default: false,
   },
   id: {
+    type: String,
+    default: '',
+  },
+  gifSrc: {
     type: String,
     default: '',
   },

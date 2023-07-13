@@ -8,46 +8,37 @@
       <div class="text-gray-500 max-w-[650px] mx-auto lg:text-lg xl:text-xl xl:leading-8">
         <ContentSlot :use="$slots.description" />
       </div>
-      <transition
-        appear
-        appear-active-class="fade-enter-active"
-        @before-appear="beforeAppear"
-        @appear="appear"
-        @after-appear="afterAppear"
-      >
-        <p>
-          Description1
-        </p>
-      </transition>
+      <p class="animation-text animate__animated animate__bounceInRight">
+        Why is my checkout abandonment so high?
+      </p>
+      <p class="animation-text animate__animated animate__bounceInLeft delay-time1">
+        What segments convert better and why?
+      </p>
+      <p class="animation-text animate__animated animate__bounceInRight delay-time2">
+        Why acquisition traffic is not converting?
+      </p>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-const beforeAppear = () => {
-  console.log('beforeAppear')
-}
-
-const appear = () => {
-  console.log('Appear')
-}
-
-const afterAppear = () => {
-  console.log('afterAppear')
-}
+import 'animate.css'
 </script>
 
 <style scoped>
-.fade-enter-active {
-  animation: go 2s;
+.animation-text {
+  font-size: 30px;
+  color: #232E4A;
+  margin: 10px 0;
+  font-weight: bold;
 }
-
-@keyframes go {
-  from {
-    background: #fff;
-  }
-  to {
-    background: #999;
-  }
+.delay-time1 {
+  animation-delay: 1.5s;
+}
+.delay-time2 {
+  animation-delay: 3s;
+}
+.delay-time3 {
+  animation-delay: 4.5s;
 }
 </style>
