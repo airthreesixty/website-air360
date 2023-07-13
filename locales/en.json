@@ -235,7 +235,8 @@
     "data-integrations": "Data integrations",
     "capabilities": "Capabilities",
     "data-collection": "Data collection",
-    "events-segments": "Events & Segments"
+    "events-segments": "Events & Segments",
+    "data-analysis": "Data analysis"
   },
   "website-analysis": {
     "title": "Get insights fast and turn them into actions",

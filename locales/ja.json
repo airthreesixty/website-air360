@@ -227,7 +227,8 @@
     "data-integrations": "データ統合機能",
     "capabilities": "機能性",
     "data-collection": "データ収集",
-    "events-segments": "イベント & セグメント"
+    "events-segments": "イベント & セグメント",
+    "data-analysis": "データ分析"
   },
   "website-analysis": {
     "title": "ウェブサイトの改善箇所が簡単に見つかる",

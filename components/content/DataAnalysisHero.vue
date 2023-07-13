@@ -18,7 +18,7 @@
       <p class="py-2 lg:py-5 animation-text animate__animated animate__bounceInRight delay-time2">
         <span class="highlight-container" style="--color: #3C8BFF; --delay: 4.7s;"><span class="highlight text-2xl md:text-3xl lg:text-4xl xl:text-5xl"><ContentSlot :use="$slots.question3" unwrap="p" /></span></span>
       </p>
-      <h2 class="title2 mt-5 -mb-5 md:(mt-10 -mb-8) xl:mt-15 animation-text animate__animated animate__bounceInDown delay-time3">
+      <h2 class="title2 mt-5 -mb-10 md:mt-10 lg:-mb-15 xl:mt-15 animation-text animate__animated animate__bounceInDown delay-time3">
         <ContentSlot :use="$slots.secondTitle" unwrap="p" />
       </h2>
     </div>
@@ -66,7 +66,7 @@ import 'animate.css'
   left: -1px;
   border-radius: 20% 25% 20% 24%;
   padding: 10px 3px 3px 10px;
-  animation: highlight 1s ease-in-out 1 forwards;
+  animation: highlight 0.8s ease-in-out 1 forwards;
   animation-delay: var(--delay);
 }
 
