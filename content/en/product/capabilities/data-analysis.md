@@ -12,7 +12,7 @@ What segments convert better and why?
 #question3
 Why acquisition traffic is not converting?
 #secondTitle
-Answer your questions with Air360
+Get all your answers with Air360
 ::
 
 ::single-description{imagePath="/en/data-collection/cookies.png" :is-shadow="false" :container="true"}
@@ -49,6 +49,21 @@ WHO
 Quick wins to enhance your user experience
 #description
 Prioritize improvements based on the impact  they have on your business and target segments that did not convert  to give them a second change.
+::
+
+::visualize-data
+#title
+Visualize data where you need
+#description
+Air360 is an Open Data Solution, meaning that we you can extract all your data and visualize it on your favorite Business intelligence solution.
+#title1
+Use the Export API
+#description1
+Export Segments, and metrics from Air360 to your Techstack
+#title2
+Connect to your BI tools
+#description2
+Visualize Air360 metrics in your favorite BI tool.
 ::
 
 ::cta-new
