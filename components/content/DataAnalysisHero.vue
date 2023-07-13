@@ -9,16 +9,17 @@
         <ContentSlot :use="$slots.description" />
       </div>
       <p class="py-2 lg:py-5 animation-text animate__animated animate__bounceInRight">
-        <span class="highlight-container" style="--color: #e74b91; --delay: 0.7s;"><span class="highlight text-2xl md:text-3xl lg:text-4xl xl:text-5xl">Why is my checkout abandonment so high?</span></span>
+        <span class="highlight-container" style="--color: #e74b91; --delay: 0.7s;"><span class="highlight text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+          <ContentSlot :use="$slots.question1" unwrap="p" /></span></span>
       </p>
       <p class="py-2 lg:py-5 animation-text animate__animated animate__bounceInLeft delay-time1">
-        <span class="highlight-container" style="--color: #FA734C; --delay: 2.7s;"><span class="highlight text-2xl md:text-3xl lg:text-4xl xl:text-5xl">What segments convert better and why?</span></span>
+        <span class="highlight-container" style="--color: #FA734C; --delay: 2.7s;"><span class="highlight text-2xl md:text-3xl lg:text-4xl xl:text-5xl"><ContentSlot :use="$slots.question2" unwrap="p" /></span></span>
       </p>
       <p class="py-2 lg:py-5 animation-text animate__animated animate__bounceInRight delay-time2">
-        <span class="highlight-container" style="--color: #3C8BFF; --delay: 4.7s;"><span class="highlight text-2xl md:text-3xl lg:text-4xl xl:text-5xl">Why acquisition traffic is not converting?</span></span>
+        <span class="highlight-container" style="--color: #3C8BFF; --delay: 4.7s;"><span class="highlight text-2xl md:text-3xl lg:text-4xl xl:text-5xl"><ContentSlot :use="$slots.question3" unwrap="p" /></span></span>
       </p>
       <h2 class="title2 mt-5 -mb-5 md:(mt-10 -mb-8) xl:mt-15 animation-text animate__animated animate__bounceInDown delay-time3">
-        Answer your questions with Air360
+        <ContentSlot :use="$slots.secondTitle" unwrap="p" />
       </h2>
     </div>
   </div>

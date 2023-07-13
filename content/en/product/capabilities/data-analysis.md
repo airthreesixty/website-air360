@@ -5,6 +5,14 @@ DATA ANALYSIS
 Answer unsolved questions fast
 #description
 Follow user footprints and fingerprints, and quickly discover the obstacles that make your audience leave your website without converting 
+#question1
+Why is my checkout abandonment so high?
+#question2
+What segments convert better and why?
+#question3
+Why acquisition traffic is not converting?
+#secondTitle
+Answer your questions with Air360
 ::
 
 ::single-description{imagePath="/en/data-collection/cookies.png" :is-shadow="false" :container="true"}
