@@ -34,12 +34,12 @@
             {{ $t('product-dropdown.events-segments') }}
           </NuxtLink>
         </div>
-        <!-- <div class="text-sm text-black-600 mt-4">
+        <div class="text-sm text-black-600 mt-4">
           <span><fa-icon class="text-lg text-orange-600 mr-2 w-5" :icon="['far', 'magnifying-glass-chart']" /></span>
           <NuxtLink :to="localePath('/product/capabilities/data-analysis')" class="text-black-600 hover:(text-primary-600 text-shadow-primary)">
             {{ $t('product-dropdown.data-analysis') }}
           </NuxtLink>
-        </div> -->
+        </div>
       </div>
       <div>
         <div class="font-bold text-black-600">

@@ -15,7 +15,7 @@ Why acquisition traffic is not converting?
 Get all your answers with Air360
 ::
 
-::single-description{imagePath="/en/data-collection/cookies.png" :is-shadow="false" :container="true"}
+::single-description{imagePath="/en/data-analysis/userTrends.jpg" :is-shadow="false" :container="true" :is-shadow="true"}
 #subtext
 WHAT
 #title
@@ -24,7 +24,7 @@ Understand User Trends
 See what is happening on your eCommerce in a glance with Dashboards & Reports that will display descriptive metrics and trends of user behavior. 
 ::
 
-::single-description{imagePath="/en/data-collection/noSample.png" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C" :is-shadow="false" :container="true"}
+::single-description{imagePath="/en/data-analysis/petterns.jpg" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C" :is-shadow="false" :container="true"}
 #subtext
 HOW
 #title
@@ -33,7 +33,7 @@ Discover patterns and obstacles
 Understand how your users like to buy and where they are getting stuck during their  purchase process. Our Funnels and User Journeys will show you what paths they take during their journey in your eCommerce.
 ::
 
-::single-description{imagePath="/en/data-collection/cookies.png" :is-shadow="false" :container="true"}
+::single-description{imagePath="/en/data-analysis/rootCause.jpg" :is-shadow="true" :container="true"}
 #subtext
 WHY
 #title
@@ -42,7 +42,7 @@ Get to the root cause
 Define hypothesis and validate them through our Sessions Replays. Have quick access to relevant replays with through filters to prescribe good recommendations for website optimization.
 ::
 
-::single-description{imagePath="/en/data-collection/noSample.png" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C" :is-shadow="false" :container="true"}
+::single-description{imagePath="/en/data-analysis/quickWins.jpg" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C" :is-shadow="true" :container="true"}
 #subtext
 WHO
 #title

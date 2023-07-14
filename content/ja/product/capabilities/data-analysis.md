@@ -19,7 +19,7 @@ title: データ分析
 Air360でその答えを見つけましょう
 ::
 
-::single-description{imagePath="/en/data-collection/cookies.png" :is-shadow="false" :container="true"}
+::single-description{imagePath="/en/data-analysis/userTrends.jpg" :is-shadow="false" :container="true" :is-shadow="true"}
 #subtext
 WHAT
 #title
@@ -28,7 +28,7 @@ WHAT
 ダッシュボードとレポートを使用して、一目でeコマースの状況を把握し、ユーザーの行動の詳細なメトリクスやトレンドを表示します。
 ::
 
-::single-description{imagePath="/en/data-collection/noSample.png" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C" :is-shadow="false" :container="true"}
+::single-description{imagePath="/en/data-analysis/petterns.jpg" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C" :is-shadow="false" :container="true"}
 #subtext
 HOW
 #title
@@ -37,7 +37,7 @@ HOW
 ユーザーがどのように購入するか、購入プロセス中にどこで詰まっているかを理解します。私たちのファネルとユーザージャーニーは、ユーザーがeコマース内で移動する際にどのような経路を辿るかを示します。
 ::
 
-::single-description{imagePath="/en/data-collection/cookies.png" :is-shadow="false" :container="true"}
+::single-description{imagePath="/en/data-analysis/rootCause.jpg" :is-shadow="true" :container="true"}
 #subtext
 WHY
 #title
@@ -46,7 +46,7 @@ WHY
 仮説を定義し、セッションのリプレイを通じてそれらを検証します。ウェブサイトの最適化のために適切なリプレイに素早くアクセスし、フィルターを通じて優れた推奨事項を提案します。
 ::
 
-::single-description{imagePath="/en/data-collection/noSample.png" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C" :is-shadow="false" :container="true"}
+::single-description{imagePath="/en/data-analysis/quickWins.jpg" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C" :is-shadow="true" :container="true"}
 #subtext
 WHO
 #title
