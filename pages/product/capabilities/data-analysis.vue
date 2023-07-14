@@ -13,7 +13,7 @@ useSeoMeta({
   ogDescription: t('data-analysis.content'),
   ogTitle: t('data-analysis.title'),
   ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
-  // ogImage: `${runtimeConfig.public.baseUrl}/en/data-collection/hero.png`,
-  // twitterCard: 'summary_large_image',
+  ogImage: `${runtimeConfig.public.baseUrl}/en/data-analysis/petterns.jpg`,
+  twitterCard: 'summary_large_image',
 })
 </script>
