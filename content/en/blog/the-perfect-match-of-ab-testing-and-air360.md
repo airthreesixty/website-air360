@@ -4,7 +4,7 @@ published: 2023-7-14
 tags: 
   - marketing
 readingTime: 6
-image: /blog/Customer-Acquisition-Strategy.jpeg
+image: /blog/maximizing-conversion.png
 metaDesc: In the dynamic world of digital marketing, staying ahead of the competition requires continuous experimentation and data-driven decision-making. Two powerful tools that can significantly impact conversion rates are A/B testing and digital experience analytics. 
 ---
 
