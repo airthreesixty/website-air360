@@ -23,7 +23,7 @@ const LogoBrandCoveo = resolveComponent('LogoBrandCoveo')
 const LogoBrandShopify = resolveComponent('LogoBrandShopify')
 const LogoBrandMailchimp = resolveComponent('LogoBrandMailchimp')
 const LogoBrandLooker = resolveComponent('LogoBrandLooker')
-const LogoBrandOneTrust = resolveComponent('LogoBrandOneTrust')
+const LogoBrandKlaviyo = resolveComponent('LogoBrandKlaviyo')
 const LogoBrandPowerBi = resolveComponent('LogoBrandPowerBi')
 const LogoBrandTwillioSegment = resolveComponent('LogoBrandTwillioSegment')
 const LogoBrandGoogle = resolveComponent('LogoBrandGoogle')
@@ -76,11 +76,11 @@ const logos = [
     backDescription: t('logos.looker.back-desc'),
   },
   {
-    component: LogoBrandOneTrust,
-    scale: 1.45,
-    title: 'One Trust',
-    description: t('logos.one-trust.desc'),
-    backDescription: t('logos.one-trust.back-desc'),
+    component: LogoBrandKlaviyo,
+    scale: 1,
+    title: 'Klaviyo',
+    description: t('logos.klaviyo.desc'),
+    backDescription: t('logos.klaviyo.back-desc'),
   },
   {
     component: LogoBrandPowerBi,

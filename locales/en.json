@@ -278,9 +278,9 @@
       "desc": "Turn your data into compelling stories of data visualization art.",
       "back-desc": "Extract all metrics and insights from Air360 and visualize them with beautiful dashboards  in Looker."
     },
-    "one-trust": {
-      "desc": "OneTrust empowers tomorrow's leaders to succeed through trust and impact.",
-      "back-desc": "Our Integrations allows you to enrich Air360 with Salesforce properties as well as push Air360 behavioral data to Salesforce to activate segments, and visualize users and metrics."
+    "klaviyo": {
+      "desc": "Deliver the right message at the right time through the right channel.",
+      "back-desc": "Create behavioral segments inside Air360 that can be pushed to Klaviyo for campaign personalization."
     },
     "power-bi": {
       "desc": "The unified, scalable platform for self-service and enterprise business intelligence (BI).",
