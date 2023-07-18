@@ -48,7 +48,7 @@ WHO
 #title
 Quick wins to enhance your user experience
 #description
-Prioritize improvements based on the impact they have on your business and target segments that did not convert  to give them a second change.
+Prioritize improvements based on the impact they have on your business and target segments that did not convert to give them a second change.
 ::
 
 ::visualize-data
