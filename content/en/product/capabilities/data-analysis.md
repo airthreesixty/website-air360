@@ -15,40 +15,40 @@ Why acquisition traffic is not converting?
 Get all your answers with Air360
 ::
 
-::single-description{imagePath="/en/data-analysis/userTrends.jpg" :is-shadow="false" :container="true" :is-shadow="true"}
+::single-description{gifSrc="/en/data-analysis/userTrends.gif" :container="true"}
 #subtext
 WHAT
 #title
 Understand User Trends 
 #description
-See what is happening on your eCommerce in a glance with Dashboards & Reports that will display descriptive metrics and trends of user behavior. 
+Visualize what is happening on your eCommerce at a glance with Dashboards & Funnels that will display descriptive metrics and trends of user behavior.
 ::
 
-::single-description{imagePath="/en/data-analysis/petterns.jpg" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C" :is-shadow="false" :container="true"}
+::single-description{gifSrc="/en/data-analysis/petterns.gif" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C" :container="true"}
 #subtext
 HOW
 #title
 Discover patterns and obstacles
 #description
-Understand how your users like to buy and where they are getting stuck during their  purchase process. Our Funnels and User Journeys will show you what paths they take during their journey in your eCommerce.
+Unveil how your users like to buy and where they get stuck during their purchase process. Our event-based User Journeys will show you the paths across your eCommerce experience that will lead to improvement opportunities.
 ::
 
-::single-description{imagePath="/en/data-analysis/rootCause.jpg" :is-shadow="true" :container="true"}
+::single-description{gifSrc="/en/data-analysis/rootCause.gif" :container="true"}
 #subtext
 WHY
 #title
 Get to the root cause
 #description
-Define hypothesis and validate them through our Sessions Replays. Have quick access to relevant replays with through filters to prescribe good recommendations for website optimization.
+Understand what is blocking or boosting your buying experience with easy-to-use on-page analysis. Define hypotheses and validate them through Sessions Replays to prescribe good recommendations that will increase conversion.
 ::
 
-::single-description{imagePath="/en/data-analysis/quickWins.jpg" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C" :is-shadow="true" :container="true"}
+::single-description{gifSrc="/en/data-analysis/quickWins.gif" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C" :container="true"}
 #subtext
 WHO
 #title
 Quick wins to enhance your user experience
 #description
-Prioritize improvements based on the impact  they have on your business and target segments that did not convert  to give them a second change.
+Prioritize improvements based on the impact they have on your business and target segments that did not convert  to give them a second change.
 ::
 
 ::visualize-data

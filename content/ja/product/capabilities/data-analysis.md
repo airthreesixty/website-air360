@@ -19,34 +19,34 @@ title: データ分析
 Air360でその答えを見つけましょう
 ::
 
-::single-description{imagePath="/en/data-analysis/userTrends.jpg" :is-shadow="false" :container="true" :is-shadow="true"}
+::single-description{gifSrc="/en/data-analysis/userTrends.gif" :container="true"}
 #subtext
 WHAT
 #title
 ユーザーのトレンドを理解
 #description
-ダッシュボードとレポートを使用して、一目でeコマースの状況を把握し、ユーザーの行動の詳細なメトリクスやトレンドを表示します。
+ダッシュボードとファネルを使用して、ユーザーの行動の記述的な指標やトレンドを一目で表示し、eコマースで起こっていることを視覚化します。
 ::
 
-::single-description{imagePath="/en/data-analysis/petterns.jpg" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C" :is-shadow="false" :container="true"}
+::single-description{gifSrc="/en/data-analysis/petterns.gif" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C" :container="true"}
 #subtext
 HOW
 #title
 パターンや障害を発見
 #description
-ユーザーがどのように購入するか、購入プロセス中にどこで詰まっているかを理解します。私たちのファネルとユーザージャーニーは、ユーザーがeコマース内で移動する際にどのような経路を辿るかを示します。
+ユーザーがどのように購入するか、購入プロセス中にどこで詰まっているかを明らかにします。私たちのファネルとユーザージャーニーは、ユーザーがeコマース内で移動する際にどのような経路を辿るかを示します。
 ::
 
-::single-description{imagePath="/en/data-analysis/rootCause.jpg" :is-shadow="true" :container="true"}
+::single-description{gifSrc="/en/data-analysis/rootCause.gif" :container="true"}
 #subtext
 WHY
 #title
 根本的な原因を突き止める
 #description
-仮説を定義し、セッションのリプレイを通じてそれらを検証します。ウェブサイトの最適化のために適切なリプレイに素早くアクセスし、フィルターを通じて優れた推奨事項を提案します。
+使いやすいオンページ分析を使用して、購入体験におけるブロック要因や促進要因を理解します。セッションリプレイを通じて仮説を定義し、検証することで、コンバージョンを増やす良い提案を提示します。
 ::
 
-::single-description{imagePath="/en/data-analysis/quickWins.jpg" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C" :is-shadow="true" :container="true"}
+::single-description{gifSrc="/en/data-analysis/quickWins.gif" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C" :is-shadow="true" :container="true"}
 #subtext
 WHO
 #title
