@@ -111,7 +111,7 @@
             <span class="sr-only">Open language menu</span>
             <fa-icon class="fa-lg" :icon="['fa', 'earth-americas']" :aria-hidden="true" />
           </div>
-          <div v-show="isLangActive" id="language-modal" class="dropdown top-full mt-2 right-0 w-40 text-center" @mouseleave="closeLang">
+          <div v-show="isLangActive" id="language-modal" :aria-expanded="isLangActive" class="dropdown top-full mt-2 right-0 w-40 text-center" @mouseleave="closeLang">
             <LangSwitcher />
           </div>
         </div>
