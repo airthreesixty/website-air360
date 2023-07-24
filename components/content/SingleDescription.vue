@@ -15,7 +15,6 @@
           class="rounded-lg my-auto w-full object-cover"
           :class="{'shadow-lg': isShadow}"
         />
-        <img v-else-if="gifSrc && showGif" :src="gifSrc" :class="{'shadow-lg': isShadow}" class="rounded-lg my-auto w-full object-cover">
         <video
           v-else-if="showVideo"
           autoplay
@@ -55,9 +54,8 @@
           class="rounded-lg my-auto w-full object-cover"
           :class="{'shadow-lg': isShadow}"
         />
-        <img v-else-if="gifSrc && showGif" :src="gifSrc" :class="{'shadow-lg': isShadow}" class="rounded-lg my-auto w-full object-cover">
         <video
-          v-else-if="showVideo && isVideo"
+          v-else-if="videoSrc && showVideo"
           autoplay
           class="my-auto w-full rounded-lg object-cover"
           loop
@@ -93,10 +91,6 @@ const props = defineProps({
     type: String,
     default: 'Picture',
   },
-  isVideo: {
-    type: Boolean,
-    default: false,
-  },
   videoSrc: {
     type: String,
     default: '',
@@ -125,10 +119,6 @@ const props = defineProps({
     type: String,
     default: '',
   },
-  gifSrc: {
-    type: String,
-    default: '',
-  },
 })
 
 const theme = {
@@ -137,17 +127,12 @@ const theme = {
 }
 const target = ref(null)
 const showVideo = ref(false)
-const showGif = ref(false)
 
 useIntersectionObserver(
   target,
   ([{ isIntersecting }]) => {
     if (!showVideo.value && isIntersecting) {
       showVideo.value = true
-    }
-
-    if (!showGif.value && isIntersecting) {
-      showGif.value = true
     }
   },
 )

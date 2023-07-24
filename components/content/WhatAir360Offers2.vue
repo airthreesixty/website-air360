@@ -7,7 +7,6 @@
     </h2>
     <SingleDescription
       :alt="$t('how-air360-helps2')"
-      :is-video="true"
       :video-src="videoSrc2"
       :poster="posterSrc2"
       icon="message-smile"
@@ -26,7 +25,6 @@
       image-status="block"
       image-status2="hidden"
       :alt="$t('how-air360-helps1')"
-      :is-video="true"
       :video-src="videoSrc1"
       :poster="posterSrc1"
       icon="lightbulb-on"

@@ -15,7 +15,7 @@ Why acquisition traffic is not converting?
 Get all your answers with Air360
 ::
 
-::single-description{gifSrc="/en/data-analysis/userTrends.gif" :container="true"}
+::single-description{videoSrc="/en/videos/userTrends.mp4" poster="/en/data-analysis/userTrends.jpg" :container="true"}
 #subtext
 WHAT
 #title
@@ -24,7 +24,7 @@ Understand User Trends
 Visualize what is happening on your eCommerce at a glance with Dashboards & Funnels that will display descriptive metrics and trends of user behavior.
 ::
 
-::single-description{gifSrc="/en/data-analysis/petterns.gif" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C" :container="true"}
+::single-description{videoSrc="/en/videos/patterns.mp4" poster="/en/data-analysis/patterns.jpg" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C" :container="true"}
 #subtext
 HOW
 #title
@@ -33,7 +33,7 @@ Discover patterns and obstacles
 Unveil how your users like to buy and where they get stuck during their purchase process. Our event-based User Journeys will show you the paths across your eCommerce experience that will lead to improvement opportunities.
 ::
 
-::single-description{gifSrc="/en/data-analysis/rootCause.gif" :container="true"}
+::single-description{videoSrc="/en/videos/rootCause.mp4" poster="/en/data-analysis/rootCause.jpg" :container="true"}
 #subtext
 WHY
 #title
@@ -42,7 +42,7 @@ Get to the root cause
 Understand what is blocking or boosting your buying experience with easy-to-use on-page analysis. Define hypotheses and validate them through Sessions Replays to prescribe good recommendations that will increase conversion.
 ::
 
-::single-description{gifSrc="/en/data-analysis/quickWins.gif" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C" :container="true"}
+::single-description{videoSrc="/en/videos/quickWins.mp4" poster="/en/data-analysis/quickWins.jpg" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C" :container="true"}
 #subtext
 WHO
 #title
