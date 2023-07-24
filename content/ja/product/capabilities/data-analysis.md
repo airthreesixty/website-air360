@@ -19,7 +19,7 @@ title: データ分析
 Air360でその答えを見つけましょう
 ::
 
-::single-description{:container="true" videoSrc="/en/videos/userTrends.mp4" poster="/en/data-analysis/userTrends.jpg"}
+::single-description{:container="true" videoSrc="/en/videos/userTrends.mp4" poster="/en/data-analysis/userTrends.webp"}
 #subtext
 WHAT
 #title
@@ -28,7 +28,7 @@ WHAT
 ダッシュボードとファネルを使用して、ユーザーの行動の記述的な指標やトレンドを一目で表示し、eコマースで起こっていることを視覚化します。
 ::
 
-::single-description{videoSrc="/en/videos/patterns.mp4" poster="/en/data-analysis/patterns.jpg" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C" :container="true"}
+::single-description{videoSrc="/en/videos/patterns.mp4" poster="/en/data-analysis/patterns.webp" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C" :container="true"}
 #subtext
 HOW
 #title
@@ -37,7 +37,7 @@ HOW
 ユーザーがどのように購入するか、購入プロセス中にどこで詰まっているかを明らかにします。私たちのファネルとユーザージャーニーは、ユーザーがeコマース内で移動する際にどのような経路を辿るかを示します。
 ::
 
-::single-description{videoSrc="/en/videos/rootCause.mp4" poster="/en/data-analysis/rootCause.jpg" :container="true"}
+::single-description{videoSrc="/en/videos/rootCause.mp4" poster="/en/data-analysis/rootCause.webp" :container="true"}
 #subtext
 WHY
 #title
@@ -46,7 +46,7 @@ WHY
 使いやすいオンページ分析を使用して、購入体験におけるブロック要因や促進要因を理解します。セッションリプレイを通じて仮説を定義し、検証することで、コンバージョンを増やす良い提案を提示します。
 ::
 
-::single-description{videoSrc="/en/videos/quickWins.mp4" poster="/en/data-analysis/quickWins.jpg" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C" :is-shadow="true" :container="true"}
+::single-description{videoSrc="/en/videos/quickWins.mp4" poster="/en/data-analysis/quickWins.webp" imageStatus="block" imageStatus2="hidden" themeColor="#FA734C" :is-shadow="true" :container="true"}
 #subtext
 WHO
 #title
