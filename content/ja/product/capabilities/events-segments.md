@@ -22,7 +22,7 @@ Air360内で必要な任意のユーザーの行動を可視化できます
 強力な行動セグメントを作成して、分析の質を高めます
 ::
 
-::single-description{gifSrc="/en/events-segments/defineEvents.gif" :container="true" id="define-events"}
+::single-description{videoSrc="/en/videos/defineEvents.mp4" poster="/en/events-segments/defineEvents.jpg" :container="true" id="define-events"}
 #subtext
 イベント定義
 #title
