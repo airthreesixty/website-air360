@@ -33,7 +33,6 @@ import 'animate.css'
 .animation-text {
   color: #232E4A;
   background: linear-gradient(transparent 60%,  var(--color));
-  /* #fce041 */
 }
 .delay-time1 {
   animation-delay: 2s;
