@@ -19,7 +19,6 @@
               </NuxtLink> -->
               <ButtonPrimary slug="/request-demo" theme="transparent">
                 {{ $t('try-air360') }}
-                <!-- <ContentSlot :use="$slots.cta" unwrap="p" /> -->
               </ButtonPrimary>
             </div>
           </div>
