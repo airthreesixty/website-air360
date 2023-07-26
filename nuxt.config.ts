@@ -88,7 +88,7 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
-    // siteUrl: process.env.BASE_URL,
+    siteUrl: process.env.BASE_URL,
     autoAlternativeLangPrefixes: ['ja', 'en'],
     dynamicUrlsApiEndpoint: '/api/_sitemap-blog-urls',
     exclude: [
@@ -96,8 +96,8 @@ export default defineNuxtConfig({
       /generate-images/,
     ],
   },
-  site: {
-    url: process.env.BASE_URL,
-    trailingSlash: true,
-  },
+  // site: {
+  //   url: process.env.BASE_URL,
+  //   trailingSlash: true,
+  // },
 })
