@@ -11,7 +11,7 @@
                 <div class="flex items-center justify-between">
                   <div>
                     <nuxt-link
-                      v-for="(tag, index) in data.tags"
+                      v-for="(tag, index) in data?.tags"
                       :key="index"
                       class="bg-blue-100 text-blue-400 text-xs font-semibold px-2.5 py-0.5 mr-2 rounded"
                       :to="localePath(`/blog/tag/${tag}`)"
@@ -92,7 +92,7 @@
                         >
                           <time>
                             {{
-                              $dayjs(data.published)
+                              $dayjs(data?.published)
                                 .locale(locale)
                                 .format("YYYY-MM-DD")
                             }}
@@ -104,9 +104,9 @@
                   <h1
                     class="mb-8 text-2xl font-semibold text-black-600 lg:text-3xl"
                   >
-                    {{ data.title }}
+                    {{ data?.title }}
                   </h1>
-                  <nuxt-img format="webp" :src="data.image" :alt="data.title" class="h-90 mb-10 rounded-lg w-full object-cover" />
+                  <nuxt-img format="webp" :src="data?.image" :alt="data?.title" class="h-90 mb-10 rounded-lg w-full object-cover" />
                 </header>
                 <div class="prose nuxt-content">
                   <!-- <NewTableOfContents :paragraph-titles="paragraphTitles" class="lg:hidden" /> -->

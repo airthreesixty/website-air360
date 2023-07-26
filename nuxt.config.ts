@@ -88,12 +88,16 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
-    siteUrl: process.env.BASE_URL,
-    autoAlternativeLangPrefixes: ['en', 'ja'],
+    // siteUrl: process.env.BASE_URL,
+    autoAlternativeLangPrefixes: ['ja', 'en'],
     dynamicUrlsApiEndpoint: '/api/_sitemap-blog-urls',
     exclude: [
       /.*-thank-you\/$/,
       /generate-images/,
     ],
+  },
+  site: {
+    url: process.env.BASE_URL,
+    trailingSlash: true,
   },
 })
