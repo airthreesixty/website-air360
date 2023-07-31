@@ -13,6 +13,11 @@ export default defineNuxtConfig({
       include: [/^\/\w{2}\/blog\/.*(?<!\.(json|js|html))$/g],
     },
   },
+  nitro: {
+    prerender: {
+      failOnError: false,
+    },
+  },
   runtimeConfig: {
     public: {
       algoliaSearchApiKey: process.env.ALGOLIA_SEARCH_API_KEY,
