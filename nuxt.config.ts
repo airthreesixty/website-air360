@@ -98,6 +98,7 @@ export default defineNuxtConfig({
     exclude: [
       /.*-thank-you\/$/,
       /generate-images/,
+      /^(?=.*\/(ja|en)\/).*$/,
     ],
   },
   site: {
