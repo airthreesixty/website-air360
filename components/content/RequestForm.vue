@@ -13,7 +13,7 @@
           <h1 class="mb-3 font-semibold text-center text-gradient text-2xl md:text-3xl">
             <ContentSlot :use="$slots.title1" unwrap="p" />
           </h1>
-          <h2 class="mb-4 text-black-600 max-w-[500px] font-semibold text-center lg:text-lg">
+          <h2 class="mb-4 text-black-600 font-semibold text-center lg:text-lg">
             <ContentSlot :use="$slots.subtitle1" unwrap="p" />
           </h2>
         </div>
