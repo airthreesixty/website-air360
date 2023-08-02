@@ -79,6 +79,6 @@ const posterSrc2 = computed(() => {
 })
 
 const image = computed(() => {
-  return locale.value === 'en' ? '/en/product/analyze.png' : '/analyze.png'
+  return locale.value === 'en' ? '/en/product/analyze.png' : '/ja/product/analyze.png'
 })
 </script>
