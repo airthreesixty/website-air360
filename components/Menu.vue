@@ -131,7 +131,7 @@ const isLangActive = ref(false)
 const isInspirationActive = ref(false)
 const isProductActive = ref(false)
 
-const isHomepage = computed(() => getPathWithoutLocale(route.fullPath) === '/')
+const isHomepage = computed(() => getPathWithoutLocale(route.fullPath) === '/' || getPathWithoutLocale(route.fullPath).startsWith('/?'))
 
 const openProduct = () => {
   isProductActive.value = true
