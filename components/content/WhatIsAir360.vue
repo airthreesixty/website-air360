@@ -9,23 +9,17 @@
           <ContentSlot :use="$slots.description" unwrap="p" />
         </p>
       </div>
-      <div class="mt-12">
-        <div class="wistia_responsive_padding mx-auto md:w-9/12 lg:w-8/12" style="padding:56.25% 0 0 0;position:relative;">
-          <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-            <iframe
-              v-if="showIframe"
-              src="https://fast.wistia.net/embed/iframe/uzru2drtmd?videoFoam=true"
-              title="Air360 by Scalefast Creating Conversion Rate Heroes Video"
-              allow="autoplay; fullscreen"
-              allowtransparency="true"
-              frameborder="0"
-              scrolling="no"
-              class="wistia_embed rounded-lg"
-              name="wistia_embed"
-              msallowfullscreen
-              width="100%"
-            />
-          </div>
+      <div class="my-12">
+        <div class="mx-auto md:w-9/12" style="position: relative; padding-bottom: 56.25%; height: 0;">
+          <iframe
+            src="https://www.loom.com/embed/ec06bf3738f64c8e960b2c0eccaf89b0?sid=cb91bf0c-e504-4098-91d4-c7afbbb919dc?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
+            frameborder="0"
+            webkitallowfullscreen
+            mozallowfullscreen
+            allowfullscreen
+            style="position: absolute; top: 0; left: 0; width: 100%;"
+            class="rounded-lg h-full md:h-9/12"
+          />
         </div>
       </div>
     </div>
