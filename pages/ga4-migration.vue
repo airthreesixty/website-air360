@@ -16,7 +16,7 @@ const ogImage = computed(() => {
   if (locale.value === 'en') {
     return `${runtimeConfig.public.baseUrl}/en/ga4-migration.webp`
   }
-  return `${runtimeConfig.public.baseUrl}/ga4-migration.webp`
+  return `${runtimeConfig.public.baseUrl}/analyze.png`
 })
 
 useSeoMeta({
