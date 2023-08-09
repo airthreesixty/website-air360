@@ -84,12 +84,6 @@ useIntersectionObserver(
   margin:auto;
 }
 
-.is-active {
-  /* color: v-bind('themeColor.color'); */
-  font-weight: bold;
-  /* border-bottom: v-bind('themeColor.color') solid 2px; */
-}
-
 .subtext-color {
   color: v-bind('themeColor.color');
 }
