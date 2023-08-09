@@ -63,10 +63,19 @@ useIntersectionObserver(
 
 .tabs-component-tab-a {
   color: #232E4A;
+  padding-bottom: 6px;
+  font-weight: bold;
 }
 
 .tabs-component-tab-a:hover {
+  border-bottom: v-bind('themeColor.color') solid 3.5px;
+  transition: all ease 0.3s;
+}
+
+.tabs-component-tab-a.is-active {
   color: v-bind('themeColor.color');
+  font-weight: bold;
+  border-bottom: v-bind('themeColor.color') solid 3px;
 }
 
 .tabs-component-panel {
@@ -76,8 +85,9 @@ useIntersectionObserver(
 }
 
 .is-active {
-  color: v-bind('themeColor.color');
+  /* color: v-bind('themeColor.color'); */
   font-weight: bold;
+  /* border-bottom: v-bind('themeColor.color') solid 2px; */
 }
 
 .subtext-color {
