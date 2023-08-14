@@ -64,7 +64,7 @@ useIntersectionObserver(
 .tabs-component-tab-a {
   color: #232E4A;
   padding-bottom: 6px;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .tabs-component-tab-a:hover {

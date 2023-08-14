@@ -7,8 +7,33 @@ import { useSeoMeta } from '@unhead/vue'
 const { locale, t } = useI18n()
 const runtimeConfig = useRuntimeConfig()
 
-useHead({
-  titleTemplate: '',
+onMounted(() => {
+  if (locale.value === 'en') {
+    useHead({
+      titleTemplate: '',
+      script: [
+        { src: 'https://www.videoask.com/embed/embed.js' },
+        {
+          innerHTML: `window.VIDEOASK_EMBED_CONFIG = {
+    "kind": "widget",
+    "url": "https://www.videoask.com/f13f7jxmz",
+    "options": {
+    "widgetType": "VideoThumbnailSmall",
+    "text": "Watch Product Tour",
+    "backgroundColor": "#E72192",
+    "position": "bottom-right",
+    "dismissible": false
+    }
+    }`,
+          tagPosition: 'bodyClose',
+        },
+      ],
+    })
+  } else {
+    useHead({
+      titleTemplate: '',
+    })
+  }
 })
 
 useSeoMeta({
