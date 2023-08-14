@@ -328,5 +328,9 @@
   "data-analysis": {
     "title": "未解決の質問に迅速に回答",
     "content": "ユーザーの足跡と指紋を追跡し、ウェブサイトを離れて成約しない要因を素早く発見しましょう"
+  },
+  "product-tour": {
+    "title": "Uncover hidden behaviors and make smarter decisions.",
+    "content": "Air360 eCommerce experience analytics platform helps you spot all opportunities to improve & optimize your user journeys, get the recommendations you need to increase conversion & prioritize decisions to boost growth."
   }
 }
