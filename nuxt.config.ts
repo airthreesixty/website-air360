@@ -44,6 +44,18 @@ export default defineNuxtConfig({
         {
           src: 'https://cdn.jsdelivr.net/gh/manucaralmo/GlowCookies@3.1.8/src/glowCookies.min.js',
         },
+        {
+          innerHTML: `(function(w){
+        var k="nudgify",n=w[k]||(w[k]={});
+        n.uuid="d9d09c7f-3571-495d-9496-2b97f868f990";
+        var d=document,s=d.createElement("script");
+        s.src="https://pixel.nudgify.com/pixel.js";
+        s.async=1;
+        s.charset="utf-8";
+        d.getElementsByTagName("head")[0].appendChild(s)
+    })(window)`,
+          tagPosition: 'bodyClose',
+        },
       ],
     },
   },
