@@ -16,7 +16,7 @@
       <!-- <div class="pt-10 mb-15">
         <CompanyLogos />
       </div> -->
-      <SliderCompanies />
     </div>
+    <SliderCompanies />
   </section>
 </template>

@@ -1,9 +1,6 @@
 <template>
   <div class="bg-slider max-w-[1400px] mx-auto overflow-x-hidden">
     <div class="autoplay-slider h-15 text-white font-bold">
-      <!-- <div v-for="{name, icon} in logos" :key="name" class="w-50 flex items-center justify-center">
-        <span><fa-icon class="mr-2" :icon="['far', icon]" />{{ name }}</span>
-      </div> -->
       <li v-for="(logo, index) in logos" :key="index" :class="`w-${logo.width}`" class="flex items-center justify-center slider-company-logos-list">
         <component :is="logo.component" class="h-7.5 object-contain w-full lg:h-9.5" :style="`transform: scale(${logo.scale})`" />
       </li>
@@ -15,8 +12,6 @@
 </template>
 
 <script setup lang="ts">
-const { t } = useI18n()
-
 const LogoBrandClubMed = resolveComponent('LogoBrandClubMed')
 const LogoBrandVerychic = resolveComponent('LogoBrandVerychic')
 const LogoBrandOlympiqueLyonnais = resolveComponent('LogoBrandOlympiqueLyonnais')
