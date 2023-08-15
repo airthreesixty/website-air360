@@ -34,14 +34,19 @@
           <ContentSlot :use="$slots.subtext" unwrap="p" />
         </p>
         <h3
-          class="border-deco test mb-4 mt-4 text-xl font-semibold text-black-600 text-left md:text-2xl lg:text-3xl"
+          class="test mb-4 mt-4 text-xl font-semibold text-black-600 text-left md:text-2xl lg:text-3xl"
+          :class="{'border-deco': deco}"
         >
           <ContentSlot :use="$slots.title" unwrap="p" />
         </h3>
         <div class="max-w-2xl text-left mt-5 font-light prose text-gray-500 text-lg lg:text-xl xl:leading-8">
           <slot name="description" />
         </div>
-        <slot name="dropdowns" />
+        <div v-if="button" class="w-52 mt-5">
+          <ButtonPrimary theme="gradient" :slug="slug">
+            詳しく見る
+          </ButtonPrimary>
+        </div>
       </div>
       <div :class="`hidden md:${imageStatus2}  md:mt-0 md:flex md:w-[58%] md:p-5`">
         <nuxt-img
@@ -116,6 +121,18 @@ const props = defineProps({
     default: false,
   },
   id: {
+    type: String,
+    default: '',
+  },
+  deco: {
+    type: Boolean,
+    default: true,
+  },
+  button: {
+    type: Boolean,
+    default: false,
+  },
+  slug: {
     type: String,
     default: '',
   },

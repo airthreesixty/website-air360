@@ -24,6 +24,11 @@
       <slot />
     </div>
   </NuxtLink>
+  <NuxtLink v-if="theme === 'gradient'" :to="$localePath(slug)" class="button button-gradient transition ease-in-out duration-300 hover:opacity-80 focus:opacity-80">
+    <div class="text-white font-bold text-base">
+      <slot />
+    </div>
+  </NuxtLink>
 </template>
 
 <script setup>
@@ -142,6 +147,11 @@ onMounted(() => {
   outline: none;
   position: relative;
   box-shadow: 0 1px 2px rgba(0, 0, 0, ), 0 4px 16px rgba(0, 0, 0, ), 0 4px 24px rgba(0, 0, 0, );
+}
+
+.button-gradient {
+  /* background: linear-gradient(101.87deg, #2D92E9 4.15%, #644AD5 22.36%, #C141AC 41.56%, #E72192 61.75%, #F04D66 78.49%, #FD7043 98.68%); */
+  background: linear-gradient(161.87deg, #FD7043 4.15%, #F04D66 22.36%, #E72192 41.56%, #C141AC 61.75%, #644AD5 78.49%, #2D92E9 98.68%);
 }
 
 .button-primary.start .lines svg, .button-transparent.start .lines svg {
