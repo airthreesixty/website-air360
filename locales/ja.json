@@ -228,7 +228,8 @@
     "capabilities": "機能性",
     "data-collection": "データ収集",
     "events-segments": "イベント & セグメント",
-    "data-analysis": "データ分析"
+    "data-analysis": "データ分析",
+    "product-tour": "プロダクトツアー"
   },
   "website-analysis": {
     "title": "ウェブサイトの改善箇所が簡単に見つかる",
