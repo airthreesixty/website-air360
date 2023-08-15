@@ -19,6 +19,11 @@
       <slot />
     </div>
   </NuxtLink>
+  <NuxtLink v-if="theme === 'outlinePrimarySimple'" :to="$localePath(slug)" class="button border-2 text-primary-600 font-bold text-base border-primary-600 transition ease-in-out duration-300 hover:opacity-80 focus:opacity-80">
+    <div class="text-primary-600 font-bold text-base">
+      <slot />
+    </div>
+  </NuxtLink>
 </template>
 
 <script setup>
