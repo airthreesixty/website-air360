@@ -1,5 +1,5 @@
 <template>
-  <div class="container py-10 lg:pt-14">
+  <div class="container py-10 lg:pt-14 md:mb-5">
     <div class="md:(grid grid-cols-5 gap-x-4)">
       <div class="md:col-span-2 md:flex">
         <div class="self-center">
@@ -13,7 +13,7 @@
           <p class="text-gray-500 text-center md:mt-4 md:text-left lg:text-lg xl:text-xl xl:leading-8">
             <ContentSlot :use="$slots.description" unwrap="p" />
           </p>
-          <div class="flex flex-col md:items-start md:mx-0 gap-2 mt-6 w-52 lg:w-70 mx-auto">
+          <div class="flex flex-col mb-5 md:mb-0 md:items-start md:mx-0 gap-2 mt-6 w-52 lg:w-70 mx-auto">
             <ButtonPrimary theme="primary" slug="/request-demo">
               <ContentSlot :use="$slots.cta1" unwrap="p" />
             </ButtonPrimary>

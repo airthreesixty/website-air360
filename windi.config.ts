@@ -163,6 +163,9 @@ export default defineConfig({
         white: '0px 0px 14px rgba(255, 255, 255, 0.7)',
         primary: '0px 0px 14px rgba(231, 75, 145, 0.5)',
       },
+      boxShadow: {
+        primary: ['0 0 0 2px rgba(231,75,145,1), 8px 8px 0 0 rgba(231,75,145,1)'],
+      },
     },
   },
 })
