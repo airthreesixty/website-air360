@@ -42,10 +42,8 @@
         <div class="max-w-2xl text-left mt-5 font-light prose text-gray-500 text-lg lg:text-xl xl:leading-8">
           <slot name="description" />
         </div>
-        <div v-if="button" class="w-35 mt-5">
-          <ButtonPrimary theme="gradient" :slug="slug">
-            {{ $t("learn-more") }}
-          </ButtonPrimary>
+        <div v-if="$slots.button" class="w-35 mt-5">
+          <slot name="button" />
         </div>
       </div>
       <div :class="`hidden md:${imageStatus2}  md:mt-0 md:flex md:w-[58%] md:p-5`">

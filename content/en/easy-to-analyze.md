@@ -31,25 +31,37 @@ Air360はウェブサイト上の顧客体験を理解できる「デジタル�
 従来の分析手法では見えなかった顧客の行動を明らかにし、より使いやすいウェブサイト作りを可能にします。
 
 #content
-::single-description{image-path="/promotion/dashboard.png" :deco="false" button slug="/product/capabilities/data-collection"}
+::single-description{image-path="/promotion/dashboard.png" :deco="false"}
 #title
 ノーコードでデータを蓄積
 #description
 ピクセルを1行追加するだけで、サイト内の全てのデータを自動で収集
+#button
+    ::button-primary{theme="gradient" slug="/product/capabilities/data-collection"}
+    詳しく見る
+    ::
 ::
 
-::single-description{image-path="/promotion/dashboard.png" image-status="block" image-status2="hidden" :deco="false" button slug="/product/capabilities/data-analysis"}
+::single-description{image-path="/promotion/dashboard.png" image-status="block" image-status2="hidden" :deco="false"}
 #title
 ウェブ改善分析
 #description
 サイト上のユーザー行動を分析して、購買パターンや離脱の原因を把握, 素早く意思決定してサイトを改善
+#button
+    ::button-primary{theme="gradient" slug="/product/capabilities/data-analysis"}
+    詳しく見る
+    ::
 ::
 
-::single-description{image-path="/en/product/dataIntegration.webp" :deco="false" button slug="/data-integrations"}
+::single-description{image-path="/en/product/dataIntegration.webp" :deco="false"}
 #title
 マーケティング
 #description
 ターゲティングしたいユーザーを細かくセグメントし、マーケティングに活用
+#button
+    ::button-primary{theme="gradient" slug="/data-integrations"}
+    詳しく見る
+    ::
 ::
 ::
 
