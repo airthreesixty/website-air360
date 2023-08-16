@@ -22,15 +22,15 @@ const slots = useSlots()
 const items = [
   {
     description: slots.description1,
-    icon: 'lightbulb-on',
+    icon: 'circle-check',
   },
   {
     description: slots.description2,
-    icon: 'trophy-star',
+    icon: 'circle-check',
   },
   {
     description: slots.description3,
-    icon: 'arrow-up-right-dots',
+    icon: 'circle-check',
   },
 ]
 </script>
