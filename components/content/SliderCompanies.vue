@@ -1,13 +1,13 @@
 <template>
   <div class="bg-slider max-w-[1400px] mx-auto overflow-hidden">
-    <div class="autoplay-slider h-15 text-white font-bold">
+    <ul class="autoplay-slider h-15 text-white font-bold">
       <li v-for="(logo, index) in logos" :key="index" :class="`w-${logo.width}`" class="flex items-center justify-center slider-company-logos-list">
         <component :is="logo.component" class="h-7.5 object-contain w-full lg:h-9.5" :style="`transform: scale(${logo.scale})`" />
       </li>
       <li v-for="(logo, index) in logos" :key="index" :class="`w-${logo.width}`" class="flex items-center justify-center slider-company-logos-list">
         <component :is="logo.component" class="h-7.5 object-contain w-full lg:h-9.5" :style="`transform: scale(${logo.scale})`" />
       </li>
-    </div>
+    </ul>
   </div>
 </template>
 

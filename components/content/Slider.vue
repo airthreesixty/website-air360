@@ -1,13 +1,13 @@
 <template>
   <div class="bg-slider max-w-[1400px] mx-auto overflow-x-hidden">
-    <div class="autoplay-slider h-15 text-white font-bold">
-      <div v-for="{name, icon} in slides" :key="name" class="w-50 flex items-center justify-center">
+    <ul class="autoplay-slider h-15 text-white font-bold">
+      <li v-for="{name, icon} in slides" :key="name" class="w-50 flex items-center justify-center">
         <span><fa-icon class="mr-2" :icon="['far', icon]" />{{ name }}</span>
-      </div>
-      <div v-for="{name, icon} in slides" :key="name" class="w-50 flex items-center justify-center">
+      </li>
+      <li v-for="{name, icon} in slides" :key="name" class="w-50 flex items-center justify-center">
         <span><fa-icon class="mr-2" :icon="['far', icon]" />{{ name }}</span>
-      </div>
-    </div>
+      </li>
+    </ul>
   </div>
 </template>
 
