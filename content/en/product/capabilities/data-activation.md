@@ -24,7 +24,7 @@ Retarget abandoned users
 Identify relevant segments & push them to your marketing automation tool to retarget them.
 ::
 
-::center-text{slug="/data-integrations"}
+::left-block{slug="/data-integrations"}
 #subtext
 OPEN DATA INTEGRATIONS
 #title
