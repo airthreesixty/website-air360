@@ -8,10 +8,10 @@ const route = useRoute()
 const runtimeConfig = useRuntimeConfig()
 
 useSeoMeta({
-  title: t('data-analysis.title'),
-  description: t('data-analysis.content'),
-  ogDescription: t('data-analysis.content'),
-  ogTitle: t('data-analysis.title'),
+  title: t('data-activation.title'),
+  description: t('data-activation.content'),
+  ogDescription: t('data-activation.content'),
+  ogTitle: t('data-activation.title'),
   ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
   ogImage: `${runtimeConfig.public.baseUrl}/en/data-activation/hero.png`,
   twitterCard: 'summary_large_image',
