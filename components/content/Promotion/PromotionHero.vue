@@ -14,9 +14,11 @@
             <ContentSlot :use="$slots.description" unwrap="p" />
           </p>
           <div class="flex flex-col mb-5 md:mb-0 md:items-start md:mx-0 gap-2 mt-6 w-52 lg:w-70 mx-auto">
-            <ButtonPrimary theme="primary" slug="/request-demo">
-              <ContentSlot :use="$slots.cta1" unwrap="p" />
-            </ButtonPrimary>
+            <a href="#request-form" class="button button-primary transition ease-in-out duration-300 hover:bg-primary-700 focus:bg-primary-700">
+              <div class=" text-white font-bold text-base">
+                <ContentSlot :use="$slots.cta1" unwrap="p" />
+              </div>
+            </a>
             <ButtonPrimary theme="outlinePrimarySimple">
               <ContentSlot :use="$slots.cta2" unwrap="p" />
             </ButtonPrimary>
