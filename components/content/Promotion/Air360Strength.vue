@@ -1,9 +1,8 @@
 <template>
   <div class="my-10 py-8 px-4">
     <div class="flex flex-col items-center shadow-primary rounded-lg px-4 py-6 max-w-[600px] mx-auto">
-      <div class="flex gap-3">
-        <Logo is-dark />
-        <MochiBinoculars class="w-10 h-auto" />
+      <div class="">
+        <Logo2 class="w-13 h-auto" />
       </div>
       <h2 class="text-black-600 text-2xl font-bold my-4">
         <ContentSlot :use="$slots.title" unwrap="p" />
