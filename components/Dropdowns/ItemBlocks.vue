@@ -14,6 +14,7 @@
             <DropdownsItems slug="/product/capabilities/data-collection" icon="album-collection" :text="$t('product-dropdown.data-collection')" text-color="text-orange-600" />
             <DropdownsItems slug="/product/capabilities/events-segments" icon="calendar-circle-user" :text="$t('product-dropdown.events-segments')" text-color="text-orange-600" />
             <DropdownsItems slug="/product/capabilities/data-analysis" icon="magnifying-glass-chart" :text="$t('product-dropdown.data-analysis')" text-color="text-orange-600" />
+            <DropdownsItems slug="/product/capabilities/data-activation" icon="chart-network" :text="$t('product-dropdown.data-activation')" text-color="text-orange-600" />
           </template>
         </DropdownsSubItems>
         <DropdownsSubItems :title="$t('product-dropdown.other')">

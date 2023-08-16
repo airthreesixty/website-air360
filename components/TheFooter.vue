@@ -127,6 +127,13 @@
               </NuxtLink>
             </li>
             <li class="mb-4">
+              <NuxtLink :to="localePath('/product/capabilities/data-activation')">
+                <div class="hover:underline">
+                  {{ $t("product-dropdown.data-activation") }}
+                </div>
+              </NuxtLink>
+            </li>
+            <li class="mb-4">
               <NuxtLink :to="localePath('/product/security-compliance')">
                 <div class="hover:underline">
                   {{ $t("security.title") }}

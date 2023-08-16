@@ -1,4 +1,4 @@
-::common-hero{src="/sunburst.png"}
+::common-hero{src="/en/data-activation/hero.png"}
 #subtext
 DATA ACTIVATION
 #title
