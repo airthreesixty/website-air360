@@ -1,13 +1,13 @@
 <template>
-  <section class="bg-white">
-    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center sm:py-16 lg:px-6">
+  <section class="bg-white container">
+    <div :class="{'bg-gray-50 rounded-3xl': bgGray}" class="py-8 px-4 mx-auto text-center sm:py-16 lg:px-6">
       <h2 class="mb-4 title2 max-w-[900px] mx-auto">
         <ContentSlot :use="$slots.title" unwrap="p" />
       </h2>
       <!-- <p class="text-gray-500 sm:text-xl dark:text-gray-400">
         Here are a few reasons why you should choose Flowbite
       </p> -->
-      <div class="mt-8 lg:mt-12 space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+      <div class="mt-8 lg:mt-12 space-y-8 md:grid md:grid-cols-3 md:gap-12 md:space-y-0">
         <div>
           <fa-icon class="fa-3x text-primary-600 mb-2" :icon="['far', icon1]" />
           <h3 class="mb-2 text-xl font-bold text-black-600">
@@ -45,7 +45,10 @@ interface Props {
   icon1: string
   icon2: string
   icon3: string
+  bgGray: boolean
 }
 
-defineProps<Props>()
+withDefaults(defineProps<Props>(), {
+  bgGray: false,
+})
 </script>

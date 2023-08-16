@@ -44,7 +44,7 @@
         </div>
         <div v-if="button" class="w-52 mt-5">
           <ButtonPrimary theme="gradient" :slug="slug">
-            詳しく見る
+            {{ $t("learn-more") }}
           </ButtonPrimary>
         </div>
       </div>
