@@ -4,7 +4,7 @@ DATA ACTIVATION
 #title
 Turn insights into actions
 #description
-Generate results faster by pushing segments to your A/B testing , or personalization solutions to create better eCommerce experiences and boost conversion.
+Generate results faster by pushing segments to your A/B testing or personalization solutions to create better eCommerce experiences and boost conversion.
 ::
 
 ::three-features{icon1="person-walking-luggage" icon2="flask" icon3="crosshairs-simple" bgGray}
