@@ -1,5 +1,5 @@
 <template>
-  <div class="my-10 py-8 px-4">
+  <div class="my-10 lg:my-15 py-8 px-4">
     <div class="flex flex-col items-center shadow-primary rounded-lg px-4 py-6 max-w-[600px] mx-auto">
       <div class="">
         <Logo2 class="w-13 h-auto" />
