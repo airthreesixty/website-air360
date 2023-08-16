@@ -42,7 +42,7 @@
         <div class="max-w-2xl text-left mt-5 font-light prose text-gray-500 text-lg lg:text-xl xl:leading-8">
           <slot name="description" />
         </div>
-        <div v-if="button" class="w-52 mt-5">
+        <div v-if="button" class="w-35 mt-5">
           <ButtonPrimary theme="gradient" :slug="slug">
             {{ $t("learn-more") }}
           </ButtonPrimary>
