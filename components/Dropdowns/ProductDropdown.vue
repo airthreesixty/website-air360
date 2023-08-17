@@ -1,5 +1,5 @@
 <template>
-  <nav class="dropdown w-170">
+  <nav class="dropdown !-left-50 w-170">
     <div class="flex justify-around">
       <div>
         <div class="font-bold text-black-600">
