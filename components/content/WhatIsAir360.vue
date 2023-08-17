@@ -58,7 +58,7 @@ useIntersectionObserver(
 }
 
 .bg-gradient-top {
-  background: radial-gradient(182.29999999999998% 69% at 50% 8.4%,#ffffff 0%,rgb(255,255,255) 28.345139819430482%,rgba(255,255,255,.88) 46.39900258832971%,hsla(0,0%,100%,0) 99.95393495930529%);
+  background: radial-gradient(182.29999999999998% 95% at 50% 8.4%,#ffffff 0%,rgb(255,255,255) 28.345139819430482%,rgba(255,255,255,.88) 46.39900258832971%,hsla(0,0%,100%,0) 99.95393495930529%);
   position: absolute;
   right: unset;
   z-index: -1;
