@@ -1,5 +1,5 @@
 <template>
-  <section class="container md:-mt-22">
+  <section class="container pt-10 md:pt-5">
     <h2
       class="mb-2 text-3xl font-semibold text-black-600 text-center md:text-4xl lg:text-5xl dark:text-white"
     >
