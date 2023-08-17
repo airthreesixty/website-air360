@@ -1,3 +1,19 @@
 <template>
   <ContentDoc />
 </template>
+
+<script setup>
+const { t } = useI18n()
+const route = useRoute()
+const runtimeConfig = useRuntimeConfig()
+
+useSeoMeta({
+  title: t('promotion-lp.title'),
+  description: t('promotion-lp.content'),
+  ogDescription: t('promotion-lp.content'),
+  ogTitle: t('promotion-lp.title'),
+  ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
+  ogImage: `${runtimeConfig.public.baseUrl}/analyze.png`,
+  twitterCard: 'summary_large_image',
+})
+</script>

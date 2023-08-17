@@ -1,3 +1,7 @@
+---
+title: 分析に時間をかけないUX改善ツール
+---
+
 ::promotion-hero{src="/analyze.png"}
 #title
 分析に時間をかけないUX改善ツール

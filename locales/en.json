@@ -348,5 +348,9 @@
     "title": "Turn insights into actions",
     "content": "Generate results faster by pushing segments to your A/B testing , or personalization solutions to create better eCommerce experiences and boost conversion."
   },
+  "promotion-lp": {
+    "title": "分析に時間をかけないUX改善ツール",
+    "content": "サイト上のユーザー行動を全て可視化。 素早く分析し、効率的にCVRを向上。"
+  },
   "watch-tour": "Watch tour"
 }
