@@ -1,3 +1,7 @@
+---
+title: データアクティベーション
+---
+
 ::common-hero{src="/en/data-activation/hero.png"}
 #subtext
 データアクティベーション
