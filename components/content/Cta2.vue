@@ -20,9 +20,3 @@ interface Props {
 
 defineProps<Props>()
 </script>
-
-<style scoped>
-.shadow-primary {
-    box-shadow: 0 0 0 2px rgba(231,75,145,1), 8px 8px 0 0 rgba(231,75,145,1);
-}
-</style>
