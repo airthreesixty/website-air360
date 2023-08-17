@@ -36,3 +36,7 @@ td {
 h2, h3 {
   scroll-margin-top: 100px;
 }
+
+::selection {
+  background-color: #FCE9F2;
+}
