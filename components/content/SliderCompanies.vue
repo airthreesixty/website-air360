@@ -73,8 +73,13 @@ const slider = computed(() => {
 <style lang="postcss">
 .bg-slider {
   background-image: linear-gradient(101.13deg, #FD7043 0%, #F04D66 19.06%, #E72192 50.04%, #C141AC 71.33%, #644AD5 99.11%, #2D92E9 100.63%);
-  mask-image: linear-gradient(90deg,transparent,#fff 8%,#fff 92%,transparent);
-  -webkit-mask-image: linear-gradient(90deg,transparent,#fff 8%,#fff 92%,transparent);
+}
+
+@media screen and (min-width: 1400px) {
+  .bg-slider {
+      -webkit-mask-image: linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent);
+      mask-image: linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent);
+  }
 }
 
 .slider-company-logos-list {
