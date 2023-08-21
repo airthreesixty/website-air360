@@ -46,7 +46,7 @@ Air360はウェブサイト上の顧客体験を理解できる「デジタル�
     ::
 ::
 
-::single-description{image-path="/promotion/dashboard.png" image-status="block" image-status2="hidden" :deco="false"}
+::single-description{videoSrc="/videos/promotion.mp4" poster="/web-analysis.png" image-status="block" image-status2="hidden" :deco="false"}
 #title
 ウェブ改善分析
 #description
