@@ -90,6 +90,7 @@ export default defineNuxtConfig({
   css: [
     '@fortawesome/fontawesome-svg-core/styles.css',
     '~/assets/css/style.css',
+    'vue-final-modal/style.css',
   ],
 
   build: {

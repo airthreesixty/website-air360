@@ -1,8 +1,12 @@
 <template>
-  <ContentDoc />
+  <div>
+    <ContentDoc />
+    <ModalsContainer />
+  </div>
 </template>
 
 <script setup>
+import { ModalsContainer } from 'vue-final-modal'
 const { t } = useI18n()
 const route = useRoute()
 const runtimeConfig = useRuntimeConfig()

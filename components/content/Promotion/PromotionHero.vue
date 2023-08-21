@@ -19,9 +19,9 @@
                 <ContentSlot :use="$slots.cta1" unwrap="p" />
               </div>
             </a>
-            <ButtonPrimary theme="outlinePrimarySimple">
+            <ModalPreview>
               <ContentSlot :use="$slots.cta2" unwrap="p" />
-            </ButtonPrimary>
+            </ModalPreview>
           </div>
         </div>
       </div>
@@ -33,6 +33,8 @@
 </template>
 
 <script setup lang="ts">
+import ModalPreview from '../ModalPreview.vue'
+
 interface Props {
     src: string
 }
