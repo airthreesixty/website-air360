@@ -6,6 +6,7 @@
       <nuxt-img loading="lazy" format="webp" class="w-full h-auto shadow-lg rounded-lg md:hidden dark:hidden" src="/clubmedResort.jpg" :alt="$t('clubmed-pic')" />
       <div class="mt-4 md:mt-0">
         <h2
+          :class="{'border-b-4 border-black-600 inline-block pb-2': border}"
           class="mb-4 text-2xl font-semibold text-black-600 text-left md:text-3xl lg:text-4xl dark:text-white"
         >
           <ContentSlot :use="$slots.title" unwrap="p" />
@@ -44,3 +45,13 @@
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+interface Props {
+  border: Boolean
+}
+
+withDefaults(defineProps<Props>(), {
+  border: false,
+})
+</script>

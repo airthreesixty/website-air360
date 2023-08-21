@@ -1,6 +1,7 @@
 <template>
-  <section class="container">
+  <section class="container text-center">
     <h2
+      :class="{'border-b-4 border-black-600 inline-block pb-2': border}"
       class="mb-4 text-center title2"
     >
       <ContentSlot :use="$slots.title" unwrap="p" />
@@ -11,3 +12,13 @@
     <slot name="content" />
   </section>
 </template>
+
+<script setup lang="ts">
+interface Props {
+  border: Boolean
+}
+
+withDefaults(defineProps<Props>(), {
+  border: false,
+})
+</script>

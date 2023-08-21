@@ -4,7 +4,7 @@
       <div class="md:col-span-2 md:flex">
         <div class="self-center">
           <span class="font-bold text-primary-600 text-base"><ContentSlot :use="$slots.subtext" unwrap="p" /></span>
-          <h1 class="title1 mt-5 md:mt-0 font-bold text-center md:text-left text-black-600">
+          <h1 class="font-bold text-4xl text-black-600 xl:text-5xl mt-5 md:mt-0 text-center md:text-left">
             <ContentSlot :use="$slots.title" unwrap="p" />
           </h1>
           <div class="mx-auto md:hidden">

@@ -1,6 +1,10 @@
+---
+title: 分析に時間をかけないUX改善ツール
+---
+
 ::promotion-hero{src="/analyze.png"}
 #title
-分析に時間をかけないUX改善ツール
+<div class="lg:inline-block">分析に時間をかけない</div><div class="lg:inline-block">UX改善ツール</div>
 #description
 サイト上のユーザー行動を全て可視化。 素早く分析し、効率的にCVRを向上。
 #cta1
@@ -23,7 +27,7 @@ Air360の3つの強み
 様々なツールと統合し、マーケティングにも活用できる
 ::
 
-::descriptions
+::descriptions{border}
 #title
 Air360 でできること
 #description
@@ -65,7 +69,7 @@ Air360はウェブサイト上の顧客体験を理解できる「デジタル�
 ::
 ::
 
-::real-example
+::real-example{border}
 #title
 実績
 #description
