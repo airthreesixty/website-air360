@@ -78,7 +78,7 @@
                     {{ $t("blog") }}
                   </nuxt-link>
                 </div>
-                <div class="flex items-center mb-2">
+                <div v-if="locale === 'en'" class="flex items-center mb-2">
                   <span><fa-icon class="text-lg text-blossom-600 w-5 mr-2" :icon="['far', 'building-columns']" /></span>
                   <nuxt-link :to="localePath('/content-gallery')" class="block text-sm text-black-600 transition-all hover:(text-primary-600 text-shadow-primary)">
                     {{ $t('gallery') }}
@@ -122,6 +122,7 @@
 
 <script setup lang="ts">
 const localePath = useLocalePath()
+const { locale } = useI18n()
 const runtimeConfig = useRuntimeConfig()
 const route = useRoute()
 
