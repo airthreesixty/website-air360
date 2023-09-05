@@ -13,7 +13,9 @@
           <h2 class="title3 my-10">
             <ContentSlot :use="$slots.formTitle" unwrap="p" />
           </h2>
-          <div id="form" />
+          <div id="form">
+            <Loading class="w-20 h-5 mx-auto" :is-full-page="false" />
+          </div>
         </div>
       </div>
     </div>
