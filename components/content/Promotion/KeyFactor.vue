@@ -4,7 +4,7 @@
       <h2 class="title3 font-bold mb-5">
         <ContentSlot :use="$slots.title" unwrap="p" />
       </h2>
-      <p class="textp md:max-w-[650px]">
+      <p class="textp">
         <ContentSlot :use="$slots.description" unwrap="p" />
       </p>
     </div>

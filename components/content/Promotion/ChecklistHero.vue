@@ -1,6 +1,6 @@
 <template>
-  <section class="bg-white container py-10 lg:py-14">
-    <div class="text-center">
+  <section class="bg-white py-10 lg:py-14">
+    <div class="text-center container">
       <div>
         <span class="text-primary-600 font-bold"><ContentSlot :use="$slots.subtext" unwrap="p" /></span>
         <h1 class="title1 mt-5">
