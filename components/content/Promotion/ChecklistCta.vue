@@ -1,6 +1,6 @@
 <template>
-  <section class="bg-white container py-10">
-    <div class="shadow-primary px-4 rounded-lg py-10 md:py-15 md:(grid grid-cols-3 items-center) xl:(flex justify-between)">
+  <section class="bg-white container my-18">
+    <div class="shadow-primary px-4 rounded-lg py-10 md:(grid grid-cols-3 items-center) xl:(flex justify-between)">
       <h2 class="title2 mb-8 md:(mb-0 col-span-2)">
         <ContentSlot :use="$slots.title" unwrap="p" />
       </h2>

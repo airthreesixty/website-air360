@@ -1,19 +1,19 @@
 <template>
-  <section class="bg-white container py-10">
-    <div class="text-center 2xl:(flex gap-5)">
-      <div>
+  <section class="bg-gray-50 py-10 md:py-14">
+    <div class="container text-center 2xl:(grid grid-cols-6 gap-5)">
+      <div class="2xl:col-span-2">
         <h2 class="title3 font-bold text-center xl:text-left">
           <ContentSlot :use="$slots.title" unwrap="p" />
         </h2>
-        <p class="textp xl:text-left my-4 md:mb-8">
+        <p class="textp max-w-[700px] mx-auto xl:(mr-auto ml-0) xl:text-left my-4 md:mb-8">
           <ContentSlot :use="$slots.description" unwrap="p" />
         </p>
         <p class="text-black-600 font-bold lg:text-lg xl:text-left my-4 md:mb-8">
           <ContentSlot :use="$slots.description2" unwrap="p" />
         </p>
       </div>
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div v-for="{icon, title, desc}, index in cards" :key="index" class="relative shadow-primary p-5 pb-14 lg:pb-17 rounded-lg">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 2xl:col-span-4 gap-8">
+        <div v-for="{icon, title, desc}, index in cards" :key="index" class="relative shadow-primary p-5 pb-14 lg:pb-17 2xl:pb-20 rounded-lg">
           <div class="flex items-center justify-center mb-2">
             <h3 class="text-black-600 font-bold text-lg">
               {{ title }}
@@ -22,7 +22,7 @@
           <p class="text-gray-500 text-center">
             {{ desc }}
           </p>
-          <fa-icon class="absolute bottom-2 2xl:bottom-18 right-[50%] transform translate-x-[50%] text-4xl lg:text-5xl 2xl:text-6xl text-primary-600" :icon="['far', icon]" />
+          <fa-icon class="absolute bottom-2 right-[50%] transform translate-x-[50%] text-4xl lg:text-5xl 2xl:text-6xl text-primary-600" :icon="['far', icon]" />
         </div>
       </div>
     </div>

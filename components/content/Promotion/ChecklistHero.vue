@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white container py-10">
+  <section class="bg-white container py-10 lg:py-14">
     <div class="text-center">
       <div>
         <span class="text-primary-600 font-bold"><ContentSlot :use="$slots.subtext" unwrap="p" /></span>
@@ -7,8 +7,8 @@
           <ContentSlot :use="$slots.title" unwrap="p" />
         </h1>
       </div>
-      <div class="bg-primary-100 max-w-[1050px] mx-auto p-5 lg:p-10 mt-15 md:(flex items-center gap-3)">
-        <nuxt-img src="/promotion/checklist.png" class="w-70 h-70 lg:(w-90 h-90) mx-auto" />
+      <div class="bg-primary-100 rounded-lg max-w-[1050px] mx-auto p-5 lg:p-10 mt-15 md:(flex items-center justify-around gap-3)">
+        <nuxt-img src="/promotion/checklist.png" class="w-70 h-70 mx-auto lg:m-0 lg:(w-90 h-90)" />
         <div>
           <h2 class="title3 my-10">
             <ContentSlot :use="$slots.formTitle" unwrap="p" />
