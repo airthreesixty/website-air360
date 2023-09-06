@@ -25,9 +25,6 @@
 <script setup>
 import { useScriptTag } from '@vueuse/core'
 
-const runtimeConfig = useRuntimeConfig()
-const { locale } = useI18n()
-
 useScriptTag(
   '//js-eu1.hsforms.net/forms/embed/v2.js',
   () => {
@@ -36,7 +33,6 @@ useScriptTag(
       portalId: '27037851',
       formId: '4651f467-09d5-42da-ac55-8c93960a37e6',
       target: '#form',
-      redirectUrl: `${runtimeConfig.public.baseUrl}/${locale.value}/air360-ebook-1-thank-you/`,
       onFormSubmit: function ($form) {
         if (Air360) {
           Air360.identify($form.email.value)
