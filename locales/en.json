@@ -352,5 +352,6 @@
     "title": "分析に時間をかけないUX改善ツール",
     "content": "サイト上のユーザー行動を全て可視化。 素早く分析し、効率的にCVRを向上。"
   },
-  "watch-tour": "Watch tour"
+  "watch-tour": "Watch tour",
+  "warning": "Warning - Only for Conversion Rate Heroes"
 }

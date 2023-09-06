@@ -4,8 +4,8 @@
       <slot />
     </div>
     <div class="mt-35">
-      <h2 class="mb-8 text-2xl font-bold text-gray-900 text-center">
-        Warning - Only for Conversion Rate Heroes
+      <h2 class="mb-8 text-2xl font-bold text-black-600 text-center">
+        {{ $t("warning") }}
       </h2>
       <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
         <BlogCard v-for="article in articles" :key="article._path" :data="article" />
