@@ -17,7 +17,7 @@ useSeoMeta({
   ogDescription: t('promotion-lp.content'),
   ogTitle: t('promotion-lp.title'),
   ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
-  ogImage: `${runtimeConfig.public.baseUrl}/analyze.png`,
+  ogImage: `${runtimeConfig.public.baseUrl}/promotion/checklist.png`,
   twitterCard: 'summary_large_image',
 })
 </script>
