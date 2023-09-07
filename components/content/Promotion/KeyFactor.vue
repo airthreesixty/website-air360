@@ -1,6 +1,6 @@
 <template>
-  <section class="pt-10 md:pt-14 overflow-hidden">
-    <div class="container md:(flex items-center)">
+  <section class="pt-10 md:pt-0 overflow-hidden">
+    <div class="container md:(flex items-center) xl:-mb-10">
       <div class="relative">
         <h2 class="title3 text-black-600 font-bold mb-5">
           <ContentSlot :use="$slots.title" unwrap="p" />
