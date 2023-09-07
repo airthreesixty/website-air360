@@ -41,9 +41,3 @@ useScriptTag(
     })
   })
 </script>
-
-<style scoped>
-.hs-button {
-  width: 500px;
-}
-</style>
