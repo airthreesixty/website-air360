@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-gray-50 py-10 md:py-14">
+  <section class="bg-gray-50 pb-14">
     <div class="container text-center 2xl:(grid grid-cols-6 gap-5)">
       <div class="2xl:col-span-2">
         <h2 class="title3 font-bold text-center xl:text-left">
