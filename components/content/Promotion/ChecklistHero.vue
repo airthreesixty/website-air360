@@ -1,18 +1,20 @@
 <template>
   <section class="bg-white py-10 lg:py-14">
-    <div class="text-center container">
-      <div>
-        <span class="text-primary-600 font-bold"><ContentSlot :use="$slots.subtext" unwrap="p" /></span>
-        <h1 class="title1 mt-5">
-          <ContentSlot :use="$slots.title" unwrap="p" />
-        </h1>
+    <div class="text-center container md:(grid grid-cols-2 items-center justify-around gap-3)">
+      <div class="max-w-[500px] mx-auto">
+        <nuxt-img src="/promotion/checklist.png" class="mb-8" />
       </div>
-      <div class="bg-primary-100 rounded-lg max-w-[1050px] mx-auto p-5 lg:p-10 mt-15 md:(flex items-center justify-around gap-3)">
-        <nuxt-img src="/promotion/checklist.png" class="w-70 h-70 mx-auto lg:m-0 lg:(w-90 h-90)" />
+      <div class="rounded-lg max-w-[1050px] mx-auto p-5 lg:p-10">
         <div>
-          <h2 class="title3 my-10">
+          <!-- <h2 class="title3 my-10">
             <ContentSlot :use="$slots.formTitle" unwrap="p" />
-          </h2>
+          </h2> -->
+          <div class="md:text-left">
+            <span class="text-primary-600 font-bold"><ContentSlot :use="$slots.subtext" unwrap="p" /></span>
+            <h1 class="title1 mt-5 mb-8">
+              <ContentSlot :use="$slots.title" unwrap="p" />
+            </h1>
+          </div>
           <div id="form">
             <Loading class="w-20 h-5 mx-auto" :is-full-page="false" />
           </div>
@@ -41,3 +43,9 @@ useScriptTag(
     })
   })
 </script>
+
+<style>
+input.hs-button.primary.large {
+  width: 100%;
+}
+</style>

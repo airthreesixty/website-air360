@@ -7,8 +7,6 @@ title: ページを見直し、CVRを大幅改善
 ECサイトのチェックアウト体験を向上          
 #title
 ページを見直し<br>CVRを大幅改善
-#formTitle
-無料でチェックリストを<br>ダウンロード！
 ::
 
 ::smooth-checkout
