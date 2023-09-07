@@ -19,7 +19,7 @@
             </p>
           </div>
         </div>
-        <div class="absolute top-[42%] right-25 lg:right-35 text-xs md:text-sm lg:text-base max-w-[110px] text-black-600">
+        <div class="absolute top-[42%] right-5 md:right-25 lg:right-35 text-xs md:text-sm lg:text-base max-w-[110px] text-black-600">
           <div class="bg-white w-40 md:w-60 lg:w-75 p-4 md:p-6 shadow-gray rounded-full">
             <p>
               <ContentSlot :use="$slots.text3" unwrap="p" />
