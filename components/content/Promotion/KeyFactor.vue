@@ -1,8 +1,8 @@
 <template>
   <section class="pt-10 md:pt-14 overflow-hidden">
-    <div class="container">
-      <div>
-        <h2 class="title3 font-bold mb-5">
+    <div class="container md:(flex items-center)">
+      <div class="relative">
+        <h2 class="title3 text-black-600 font-bold mb-5">
           <ContentSlot :use="$slots.title" unwrap="p" />
         </h2>
         <p class="textp">
@@ -19,7 +19,7 @@
             </p>
           </div>
         </div>
-        <div class="absolute top-[55%] right-5 lg:right-10 text-xs md:text-sm lg:text-base max-w-[110px] text-black-600">
+        <div class="absolute top-[42%] right-25 lg:right-35 text-xs md:text-sm lg:text-base max-w-[110px] text-black-600">
           <div class="bg-white w-40 md:w-60 lg:w-75 p-4 md:p-6 shadow-gray rounded-full">
             <p>
               <ContentSlot :use="$slots.text3" unwrap="p" />
