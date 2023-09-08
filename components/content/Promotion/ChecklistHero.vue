@@ -48,32 +48,30 @@ useScriptTag(
   })
 
 onMounted(() => {
-  setTimeout(() => {
-    let largeDevice = 1
+  let largeDevice = 1
 
-    if (window.innerWidth >= 1024) {
-      largeDevice = 1.25
-    }
-    gsap.to('.mochi-cart-wrapper', {
-      ease: 'power2.inOut',
-      keyframes: [
-        { x: 0, y: 0, rotation: 0, duration: 0.23 },
-        { x: 30 * largeDevice, y: 0, rotation: -5, duration: 0.23 },
-        { x: 60 * largeDevice, y: -1, rotation: 0, duration: 0.23 },
-        { x: 90 * largeDevice, y: -1, rotation: 5, duration: 0.23 },
-        { x: 120 * largeDevice, y: 0, rotation: -4, duration: 0.23 },
-        { x: 150 * largeDevice, y: 1, rotation: 0, duration: 0.23 },
-        { x: 180 * largeDevice, y: 0, rotation: 4, duration: 0.23 },
-        { x: 210 * largeDevice, y: 0, rotation: -3, duration: 0.23 },
-        { x: 240 * largeDevice, y: 1, rotation: 0, duration: 0.23 },
-        { x: 270 * largeDevice, y: 0, rotation: 3, duration: 0.23 },
-        { x: 300 * largeDevice, y: 0, rotation: -2, duration: 0.23 },
-        { x: 330 * largeDevice, y: 1, rotation: 0, duration: 0.23 },
-        { x: 360 * largeDevice, y: 0, rotation: 2, duration: 0.23 },
-        { x: 390 * largeDevice, y: 0, rotation: 0, duration: 0.32 },
-      ],
-    })
-  }, 1000)
+  if (window.innerWidth >= 1024) {
+    largeDevice = 1.25
+  }
+  gsap.to('.mochi-cart-wrapper', {
+    ease: 'power2.inOut',
+    keyframes: [
+      { x: 0, y: 0, rotation: 0, duration: 0.23 },
+      { x: 30 * largeDevice, y: 0, rotation: -5, duration: 0.23 },
+      { x: 60 * largeDevice, y: -1, rotation: 0, duration: 0.23 },
+      { x: 90 * largeDevice, y: -1, rotation: 5, duration: 0.23 },
+      { x: 120 * largeDevice, y: 0, rotation: -4, duration: 0.23 },
+      { x: 150 * largeDevice, y: 1, rotation: 0, duration: 0.23 },
+      { x: 180 * largeDevice, y: 0, rotation: 4, duration: 0.23 },
+      { x: 210 * largeDevice, y: 0, rotation: -3, duration: 0.23 },
+      { x: 240 * largeDevice, y: 1, rotation: 0, duration: 0.23 },
+      { x: 270 * largeDevice, y: 0, rotation: 3, duration: 0.23 },
+      { x: 300 * largeDevice, y: 0, rotation: -2, duration: 0.23 },
+      { x: 330 * largeDevice, y: 1, rotation: 0, duration: 0.23 },
+      { x: 360 * largeDevice, y: 0, rotation: 2, duration: 0.23 },
+      { x: 390 * largeDevice, y: 0, rotation: 0, duration: 0.32 },
+    ],
+  })
 })
 </script>
 
