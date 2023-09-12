@@ -22,11 +22,11 @@
       <div class="flex items-center space-x-4 absolute bottom-2">
         <nuxt-img
           class="w-10 h-10 rounded-full"
-          src="https://secure.gravatar.com/avatar/8970d6f80cecf680b09d491937b1623f?s=96&d=mm&r=g"
+          :src="data.writerImg ? data.writerImg : 'https://secure.gravatar.com/avatar/8970d6f80cecf680b09d491937b1623f?s=96&d=mm&r=g'"
           :alt="$t('avatar')"
         />
         <div class="font-medium dark:text-white">
-          <div>{{ $t('air360-team') }}</div>
+          <div>{{ data.writerName ? data.writerName : $t('air360-team') }}</div>
           <div class="text-sm font-normal text-gray-500 dark:text-gray-400">
             {{
               $dayjs(data.published)
