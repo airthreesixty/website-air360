@@ -80,12 +80,13 @@
                     <div
                       class="inline-flex items-center mr-3 text-sm text-black-600"
                     >
-                      <MochiComputer class="mr-4 w-16 h-16" />
+                      <MochiComputer v-if="!data?.writerImg" class="mr-4 w-16 h-16" />
+                      <nuxt-img v-if="data?.writerImg" class="mr-4 w-16 h-16" src="/blog/5-reasons-why-ecommerce-companies-should-work-to-improve-cvr/image6.jpg" format="webp" />
                       <div>
                         <div
                           class="text-xl font-bold text-black-600"
                         >
-                          {{ $t('air360-team') }}
+                          {{ data?.writerName ? data.writerName : $t('air360-team') }}
                         </div>
                         <p
                           class="text-base font-light text-gray-500"
@@ -107,6 +108,7 @@
                     {{ data?.title }}
                   </h1>
                   <nuxt-img format="webp" :src="data?.image" :alt="data?.title" class="h-90 mb-10 rounded-lg w-full object-cover" />
+                  <span v-if="data?.attribution" class="text-center block -mt-5">Image by vectorjuice on Freepik</span>
                 </header>
                 <div class="prose nuxt-content">
                   <!-- <NewTableOfContents :paragraph-titles="paragraphTitles" class="lg:hidden" /> -->

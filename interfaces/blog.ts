@@ -6,6 +6,9 @@ export interface BlogArticle {
   image: string
   _path: string
   metaDesc: string
+  attribution?: string
+  writerImg?: string
+  writerName?: string
 }
 
 export interface Title {

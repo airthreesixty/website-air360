@@ -39,6 +39,9 @@ export default defineConfig({
                 'text-decoration': 'none',
                 color: '#6278DF',
               },
+              em: {
+                fontSize: '12px',
+              },
             },
             a: {
               'text-decoration': 'none',
