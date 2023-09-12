@@ -5,7 +5,7 @@
         <ContentSlot :use="$slots.title" unwrap="p" />
       </h2>
       <div class="justify-self-end">
-        <a href="#" class="bg-primary-600 w-full text-white px-6 py-3 rounded-lg font-bold"><ContentSlot :use="$slots.cta" unwrap="p" /></a>
+        <a href="#" class="bg-primary-600 w-full text-white px-6 py-3 rounded-lg font-bold transition ease-in-out duration-300 hover:bg-primary-700"><ContentSlot :use="$slots.cta" unwrap="p" /></a>
       </div>
     </div>
   </section>
