@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white container my-18">
+  <section ref="target" class="bg-white container my-18">
     <div class="shadow-primary px-4 rounded-lg py-10 md:(grid grid-cols-3 items-center) xl:(flex justify-between)">
       <h2 class="title2 mb-8 md:(mb-0 col-span-2)">
         <ContentSlot :use="$slots.title" unwrap="p" />
@@ -10,3 +10,20 @@
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+const target = ref()
+
+useMotion(target, {
+  initial: {
+    scale: 0.8,
+  },
+  visibleOnce: {
+    scale: 1,
+    transition: {
+      delay: 500,
+      duration: 300,
+    },
+  },
+})
+</script>

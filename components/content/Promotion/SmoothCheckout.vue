@@ -1,5 +1,8 @@
 <template>
-  <section class="bg-gray-50 py-10 md:py-14 xl:py-20">
+  <section
+    ref="target"
+    class="bg-gray-50 py-10 md:py-14 xl:py-20"
+  >
     <div class="container text-center xl:(grid grid-cols-5 gap-5)">
       <div class="col-span-2">
         <h2 class="title3 text-black-600 max-w-[700px] mx-auto font-bold text-center xl:text-left">
@@ -29,6 +32,8 @@
 </template>
 
 <script setup lang="ts">
+const target = ref()
+
 const cards = [
   {
     icon: 'circle-check',
@@ -46,4 +51,19 @@ const cards = [
     desc: 'ユーザーに支払いや発送方法を複数提供することで、気持ちよく購入してもらえます。ユーザーはオプションがあると満足度が向上します。',
   },
 ]
+
+useMotion(target, {
+  initial: {
+    opacity: 0,
+    x: -100,
+  },
+  visibleOnce: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      delay: 500,
+      duration: 600,
+    },
+  },
+})
 </script>

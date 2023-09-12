@@ -3179,7 +3179,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/core@npm:^10.2.0, @vueuse/core@npm:^10.3.0":
+"@vueuse/core@npm:^10.1.2, @vueuse/core@npm:^10.2.0, @vueuse/core@npm:^10.3.0":
   version: 10.4.1
   resolution: "@vueuse/core@npm:10.4.1"
   dependencies:
@@ -3272,6 +3272,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vueuse/motion@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@vueuse/motion@npm:2.0.0"
+  dependencies:
+    "@nuxt/kit": ^3.5.1
+    "@vueuse/core": ^10.1.2
+    "@vueuse/shared": ^10.1.2
+    csstype: ^3.1.2
+    framesync: ^6.1.2
+    popmotion: ^11.0.5
+    style-value-types: ^5.1.2
+  peerDependencies:
+    vue: ">=3.0.0"
+  dependenciesMeta:
+    "@nuxt/kit":
+      optional: true
+  checksum: 5bdd9bcf4597a7688f23d45565b72ed35109523a2a2438956ee4f2f6859b5b8490fec6080c2deb5ee083174b7d3aab824884bc3540b11c1a50bfbcadd9a058f6
+  languageName: node
+  linkType: hard
+
 "@vueuse/shared@npm:10.1.2":
   version: 10.1.2
   resolution: "@vueuse/shared@npm:10.1.2"
@@ -3281,7 +3301,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/shared@npm:10.4.1":
+"@vueuse/shared@npm:10.4.1, @vueuse/shared@npm:^10.1.2":
   version: 10.4.1
   resolution: "@vueuse/shared@npm:10.4.1"
   dependencies:
@@ -4697,7 +4717,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"csstype@npm:^3.1.1":
+"csstype@npm:^3.1.1, csstype@npm:^3.1.2":
   version: 3.1.2
   resolution: "csstype@npm:3.1.2"
   checksum: e1a52e6c25c1314d6beef5168da704ab29c5186b877c07d822bd0806717d9a265e8493a2e35ca7e68d0f5d472d43fac1cdce70fd79fd0853dff81f3028d857b5
@@ -6228,6 +6248,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"framesync@npm:6.1.2, framesync@npm:^6.1.2":
+  version: 6.1.2
+  resolution: "framesync@npm:6.1.2"
+  dependencies:
+    tslib: 2.4.0
+  checksum: 250dec78c351b087a47558b8bcf85a91a878507a73f05c095f7728617d40432b8ca0cb21deee98026d582c67610e961f83e535990035f6c9902e721580daff76
+  languageName: node
+  linkType: hard
+
 "fresh@npm:0.5.2":
   version: 0.5.2
   resolution: "fresh@npm:0.5.2"
@@ -6880,6 +6909,13 @@ __metadata:
     property-information: ^6.0.0
     space-separated-tokens: ^2.0.0
   checksum: 928a21576ff7b9a8c945e7940bcbf2d27f770edb4279d4d04b33dc90753e26ca35c1172d626f54afebd377b2afa32331e399feb3eb0f7b91a399dca5927078ae
+  languageName: node
+  linkType: hard
+
+"hey-listen@npm:^1.0.8":
+  version: 1.0.8
+  resolution: "hey-listen@npm:1.0.8"
+  checksum: 6bad60b367688f5348e25e7ca3276a74b59ac5a09b0455e6ff8ab7d4a9e38cd2116c708a7dcd8a954d27253ce1d8717ec891d175723ea739885b828cf44e4072
   languageName: node
   linkType: hard
 
@@ -10197,6 +10233,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"popmotion@npm:^11.0.5":
+  version: 11.0.5
+  resolution: "popmotion@npm:11.0.5"
+  dependencies:
+    framesync: 6.1.2
+    hey-listen: ^1.0.8
+    style-value-types: 5.1.2
+    tslib: 2.4.0
+  checksum: f6990d7a59eff402356efd3c9874c3b32bdfd0890ef1da97c71b20ea5ca8f85c17e2daaf11d1328d2756999b0f8222b3b4ec73b4558246843f100053b5a389d7
+  languageName: node
+  linkType: hard
+
 "postcss-calc@npm:^9.0.0":
   version: 9.0.1
   resolution: "postcss-calc@npm:9.0.1"
@@ -11237,6 +11285,7 @@ __metadata:
     "@vuelidate/core": ^2.0.0
     "@vuelidate/validators": ^2.0.0
     "@vueuse/core": 10.1.2
+    "@vueuse/motion": ^2.0.0
     algoliasearch: ^4.14.3
     animate.css: ^4.1.1
     axios: 1.4.0
@@ -12046,6 +12095,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"style-value-types@npm:5.1.2, style-value-types@npm:^5.1.2":
+  version: 5.1.2
+  resolution: "style-value-types@npm:5.1.2"
+  dependencies:
+    hey-listen: ^1.0.8
+    tslib: 2.4.0
+  checksum: 262d89aa3131d9076f8699cb38119740beadff901732c5f71bd3a34fcc398246a398d74057ca4ed3c06aeb44d8c5022839f6203a9a1bc7fdde2965674e3eaa31
+  languageName: node
+  linkType: hard
+
 "stylehacks@npm:^6.0.0":
   version: 6.0.0
   resolution: "stylehacks@npm:6.0.0"
@@ -12364,6 +12423,13 @@ __metadata:
     minimist: ^1.2.6
     strip-bom: ^3.0.0
   checksum: a6162eaa1aed680537f93621b82399c7856afd10ec299867b13a0675e981acac4e0ec00896860480efc59fc10fd0b16fdc928c0b885865b52be62cadac692447
+  languageName: node
+  linkType: hard
+
+"tslib@npm:2.4.0":
+  version: 2.4.0
+  resolution: "tslib@npm:2.4.0"
+  checksum: 8c4aa6a3c5a754bf76aefc38026134180c053b7bd2f81338cb5e5ebf96fefa0f417bff221592bf801077f5bf990562f6264fecbc42cd3309b33872cb6fc3b113
   languageName: node
   linkType: hard
 
