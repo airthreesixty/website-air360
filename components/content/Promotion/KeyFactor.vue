@@ -5,7 +5,7 @@
     <div class="container md:(flex items-center) xl:-mb-10">
       <div
         ref="targetLeft"
-        class="relative"
+        class="relative z-index-1"
       >
         <h2 class="title3 text-black-600 font-bold mb-5">
           <ContentSlot :use="$slots.title" unwrap="p" />
