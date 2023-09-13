@@ -127,11 +127,13 @@ Air360上で作成したユーザーセグメントをA/Bテスト、マーケ�
 プライバシーを大切にしています
 ::
 
-::testimonial2
+::testimonial2{alt="Moz.com 創設者" src="/mozFounder.png"}
 #title
 “急成長を目指す企業にとって、コンバージョン率最適化（CRO）はまさに必需品です。CROは全ての訪問者の価値を飛躍的に高めるため、最も重要なマーケティング活動です。”
 #role
 Moz.com 創設者
+#name
+Rand Fishkin
 ::
 
 ::cta-new

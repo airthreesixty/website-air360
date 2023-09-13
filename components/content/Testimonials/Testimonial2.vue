@@ -22,14 +22,14 @@
           <nuxt-img
             format="webp"
             class="w-15 h-15"
-            src="/mozFounder.png"
-            :alt="$t('moz-founder')"
+            :src="src"
+            :alt="alt"
           />
           <div
             class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700"
           >
             <div class="pr-3 font-medium text-black-600 dark:text-white">
-              Rand Fishkin
+              <ContentSlot :use="$slots.name" unwrap="p" />
             </div>
             <div
               class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400"
@@ -42,3 +42,12 @@
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+interface Props {
+  alt: string
+  src: string
+}
+
+defineProps<Props>()
+</script>
