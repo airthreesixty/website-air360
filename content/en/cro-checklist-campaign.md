@@ -1,10 +1,12 @@
-::checklist-hero{src="/en/promotion/checklist.png"}
+::checklist-hero2{src="/en/promotion/checklist.png"}
 #subtext
 Boost your Checkout Experience       
 #title
 The Power of a Smooth and Frictionless Checkout Experience in CRO
-#formTitle
+#description
 Prepare to unlock the potential of your online store line never before. Dive into the world of CRO and discover how transforming your checkout experience can revolutionize your eCommerce brand.
+#formTitle
+Download your Free Checklist
 ::
 
 ::smooth-checkout
