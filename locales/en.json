@@ -385,5 +385,10 @@
       "title": "Smart Moves with Data",
       "desc": "CRO uses data to make smart choices. You'll understand shoppers better and make changes that help your business."
     }
+  },
+  "cro-checklist-thank-you": {
+    "title": "Thank you for showing interest in our checklist for Checkout CRO Recommendations!",
+    "desc": "Please check your email inbox to receive the document from us.",
+    "cta": "Download"
   }
 }

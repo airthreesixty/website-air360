@@ -2,14 +2,14 @@
   <ThankYouPage>
     <div class="flex flex-col justify-center items-center text-center">
       <h1 class="page-thank-you__title">
-        チェックリストをダウンロードしましょう!
+        {{ $t('cro-checklist-thank-you.title') }}
       </h1>
       <MochiFlying class="mt-12 mb-10" />
       <p class="page-thank-you__description">
-        ECサイト改善チェックリストの問い合わせありがとうございます！
+        {{ $t('cro-checklist-thank-you.desc') }}
       </p>
       <a class="page-thank-you__button" href="/promotion/cro-checklist.pdf" download="/promotion/cro-checklist.pdf" target="_blank">
-        ダウンロード
+        {{ $t('cro-checklist-thank-you.cta') }}
       </a>
     </div>
   </ThankYouPage>
