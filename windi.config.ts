@@ -80,6 +80,12 @@ export default defineConfig({
               padding: '12px 10px',
               borderBottom: '3px solid #e74b91',
             },
+            h4: {
+              fontSize: '18px',
+              fontWeight: 'bold',
+              borderLeft: '5px solid #e74b91',
+              paddingLeft: '10px',
+            },
           },
         },
       },
