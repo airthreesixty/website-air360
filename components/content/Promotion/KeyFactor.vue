@@ -1,8 +1,9 @@
 <template>
   <section
-    class="pt-10 md:pt-0 overflow-hidden"
+    :class="locale ==='en' ? 'md:pt-10' : 'md:pt-0'"
+    class="pt-10 overflow-hidden"
   >
-    <div class="container md:(flex items-center) xl:-mb-10">
+    <div :class="locale === 'en' ? 'lg:(flex items-center)' : 'md:(flex items-center)'" class="container xl:-mb-10">
       <div
         ref="targetLeft"
         class="relative z-index-1"
@@ -41,6 +42,7 @@
 <script setup lang="ts">
 const targetLeft = ref()
 const targetRight = ref()
+const { locale } = useI18n()
 
 useMotion(targetLeft, {
   initial: {

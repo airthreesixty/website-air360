@@ -18,15 +18,13 @@ Among all the steps, checkout is a big deal. A simple, easy checkout can make a 
 
 ::key-factor
 #title
-The Checkout's Role in CRO: Simplify to Amplify
+The Checkout's Role in CRO: <br>Simplify to Amplify
 #description
-In the dynamic realm of eCommerce, it's not just about attracting visitors; it's about converting them into devoted customers. At the heart of this transformation lies Conversion Rate Optimization (CRO), with the checkout experience emerging as a hidden gem in boosting your success.
+In the dynamic realm of eCommerce, it's not just about attracting visitors. it's about converting them into devoted customers. At the heart of this transformation lies Conversion Rate Optimization (CRO), with the checkout experience emerging as a hidden gem in boosting your success.
 #text1
-Picture this:
-#text2
-a shopper has journeyed through your website, exploring products, and selecting items that have caught their eye. 
+Imagine a shopper browsing your website, selecting items to purchase.
 #text3
-They're on the brink of making a purchase – and that's where the magic happens. An effortless, frictionless checkout experience acts as the bridge between interest and action, making the difference between a cart abandoned and a sale sealed.
+An effortless checkout experience is crucial to converting interest into sales.
 ::
 
 ::why-cro
