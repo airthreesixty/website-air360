@@ -11,8 +11,6 @@ writerImg: /blog/5-reasons-why-ecommerce-companies-should-work-to-improve-cvr/im
 writerName: Ryunosuke
 ---
 
-EコマースにおけるCVR改善の重要性とGAとClarityを使った取り組み方
-
 クリックが売上を左右するEコマース業界では、CVR改善が極めて重要な戦略の一つとして挙げられます。
 
 CVRとはコンバージョン率（Conversion Rate）の略で、Eコマースではサイトの訪問者のうち商品の購入した人の割合や、会員登録をした人の割合などが挙げられます。
