@@ -2,7 +2,7 @@
   <section class="bg-white py-10 lg:py-14 overflow-hidden">
     <div class="text-center container md:(grid grid-cols-2 items-center justify-around gap-3)">
       <div class="relative max-w-[500px] mx-auto">
-        <nuxt-img src="/promotion/checklist.png" class="mb-8" />
+        <nuxt-img :src="src" class="mb-8" />
         <div class="absolute -left-55 -bottom-10 lg:bottom-0 mochi-cart-wrapper">
           <MochiCart class="w-50 h-50 lg:(w-60 h-60) mochi-cart" />
         </div>
@@ -27,20 +27,38 @@
   </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { useScriptTag } from '@vueuse/core'
 import { gsap } from 'gsap'
+
+const { locale } = useI18n()
+
+const formId = computed(() => {
+  if (locale.value === 'en') {
+    return '580f0257-6e66-4882-88c4-893274b97406'
+  }
+  return '4651f467-09d5-42da-ac55-8c93960a37e6'
+})
+
+interface Props {
+  src: string
+}
+
+defineProps<Props>()
 
 useScriptTag(
   '//js-eu1.hsforms.net/forms/embed/v2.js',
   () => {
+    // @ts-ignore
     hbspt.forms.create({
       region: 'eu1',
       portalId: '27037851',
-      formId: '4651f467-09d5-42da-ac55-8c93960a37e6',
+      formId: formId.value,
       target: '#form',
-      onFormSubmit: function ($form) {
+      onFormSubmit: function ($form: any) {
+        // @ts-ignore
         if (Air360) {
+          // @ts-ignore
           Air360.identify($form.email.value)
         }
       },

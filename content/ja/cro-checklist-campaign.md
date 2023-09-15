@@ -2,7 +2,7 @@
 title: ページを見直し、CVRを大幅改善
 ---
 
-::checklist-hero
+::checklist-hero{src="/promotion/checklist.png"}
 #subtext
 ECサイトのチェックアウト体験を向上          
 #title

@@ -1675,16 +1675,16 @@ __metadata:
   linkType: hard
 
 "@nuxt/devtools-kit@npm:^0.7.1":
-  version: 0.7.1
-  resolution: "@nuxt/devtools-kit@npm:0.7.1"
+  version: 0.7.6
+  resolution: "@nuxt/devtools-kit@npm:0.7.6"
   dependencies:
     "@nuxt/kit": ^3.6.5
     "@nuxt/schema": ^3.6.5
-    execa: ^7.1.1
+    execa: ^7.2.0
   peerDependencies:
-    nuxt: ^3.6.1
+    nuxt: ^3.6.5
     vite: "*"
-  checksum: 59ca2f592aef84dc5c5f2e60206bb6da2a10774302ec8d77396da5efb8645c4b20106580f82d098ddf78653d807167192c10265dd0a14f2e8ef2260b47ac086b
+  checksum: d08ba20f0d8c076140e426369e45b9dea01563c381b17c8af6683a5805ecb994854b9f891ce9c31cc4989c7c00d9079084627b65b23616dad1baacf9780b98eb
   languageName: node
   linkType: hard
 
@@ -1838,6 +1838,32 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nuxt/kit@npm:^3.7.1":
+  version: 3.7.3
+  resolution: "@nuxt/kit@npm:3.7.3"
+  dependencies:
+    "@nuxt/schema": 3.7.3
+    c12: ^1.4.2
+    consola: ^3.2.3
+    defu: ^6.1.2
+    globby: ^13.2.2
+    hash-sum: ^2.0.0
+    ignore: ^5.2.4
+    jiti: ^1.20.0
+    knitwork: ^1.0.0
+    mlly: ^1.4.2
+    pathe: ^1.1.1
+    pkg-types: ^1.0.3
+    scule: ^1.0.0
+    semver: ^7.5.4
+    ufo: ^1.3.0
+    unctx: ^2.3.1
+    unimport: ^3.3.0
+    untyped: ^1.4.0
+  checksum: d96b2f4319481e9132e8a4b8925c84c97057cc79a8f0a1c94de3a71df98291f7d59dc32475420abdd4040ce74f90f2ee1783e0bf7b886f21cc74803e6f72992c
+  languageName: node
+  linkType: hard
+
 "@nuxt/schema@npm:3.4.0":
   version: 3.4.0
   resolution: "@nuxt/schema@npm:3.4.0"
@@ -1897,7 +1923,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/schema@npm:3.6.5, @nuxt/schema@npm:^3.6.5":
+"@nuxt/schema@npm:3.6.5":
   version: 3.6.5
   resolution: "@nuxt/schema@npm:3.6.5"
   dependencies:
@@ -1929,6 +1955,24 @@ __metadata:
     unimport: ^3.3.0
     untyped: ^1.4.0
   checksum: 8ccae0304f31ce2635af51b39e3ccce78d72d746c47af2a0205e3dff9dceafef780640ffc3f4b7900227936c18bd625090638a2da32ea806d16c437e92a7c250
+  languageName: node
+  linkType: hard
+
+"@nuxt/schema@npm:3.7.3, @nuxt/schema@npm:^3.6.5, @nuxt/schema@npm:^3.7.1":
+  version: 3.7.3
+  resolution: "@nuxt/schema@npm:3.7.3"
+  dependencies:
+    "@nuxt/ui-templates": ^1.3.1
+    defu: ^6.1.2
+    hookable: ^5.5.3
+    pathe: ^1.1.1
+    pkg-types: ^1.0.3
+    postcss-import-resolver: ^2.0.0
+    std-env: ^3.4.3
+    ufo: ^1.3.0
+    unimport: ^3.3.0
+    untyped: ^1.4.0
+  checksum: d95025d763ca6fe81b62ecc19b506d22378fd565310f04777aea30f4138b0317dbd8affc7da274d1024ef84ea00b7583c152bb176acfbbf766a28b745032217c
   languageName: node
   linkType: hard
 
@@ -5957,6 +6001,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"execa@npm:^7.2.0":
+  version: 7.2.0
+  resolution: "execa@npm:7.2.0"
+  dependencies:
+    cross-spawn: ^7.0.3
+    get-stream: ^6.0.1
+    human-signals: ^4.3.0
+    is-stream: ^3.0.0
+    merge-stream: ^2.0.0
+    npm-run-path: ^5.1.0
+    onetime: ^6.0.0
+    signal-exit: ^3.0.7
+    strip-final-newline: ^3.0.0
+  checksum: 14fd17ba0ca8c87b277584d93b1d9fc24f2a65e5152b31d5eb159a3b814854283eaae5f51efa9525e304447e2f757c691877f7adff8fde5746aae67eb1edd1cc
+  languageName: node
+  linkType: hard
+
 "expand-template@npm:^2.0.3":
   version: 2.0.3
   resolution: "expand-template@npm:2.0.3"
@@ -7651,6 +7712,15 @@ __metadata:
   bin:
     jiti: bin/jiti.js
   checksum: de3dacdfe30948d96b69712b04cc28127c17f43d5233a5aa069933e04ac4c9aaf265bef4cdf2b0c2a6f5af236a58aea9bfea83e8e289e2490802bdff7f99bff7
+  languageName: node
+  linkType: hard
+
+"jiti@npm:^1.20.0":
+  version: 1.20.0
+  resolution: "jiti@npm:1.20.0"
+  bin:
+    jiti: bin/jiti.js
+  checksum: 7924062b5675142e3e272a27735be84b7bfc0a0eb73217fc2dcafa034f37c4f7b4b9ffc07dd98bcff0f739a8811ce1544db205ae7e97b1c86f0df92c65ce3c72
   languageName: node
   linkType: hard
 
@@ -9601,24 +9671,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuxt-simple-sitemap@npm:^1.0.11":
-  version: 1.0.11
-  resolution: "nuxt-simple-sitemap@npm:1.0.11"
-  dependencies:
-    "@nuxt/kit": 3.4.2
-    chalk: ^5.2.0
-    defu: ^6.1.2
-    escape-string-regexp: ^5.0.0
-    knitwork: ^1.0.0
-    pathe: ^1.1.0
-    radix3: ^1.0.1
-    sitemap: ^7.1.1
-    ufo: ^1.1.1
-  checksum: 2b2ec82e4f23fbaba1ce613072d7c716b8cd579c459a36f03ecd4b168954a5b3f4f350024cc359f8dce29e4faeaf7506a3d0b47b035dca09d3055890017eafd5
-  languageName: node
-  linkType: hard
-
-"nuxt-simple-sitemap@npm:^3.1.3":
+"nuxt-simple-sitemap@npm:3.1.3":
   version: 3.1.3
   resolution: "nuxt-simple-sitemap@npm:3.1.3"
   dependencies:
@@ -9640,31 +9693,48 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuxt-site-config-kit@npm:1.0.9, nuxt-site-config-kit@npm:^1.0.9":
-  version: 1.0.9
-  resolution: "nuxt-site-config-kit@npm:1.0.9"
+"nuxt-simple-sitemap@npm:^1.0.11":
+  version: 1.0.11
+  resolution: "nuxt-simple-sitemap@npm:1.0.11"
   dependencies:
-    "@nuxt/kit": ^3.6.5
-    "@nuxt/schema": ^3.6.5
+    "@nuxt/kit": 3.4.2
+    chalk: ^5.2.0
     defu: ^6.1.2
+    escape-string-regexp: ^5.0.0
+    knitwork: ^1.0.0
+    pathe: ^1.1.0
+    radix3: ^1.0.1
+    sitemap: ^7.1.1
+    ufo: ^1.1.1
+  checksum: 2b2ec82e4f23fbaba1ce613072d7c716b8cd579c459a36f03ecd4b168954a5b3f4f350024cc359f8dce29e4faeaf7506a3d0b47b035dca09d3055890017eafd5
+  languageName: node
+  linkType: hard
+
+"nuxt-site-config-kit@npm:1.2.1, nuxt-site-config-kit@npm:^1.0.9":
+  version: 1.2.1
+  resolution: "nuxt-site-config-kit@npm:1.2.1"
+  dependencies:
+    "@nuxt/kit": ^3.7.1
+    "@nuxt/schema": ^3.7.1
     pkg-types: ^1.0.3
-    site-config-stack: 1.0.9
-    ufo: ^1.2.0
-  checksum: c4be958ebe1e4b6875f798bd1d3f75c9910a08d8f03419a212a0a6aa1848b87f9fbc80be3b5e7b7f4d8fe06ab2e67b1cca0770ba8bccbfcfb973aef2b31ce816
+    site-config-stack: 1.2.1
+    std-env: ^3.4.3
+    ufo: ^1.3.0
+  checksum: 553f6ad6b25454f1d46f1bf9d01b0e3a5c6cb915a98ac7279270b0557434b43a58ffbd2c6f86c3e9e2ba05817b11b01049b164963e686064969180fc837b4e38
   languageName: node
   linkType: hard
 
 "nuxt-site-config@npm:^1.0.9":
-  version: 1.0.9
-  resolution: "nuxt-site-config@npm:1.0.9"
+  version: 1.2.1
+  resolution: "nuxt-site-config@npm:1.2.1"
   dependencies:
-    "@nuxt/kit": ^3.6.5
-    "@nuxt/schema": ^3.6.5
-    nuxt-site-config-kit: 1.0.9
+    "@nuxt/kit": ^3.7.1
+    "@nuxt/schema": ^3.7.1
+    nuxt-site-config-kit: 1.2.1
     pathe: ^1.1.1
-    site-config-stack: 1.0.9
-    ufo: ^1.2.0
-  checksum: d3f1649f5f1df856cb17e87e8369d8e57b8ce3fc4d8c77a003c2373df0267ec59a3a0bbab4ee5d8cb8827c7b2d477e162bcf9087a4a97493fbd923a22fe1f69f
+    site-config-stack: 1.2.1
+    ufo: ^1.3.0
+  checksum: 5598317e37adaef1a3a8396ec139387f8df43a7bab48d8354618e4b5ce6b567e8b51ef84d0dc33b790ec169c25454cea2367aeb2c66110e354dbaebc5db2289d
   languageName: node
   linkType: hard
 
@@ -11303,7 +11373,7 @@ __metadata:
     nuxt-fontawesome: ^0.4.0
     nuxt-schema-org: ^2.1.2
     nuxt-seo-kit: 1.3.8
-    nuxt-simple-sitemap: ^3.1.3
+    nuxt-simple-sitemap: 3.1.3
     nuxt-windicss: ^2.6.0
     three: ^0.156.1
     typescript: 5.0.4
@@ -11663,15 +11733,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"site-config-stack@npm:1.0.9, site-config-stack@npm:^1.0.9":
-  version: 1.0.9
-  resolution: "site-config-stack@npm:1.0.9"
+"site-config-stack@npm:1.2.1, site-config-stack@npm:^1.0.9":
+  version: 1.2.1
+  resolution: "site-config-stack@npm:1.2.1"
   dependencies:
-    "@nuxt/kit": ^3.6.5
-    defu: ^6.1.2
-    pkg-types: ^1.0.3
-    ufo: ^1.2.0
-  checksum: fb04ac763fc539d6fed0d01ccb758e5164572c8a97b7d565d9453fb07e13758616c9de8b212b638fd9416dd7be8a32dabdc911becc12ffbb55fb34a37b5e8ef6
+    ufo: ^1.3.0
+  checksum: e2ae3acccd7c1993e80d96766eb1600bb4393af9dbc4c86b29447550ad9796ecf5c70f16f1ef0baabf1aa1f0c68e05f4c90884897c67ffe4df179bc7bb2886cf
   languageName: node
   linkType: hard
 
@@ -12624,14 +12691,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ufo@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "ufo@npm:1.2.0"
-  checksum: eaac059b5fd64a6f80557093a49bb6bfd5d97aca433e641d5022db9cbd4be3e6a4011d2ffe1254cdb2fc8ab5cbe9942b0af834ee7ac7c63240ab542f5981f68e
-  languageName: node
-  linkType: hard
-
-"ufo@npm:^1.3.0":
+"ufo@npm:^1.2.0, ufo@npm:^1.3.0":
   version: 1.3.0
   resolution: "ufo@npm:1.3.0"
   checksum: 01f0be86cd5c205ad1b49ebea985e000a4542c503ee75398302b0f5e4b9a6d9cd8e77af2dc614ab7bea08805fdfd9a85191fb3b5ee3df383cb936cf65e9db30d

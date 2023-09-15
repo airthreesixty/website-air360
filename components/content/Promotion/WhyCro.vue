@@ -34,26 +34,28 @@
 
 <script setup lang="ts">
 const target = ref()
+const { t } = useI18n()
+
 const cards = [
   {
     icon: 'handshake-simple',
-    title: '努力を結果に繋げる',
-    desc: '広告からSEOに至るまで、サイトにユーザーを誘導するためには時間や費用がかかります。CVRを向上させることは、費用対効果を高めることを意味します。',
+    title: t('why-cro.card1.title'),
+    desc: t('why-cro.card1.desc'),
   },
   {
     icon: 'award',
-    title: 'ユーザーを満足させる',
-    desc: 'CROとは顧客が何を求めているか知ることです。スムーズな購入体験を提供すれば、ユーザーは何度も足を運んでくれるでしょう。',
+    title: t('why-cro.card2.title'),
+    desc: t('why-cro.card2.desc'),
   },
   {
     icon: 'chart-mixed',
-    title: '競合と差をつける',
-    desc: 'Eコマースの業界は巨大です。CROに取り組むことは、他社にはない強みとなります。',
+    title: t('why-cro.card3.title'),
+    desc: t('why-cro.card3.desc'),
   },
   {
     icon: 'chart-network',
-    title: 'データを活用した戦略',
-    desc: 'CROを行うことで、必然的にデータに基づいた意思決定を行うことになります。ユーザーへの理解が深まり、ビジネスに役立つ変化が生まれます。',
+    title: t('why-cro.card4.title'),
+    desc: t('why-cro.card4.desc'),
   },
 ]
 

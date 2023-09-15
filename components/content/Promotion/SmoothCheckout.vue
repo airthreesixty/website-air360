@@ -33,22 +33,23 @@
 
 <script setup lang="ts">
 const target = ref()
+const { t } = useI18n()
 
 const cards = [
   {
     icon: 'circle-check',
-    title: '離脱を減らす',
-    desc: '複雑なチェックアウトはユーザーが離れる原因になります。ステップをシンプルにすることで、より多くのコンバージョンを獲得できます。',
+    title: t('smooth-checkout.card1.title'),
+    desc: t('smooth-checkout.card1.desc'),
   },
   {
     icon: 'circle-check',
-    title: '信頼を築く',
-    desc: '明瞭で安全なチェックアウトを作ることで、ユーザーに不安なく購入に進んでもえます。',
+    title: t('smooth-checkout.card2.title'),
+    desc: t('smooth-checkout.card2.desc'),
   },
   {
     icon: 'circle-check',
-    title: '選択肢を与える',
-    desc: 'ユーザーに支払いや発送方法を複数提供することで、気持ちよく購入してもらえます。ユーザーはオプションがあると満足度が向上します。',
+    title: t('smooth-checkout.card3.title'),
+    desc: t('smooth-checkout.card3.desc'),
   },
 ]
 

@@ -106,8 +106,8 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
-    autoAlternativeLangPrefixes: true,
-    dynamicUrlsApiEndpoint: '/api/_sitemap-blog-urls',
+    // autoAlternativeLangPrefixes: true,
+    // dynamicUrlsApiEndpoint: '/api/_sitemap-blog-urls',
     exclude: [
       /.*-thank-you\/$/,
       /generate-images/,
@@ -115,6 +115,6 @@ export default defineNuxtConfig({
   },
   site: {
     url: process.env.BASE_URL,
-    trailingSlash: true,
+    // trailingSlash: true,
   },
 })

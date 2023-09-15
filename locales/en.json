@@ -353,5 +353,37 @@
     "content": "サイト上のユーザー行動を全て可視化。 素早く分析し、効率的にCVRを向上。"
   },
   "watch-tour": "Watch tour",
-  "warning": "Warning - Only for Conversion Rate Heroes"
+  "warning": "Warning - Only for Conversion Rate Heroes",
+  "smooth-checkout": {
+    "card1": {
+      "title": "Less Abandonment",
+      "desc": "A complicated checkout means people leave. Simplifying things means more sales and more cash."
+    },
+    "card2": {
+      "title": "Build Trust",
+      "desc": "A clear, safe checkout makes shoppers feel confident. It's the last thing they see before buying, so it matters."
+    },
+    "card3": {
+      "title": "You Choose, They Buy",
+      "desc": "Shoppers like options. With a good checkout, you give them ways to pay and get stuff delivered, making them happy."
+    }
+  },
+  "why-cro": {
+    "card1": {
+      "title": "Get More from Your Efforts",
+      "desc": "From ads to SEO, you spend to get people to your store. Boosting your conversion rate means more bang for your buck."
+    },
+    "card2": {
+      "title": "Make Shoppers Happy",
+      "desc": "CRO means knowing what your customers want. When you give them a smooth shopping journey, they'll keep coming back."
+    },
+    "card3": {
+      "title": "Beat the Competition",
+      "desc": "eCommerce is huge. Brands that work on CRO have an edge that others don't."
+    },
+    "card4": {
+      "title": "Smart Moves with Data",
+      "desc": "CRO uses data to make smart choices. You'll understand shoppers better and make changes that help your business."
+    }
+  }
 }
