@@ -29,6 +29,7 @@
             />
             <GalleryCard title="Five conversion blockers and how to fix them" image-src="/five-conversion-blockers.webp" slug="/air360-ebook-1" />
             <GalleryCard title="Conversion rate mysteries" image-src="/air360-cr-mysteries.jpg" slug="/mystery-case" />
+            <GalleryCard title="Conversion rate mysteries Ⅱ" image-src="/en/content-gallery/mystery-case2.png" slug="/mystery-case2" />
           </div>
         </div>
       </div>
@@ -37,7 +38,6 @@
 </template>
 
 <script setup>
-// const { $localePath } = useNuxtApp()
 const { locale } = useI18n()
 const route = useRoute()
 const runtimeConfig = useRuntimeConfig()
