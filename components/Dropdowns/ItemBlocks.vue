@@ -41,9 +41,11 @@
       </ButtonPrimary>
     </li>
     <li class="mb-3">
-      <ButtonPrimary theme="outlinePrimarySimple" :slug="runtimeConfig.public.appUrl">
-        {{ $t("login") }}
-      </ButtonPrimary>
+      <a target="_blank" :href="runtimeConfig.public.appUrl" class="button border-2 text-primary-600 font-bold text-base border-primary-600 transition ease-in-out duration-300 hover:opacity-80 focus:opacity-80">
+        <div class="text-primary-600 font-bold text-base">
+          {{ $t("login") }}
+        </div>
+      </a>
     </li>
   </ul>
 </template>

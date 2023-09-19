@@ -1,30 +1,30 @@
 <template>
-  <NuxtLink v-if="theme === 'primary'" :to="$localePath(slug)" class="button button-primary transition ease-in-out duration-300 hover:bg-primary-700 focus:bg-primary-700">
+  <NuxtLink v-if="theme === 'primary'" :to="localePath(slug)" class="button button-primary transition ease-in-out duration-300 hover:bg-primary-700 focus:bg-primary-700">
     <div class=" text-white font-bold text-base">
       <slot />
     </div>
   </NuxtLink>
-  <NuxtLink v-if="theme === 'transparent'" :to="$localePath(slug)" class="button button-transparent bg-white home-hero__button-download">
+  <NuxtLink v-if="theme === 'transparent'" :to="localePath(slug)" class="button button-transparent bg-white home-hero__button-download">
     <div class=" text-primary-600 font-bold text-base">
       <slot />
     </div>
   </NuxtLink>
-  <NuxtLink v-if="theme === 'outline'" :to="$localePath(slug)" class="button border-2 button-transparent transition ease-in-out duration-300 hover:opacity-80 focus:opacity-80">
+  <NuxtLink v-if="theme === 'outline'" :to="localePath(slug)" class="button border-2 button-transparent transition ease-in-out duration-300 hover:opacity-80 focus:opacity-80">
     <div class="text-white font-bold text-base">
       <slot />
     </div>
   </NuxtLink>
-  <NuxtLink v-if="theme === 'outlinePrimary'" :to="$localePath(slug)" class="button border-2 border-primary-600 button-transparent transition ease-in-out duration-300 hover:opacity-80 focus:opacity-80">
+  <NuxtLink v-if="theme === 'outlinePrimary'" :to="localePath(slug)" class="button border-2 border-primary-600 button-transparent transition ease-in-out duration-300 hover:opacity-80 focus:opacity-80">
     <div class="text-primary-600 font-bold text-base">
       <slot />
     </div>
   </NuxtLink>
-  <NuxtLink v-if="theme === 'outlinePrimarySimple'" :to="$localePath(slug)" class="button border-2 text-primary-600 font-bold text-base border-primary-600 transition ease-in-out duration-300 hover:opacity-80 focus:opacity-80">
+  <NuxtLink v-if="theme === 'outlinePrimarySimple'" :to="localePath(slug)" class="button border-2 text-primary-600 font-bold text-base border-primary-600 transition ease-in-out duration-300 hover:opacity-80 focus:opacity-80">
     <div class="text-primary-600 font-bold text-base">
       <slot />
     </div>
   </NuxtLink>
-  <NuxtLink v-if="theme === 'gradient'" :to="$localePath(slug)" class="button button-gradient transition ease-in-out duration-300 hover:opacity-80 focus:opacity-80">
+  <NuxtLink v-if="theme === 'gradient'" :to="localePath(slug)" class="button button-gradient transition ease-in-out duration-300 hover:opacity-80 focus:opacity-80">
     <div class="text-white font-bold text-base">
       <slot />
     </div>
@@ -32,7 +32,7 @@
 </template>
 
 <script setup>
-const { $localePath } = useNuxtApp()
+const localePath = useLocalePath()
 
 defineProps({
   slug: {
