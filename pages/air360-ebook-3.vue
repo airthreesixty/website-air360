@@ -45,7 +45,7 @@ useSeoMeta({
   description,
   ogDescription: description,
   ogTitle: title,
-  ogImage: `${runtimeConfig.public.baseUrl}/air360-ebook-3-cover.webp`,
+  ogImage: `${runtimeConfig.public.baseUrl}/en/content-gallery/air360-ebook-3-cover.webp`,
   twitterCard: 'summary_large_image',
   ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
 })

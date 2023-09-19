@@ -27,7 +27,7 @@ useSeoMeta({
   description,
   ogDescription: description,
   ogTitle: title,
-  ogImage: `${runtimeConfig.public.baseUrl}/why-ga-is-not-enought.jpg`,
+  ogImage: `${runtimeConfig.public.baseUrl}/en/content-gallery/why-ga-is-not-enought.jpg`,
   twitterCard: 'summary_large_image',
   ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
   robots: 'noindex, follow',

@@ -21,14 +21,14 @@
         </h1>
         <div class="py-8  mx-auto lg:py-16">
           <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            <GalleryCard title="Why you need a UX analytics tool & how to get it" image-src="/air360-ebook-3-cover.webp" slug="/air360-ebook-3" />
+            <GalleryCard title="Why you need a UX analytics tool & how to get it" image-src="/en/content-gallery/air360-ebook-3-cover.webp" slug="/air360-ebook-3" />
             <GalleryCard
               title="Why Google Analytics is not enough to grow your brand"
-              image-src="/why-ga-is-not-enought.jpg"
+              image-src="/en/content-gallery/why-ga-is-not-enought.jpg"
               slug="/air360-ebook-2"
             />
-            <GalleryCard title="Five conversion blockers and how to fix them" image-src="/five-conversion-blockers.webp" slug="/air360-ebook-1" />
-            <GalleryCard title="Conversion rate mysteries" image-src="/air360-cr-mysteries.jpg" slug="/mystery-case" />
+            <GalleryCard title="Five conversion blockers and how to fix them" image-src="/en/content-gallery/five-conversion-blockers.webp" slug="/air360-ebook-1" />
+            <GalleryCard title="Conversion rate mysteries" image-src="/en/content-gallery/air360-cr-mysteries.jpg" slug="/mystery-case" />
             <GalleryCard title="Conversion rate mysteries Ⅱ" image-src="/en/content-gallery/mystery-case2.png" slug="/mystery-case2" />
           </div>
         </div>

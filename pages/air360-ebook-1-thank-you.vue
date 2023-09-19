@@ -27,7 +27,7 @@ useSeoMeta({
   description,
   ogDescription: description,
   ogTitle: title,
-  ogImage: `${runtimeConfig.public.baseUrl}/five-conversion-blockers.webp`,
+  ogImage: `${runtimeConfig.public.baseUrl}/en/content-gallery/five-conversion-blockers.webp`,
   twitterCard: 'summary_large_image',
   ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
   robots: 'noindex, follow',
