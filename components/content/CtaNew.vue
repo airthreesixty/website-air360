@@ -8,7 +8,7 @@
               {{ $t('get-started') }}
             </h2>
             <div>
-              <p class="mt-4 text-md text-center leading-6 text-primary-100 md:text-left lg:text-xl">
+              <p class="mt-4 text-md text-center leading-6 text-white md:text-left lg:text-xl">
                 <span v-if="!$slots.description">{{ $t('cta-description') }}</span>
                 <ContentSlot :use="$slots.description" unwrap="p" />
               </p>
