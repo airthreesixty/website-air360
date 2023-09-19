@@ -27,7 +27,7 @@ useSeoMeta({
   description,
   ogDescription: description,
   ogTitle: title,
-  ogImage: `${runtimeConfig.public.baseUrl}/en/content-gallery/mystery-case2`,
+  ogImage: `${runtimeConfig.public.baseUrl}/en/content-gallery/mystery-case2.png`,
   twitterCard: 'summary_large_image',
   ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
   robots: 'noindex, follow',
