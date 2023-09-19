@@ -66,7 +66,7 @@ useScriptTag(
       portalId: '27037851',
       formId: 'f399f226-7a8b-4f1b-9b24-8d0d889c21a1',
       target: '#form',
-      redirectUrl: `${runtimeConfig.public.baseUrl}/${locale.value}/mystery-case-thank-you/`,
+      redirectUrl: `${runtimeConfig.public.baseUrl}/${locale.value}/mystery-case2-thank-you/`,
       onFormSubmit: function ($form) {
         if (Air360) {
           Air360.identify($form.email.value)
