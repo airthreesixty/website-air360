@@ -120,12 +120,6 @@ const logos = [
 
 ]
 
-interface Props {
-  isActive: boolean
-}
-
-defineProps<Props>()
-
 const activeIndex = ref(-1)
 
 const isActive = (index: number) => {
