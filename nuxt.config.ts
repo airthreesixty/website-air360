@@ -103,6 +103,6 @@ export default defineNuxtConfig({
   },
   site: {
     url: process.env.BASE_URL,
-    // trailingSlash: true,
+    trailingSlash: true,
   },
 })
