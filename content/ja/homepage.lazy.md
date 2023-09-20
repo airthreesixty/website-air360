@@ -47,7 +47,7 @@ Why Air360
 
 ::testimonial2{alt="Club Medのデータ分析マネジャー" src="/headShotClubMed.webp"}
 #title
-“Air360を使うことで、より多くの人が世界規模でデータに基づいた意思決定に携わることができます。”
+Air360を使うことで、より多くの人が世界規模でデータに基づいた意思決定に携わることができます。
 #role
 Digital Analytics Manager, Club Med
 #name

@@ -14,7 +14,7 @@
           />
         </svg>
         <blockquote>
-          <p class="text-2xl font-medium text-black-600 dark:text-white">
+          <p class="text-2xl lg:text-3xl font-medium text-black-600">
             <ContentSlot :use="$slots.title" unwrap="p" />
           </p>
         </blockquote>

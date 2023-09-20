@@ -127,7 +127,7 @@ We take privacy very seriously
 
 ::testimonial2{alt="Moz founder" src="/mozFounder.png"}
 #title
-"For a company seeking rapid growth, Conversion Rate Optimization (CRO) is simply a must-have. CRO is the most important marketing activity because it makes every visitor exponentially more valuable."
+For a company seeking rapid growth, Conversion Rate Optimization (CRO) is simply a must-have. CRO is the most important marketing activity because it makes every visitor exponentially more valuable.
 #role
 Founder, Moz.com
 #name

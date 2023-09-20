@@ -43,7 +43,7 @@ Retention rate
 
 ::testimonial2{src="/headShotClubMed.webp" alt="Digital Analytics Manager of Club Med"}
 #title
-“With Air360 we can get more people involved in making data-driven decisions on a global scale.”
+With Air360 we can get more people involved in making data-driven decisions on a global scale.
 #name 
 Nelson Fernandes
 #role
