@@ -117,7 +117,6 @@ const logos = [
     description: t('logos.get-feedback.desc'),
     backDescription: t('logos.get-feedback.back-desc'),
   },
-
 ]
 
 const activeIndex = ref(-1)

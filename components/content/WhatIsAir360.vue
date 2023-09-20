@@ -4,10 +4,10 @@
     <div class="bg-gradient-bottom" />
     <div class="container text-center">
       <div>
-        <h2 class="mt-2 text-2xl font-semibold text-black-600 md:text-3xl lg:text-4xl">
+        <h2 class="mt-2 title2">
           <ContentSlot :use="$slots.title" unwrap="p" />
         </h2>
-        <p class="mx-auto mt-5 max-w-prose text-md text-gray-500 lg:text-xl xl:leading-8">
+        <p class="mx-auto mt-5 max-w-prose textp xl:leading-8">
           <ContentSlot :use="$slots.description" unwrap="p" />
         </p>
       </div>

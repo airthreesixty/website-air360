@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white dark:bg-gray-900">
+  <section class="bg-white">
     <div
       class="container gap-8 items-center pt-7 xl:gap-16 md:grid md:grid-cols-2 md:py-16 lg:pt-6 lg:pb-14"
     >
@@ -7,7 +7,7 @@
       <div class="mt-4 md:mt-0">
         <h2
           :class="{'border-b-4 border-black-600 inline-block pb-2': border}"
-          class="mb-4 text-2xl font-semibold text-black-600 text-left md:text-3xl lg:text-4xl dark:text-white"
+          class="mb-4 title2 text-left"
         >
           <ContentSlot :use="$slots.title" unwrap="p" />
         </h2>

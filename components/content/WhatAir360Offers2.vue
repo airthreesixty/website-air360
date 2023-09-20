@@ -1,7 +1,7 @@
 <template>
   <section class="container pt-10 md:pt-5">
     <h2
-      class="mb-2 text-3xl font-semibold text-black-600 text-center md:text-4xl lg:text-5xl dark:text-white"
+      class="mb-2 title2 text-black-600 text-center"
     >
       <ContentSlot :use="$slots.mainTitle" unwrap="p" />
     </h2>
