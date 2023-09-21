@@ -47,7 +47,8 @@ With some patience and practice, you should be able to master GA4 and take advan
 
 In case you want to know how you could solve these challenges, check out our new blog article:
 
-[Migrating to Google’s GA4: 7 Headaches and How to Avoid Them](/en/blog/migrating-to-googles-ga4-7-headaches-and-how-to-avoid-them/)
+::blog-inner-card{title="Migrating to Google’s GA4: 7 Headaches and How to Avoid Them" src="/blog/migrate-GA4.jpeg" slug="/en/blog/migrating-to-googles-ga4-7-headaches-and-how-to-avoid-them/" }
+::
 
 In this article, you will find different hacks to simplify your GA4 migration with Air360. Our eCommerce experience analytics solutions helps you spot all opportunities to improve and optimize your user journeys. In addition, you get the recommendations you need to increase conversion and prioritize your decisions to boost your business growth.
 

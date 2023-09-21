@@ -77,7 +77,8 @@ GA4への移行には時間とコストがかかりますし、新たなシス�
 
 「移行」をはじめとするGA4に関する課題を解決する方法について知りたい方は、別のブログ記事をご覧ください。
 
-[GA4とは？GA4への移行に伴う7つの課題とそれを避ける方法](/ja/blog/migrating-to-googles-ga4-7-headaches-and-how-to-avoid-them/)
+::blog-inner-card{title="GA4とは？GA4への移行に伴う7つの課題とそれを避ける方法" src="/blog/migrate-GA4.jpeg" slug="/ja/blog/migrating-to-googles-ga4-7-headaches-and-how-to-avoid-them/" }
+::
 
 この記事では、Air360を使ってGA4への移行を簡素化するための、さまざまな方法について解説しています。
 
