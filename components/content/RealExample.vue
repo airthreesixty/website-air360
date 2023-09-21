@@ -52,6 +52,6 @@ interface Props {
 }
 
 withDefaults(defineProps<Props>(), {
-  border: false,
+  border: () => false,
 })
 </script>
