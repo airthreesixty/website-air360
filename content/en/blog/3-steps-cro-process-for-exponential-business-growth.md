@@ -42,7 +42,7 @@ What does an increase in conversion rate mean? More profit, of course. The good 
 
 Overall variable cost and fixed cost don’t change. A minor increase in conversion rate, say 2%, can significantly increase the profit of your business. This is because it impacts sales and brings new customers without any expansion, acquisition, cost-cutting, joint ventures, marketing campaigns, or any funding. 
 
- The cost of conversion rate optimization, tools, and other resources do add to the equation. However, it is offset by the increase in profit. Here is how you calculate profit:  
+The cost of conversion rate optimization, tools, and other resources do add to the equation. However, it is offset by the increase in profit. Here is how you calculate profit:  
 
 **Profit = Revenue – Cost**  
 And this is how you calculate revenue: 
