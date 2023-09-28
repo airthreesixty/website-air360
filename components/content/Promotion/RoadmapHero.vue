@@ -11,7 +11,7 @@
           </h2> -->
           <div class="md:text-left">
             <span class="text-primary-600 font-bold"><ContentSlot :use="$slots.subtext" unwrap="p" /></span>
-            <h1 class="title1 mt-5 mb-8">
+            <h1 class="title2 mt-5 mb-8">
               <ContentSlot :use="$slots.title" unwrap="p" />
             </h1>
           </div>

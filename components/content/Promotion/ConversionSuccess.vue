@@ -1,6 +1,6 @@
 <template>
   <section class="bg-white">
-    <div class="container py-8 sm:py-16">
+    <div class="container pt-8 sm:pt-16">
       <h2 class="title2 text-center mb-4">
         <ContentSlot :use="$slots.title" unwrap="p" />
       </h2>

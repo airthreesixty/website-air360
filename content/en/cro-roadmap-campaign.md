@@ -1,41 +1,41 @@
 ::roadmap-hero{src="/promotion/checklist.png"}
 #subtext
-コンバージョン最適化を始めましょう
+Get Started with CRO Today
 #title
-コンバージョンを改善し、eコマースを強化
+Boost your conversions, Elevate your eCommerce
 ::
 
 ::four-features{icon1="display-chart-up-circle-dollar" icon2="sack-dollar" icon3="comment-smile" icon4="head-side-brain"}
 #title
-なぜコンバージョン最適化が大切か
+Why CRO Matters
 #title1
-収益増加
+Increase Revenue
 #desc1
-コンバージョン最適化はより多くの売上と高い収益を意味します。
+Optimizing your conversion rates means more sales and higher revenue.
 #title2
-投資収益率を最大化
+Maximize Marketing ROI
 #desc2
-訪問者をより多くの顧客に変換して、マーケティング活動を最大限に活用。
+Get the most out of your marketing efforts by converting more visitors into customers.
 #title3
-ユーザー体験を向上
+Enhance User Experience
 #desc3
-コンバージョン最適化は、訪問者が何度も戻ってくるシームレスでユーザーフレンドリーなウェブサイトを作成するのに役立ちます。
+CRO helps you create a seamless, user-friendly website that keeps visitors coming back for more.
 #title4
-データに基づく意思決定
+Data-driven decisions
 #desc4
-データと分析に基づいた情報を元に意思決定を行いましょう。
+Make informed decisions based on data and analytics.
 ::
 
-::conversion-success{src="/promotion/conversionSuccess.png" srcMobile="/promotion/conversionSuccessMobile.png"}
+::conversion-success{src="/en/promotion/conversionSuccess.png" srcMobile="/en/promotion/conversionSuccessMobile.png"}
 #title
-コンバージョン成功への道
+Your Path to Conversion Success
 #description
-無料コンバージョン改善ロードマップテンプレートは、成功したコンバージョンへの切符です。以下はその内容になります。
+Our FREE CRO Roadmap Template is your ticket to successful conversions. Here's what it offers:
 ::
 
 ::promotion-cta
 #title
-無料のコンバージョン最適化ロードマップをダウンロードしましょう。
+Get started with CRO today by downloading our FREE CRO Roadmap Template.
 #cta
-今すぐダウンロード
+DOWNLOAD NOW
 ::

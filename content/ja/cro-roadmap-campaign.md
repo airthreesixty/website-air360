@@ -7,7 +7,7 @@ title: コンバージョンを改善し、eコマースを強化
 #subtext
 コンバージョン最適化を始めましょう
 #title
-コンバージョンを改善し、eコマースを強化
+コンバージョンを改善し、<br>eコマースを強化
 ::
 
 ::four-features{icon1="display-chart-up-circle-dollar" icon2="sack-dollar" icon3="comment-smile" icon4="head-side-brain"}
