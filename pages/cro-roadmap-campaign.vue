@@ -11,7 +11,7 @@ const imgSrc = computed(() => {
   if (locale.value === 'en') {
     return '/en/promotion/checklist.png'
   }
-  return '/promotion/checklist.png'
+  return '/promotion/conversionSuccess.png'
 })
 
 useSeoMeta({
