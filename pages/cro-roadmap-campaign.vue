@@ -15,10 +15,10 @@ const imgSrc = computed(() => {
 })
 
 useSeoMeta({
-  title: t('promotion-lp.title'),
-  description: t('promotion-lp.content'),
-  ogDescription: t('promotion-lp.content'),
-  ogTitle: t('promotion-lp.title'),
+  title: t('promotion-roadmap.title'),
+  description: t('promotion-roadmap.content'),
+  ogDescription: t('promotion-roadmap.content'),
+  ogTitle: t('promotion-roadmap.title'),
   ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
   ogImage: `${runtimeConfig.public.baseUrl}${imgSrc.value}`,
   twitterCard: 'summary_large_image',
