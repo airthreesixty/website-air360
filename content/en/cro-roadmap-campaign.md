@@ -5,7 +5,7 @@
 コンバージョンをアップし、eコマースを強化
 ::
 
-::four-features{icon1="layer-group" icon2="circle-question" icon3="print-magnifying-glass" icon4="cloud"}
+::four-features{icon1="display-chart-up-circle-dollar" icon2="sack-dollar" icon3="comment-smile" icon4="head-side-brain"}
 #title
 なぜコンバージョン最適化が大切か
 #title1
