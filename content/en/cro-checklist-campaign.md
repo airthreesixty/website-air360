@@ -34,7 +34,7 @@ Why Focus on eCommerce Conversion Rate Optimization (CRO)?
 In today's online world, just getting visitors isn't enough. It's all about turning those visitors into happy buyers. Here's why caring about CRO matters:
 ::
 
-::checklist-cta
+::promotion-cta
 #title
 Get Your Free eCommerce Checkout Checklist!
 #cta
