@@ -4,7 +4,7 @@
       <h2 class="title2 mb-4">
         <ContentSlot :use="$slots.title" unwrap="p" />
       </h2>
-      <div class="prose textp">
+      <div class="prose textp max-w-[850px] mx-auto">
         <ContentSlot :use="$slots.description" />
       </div>
     </div>
