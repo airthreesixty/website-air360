@@ -23,7 +23,7 @@
               </div>
             </div>
             <div>
-              <h3 class="title2 mt-8 mb-10">
+              <h3 class="title2 mt-8 mb-10 md:text-left">
                 <ContentSlot :use="$slots.formTitle" unwrap="p" />
               </h3>
               <div id="form">
