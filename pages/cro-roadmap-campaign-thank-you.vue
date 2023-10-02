@@ -20,8 +20,8 @@ const route = useRoute()
 const runtimeConfig = useRuntimeConfig()
 const { t, locale } = useI18n()
 
-const title = t('cro-checklist-thank-you.title')
-const description = t('cro-checklist-thank-you.desc')
+const title = t('cro-roadmap-thank-you.title')
+const description = t('cro-roadmap-thank-you.desc')
 
 const imgSrc = computed(() => {
   if (locale.value === 'en') {
