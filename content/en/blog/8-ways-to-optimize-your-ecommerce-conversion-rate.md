@@ -18,6 +18,9 @@ The number of steps you need will depend on the products you’re selling or the
 An easy way to give your customers an estimation of how many steps there will be in your checkout process is by displaying a progress bar.
 ![](/blog/amazon.png)
 
+::blog-inner-card{slug="/en/blog/how-to-reduce-annoying-checkout-form-fills/"}
+::
+
 ## A/B test everything
 A/B testing is one of the best ways to improve your store’s conversion rate. And there are numerous ways to do this. Some of the common are:
 
@@ -29,6 +32,9 @@ A/B testing is one of the best ways to improve your store’s conversion rate. A
 The great thing about A/B testing is that you can gradually test and optimize different parts of your website and store. 
 
 For example, if you were looking to simplify the buyer journey, you could view the pages your customers are visiting when they make a purchase through a platform such as Google Analytics and remove any pages that are clogging up the customer journey or aren’t being visited. You could then monitor your analytics over the next few weeks/months to see if the pages you remove have an impact on your site’s conversion rates.
+
+::blog-inner-card{slug="/en/blog/how-a-b-testing-can-reduce-cart-abandonment/"}
+::
 
 ## Use the right tools
 The right tools can help you figure out what conversion rate issues your eCommerce store is dealing with. So, for example, Air360, is an excellent user analytics tool that records a lot of very important data about user behavior. 
@@ -56,6 +62,9 @@ A simple email reminding them they have items in their cart could be what makes 
 We often forget that every customer has a different purchase journey. For example, Jane could be buying headphones to listen to music. Meanwhile John could be buying them to speak to his work colleagues during his commute. 
 
 Knowing why your customer is buying your product and then customizing the product and landing page based on that knowledge can improve conversion rates.
+
+::blog-inner-card{slug="/en/blog/personalise-and-target-new-customers-with-first-party-data/"}
+::
 
 **How do you do this?**
 

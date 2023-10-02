@@ -24,10 +24,19 @@ Simply bringing in more traffic isn’t enough; a healthy acquisition strategy b
 - **Test, optimize and repeat.** Track user experience and reference metrics to understand where your ideal customer comes from to get to your website — Facebook ad, Google ad, email, etc. — and how they behave once they arrive.
 - **Keep it mobile friendly.** No matter what device your customers use, the experience should be stellar. Reduce loading times for your site and clear the clutter. Customers expect a clear, easy path to get to what they want.
 
+::blog-inner-card{slug="/en/blog/10-ways-to-reduce-customer-acquisition-costs/"}
+::
+
 ## What Is a Conversion Strategy?
 Conversion is the moneymaker in eCommerce. Once you have a visitor’s attention, the window of opportunity to make the sale begins to shrink. But increasing your conversion rate lets your ad dollars stretch farther. Conversion rate is often one of the most important metrics for any eCommerce site since it’s the one with a direct connection to revenue and sales.
 
+::blog-inner-card{slug="/en/blog/investing-in-paid-media-vs-investing-in-cro/"}
+::
+
 Conversion rate optimization (CRO) has other advantages. For instance, increasing conversion rates means that the buying experience is simpler and more enjoyable for customers. A smooth checkout experience is one of the first steps to building engaged and loyal customers. And since customer acquisition can be pricey, keeping customers is just as important as converting them the first time.
+
+::blog-inner-card{slug="/en/blog/6-ways-to-optimize-ecommerce-conversion-rates/"}
+::
 
 ## Optimize Your Conversion Strategy
 User-experience metrics tell an important story about your customer’s journey. Here’s how to use that data to build a better buying experience for your eCommerce visitors:
@@ -37,5 +46,7 @@ User-experience metrics tell an important story about your customer’s journey.
 Monitor abandoned cart rates and discover which pages and experiences cause your customers to bounce.
 - Replay visitor sessions to see where roadblocks exist and create a seamless customer journey.
 
-Attracting and converting the ideal customer is one of the most challenging problems for any eCommerce brand. *Air360 helps you gain a greater understanding of your website visitors. Armed with this information, you can continue testing, optimizing and converting more of your website visitors and growing your business exponentially.*
+Attracting and converting the ideal customer is one of the most challenging problems for any eCommerce brand. 
+
+Air360 helps you gain a greater understanding of your website visitors. Armed with this information, you can continue testing, optimizing and converting more of your website visitors and growing your business exponentially.
 

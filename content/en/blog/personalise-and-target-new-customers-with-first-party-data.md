@@ -15,7 +15,8 @@ Customer data is crucial for product development, inventory management and campa
 Third-party data, however, is falling out of fashion. Regulators across the globe are restricting what data companies can collect and how they can use that data. Google plans to phase out third-party cookies by 2024. That means that your business will need to develop a first-party data strategy to attract and keep new customers.  
 
 ## What is First-Party Data?
-First-party data is data that you collect directly from your customers and prospective customers. Unlike third-party data that you buy or rent, your company owns first-party data. Website visitors or people who interact with you on your social media channels often volunteer personal information that you can store and use to segment and personalise the customer journey. Examples of first-party data include: 
+[First-party data](/en/product/capabilities/data-collection/
+) is data that you collect directly from your customers and prospective customers. Unlike third-party data that you buy or rent, your company owns first-party data. Website visitors or people who interact with you on your social media channels often volunteer personal information that you can store and use to segment and personalise the customer journey. Examples of first-party data include: 
 
 - Demographic information 
 - Website behavior 
@@ -56,6 +57,6 @@ No matter how you segment and market to potential customers, it is key to measur
 
 Building a customer acquisition strategy with first-party data is an ongoing process that requires patience, persistence and a willingness to try new things and learn from your missteps. But properly designed and executed, the right strategy can generate significant growth. 
 
-*If you’re ready to own your customer data and improve your conversion rates, request an Air360 demo today. *
+If you’re ready to own your customer data and improve your conversion rates, [request an Air360 demo today](/en/request-demo).
 
 

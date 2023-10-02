@@ -50,12 +50,17 @@ The best way to ensure customer loyalty and retention is to give the customers p
 Getting more out of existing traffic and leads can help online companies achieve long-term, sustainable growth. That’s where conversion rate optimization (CRO) comes in. Essentially, CRO is the process of increasing conversions on a website or mobile app. CRO works with website traffic to make it more valuable, meaningful and effective. It involves making website improvements designed for maximum optimization and user enjoyment. These improvements are largely based on user behavior uncovered by UX analysis.
 
 CRO aims to enhance the completion of the customer journey on a website or app. Its goal is to help improve the probability of users taking desired actions, thereby increasing conversions. Successful CRO practices result in highly-qualified leads, increased website traffic and boosts in revenue and customer retention.
+
+::blog-inner-card{slug="/en/blog/3-steps-cro-process-for-exponential-business-growth/"}
 ::
 
 ### What Is User Experience (UX)?
 User experience (UX) revolves around how a person feels when interacting with a website or app. It’s about ease of use, visual appeal and how enjoyable a site is to navigate. In short, UX optimization is all about making users’ interaction with a website or app as engaging as possible. UX focuses on converting and retaining customers through pleasurable online experiences. 
 
 UX analysis is the process of collecting and evaluating data about how users are experiencing and interacting with a website or app. Brands can use this data to help enhance the user experience through CRO. Successful UX analysis will result in an actionable list of website enhancements that measurably improve the user experience.
+
+::blog-inner-card{slug="/en/blog/what-to-look-for-in-a-ux-analytics-partner/" }
+::
 
 ### How CRO and UX Work Together
 Both UX and CRO take similar approaches in analyzing visitors’ behavior and employing usability testing to solve problems. CRO determines what is happening on the website while UX tries to understand why. Both work to deepen a brand’s understanding of its target audience through analysis, testing and making appropriate website changes. Essentially, CRO and UX join forces to determine where website improvements can be made and then produce solutions for these improvements.

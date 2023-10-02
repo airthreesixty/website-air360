@@ -40,6 +40,9 @@ Still not sending cart abandonment emails? Then there’s no time to waste. Cart
 ## Add a Personalized Touch
 An overwhelming majority of consumers (80%) want greater personalization from brands, and this trend extends to email marketing. Companies that personalize their interactions with customers on a large scale can see a 1-2% boost in sales, increasing customer loyalty and greater share-of-wallet. Personalized emails don’t have to be complicated to be effective: Start with something as simple as adding the name of the customer or mentioning a product they recently purchased. 
 
+::blog-inner-card{slug="/en/blog/personalise-and-target-new-customers-with-first-party-data/"}
+::
+
 ## Optimize for Mobile
 American consumers spend an average of three hours a day using the internet on a mobile device. It’s unsurprising, then, that 54% of emails are opened on mobile. This is a key insight for email marketers: If you’re not already optimizing your emails for mobile, it’s time to start. When your emails look more appealing on a mobile device, your subscribers will be more likely to convert. Mobile-friendly emails should have a short subject line, concise copy and a design that focuses on CTAs. Remember, not all mobile devices automatically display images, so let your body copy do the talking.
 
