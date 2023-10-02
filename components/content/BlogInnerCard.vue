@@ -1,10 +1,10 @@
 <template>
   <NuxtLink :to="props.slug" class="border-2 grid grid-cols-3 hover:opacity-70">
-    <div class="col-span-1 h-35">
+    <div class="col-span-1 h-full md:h-35">
       <nuxt-img :src="data?.image" class="h-full w-full object-cover" />
     </div>
     <div class="col-span-2 p-3 my-auto">
-      <span class="text-black-600 text-lg self-center">{{ data?.title }}</span>
+      <span class="text-black-600 text-sm md:text-lg self-center">{{ data?.title }}</span>
     </div>
   </NuxtLink>
 </template>
