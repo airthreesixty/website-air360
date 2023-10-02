@@ -1,6 +1,6 @@
-::roadmap-hero2{src="/en/promotion/checklist.png"}
+::roadmap-hero2{videoSrc="/en/promotion/roadmapHero.mp4" poster="/en/promotion/roadmapHeroPoster.png"}
 #subtext
-Get Started with CRO Today    
+Get started with CRO today 
 #title
 Boost your conversions, Elevate your eCommerce
 #description
@@ -46,6 +46,13 @@ Your Path to Conversion Success
 Our FREE CRO Roadmap Template is your ticket to successful conversions. Here's what it offers:
 ::
 
+::promotion-cta
+#title
+Get started with CRO today by downloading our FREE CRO Roadmap Template.
+#cta
+DOWNLOAD NOW
+::
+
 ::key-of-cro
 #title
 Here are key components of Conversion Rate Optimization
@@ -60,11 +67,4 @@ Here are key components of Conversion Rate Optimization
 8. **Content Optimization:** Tailoring your content to match user intent and needs is crucial for CRO. High-quality, relevant content can persuade visitors to take action.
 9. **Personalization:** Personalizing content and offers based on user behavior and preferences can have a significant impact on conversion rates.
 10. **Performance Metrics:** Continuously monitor and measure the impact of CRO efforts using key performance indicators (KPIs) such as conversion rate, click-through rate, bounce rate, and revenue generated.
-::
-
-::promotion-cta
-#title
-Get started with CRO today by downloading our FREE CRO Roadmap Template.
-#cta
-DOWNLOAD NOW
 ::

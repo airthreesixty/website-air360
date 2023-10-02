@@ -9,7 +9,7 @@ const runtimeConfig = useRuntimeConfig()
 
 const imgSrc = computed(() => {
   if (locale.value === 'en') {
-    return '/en/promotion/conversionSuccess.png'
+    return '/en/promotion/roadmapHeroPoster.png'
   }
   return '/promotion/conversionSuccess.png'
 })
