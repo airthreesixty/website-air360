@@ -394,5 +394,10 @@
   "promotion-roadmap": {
     "title": "Boost your conversions, Elevate your eCommerce",
     "content": "Conversion Rate Optimization (CRO) is the secret sauce that can transform your website's visitors into loyal customers. We're here to guide you through the exciting world of CRO and provide you with the tools you need to succeed."
+  },
+  "cro-roadmap-thank-you": {
+    "title": "Thank you for showing interest in our free CRP roadmap template!",
+    "desc": "Please download the file to get it.",
+    "cta": "Download"
   }
 }
