@@ -5,7 +5,7 @@
         Content Gallery
       </h1>
       <div class="py-8  mx-auto lg:py-16">
-        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div class="grid gap-8 md:grid-cols-3 lg:grid-cols-5">
           <GalleryCard title="Why you need a UX analytics tool & how to get it" image-src="/en/content-gallery/air360-ebook-3-cover.webp" slug="/air360-ebook-3" />
           <GalleryCard
             title="Why Google Analytics is not enough to grow your brand"
