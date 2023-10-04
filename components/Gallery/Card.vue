@@ -1,7 +1,7 @@
 <template>
   <nuxt-link :to="localePath(slug)">
     <article
-      class="relative p-4 bg-white h-full rounded-lg border border-gray-200 shadow-md"
+      class="p-4 flex flex-col justify-between bg-white h-full rounded-lg border border-gray-200 shadow-md"
     >
       <nuxt-img
         format="webp"
