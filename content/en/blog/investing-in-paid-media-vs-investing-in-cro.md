@@ -20,6 +20,9 @@ Shifting to organic search investments like SEO is the next logical step. Optimi
 ## Getting Higher Conversion Rates
 So the shopper has found you. Now what? You’ve invested time and money into getting customers to your site and now you want them to buy. You want them to go from browsers to buyers. You want them to convert. For that, you need to focus on conversion rate optimization (CRO). 
 
+::blog-inner-card{slug="/en/blog/3-steps-cro-process-for-exponential-business-growth/"}
+::
+
 ## What is CRO?
 ![vector image of a laptop screen with different webpage layouts](/blog/paid-ads-vs-cro-1.webp)
 CRO is the process of evaluating and making changes to your website that reduce barriers to purchase.  
@@ -30,7 +33,7 @@ Even the best-designed ecommerce store can cause friction for buyers. You can sp
 1. Misplaced calls-to-action – If CTAs aren’t displayed correctly (in the right colors, in the right size and in the right places on the website), customers are likely to miss them. 
 2. Cluttered pages – If a page has too much information, customers can get confused or frustrated and just click out.  
 3. Sparsely populated pages – Just like too much information causes frustration, too little information leaves customers confused. For example, if you have a product that is customizable, how do shoppers know that? How many clicks does it take for a shopper to see the value and options of your product? 
-4. Complicated checkout process – Too many steps, too many form fills, no security reassurance and unclear shipping charges are just some of ways customers become frustrated with the checkout process.  
+4. [Complicated checkout process](/en/cro-checklist-campaign/) – Too many steps, too many form fills, no security reassurance and unclear shipping charges are just some of ways customers become frustrated with the checkout process.  
 5. Forcing account creation – Yes, your business wants to capture customer information so you can better target them with messaging and offers, but the best way to win and keep new customers is to let them do the driving. That is, give customers control over the type and amount of data they need to give you to complete a purchase.  
 
 ### How Do I Know Where the Barriers Are?
@@ -43,4 +46,7 @@ To grow your ecommerce business, you need shoppers to find your store and comple
 
 Knowing which elements of your website are helping and which are hurting lets you make decisions to correct problems. 
 
-*If your budget can’t take the increasing paid ad prices, it might be time to optimize for something else. Air360 is an ecommerce experience intelligence platform that lets you quickly and easily understand how shoppers interact with your site so you can improve conversion rates.*
+If your budget can’t take the increasing paid ad prices, it might be time to optimize for something else. [Air360](/en/product-tour/) is an ecommerce experience intelligence platform that lets you quickly and easily understand how shoppers interact with your site so you can improve conversion rates.
+
+::blog-inner-card{slug="/en/blog/10-ways-to-reduce-customer-acquisition-costs/"}
+::

@@ -20,6 +20,9 @@ Today’s DTC eCommerce brands must have more than an attractive online presence
 
 Poor usability and bad UX are two of the biggest reasons why the current average online conversion rate is 2.42%. At the same time, cart abandonment rates currently stand at just under 70%. These dismal figures can cost eCommerce brands as much as $18 billion in lost annual revenue. It is also why more eCommerce brands are including smart UX as an integral part of their overall business strategy.
 
+::blog-inner-card{slug="/en/blog/how-to-reduce-annoying-checkout-form-fills/"}
+::
+
 ## What Is eCommerce User Experience, and Why Is It Important?
 User experience (UX) is a customer’s overall experience when using an eCommerce website or app. How good or bad the experience is depends on how effectively the user experience has been designed. Good UX should provide customers with an engaging and streamlined experience that will have them coming back for more. 
 
@@ -32,6 +35,9 @@ On top of giving customers a rewarding experience, good UX can dramatically impr
 5. Expands market reach
 To help deliver these types of results, eCommerce brands need to consider partnering with an experienced and reliable UX provider.
 
+::blog-inner-card{slug="/en/blog/investing-in-paid-media-vs-investing-in-cro/"}
+::
+
 ## Benefits of Hiring a UX Analytics Provider
 Partnering with an experienced UX provider has many advantages over working with freelancers or forming an in-house team. When partnering with a UX provider, brands work with experienced professionals and a fully-equipped team of experts. Experienced providers are also adept at strategic guidance and deliver practical solutions under tight deadlines. 
 
@@ -40,9 +46,6 @@ Providers who specialize in working with eCommerce businesses also bring a highe
 ## 4 Tips for Picking the Right UX Analytics Partner
 Finding the right UX provider takes time, patience and considerable research. Considering the potential benefits, doing due diligence will be worth the effort. Here are some key aspects to consider when looking for a UX partner.
 ![illustration of a woman standing in front of a life-sized clipboard holding a pencil](/blog/what-to-look-for-in-a-ux-analytics-partner-1.webp)
-### Learn About Their Expertise
-When researching UX providers, look for one with narrow expertise rather than a jack of all trades. It is often better to work with a provider with a focus on a single niche than one that services a number of industries. Speaking the same language can dramatically strengthen the professional relationship between an eCommerce brand and their UX partner. Also learn about their expertise with UX analytics and metrics.
-
 
 ### Learn About Their Expertise
 When researching UX providers, look for one with narrow expertise rather than a jack of all trades. It is often better to work with a provider with a focus on a single niche than one that services a number of industries. Speaking the same language can dramatically strengthen the professional relationship between an eCommerce brand and their UX partner. Also learn about their expertise with UX analytics and metrics.
@@ -57,8 +60,9 @@ Even if an agency looks good on paper, learn more about their work processes. It
 UX analytics partners typically offer two pricing models: a fixed price per project or a time and materials-focused price estimate. With a fixed pricing model, a project’s cost is determined when a contract is signed. A time and materials pricing model offers better cost flexibility because it allows the client to supervise the entire process. Always ask about the average time frame for projects if opting for the latter. 
 
 ## The Bottom Line
-When researching UX providers, take a hard look at the expertise levels of their team, past performances, case studies and customer testimonials. It is also important to choose an agency that has proven experience in understanding their clients’ business goals and processes. A good UX analytics partner should be as much a business partner and advisor as they are a provider. A strong partnership could spell the difference between falling behind the competition or becoming a frontrunner.
+When researching UX providers, take a hard look at the expertise levels of their team, past performances, [case studies](/en/content-gallery/) and customer testimonials. It is also important to choose an agency that has proven experience in understanding their clients’ business goals and processes. A good UX analytics partner should be as much a business partner and advisor as they are a provider. A strong partnership could spell the difference between falling behind the competition or becoming a frontrunner.
 
-*DTC eCommerce brands that demand excellence in customer data analytics choose Air360. With user experience data collected in real-time, Air360lets you turn your UX analytics into actionable insights. Want to learn more? Schedule your Air360 demo today.*
+DTC eCommerce brands that demand excellence in customer data analytics choose [Air360](/en/product-tour/
+). With user experience data collected in real-time, Air360 lets you turn your UX analytics into actionable insights. Want to learn more? [Schedule your Air360 demo](/en/request-demo/) today.
 
 *Header image: Christina @ Wocintechchat.com*

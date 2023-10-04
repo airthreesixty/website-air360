@@ -20,6 +20,9 @@ Design eCommerce sites for upselling and impulse purchases with the help of user
 ![close up of a tablet screen with bar graphs and pie charts illustrating analytics](/blog/convert-upsells-and-impulse-buys-in-ecommerce-1.webp)
 When cross-selling and upselling in eCommerce you need to know who your customers are and what they want. This seems simple, but it can be tricky to get the data you need to truly understand your customers. Many eCommerce platforms can create events for major actions on your website like visiting a product, adding it to the cart and checking out.
 
+::blog-inner-card{slug="/en/blog/personalise-and-target-new-customers-with-first-party-data/"}
+::
+
 Kohan believes, “Chatbots, machine learning and virtual stylist assistance are all ways to not only encourage purchasing and upselling but can also be used to make sure the correct clothing sizes are selected which ultimately reduces returns.” 
 
 But, just like customers browsing in a brick-and-mortar store, a lot of activity happens between visiting a listing and checking out. Platforms that can capture every action on the site provide large amounts of data that can be sliced and diced for analysis. For instance, Air360 tracks every user action and turns it into easy-to-read information that anyone can put together to make meaningful decisions.
@@ -31,9 +34,9 @@ Identifying products as natural upsells or cross-sells is a good place to start,
 
 - Create dynamic product bundles that can appear in several locations during the buying process.
 - Automatically convert out-of-stock items to disappear or prompt to add to a wishlist.
-- Build segments and deeply personalize product offerings to these segments.
+- Build [segments](/en/product/capabilities/events-segments/) and deeply personalize product offerings to these segments.
 Online retailers face unique challenges when implementing upselling in eCommerce. Website listings only have a few seconds to grab a customer’s attention before shoppers scroll on to something else. But impulse buys can be just as lucrative online as they are in-store. In 2018, 44% of online shoppers over 18 made an impulse purchase in the past three months.
 
 Keep guesswork out of your upsell equation by tracking and analyzing meaningful data. As you build your product bundles, test and segment to find the right options for each customer personally. And finally, prioritize user experience to serve impulse buys to customers in an  enjoyable and frictionless way.
 
-To learn more about how Air360 can help you get creative with your impulse selling strategy, request a demo today.
+To learn more about how [Air360](/en/product-tour/) can help you get creative with your impulse selling strategy, request a demo today.
