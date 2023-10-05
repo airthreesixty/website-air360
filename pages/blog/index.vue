@@ -21,7 +21,7 @@ useSeoMeta({
 const { data } = await useAsyncData('blog', () =>
   queryContent(locale.value, 'blog')
     .only(['published', 'tags', 'readingTime', 'title', 'image', '_path', 'metaDesc', 'writerImg', 'writerName'])
-    .sort({ published: -1 })
+    .sort({ published: -1, $numeric: true })
     .find(),
 )
 
