@@ -45,8 +45,20 @@ Companies spent 3.7 billion on influencer marketing in 2021, making it one of to
 ### 6. Use A/B Ad Testing
 A/B testing is one of the most common and effective ways to increase conversions and reduce customer acquisition costs. But if you ran A/B tests a year ago, you’re already overdue. A/B testing is an ongoing process that will help you weed out your lower-performing ads or landing pages and save your ad spend for the most effective campaigns. When you run A/B tests, don’t forget to identify your goal, choose a control ad and challenger ad, and create equal, random sample groups.
 
+::blog-inner-card{slug="/en/blog/how-a-b-testing-can-reduce-cart-abandonment/"}
+::
+
+::blog-inner-card{slug="/en/blog/the-perfect-match-of-ab-testing-and-air360/"}
+::
+
 ### 7. Update Your Retargeting Campaign
 About 92% of the consumers who visit your website for the first time aren’t ready to make a purchase. But by targeting those customers who leave without making a purchase, you can reduce customer acquisition costs and drive traffic back to your website. In fact, combining retargeting ads with your other marketing efforts could help you sell 50% more. Use retargeting campaigns to promote best-selling products, introduce new items, and move slow inventory. 
+
+::blog-inner-card{slug="/en/blog/investing-in-paid-media-vs-investing-in-cro/"}
+::
+
+::blog-inner-card{slug="/en/blog/personalise-and-target-new-customers-with-first-party-data/"}
+::
 
 ### 8. Create a Loyalty Program
 Loyalty programs have been a long-used strategy for eCommerce brands looking to retain customers and reduce acquisition costs. However, the trends in customer loyalty programs are shifting and in a way that may seem counter-intuitive. A recent McKinsey survey found that members of paid loyalty programs are 60% more likely to buy more after they subscribe, while members of free loyalty programs are 30% more likely to buy more. 
@@ -60,4 +72,4 @@ Many eCommerce brands spend too much money driving traffic to a website that’s
 ## Reduce Customer Acquisition Costs with Air360
 Customer acquisition costs have a serious impact on the success of any eCommerce brand. And though reducing the cost of bringing in a new customer may seem challenging, it doesn’t have to be. These 10 strategies can help any brand reduce customer acquisition costs and increase business growth. 
 
-*Looking for more ways to reduce customer acquisition costs? Air360 can transform your website data into actionable insights that reduce your marketing costs. On-page analytics, smart funnels, session replays, and more help you experience your website through the eyes of your visitors, helping you increase conversion rates. Request a demo today.*
+Looking for more ways to reduce customer acquisition costs? [Air360](/en/product-tour/) can transform your website data into actionable insights that reduce your marketing costs. On-page analytics, smart funnels, session replays, and more help you experience your website through the eyes of your visitors, helping you increase conversion rates. [Request a demo today](/en/request-demo).

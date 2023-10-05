@@ -16,7 +16,7 @@ But forms are also a source of irritation for customers who often bail out rathe
 Form abandonment is what it sounds like. It’s when a customer starts to fill out an online form but leaves before completing it. Form fills can be so annoying to customers that 81% of them will abandon a form before finishing. Only 20% will follow up with a business in some way after quitting the form process. Security concerns (29%), form length (27%), advertisements or upselling (11%) and unnecessary questions (10%) are the main reasons customers abandon online forms.
 
 ## The High Cost of Checkout Abandonment
-Form abandonment and cart abandonment go hand in hand. Abandonment due to friction like too many form fields is a source of significant revenue loss for eCommerce brands. According to recent statistics, online businesses lose $18 billion in sales and revenue to cart abandonment each year. The current average abandonment rate is a whopping 69%. 
+[Form abandonment](/en/cro-checklist-campaign/) and [cart abandonment](https://baymard.com/lists/cart-abandonment-rate) go hand in hand. Abandonment due to friction like too many form fields is a source of significant revenue loss for eCommerce brands. According to recent statistics, online businesses lose $18 billion in sales and revenue to cart abandonment each year. The current average abandonment rate is a whopping 69%. 
 
 Due to limited screen space and typing difficulties, form fields are even more unwieldy on mobile devices. The average abandonment rate on mobile phones is 85%. While form fills contribute heavily to that figure, many eCommerce websites are not fully optimized for mobile devices.
 
@@ -51,4 +51,6 @@ Making the form process fun and user-friendly can also motivate customers to com
 
 Striking a balance between gathering important user information and making forms so lengthy that users abandon the process can be tricky. Brands that streamline the form process can deliver the optimized shopping experience that today’s online customers demand.
 
-*Field form and cart abandonment can be a thing of the past with Air360. Air360 helps eCommerce companies analyze their UX practices and make changes to increase conversion rates. Learn more by talking to one of our eCommerce experts or scheduling a demo today.*
+Field form and cart abandonment can be a thing of the past with [Air360](/en/product-tour/). Air360 helps eCommerce companies analyze their UX practices and make changes to increase conversion rates. Learn more by talking to one of our eCommerce experts or [scheduling a demo today](/en/request-demo).
+
+Download our CRO Checkout Recommendations Checklist and get quick wins to improve your checkout conversion at least 20% : https://baymard.com/lists/cart-abandonment-rate
