@@ -21,8 +21,8 @@
       </h2>
       <div class="flex items-center space-x-4 absolute bottom-2">
         <nuxt-img
-          class="w-10 h-10 rounded-full"
-          :src="data.writerImg ? data.writerImg : 'https://secure.gravatar.com/avatar/8970d6f80cecf680b09d491937b1623f?s=96&d=mm&r=g'"
+          class="w-10 h-10"
+          :src="data.writerImg ? data.writerImg : '/mochiComputer.png'"
           :alt="$t('avatar')"
         />
         <div class="font-medium dark:text-white">
