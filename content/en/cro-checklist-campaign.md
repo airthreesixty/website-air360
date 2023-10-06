@@ -1,3 +1,7 @@
+---
+title: The Power of a Smooth and Frictionless Checkout Experience in CRO
+---
+
 ::checklist-hero2{src="/en/promotion/checklist.png"}
 #subtext
 Boost your Checkout Experience       
