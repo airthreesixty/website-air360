@@ -30,7 +30,7 @@
         <DropdownsSubItems>
           <template #items>
             <DropdownsItems slug="/blog" icon="newspaper" :text="$t('product-dropdown.blog')" text-color="text-blossom-600" />
-            <DropdownsItems v-if="locale === 'en'" slug="/content-gallery" icon="building-columns" :text="$t('product-dropdown.content-gallery')" text-color="text-blossom-600" />
+            <DropdownsItems slug="/content-gallery" icon="building-columns" :text="$t('product-dropdown.content-gallery')" text-color="text-blossom-600" />
           </template>
         </DropdownsSubItems>
       </template>
@@ -52,14 +52,18 @@
 
 <script setup lang="ts">
 const runtimeConfig = useRuntimeConfig()
-const { locale } = useI18n()
 
-const show = reactive({
+interface ShowState {
+  product: boolean
+  inspiration: boolean
+}
+
+const show = reactive<ShowState>({
   product: false,
   inspiration: false,
 })
 
-const onToggle = (item: string) => {
+const onToggle = (item: keyof ShowState) => {
   show[item] = !show[item]
 }
 </script>

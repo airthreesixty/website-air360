@@ -163,7 +163,7 @@
                 </div>
               </NuxtLink>
             </li>
-            <li v-if="locale === 'en'" class="mb-4">
+            <li class="mb-4">
               <NuxtLink :to="localePath('/content-gallery')">
                 <div class="hover:underline">
                   {{ $t("product-dropdown.content-gallery") }}

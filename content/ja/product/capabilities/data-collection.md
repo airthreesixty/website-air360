@@ -20,7 +20,7 @@ Air360ピクセルをウェブサイトに実装するだけで、すべての�
 
 ::three-features{icon1="cart-shopping" icon2="face-diagonal-mouth" icon3="person-walking"}
 #title
-必要なデータポイントを簡単に収集し、より良い意思決定を
+必要なデータポイントを簡単に収集し、<span class="md:inline-block">より良い意思決定を</span>
 #title1
 ユーザージャーニー
 #desc1

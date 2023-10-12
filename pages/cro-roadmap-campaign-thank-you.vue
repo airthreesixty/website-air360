@@ -34,7 +34,7 @@ const href = computed(() => {
   if (locale.value === 'en') {
     return '/en/promotion/CRORoadmapTemplate.xlsx'
   }
-  return '/en/promotion/CRORoadmapTemplate.xlsx'
+  return '/promotion/CRORoadmapTemplate.xlsx'
 })
 
 useSeoMeta({

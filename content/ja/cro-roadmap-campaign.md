@@ -1,9 +1,8 @@
 ---
 title: コンバージョンを改善し、eコマースを強化
-
 ---
 
-::roadmap-hero{src="/promotion/checklist.png"}
+::roadmap-hero{src="/promotion/roadmapHero.png"}
 #subtext
 コンバージョン最適化を始めましょう
 #title
