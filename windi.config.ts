@@ -46,6 +46,9 @@ export default defineConfig({
             a: {
               'text-decoration': 'none',
               color: '#6278DF',
+              strong: {
+                color: '#6278DF',
+              },
             },
             maxWidth: '100%',
             ul: {
