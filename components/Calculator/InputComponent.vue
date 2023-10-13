@@ -16,7 +16,7 @@
 
 <script setup lang="ts">
 interface Props {
-  modelValue: string | number | null;
+  modelValue: string | number | undefined;
   id: string;
   label: string;
   type?: 'text' | 'number';
