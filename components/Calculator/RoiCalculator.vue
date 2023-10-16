@@ -5,7 +5,6 @@
         <h1 class="text-black-600 font-bold text-2xl mb-6 md:text-3xl lg:text-4xl">
           {{ $t('roi-calc.header') }}
         </h1>
-        <!-- <CalculatorToggleCurrency /> -->
         <div class="border-1 border-gray-200 rounded-lg shadow-md px-5 py-8 mt-12">
           <h2 class="text-black-600 font-bold text-2xl mb-8">
             {{ $t('roi-calc.subtitle') }}
