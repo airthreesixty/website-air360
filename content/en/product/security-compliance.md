@@ -95,9 +95,12 @@ Air360 does not collect any personal or sensitive data by default. The data that
 #question6
 Does Air360 makes your website or app slower?
 #answer6
-No, Air360 does not have any impact on the web performance. 
+One of the questions we often get at Air360 is about how the Air360 pixel could possibly slow down your website. The short answer is no.
 
-Our Air360 pixel is loaded asynchronously with the page content.
+Long answer: The Air360 tracking pixel is loaded asynchronously and at the end of the closing \</body> tag. That means that our script is technically unable to block your website from loading correctly.
+In addition to that, the Air360 tracking pixel is hosted on a CDN (Cache Delivery Network), which makes the loading latency extremely low. Thanks to our CDN, the JS usually loads under 30 ms.
+Air360 Javascript also has a very low memory footprint using less than 20KB (gzipped) of bandwidth. This is much smaller than most scripts. It is also much, much smaller than even a tiny low-resolution image.
+All these measures ensure that Air360 tracking pixel will never slow down user experience when your users navigate your website. In addition to all the measures mentioned above, we continue to monitor & optimize the performance of the Air360 pixel.
 
 #question7
 Does Air360 sell data?
@@ -107,7 +110,5 @@ No
 #question8
 Where is Air360 data stored? (Data Hosting and Storage)
 #answer8
-Air360 production data is hosted in OVHcloud, France.
-
-Air360 backup data is hosted in Amazon Web Services (AWS) facilities in Dublin, Ireland.
+Air360 production data is hosted in OVHcloud, France. Air360 backup data is hosted in Amazon Web Services (AWS) facilities in Dublin, Ireland.
 ::
