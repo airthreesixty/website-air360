@@ -6,7 +6,6 @@ tags:
 readingTime: 8
 image: /blog/navigating-cro/hero.png
 metaDesc: We're here to reassure you – that struggling with CRO is perfectly normal. In this informative and educational piece, we'll break down the complexities and offer practical solutions. Let's dive in.
-
 ---
 
 Welcome to the world of eCommerce, where success hinges on [turning visitors into 
