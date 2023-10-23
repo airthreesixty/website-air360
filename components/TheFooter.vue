@@ -55,11 +55,11 @@
       </div>
       <div class="grid grid-cols-2 gap-x-4 gap-y-6 md:gap-x-6 md:gap-y-8 md:grid-cols-3 lg:grid-cols-5 lg:gap-x-3 xl:ml-8">
         <div>
-          <h2
+          <div
             class="mb-6 text-sm font-semibold text-black-600 uppercase dark:text-white"
           >
             {{ $t("company") }}
-          </h2>
+          </div>
           <ul class="text-gray-600">
             <li class="mb-4">
               <a
@@ -85,11 +85,11 @@
           </ul>
         </div>
         <div>
-          <h2
+          <div
             class="mb-6 text-sm font-semibold text-black-600 uppercase dark:text-white"
           >
             {{ $t("product-dropdown.product") }}
-          </h2>
+          </div>
           <ul class="text-gray-600">
             <li class="mb-4">
               <NuxtLink :to="localePath('/product/website-analysis')">
@@ -150,11 +150,11 @@
           </ul>
         </div>
         <div>
-          <h2
+          <div
             class="mb-6 text-sm font-semibold text-black-600 uppercase dark:text-white"
           >
             {{ $t("inspiration") }}
-          </h2>
+          </div>
           <ul class="text-gray-600">
             <li class="mb-4">
               <NuxtLink :to="localePath('/blog')">
@@ -180,11 +180,11 @@
           </ul>
         </div>
         <div>
-          <h2
+          <div
             class="mb-6 text-sm font-semibold text-black-600 uppercase dark:text-white"
           >
             {{ $t("help") }}
-          </h2>
+          </div>
           <ul class="text-gray-600">
             <li class="mb-4">
               <NuxtLink :to="localePath('/request-demo')">
@@ -213,11 +213,11 @@
           </ul>
         </div>
         <div>
-          <h2
+          <div
             class="mb-6 text-sm font-semibold text-black-600 uppercase dark:text-white"
           >
             {{ $t("language") }}
-          </h2>
+          </div>
           <ul class="text-gray-600">
             <li class="mb-4">
               <LangSwitcher />

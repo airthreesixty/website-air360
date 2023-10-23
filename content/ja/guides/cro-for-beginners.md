@@ -1,13 +1,3 @@
----
-title: 101 CRO for beginners
-published: 2023-10-19
-tags: 
-  - other
-readingTime: 6
-image: /blog/how-a-b-testing-reduces-cart-abandonment.webp
-metaDesc: an introduction
----
-
 # 101 CRO for beginners
 an introduction
 ## 1 What is the conversion?

@@ -1,0 +1,1 @@
+[The list of the guides](/en/guides/cro-for-beginners/)
