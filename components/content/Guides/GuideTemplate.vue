@@ -21,7 +21,6 @@
 <script setup lang="ts">
 const h2s = ref<NodeListOf<HTMLElement> | null>(null)
 const activeTocId = ref<String | null>(null)
-const test = ref('')
 
 const observer: Ref<IntersectionObserver | null | undefined> = ref(null)
 const observerOptions = reactive({

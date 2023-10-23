@@ -8,6 +8,7 @@ In this guide you’ll learn the basics of conversion rate optimization, how it 
 ::
 #content
 ## 1 What is the conversion?
+![](/en/guides/cro-for-beginners/whatIsConversion.png)
 
 The eCommerce landscape in 2023 is evolving rapidly, driven by recent global events, such as the pandemic. Online shopping has become an integral part of our daily lives, and eCommerce trends are shaping this dynamic environment:
 
@@ -22,6 +23,7 @@ The eCommerce landscape in 2023 is evolving rapidly, driven by recent global eve
 Given this eCommerce landscape, understanding and optimizing conversions is more crucial than ever for eCommerce businesses.
 
 ### What is a Conversion?
+![](/en/guides/cro-for-beginners/whatIsConversion2.png)
 
 In the digital realm, a conversion occurs when a visitor to your website completes a specific action, such as filling out a form, making a purchase, or subscribing to a service. The proportion of visitors who successfully convert is known as your "conversion rate." These conversions can include:
 
@@ -67,7 +69,7 @@ As previously outlined, a conversion rate serves as a fundamental metric, gaugin
 To calculate a conversion rate, the following formula proves invaluable:
 
 **Conversion Rate (%)** = (Number of Conversions / Total Visitors) x 100
-![](/blog/cro-for-beginners/conversionRateCaluculation.png)
+![](/en/guides/cro-for-beginners/conversionRateCaluculation.png)
 
 For instance, consider a scenario where your eCommerce website witnessed 1,000 visitors, and 50 of them completed a purchase. Your resulting conversion rate would be:
 
@@ -96,7 +98,7 @@ By competently employing both global and process-specific conversion rates, eCom
 This article bridges the gap between our previous discourse on conversions and the intricacies of conversion rates in eCommerce, delivering a more comprehensive understanding of these pivotal metrics.
 
 ## 3 What is conversion rate optimization 
-![](/blog/cro-for-beginners/whatIsCRO.png)
+![](/en/guides/cro-for-beginners/whatIsCRO.png)
 
 **CRO: a timeless strategy that's always been**
 
@@ -112,7 +114,7 @@ I share this because Conversion Rate Optimization (CRO) is neither new nor magic
 
 Consider a restaurant strategically placing its most popular dishes at the top of the menu to boost orders. Or a retail store arranging products strategically to encourage more sales of certain items. These are real-world instances of CRO at work, where businesses refine their processes to enhance outcomes.
 
-![](/blog/cro-for-beginners/man.jpg)
+![](/en/guides/cro-for-beginners/man.jpg)
 
 Forward-thinking companies, aware of the value it brings, have integrated CRO into all their processes. Take the big retail company I worked for, for example, which cultivates a culture of optimization in product development, logistics, sales, and throughout the entire organization.
 
@@ -121,6 +123,7 @@ Now, let's simplify CRO. Conversion Rate Optimization, or CRO, is like tuning yo
 So, when will you adopt this approach to elevate your results in the world of CRO?
 
 ## 4 What are the benefits of conversion rate optimization?
+![](/en/guides/cro-for-beginners/benefitsOfCro.png)
 
 ### Why is conversion rate important?
 
@@ -167,6 +170,7 @@ Let's delve further into the supplementary benefits of Conversion Rate Optimizat
 CRO is the key to optimizing your digital business, yielding enhanced user experiences, increased conversions, and sustainable long-term growth.
 
 ## 5 When should I use conversion rate optimization?
+![](/en/guides/cro-for-beginners/whenShouldIUseCro.png)
 At Air360, Conversion Rate Optimization (CRO) is far from a one-size-fits-all solution. With our extensive experience working with big brands, we have witnessed firsthand how CRO can yield remarkable results when employed strategically. We'll delve into the ideal situations for deploying CRO, supported by practical use cases from a diverse range of industries.
 
 **1. Leveraging CRO When Launching a New Website or Redesigning:**
@@ -175,7 +179,7 @@ At Air360, Conversion Rate Optimization (CRO) is far from a one-size-fits-all so
     
     By tracking user interactions, studying click patterns, and analyzing navigation choices, we gain invaluable insights into what works and what doesn't. This data-driven approach helps us identify pain points, bottlenecks, and obstacles that might discourage users from completing their journey. The result? A more user-friendly, intuitive, and enjoyable online shopping experience.
 
-    ![](/blog/cro-for-beginners/computerOnDesk.png)
+    ![](/en/guides/cro-for-beginners/computerOnDesk.png)
     *Example: An e-commerce business undergoes a website redesign and uses CRO to identify that the previous layout made it challenging for users to find product categories. By simplifying the navigation and improving category organization, they create a more user-friendly experience, ultimately leading to higher conversion rates.*
 
 - B2B SaaS Providers: For B2B software-as-a-service providers, CRO is indispensable during software platform launches or UI revamps. It simplifies user onboarding, thereby enhancing the overall user experience.
