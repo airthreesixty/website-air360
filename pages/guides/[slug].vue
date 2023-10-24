@@ -27,7 +27,7 @@
                   <div class="hidden md:(col-span-3 block mt-12)">
                     <div class="md:(sticky top-40 flex flex-col gap-4)">
                       <div v-for="{id, text} in paragraphTitles" :key="id">
-                        <nuxt-link :to="`#${id}`" class="!font-bold md:text-lg lg:text-xl" :class="{'!text-pink-600': id === activeTocId } ">
+                        <nuxt-link :to="`#${id}`" class="font-bold" :class="{'!text-pink-600': id === activeTocId } ">
                           {{ text }}
                         </nuxt-link>
                       </div>
@@ -60,7 +60,7 @@ const fullPath = route.fullPath
 const activeTocId = ref<String | null>(null)
 const nuxtContent = ref(null)
 
-const { data } = await useAsyncData(`blog-${route.params.slug}/`, () =>
+const { data } = await useAsyncData(`guide-${route.params.slug}/`, () =>
   queryContent<GuideArticle>(
     `/${locale.value}${getPathWithoutLocale(route.path)}`,
   ).findOne(),
