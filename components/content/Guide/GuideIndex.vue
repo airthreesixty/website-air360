@@ -29,7 +29,6 @@
 
 <script setup lang="ts">
 const { locale } = useI18n()
-const route = useRoute()
 
 const { data: mainGuide } = await useAsyncData('main-guide', () =>
   queryContent(
@@ -46,6 +45,4 @@ const { data: guides } = await useAsyncData('guides', () =>
     _path: { $ne: '/en/guides/cro-for-beginners' },
   }).find(),
 )
-
-console.log(guides)
 </script>

@@ -11,6 +11,14 @@
                 <div class="container pt-5 pb-6 md:pb-5 lg:py-10">
                   <div class="md:(grid grid-cols-2 gap-5)">
                     <div class="text-center self-center md:text-left">
+                      <div class="text-xs font-semibold">
+                        <nuxt-link :to="localePath('/guides')" class="hover:underline text-black-600">
+                          Guides
+                        </nuxt-link>
+                        <fa-icon class="mx-3" :icon="['far', 'caret-right']" /><span class="text-primary-600">
+                          {{ data?.title }}
+                        </span>
+                      </div>
                       <h1 class="title1 my-5 font-bold text-black-600">
                         {{ data?.title }}
                       </h1>

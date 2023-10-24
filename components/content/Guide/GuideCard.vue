@@ -8,6 +8,9 @@
         <h3 class="font-bold mt-5 text-2xl hover:underline">
           {{ guide.title }}
         </h3>
+        <p class="textp mt-2">
+          {{ guide.description }}
+        </p>
       </nuxt-link>
     </div>
   </div>

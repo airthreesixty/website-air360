@@ -40,7 +40,7 @@ Conversions help identify visitors genuinely interested in your products or serv
 
 Understanding the user journey is crucial for differentiating between micro and macro conversions in the digital eCommerce landscape.
 
-**Macro Conversions:** These are high-impact conversions aligned with your website's core objectives, such as making a purchase or booking a service. Tracking macro conversions is essential for assessing the overall effectiveness of your [CRO strategy](/en/blog/3-steps-cro-process-for-exponential-business-growth/).
+**Macro Conversions:** These are high-impact conversions aligned with your website's core objectives, such as making a purchase or booking a service. Tracking macro conversions is essential for assessing the overall effectiveness of your [CRO strategy.](/en/blog/3-steps-cro-process-for-exponential-business-growth/)
 
 For instance, in an online clothing store, a macro conversion occurs when a user completes a purchase, contributing to revenue and customer acquisition.
 
@@ -79,7 +79,7 @@ This percentage reveals how proficiently your website transforms visitors into c
 
 1. **Global Conversion Rate:** This metric offers a comprehensive overview, evaluating the overall conversion rate for your entire website. It measures the website's effectiveness in converting visitors into customers or achieving specific actions across all processes and pages. This high-level metric provides valuable insight into your website's performance in engaging and converting users.
 2. **Process-Specific Conversion Rates:** In contrast, process-specific conversion rates focus on distinct actions or processes within your website. These can encompass:
-    - [**Checkout Conversion Rate:**](/en/blog/maximizing-conversion-rates-and-enhancing-ux/) This metric quantifies the percentage of users who successfully complete the checkout process and finalize a purchase. It is an indispensable gauge of your checkout experience's effectiveness.
+    - **[Checkout Conversion Rate](https://www.air360.io/en/blog/maximizing-conversion-rates-and-enhancing-ux/):** This metric quantifies the percentage of users who successfully complete the checkout process and finalize a purchase. It is an indispensable gauge of your checkout experience's effectiveness.
     - **Cart Conversion Rate:** This rate tracks the percentage of visitors who add items to their cart. It plays a pivotal role in assessing how efficiently your website encourages users to take this crucial step.
     - **Account Creation Conversion Rate:** This metric measures the percentage of visitors who create an account on your platform. It is vital for evaluating user engagement and lead generation.
 
@@ -92,8 +92,6 @@ The distinction between global and process-specific conversion rates is paramoun
 - **Holistic Performance Evaluation:** The global conversion rate offers an all-encompassing view of your website's performance, while process-specific rates enable an in-depth analysis of specific areas. This multifaceted approach ensures a well-rounded Conversion Rate Optimization (CRO) strategy.
 
 By competently employing both global and process-specific conversion rates, eCommerce teams can comprehensively optimize their websites, thereby augmenting their odds of success in the fiercely competitive eCommerce landscape of 2023.
-
-This article bridges the gap between our previous discourse on conversions and the intricacies of conversion rates in eCommerce, delivering a more comprehensive understanding of these pivotal metrics.
 
 ## 3 What is conversion rate optimization 
 ![](/en/guides/cro-for-beginners/whatIsCRO.png)
@@ -108,7 +106,7 @@ That got me excited. So much so that I carried a notebook with me every day, jot
 
 As time went on, my passion for this way of working led to me being entrusted with the mission of evangelizing this methodology (based on Toyota's Lean manufacturing) within any company I worked in. 
 
-I share this because [Conversion Rate Optimization (CRO)](/en/blog/3-steps-cro-process-for-exponential-business-growth) is neither new nor magic nor the latest marketing trend. It's something that has been practiced for many years in the offline world.
+I share this because [Conversion Rate Optimization (CRO)](https://www.air360.io/en/blog/3-steps-cro-process-for-exponential-business-growth/) is neither new nor magic nor the latest marketing trend. It's something that has been practiced for many years in the offline world.
 
 Consider a restaurant strategically placing its most popular dishes at the top of the menu to boost orders. Or a retail store arranging products strategically to encourage more sales of certain items. These are real-world instances of CRO at work, where businesses refine their processes to enhance outcomes.
 
