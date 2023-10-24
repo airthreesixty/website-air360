@@ -1,4 +1,3 @@
-import { GuideCard } from '.nuxt/components';
 <template>
   <div class="container py-10">
     <div class="md:(grid grid-cols-2 gap-15 items-center)">
