@@ -11,6 +11,13 @@ export interface BlogArticle {
   writerName?: string
 }
 
+export interface GuideArticle {
+  title: string
+  description: string
+  image: string
+  metaDesc: string
+}
+
 export interface Title {
   id: string
   text: string

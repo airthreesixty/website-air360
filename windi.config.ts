@@ -39,9 +39,9 @@ export default defineConfig({
                 'text-decoration': 'none',
                 color: '#6278DF',
               },
-              em: {
-                fontSize: '12px',
-              },
+              // em: {
+              //   fontSize: '12px',
+              // },
             },
             a: {
               'text-decoration': 'none',
@@ -89,6 +89,10 @@ export default defineConfig({
               fontWeight: 'bold',
               borderLeft: '5px solid #e74b91',
               paddingLeft: '10px',
+              a: {
+                color: '#232e4a',
+                fontWeight: 'bold',
+              },
             },
           },
         },
