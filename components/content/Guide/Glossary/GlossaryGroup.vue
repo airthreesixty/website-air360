@@ -16,11 +16,3 @@ interface Props {
 
 defineProps<Props>()
 </script>
-
-<style scoped>
-.alphabet-title {
-    display: block;
-    padding-top: 97px;
-    margin-top: -97px;
-}
-</style>
