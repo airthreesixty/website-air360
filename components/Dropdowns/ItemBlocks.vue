@@ -31,6 +31,7 @@
           <template #items>
             <DropdownsItems slug="/blog" icon="newspaper" :text="$t('product-dropdown.blog')" text-color="text-blossom-600" />
             <DropdownsItems slug="/content-gallery" icon="building-columns" :text="$t('product-dropdown.content-gallery')" text-color="text-blossom-600" />
+            <DropdownsItems v-if="locale === 'en'" slug="/guides" icon="book" :text="$t('product-dropdown.guides')" text-color="text-blossom-600" />
           </template>
         </DropdownsSubItems>
       </template>
@@ -51,6 +52,7 @@
 </template>
 
 <script setup lang="ts">
+const { locale } = useI18n()
 const runtimeConfig = useRuntimeConfig()
 
 interface ShowState {

@@ -177,6 +177,13 @@
                 </div>
               </NuxtLink>
             </li>
+            <li v-if="locale === 'en'" class="mb-4">
+              <NuxtLink :to="localePath('/guides')">
+                <div class="hover:underline">
+                  {{ $t("product-dropdown.guides") }}
+                </div>
+              </NuxtLink>
+            </li>
           </ul>
         </div>
         <div>

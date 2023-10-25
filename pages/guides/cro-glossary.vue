@@ -22,7 +22,7 @@
       </div>
     </div>
     <div class="bg-gray-100 mb-5">
-      <ul class="flex justify-center gap-5 flex-wrap py-3 mt-5 mx-10 font-bold text-lg text-primary-600">
+      <ul class="flex justify-center gap-5 flex-wrap py-3 mt-5 mx-10 font-bold text-lg text-primary-600 lg:text-xl">
         <li v-for="(alphabet, index) in alphabets" :key="index" class="hover:underline">
           <nuxt-link
             :to="`#${alphabet.toLowerCase()

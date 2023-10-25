@@ -84,6 +84,12 @@
                     {{ $t('gallery') }}
                   </nuxt-link>
                 </div>
+                <div v-if="locale === 'en'" class="flex items-center mb-2">
+                  <span><fa-icon class="text-lg text-blossom-600 w-5 mr-2" :icon="['far', 'book']" /></span>
+                  <nuxt-link :to="localePath('/guides')" class="block text-sm text-black-600 transition-all hover:(text-primary-600 text-shadow-primary)">
+                    {{ $t('product-dropdown.guides') }}
+                  </nuxt-link>
+                </div>
               </div>
             </li>
             <li>
@@ -121,6 +127,7 @@
 </template>
 
 <script setup lang="ts">
+const { locale } = useI18n()
 const localePath = useLocalePath()
 const runtimeConfig = useRuntimeConfig()
 const route = useRoute()

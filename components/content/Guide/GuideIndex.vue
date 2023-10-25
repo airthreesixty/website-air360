@@ -42,7 +42,7 @@ const { data: guides } = await useAsyncData('guides', () =>
     locale.value,
     'guides/',
   ).where({
-    _path: { $ne: '/en/guides/cro-for-beginners' },
+    _path: { $ne: `/${locale.value}/guides/cro-for-beginners` },
   }).find(),
 )
 </script>
