@@ -8,7 +8,7 @@
               <article
                 class="mx-auto format format-sm sm:format-base lg:format-lg format-blue"
               >
-                <div class="container pt-5 pb-6 md:pb-5 lg:py-10">
+                <div class="pt-5 pb-6 md:pb-5 lg:py-10">
                   <div class="md:(grid grid-cols-2 gap-5)">
                     <div class="text-center self-center md:text-left">
                       <div class="text-xs font-semibold">
@@ -27,7 +27,7 @@
                       </div>
                     </div>
                     <div class="flex items-center">
-                      <nuxt-img format="webp" :src="data?.image" loading="lazy" sizes="xl:1390px lg:1034px md:754px sm:1184px xs:277px" />
+                      <nuxt-img format="webp" :src="data?.image" loading="lazy" sizes="xl:1390px lg:1034px md:754px sm:1184px xs:277px" class="rounded-full" />
                     </div>
                   </div>
                 </div>
