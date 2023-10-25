@@ -16,6 +16,7 @@ export interface GuideArticle {
   description: string
   image: string
   metaDesc: string
+  published: string
 }
 
 export interface Title {

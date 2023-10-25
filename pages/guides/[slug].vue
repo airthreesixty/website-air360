@@ -102,7 +102,7 @@ onUnmounted(() => {
 })
 
 if (!data.value) {
-  router.push(localePath('/blog'))
+  router.push(localePath('/guides'))
 }
 
 useSeoMeta({
@@ -117,7 +117,7 @@ useSeoMeta({
 
 const breadcrumbs = [
   { name: t('home'), item: localePath('/') },
-  { name: t('blog'), item: localePath('/blog/') },
+  { name: t('guides'), item: localePath('/guides/') },
   { name: data.value?.title },
 ]
 
@@ -125,15 +125,9 @@ useSchemaOrg([
   defineArticle({
     '@type': 'BlogPosting',
     image: data.value?.image,
-    // datePublished: $dayjs(data.value?.published)
-    //   .locale(locale).format('YYYY-MM-DD'),
+    datePublished: $dayjs(data.value?.published)
+      .locale(locale).format('YYYY-MM-DD'),
   }),
   defineBreadcrumb({ itemListElement: breadcrumbs }),
 ])
 </script>
-
-<style lang="postcss">
-.blog__share-link {
-  @apply inline-flex items-center p-[5.5px] md:p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg focus:(ring-4 outline-none ring-gray-50) text-primary-600 transition-colors ease-in-out duration-300 hover:(text-primary-700 bg-gray-100);
-}
-</style>

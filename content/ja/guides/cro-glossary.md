@@ -1,6 +1,7 @@
 ---
 title: CRO Glossary
 description: Learn key terms and concepts in conversion rate optimization to implement effective CRO strategies and improve your website's conversion rate.
+published: 2023-10-24
 image: /en/guides/glossary/hero.png
 metaDesc: Learn key terms and concepts in conversion rate optimization to implement effective CRO strategies and improve your website's conversion rate.
 ---

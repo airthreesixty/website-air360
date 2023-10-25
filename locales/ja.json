@@ -392,5 +392,9 @@
     "title": "コンバージョン最適化ロードマップをダウンロードしましょう！",
     "desc": "ロードマップのお問い合わせありがとうございます。",
     "cta": "ダウンロード"
+  },
+  "guides": {
+    "title": "101 CRO for beginners",
+    "desc": "Learn the fundamentals of conversion rate optimization (CRO), its advantages, and how it differs from other marketing techniques to increase revenue."
   }
 }
