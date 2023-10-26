@@ -1,5 +1,5 @@
 ---
-title: 101 CRO for beginners
+title: CRO 101 for beginners
 description: Learn the fundamentals of conversion rate optimization (CRO), its advantages, and how it differs from other marketing techniques to increase revenue.
 published: 2023-10-23
 image: /en/guides/cro-for-beginners/hero.png
