@@ -48,7 +48,6 @@ import _ from 'lodash'
 import gsap from 'gsap'
 import { BlogArticle } from '~~/interfaces/blog'
 
-const { locale } = useI18n()
 const route = useRoute()
 const props = defineProps({
   articles: {
@@ -56,8 +55,6 @@ const props = defineProps({
     required: true,
   },
 })
-
-console.log(route)
 
 const isLoading = ref(false)
 let loadButtonClickCount = 0
