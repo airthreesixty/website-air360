@@ -2,7 +2,7 @@
   <LandingPage>
     <template #content>
       <h1>Why you need a UX analytics tool & how to get it</h1>
-      <nuxt-img src="/air360-ebook-3-cover.webp" loading="lazy" width="456" class="w-35 sm:w-65 float-right shadow ml-5" />
+      <nuxt-img src="/en/content-gallery/air360-ebook-3-cover.webp" loading="lazy" width="456" class="w-35 sm:w-65 float-right shadow ml-5" />
       <p>Businesses both large and small benefit from detailed and actionable CX insights. Yet many companies are reluctant to invest, and many stakeholders may need convincing.</p>
       <p>Inside this eBook, learn more about:</p>
       <ul>

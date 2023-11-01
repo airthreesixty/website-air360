@@ -3,7 +3,7 @@
     <template #content>
       <h1>Five conversion blockers and how to fix them</h1>
       <h2>Improving your UX design with the consumer in mind</h2>
-      <nuxt-img src="/five-conversion-blockers.webp" loading="lazy" width="456" class="w-35 sm:w-65 float-right shadow ml-5" />
+      <nuxt-img src="/en/content-gallery/five-conversion-blockers.webp" loading="lazy" width="456" class="w-35 sm:w-65 float-right shadow ml-5" />
       <p>Many conversion concerns can be solved with strategic choices in flow and function. In Part 1 of our three-part series, we take a look at the most impactful conversion blockers, and how companies can easily fix them.</p>
       <p>This eBook uncovers:</p>
       <ul>

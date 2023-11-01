@@ -5,7 +5,7 @@
       <h2>
         The big checkout drop off
       </h2>
-      <nuxt-img src="/air360-cr-mysteries.jpg" loading="lazy" width="456" class="w-35 sm:w-65 float-right shadow ml-5" />
+      <nuxt-img src="/en/content-gallery/air360-cr-mysteries.jpg" loading="lazy" width="456" class="w-35 sm:w-65 float-right shadow ml-5" />
       <p>It is no mystery that checkout abandonment is usually a significant pain or a common challenge in the eCommerce industry.</p>
       <p>Learn how big online beverage distributor brand quickly found out why their users were dropping on their checkout to improve their performance.</p>
       <p>Download our Air360 Papel and learn more.</p>
