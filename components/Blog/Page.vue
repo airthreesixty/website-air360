@@ -57,6 +57,8 @@ const props = defineProps({
   },
 })
 
+console.log(route)
+
 const isLoading = ref(false)
 let loadButtonClickCount = 0
 
@@ -105,7 +107,7 @@ const loadMore = async () => {
   loadButtonClickCount++
   const currentPage = Number(route.query.page) || 0
   await navigateTo({
-    path: `/${locale.value}/blog`,
+    path: route.path,
     query: {
       page: currentPage + 1,
     },
