@@ -20,7 +20,7 @@ useSeoMeta({
   ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
 })
 
-const { data } = await useAsyncData(`tag-${route.params.name}`, () => queryContent(locale.value, 'blog/').where({ tags: { $contains: route.params.name } }).sort({ published: -1 }).only(['published', 'tags', 'readingTime', 'title', 'image', '_path', 'metaDesc']).find())
+const { data } = await useAsyncData(`tag-${route.params.name}`, () => queryContent(locale.value, 'blog/').where({ tags: { $contains: route.params.name } }).sort({ published: -1, $numeric: true }).only(['published', 'tags', 'readingTime', 'title', 'image', '_path', 'metaDesc']).find())
 
 if (!data.value) {
   router.push(localePath('/blog'))
