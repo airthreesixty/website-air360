@@ -21,7 +21,7 @@
       </h2>
       <div class="flex items-center space-x-4 absolute bottom-2">
         <nuxt-img
-          class="w-10 h-10"
+          class="w-10 h-10 object-contain"
           :src="data.writerImg ? data.writerImg : '/mochiComputer.png'"
           :alt="$t('avatar')"
         />
