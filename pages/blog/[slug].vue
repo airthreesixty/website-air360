@@ -127,7 +127,7 @@
     </ContentRenderer>
     <CtaNew />
     <RelatedArticles />
-    <NewsLetter />
+    <!-- <NewsLetter /> -->
   </div>
 </template>
 
