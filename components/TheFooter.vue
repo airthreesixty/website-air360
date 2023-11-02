@@ -28,7 +28,7 @@
             <span class="sr-only">Twitter page</span>
           </a>
           <a
-            href="https://www.instagram.com/weareair360/"
+            :href="locale === 'en' ? 'https://www.instagram.com/weareair360/' : 'https://www.instagram.com/weareair360_jp/'"
             class="text-gray-600 transition ease-in-out duration-300 hover:text-gray-800 dark:hover:text-white"
             target="_blank"
           >
