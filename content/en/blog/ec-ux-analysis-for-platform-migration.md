@@ -1,5 +1,5 @@
 ---
-title: E-commerce UX analysis for platform migration - Uncovering the unknown
+title: Avoid re-platforming mistakes - Why UX analytics is fundamental before changing anything
 published: 2023-11-06
 tags: 
   - data
