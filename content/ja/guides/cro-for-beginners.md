@@ -1,8 +1,8 @@
 ---
 title: CRO 101 for beginners
 description: Learn the fundamentals of conversion rate optimization (CRO), its advantages, and how it differs from other marketing techniques to increase revenue.
-published: 2023-10-23
 image: /en/guides/cro-for-beginners/hero.png
+published: 2023-10-23
 metaDesc: Learn the fundamentals of conversion rate optimization (CRO), its advantages, and how it differs from other marketing techniques to increase revenue.
 ---
 
@@ -54,6 +54,7 @@ For example, a user browsing an online clothing store might view product pages, 
 Recognizing the difference between micro and macro conversions and understanding their role in the user journey enables informed decisions for website optimization, improving the user experience. This, in turn, increases the likelihood of users progressing from micro to macro conversions, driving the success of your CRO strategy.
 
 ## 2 What is the conversion rate & How to calculate it
+![](/en/guides/cro-for-beginners/whatIsConversionRate.png)
 
 ### Understanding Conversion Rates in eCommerce
 
@@ -488,3 +489,29 @@ So even if you are not ROI-positive after one month, it will definitely pay off 
 **Time to run the numbers!**
 
 It's time for you to do the math and weigh both options so you know which would be the most cost-effective to generate sustainable growth for your business.
+
+## 9 Growth hacking vs CRO
+![](/en/guides/cro-for-beginners/growthHacking.png)
+
+Growth Hacking and CRO are two distinct but complementary strategies in the world of eCommerce. Digital teams often use both to enhance our online businesses. Here are the key differences:
+
+1. **Focus and Goals**:
+    - In CRO, our primary focus is on optimizing the existing website or product to improve conversion rates. We aim to make the most of the traffic we already have by enhancing the user experience.
+    - Growth Hacking, on the other hand, is more about finding innovative ways to acquire and retain customers. It's a broader approach that encompasses marketing, product development, and creative tactics to achieve rapid growth.
+2. **Approach**:
+    - [CRO is a methodical](https://www.notion.so/3-What-is-conversion-rate-optimization-CRO-6da5d135401944cebba0c1bd701afcc2?pvs=21) and data-driven approach. We use experience analytics and A/B testing to identify weaknesses in the conversion funnel and make incremental improvements.
+    - Growth Hacking is often associated with creative, unconventional, and sometimes risky strategies. It's about finding shortcuts and quick wins to drive growth, even if they are not always sustainable.
+3. **Timeframe**:
+    - CRO is a more long-term strategy. It involves continuous, incremental improvements and can take time to show substantial results.
+    - Growth Hacking is often about achieving quick, sometimes viral growth in a short timeframe. It might involve rapid experiments and adjustments.
+4. **Metrics**:
+    - In CRO, we're closely monitoring metrics related to conversion rates, such as click-through rates, bounce rates, and cart abandonment rates.
+    - Growth Hackers tend to focus on a wider range of metrics, including user acquisition, retention, and viral coefficient, to identify what's driving growth.
+5. **Testing and Experimentation**:
+    - CRO relies heavily on [A/B testing](/en/blog/the-perfect-match-of-ab-testing-and-air360/) and data analysis to make informed decisions.
+    - Growth Hacking involves more rapid experimentation, trying out various strategies to see what works and discarding what doesn't.
+6. **Team Skills**:
+    - CRO often requires a strong understanding of analytics, UX design, and website optimization.
+    - Growth Hacking involves a mix of marketing, product development, and often unconventional thinking.
+
+Digital and eCommerce teams should recognize that both Growth Hacking and CRO have their places in their toolkit. CRO is about refining the user experience on the existing platform, while Growth Hacking is more about finding innovative ways to fuel rapid growth. Depending on our business goals and resources, we may use one or both strategies to drive success.

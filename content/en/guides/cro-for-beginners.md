@@ -493,7 +493,7 @@ It's time for you to do the math and weigh both options so you know which would 
 ## 9 Growth hacking vs CRO
 ![](/en/guides/cro-for-beginners/growthHacking.png)
 
-Growth Hacking and CRO are two distinct but complementary strategies in the world of eCommerce. We, as CRO managers and digital product managers, often use both to enhance our online businesses. Here are the key differences:
+Growth Hacking and CRO are two distinct but complementary strategies in the world of eCommerce. Digital teams often use both to enhance our online businesses. Here are the key differences:
 
 1. **Focus and Goals**:
     - In CRO, our primary focus is on optimizing the existing website or product to improve conversion rates. We aim to make the most of the traffic we already have by enhancing the user experience.
@@ -514,4 +514,4 @@ Growth Hacking and CRO are two distinct but complementary strategies in the worl
     - CRO often requires a strong understanding of analytics, UX design, and website optimization.
     - Growth Hacking involves a mix of marketing, product development, and often unconventional thinking.
 
-In summary, as CRO managers and digital product managers, we should recognize that both Growth Hacking and CRO have their places in our toolkit. CRO is about refining the user experience on the existing platform, while Growth Hacking is more about finding innovative ways to fuel rapid growth. Depending on our business goals and resources, we may use one or both strategies to drive success.
+Digital and eCommerce teams should recognize that both Growth Hacking and CRO have their places in their toolkit. CRO is about refining the user experience on the existing platform, while Growth Hacking is more about finding innovative ways to fuel rapid growth. Depending on our business goals and resources, we may use one or both strategies to drive success.
