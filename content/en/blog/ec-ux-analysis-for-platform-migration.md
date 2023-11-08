@@ -189,6 +189,5 @@ choices. This way, when you decide to change how your online shop looks or works
 you're not just guessing; you're using what you've learned to make it better for your
 customers. Remember, learning from the past helps you do better in the future.
 
-Before making a monumental shift in your e-commerce strategy, remember: it's the 
-[insights](/en/product/website-analysis/) from what was once unknown that will illuminate the path to do better in 
-the future.
+Before making a monumental shift in your e-commerce strategy, remember, it's the 
+[insights](/en/product/website-analysis/) from what was once unknown that will illuminate the path to do better in the future.
