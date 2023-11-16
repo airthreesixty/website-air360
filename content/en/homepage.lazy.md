@@ -7,6 +7,23 @@ Air360 simplifies the process of comprehending the digital user experience.
 It reveals customer behaviours that are invisible to conventional analysis methods. Enabling quicker, more intuitive digital experience creation that boosts analysis efficiency and enhances conversion rate.
 ::
 
+::three-features{icon1="gauge-max" icon2="crosshairs-simple" icon3="flask"}
+#title
+The Go-To platform for complete CRO analysis
+#title1
+Instant Full Visibility
+#desc1
+Uncover digital journey insights and conversion opportunities fast.
+#title2
+Optimization Focus
+#desc2
+Target high-impact areas & segments for maximum conversion gains.
+#title3
+Testing Impact
+#desc3
+Evaluate the holistic impact of A/B tests or actions on user experience.
+::
+
 ::what-air360-offers2
 #mainTitle
 Why Air360
