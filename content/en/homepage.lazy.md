@@ -3,7 +3,8 @@
 Say hello to insights<br>
 Say goodbye to headaches
 #description
-Air360 is an eCommerce experience analysis tool that makes it easy to understand customer experience on your website. It reveals customer behaviors that are invisible to conventional analysis methods, enabling you to create a more user-friendly website.
+Air360 simplifies the process of comprehending the digital user experience.
+It reveals customer behaviours that are invisible to conventional analysis methods. Enabling quicker, more intuitive digital experience creation that boosts analysis efficiency and enhances conversion rate.
 ::
 
 ::what-air360-offers2
@@ -48,6 +49,9 @@ With Air360 we can get more people involved in making data-driven decisions on a
 Nelson Fernandes
 #role
 Digital Analytics Manager, Club Med
+::
+
+::multiple-testimonials
 ::
 
 ::cta-new
