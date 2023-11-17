@@ -97,6 +97,41 @@ ACTIVATE
 オプション保存率
 ::
 
+<!-- ::four-features2
+#title 
+UXアナリティクスを超えて
+#desc1
+Build your CRO Roadmap with Air360 experts as your extended team
+#desc2
+Collaborate with our expert team to maximize insights and boost your CRO efforts.
+
+#block
+    ::four-features2-block{icon="toolbox"}
+    #title
+    Custom Onboarding
+    #desc
+    Tailored to your existing data & challenges, guiding you in UX analysis.
+    ::
+    ::four-features2-block{icon="handshake-angle"}
+    #title
+    Ongoing CRO Workshops
+    #desc
+    Regular sessions with your CRO specialist to co-create your roadmap and prioritize impactful optimizations.
+    ::
+    ::four-features2-block{icon="user-shakespeare"}
+    #title
+    Dedicated CRO specialist
+    #desc
+    Scale optimization with a dedicated manager guiding your team from onboarding to success.
+    ::
+    ::four-features2-block{icon="headset"}
+    #title
+    Rapid Technical Support
+    #desc
+    Swift, responsive support tailored to your analytics requirements.
+    ::
+:: -->
+
 ::testimonial2{alt="Club Medのデータ分析マネジャー" src="/headShotClubMed.webp"}
 #title
 Air360を使うことで、より多くの人が世界規模でデータに基づいた意思決定に携わることができます。
