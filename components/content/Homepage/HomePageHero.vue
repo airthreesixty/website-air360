@@ -9,10 +9,10 @@
             <h1
               class="mb-6 font-title font-extrabold text-[34px] tracking-wide md:text-5xl lg:text-7xl text-center text-black-600 lg:mb-8"
             >
-              <div class="flex justify-center flex-col md:flex-row" :class="{'!flex-row': locale === 'ja'}">
+              <div class="flex justify-center flex-col md:flex-row" :class="{'!flex-row mb-1': locale === 'ja'}">
                 <span class="bg-animation1" :style="`--content: '${$t('title1')}'`"><span class="letter1">{{ $t('title1') }}</span></span>
                 <span v-if="locale === 'en'" class="hidden md:block">&nbsp;</span>
-                <span class="bg-animation2" :style="`--content: '${$t('title2')}'`"><span class="letter2">{{ $t('title2') }}</span></span>
+                <span class="bg-animation2" :class="{'my-1 md:my-0': locale==='en'}" :style="`--content: '${$t('title2')}'`"><span class="letter2">{{ $t('title2') }}</span></span>
               </div>
 
               <span class="bg-animation3" :style="`--content: '${$t('title3')}'`"><span class="letter3">{{ $t('title3') }}</span></span>
