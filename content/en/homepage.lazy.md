@@ -53,6 +53,38 @@ Speed up analysis & fast-track CRO
 Unify your team with our easy-to-use plugin, transforming tedious data analysis into a  one-click task. Access rapid behavioral metrics & test results in seconds, not days, and turn them into strategies that minimize abandonment & increase conversion.
 ::
 
+::cross-functional
+#mainTitle
+Cross-functional impact through analytics
+#blocks
+    ::cross-functional-block{:border=false}
+    #title
+    Improve your experience
+    #desc
+    - Reduce abandonment
+    - Increase add-to-cart
+    - Increase conversion
+    ::
+
+    ::cross-functional-block{titleColor="#FA734C"}
+    #title
+    Maximize marketing efforts
+    #desc
+    - Reduce CPA
+    - Optimize channel post-landing experience 
+    - Improve campaign conversion
+    ::
+
+    ::cross-functional-block{titleColor="#3C8BFF"}
+    #title
+    Prove ROI immediately
+    #desc
+    - Multiply conversions
+    - Get more customers
+    - Increase revenue
+    ::
+::
+
 ::real-example
 #title
 Real Achievement
