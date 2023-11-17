@@ -131,6 +131,9 @@ Collaborate with our expert team to maximize insights and boost your CRO efforts
     ::
 ::
 
+::slideshow
+::
+
 ::testimonial2{src="/headShotClubMed.webp" alt="Digital Analytics Manager of Club Med"}
 #title
 With Air360 we can get more people involved in making data-driven decisions on a global scale.
