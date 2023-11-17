@@ -6,29 +6,8 @@
       <ContentSlot :use="$slots.mainTitle" unwrap="p" />
     </h2>
     <SingleDescription
-      :alt="$t('how-air360-helps2')"
       :video-src="videoSrc2"
       :poster="posterSrc2"
-      icon="message-smile"
-    >
-      <template #subtext>
-        <ContentSlot :use="$slots.subtext2" unwrap="p" />
-      </template>
-      <template #title>
-        <ContentSlot :use="$slots.title2" unwrap="p" />
-      </template>
-      <template #description>
-        <ContentSlot :use="$slots.description2" unwrap="p" />
-      </template>
-    </SingleDescription>
-    <SingleDescription
-      image-status="block"
-      image-status2="hidden"
-      :alt="$t('how-air360-helps1')"
-      :video-src="videoSrc1"
-      :poster="posterSrc1"
-      icon="lightbulb-on"
-      theme-color="#FA734C"
     >
       <template #subtext>
         <ContentSlot :use="$slots.subtext1" unwrap="p" />
@@ -41,9 +20,24 @@
       </template>
     </SingleDescription>
     <SingleDescription
+      image-status="block"
+      image-status2="hidden"
+      :video-src="videoSrc1"
+      :poster="posterSrc1"
+      theme-color="#FA734C"
+    >
+      <template #subtext>
+        <ContentSlot :use="$slots.subtext2" unwrap="p" />
+      </template>
+      <template #title>
+        <ContentSlot :use="$slots.title2" unwrap="p" />
+      </template>
+      <template #description>
+        <ContentSlot :use="$slots.description2" unwrap="p" />
+      </template>
+    </SingleDescription>
+    <SingleDescription
       :image-path="image"
-      :alt="$t('how-air360-helps3')"
-      icon="cart-shopping-fast"
       theme-color="#3C8BFF"
       :is-shadow="false"
     >
@@ -55,6 +49,22 @@
       </template>
       <template #description>
         <ContentSlot :use="$slots.description3" unwrap="p" />
+      </template>
+    </SingleDescription>
+    <SingleDescription
+      image-status="block"
+      image-status2="hidden"
+      :video-src="videoSrc2"
+      :poster="posterSrc2"
+    >
+      <template #subtext>
+        <ContentSlot :use="$slots.subtext4" unwrap="p" />
+      </template>
+      <template #title>
+        <ContentSlot :use="$slots.title4" unwrap="p" />
+      </template>
+      <template #description>
+        <ContentSlot :use="$slots.description4" unwrap="p" />
       </template>
     </SingleDescription>
   </section>

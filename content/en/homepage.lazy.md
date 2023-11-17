@@ -28,29 +28,34 @@ Evaluate the holistic impact of A/B tests or actions on user experience.
 #mainTitle
 Why Air360
 #subtext1
-DISCOVER
+COLLECT
 #title1
-Deeply understand your customers
+Ultra-light, no-code, no-tag painless data collection
 #description1
-Customer behavior data can be used to easily analyze the causes of abandonment. Not only do you know where to fix bugs, but you also facilitate a website experience that makes customers want to come back.
+Experience smooth no-tag analytics with Air360's market-leading lightweight script. Eliminate the hassle of tagging and mapping any events or experiments for seamless integration and user behavior analysis.
 #subtext2
-Plug and Play
+DEFINE
 #title2
-No-code, easy operation
+Precise segmentation for the CRO ecosystem
 #description2
-Both the initial setup and the actual analysis can be done by anyone: a simple 5-minute initial setup automatically starts tracking and analyzing all activity logs.
+Air360's event-driven analytics provide in-depth user insights and enable the creation of hyper-granular & actionable segments. This leads to personalized strategies, effective A/B testing, and improved user experiences, significantly boosting conversion rates.
 #subtext3
 BOOST
 #title3
-Quick Results
+Rapid clarity to unmask dropoff reasons
 #description3
-Don’t wait months for data collection. Find insights in as little as 7 days and aim to 
-increase conversion rate by up to +55% in 3 months.
+Air360 automatically tracks every user click, path, interaction or event, eliminating blind spots in URL-based analytics. It provides detailed user journeys revealing post-landing actions, unseen digital paths, and reasons for abandonment.
+#subtext4
+ACTIVATE
+#title4
+Speed up analysis & fast-track CRO
+#description4
+Unify your team with our easy-to-use plugin, transforming tedious data analysis into a  one-click task. Access rapid behavioral metrics & test results in seconds, not days, and turn them into strategies that minimize abandonment & increase conversion.
 ::
 
 ::real-example
 #title
-Achievement
+Real Achievement
 #description
 [Club Med]{.font-bold}, which operates approximately 70 resorts in 24 countries, has seen a significant increase in sales since implementing Air360, with a +100% conversion rate and a +50% retention rate for options.
 #achievement1
