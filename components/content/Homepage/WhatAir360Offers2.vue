@@ -6,8 +6,8 @@
       <ContentSlot :use="$slots.mainTitle" unwrap="p" />
     </h2>
     <SingleDescription
-      :video-src="videoSrc2"
-      :poster="posterSrc2"
+      :video-src="videoSrc1"
+      :poster="posterSrc1"
     >
       <template #subtext>
         <ContentSlot :use="$slots.subtext1" unwrap="p" />
@@ -22,8 +22,8 @@
     <SingleDescription
       image-status="block"
       image-status2="hidden"
-      :video-src="videoSrc1"
-      :poster="posterSrc1"
+      :video-src="videoSrc2"
+      :poster="posterSrc2"
       theme-color="#FA734C"
     >
       <template #subtext>
@@ -37,9 +37,9 @@
       </template>
     </SingleDescription>
     <SingleDescription
-      :image-path="image"
+      :video-src="videoSrc3"
+      :poster="posterSrc3"
       theme-color="#3C8BFF"
-      :is-shadow="false"
     >
       <template #subtext>
         <ContentSlot :use="$slots.subtext3" unwrap="p" />
@@ -54,8 +54,8 @@
     <SingleDescription
       image-status="block"
       image-status2="hidden"
-      :video-src="videoSrc2"
-      :poster="posterSrc2"
+      :video-src="videoSrc4"
+      :poster="posterSrc4"
     >
       <template #subtext>
         <ContentSlot :use="$slots.subtext4" unwrap="p" />
@@ -74,18 +74,33 @@
 const { locale } = useI18n()
 
 const videoSrc1 = computed(() => {
-  return locale.value === 'en' ? '/en/videos/opaVideo.mp4' : '/videos/opaVideo.mp4'
+  return locale.value === 'en' ? '/en/videos/1.mp4' : '/en/videos/1.mp4'
 })
 
 const posterSrc1 = computed(() => {
-  return locale.value === 'en' ? '/en/smartDescription.webp' : '/smartDescription.webp'
-})
-const videoSrc2 = computed(() => {
-  return locale.value === 'en' ? '/en/videos/sessionReplay.mp4' : '/videos/sessionReplay.mp4'
+  return locale.value === 'en' ? '/en/posters/1.png' : '/en/posters/1.png'
 })
 
+const videoSrc2 = computed(() => {
+  return locale.value === 'en' ? '/en/videos/2.mp4' : '/en/videos/2.mp4'
+})
 const posterSrc2 = computed(() => {
-  return locale.value === 'en' ? '/en/sessionReplay.jpeg' : '/sessionReplay.webp'
+  return locale.value === 'en' ? '/en/posters/2.png' : '/en/posters/2.png'
+})
+
+const videoSrc3 = computed(() => {
+  return locale.value === 'en' ? '/en/videos/3.mp4' : '/en/videos/3.mp4'
+})
+
+const posterSrc3 = computed(() => {
+  return locale.value === 'en' ? '/en/posters/3.png' : '/en/posters/3.png'
+})
+const videoSrc4 = computed(() => {
+  return locale.value === 'en' ? '/en/videos/4.mp4' : '/en/videos/4.mp4'
+})
+
+const posterSrc4 = computed(() => {
+  return locale.value === 'en' ? '/en/posters/4.png' : '/en/posters/4.png'
 })
 
 const image = computed(() => {
