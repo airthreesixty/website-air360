@@ -1,6 +1,6 @@
 ---
 title: 4 essential last-minute checks to maximize conversion rate this Black Friday & Cyber Monday
-published: 2023-11-27
+published: 2023-11-17
 tags: 
   - ecommerce
 readingTime: 10
