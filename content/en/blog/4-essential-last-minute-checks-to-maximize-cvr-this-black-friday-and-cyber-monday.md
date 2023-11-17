@@ -4,7 +4,7 @@ published: 2023-11-17
 tags: 
   - ecommerce
 readingTime: 10
-image: /blog/black-friday-and-cyber-monday/1.gif
+image: /blog/black-friday-and-cyber-monday/hero.png
 metaDesc: During these significant shopping periods like Black Friday and Christmas, the focus often lies heavily on driving traffic. However, the real impact on sales comes from how well your website converts this traffic.
 ---
 
