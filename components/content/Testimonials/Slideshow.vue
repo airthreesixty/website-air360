@@ -16,10 +16,11 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n()
 const slides = [
-  { quote: 'With Air360 we can get more people involved in making data-driven decisions on a global scale.', name: 'Nelson Fernandes', company: 'Digital Analytics Manager, Club Med', src: '/headShotClubMed.webp' },
-  { quote: 'Tracking which would have taken days to implement via GA4 takes only minutes using Air360 to access the data.', name: 'Vue 3 Components', company: 'Know the components', src: '/headShotClubMed.webp' },
-  { quote: '3', name: 'Vue 3 Conditional', company: 'Rendering Conditionally', src: '/headShotClubMed.webp' },
-  { quote: '4', name: 'Vue 3 Reactivity', company: 'VueJS is Reactive', src: '/headShotClubMed.webp' },
+  { quote: t('slideshow.quote.clubmed'), name: 'Nelson Fernandes', company: 'Digital Analytics Manager, Club Med', src: '/headShotClubMed.webp' },
+  { quote: t('slideshow.quote.psabank'), company: 'PSA Bank', src: '/psabank.svg' },
+  { quote: t('slideshow.quote.air-caraibes'), company: 'Air Caraïbes', src: '/airCaraibes.svg' },
+  { quote: t('slideshow.quote.journey-further'), name: 'Jonny Longden', company: 'CRO Expert and Influencer, Journey Further', src: '/ceo-journey-further.png' },
 ]
 </script>

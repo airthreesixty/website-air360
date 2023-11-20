@@ -396,5 +396,13 @@
   "guides": {
     "title": "101 CRO for beginners",
     "desc": "Learn the fundamentals of conversion rate optimization (CRO), its advantages, and how it differs from other marketing techniques to increase revenue."
+  },
+  "slideshow": {
+    "quote": {
+        "clubmed": "Air360を使うことで、より多くの人が世界規模でデータに基づいた意思決定に携わることができます。",
+        "psabank": "GA4を使用して実装するのに数日かかったトラッキングは、Air360を使用するとわずか数分で済みます。",
+        "air-caraibes": "Air360を使用してインサイトを得ることがどれだけ簡単で迅速か、感動です！",
+        "journey-further": "Air360の導入により、洞察への時間が短縮され、CROと収益にプラスの影響を与えるよう、お客様を支援することができるようになりました。このソリューションにより、私たちのチームはすべてのデータポイントを自動的に取得し、サイトの全面的な改修を必要とせずに改善に集中することができます。"
+    }
   }
 }
