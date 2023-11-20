@@ -45,7 +45,7 @@ interface Props {
   icon1: string
   icon2: string
   icon3: string
-  bgGray: boolean
+  bgGray?: boolean
 }
 
 withDefaults(defineProps<Props>(), {

@@ -11,8 +11,8 @@
 
 <script setup lang="ts">
 interface Props {
-    border: boolean
-    titleColor: string
+    border?: boolean
+    titleColor?: string
 }
 
 const props = withDefaults(defineProps<Props>(), {

@@ -15,7 +15,7 @@
 
 <script setup lang="ts">
 interface Props {
-  border: Boolean
+  border?: Boolean
 }
 
 withDefaults(defineProps<Props>(), {

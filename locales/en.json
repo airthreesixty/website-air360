@@ -61,7 +61,8 @@
   "organization": {
     "name": "Scalefast",
     "address": {
-      "streetAddress": "Calle de Méndez Álvaro, 9, Pl, 4ª",
+      "streetAddress": "9, Pl, 4ª",
+      "addressLocality": "Calle de Méndez Álvaro",
       "addressRegion": "Madrid",
       "postalCode": "28045",
       "addressCountry": "Spain"
