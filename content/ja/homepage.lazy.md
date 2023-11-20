@@ -135,6 +135,37 @@ Collaborate with our expert team to maximize insights and boost your CRO efforts
 ::slideshow
 ::
 
+::teams
+#title
+Air360を利用しているのは誰ですか？
+#description
+優れたデジタル体験に貢献するすべてのチームメンバーは、インサイトに富んだデータに簡単にアクセスできるべきであり、それによって彼らは、情報を基にした顧客中心の意思決定ができるようになります。
+#block
+    ::teams-block{src="/teams/cro-manager.png" role="CROマネジャー"}
+    #description
+    ユーザーの行動や実験を効果的にトラッキングし、分析の複雑さなしに戦略の影響に対する迅速で明確なインサイトを得ることができます。
+    ::
+    ::teams-block{src="/teams/product-owner.png" role="プロダクトオーナー"}
+    #description
+    デジタルの影響と機能の採用に焦点を当て、技術的な障害なしに迅速にコンバージョン効果を評価するために、あなたのロードマップを洗練させましょう。
+    ::
+    ::teams-block{src="/teams/digital-marketing-mgr.png" role="デジタルマーケティングマネジャー"}
+    #description
+    コンバージョンしなかった有料トラフィックを解読し、改善された獲得コンバージョンを通じてCPAを低減させるために、ランディング後のアクティビティに完全な可視性を得ましょう。
+    ::
+    ::teams-block{src="/teams/data-analyst.png" role="データアナリスト"}
+    #description
+    無制限の細分化を活用して分析を効率化し、迅速に障害やフラストレーションを特定し、タグ付け、マッピング、またはデータ収集の待ち時間を排除してください。
+    ::
+::
+
+::integration-slider-section
+#title
+CROエコシステムの強化
+#description
+テックスタックに統合されるオープンで統合的なプラットフォーム
+::
+
 ::cta-new
 #description
 ユーザー体験を改善し、コンバージョンを上げてみませんか？Air360なら数行のコードを追加するだけで分析を始められ、素早くインサイトを得られます。

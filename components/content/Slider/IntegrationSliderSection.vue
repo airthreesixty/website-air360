@@ -1,0 +1,48 @@
+<template>
+  <div class="max-w-[1400px] mx-auto py-10 overflow-x-hidden">
+    <div class="">
+      <div class="md:(grid grid-cols-3 items-center)">
+        <div class="container md:col-span-1">
+          <h2 class="title2 mb-6">
+            <ContentSlot :use="$slots.title" unwrap="p" />
+          </h2>
+          <p class="textp mb-10 md:mb-0">
+            <ContentSlot :use="$slots.description" unwrap="p" />
+          </p>
+        </div>
+        <div class="md:col-span-2">
+          <IntegrationSlider />
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<style scoped>
+.bg-logo {
+    background: #A2E2FE;
+    bottom: 0;
+    height: 100%;
+    left: -2rem;
+    position: absolute;
+    right: -2rem;
+    top: 0;
+    width: calc(100vw + 2rem);
+    z-index: -1;
+}
+
+.bg-logo::before {
+    background-color: inherit;
+    border-radius: 20px 20px 0 0;
+    content: "";
+    display: block;
+    height: 7rem;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: -1rem;
+    transform: skewX(-5deg) skewY(-4deg);
+    transform-origin: left bottom;
+    width: 100vw;
+}
+</style>
