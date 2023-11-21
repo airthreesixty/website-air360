@@ -1,5 +1,5 @@
 <template>
-  <div class="relative bg-slider w-full h-30 md:h-40 overflow-x-hidden">
+  <div class="relative integration-slider w-full h-30 md:h-40 overflow-x-hidden">
     <ul class="autoplay-slider h-full text-white font-bold flex">
       <li v-for="{component, left}, index in slides" :key="index" class="w-30 flex items-center justify-center">
         <div class="relative shadow-test bg-white h-25 w-25 rounded-full flex justify-center items-center">
@@ -84,15 +84,15 @@ const slides = [
 
 <style scoped>
 @media screen and (min-width: 768px) {
-  .bg-slider {
+  .integration-slider {
     clip-path: polygon(111px 0,100% 0,100% 100%,1px 100%);
   }
 }
 
 @media screen and (min-width: 1400px) {
-  .bg-slider {
-      -webkit-mask-image: linear-gradient(90deg,transparent,#000 0%,#000 97%,transparent);
-      mask-image: linear-gradient(90deg,transparent,#000 0%,#000 97%,transparent);
+  .integration-slider {
+      -webkit-mask-image: linear-gradient(90deg,transparent,#000 0.1%,#000 97%,transparent);
+      mask-image: linear-gradient(90deg,transparent,#000 0.1%,#000 970%,transparent);
   }
 }
 
