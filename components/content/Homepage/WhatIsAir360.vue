@@ -1,7 +1,7 @@
 <template>
   <section ref="target" class="relative pt-22 pb-2 md:pb-0">
-    <div class="bg-gradient-top" />
-    <div class="bg-gradient-bottom" />
+    <!-- <div class="bg-gradient-top" />
+    <div class="bg-gradient-bottom" /> -->
     <div class="container text-center">
       <div>
         <h2 class="mt-2 title2">
@@ -11,7 +11,7 @@
           <ContentSlot :use="$slots.description" unwrap="p" />
         </p>
       </div>
-      <div class="my-12">
+      <div class="my-12 md:-mb-12">
         <div class="mx-auto md:w-9/12" style="position: relative; padding-bottom: 56.25%; height: 0;">
           <iframe
             v-if="showIframe"
@@ -41,7 +41,7 @@ useIntersectionObserver(
   },
 )
 </script>
-<style scoped>
+<!-- <style scoped>
 .bg-gradient-bottom {
   background: radial-gradient(95% 100% at -3.9% 100%,#E72192 0%,#F04D66 49.80803150067764%,#C141AC 74.08234947205608%,#2D92E9 99.95393495930529%);
   position: absolute;
@@ -59,4 +59,4 @@ useIntersectionObserver(
   z-index: -1;
   inset: 0;
 }
-</style>
+</style> -->
