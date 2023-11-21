@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-[1400px] mx-auto py-10 overflow-x-hidden">
+  <div class="max-w-[1400px] mx-auto py-10 md:py-16 overflow-x-hidden">
     <div class="">
       <div class="md:(grid grid-cols-3 items-center)">
         <div class="container md:col-span-1">
