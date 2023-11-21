@@ -13,9 +13,6 @@
 
 <script setup lang="ts">
 interface Props {
-  icon1: string
-  icon2: string
-  icon3: string
   bgGray?: boolean
   dark?: boolean
 }

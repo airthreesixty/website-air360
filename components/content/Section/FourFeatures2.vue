@@ -5,7 +5,7 @@
         <h2 class="title2 mb-4">
           <ContentSlot :use="$slots.title" unwrap="p" />
         </h2>
-        <p class="text-black-600 font-bold mb-2">
+        <p class="text-black-600 font-bold text-lg mb-2">
           <ContentSlot :use="$slots.desc1" unwrap="p" />
         </p>
         <p class="text-black-600">

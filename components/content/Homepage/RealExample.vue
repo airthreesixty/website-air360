@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white">
+  <section ref="target" class="bg-white">
     <div
       class="container gap-8 items-center pt-7 xl:gap-16 md:grid md:grid-cols-2 md:py-16 lg:pb-14"
     >
@@ -24,7 +24,15 @@
           >
             <div class="flex flex-col items-center justify-center">
               <dt class="mb-2 text-3xl md:text-4xl font-extrabold">
-                +100%
+                <Vue3AutoCounter
+                  ref="counter1"
+                  :start-amount="0"
+                  :end-amount="100"
+                  :duration="3"
+                  prefix="+"
+                  suffix="%"
+                  :autoinit="false"
+                />
               </dt>
               <dd class="font-light text-gray-500 dark:text-gray-400">
                 <ContentSlot :use="$slots.achievement1" unwrap="p" />
@@ -32,7 +40,15 @@
             </div>
             <div class="flex flex-col items-center justify-center">
               <dt class="mb-2 text-3xl md:text-4xl font-extrabold">
-                +50%
+                <Vue3AutoCounter
+                  ref="counter2"
+                  :start-amount="0"
+                  :end-amount="50"
+                  :duration="3"
+                  prefix="+"
+                  suffix="%"
+                  :autoinit="false"
+                />
               </dt>
               <dd class="font-light text-gray-500 dark:text-gray-400">
                 <ContentSlot :use="$slots.achievement2" unwrap="p" />
@@ -47,11 +63,36 @@
 </template>
 
 <script setup lang="ts">
+import Vue3AutoCounter from 'vue3-autocounter'
+
 interface Props {
   border?: Boolean
 }
 
 withDefaults(defineProps<Props>(), {
   border: () => false,
+})
+
+const target = ref()
+const counter1 = ref()
+const counter2 = ref()
+
+const start = () => {
+  counter1.value?.start()
+  counter2.value?.start()
+}
+
+const observer: Ref<IntersectionObserver | null | undefined> = ref(null)
+
+onMounted(() => {
+  observer.value = new IntersectionObserver(([entry]) => {
+    if (entry.isIntersecting) {
+      start()
+      observer.value?.unobserve(entry.target)
+    }
+  }, {
+    threshold: 0.5,
+  })
+  observer.value.observe(target.value)
 })
 </script>
