@@ -11,21 +11,28 @@ title: データアクティベーション
 セグメントをA/Bテストに適用したり、個別化ソリューションを活用してより良いeコマース体験を創造し、コンバージョンを向上させることで、より迅速に結果を生み出すことができます。
 ::
 
-::three-features{icon1="person-walking-luggage" icon2="flask" icon3="crosshairs-simple" bgGray}
+::three-features{bgGray}
 #title
 セグメントを活性化
-#title1
-ユーザージャーニーを個別にカスタマイズ
-#desc1
-行動セグメントを活用して、動的コンテンツと個別化ツールを充実化。
-#title2
-テストを適切なターゲットに向けて展開
-#desc2
-Air360セグメントを活用して、お気に入りのA/Bテストソリューション内でターゲットの実験を展開。
-#title3
-離脱ユーザーを再ターゲティング
-#desc3
-関連するセグメントを特定し、それらをマーケティング自動化ツールに送信して再ターゲティング。
+#block
+    ::three-features-block{icon="person-walking-luggage"}
+    #title
+    ユーザージャーニーを個別にカスタマイズ
+    #description
+    行動セグメントを活用して、動的コンテンツと個別化ツールを充実化。
+    ::
+    ::three-features-block{icon="flask"}
+    #title
+    テストを適切なターゲットに向けて展開
+    #description
+    Air360セグメントを活用して、お気に入りのA/Bテストソリューション内でターゲットの実験を展開。
+    ::
+    ::three-features-block{icon="crosshairs-simple"}
+    #title
+    離脱ユーザーを再ターゲティング
+    #description
+    関連するセグメントを特定し、それらをマーケティング自動化ツールに送信して再ターゲティング。
+    ::
 ::
 
 ::left-block{slug="/data-integrations"}

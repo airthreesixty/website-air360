@@ -8,7 +8,7 @@ export default defineConfig({
     container: 'max-w-screen-[1400px] mx-auto px-6 lg:px-8',
     title1: 'font-bold text-4xl text-black-600 lg:text-5xl xl:text-6xl',
     title2: 'font-bold text-3xl text-black-600 lg:text-4xl',
-    title3: 'text-xl text-black lg:text-2xl xl:text-3xl',
+    title3: 'text-xl text-black-600 lg:text-2xl xl:text-3xl',
     textp: 'text-gray-500 lg:text-lg',
   },
   plugins: [require('windicss/plugin/typography'), flowbite],

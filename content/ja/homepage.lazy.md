@@ -8,30 +8,89 @@
 Air360はウェブサイト上の顧客体験を簡単に理解できるデジタル体験分析ツールです。今までの分析方法では見えなかった顧客の行動を明らかにし、より使いやすいウェブサイト作りを可能にします。
 ::
 
+::three-features{dark}
+#title
+完全なCRO分析のための頼れるプラットフォーム
+#block
+    ::three-features-block{icon="gauge-max" dark}
+    #title
+    即座の完全な可視性
+    #description
+    デジタルジャーニーの洞察と変換の機会を迅速に明らかにします。
+    ::
+    ::three-features-block{icon="crosshairs-simple" dark}
+    #title
+    最適化の焦点
+    #description
+    最大のコンバージョン利益を得るために、高影響の領域やセグメントをターゲットにします。
+    ::
+    ::three-features-block{icon="flask" dark}
+    #title
+    テストの影響
+    #description
+    ユーザーエクスペリエンスにおけるA/Bテストや行動の包括的な影響を評価。
+    ::
+::
+
 ::what-air360-offers2
 #mainTitle
 Why Air360
 #subtext1
-発見
+COLLECT
 #title1
-顧客を深く理解する
+超軽量、ノーコード、ノータグ、スムーズなデータ収集
 #description1
-顧客の行動データを活用して離脱の原因を簡単に分析可能。バグの修正箇所を把握できるだけでなく、顧客が戻ってきたくなるウェブサイト体験を促進します。
+市場をリードするAir360の軽量スクリプトを使用して、スムーズなタグなしのアナリティクスを体験してください。イベントや実験のタグ付けやマッピングの手間を省き、シームレスな統合とユーザーの行動分析を実現します。
 #subtext2
-すぐ始められる
+DEFINE
 #title2
-ノーコードで簡単操作
+CROエコシステム向けの精密なセグメンテーション
 #description2
-<!-- エンジニア不要！簡単な設定だけで分析を開始できます。
-データ収集まで数ヶ月待たずに、リアルタイムで直ぐインサイトを得られます。 -->
-<!-- 自動で全て行動ログがトラッキングされるので、データ収集まで数ヶ月待たないでOK。最短7日でインサイトが見つかり、3ヶ月で最大+55％購買率の向上が目指せます。 -->
-初期設定も実際の分析も誰でもできる仕様です。5分の簡単な初期設定で全ての行動ログのトラッキングを自動で開始し、分析を開始できます。
+Air360のイベント駆動型アナリティクスは、詳細なユーザーインサイトを提供し、超微細で実行可能なセグメントの作成を可能にします。これにより、パーソナライズされた戦略、効果的なA/Bテスト、およびユーザーエクスペリエンスの向上が実現され、コンバージョン率を著しく向上させます。
 #subtext3
-加速
+ANALYZE
 #title3
-素早い成果
+急速な明確さでドロップオフの理由を解明
 #description3
-自動で全て行動ログがトラッキングされるので、データ収集まで数ヶ月待たないでOK。最短7日でインサイトが見つかり、3ヶ月で最大+55％購買率の向上が目指せます。
+Air360は自動的にすべてのユーザーのクリック、経路、行動、またはイベントを追跡し、URLベースのアナリティクスにおける死角を排除します。詳細なユーザージャーニーを提供し、ページ訪問後のアクション、見えないデジタル経路、および離脱の理由を明らかにします。
+#subtext4
+ACTIVATE
+#title4
+分析を加速し、CROを迅速に向上
+#description4
+当社の使いやすいプラグインでチームを統一し、退屈なデータ分析をワンクリックのタスクに変えましょう。数秒で迅速な行動メトリクスやテスト結果にアクセスし、放棄率を最小限に抑え、コンバージョンを増加させる戦略に変えます。
+::
+
+::cross-functional
+#mainTitle
+アナリティクスを通じたクロスファンクショナルな影響
+#blocks
+    ::cross-functional-block{:border=false}
+    #title
+    ユーザー体験を向上させる
+    #desc
+    - 放棄率を減少
+    - 「カートに追加」を増加
+    - コンバージョンを増加
+    ::
+
+    ::cross-functional-block{titleColor="#FA734C"}
+    #title
+    マーケティングの取り組みを最大化
+    #desc
+    - 顧客獲得単価を削減
+    - チャネルに着地後の体験を最適化
+    - キャンペーンのコンバージョンを向上
+    ::
+
+    ::cross-functional-block{titleColor="#3C8BFF"}
+    #title
+    即座に投資利益率を実証
+    #desc
+    - コンバージョンを増加
+    - より多くの顧客を獲得
+    - 収益を増加
+    ::
 ::
 
 ::real-example
@@ -45,13 +104,73 @@ Why Air360
 オプション保存率
 ::
 
-::testimonial2{alt="Club Medのデータ分析マネジャー" src="/headShotClubMed.webp"}
+<!-- ::four-features2
+#title 
+UXアナリティクスを超えて
+#desc1
+Build your CRO Roadmap with Air360 experts as your extended team
+#desc2
+Collaborate with our expert team to maximize insights and boost your CRO efforts.
+
+#block
+    ::four-features2-block{icon="toolbox"}
+    #title
+    Custom Onboarding
+    #desc
+    Tailored to your existing data & challenges, guiding you in UX analysis.
+    ::
+    ::four-features2-block{icon="handshake-angle"}
+    #title
+    Ongoing CRO Workshops
+    #desc
+    Regular sessions with your CRO specialist to co-create your roadmap and prioritize impactful optimizations.
+    ::
+    ::four-features2-block{icon="user-shakespeare"}
+    #title
+    Dedicated CRO specialist
+    #desc
+    Scale optimization with a dedicated manager guiding your team from onboarding to success.
+    ::
+    ::four-features2-block{icon="headset"}
+    #title
+    Rapid Technical Support
+    #desc
+    Swift, responsive support tailored to your analytics requirements.
+    ::
+:: -->
+
+::slideshow
+::
+
+::teams
 #title
-Air360を使うことで、より多くの人が世界規模でデータに基づいた意思決定に携わることができます。
-#role
-Digital Analytics Manager, Club Med
-#name
-Nelson Fernandes
+Air360を利用しているのは誰ですか？
+#description
+優れたデジタル体験に貢献するすべてのチームメンバーは、インサイトに富んだデータに簡単にアクセスできるべきであり、それによって彼らは、情報を基にした顧客中心の意思決定ができるようになります。
+#block
+    ::teams-block{src="/teams/cro-manager.png" role="CROマネジャー"}
+    #description
+    ユーザーの行動や実験を効果的にトラッキングし、分析の複雑さなしに戦略の影響に対する迅速で明確なインサイトを得ることができます。
+    ::
+    ::teams-block{src="/teams/product-owner.png" role="プロダクトオーナー"}
+    #description
+    デジタルの影響と機能の採用に焦点を当て、技術的な障害なしに迅速にコンバージョン効果を評価するために、あなたのロードマップを洗練させましょう。
+    ::
+    ::teams-block{src="/teams/digital-marketing-mgr.png" role="デジタルマーケティングマネジャー"}
+    #description
+    コンバージョンしなかった有料トラフィックを解読し、改善された獲得コンバージョンを通じてCPAを低減させるために、ランディング後のアクティビティに完全な可視性を得ましょう。
+    ::
+    ::teams-block{src="/teams/data-analyst.png" role="データアナリスト"}
+    #description
+    無制限の細分化を活用して分析を効率化し、迅速に障害やフラストレーションを特定し、タグ付け、マッピング、またはデータ収集の待ち時間を排除してください。
+    ::
+::
+
+::integration-slider-section
+#title
+CROエコシステムの強化
+#description
+テックスタックに統合されるオープンで統合的なプラットフォーム
 ::
 
 ::cta-new

@@ -3,36 +3,98 @@
 Say hello to insights<br>
 Say goodbye to headaches
 #description
-Air360 is an eCommerce experience analysis tool that makes it easy to understand customer experience on your website. It reveals customer behaviors that are invisible to conventional analysis methods, enabling you to create a more user-friendly website.
+Air360 simplifies the process of comprehending the digital user experience.
+It reveals customer behaviors that are invisible to conventional analysis methods. Enabling quicker, more intuitive digital experience creation that boosts analysis efficiency and enhances conversion rate.
+::
+
+::three-features{dark}
+#title
+The Go-To platform for complete CRO analysis
+#block
+    ::three-features-block{icon="gauge-max" dark}
+    #title
+    Instant Full Visibility
+    #description
+    Uncover digital journey insights and conversion opportunities fast.
+    ::
+    ::three-features-block{icon="crosshairs-simple" dark}
+    #title
+    Optimization Focus
+    #description
+    Uncover digital journey insights and conversion opportunities fast.
+    ::
+    ::three-features-block{icon="flask" dark}
+    #title
+    Testing Impact
+    #description
+    Evaluate the holistic impact of A/B tests or actions on user experience.
+    ::
 ::
 
 ::what-air360-offers2
 #mainTitle
 Why Air360
 #subtext1
-DISCOVER
+COLLECT
 #title1
-Deeply understand your customers
+Ultra-light, no-code, no-tag painless data collection
 #description1
-Customer behavior data can be used to easily analyze the causes of abandonment. Not only do you know where to fix bugs, but you also facilitate a website experience that makes customers want to come back.
+Experience smooth no-tag analytics with Air360's market-leading lightweight script. Eliminate the hassle of tagging and mapping any events or experiments for seamless integration and user behavior analysis.
 #subtext2
-Plug and Play
+DEFINE
 #title2
-No-code, easy operation
+Precise segmentation for the CRO ecosystem
 #description2
-Both the initial setup and the actual analysis can be done by anyone: a simple 5-minute initial setup automatically starts tracking and analyzing all activity logs.
+Air360's event-driven analytics provide in-depth user insights and enable the creation of hyper-granular & actionable segments. This leads to personalized strategies, effective A/B testing, and improved user experiences, significantly boosting conversion rates.
 #subtext3
 BOOST
 #title3
-Quick Results
+Rapid clarity to unmask dropoff reasons
 #description3
-Don’t wait months for data collection. Find insights in as little as 7 days and aim to 
-increase conversion rate by up to +55% in 3 months.
+Air360 automatically tracks every user click, path, interaction or event, eliminating blind spots in URL-based analytics. It provides detailed user journeys revealing post-landing actions, unseen digital paths, and reasons for abandonment.
+#subtext4
+ACTIVATE
+#title4
+Speed up analysis & fast-track CRO
+#description4
+Unify your team with our easy-to-use plugin, transforming tedious data analysis into a  one-click task. Access rapid behavioral metrics & test results in seconds, not days, and turn them into strategies that minimize abandonment & increase conversion.
+::
+
+::cross-functional
+#mainTitle
+Cross-functional impact through analytics
+#blocks
+    ::cross-functional-block{:border=false}
+    #title
+    Improve your experience
+    #desc
+    - Reduce abandonment
+    - Increase add-to-cart
+    - Increase conversion
+    ::
+
+    ::cross-functional-block{titleColor="#FA734C"}
+    #title
+    Maximize marketing efforts
+    #desc
+    - Reduce CPA
+    - Optimize channel post-landing experience 
+    - Improve campaign conversion
+    ::
+
+    ::cross-functional-block{titleColor="#3C8BFF"}
+    #title
+    Prove ROI immediately
+    #desc
+    - Multiply conversions
+    - Get more customers
+    - Increase revenue
+    ::
 ::
 
 ::real-example
 #title
-Achievement
+Real Achievement
 #description
 [Club Med]{.font-bold}, which operates approximately 70 resorts in 24 countries, has seen a significant increase in sales since implementing Air360, with a +100% conversion rate and a +50% retention rate for options.
 #achievement1
@@ -41,13 +103,73 @@ Conversion rate
 Retention rate
 ::
 
-::testimonial2{src="/headShotClubMed.webp" alt="Digital Analytics Manager of Club Med"}
+::four-features2
+#title 
+Beyond UX analytics
+#desc1
+Build your CRO Roadmap with Air360 experts as your extended team
+#desc2
+Collaborate with our expert team to maximize insights and boost your CRO efforts.
+
+#block
+    ::four-features2-block{icon="toolbox"}
+    #title
+    Custom Onboarding
+    #desc
+    Tailored to your existing data & challenges, guiding you in UX analysis.
+    ::
+    ::four-features2-block{icon="handshake-angle"}
+    #title
+    Ongoing CRO Workshops
+    #desc
+    Regular sessions with your CRO specialist to co-create your roadmap and prioritize impactful optimizations.
+    ::
+    ::four-features2-block{icon="user-shakespeare"}
+    #title
+    Dedicated CRO specialist
+    #desc
+    Scale optimization with a dedicated manager guiding your team from onboarding to success.
+    ::
+    ::four-features2-block{icon="headset"}
+    #title
+    Rapid Technical Support
+    #desc
+    Swift, responsive support tailored to your analytics requirements.
+    ::
+::
+
+::slideshow
+::
+
+::teams
 #title
-With Air360 we can get more people involved in making data-driven decisions on a global scale.
-#name 
-Nelson Fernandes
-#role
-Digital Analytics Manager, Club Med
+Who uses Air360?
+#description
+All team members contributing to a superior digital experience should have easy access to insightful data, enabling them to make informed, customer-focused decisions.
+#block
+    ::teams-block{src="/teams/cro-manager.png" role="CRO Manager"}
+    #description
+    Track user behavior and experiments effortlessly, gaining fast, clear insights into strategy impact without analytic complexities.
+    ::
+    ::teams-block{src="/teams/product-owner.png" role="Product Owner"}
+    #description
+    Refine your roadmap focusing on digital impact and feature adoption, quickly gauging conversion effects without technical hurdles.
+    ::
+    ::teams-block{src="/teams/digital-marketing-mgr.png" role="Digital Marketing Mgr"}
+    #description
+    Obtain full visibility into post-landing activities to decipher non-converting paid traffic and lower CPA through improved acquisition conversion.
+    ::
+    ::teams-block{src="/teams/data-analyst.png" role="Data Analyst"}
+    #description
+    Streamline analysis with limitless granularity, swiftly identify blockers & frustrations, and eliminate tagging, mapping, or waiting on data collection.
+    ::
+::
+
+::integration-slider-section
+#title
+Empowering your CRO ecosystem
+#description
+An open, integrative platform that feeds your tech-stack.
 ::
 
 ::cta-new

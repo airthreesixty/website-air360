@@ -55,13 +55,14 @@
   "esw-homepage": "ESW Homepage",
   "we-are": "We are",
   "part-of": "part of",
-  "title1": "The new way",
-  "title2": "to grow",
-  "title3": "your eCommerce fast",
+  "title1": "Simplify",
+  "title2": "UX analysis,",
+  "title3": "boost conversion",
   "organization": {
     "name": "Scalefast",
     "address": {
-      "streetAddress": "Calle de Méndez Álvaro, 9, Pl, 4ª",
+      "streetAddress": "9, Pl, 4ª",
+      "addressLocality": "Calle de Méndez Álvaro",
       "addressRegion": "Madrid",
       "postalCode": "28045",
       "addressCountry": "Spain"
@@ -404,5 +405,13 @@
   "guides": {
     "title": "101 CRO for beginners",
     "desc": "Learn the fundamentals of conversion rate optimization (CRO), its advantages, and how it differs from other marketing techniques to increase revenue."
+  },
+  "slideshow": {
+    "quote": {
+        "clubmed": "With Air360 we can get more people involved in making data-driven decisions on a global scale.",
+        "psabank": "Tracking which would have taken days to implement via GA4 takes only minutes using Air360 to access the data.",
+        "air-caraibes": "It's impressive how easy and fast it is to get insights using Air360!",
+        "journey-further": "With Air360 we are gaining faster time to insights so we can help customers drive towards a positive impact on CRO and revenue."
+    }
   }
 }

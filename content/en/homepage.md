@@ -1,8 +1,6 @@
 ::home-page-hero
 #description
-eCommerce experience insights that help you spot 
-all opportunities to increase conversion & prioritize 
-decisions to boost revenue fast.
+Air360 is the UX analytics platform that uncovers hidden user behaviors and decodes the end-to-end  user experience, speeding up CRO efforts.
 ::
 
 ::company-logos

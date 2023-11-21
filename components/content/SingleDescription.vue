@@ -98,10 +98,6 @@ const props = defineProps({
     type: String,
     default: '',
   },
-  icon: {
-    type: String,
-    required: true,
-  },
   themeColor: {
     type: String,
     default: '#e74b91',
