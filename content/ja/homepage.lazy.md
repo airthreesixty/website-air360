@@ -148,19 +148,27 @@ Air360を利用しているのは誰ですか？
 #description
 優れたデジタル体験を提供するためには、チームメンバー全員がインサイトに富んだデータに簡単にアクセスできるようになるべきで、これによって情報に基づいた顧客中心の意思決定が可能になります。
 #block
-    ::teams-block{src="/teams/cro-manager.png" role="CROマネジャー"}
+    ::teams-block{src="/teams/cro-manager.png"}
+    #role
+    CROマネジャー
     #description
     ユーザーの行動や実験を効果的にトラッキングし、分析の複雑さなしに、迅速に戦略の影響に対する明確なインサイトを得られます。
     ::
-    ::teams-block{src="/teams/product-owner.png" role="プロダクトオーナー"}
+    ::teams-block{src="/teams/product-owner.png"}
+    #role
+    プロダクトオーナー
     #description
     デジタルの影響と機能の採用に焦点を当て、技術的な障害なしに迅速にコンバージョン効果を測定するために、ロードマップを洗練させます。
     ::
-    ::teams-block{src="/teams/digital-marketing-mgr.png" role="デジタルマーケティングマネジャー"}
+    ::teams-block{src="/teams/digital-marketing-mgr.png"}
+    #role
+    デジタルマーケティング<span class="inline-block">マネジャー</span>
     #description
     コンバージョンしなかった有料トラフィックを解読し、改善された獲得コンバージョンを通じて顧客獲得単価を減らすために、ランディング後の行動を完全に可視化。
     ::
-    ::teams-block{src="/teams/data-analyst.png" role="データアナリスト"}
+    ::teams-block{src="/teams/data-analyst.png"}
+    #role
+    データアナリスト
     #description
     無制限の細分化を活用して分析を効率化し、迅速に障害やフラストレーションを特定し、タグ付け、マッピング、またはデータ収集の待ち時間を排除します。
     ::
