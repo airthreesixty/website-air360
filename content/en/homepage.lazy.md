@@ -147,19 +147,27 @@ Who uses Air360?
 #description
 All team members contributing to a superior digital experience should have easy access to insightful data, enabling them to make informed, customer-focused decisions.
 #block
-    ::teams-block{src="/teams/cro-manager.png" role="CRO Manager"}
+    ::teams-block{src="/teams/cro-manager.png"}
+    #role
+    CRO Manager
     #description
     Track user behavior and experiments effortlessly, gaining fast, clear insights into strategy impact without analytic complexities.
     ::
-    ::teams-block{src="/teams/product-owner.png" role="Product Owner"}
+    ::teams-block{src="/teams/product-owner.png"}
+    #role
+    Product Owner
     #description
     Refine your roadmap focusing on digital impact and feature adoption, quickly gauging conversion effects without technical hurdles.
     ::
-    ::teams-block{src="/teams/digital-marketing-mgr.png" role="Digital Marketing Mgr"}
+    ::teams-block{src="/teams/digital-marketing-mgr.png"}
+    #role
+    Digital Marketing Mgr
     #description
     Obtain full visibility into post-landing activities to decipher non-converting paid traffic and lower CPA through improved acquisition conversion.
     ::
-    ::teams-block{src="/teams/data-analyst.png" role="Data Analyst"}
+    ::teams-block{src="/teams/data-analyst.png"}
+    #role
+    Data Analyst
     #description
     Streamline analysis with limitless granularity, swiftly identify blockers & frustrations, and eliminate tagging, mapping, or waiting on data collection.
     ::
