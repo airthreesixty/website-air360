@@ -11,7 +11,7 @@
           <ContentSlot :use="$slots.description" unwrap="p" />
         </p>
       </div>
-      <div class="my-12 md:-mb-12">
+      <div class="my-12 md:-mb-12 lg:-mb-30">
         <div class="mx-auto md:w-9/12" style="position: relative; padding-bottom: 56.25%; height: 0;">
           <iframe
             v-if="showIframe"

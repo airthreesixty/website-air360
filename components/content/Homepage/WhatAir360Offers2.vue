@@ -1,5 +1,5 @@
 <template>
-  <section class="container pt-10 md:pt-5">
+  <section class="container pt-10 md:pt-10">
     <h2
       class="mb-2 title2 text-black-600 text-center"
     >
