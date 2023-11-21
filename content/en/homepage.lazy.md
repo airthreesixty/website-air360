@@ -174,5 +174,5 @@ An open, integrative platform that feeds your tech-stack.
 
 ::cta-new
 #description
-Unlock you eCommerce full conversion potential with Air360, whether you feel comfortable with numbers, or not.
+Decode on-site behavior, reveal hidden journeys, and accelerate conversion with Air360.
 ::
