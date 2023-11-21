@@ -1,6 +1,6 @@
 <template>
   <div class="text-center grid-card">
-    <nuxt-img class="mx-auto mb-4 w-45 h-45 rounded-lg" :src="src" alt="Avatar" />
+    <nuxt-img class="mx-auto w-45 h-45 rounded-lg" :src="src" alt="Avatar" />
     <div class="-mb-5 text-2xl text-white font-bold">
       <ContentSlot :use="$slots.role" unwrap="p" />
     </div>
