@@ -18,9 +18,28 @@ title: データ収集
 Air360ピクセルをウェブサイトに実装するだけで、すべてのデータが自動的にトラッキングされます。わずか1行のJavaScriptコードで、ユーザーのすべての動きがキャプチャされます。
 ::
 
-::three-features{icon1="cart-shopping" icon2="face-diagonal-mouth" icon3="person-walking"}
+::three-features
 #title
 必要なデータポイントを簡単に収集し、<span class="md:inline-block">より良い意思決定を</span>
+#block
+    ::three-features-block{icon="cart-shopping"}
+    #title
+    ユーザージャーニー
+    #description
+    クリック数、マウスオーバー、ページビュー、セッション、ためらい時間など、ユーザーがコンテンツとストアの機能とのやり取りをどのように行っているかを理解し、エンゲージメントメトリクスをさらに収集できます。
+    ::
+    ::three-features-block{icon="face-diagonal-mouth"}
+    #title
+    ユーザーのフラストレーション
+    #description
+    レイジクリックや不規則な動きなどの変換を妨げる要素や、ユーザージャーニー上の障害を可視化するために、フラストレーションのサインや技術的なエラーなどを特定できます。
+    ::
+    ::three-features-block{icon="person-walking"}
+    #title
+    ショッピングおよび購買行動
+    #description
+    ユーザーの行動がビジネスの結果に与える影響を理解し、獲得とロイヤリティの戦略を改善します。
+    ::
 #title1
 ユーザージャーニー
 #desc1

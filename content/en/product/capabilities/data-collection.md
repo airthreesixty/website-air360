@@ -14,9 +14,30 @@ No more tagging & coding
 All your data is auto-tracked by implementing Air360 Pixel to your website. 1 line of Javascript code and every user interaction will be captured.
 ::
 
-::three-features{icon1="cart-shopping" icon2="face-diagonal-mouth" icon3="person-walking"}
+::three-features
 #title
 Easily collect any data point you need, to make better decisions
+#block
+    ::three-features-block{icon="cart-shopping"}
+    #title
+    User journeys
+    #description
+    Track, clicks, mouse overs, pageviews, sessions, hesitation time, and more engagement metrics that will help you understand how users interact with your content and adopt your store’s features.
+    ::
+    ::three-features-block{icon="face-diagonal-mouth"}
+    #title
+    User frustration
+    #description
+    Uncover conversion blockers like rage clicks, erratic movements , and any frustration signal or  technical errors to visualize obstacles on your user journeys.
+    ::
+    ::three-features-block{icon="person-walking"}
+    #title
+    Shopping & purchase behavior
+    #description
+    Understand the impact of your user behavior on your business results to improve your acquisition and loyalty strategy.
+    ::
+
+
 #title1
 User journeys
 #desc1

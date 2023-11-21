@@ -7,21 +7,28 @@ Turn insights into actions
 Generate results faster by pushing segments to your A/B testing or personalization solutions to create better eCommerce experiences and boost conversion.
 ::
 
-::three-features{icon1="person-walking-luggage" icon2="flask" icon3="crosshairs-simple" bgGray}
+::three-features{bgGray}
 #title
 Active your segments to:
-#title1
-Personalize your user journeys
-#desc1
-Enrich your dynamic content and personalization tools with behavioral segments.
-#title2
-Push experiments to the right audience
-#desc2
-Push Air360 segments to create targeted experiments inside your favorite A/B testing solution.
-#title3
-Retarget abandoned users
-#desc3
-Identify relevant segments & push them to your marketing automation tool to retarget them.
+#block
+    ::three-features-block{icon="person-walking-luggage" }
+    #title
+    Personalize your user journeys
+    #description
+    Enrich your dynamic content and personalization tools with behavioral segments.
+    ::
+    ::three-features-block{icon="flask" }
+    #title
+    Push experiments to the right audience
+    #description
+    Push Air360 segments to create targeted experiments inside your favorite A/B testing solution.
+    ::
+    ::three-features-block{icon="crosshairs-simple" }
+    #title
+    Retarget abandoned users
+    #description
+    Identify relevant segments & push them to your marketing automation tool to retarget them.
+    ::
 ::
 
 ::left-block{slug="/data-integrations"}

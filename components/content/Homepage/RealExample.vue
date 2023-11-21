@@ -1,7 +1,7 @@
 <template>
   <section class="bg-white">
     <div
-      class="container gap-8 items-center pt-7 xl:gap-16 md:grid md:grid-cols-2 md:py-16 lg:pt-6 lg:pb-14"
+      class="container gap-8 items-center pt-7 xl:gap-16 md:grid md:grid-cols-2 md:py-16 lg:pb-14"
     >
       <nuxt-img loading="lazy" format="webp" class="w-full h-auto shadow-lg rounded-lg md:hidden dark:hidden" src="/clubmedResort.jpg" :alt="$t('clubmed-pic')" />
       <div class="mt-4 md:mt-0">
