@@ -1,5 +1,5 @@
 <template>
-  <section class="container pt-10 md:pt-10">
+  <section class="container pt-20 md:pt-16">
     <h2
       class="mb-2 title2 text-black-600 text-center"
     >
@@ -101,9 +101,5 @@ const videoSrc4 = computed(() => {
 
 const posterSrc4 = computed(() => {
   return locale.value === 'en' ? '/en/posters/4.png' : '/en/posters/4.png'
-})
-
-const image = computed(() => {
-  return locale.value === 'en' ? '/en/product/analyze.png' : '/analyze.png'
 })
 </script>

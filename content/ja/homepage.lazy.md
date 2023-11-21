@@ -14,13 +14,13 @@ Air360はウェブサイト上の顧客体験を簡単に理解できるデジ�
 #block
     ::three-features-block{icon="gauge-max" dark}
     #title
-    即座の完全な可視性
+    瞬時に全体を可視化
     #description
-    デジタルジャーニーの洞察と変換の機会を迅速に明らかにします。
+    最大のコンバージョンを得るために、デジタル体験のインサイトを発見し最適化を支援します。
     ::
     ::three-features-block{icon="crosshairs-simple" dark}
     #title
-    最適化の焦点
+    最適化にフォーカス
     #description
     最大のコンバージョン利益を得るために、高影響の領域やセグメントをターゲットにします。
     ::
@@ -28,7 +28,7 @@ Air360はウェブサイト上の顧客体験を簡単に理解できるデジ�
     #title
     テストの影響
     #description
-    ユーザーエクスペリエンスにおけるA/Bテストや行動の包括的な影響を評価。
+    A/Bテストや特定のアクションがユーザー体験に与える全体的な影響を評価します。
     ::
 ::
 
@@ -63,7 +63,7 @@ ACTIVATE
 
 ::cross-functional
 #mainTitle
-アナリティクスを通じたクロスファンクショナルな影響
+分析を通じた横断的な影響力
 #blocks
     ::cross-functional-block{:border=false}
     #title
@@ -76,18 +76,18 @@ ACTIVATE
 
     ::cross-functional-block{titleColor="#FA734C"}
     #title
-    マーケティングの取り組みを最大化
+    マーケティングの取り組みを最大限活用
     #desc
     - 顧客獲得単価を削減
-    - チャネルに着地後の体験を最適化
+    - チャネル別にランディング後の体験を最適化
     - キャンペーンのコンバージョンを向上
     ::
 
     ::cross-functional-block{titleColor="#3C8BFF"}
     #title
-    即座に投資利益率を実証
+    ROIを素早く
     #desc
-    - コンバージョンを増加
+    - さらにコンバージョンを増加
     - より多くの顧客を獲得
     - 収益を増加
     ::
