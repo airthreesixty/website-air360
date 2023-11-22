@@ -21,8 +21,8 @@
 import { useIntersectionObserver } from '@vueuse/core'
 
 interface Props {
-  order: number
-  color: string
+  order?: number
+  color?: string
 }
 
 const props = withDefaults(defineProps<Props>(), {

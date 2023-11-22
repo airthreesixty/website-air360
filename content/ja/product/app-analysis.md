@@ -100,7 +100,7 @@ Air360では、複数のデバイスやドメインからデータを収集す�
 ビジネス上のあらゆる疑問に答えるために、ユーザーの足跡や指紋をデータでたどります。ユーザーが購入に至らず、ウェブサイトから離脱してしまった原因を素早く発見できます。
 ::
 
-::product-description{order=0}
+::product-description{:order="0"}
 ::tabs
     ::tab{name="データ出力"}
     ::tab-image{src="/en/product/dataExport.webp"}

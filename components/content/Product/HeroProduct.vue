@@ -32,7 +32,7 @@
 
 <script setup lang="ts">
 interface Props {
-  app: boolean
+  app?: boolean
   src: string
 }
 

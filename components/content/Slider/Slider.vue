@@ -13,7 +13,7 @@
 
 <script setup lang="ts">
 interface Props {
-  mobile: boolean
+  mobile?: boolean
 }
 
 const props = withDefaults(defineProps<Props>(), {

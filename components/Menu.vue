@@ -133,7 +133,6 @@ const runtimeConfig = useRuntimeConfig()
 const route = useRoute()
 
 const isActive = ref(false)
-
 const isLangActive = ref(false)
 const isInspirationActive = ref(false)
 const isProductActive = ref(false)
@@ -190,7 +189,7 @@ const handleResize = () => {
   }
 }
 
-watch(route, () => {
+watch(() => route.path, () => {
   isActive.value = false
   isProductActive.value = false
 })

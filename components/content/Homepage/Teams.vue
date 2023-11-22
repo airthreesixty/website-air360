@@ -10,10 +10,8 @@
         </p>
       </div>
       <div class="grid gap-6 -mt-12 md:grid-cols-2 lg:grid-cols-4">
-        <!-- <div class="flex flex-col gap-6 -mt-12 md:flex-wrap"> -->
         <slot name="block" />
       </div>
-      <!-- </div> -->
     </div>
   </section>
 </template>

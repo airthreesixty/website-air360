@@ -97,7 +97,7 @@ Spot all your opportunities to increase revenue
 Limitless answers to unsolved business questions. Follow user footprints and fingerprints, and quickly discover the obstacles that make your audience leave your website without converting.
 ::
 
-::product-description{order=0}
+::product-description{:order="0"}
 ::tabs
     ::tab{name="Data export"}
     ::tab-image{src="/en/product/dataExport.webp"}
