@@ -11,35 +11,34 @@
           <ContentSlot :use="$slots.description" unwrap="p" />
         </p>
       </div>
-      <div class="my-12 md:-mb-12 lg:-mb-30">
-        <div class="mx-auto md:w-9/12" style="position: relative; padding-bottom: 56.25%; height: 0;">
-          <iframe
-            v-if="showIframe"
-            src="https://www.loom.com/embed/ec06bf3738f64c8e960b2c0eccaf89b0?sid=cb91bf0c-e504-4098-91d4-c7afbbb919dc?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
-            frameborder="0"
-            webkitallowfullscreen
-            mozallowfullscreen
-            allowfullscreen
-            style="position: absolute; top: 0; left: 0; width: 100%;"
-            class="rounded-lg h-full md:h-9/12"
-          />
-        </div>
+      <div class="mt-5 mb-3 max-w-[650px] mx-auto">
+        <nuxt-img loading="lazy" sizes="xl:1390px lg:1034px md:754px sm:1184px xs:277px" format="webp" :src="src" />
       </div>
     </div>
   </section>
 </template>
 <script setup lang="ts">
-import { useIntersectionObserver } from '@vueuse/core'
-const target = ref(null)
-const showIframe = ref(false)
-useIntersectionObserver(
-  target,
-  ([{ isIntersecting }]) => {
-    if (!showIframe.value && isIntersecting) {
-      showIframe.value = true
-    }
-  },
-)
+// import { useIntersectionObserver } from '@vueuse/core'
+
+const { locale } = useI18n()
+// const target = ref(null)
+// const showIframe = ref(false)
+// useIntersectionObserver(
+//   target,
+//   ([{ isIntersecting }]) => {
+//     if (!showIframe.value && isIntersecting) {
+//       showIframe.value = true
+//     }
+//   },
+// )
+
+const src = computed(() => {
+  if (locale.value === 'en') {
+    return '/en/headaches.png'
+  }
+
+  return '/headaches.png'
+})
 </script>
 <!-- <style scoped>
 .bg-gradient-bottom {

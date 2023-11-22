@@ -23,12 +23,27 @@
             />
           </div>
         </div>
-        <h2
-          class="mb-1 max-w-[448px] lg:max-w-[560px] md:text-lg mx-auto text-center font-light text-gray-500 md:text-base lg:mb-8 lg:text-xl xl:leading-8"
+        <p
+          class="mb-1 max-w-[448px] lg:max-w-[560px] md:text-lg mx-auto text-center font-light text-gray-500 md:text-base lg:text-xl xl:leading-8"
         >
           <ContentSlot :use="$slots.description" unwrap="p" />
-        </h2>
-        <div class="pt-3 mt-6 mb-2 w-52 mx-auto md:items-center">
+        </p>
+        <div>
+          <div class="md:(max-w-[600px] mx-auto flex justify-center) lg:max-w-[900px]">
+            <div class="mt-6 md:w-7/12 lg:w-1/2" style="position: relative; padding-bottom: 56.25%; height: 0;">
+              <iframe
+                src="https://www.loom.com/embed/ec06bf3738f64c8e960b2c0eccaf89b0?sid=cb91bf0c-e504-4098-91d4-c7afbbb919dc?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
+                frameborder="0"
+                webkitallowfullscreen
+                mozallowfullscreen
+                allowfullscreen
+                style="position: absolute; top: 0; left: 0; width: 100%;"
+                class="rounded-lg h-full md:h-7/12 lg:h-1/2"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="pt-3 mt-6 md:-mt-30 lg:-mt-52 mb-2 w-52 mx-auto md:items-center">
           <span class="bg-button bg-button1" />
           <span class="bg-button bg-button2" />
           <span class="bg-button bg-button3" />
