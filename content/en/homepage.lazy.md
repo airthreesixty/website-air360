@@ -1,7 +1,7 @@
 ::what-is-air360
 #title
-Say hello to insights<br>
-Say goodbye to headaches
+Say hello to quick insights<br>
+Say goodbye to analytics headaches
 #description
 Air360 simplifies the process of comprehending the digital user experience.
 It reveals customer behaviors that are invisible to conventional analysis methods. Enabling quicker, more intuitive digital experience creation that boosts analysis efficiency and enhances conversion rate.
@@ -9,7 +9,7 @@ It reveals customer behaviors that are invisible to conventional analysis method
 
 ::three-features{dark}
 #title
-The Go-To platform for complete CRO analysis
+The Go-To platform for complete & flexible CRO analysis
 #block
     ::three-features-block{icon="gauge-max" dark}
     #title
@@ -21,7 +21,7 @@ The Go-To platform for complete CRO analysis
     #title
     Optimization Focus
     #description
-    Uncover digital journey insights and conversion opportunities fast.
+    Target high-impact areas and segments for maximum conversion gains.
     ::
     ::three-features-block{icon="flask" dark}
     #title
@@ -47,7 +47,7 @@ Precise segmentation for the CRO ecosystem
 #description2
 Air360's event-driven analytics provide in-depth user insights and enable the creation of hyper-granular & actionable segments. This leads to personalized strategies, effective A/B testing, and improved user experiences, significantly boosting conversion rates.
 #subtext3
-BOOST
+ANALYZE
 #title3
 Rapid clarity to unmask dropoff reasons
 #description3
