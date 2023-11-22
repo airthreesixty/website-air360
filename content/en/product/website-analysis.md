@@ -120,7 +120,7 @@ Create high quality first-party data segments that can be pushed to your tech st
 
 ::testimonial2{alt="CRO Expert and Influencer, Journey Further" src="/ceo-journey-further.png"}
 #title
-With Air360 we are gaining faster time to insights so we can help customers drive towards a positive impact on CRO and revenue. The solution allows our team to capture all data points automatically whilst we focus on improvements without the need for a full revamp of their site.
+With Air360 we are gaining faster time to insights so we can help customers drive towards a positive impact on CRO and revenue.
 #role
 CRO Expert and Influencer, Journey Further
 #name
