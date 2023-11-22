@@ -34,30 +34,47 @@ The Go-To platform for complete & flexible CRO analysis
 ::what-air360-offers2
 #mainTitle
 Why Air360
-#subtext1
-COLLECT
-#title1
-Ultra-light, no-code, and data collection
-#description1
-Experience smooth no-tag analytics with Air360's market-leading lightweight script. Eliminate the hassle of tagging and mapping any events or experiments for seamless integration and user behavior analysis.
-#subtext2
-ACTIVATE
-#title2
-Speed up analysis & fast-track CRO
-#description2
-Unify your team with our easy-to-use plugin, transforming tedious data analysis into a  one-click task. Access rapid behavioral metrics & test results in seconds, not days, and turn them into strategies that minimize abandonment & increase conversion.
-#subtext3
-ANALYZE
-#title3
-Rapid clarity to unmask dropoff reasons
-#description3
-Air360 automatically tracks every user click, path, interaction or event, eliminating blind spots in URL-based analytics. It provides detailed user journeys revealing post-landing actions, unseen digital paths, and reasons for abandonment.
-#subtext4
-DEFINE
-#title4
-Precise segmentation for the CRO ecosystem
-#description4
-Air360's event-driven analytics provide in-depth user insights and enable the creation of hyper-granular & actionable segments. This leads to personalized strategies, effective A/B testing, and improved user experiences, significantly boosting conversion rates.
+#descriptions
+    ::single-description{video-src="/en/videos/1.mp4" poster="/en/posters/1.png" slug="/en/product/capabilities/data-collection/"}
+    #subtext
+    COLLECT
+    #title
+    Ultra-light, no-code, and data collection
+    #description
+    Experience smooth no-tag analytics with Air360's market-leading lightweight script. Eliminate the hassle of tagging and mapping any events or experiments for seamless integration and user behavior analysis.
+    #more
+    Learn More
+    ::
+    ::single-description{image-status="block" image-status2="hidden" video-src="/en/videos/2.mp4" poster="/en/posters/2.png" theme-color="#FA734C" slug="/en/product/capabilities/events-segments/"}
+    #subtext
+    ACTIVATE
+    #title
+    Speed up analysis & fast-track CRO
+    #description
+    Unify your team with our easy-to-use plugin, transforming tedious data analysis into a one-click task. Access rapid behavioral metrics & test results in seconds, not days, and turn them into strategies that minimize abandonment & increase conversion.
+    #more
+    Learn More
+    ::
+    ::single-description{video-src="/en/videos/3.mp4" poster="/en/posters/3.png" theme-color="#3C8BFF" slug="/en/product/capabilities/data-analysis/"}
+    #subtext
+    ANALYZE
+    #title
+    Rapid clarity to unmask dropoff reasons
+    #description
+    Air360 automatically tracks every user click, path, interaction or event, eliminating blind spots in URL-based analytics. It provides detailed user journeys revealing post-landing actions, unseen digital paths, and reasons for abandonment.
+    #more
+    Learn More
+    ::
+    ::single-description{image-status="block" image-status2="hidden" video-src="/en/videos/4.mp4" poster="/en/posters/4.png" slug="/en/product/capabilities/data-activation/"}
+    #subtext
+    DEFINE
+    #title
+    Precise segmentation for the CRO ecosystem
+    #description
+    Air360's event-driven analytics provide in-depth user insights and enable the creation of hyper-granular & actionable segments. This leads to personalized strategies, effective A/B testing, and improved user experiences, significantly boosting conversion rates.
+    #more
+    Learn More
+    ::
 ::
 
 ::cross-functional

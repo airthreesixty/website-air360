@@ -42,8 +42,10 @@
         <div class="max-w-2xl text-left mt-5 font-light prose text-gray-500 text-lg lg:text-xl xl:leading-8">
           <slot name="description" />
         </div>
-        <div v-if="$slots.button" class="w-35 mt-5">
-          <slot name="button" />
+        <div v-if="$slots.more" class="mt-5">
+          <NuxtLink :to="slug" class="icon-color font-bold hover:opacity-80">
+            <slot name="more" />
+          </NuxtLink>
         </div>
       </div>
       <div :class="`hidden md:${imageStatus2}  md:mt-0 md:flex md:w-[58%] md:p-5`">

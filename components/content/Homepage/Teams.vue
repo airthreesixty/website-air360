@@ -1,6 +1,6 @@
 <template>
   <section class="bg-white container py-8">
-    <div class="bg-gray-800 px-4 py-8 rounded-5xl mx-auto max-w-screen-xl text-center md:py-16 lg:px-6">
+    <div class="bg-gray-700 px-4 py-8 rounded-5xl mx-auto max-w-screen-xl text-center md:py-16 lg:px-6">
       <div class="mx-auto mb-8 lg:mb-8 max-w-screen-sm">
         <h2 class="mb-4 title2 text-white">
           <ContentSlot :use="$slots.title" unwrap="p" />

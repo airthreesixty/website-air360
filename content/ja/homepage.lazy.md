@@ -35,30 +35,47 @@ Air360はウェブサイト上の顧客体験を簡単に理解できるデジ�
 ::what-air360-offers2
 #mainTitle
 Why Air360
-#subtext1
-COLLECT
-#title1
-超軽量、ノーコード、スムーズなデータ収集
-#description1
-市場をリードするAir360の軽量スクリプトを使用して、スムーズなタグなしのアナリティクスを体験してください。イベントや実験のタグ付けやマッピングの手間を省き、シームレスな統合とユーザーの行動分析を実現します。
-#subtext2
-ACTIVATE
-#title2
-分析を加速し、CROを迅速に向上
-#description2
-当社の使いやすいプラグインでチームを統一し、退屈なデータ分析をワンクリックのタスクに変えましょう。数秒で迅速な行動メトリクスやテスト結果にアクセスし、放棄率を最小限に抑え、コンバージョンを増加させる戦略に変えます。
-#subtext3
-ANALYZE
-#title3
-急速な明確さでドロップオフの理由を解明
-#description3
-Air360は自動的にすべてのユーザーのクリック、経路、行動、またはイベントを追跡し、URLベースのアナリティクスにおける死角を排除します。詳細なユーザージャーニーを提供し、ページ訪問後のアクション、見えないデジタル経路、および離脱の理由を明らかにします。
-#subtext4
-DEFINE
-#title4
-CROエコシステム向けの精密なセグメンテーション
-#description4
-Air360のイベント駆動型アナリティクスは、詳細なユーザーインサイトを提供し、超微細で実行可能なセグメントの作成を可能にします。これにより、パーソナライズされた戦略、効果的なA/Bテスト、およびユーザーエクスペリエンスの向上が実現され、コンバージョン率を著しく向上させます。
+#descriptions
+    ::single-description{video-src="/videos/collect.mp4" poster="/posters/collect.png" slug="/ja/product/capabilities/data-collection/"}
+    #subtext
+    COLLECT
+    #title
+    超軽量、ノーコード、スムーズなデータ収集
+    #description
+    市場をリードするAir360の軽量スクリプトを使用して、スムーズなタグなしのアナリティクスを体験してください。イベントや実験のタグ付けやマッピングの手間を省き、シームレスな統合とユーザーの行動分析を実現します。
+    #more
+    Learn More
+    ::
+    ::single-description{image-status="block" image-status2="hidden" video-src="/en/videos/activate.mp4" poster="/posters/activate.png" theme-color="#FA734C" slug="/ja/product/capabilities/events-segments/"}
+    #subtext
+    ACTIVATE
+    #title
+    分析を加速し、CROを迅速に向上
+    #description
+    当社の使いやすいプラグインでチームを統一し、退屈なデータ分析をワンクリックのタスクに変えましょう。数秒で迅速な行動メトリクスやテスト結果にアクセスし、放棄率を最小限に抑え、コンバージョンを増加させる戦略に変えます。
+    #more
+    Learn More
+    ::
+    ::single-description{video-src="/videos/analyze.mp4" poster="/posters/analyze.png" theme-color="#3C8BFF" slug="/ja/product/capabilities/data-analysis/"}
+    #subtext
+    ANALYZE
+    #title
+    急速な明確さでドロップオフの理由を解明
+    #description
+    Air360は自動的にすべてのユーザーのクリック、経路、行動、またはイベントを追跡し、URLベースのアナリティクスにおける死角を排除します。詳細なユーザージャーニーを提供し、ページ訪問後のアクション、見えないデジタル経路、および離脱の理由を明らかにします。
+    #more
+    Learn More
+    ::
+    ::single-description{image-status="block" image-status2="hidden" video-src="/videos/define.mp4" poster="/posters/define.png" slug="/ja/product/capabilities/data-activation/"}
+    #subtext
+    DEFINE
+    #title
+    CROエコシステム向けの精密なセグメンテーション
+    #description
+    Air360のイベント駆動型アナリティクスは、詳細なユーザーインサイトを提供し、超微細で実行可能なセグメントの作成を可能にします。これにより、パーソナライズされた戦略、効果的なA/Bテスト、およびユーザーエクスペリエンスの向上が実現され、コンバージョン率を著しく向上させます。
+    #more
+    Learn More
+    ::
 ::
 
 ::cross-functional

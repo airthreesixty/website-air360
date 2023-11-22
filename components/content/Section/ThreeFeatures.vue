@@ -1,6 +1,6 @@
 <template>
   <section class="bg-white container" :class="{'mt-10 md:(mt-15 mb-10)': dark}">
-    <div :class="{'bg-gray-50 rounded-3xl': bgGray, 'bg-gray-800 rounded-3xl': dark}" class="py-8 px-4 mx-auto text-center sm:py-16 lg:px-6">
+    <div :class="{'bg-gray-50 rounded-3xl': bgGray, 'bg-gray-700 rounded-3xl': dark}" class="py-8 px-4 mx-auto text-center sm:py-16 lg:px-6">
       <h2 class="mb-4 title2 max-w-[900px] mx-auto" :class="{'text-white':dark}">
         <ContentSlot :use="$slots.title" unwrap="p" />
       </h2>
