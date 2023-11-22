@@ -190,11 +190,13 @@ All team members contributing to a superior digital experience should have easy 
     ::
 ::
 
-::integration-slider-section
+::integration-slider-section{slug="/en/data-integrations/"}
 #title
 Empowering your CRO ecosystem
 #description
 An open, integrative platform that feeds your tech-stack.
+#more
+Learn More
 ::
 
 ::cta-new

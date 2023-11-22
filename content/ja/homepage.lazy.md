@@ -191,11 +191,13 @@ Air360を利用しているのは誰ですか？
     ::
 ::
 
-::integration-slider-section
+::integration-slider-section{slug="/ja/data-integrations/"}
 #title
 CROエコシステムの強化
 #description
 テックスタックに統合されるオープンで統合的なプラットフォーム
+#more 
+Learn More
 ::
 
 ::cta-new

@@ -6,17 +6,28 @@
           <h2 class="title2 mb-6">
             <ContentSlot :use="$slots.title" unwrap="p" />
           </h2>
-          <p class="textp mb-10 md:mb-0">
+          <p class="textp mb-2">
             <ContentSlot :use="$slots.description" unwrap="p" />
           </p>
+          <NuxtLink :to="slug" class="text-primary-600 font-bold hover:opacity-80">
+            <ContentSlot :use="$slots.more" unwrap="p" />
+          </NuxtLink>
         </div>
-        <div class="md:col-span-2">
+        <div class="mt-6 md:(col-span-2 mt-0)">
           <IntegrationSlider />
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+interface Props {
+  slug: string
+}
+
+defineProps<Props>()
+</script>
 
 <style scoped>
 .bg-logo {
