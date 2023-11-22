@@ -28,7 +28,7 @@
         >
           <ContentSlot :use="$slots.description" unwrap="p" />
         </p>
-        <div>
+        <div class="relative -z-1">
           <div class="md:(max-w-[600px] mx-auto flex justify-center) lg:max-w-[900px]">
             <div class="mt-6 md:w-7/12 lg:w-1/2" style="position: relative; padding-bottom: 56.25%; height: 0;">
               <iframe
@@ -43,7 +43,7 @@
             </div>
           </div>
         </div>
-        <div class="pt-3 mt-6 md:-mt-30 lg:-mt-52 mb-2 w-52 mx-auto md:items-center">
+        <div class="relative z-1 pt-3 mt-6 md:-mt-30 lg:-mt-52 mb-2 w-52 mx-auto md:items-center">
           <span class="bg-button bg-button1" />
           <span class="bg-button bg-button2" />
           <span class="bg-button bg-button3" />
