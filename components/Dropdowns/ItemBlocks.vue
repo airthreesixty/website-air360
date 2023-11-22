@@ -6,7 +6,7 @@
           <template #items>
             <DropdownsItems slug="/product/website-analysis" icon="laptop" :text="$t('product-dropdown.website-analysis')" text-color="text-primary-600" />
             <DropdownsItems slug="/product/app-analysis" icon="mobile" :text="$t('product-dropdown.app-analysis')" text-color="text-primary-600" />
-            <DropdownsItems slug="/product-tour" icon="ticket-airline" :text="$t('product-dropdown.product-tour')" text-color="text-primary-600" />
+            <DropdownsItems v-if="locale === 'en'" slug="/product-tour" icon="ticket-airline" :text="$t('product-dropdown.product-tour')" text-color="text-primary-600" />
           </template>
         </DropdownsSubItems>
         <DropdownsSubItems :title="$t('product-dropdown.capabilities')">
