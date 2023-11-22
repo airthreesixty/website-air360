@@ -4,7 +4,7 @@ Say hello to quick insights<br>
 Say goodbye to analytics headaches
 #description
 Air360 simplifies the process of comprehending the digital user experience.
-It reveals customer behaviors that are invisible to conventional analysis methods. Enabling quicker, more intuitive digital experience creation that boosts analysis efficiency and enhances conversion rate.
+It reveals customer behaviors that are invisible to conventional analysis methods.
 ::
 
 ::three-features{dark}
@@ -45,9 +45,9 @@ Why Air360
     #more
     Learn More
     ::
-    ::single-description{image-status="block" image-status2="hidden" video-src="/en/videos/2.mp4" poster="/en/posters/2.png" theme-color="#FA734C" slug="/en/product/capabilities/events-segments/"}
+    ::single-description{image-status="block" image-status2="hidden" video-src="/en/videos/4.mp4" poster="/en/posters/4.png" slug="/en/product/capabilities/data-activation/" theme-color="#FA734C"}
     #subtext
-    ACTIVATE
+    DEFINE
     #title
     Speed up analysis & fast-track CRO
     #description
@@ -65,9 +65,9 @@ Why Air360
     #more
     Learn More
     ::
-    ::single-description{image-status="block" image-status2="hidden" video-src="/en/videos/4.mp4" poster="/en/posters/4.png" slug="/en/product/capabilities/data-activation/"}
+    ::single-description{image-status="block" image-status2="hidden" video-src="/en/videos/2.mp4" poster="/en/posters/2.png" slug="/en/product/capabilities/events-segments/"}
     #subtext
-    DEFINE
+    ACTIVATE
     #title
     Precise segmentation for the CRO ecosystem
     #description

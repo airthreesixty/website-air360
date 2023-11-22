@@ -46,9 +46,9 @@ Why Air360
     #more
     Learn More
     ::
-    ::single-description{image-status="block" image-status2="hidden" video-src="/en/videos/activate.mp4" poster="/posters/activate.png" theme-color="#FA734C" slug="/ja/product/capabilities/events-segments/"}
+    ::single-description{image-status="block" image-status2="hidden" video-src="/en/videos/define.mp4" poster="/posters/define.png" theme-color="#FA734C" slug="/ja/product/capabilities/events-segments/"}
     #subtext
-    ACTIVATE
+    DEFINE
     #title
     分析を加速し、CROを迅速に向上
     #description
@@ -66,9 +66,9 @@ Why Air360
     #more
     Learn More
     ::
-    ::single-description{image-status="block" image-status2="hidden" video-src="/videos/define.mp4" poster="/posters/define.png" slug="/ja/product/capabilities/data-activation/"}
+    ::single-description{image-status="block" image-status2="hidden" video-src="/videos/activate.mp4" poster="/posters/activate.png" slug="/ja/product/capabilities/data-activation/"}
     #subtext
-    DEFINE
+    ACTIVATE
     #title
     CROエコシステム向けの精密なセグメンテーション
     #description
