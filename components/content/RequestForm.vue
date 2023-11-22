@@ -42,7 +42,7 @@ import { useScriptTag } from '@vueuse/core'
 const { locale } = useI18n()
 const redirectUrl = computed(() => {
   if (locale.value === 'en') {
-    return 'https://lp.air360.io/meetings/tom-hanley/15-inbound'
+    return 'https://lp.air360.io/meetings/teresa-huertas'
   }
 })
 
