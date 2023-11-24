@@ -79,6 +79,7 @@ const src = computed(() => {
   filter: blur(30px);
   z-index: -1;
   position: absolute;
+  opacity: 0.7;
 }
 
 /* .test-blur::before {
