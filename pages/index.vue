@@ -41,7 +41,7 @@ useSeoMeta({
   description: t('index.description'),
   ogDescription: t('index.ogDescription'),
   ogTitle: t('index.ogTitle'),
-  ogImage: '/heroIllustration.webp',
+  ogImage: '/card.png',
   twitterCard: 'summary_large_image',
   ogUrl: `${runtimeConfig.public.baseUrl}/${locale.value}/`,
 })
@@ -49,7 +49,7 @@ useSeoMeta({
 useSchemaOrg([
   defineWebSite({
     name: t('index.title'),
-    image: '/heroIllustration.webp',
+    image: '/card.png',
   }),
   defineOrganization({
     name: t('organization.name'),
@@ -63,7 +63,7 @@ useSchemaOrg([
     sameAs: ['https://www.linkedin.com/company/air360/', 'https://twitter.com/weareair360', 'https://www.instagram.com/weareair360/'],
   }),
   defineWebPage({
-    image: '/heroIllustration.webp',
+    image: '/card.png',
   }),
 ])
 </script>
