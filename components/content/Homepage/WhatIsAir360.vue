@@ -3,16 +3,20 @@
     <!-- <div class="bg-gradient-top" />
     <div class="bg-gradient-bottom" /> -->
     <div class="container text-center">
-      <div>
-        <h2 class="mt-2 title2">
-          <ContentSlot :use="$slots.title" unwrap="p" />
-        </h2>
-        <p class="mx-auto mt-5 max-w-prose textp xl:leading-8">
-          <ContentSlot :use="$slots.description" unwrap="p" />
-        </p>
-      </div>
-      <div class="mt-5 mb-3 max-w-[650px] mx-auto">
-        <nuxt-img loading="lazy" sizes="xl:1390px lg:1034px md:754px sm:1184px xs:277px" format="webp" :src="src" />
+      <div class="">
+        <div>
+          <h2 class="mt-2 title2">
+            <ContentSlot :use="$slots.title" unwrap="p" />
+          </h2>
+          <p class="mx-auto mt-5 max-w-prose textp xl:leading-8">
+            <ContentSlot :use="$slots.description" unwrap="p" />
+          </p>
+        </div>
+        <div class="relative mt-5 mb-3 max-w-[650px] mx-auto">
+          <div class="image-blur">
+            <nuxt-img class="rounded-[14px]" loading="lazy" sizes="xl:1390px lg:1034px md:754px sm:1184px xs:277px" format="webp" :src="src" />
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -40,8 +44,8 @@ const src = computed(() => {
   return '/headaches.png'
 })
 </script>
-<!-- <style scoped>
-.bg-gradient-bottom {
+<style scoped>
+/* .bg-gradient-bottom {
   background: radial-gradient(95% 100% at -3.9% 100%,#E72192 0%,#F04D66 49.80803150067764%,#C141AC 74.08234947205608%,#2D92E9 99.95393495930529%);
   position: absolute;
   right: unset;
@@ -57,5 +61,36 @@ const src = computed(() => {
   right: unset;
   z-index: -1;
   inset: 0;
+} */
+.image-blur {
+  background: linear-gradient(#fff,hsla(0,0%,100%,0)) padding-box,linear-gradient(90deg,#2D92E9,#C141AC,#E72192,#F04D66,#FD7043) border-box;
+  border: 1px solid transparent;
+  border-radius: 14px;
+  width: 100%;
+  height: 100%;
 }
-</style> -->
+
+.image-blur::before {
+  background: linear-gradient(#fff,hsla(0,0%,100%,0)) padding-box,linear-gradient(90deg,#2D92E9,#C141AC,#E72192,#F04D66,#FD7043) border-box;
+  content: '';
+  height: 100%;
+  width: 100%;
+  display: block;
+  filter: blur(30px);
+  z-index: -1;
+  position: absolute;
+}
+
+/* .test-blur::before {
+  background-image: linear-gradient(90deg, #C141AC,#E72192);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border: 12px solid transparent;
+  background-clip: padding-box;
+  content: "";
+  filter:blur(36px);
+  z-index: -1;
+  opacity: 0.8;
+} */
+</style>
