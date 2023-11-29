@@ -46,7 +46,7 @@ Why Air360
     #more
     Learn More
     ::
-    ::single-description{image-status="block" image-status2="hidden" video-src="/en/videos/define.mp4" poster="/posters/define.png" theme-color="#FA734C" slug="/ja/product/capabilities/events-segments/"}
+    ::single-description{image-status="block" image-status2="hidden" video-src="/videos/define.mp4" poster="/posters/define.png" theme-color="#FA734C" slug="/ja/product/capabilities/events-segments/"}
     #subtext
     DEFINE
     #title
