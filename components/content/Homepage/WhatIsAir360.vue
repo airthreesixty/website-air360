@@ -3,19 +3,17 @@
     <!-- <div class="bg-gradient-top" />
     <div class="bg-gradient-bottom" /> -->
     <div class="container text-center">
-      <div class="">
-        <div>
-          <h2 class="mt-2 title2">
-            <ContentSlot :use="$slots.title" unwrap="p" />
-          </h2>
-          <p class="mx-auto mt-5 max-w-prose textp xl:leading-8">
-            <ContentSlot :use="$slots.description" unwrap="p" />
-          </p>
-        </div>
-        <div class="relative mt-5 mb-12 md:mb-30 max-w-[650px] mx-auto">
-          <div class="image-blur">
-            <nuxt-img class="rounded-[14px]" loading="lazy" sizes="xl:1390px lg:1034px md:754px sm:1184px xs:277px" format="webp" :src="src" />
-          </div>
+      <div>
+        <h2 class="mt-2 title2">
+          <ContentSlot :use="$slots.title" unwrap="p" />
+        </h2>
+        <p class="mx-auto mt-5 max-w-prose textp xl:leading-8">
+          <ContentSlot :use="$slots.description" unwrap="p" />
+        </p>
+      </div>
+      <div class="relative mt-5 mb-12 md:mb-30 max-w-[650px] mx-auto">
+        <div class="image-blur">
+          <nuxt-img class="rounded-[14px]" loading="lazy" sizes="xl:1390px lg:1034px md:754px sm:1184px xs:277px" format="webp" :src="src" />
         </div>
       </div>
     </div>
