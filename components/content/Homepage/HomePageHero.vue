@@ -28,7 +28,7 @@
         >
           <ContentSlot :use="$slots.description" unwrap="p" />
         </p>
-        <div class="relative -z-1">
+        <div class="relative">
           <div class="md:(max-w-[600px] mx-auto flex justify-center) lg:max-w-[900px]">
             <div class="mt-6 md:w-7/12 lg:w-1/2" style="position: relative; padding-bottom: 56.25%; height: 0;">
               <iframe
