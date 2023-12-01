@@ -1,6 +1,6 @@
 <template>
   <div class="relative border-b border-gray-500 md:(border-none)" :class="{'vertical-border': border}">
-    <h3 class="title-color text-2xl font-bold mb-6">
+    <h3 class="text-black-600 text-2xl font-bold mb-6">
       <ContentSlot :use="$slots.title" unwrap="p" />
     </h3>
     <div class="prose mb-6 text-gray-500">
