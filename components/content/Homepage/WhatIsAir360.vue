@@ -1,5 +1,5 @@
 <template>
-  <section ref="target" class="relative pt-22 pb-2 md:pb-0">
+  <section ref="target" class="relative pt-13 pb-2 md:pb-0 lg:mt-5">
     <!-- <div class="bg-gradient-top" />
     <div class="bg-gradient-bottom" /> -->
     <div class="container text-center">

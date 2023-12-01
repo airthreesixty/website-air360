@@ -12,6 +12,5 @@ Air360ではeコマースサイトのポテンシャルを最大限に引き出�
 ビデオを見る
 ::
 
-::company-logos
-
+::slider-companies2
 ::

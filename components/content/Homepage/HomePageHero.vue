@@ -1,7 +1,7 @@
 <template>
   <div class="relative">
     <div
-      class="container pt-46 md:pt-58 lg:pt-70 pb-22 lg:pb-16"
+      class="container pt-46 md:pt-58 lg:pt-70 pb-15 lg:pb-16"
     >
       <div class="place-self-center">
         <div class="flex justify-center">
