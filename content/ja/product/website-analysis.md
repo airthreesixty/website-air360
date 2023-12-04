@@ -121,7 +121,7 @@ Air360では、複数のデバイスやドメインからデータを収集す�
 Air360上で作成したユーザーセグメントをA/Bテスト、マーケティング、パーソナライゼーションなどのソリューションに接続することで、より良いeコマース体験を生み出し、購買率を向上させることができます。
 ::
 
-::testimonial2{alt="CROエキスパート＆インフルエンサー, Journey Further" src="/ceo-journey-further.png"}
+::testimonial2{alt="CROエキスパート＆インフルエンサー, Journey Further" src="/ceo-journey-further.webp"}
 #title
 Air360の導入により、洞察への時間が短縮され、CROと収益にプラスの影響を与えるよう、お客様を支援することができるようになりました。
 #role

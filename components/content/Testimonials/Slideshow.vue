@@ -21,6 +21,6 @@ const slides = [
   { quote: t('slideshow.quote.clubmed'), name: 'Nelson Fernandes', company: 'Digital Analytics Manager, Club Med', src: '/headShotClubMed.webp' },
   { quote: t('slideshow.quote.psabank'), company: 'PSA Bank', src: '/psabank.svg' },
   { quote: t('slideshow.quote.air-caraibes'), company: 'Air Caraïbes', src: '/airCaraibes.svg' },
-  { quote: t('slideshow.quote.journey-further'), name: 'Jonny Longden', company: 'CRO Expert and Influencer, Journey Further', src: '/ceo-journey-further.png' },
+  { quote: t('slideshow.quote.journey-further'), name: 'Jonny Longden', company: 'CRO Expert and Influencer, Journey Further', src: '/ceo-journey-further.webp' },
 ]
 </script>

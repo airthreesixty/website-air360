@@ -118,7 +118,7 @@ Generate results faster by pushing segments to your A/B testing , marketing or p
 Create high quality first-party data segments that can be pushed to your tech stack, or used in your analysis.
 ::
 
-::testimonial2{alt="CRO Expert and Influencer, Journey Further" src="/ceo-journey-further.png"}
+::testimonial2{alt="CRO Expert and Influencer, Journey Further" src="/ceo-journey-further.webp"}
 #title
 With Air360 we are gaining faster time to insights so we can help customers drive towards a positive impact on CRO and revenue.
 #role
