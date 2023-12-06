@@ -20,21 +20,44 @@ const LogoBrandAirCaraibes = resolveComponent('LogoBrandAirCaraibes')
 const LogoBrandDubreuil = resolveComponent('LogoBrandDubreuil')
 const LogoBrandPsaBank = resolveComponent('LogoBrandPsaBank')
 const LogoBrandProduct = resolveComponent('LogoBrandProduct')
+// const LogoBrandEdigroup = resolveComponent('LogoBrandEdigroup')
+const LogoBrandStellantis = resolveComponent('LogoBrandStellantis')
+const LogoBrandPlaybac = resolveComponent('LogoBrandPlaybac')
 
 const logos = [{
   component: LogoBrandClubMed,
   scale: 0.8,
   width: 50,
 },
+// {
+//   component: LogoBrandEdigroup,
+//   scale: 1,
+//   width: 40,
+// },
 {
   component: LogoBrandVerychic,
   scale: 0.85,
   width: 50,
 },
 {
+  component: LogoBrandStellantis,
+  scale: 1,
+  width: 60,
+},
+{
+  component: LogoBrandPlaybac,
+  scale: 1,
+  width: 40,
+},
+{
   component: LogoBrandOlympiqueLyonnais,
   scale: 1,
-  width: 25,
+  width: 20,
+},
+{
+  component: LogoBrandPsaBank,
+  scale: 2.7,
+  width: 30,
 },
 {
   component: LogoBrandMaVilleMonShopping,
@@ -49,11 +72,6 @@ const logos = [{
 {
   component: LogoBrandDubreuil,
   scale: 1,
-  width: 25,
-},
-{
-  component: LogoBrandPsaBank,
-  scale: 2.7,
   width: 25,
 },
 {
@@ -84,6 +102,10 @@ const slider = computed(() => {
   g {
     @apply !fill-gray-500;
   }
+
+  /* rect {
+    @apply !fill-gray-500;
+  } */
 }
 
 .autoplay-slider-hero {
