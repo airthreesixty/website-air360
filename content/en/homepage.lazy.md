@@ -120,34 +120,31 @@ Conversion rate
 Retention rate
 ::
 
-::four-features2
-#title 
+::four-blocks
+#title
 Beyond UX analytics
-#desc1
-Build your CRO Roadmap with Air360 experts as your extended team
-#desc2
-Collaborate with our expert team to maximize insights and boost your CRO efforts.
-
-#block
-    ::four-features2-block{icon="toolbox"}
+#desc
+Build your CRO Roadmap with Air360 experts as your extended
+#blocks
+    ::four-blocks-block{icon="toolbox"}
     #title
     Custom Onboarding
     #desc
     Tailored to your existing data & challenges, guiding you in UX analysis.
     ::
-    ::four-features2-block{icon="handshake-angle"}
+    ::four-blocks-block{icon="handshake-angle"}
     #title
     Ongoing CRO Workshops
     #desc
     Regular sessions with your CRO specialist to co-create your roadmap and prioritize impactful optimizations.
     ::
-    ::four-features2-block{icon="user-shakespeare"}
+    ::four-blocks-block{icon="user-shakespeare"}
     #title
     Dedicated CRO specialist
     #desc
     Scale optimization with a dedicated manager guiding your team from onboarding to success.
     ::
-    ::four-features2-block{icon="headset"}
+    ::four-blocks-block{icon="headset"}
     #title
     Rapid Technical Support
     #desc
