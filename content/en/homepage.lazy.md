@@ -39,7 +39,7 @@ Why Air360
     #subtext
     COLLECT
     #title
-    Ultra-light, no-code, and data collection
+    Ultra-light, no-code, and painless data collection
     #description
     Experience smooth no-tag analytics with Air360's market-leading lightweight script. Eliminate the hassle of tagging and mapping any events or experiments for seamless integration and user behavior analysis.
     #more
