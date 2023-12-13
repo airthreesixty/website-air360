@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white">
+  <section class="bg-white md:hidden">
     <div class="container">
       <Carousel :items-to-show="1" :wrap-around="true" :autoplay="3000">
         <Slide v-for="{quote, name, company, src}, index in slides" :key="index">

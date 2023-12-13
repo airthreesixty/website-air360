@@ -156,6 +156,43 @@ Collaborate with our expert team to maximize insights and boost your CRO efforts
     ::
 :: -->
 
+::all-testimonials
+#title
+お客様の声
+#desc
+Air360を活用しているクライアント様は主要なユーザーエクスペリエンスのインサイトを得て、コンバージョンの最適化を促進しています。以下は直接クライアント様から共有された成功事例です。
+#testimonials
+    ::single-testimonial{src="/headShotClubMed.webp"}
+    #quote
+    Air360を使うことで、より多くの人が世界規模でデータに基づいた意思決定に携わることができます。
+    #name
+    Nelson Fernandes
+    #company
+    Digital Analytics Manager, Club Med
+    ::
+    ::single-testimonial{src="/psabank.svg"}
+    #quote
+    GA4を使用して実装するのに数日かかったトラッキングは、Air360を使用するとわずか数分で済みます。
+    #company
+    PSA Bank
+    ::
+#testimonials2
+    ::single-testimonial{src="/airCaraibes.webp"}
+    #quote
+    Air360を使用してインサイトを得ることがどれだけ簡単で迅速か、感動です！
+    #company
+    Air Caraïbes
+    ::
+    ::single-testimonial{src="/ceo-journey-further.webp"}
+    #quote
+    Air360の導入により、洞察への時間が短縮され、CROと収益にプラスの影響を与えるよう、お客様を支援することができるようになりました。
+    #name
+    Jonny Longden
+    #company
+    CRO Expert and Influencer, Journey Further
+    ::
+::
+
 ::slideshow
 ::
 

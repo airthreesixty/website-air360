@@ -152,6 +152,43 @@ Build your CRO Roadmap with Air360 experts as your extended
     ::
 ::
 
+::all-testimonials
+#title
+What they say about us
+#desc
+Clients harness Air360 for key UX insights, boosting conversion optimization. Our G2 ratings are a solid endorsement, but don't just take our word for it – here are some of our success stories, shared directly by our clients.
+#testimonials
+    ::single-testimonial{src="/headShotClubMed.webp"}
+    #quote
+    With Air360 we can get more people involved in making data-driven decisions on a global scale.
+    #name
+    Nelson Fernandes
+    #company
+    Digital Analytics Manager, Club Med
+    ::
+    ::single-testimonial{src="/psabank.svg"}
+    #quote
+    Tracking which would have taken days to implement via GA4 takes only minutes using Air360 to access the data.
+    #company
+    PSA Bank
+    ::
+#testimonials2
+    ::single-testimonial{src="/airCaraibes.webp"}
+    #quote
+    It's impressive how easy and fast it is to get insights using Air360!
+    #company
+    Air Caraïbes
+    ::
+    ::single-testimonial{src="/ceo-journey-further.webp"}
+    #quote
+    With Air360 we are gaining faster time to insights so we can help customers drive towards a positive impact on CRO and revenue.
+    #name
+    Jonny Longden
+    #company
+    CRO Expert and Influencer, Journey Further
+    ::
+::
+
 ::slideshow
 ::
 
