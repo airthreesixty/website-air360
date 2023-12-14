@@ -7,7 +7,8 @@
     </blockquote>
     <figcaption class="flex items-center space-x-3">
       <img
-        class="w-20 object-cover"
+        class="object-cover"
+        :class="width"
         :src="src"
         alt="avatar"
       >
@@ -24,6 +25,7 @@
 <script setup lang="ts">
 interface Props {
     src: string
+    width: string
 }
 
 defineProps<Props>()

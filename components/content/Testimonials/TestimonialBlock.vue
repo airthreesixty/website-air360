@@ -10,7 +10,7 @@
         </p>
       </blockquote>
       <figcaption class="flex items-center justify-center mt-6 space-x-3">
-        <img class="h-6 md:h-8" :src="src">
+        <img :class="width" :src="src">
         <div class="flex items-center divide-x-2 divide-gray-500">
           <div class="pr-3 font-medium text-black-600">
             {{ name }}
@@ -30,6 +30,7 @@ interface Props {
   name?: string
   company: string
   src: string
+  width: string
 }
 
 defineProps<Props>()
