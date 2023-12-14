@@ -10,7 +10,7 @@
         </p>
       </blockquote>
       <figcaption class="flex items-center justify-center mt-6 space-x-3">
-        <img :class="width" :src="src">
+        <nuxt-img :width="width" :src="src" densities="x1 x2" />
         <div class="flex items-center divide-x-2 divide-gray-500">
           <div class="pr-3 font-medium text-black-600">
             {{ name }}
@@ -30,7 +30,7 @@ interface Props {
   name?: string
   company: string
   src: string
-  width: string
+  width: number
 }
 
 defineProps<Props>()

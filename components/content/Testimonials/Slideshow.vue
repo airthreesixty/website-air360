@@ -18,9 +18,9 @@
 <script setup lang="ts">
 const { t } = useI18n()
 const slides = [
-  { quote: t('slideshow.quote.clubmed'), name: 'Nelson Fernandes', company: 'Digital Analytics Manager, Club Med', src: '/headShotClubMed.webp', width: 'w-12' },
-  { quote: t('slideshow.quote.psabank'), company: 'PSA Bank', src: '/psabank.svg', width: 'w-20' },
-  { quote: t('slideshow.quote.air-caraibes'), company: 'Air Caraïbes', src: '/airCaraibes.svg', width: 'w-35' },
-  { quote: t('slideshow.quote.journey-further'), name: 'Jonny Longden', company: 'CRO Expert and Influencer, Journey Further', src: '/ceo-journey-further.webp', width: 'w-12' },
+  { quote: t('slideshow.quote.clubmed'), name: 'Nelson Fernandes', company: 'Digital Analytics Manager, Club Med', src: '/headShotClubMed.webp', width: 48 },
+  { quote: t('slideshow.quote.psabank'), company: 'PSA Bank', src: '/psabank.svg', width: 80 },
+  { quote: t('slideshow.quote.air-caraibes'), company: 'Air Caraïbes', src: '/airCaraibes.svg', width: 140 },
+  { quote: t('slideshow.quote.journey-further'), name: 'Jonny Longden', company: 'CRO Expert and Influencer, Journey Further', src: '/ceo-journey-further.webp', width: 48 },
 ]
 </script>

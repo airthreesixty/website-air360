@@ -78,7 +78,10 @@ useIntersectionObserver(
 )
 
 onMounted(() => {
-  isMounted.value = true
+  // Delay iframe loading
+  setTimeout(() => {
+    isMounted.value = true
+  }, 1000)
 })
 </script>
 

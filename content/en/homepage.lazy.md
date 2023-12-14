@@ -158,7 +158,7 @@ What they say about us
 #desc
 Clients harness Air360 for key UX insights, boosting conversion optimization. Our G2 ratings are a solid endorsement, but don't just take our word for it – here are some of our success stories, shared directly by our clients.
 #testimonials
-    ::single-testimonial{src="/headShotClubMed.webp" width="w-15"}
+    ::single-testimonial{src="/headShotClubMed.webp" width=60}
     #quote
     With Air360 we can get more people involved in making data-driven decisions on a global scale.
     #name
@@ -166,20 +166,20 @@ Clients harness Air360 for key UX insights, boosting conversion optimization. Ou
     #company
     Digital Analytics Manager, Club Med
     ::
-    ::single-testimonial{src="/psabank.svg" width="w-25"}
+    ::single-testimonial{src="/psabank.svg" width=100}
     #quote
     Tracking which would have taken days to implement via GA4 takes only minutes using Air360 to access the data.
     #company
     PSA Bank
     ::
 #testimonials2
-    ::single-testimonial{src="/airCaraibes.webp" width="w-35"}
+    ::single-testimonial{src="/airCaraibes.webp" width=140}
     #quote
     It's impressive how easy and fast it is to get insights using Air360!
     #company
     Air Caraïbes
     ::
-    ::single-testimonial{src="/ceo-journey-further.webp" width="w-15"}
+    ::single-testimonial{src="/ceo-journey-further.webp" width=60}
     #quote
     With Air360 we are gaining faster time to insights so we can help customers drive towards a positive impact on CRO and revenue.
     #name
