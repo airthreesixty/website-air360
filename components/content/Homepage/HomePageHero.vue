@@ -30,8 +30,9 @@
         </p>
         <div class="relative">
           <div class="md:(max-w-[600px] mx-auto flex justify-center) lg:max-w-[900px]">
-            <div class="mt-6 md:w-7/12 lg:w-1/2" style="position: relative; padding-bottom: 56.25%; height: 0;">
+            <div ref="target" class="mt-6 md:w-7/12 lg:w-1/2" style="position: relative; padding-bottom: 56.25%; height: 0;">
               <iframe
+                v-if="isMounted && showIFrame"
                 src="https://www.loom.com/embed/ec06bf3738f64c8e960b2c0eccaf89b0?sid=cb91bf0c-e504-4098-91d4-c7afbbb919dc?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
                 frameborder="0"
                 webkitallowfullscreen
@@ -59,8 +60,26 @@
 </template>
 
 <script lang="ts" setup>
+import { useIntersectionObserver } from '@vueuse/core'
 const localePath = useLocalePath()
 const { locale } = useI18n()
+
+const target = ref(null)
+const showIFrame = ref(false)
+const isMounted = ref(false)
+
+useIntersectionObserver(
+  target,
+  ([{ isIntersecting }]) => {
+    if (!showIFrame.value && isIntersecting) {
+      showIFrame.value = true
+    }
+  },
+)
+
+onMounted(() => {
+  isMounted.value = true
+})
 </script>
 
 <style scoped>
