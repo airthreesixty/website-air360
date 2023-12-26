@@ -13,7 +13,7 @@
       </div>
       <div class="relative mt-5 mb-12 md:mb-30 max-w-[650px] mx-auto">
         <div class="image-blur">
-          <nuxt-img class="rounded-[14px]" loading="lazy" sizes="xl:1390px lg:1034px md:754px sm:1184px xs:277px" format="webp" :src="src" />
+          <nuxt-img class="rounded-[14px]" loading="lazy" format="webp" :src="src" />
         </div>
       </div>
     </div>
