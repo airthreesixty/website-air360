@@ -36,14 +36,6 @@ defineProps<Props>()
 //     }
 //   },
 // )
-
-// const src = computed(() => {
-//   if (locale.value === 'en') {
-//     return '/en/headaches.png'
-//   }
-
-//   return '/headaches.png'
-// })
 </script>
 <style scoped>
 /* .bg-gradient-bottom {

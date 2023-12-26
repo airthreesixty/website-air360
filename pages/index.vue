@@ -1,5 +1,5 @@
 <template>
-  <AsyncPage page="homepage" />
+  <AsyncPage page="homepage" :use-client-only="false" />
 </template>
 
 <script setup lang="ts">
