@@ -1,4 +1,4 @@
-::what-is-air360
+::what-is-air360{src="/headaches.png"}
 #title
 <!-- 不透明なユーザーの行動を可視化する -->
 今まで見えなかった顧客の行動を可視化

@@ -21,8 +21,11 @@
 </template>
 <script setup lang="ts">
 // import { useIntersectionObserver } from '@vueuse/core'
+interface Props {
+  src: string
+}
 
-const { locale } = useI18n()
+defineProps<Props>()
 // const target = ref(null)
 // const showIframe = ref(false)
 // useIntersectionObserver(
@@ -34,13 +37,13 @@ const { locale } = useI18n()
 //   },
 // )
 
-const src = computed(() => {
-  if (locale.value === 'en') {
-    return '/en/headaches.png'
-  }
+// const src = computed(() => {
+//   if (locale.value === 'en') {
+//     return '/en/headaches.png'
+//   }
 
-  return '/headaches.png'
-})
+//   return '/headaches.png'
+// })
 </script>
 <style scoped>
 /* .bg-gradient-bottom {

@@ -1,4 +1,4 @@
-::what-is-air360
+::what-is-air360{src="/en/headaches.png"}
 #title
 Say hello to quick insights<br>
 Say goodbye to analytics headaches
