@@ -1,14 +1,24 @@
 <template>
   <section id="request-form" class="bg-white">
     <div
-      class="container pt-8 pb-14 lg:flex lg:justify-center lg:gap-5 lg:py-16"
+      class="relative container pt-8 pb-14 lg:flex lg:justify-center lg:gap-5 lg:py-16"
     >
+      <NuxtLink
+        :to="localePath('/')"
+        class="w-auto h-7 hidden xl:h-8 lg:(block absolute left-8 top-8)"
+      >
+        <span class="sr-only">Air360</span>
+        <Logo
+          is-dark
+          :aria-hidden="true"
+        />
+      </NuxtLink>
       <div
-        class="relative flex flex-col items-center lg:flex lg:flex-1"
+        class="relative h-full flex flex-col items-center lg:flex lg:flex-1 lg:self-center"
       >
         <NuxtLink
           :to="localePath('/')"
-          class="h-6 w-auto mb-6 sm:h-7 xl:h-8 lg:(absolute left-5 -top-5 mb-0)"
+          class="h-6 w-auto mb-6 sm:h-7 xl:h-8 lg:hidden"
         >
           <span class="sr-only">Air360</span>
           <Logo
