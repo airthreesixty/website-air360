@@ -4,7 +4,7 @@ published: 2024-1-23
 tags: 
   - other
 readingTime: 6
-image: /blog/googles-block-third-party-cookie.png
+image: /blog/googles-block-third-party-cookie.webp
 metaDesc: Google has announced that it will disable third-party tracking cookies in its Chrome browser
 ---
 

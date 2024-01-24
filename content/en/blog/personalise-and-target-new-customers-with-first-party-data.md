@@ -12,7 +12,7 @@ Data is the lifeblood of any business. You collect data about your revenue, merc
 
 Customer data is crucial for product development, inventory management and campaign creation. There are many ways to get the data you need. Third-party data used to be the most common type of data. You could buy a list of prospects for targeted marketing campaigns. Third-party cookies allow you to follow website visitors to other sites and promote your brand.  
 
-Third-party data, however, is falling out of fashion. Regulators across the globe are restricting what data companies can collect and how they can use that data. Google plans to phase out third-party cookies by 2024. That means that your business will need to develop a first-party data strategy to attract and keep new customers.  
+Third-party data, however, is falling out of fashion. Regulators across the globe are restricting what data companies can collect and how they can use that data. [Google plans to phase out third-party cookies by 2024](/en/blog/googles-plan-to-block-third-party-tracking-cookies-in-chrome). That means that your business will need to develop a first-party data strategy to attract and keep new customers.  
 
 ## What is First-Party Data?
 [First-party data](/en/product/capabilities/data-collection/
