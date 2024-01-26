@@ -68,5 +68,6 @@ By phasing out these cookies, Google aims to strike a balance between protecting
 
 As we move towards a web that is more privacy-focused, it is important for users, advertisers, and publishers to adapt and embrace these changes to create a more secure and user-centric online ecosystem.
 
-
+::blog-inner-card{slug="/en/blog/personalise-and-target-new-customers-with-first-party-data/"}
+::
 
