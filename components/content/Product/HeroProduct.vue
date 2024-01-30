@@ -12,9 +12,11 @@
         <div class="flex justify-center md:justify-start">
           <div class="flex flex-col mt-5 md:flex-row md:gap-4">
             <div class="w-52 md:mb-0">
-              <ButtonPrimary theme="primary" slug="/request-demo">
-                {{ $t("request-demo.title") }}
-              </ButtonPrimary>
+              <PopupTrigger id="AJVqkglY">
+                <ButtonPrimary theme="primary" slug="javascript:void(0)">
+                  {{ $t("request-demo.title") }}
+                </ButtonPrimary>
+              </PopupTrigger>
             </div>
             <p v-if="app" class="mt-2 md:mt-0 text-black-600 flex items-center justify-center">
               <ContentSlot :use="$slots.subDescription" />
