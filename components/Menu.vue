@@ -101,9 +101,11 @@
               >{{ $t("login") }}</a>
             </li>
             <li class="pt-2 lg:pt-0">
-              <ButtonPrimary slug="/request-demo" :theme="isHomepage ? 'outline' : 'primary'">
-                {{ $t("request-demo.title") }}
-              </ButtonPrimary>
+              <PopupTrigger id="AJVqkglY">
+                <ButtonPrimary slug="javascript:void(0)" :theme="isHomepage ? 'outline' : 'primary'">
+                  {{ $t("request-demo.title") }}
+                </ButtonPrimary>
+              </PopupTrigger>
             </li>
           </ul>
         </nav>

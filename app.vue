@@ -13,6 +13,8 @@
 </template>
 
 <script setup lang="ts">
+// import '@typeform/embed/build/css/popup.css'
+
 const { locales } = useI18n()
 const route = useRoute()
 const { ssrContext } = useNuxtApp()

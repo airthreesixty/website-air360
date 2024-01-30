@@ -194,11 +194,13 @@
           </div>
           <ul class="text-gray-600">
             <li class="mb-4">
-              <NuxtLink :to="localePath('/request-demo')">
-                <div class="hover:underline">
-                  {{ $t("request-demo.title") }}
-                </div>
-              </NuxtLink>
+              <PopupTrigger id="AJVqkglY">
+                <a href="javascript:void(0)">
+                  <div class="hover:underline">
+                    {{ $t("request-demo.title") }}
+                  </div>
+                </a>
+              </PopupTrigger>
             </li>
             <li class="mb-4">
               <NuxtLink :to="localePath('/contact')">

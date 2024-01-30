@@ -2743,6 +2743,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@typeform/embed@npm:^4.4.1":
+  version: 4.4.1
+  resolution: "@typeform/embed@npm:4.4.1"
+  checksum: 9ed36a1b76789a29344defd7069e130aa7afc908a4e8f087852e7419d1de3a66f3786fe55f9732a6eba5c5e1969e3027553bda52cb6db29724aeb98ec25dc71b
+  languageName: node
+  linkType: hard
+
 "@types/cacheable-request@npm:^6.0.1":
   version: 6.0.3
   resolution: "@types/cacheable-request@npm:6.0.3"
@@ -11907,6 +11914,7 @@ __metadata:
     "@tresjs/core": ^3.1.1
     "@tresjs/nuxt": ^1.1.5
     "@tresjs/post-processing": ^0.3.0
+    "@typeform/embed": ^4.4.1
     "@types/lodash": ^4.14.194
     "@types/three": ^0.155.1
     "@vuelidate/core": ^2.0.0

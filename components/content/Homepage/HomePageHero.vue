@@ -48,11 +48,13 @@
           <span class="bg-button bg-button1" />
           <span class="bg-button bg-button2" />
           <span class="bg-button bg-button3" />
-          <NuxtLink :to="localePath('/request-demo')" class="button transition ease-in-out duration-300 hover:opacity-80">
-            <div class="text-white font-bold text-base">
-              {{ $t("request-demo.title") }}
+          <PopupTrigger id="AJVqkglY">
+            <div class="button transition ease-in-out duration-300 hover:opacity-80" @click="toggle">
+              <div class="text-white font-bold text-base">
+                {{ $t("request-demo.title") }}
+              </div>
             </div>
-          </NuxtLink>
+          </PopupTrigger>
         </div>
       </div>
     </div>
@@ -61,12 +63,14 @@
 
 <script lang="ts" setup>
 import { useIntersectionObserver } from '@vueuse/core'
-const localePath = useLocalePath()
+
 const { locale } = useI18n()
 
 const target = ref(null)
 const showIFrame = ref(false)
 const isMounted = ref(false)
+
+const toggle = ref<(() => void) | undefined>(undefined)
 
 useIntersectionObserver(
   target,

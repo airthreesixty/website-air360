@@ -13,14 +13,11 @@
                 <ContentSlot :use="$slots.description" unwrap="p" />
               </p>
             </div>
-            <div class="flex justify-center mt-8 md:w-2/3">
-              <!-- <NuxtLink :to="$localePath('/request-demo')" class="mt-8 rounded-lg border border-transparent bg-white px-6 py-3 text-base font-bold text-primary-600 shadow transition ease-in-out duration-300 hover:bg-primary-100">
-                {{ $t('try-air360') }}
-              </NuxtLink> -->
-              <ButtonPrimary slug="/request-demo" theme="transparent">
+            <PopupTrigger id="AJVqkglY" class="flex justify-center mt-8 md:w-2/3">
+              <ButtonPrimary slug="javascript:void(0)" theme="transparent">
                 {{ $t('try-air360') }}
               </ButtonPrimary>
-            </div>
+            </PopupTrigger>
           </div>
         </div>
         <div class="hidden aspect-w-5 aspect-h-3 -mt-6 z-0 md:block md:aspect-w-2 md:aspect-h-1">

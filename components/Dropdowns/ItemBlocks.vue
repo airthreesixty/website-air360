@@ -37,9 +37,11 @@
       </template>
     </DropdownsItemBlock>
     <li class="mb-3 mt-5">
-      <ButtonPrimary theme="primary" slug="/request-demo">
-        {{ $t("request-demo.title") }}
-      </ButtonPrimary>
+      <PopupTrigger id="AJVqkglY">
+        <ButtonPrimary theme="primary" slug="javascript:void(0)">
+          {{ $t("request-demo.title") }}
+        </ButtonPrimary>
+      </PopupTrigger>
     </li>
     <li class="mb-3">
       <a target="_blank" :href="runtimeConfig.public.appUrl" class="button border-2 text-primary-600 font-bold text-base border-primary-600 transition ease-in-out duration-300 hover:opacity-80 focus:opacity-80">
