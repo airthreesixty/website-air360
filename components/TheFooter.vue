@@ -194,7 +194,7 @@
           </div>
           <ul class="text-gray-600">
             <li class="mb-4">
-              <PopupTrigger id="AJVqkglY">
+              <PopupTrigger id="AYUQLYF9">
                 <a href="javascript:void(0)">
                   <div class="hover:underline">
                     {{ $t("request-demo.title") }}
@@ -203,11 +203,13 @@
               </PopupTrigger>
             </li>
             <li class="mb-4">
-              <NuxtLink :to="localePath('/contact')">
-                <div class="hover:underline">
-                  {{ $t("contact-us") }}
-                </div>
-              </NuxtLink>
+              <PopupTrigger :id="locale ==='en' ? 'QysWVaIQ': 'h5xHQyCI'">
+                <a href="javascript:void(0)">
+                  <div class="hover:underline">
+                    {{ $t("contact-us") }}
+                  </div>
+                </a>
+              </PopupTrigger>
             </li>
             <li class="mb-4">
               <a :href="runtimeConfig.public.appUrl" target="_blank" class="hover:underline">{{ $t("login") }}<fa-icon class="fa-sm pl-1" :icon="['fas', 'arrow-up-right-from-square']" /></a>
