@@ -23,13 +23,13 @@
                 <source :data-src="videoSrc" type="video/mp4" :src="videoSrc">
               </video>
             </div>
-            <div>
-              <h3 class="title2 mt-8 mb-10 md:text-left">
+            <div id="roadmap-download-form" class="h-142">
+              <!-- <h3 class="title2 mt-8 mb-10 md:text-left">
                 <ContentSlot :use="$slots.formTitle" unwrap="p" />
               </h3>
               <div id="form">
                 <Loading class="w-20 h-5 mx-auto" :is-full-page="false" />
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -40,6 +40,14 @@
 
 <script setup lang="ts">
 import { useScriptTag } from '@vueuse/core'
+import { createWidget } from '@typeform/embed'
+import '@typeform/embed/build/css/widget.css'
+
+onMounted(() => {
+  createWidget('bwGd5xLq', {
+    container: document.querySelector('#roadmap-download-form')!,
+  })
+})
 
 const { locale } = useI18n()
 
