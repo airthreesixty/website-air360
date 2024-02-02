@@ -22,13 +22,13 @@
                 <MochiCart class="w-50 h-50 lg:(w-60 h-60) mochi-cart" />
               </div>
             </div>
-            <div id="checklist-download-form" class="h-80 lg:h-100">
-              <h3 class="title2 mt-8 mb-10 md:text-left">
+            <div id="checklist-download-form" class="h-130 md:h-140 lg:h-128">
+              <!-- <h3 class="title2 mt-8 mb-10 md:text-left">
                 <ContentSlot :use="$slots.formTitle" unwrap="p" />
               </h3>
               <div id="form">
                 <Loading class="w-20 h-5 mx-auto" :is-full-page="false" />
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -44,9 +44,8 @@ import { createWidget } from '@typeform/embed'
 import '@typeform/embed/build/css/widget.css'
 
 onMounted(() => {
-  createWidget('IqayalG7', {
+  createWidget('bwGd5xLq', {
     container: document.querySelector('#checklist-download-form')!,
-    height: '',
   })
 })
 

@@ -7,12 +7,12 @@
           <MochiCart class="w-50 h-50 lg:(w-60 h-60) mochi-cart" />
         </div>
       </div>
-      <div class="rounded-lg max-w-[1050px] mx-auto p-5 lg:p-10">
-        <div>
+      <div class="p-5 lg:p-10">
+        <div id="checklist-download-form" class="h-145">
           <!-- <h2 class="title3 my-10">
             <ContentSlot :use="$slots.formTitle" unwrap="p" />
           </h2> -->
-          <div class="md:text-left">
+          <!-- <div class="md:text-left">
             <span class="text-primary-600 font-bold"><ContentSlot :use="$slots.subtext" unwrap="p" /></span>
             <h1 class="title1 mt-5 mb-8">
               <ContentSlot :use="$slots.title" unwrap="p" />
@@ -20,7 +20,7 @@
           </div>
           <div id="form">
             <Loading class="w-20 h-5 mx-auto" :is-full-page="false" />
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -30,6 +30,14 @@
 <script setup lang="ts">
 import { useScriptTag } from '@vueuse/core'
 import { gsap } from 'gsap'
+import { createWidget } from '@typeform/embed'
+import '@typeform/embed/build/css/widget.css'
+
+onMounted(() => {
+  createWidget('V76bES2c', {
+    container: document.querySelector('#checklist-download-form')!,
+  })
+})
 
 const { locale } = useI18n()
 
