@@ -23,19 +23,25 @@
       <p>Download now!</p>
     </template>
     <template #form>
-      <div id="form">
-        <Loading class="w-20 h-5 mx-auto" :is-full-page="false" />
-      </div>
+      <div id="form" class="h-150" />
     </template>
   </LandingPage>
 </template>
 
-<script setup>
-import { useScriptTag } from '@vueuse/core'
+<script setup lang="ts">
+// import { useScriptTag } from '@vueuse/core'
+import { createWidget } from '@typeform/embed'
+import '@typeform/embed/build/css/widget.css'
+
+onMounted(() => {
+  createWidget('ANe2bSWB', {
+    container: document.querySelector('#form')!,
+  })
+})
 
 const route = useRoute()
 const runtimeConfig = useRuntimeConfig()
-const { locale } = useI18n()
+// const { locale } = useI18n()
 
 const title = "Welcome to the Conversion Rate Mysteries Series II: 'The Invisible Product Option' by Air360!"
 const description = "Every hero needs a sidekick, and the experts at Air360 are here to be yours. We're thrilled to offer you an exclusive opportunity to download our use case, Conversion Rate Mysteries Series II: The Invisible Product Option."
@@ -58,20 +64,20 @@ useSeoMeta({
   ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
 })
 
-useScriptTag(
-  '//js-eu1.hsforms.net/forms/embed/v2.js',
-  () => {
-    hbspt.forms.create({
-      region: 'eu1',
-      portalId: '27037851',
-      formId: 'f399f226-7a8b-4f1b-9b24-8d0d889c21a1',
-      target: '#form',
-      redirectUrl: `${runtimeConfig.public.baseUrl}/${locale.value}/mystery-case2-thank-you/`,
-      onFormSubmit: function ($form) {
-        if (Air360) {
-          Air360.identify($form.email.value)
-        }
-      },
-    })
-  })
+// useScriptTag(
+//   '//js-eu1.hsforms.net/forms/embed/v2.js',
+//   () => {
+//     hbspt.forms.create({
+//       region: 'eu1',
+//       portalId: '27037851',
+//       formId: 'f399f226-7a8b-4f1b-9b24-8d0d889c21a1',
+//       target: '#form',
+//       redirectUrl: `${runtimeConfig.public.baseUrl}/${locale.value}/mystery-case2-thank-you/`,
+//       onFormSubmit: function ($form) {
+//         if (Air360) {
+//           Air360.identify($form.email.value)
+//         }
+//       },
+//     })
+//   })
 </script>
