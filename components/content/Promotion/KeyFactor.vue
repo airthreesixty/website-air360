@@ -3,7 +3,7 @@
     :class="locale ==='en' ? 'md:pt-10' : 'md:pt-0'"
     class="pt-10 overflow-hidden"
   >
-    <div :class="locale === 'en' ? 'lg:(flex items-center)' : 'md:(flex items-center)'" class="container xl:-mb-10">
+    <div class="container xl:-mb-10 md:(flex items-center gap-20)">
       <div
         ref="targetLeft"
         class="relative z-index-1"
@@ -11,7 +11,7 @@
         <h2 class="title3 text-black-600 font-bold mb-5">
           <ContentSlot :use="$slots.title" unwrap="p" />
         </h2>
-        <p class="textp">
+        <p class="textp max-w-[500px]">
           <ContentSlot :use="$slots.description" unwrap="p" />
         </p>
       </div>

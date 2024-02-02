@@ -22,7 +22,7 @@
                 <MochiCart class="w-50 h-50 lg:(w-60 h-60) mochi-cart" />
               </div>
             </div>
-            <div>
+            <div id="checklist-download-form" class="h-80 lg:h-100">
               <h3 class="title2 mt-8 mb-10 md:text-left">
                 <ContentSlot :use="$slots.formTitle" unwrap="p" />
               </h3>
@@ -40,6 +40,15 @@
 <script setup lang="ts">
 import { useScriptTag } from '@vueuse/core'
 import { gsap } from 'gsap'
+import { createWidget } from '@typeform/embed'
+import '@typeform/embed/build/css/widget.css'
+
+onMounted(() => {
+  createWidget('IqayalG7', {
+    container: document.querySelector('#checklist-download-form')!,
+    height: '',
+  })
+})
 
 const { locale } = useI18n()
 
