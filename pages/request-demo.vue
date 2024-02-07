@@ -7,10 +7,6 @@ const { t } = useI18n()
 const route = useRoute()
 const runtimeConfig = useRuntimeConfig()
 
-definePageMeta({
-  layout: 'request-demo',
-})
-
 useSeoMeta({
   title: t('request-demo.title'),
   description: t('request-demo.content'),
