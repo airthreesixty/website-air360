@@ -4,7 +4,7 @@ published: 2024-2-8
 tags: 
   - ecommerce
 readingTime: 10
-image: /blog/black-friday-and-cyber-monday/hero.png
+image: /blog/4-essential-trends-for-cro-in-2024/eyecatch.png
 metaDesc: Here is no shortcut for that, because every website / eCommerce has its own ecosystem,audience and behavior, but we can tell you some key strategies you should take into account this 2024 to ensure you achieve your CRO goals. 
 ---
 
@@ -98,14 +98,14 @@ This could be your template for mobile-first success:
 
 Here some good examples:
 
-### [**The Rocks**](https://www.therocks.com/)
+[**The Rocks**](https://www.therocks.com/)
 
 Big CTAs complement these bits of [content](https://www.designrush.com/agency/content-marketing) as smaller links would be too inconvenient to 
 use.
 
 ![](/blog/4-essential-trends-for-cro-in-2024/image3.jpg)
 
-### [**International Energy Agency**](https://www.iea.org/)
+[**International Energy Agency**](https://www.iea.org/)
 
 Since this website has plenty of blog articles, the useability is improved with a single column
 layout that invites users to scroll down for more content.
