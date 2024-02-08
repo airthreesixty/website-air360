@@ -13,7 +13,6 @@ your website or ecommerce.
 
 So will not find here classic recommendations like:
 
-Use personalization for users.
 - Short forms to fill out.
 - [Have a simplified checkout process.](/en/blog/maximizing-conversion-rates-and-enhancing-ux/)   
 - [Create a strong cart abandonment email strategy.](/en/blog/how-a-b-testing-can-reduce-cart-abandonment/)
