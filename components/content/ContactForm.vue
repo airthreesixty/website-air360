@@ -18,13 +18,14 @@
           <div
             class="w-full mx-auto bg-white lg:flex-1"
           >
-            <div
+            <!-- <div
               class="rounded-lg bg-gray-100 shadow-lg px-8 py-9 lg:mt-8"
-            >
-              <div id="form">
+            > -->
+            <!-- <div id="form">
                 <Loading class="w-20 h-5 mx-auto" :is-full-page="false" />
-              </div>
-            </div>
+              </div> -->
+            <Widget :id="formId" class="h-100" />
+            <!-- </div> -->
           </div>
         </div>
         <div
@@ -85,30 +86,12 @@
 </template>
 
 <script setup>
-import { useScriptTag } from '@vueuse/core'
-
 const { locale } = useI18n()
 
 const formId = computed(() => {
   if (locale.value === 'en') {
-    return 'f9720a4d-f173-42fc-8f58-12526b327053'
+    return 'QysWVaIQ'
   }
-  return '969cb5d5-01ee-4311-8c51-3bc02924eadf'
+  return 'h5xHQyCI'
 })
-
-useScriptTag(
-  '//js-eu1.hsforms.net/forms/embed/v2.js',
-  () => {
-    hbspt.forms.create({
-      region: 'eu1',
-      portalId: '27037851',
-      formId: formId.value,
-      target: '#form',
-      onFormSubmit: function ($form) {
-        if (Air360) {
-          Air360.identify($form.email.value)
-        }
-      },
-    })
-  })
 </script>
