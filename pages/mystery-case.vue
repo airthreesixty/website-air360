@@ -19,9 +19,7 @@
 </template>
 
 <script setup lang="ts">
-// import { useScriptTag } from '@vueuse/core'
 import { createWidget } from '@typeform/embed'
-import '@typeform/embed/build/css/widget.css'
 
 onMounted(() => {
   createWidget('ANe2bSWB', {
@@ -31,7 +29,6 @@ onMounted(() => {
 
 const route = useRoute()
 const runtimeConfig = useRuntimeConfig()
-// const { locale } = useI18n()
 
 const title = 'Conversion Rate Mysteries: The Big Checkout Drop off'
 const description = 'It is no mystery that checkout abandonment is usually a significant pain or a common challenge in the eCommerce industry. Learn how big online beverage distributor brand quickly found out why their users were dropping on their checkout to improve their performance.'
@@ -53,21 +50,4 @@ useSeoMeta({
   twitterCard: 'summary_large_image',
   ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
 })
-
-// useScriptTag(
-//   '//js-eu1.hsforms.net/forms/embed/v2.js',
-//   () => {
-//     hbspt.forms.create({
-//       region: 'eu1',
-//       portalId: '27037851',
-//       formId: '05426765-641a-4511-a475-9965ff681658',
-//       target: '#form',
-//       redirectUrl: `${runtimeConfig.public.baseUrl}/${locale.value}/mystery-case-thank-you/`,
-//       onFormSubmit: function ($form) {
-//         if (Air360) {
-//           Air360.identify($form.email.value)
-//         }
-//       },
-//     })
-//   })
 </script>

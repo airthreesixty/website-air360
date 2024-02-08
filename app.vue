@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-// import '@typeform/embed/build/css/popup.css'
+import '@typeform/embed/build/css/widget.css'
 
 const { locales } = useI18n()
 const route = useRoute()

@@ -28,10 +28,8 @@
 </template>
 
 <script setup lang="ts">
-import { useScriptTag } from '@vueuse/core'
 import { gsap } from 'gsap'
 import { createWidget } from '@typeform/embed'
-import '@typeform/embed/build/css/widget.css'
 
 onMounted(() => {
   createWidget('V76bES2c', {
@@ -39,39 +37,11 @@ onMounted(() => {
   })
 })
 
-const { locale } = useI18n()
-
-const formId = computed(() => {
-  if (locale.value === 'en') {
-    return '580f0257-6e66-4882-88c4-893274b97406'
-  }
-  return '4651f467-09d5-42da-ac55-8c93960a37e6'
-})
-
 interface Props {
   src: string
 }
 
 defineProps<Props>()
-
-useScriptTag(
-  '//js-eu1.hsforms.net/forms/embed/v2.js',
-  () => {
-    // @ts-ignore
-    hbspt.forms.create({
-      region: 'eu1',
-      portalId: '27037851',
-      formId: formId.value,
-      target: '#form',
-      onFormSubmit: function ($form: any) {
-        // @ts-ignore
-        if (Air360) {
-          // @ts-ignore
-          Air360.identify($form.email.value)
-        }
-      },
-    })
-  })
 
 onMounted(() => {
   let largeDevice = 1

@@ -25,22 +25,12 @@
 </template>
 
 <script setup lang="ts">
-import { useScriptTag } from '@vueuse/core'
 import { createWidget } from '@typeform/embed'
-import '@typeform/embed/build/css/widget.css'
 
 onMounted(() => {
   createWidget('VL6oTlqs', {
     container: document.querySelector('#roadmap-download-form')!,
   })
-})
-const { locale } = useI18n()
-
-const formId = computed(() => {
-  if (locale.value === 'en') {
-    return '92f0c706-d0a1-4217-9ace-cbf6a3fe4ce6'
-  }
-  return 'b0f0f3f2-1a92-4541-b986-2024bc413977'
 })
 
 interface Props {
@@ -48,23 +38,4 @@ interface Props {
 }
 
 defineProps<Props>()
-
-useScriptTag(
-  '//js-eu1.hsforms.net/forms/embed/v2.js',
-  () => {
-    // @ts-ignore
-    hbspt.forms.create({
-      region: 'eu1',
-      portalId: '27037851',
-      formId: formId.value,
-      target: '#form',
-      onFormSubmit: function ($form: any) {
-        // @ts-ignore
-        if (Air360) {
-          // @ts-ignore
-          Air360.identify($form.email.value)
-        }
-      },
-    })
-  })
 </script>

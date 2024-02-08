@@ -29,9 +29,7 @@
 </template>
 
 <script setup lang="ts">
-// import { useScriptTag } from '@vueuse/core'
 import { createWidget } from '@typeform/embed'
-import '@typeform/embed/build/css/widget.css'
 
 onMounted(() => {
   createWidget('KTsGED4m', {
@@ -41,7 +39,6 @@ onMounted(() => {
 
 const route = useRoute()
 const runtimeConfig = useRuntimeConfig()
-// const { locale } = useI18n()
 
 const title = "Welcome to the Conversion Rate Mysteries Series II: 'The Invisible Product Option' by Air360!"
 const description = "Every hero needs a sidekick, and the experts at Air360 are here to be yours. We're thrilled to offer you an exclusive opportunity to download our use case, Conversion Rate Mysteries Series II: The Invisible Product Option."
@@ -63,21 +60,4 @@ useSeoMeta({
   twitterCard: 'summary_large_image',
   ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
 })
-
-// useScriptTag(
-//   '//js-eu1.hsforms.net/forms/embed/v2.js',
-//   () => {
-//     hbspt.forms.create({
-//       region: 'eu1',
-//       portalId: '27037851',
-//       formId: 'f399f226-7a8b-4f1b-9b24-8d0d889c21a1',
-//       target: '#form',
-//       redirectUrl: `${runtimeConfig.public.baseUrl}/${locale.value}/mystery-case2-thank-you/`,
-//       onFormSubmit: function ($form) {
-//         if (Air360) {
-//           Air360.identify($form.email.value)
-//         }
-//       },
-//     })
-//   })
 </script>
