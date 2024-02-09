@@ -23,14 +23,7 @@
                 <source :data-src="videoSrc" type="video/mp4" :src="videoSrc">
               </video>
             </div>
-            <div id="roadmap-download-form" class="h-142">
-              <!-- <h3 class="title2 mt-8 mb-10 md:text-left">
-                <ContentSlot :use="$slots.formTitle" unwrap="p" />
-              </h3>
-              <div id="form">
-                <Loading class="w-20 h-5 mx-auto" :is-full-page="false" />
-              </div> -->
-            </div>
+            <Widget id="bwGd5xLq" class="h-142" />
           </div>
         </div>
       </div>
@@ -39,14 +32,6 @@
 </template>
 
 <script setup lang="ts">
-import { createWidget } from '@typeform/embed'
-
-onMounted(() => {
-  createWidget('bwGd5xLq', {
-    container: document.querySelector('#roadmap-download-form')!,
-  })
-})
-
 interface Props {
   videoSrc: string
   poster: string
