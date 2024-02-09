@@ -7,8 +7,10 @@
       <p class="textp text-center max-w-[530px] mx-auto">
         <ContentSlot :use="$slots.description" unwrap="p" />
       </p>
-      <nuxt-img format="webp" :src="src" class="hidden sm:block" />
-      <nuxt-img format="webp" :src="srcMobile" class="sm:hidden" />
+      <div class="flex justify-center">
+        <nuxt-img format="webp" :src="src" class="hidden sm:block" />
+        <nuxt-img format="webp" :src="srcMobile" class="sm:hidden" />
+      </div>
     </div>
   </section>
 </template>
