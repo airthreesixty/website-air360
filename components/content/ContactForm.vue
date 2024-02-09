@@ -13,10 +13,10 @@
           <ContentSlot :use="$slots.subtext" unwrap="p" />
         </p>
       </div>
-      <div class="grid grid-cols-1 lg:gap-8 lg:grid-cols-3">
+      <div class="grid grid-cols-1">
         <div class="col-span-2 mb-8 lg:mb-0">
           <div
-            class="w-full mx-auto bg-white lg:flex-1"
+            class="w-full mx-auto bg-white lg:(flex-1 max-w-[800px])"
           >
             <!-- <div
               class="rounded-lg bg-gray-100 shadow-lg px-8 py-9 lg:mt-8"
@@ -29,7 +29,7 @@
           </div>
         </div>
         <div
-          class="grid col-span-1 gap-8 text-center grid-cols-2 py-15 lg:py-0 lg:grid-cols-1"
+          class="grid col-span-1 gap-8 text-center grid-cols-2 py-15"
         >
           <div>
             <div

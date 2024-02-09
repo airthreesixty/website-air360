@@ -26,7 +26,3 @@ By submitting this form, you agree to our <span class="text-primary-600 hover:un
 #submitButton
 Submit
 ::
-
-::e-s-w
-
-::
