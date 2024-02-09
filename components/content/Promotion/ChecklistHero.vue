@@ -8,20 +8,7 @@
         </div>
       </div>
       <div class="p-5 lg:p-10">
-        <div id="checklist-download-form" class="h-145">
-          <!-- <h2 class="title3 my-10">
-            <ContentSlot :use="$slots.formTitle" unwrap="p" />
-          </h2> -->
-          <!-- <div class="md:text-left">
-            <span class="text-primary-600 font-bold"><ContentSlot :use="$slots.subtext" unwrap="p" /></span>
-            <h1 class="title1 mt-5 mb-8">
-              <ContentSlot :use="$slots.title" unwrap="p" />
-            </h1>
-          </div>
-          <div id="form">
-            <Loading class="w-20 h-5 mx-auto" :is-full-page="false" />
-          </div> -->
-        </div>
+        <Widget id="V76bES2c" class="h-145" />
       </div>
     </div>
   </section>
@@ -29,13 +16,6 @@
 
 <script setup lang="ts">
 import { gsap } from 'gsap'
-import { createWidget } from '@typeform/embed'
-
-onMounted(() => {
-  createWidget('V76bES2c', {
-    container: document.querySelector('#checklist-download-form')!,
-  })
-})
 
 interface Props {
   src: string

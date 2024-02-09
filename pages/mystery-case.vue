@@ -11,22 +11,12 @@
       <p>Download our Air360 Papel and learn more.</p>
     </template>
     <template #form>
-      <div id="form" class="h-150">
-        <!-- <Loading class="w-20 h-5 mx-auto" :is-full-page="false" /> -->
-      </div>
+      <Widget id="ANe2bSWB" class="h-150" />
     </template>
   </LandingPage>
 </template>
 
 <script setup lang="ts">
-import { createWidget } from '@typeform/embed'
-
-onMounted(() => {
-  createWidget('ANe2bSWB', {
-    container: document.querySelector('#form')!,
-  })
-})
-
 const route = useRoute()
 const runtimeConfig = useRuntimeConfig()
 

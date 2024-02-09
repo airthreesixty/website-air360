@@ -23,20 +23,12 @@
       <p>Download now!</p>
     </template>
     <template #form>
-      <div id="form" class="h-150" />
+      <Widget id="KTsGED4m" class="h-150" />
     </template>
   </LandingPage>
 </template>
 
 <script setup lang="ts">
-import { createWidget } from '@typeform/embed'
-
-onMounted(() => {
-  createWidget('KTsGED4m', {
-    container: document.querySelector('#form')!,
-  })
-})
-
 const route = useRoute()
 const runtimeConfig = useRuntimeConfig()
 
