@@ -1,5 +1,5 @@
 ---
-title: Privacy Policy
+title: Air360 Privacy Policy
 ---
 
 # Privacy Policy
