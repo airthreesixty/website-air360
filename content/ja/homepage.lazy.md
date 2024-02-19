@@ -8,23 +8,23 @@
 Air360はウェブサイト上の顧客体験を簡単に理解できるデジタル体験分析ツールです。今までの分析方法では見えなかった顧客の行動を明らかにし、より使いやすいウェブサイト作りを可能にします。
 ::
 
-::three-features{dark}
+::three-features
 #title
 完全なCRO分析のための頼れるプラットフォーム
 #block
-    ::three-features-block{icon="gauge-max" dark}
+    ::three-features-block{icon="gauge-max"}
     #title
     瞬時に全体を可視化
     #description
     最大のコンバージョンを得るために、デジタル体験のインサイトを発見し最適化を支援します。
     ::
-    ::three-features-block{icon="crosshairs-simple" dark}
+    ::three-features-block{icon="crosshairs-simple"}
     #title
     最適化にフォーカス
     #description
     最大のコンバージョン利益を得るために、高影響の領域やセグメントをターゲットにします。
     ::
-    ::three-features-block{icon="flask" dark}
+    ::three-features-block{icon="flask"}
     #title
     テストの影響
     #description

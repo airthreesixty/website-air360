@@ -1,10 +1,10 @@
 <template>
-  <div class="text-center grid-card">
+  <div class="text-center grid-card -mt-10">
     <nuxt-img format="webp" loading="lazy" class="mx-auto w-60 h-60 rounded-lg object-cover" :src="src" alt="Avatar" />
-    <div class="-mb-5 text-2xl text-white font-bold">
+    <div class="-mb-5 text-2xl text-black-600 font-bold">
       <ContentSlot :use="$slots.role" unwrap="p" />
     </div>
-    <div class="prose text-gray-300 mt-2">
+    <div class="prose textp mt-2">
       <ContentSlot :use="$slots.description" unwrap="p" />
     </div>
   </div>
