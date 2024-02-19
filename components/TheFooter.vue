@@ -61,7 +61,7 @@
             {{ $t("company") }}
           </div>
           <ul class="text-gray-600">
-            <li class="mb-4">
+            <!-- <li class="mb-4">
               <a
                 href="https://esw.com/"
                 class="hover:underline"
@@ -74,7 +74,7 @@
                 class="hover:underline"
                 target="_blank"
               >{{ $t("careers") }}<fa-icon class="fa-sm pl-1" :icon="['fas', 'arrow-up-right-from-square']" /></a>
-            </li>
+            </li> -->
             <li class="mb-4">
               <NuxtLink :to="localePath('/privacy-policy')">
                 <div class="hover:underline">

@@ -59,12 +59,12 @@
   "title2": "最高の",
   "title3": "eコマース体験を",
   "organization": {
-    "name": "Scalefast",
+    "name": "Air360",
     "address": {
-      "streetAddress": "京橋3-1-1 東京スクエアガーデン 14F",
-      "addressLocality": "中央区",
-      "addressRegion": "東京都",
-      "postalCode": "104-0031",
+      "streetAddress": "東京都千代田区丸の内1-6-5 丸の内北口ビルディング 9F",
+      "addressLocality": "千代田区",
+      "addressRegion": "東京",
+      "postalCode": "100-0005",
       "addressCountry": "日本"
     }
   },

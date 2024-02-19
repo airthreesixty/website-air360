@@ -16,11 +16,11 @@ title: コンタクト
 #companyInfo
 会社情報：
 #companyName
-Scalefast Japan
+Air360, Inc
 #location
 ロケーション：
 #address
-東京都中央区京橋3-1-1<br> 東京スクエアガーデン 14F
+東京都千代田区丸の内1-6-5<br>丸の内北口ビルディング 9F
 #rule
 このフォームを送信することにより、お客様は、当社の利用規約および当社がお客様の個人情報を収集、使用、および第三者に開示する方法を説明する当社の<span class="text-primary-600 hover:underline">[利用規約とプライバシーポリシー](/privacy-policy)</span>に同意されたことになります。
 #submitButton

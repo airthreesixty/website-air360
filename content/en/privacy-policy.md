@@ -2,7 +2,7 @@
 title: Privacy Policy
 ---
 
-# Scalefast Privacy Policy
+# Privacy Policy
 Updated： December, 2022
 ## Preamble 
 This Privacy policy applies to the website www.air360.io. 
@@ -204,7 +204,7 @@ In Connection With Corporate Events. If one of our corporate affiliates or a thi
 ## What are my choices? 
 We respect your right to make choices about the ways we collect, use and disclose information about you. We generally ask you to indicate your choices at the time and on the page where you provide your personal information. 
 
-When you provide personal information, we may offer you a choice as to whether you would like to receive further communications from us and/or from our partners, such as communications related to updates, upgrades, special offers and pricing. You have the right to withdraw your consent at any time. If you decide you no longer want to receive promotional messages from us, you may let us know via the contact form on our website www.scalefast.com; please specify which consent you are revoking in your email to us. Please note, however, if you give us permission to add your contact information to the Merchant’s mailing list and later withdraw your permission, you will have to contact the Merchant (or use the “opt-out” provided in the emails the Merchant sends you) to have your name removed from the Merchant’s mailing lists. 
+When you provide personal information, we may offer you a choice as to whether you would like to receive further communications from us and/or from our partners, such as communications related to updates, upgrades, special offers and pricing. You have the right to withdraw your consent at any time. If you decide you no longer want to receive promotional messages from us, you may let us know via the contact form on our website https://www.air360.io/. Please specify which consent you are revoking in your email to us. Please note, however, if you give us permission to add your contact information to the Merchant’s mailing list and later withdraw your permission, you will have to contact the Merchant (or use the “opt-out” provided in the emails the Merchant sends you) to have your name removed from the Merchant’s mailing lists. 
 
 If you accept a session or persistent cookie, you can delete it at any time through your web browser (e.g., as soon as you leave our website). If you do not wish to receive cookies or wish to manage when you accept cookies in general, you may set your browser to reject cookies or to alert you when a cookie is placed on your computer. Although you are not required to accept our cookies, if you set your browser to reject cookies, you may not be able to use all of the features and functionalities of this website. 
 
@@ -214,7 +214,7 @@ In certain circumstances, where you do not provide personal data which is requir
 
 ## Privacy Notice to California Residents  
 ### Privacy Notice to California Residents 
-If you are a resident of California, California Civil Code Section 1798.83 permits you to request information regarding the disclosure of your personal information by Scalefast, Inc. or its subsidiaries to a third party for the third party’s direct marketing purposes. This right granted to California residents applies only to their activities within the State of California. To make such a request, please click privacy@scalefast.com; In your request, please specify the name of the partner whose name and/or logo appears on this website to which your request pertains. If no company is specified, we will treat your request as pertaining to Scalefast, Inc.
+If you are a resident of California, California Civil Code Section 1798.83 permits you to request information regarding the disclosure of your personal information by Air360, Inc. or its subsidiaries to a third party for the third party’s direct marketing purposes. This right granted to California residents applies only to their activities within the State of California. To make such a request, please click privacy@air360.io. In your request, please specify the name of the partner whose name and/or logo appears on this website to which your request pertains. If no company is specified, we will treat your request as pertaining to Air360, Inc.
 
 ### How do you secure my personal information? 
 We are committed to keeping personal information secure. We have implemented physical, technical and administrative safeguards reasonably designed to protect your personal information from unauthorized access and disclosure. When we collect or transmit sensitive information such as a financial account number, we use industry standard methods to protect that information. It is important that you understand, however, that no website, database or system is completely secure or “hacker proof.” You are also responsible for taking reasonable steps to protect your personal information against unauthorized disclosure or misuse, for example, by protecting your password. 
@@ -235,17 +235,17 @@ You have certain rights in relation to your personal data. Some of these rights 
 - **Determine guidelines as to the use of your personal data after your death**: you have a right to determine guidelines as to the storage, erasure and communication of your personal data after your death. These guidelines may be general or specific. 
 
 ## What is your policy regarding children’s privacy? 
-This website is not directed at nor targeted to children. If you have not reached the age of majority or are not able to enter into legally binding agreements in your country, you may not use this website unless supervised by an adult. Our goal is to comply with applicable laws and regulations relating to collection and use of information from children as such term is defined by applicable laws. If you believe that we have received information from a child or other person protected under such laws, please notify us immediately by email by clicking privacy@scalefast.com, and we will take reasonable steps to remove that information from our databases.
+This website is not directed at nor targeted to children. If you have not reached the age of majority or are not able to enter into legally binding agreements in your country, you may not use this website unless supervised by an adult. Our goal is to comply with applicable laws and regulations relating to collection and use of information from children as such term is defined by applicable laws. If you believe that we have received information from a child or other person protected under such laws, please notify us immediately by email by clicking privacy@air360.io, and we will take reasonable steps to remove that information from our databases.
 ## Transfers of personal information to outside of the European Union
 Your personal information may be transferred to our affiliates and to third parties that provide us with products or services‒ such as the partner whose name and/or logo appears on this website‒ which are located outside the European Union and in particular in the United States.
 
-When your personal information is transferred to a party located in a country that does not provide for a level of data protection that is sufficient according to European Union standards, such transfer will be made on a data transfer agreement based on the standard contractual clauses approved by the European Commission, copies of which are available on demand by sending an email to privacy@scalefast.com.
+When your personal information is transferred to a party located in a country that does not provide for a level of data protection that is sufficient according to European Union standards, such transfer will be made on a data transfer agreement based on the standard contractual clauses approved by the European Commission, copies of which are available on demand by sending an email to privacy@air360.io.
 
 ## Additional information 
 If you have any questions, comments, or concerns regarding this Privacy policy or our privacy practices, or have privacy-related questions not answered online, you may contact us by any of the following means: 
 
 - Via our contact form on our website www.air360.io. 
-- By email, click [here](gdpr@scalefast.com){:target="_blank"}. 
+- By email, click [here](privacy@air360.io){:target="_blank"}. 
 By using this website or submitting personal information to us through this website, you are consenting to the collection, use, transfer, and disclosure of information as described in this privacy policy. 
 
 We may occasionally update this Privacy policy. These updates may reflect, among other things, changes in applicable laws, rules or regulations, changes to our data collection practices, and/or changes to our business or services. Changes to our Privacy policy will become effective 30 days after posting and will only apply to your personal information we hold if you use the site after the revised statement becomes effective. If revisions to the Privacy policy materially affect how we may use Personal Information collected from you prior to the date of the revised statement, then we will request that you opt-in to the revised Privacy policy. We will post an updated version of this Privacy policy on the website with a revised effective date, to let you know that we have updated the Privacy policy. 
