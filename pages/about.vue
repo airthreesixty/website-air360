@@ -8,10 +8,10 @@ const route = useRoute()
 const runtimeConfig = useRuntimeConfig()
 
 useSeoMeta({
-  title: t('request-demo.title'),
-  description: t('request-demo.content'),
-  ogDescription: t('request-demo.content'),
-  ogTitle: t('request-demo.title'),
+  title: t('about.title'),
+  description: t('about.content'),
+  ogDescription: t('about.content'),
+  ogTitle: t('about.title'),
   ogUrl: `${runtimeConfig.public.baseUrl}${route.fullPath}`,
 })
 </script>
