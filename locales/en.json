@@ -15,7 +15,10 @@
   "contact-us": "Contact",
   "company": "Company",
   "help": "Help",
-  "about": "Company profile",
+  "about": {
+    "title": "Company profile",
+    "content": "Air360 is a UX analysis tool developed for EC companies with the aim of maximizing conversion rates. It helps achieve effective user experiences and improves business outcomes."
+  },
   "more": "More",
   "tag": {
     "all": "All",

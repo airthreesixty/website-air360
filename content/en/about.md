@@ -1,3 +1,7 @@
+---
+title: Company profile
+---
+
 ::about
 #title
 Company profile
