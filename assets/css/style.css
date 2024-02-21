@@ -4,12 +4,12 @@ html {
 
 table {
   border-collapse: collapse;
-  border: solid 2px #6B7280;
+  /* border: solid 2px #6B7280; */
 }
 
-th, td {
+/* th, td {
   border: solid 1px #6B7280;
-}
+} */
 
 th:first-child {
   width: 8%;
