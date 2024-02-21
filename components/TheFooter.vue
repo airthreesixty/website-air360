@@ -78,7 +78,7 @@
             <li class="mb-4">
               <NuxtLink :to="localePath('/about')">
                 <div class="hover:underline">
-                  {{ $t("about") }}
+                  {{ $t("about.title") }}
                 </div>
               </NuxtLink>
             </li>

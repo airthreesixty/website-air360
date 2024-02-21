@@ -16,7 +16,7 @@ AIR360株式会社
 #title
 設立
 #item
-令和5年12月25日
+2023年12月25日
 ::
 ::table-row
 #title
