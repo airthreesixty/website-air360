@@ -76,6 +76,13 @@
               >{{ $t("careers") }}<fa-icon class="fa-sm pl-1" :icon="['fas', 'arrow-up-right-from-square']" /></a>
             </li> -->
             <li class="mb-4">
+              <NuxtLink :to="localePath('/about')">
+                <div class="hover:underline">
+                  {{ $t("about") }}
+                </div>
+              </NuxtLink>
+            </li>
+            <li class="mb-4">
               <NuxtLink :to="localePath('/privacy-policy')">
                 <div class="hover:underline">
                   {{ $t("privacy-policy.title") }}
