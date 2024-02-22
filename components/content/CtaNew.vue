@@ -13,7 +13,7 @@
                 <ContentSlot :use="$slots.description" unwrap="p" />
               </p>
             </div>
-            <PopupTrigger id="AJVqkglY" class="flex justify-center mt-8 md:w-2/3">
+            <PopupTrigger :id="locale === 'en' ? 'AJVqkglY': 'WcUPc0gT'" class="flex justify-center mt-8 md:w-2/3">
               <ButtonPrimary slug="javascript:void(0)" theme="transparent">
                 {{ $t('try-air360') }}
               </ButtonPrimary>

@@ -37,7 +37,7 @@
       </template>
     </DropdownsItemBlock>
     <li class="mb-3 mt-5">
-      <PopupTrigger id="AJVqkglY">
+      <PopupTrigger :id="locale === 'en' ? 'AJVqkglY': 'WcUPc0gT'">
         <ButtonPrimary theme="primary" slug="javascript:void(0)">
           {{ $t("request-demo.title") }}
         </ButtonPrimary>
