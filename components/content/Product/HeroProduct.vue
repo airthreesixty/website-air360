@@ -41,4 +41,6 @@ interface Props {
 withDefaults(defineProps<Props>(), {
   app: false,
 })
+
+const { locale } = useI18n()
 </script>
