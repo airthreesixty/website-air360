@@ -192,7 +192,7 @@ Clients harness Air360 for key UX insights, boosting conversion optimization. Ou
 ::slideshow
 ::
 
-::teams
+<!-- ::teams
 #title
 Who uses Air360?
 #description
@@ -222,7 +222,7 @@ All team members contributing to a superior digital experience should have easy 
     #description
     Streamline analysis with limitless granularity, swiftly identify blockers & frustrations, and eliminate tagging, mapping, or waiting on data collection.
     ::
-::
+:: -->
 
 ::integration-slider-section{slug="/en/data-integrations/"}
 #title

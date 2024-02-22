@@ -13,7 +13,7 @@
 <script setup lang="ts">
 interface Props {
     icon: string
-    dark: boolean
+    dark?: boolean
 }
 
 defineProps<Props>()
