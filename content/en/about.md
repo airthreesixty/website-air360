@@ -2,7 +2,7 @@
 title: Company profile
 ---
 
-::about
+::about{title-tag=h1}
 #title
 Company profile
 #tableRow
@@ -40,6 +40,30 @@ Company No.
 #title
 Member
 #item
-Director: Defontis Florent Patrick Marcel
+Director: Defontis Florent
+::
+::
+
+::about{title-tag=h2}
+#title
+History
+#tableRow
+::table-row
+#title
+2017
+#item
+Creation of Air360.
+::
+::table-row
+#title
+2021
+#item
+Acquisition of Air360 by eCommerce US company, Scalefast Inc.
+::
+::table-row
+#title
+2024
+#item
+Air360 spins off as separate company with new head office.
 ::
 ::

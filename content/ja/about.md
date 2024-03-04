@@ -2,7 +2,7 @@
 title: 会社概要
 ---
 
-::about
+::about{title-tag=h1}
 #title
 会社概要
 #tableRow
@@ -41,5 +41,29 @@ AIR360株式会社
 役員
 #item
 取締役　ドゥフォンティス・フロラン・パトリック・マルセル
+::
+::
+
+::about{title-tag=h2}
+#title
+歴史
+#tableRow
+::table-row
+#title
+2017
+#item
+Air360の創造。
+::
+::table-row
+#title
+2021
+#item
+Air360の買収：アメリカのeコマース企業、Scalefast Inc.によるもの。
+::
+::table-row
+#title
+2024
+#item
+Air360が新しい本社を持つ独立した会社として分社化する。
 ::
 ::
