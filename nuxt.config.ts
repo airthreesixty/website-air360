@@ -45,6 +45,11 @@ export default defineNuxtConfig({
           src: 'https://cdn.jsdelivr.net/gh/manucaralmo/GlowCookies@3.1.8/src/glowCookies.min.js',
         },
         { src: '//embed.typeform.com/next/embed.js' },
+        {
+          src: 'https://cdn.air360tracker.net/v2/air360.ab.min.js',
+          type: 'module',
+          body: true,
+        },
       ],
     },
   },
