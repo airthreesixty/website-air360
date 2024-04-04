@@ -1,14 +1,14 @@
 <template>
   <NuxtLayout>
     <NuxtPage />
-    <NoScript v-if="runtimeConfig.public.platform === 'prod'">
+    <!-- <NoScript v-if="runtimeConfig.public.platform === 'prod'">
       <iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-WNS682V"
         height="0"
         width="0"
         style="display:none;visibility:hidden"
       />
-    </NoScript>
+    </NoScript> -->
   </NuxtLayout>
 </template>
 
