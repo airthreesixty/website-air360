@@ -50,10 +50,6 @@ export default defineNuxtConfig({
           type: 'module',
           body: true,
         },
-        {
-          src: '//script.crazyegg.com/pages/scripts/0123/1031.js',
-          async: true,
-        },
       ],
     },
   },
