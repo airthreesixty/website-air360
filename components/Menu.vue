@@ -57,7 +57,7 @@
             class="flex flex-col pb-2 mt-4 border items-center border-none lg:(flex-row space-x-8 mt-0 text-base font-medium border-0 p-4)"
           >
             <li class="relative hidden cursor-pointer lg:block">
-              <div class="menu__link text-white" aria-controls="product-modal" :aria-expanded="isProductActive" @mouseover="openProduct">
+              <div class="menu__link" aria-controls="product-modal" :aria-expanded="isProductActive" @mouseover="openProduct">
                 <span class="sr-only">Open Product menu</span>
                 {{ $t("product.title") }}
               </div>
