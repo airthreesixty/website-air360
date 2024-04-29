@@ -40,7 +40,7 @@ Company No.
 #title
 Member
 #item
-Director: Defontis Florent
+Director: Florent Defontis
 ::
 ::
 

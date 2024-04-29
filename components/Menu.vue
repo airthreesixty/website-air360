@@ -56,14 +56,14 @@
           <ul
             class="flex flex-col pb-2 mt-4 border items-center border-none lg:(flex-row space-x-8 mt-0 text-base font-medium border-0 p-4)"
           >
-            <li class="relative hidden lg:block">
-              <div class="menu__link" aria-controls="product-modal" :aria-expanded="isProductActive" @mouseover="openProduct">
+            <li class="relative hidden cursor-pointer lg:block">
+              <div class="menu__link text-white" aria-controls="product-modal" :aria-expanded="isProductActive" @mouseover="openProduct">
                 <span class="sr-only">Open Product menu</span>
                 {{ $t("product.title") }}
               </div>
               <DropdownsProductDropdown v-show="isProductActive" @mouseleave="closeProduct" />
             </li>
-            <li class="relative hidden lg:block">
+            <li class="relative hidden cursor-pointer lg:block">
               <div class="menu__link" aria-controls="inspiration-modal" :aria-expanded="isInspirationActive" @mouseover="openInspiration">
                 <span class="sr-only">Open Inspiration menu</span>
                 {{ $t("inspiration") }}
@@ -109,7 +109,7 @@
             </li>
           </ul>
         </nav>
-        <div class="relative order-1 lg:order-3 !lg:pr-4">
+        <div class="relative order-1 cursor-pointer lg:order-3 !lg:pr-4">
           <div
             class="menu__link svg"
             aria-controls="language-modal"
