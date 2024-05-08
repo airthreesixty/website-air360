@@ -5,7 +5,7 @@
         <SuccessNotification :is-success="isSuccess" @close="close" />
       </div>
     </transition> -->
-    <Loading v-if="loading" />
+    <!-- <Loading v-if="loading" /> -->
     <div
       class="max-w-screen-[1400px] px-4 py-8 mx-auto lg:grid lg:gap-20 lg:py-16 lg:grid-cols-12"
     >
@@ -138,7 +138,8 @@
               :class="{'opacity-25 cursor-not-allowed': !isFormValid }"
               :disabled="!isFormValid"
             >
-              <ContentSlot :use="$slots.cta" />
+              <ContentSlot v-if="!loading" :use="$slots.cta" />
+              <Loading v-if="loading" class="w-20 h-5 mx-auto" :is-full-page="false" color="#FFFFFF" />
             </button>
           </form>
         </div>

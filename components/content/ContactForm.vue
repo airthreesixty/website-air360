@@ -92,7 +92,8 @@
               :class="{'opacity-25 cursor-not-allowed': !isFormValid }"
               :disabled="!isFormValid"
             >
-              <ContentSlot :use="$slots.submitButton" />
+              <ContentSlot v-if="!loading" :use="$slots.submitButton" />
+              <Loading v-if="loading" class="w-20 h-5 mx-auto" :is-full-page="false" color="#FFFFFF" />
             </button>
           </form>
         </div>

@@ -3,7 +3,7 @@
     <loading
       v-model:active="isLoading"
       loader="dots"
-      color="#E74B91"
+      :color="props.color"
       background-color="transparent"
       :is-full-page="isFullPage"
     />
@@ -16,10 +16,12 @@ import 'vue-loading-overlay/dist/css/index.css'
 
 const isLoading = ref(true)
 
-defineProps({
-  isFullPage: {
-    type: Boolean,
-    required: true,
-  },
+interface Props {
+  isFullPage: boolean,
+  color: string
+}
+
+const props = withDefaults(defineProps<Props>(), {
+  color: '#E74B91',
 })
 </script>
