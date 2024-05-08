@@ -1,42 +1,115 @@
 <template>
-  <section class="relative bg-white">
-    <div class="container py-8 md:py-16">
+  <section class="relative bg-white dark:bg-gray-900">
+    <transition name="bar">
+      <div v-if="isSuccess">
+        <SuccessNotification :is-success="isSuccess" @close="close" />
+      </div>
+    </transition>
+    <Loading v-if="loading" />
+    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
       <div
         class="px-4 mx-auto max-w-screen-sm text-center lg:px-6 mb-8 lg:mb-16"
       >
-        <h1
-          class="mb-4 text-3xl font-bold text-black-600 md:text-4xl"
+        <h2
+          class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 md:text-4xl dark:text-white"
         >
           Contact Us
-        </h1>
-        <p class="font-light text-gray-600 md:text-xl">
-          <ContentSlot :use="$slots.subtext" unwrap="p" />
+        </h2>
+        <p class="font-light text-gray-600 dark:text-gray-400 sm:text-xl">
+          <ContentSlot :use="$slots.subtext" />
         </p>
       </div>
-      <div class="grid grid-cols-1">
+      <div class="grid grid-cols-1 lg:gap-8 lg:grid-cols-3">
         <div class="col-span-2 mb-8 lg:mb-0">
-          <div
-            class="w-full mx-auto bg-white lg:(flex-1 max-w-[800px])"
+          <form
+            ref="form"
+            action=""
+            class="grid grid-cols-1 gap-8 mx-auto max-w-screen-md sm:grid-cols-2"
+            method="post"
+            @submit.prevent="submitForm"
           >
-            <!-- <div
-              class="rounded-lg bg-gray-100 shadow-lg px-8 py-9 lg:mt-8"
-            > -->
-            <!-- <div id="form">
-                <Loading class="w-20 h-5 mx-auto" :is-full-page="false" />
-              </div> -->
-            <Widget :id="formId" class="h-100" />
-            <!-- </div> -->
-          </div>
+            <div>
+              <label
+                for="name"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              ><ContentSlot :use="$slots.name" /></label>
+              <input
+                id="name"
+                v-model="formData.name"
+                type="text"
+                class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+              >
+              <span v-if="v$.name.$error" class="error-alert">
+                {{ v$.name.$errors[0].$message }}
+              </span>
+            </div>
+            <div>
+              <label
+                for="email"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              ><ContentSlot :use="$slots.email" /></label>
+              <input
+                id="email"
+                v-model="formData.email"
+                type="text"
+                class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+              >
+              <span v-if="v$.email.$error" class="error-alert">
+                {{ v$.email.$errors[0].$message }}
+              </span>
+            </div>
+            <div>
+              <label
+                for="job-title"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              ><ContentSlot :use="$slots.jobTitle" /></label>
+              <input
+                id="job-title"
+                v-model="formData.jobTitle"
+                type="text"
+                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+              >
+              <span v-if="v$.jobTitle.$error" class="error-alert">
+                {{ v$.jobTitle.$errors[0].$message }}
+              </span>
+            </div>
+            <div class="md:col-span-2">
+              <label
+                for="message"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+              ><ContentSlot :use="$slots.message" /></label>
+              <textarea
+                id="message"
+                v-model="formData.message"
+                rows="6"
+                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+              />
+              <span v-if="v$.message.$error" class="error-alert">
+                {{ v$.message.$errors[0].$message }}
+              </span>
+              <p class="mt-4 text-xs text-gray-500">
+                <ContentSlot :use="$slots.rule" />
+              </p>
+            </div>
+            <button
+              type="submit"
+              class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg transition ease-in-out duration-300 bg-primary-600 sm:w-fit hover:bg-primary-700 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+              :class="{'opacity-25 cursor-not-allowed': !isFormValid }"
+              :disabled="!isFormValid"
+            >
+              <ContentSlot :use="$slots.submitButton" />
+            </button>
+          </form>
         </div>
         <div
-          class="grid col-span-1 gap-8 text-center grid-cols-2 py-15"
+          class="grid grid-cols-1 col-span-1 gap-8 text-center sm:grid-cols-2 lg:grid-cols-1"
         >
           <div>
             <div
-              class="flex justify-center items-center mx-auto mb-4 w-10 h-10 bg-gray-100 rounded-lg lg:h-16 lg:w-16"
+              class="flex justify-center items-center mx-auto mb-4 w-10 h-10 bg-gray-100 rounded-lg dark:bg-gray-800 lg:h-16 lg:w-16"
             >
               <svg
-                class="w-5 h-5 text-gray-600 lg:w-8 lg:h-8"
+                class="w-5 h-5 text-gray-600 lg:w-8 lg:h-8 dark:text-gray-500"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -48,19 +121,19 @@
                 />
               </svg>
             </div>
-            <p class="mb-2 text-xl font-bold text-black-600">
-              <ContentSlot :use="$slots.companyInfo" unwrap="p" />
+            <p class="mb-2 text-xl font-bold text-gray-900 dark:text-white">
+              <ContentSlot :use="$slots.companyInfo" />
             </p>
-            <p class="text-gray-500">
-              <ContentSlot :use="$slots.companyName" unwrap="p" />
+            <p class="text-gray-500 dark:text-gray-400">
+              <ContentSlot :use="$slots.companyName" />
             </p>
           </div>
           <div>
             <div
-              class="flex justify-center items-center mx-auto mb-4 w-10 h-10 bg-gray-100 rounded-lg lg:h-16 lg:w-16"
+              class="flex justify-center items-center mx-auto mb-4 w-10 h-10 bg-gray-100 rounded-lg dark:bg-gray-800 lg:h-16 lg:w-16"
             >
               <svg
-                class="w-5 h-5 text-gray-600 lg:w-8 lg:h-8"
+                class="w-5 h-5 text-gray-600 lg:w-8 lg:h-8 dark:text-gray-500"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -72,11 +145,11 @@
                 />
               </svg>
             </div>
-            <p class="mb-2 text-xl font-bold text-black-600">
-              <ContentSlot :use="$slots.location" unwrap="p" />
+            <p class="mb-2 text-xl font-bold text-gray-900 dark:text-white">
+              <ContentSlot :use="$slots.location" />
             </p>
-            <p class="text-gray-500">
-              <ContentSlot :use="$slots.address" unwrap="p" />
+            <p class="text-gray-500 dark:text-gray-400">
+              <ContentSlot :use="$slots.address" />
             </p>
           </div>
         </div>
@@ -85,13 +158,68 @@
   </section>
 </template>
 
-<script setup>
-const { locale } = useI18n()
+<script setup lang="ts">
+import axios from 'axios'
+import { useVuelidate } from '@vuelidate/core'
+import { required, email } from '~/utils/i18n-validators'
 
-const formId = computed(() => {
-  if (locale.value === 'en') {
-    return 'QysWVaIQ'
-  }
-  return 'h5xHQyCI'
+const formData = reactive({
+  name: '',
+  email: '',
+  jobTitle: '',
+  message: '',
 })
+
+const loading = ref(false)
+
+const isSuccess = ref(false)
+
+const rules = computed(() => {
+  return {
+    name: { required },
+    email: { required, email },
+    jobTitle: { required },
+    message: { required },
+  }
+})
+
+const v$ = useVuelidate(rules, formData)
+
+const isFormValid = computed(() => {
+  if (formData.name && formData.email && formData.jobTitle && formData.message) {
+    return true
+  } else {
+    return false
+  }
+})
+
+const close = () => {
+  isSuccess.value = !isSuccess.value
+}
+
+const submitForm = async () => {
+  const isFormCorrect = await v$.value.$validate()
+  if (isFormCorrect) {
+    loading.value = true
+    await axios.post('https://api.form-data.com/f/fhrtrdprid7cc823m483ku', formData)
+    loading.value = false
+    isSuccess.value = !isSuccess.value
+    v$.value.$reset()
+    Object.assign(formData, { name: '', email: '', jobTitle: '', message: '' })
+  }
+}
 </script>
+
+<style lang="postcss">
+.error-alert {
+  @apply text-xs text-red-500;
+}
+
+.bar-enter-active, .bar-leave-active {
+  transition: opacity .3s;
+}
+
+.bar-enter, .bar-leave-to {
+  opacity: 0;
+}
+</style>

@@ -201,13 +201,11 @@
           </div>
           <ul class="text-gray-600">
             <li class="mb-4">
-              <PopupTrigger id="AJVqkglY">
-                <a href="javascript:void(0)">
-                  <div class="hover:underline">
-                    {{ $t("request-demo.title") }}
-                  </div>
-                </a>
-              </PopupTrigger>
+              <nuxt-link :to="localePath('/request-demo')">
+                <div class="hover:underline">
+                  {{ $t("request-demo.title") }}
+                </div>
+              </nuxt-link>
             </li>
             <li class="mb-4">
               <PopupTrigger :id="locale ==='en' ? 'QysWVaIQ': 'h5xHQyCI'">

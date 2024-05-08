@@ -13,11 +13,11 @@
                 <ContentSlot :use="$slots.description" unwrap="p" />
               </p>
             </div>
-            <PopupTrigger :id="locale === 'en' ? 'AJVqkglY': 'WcUPc0gT'" class="flex justify-center mt-8 md:w-2/3">
+            <nuxt-link :to="localePath('/request-demo')" class="flex justify-center mt-8 md:w-2/3">
               <ButtonPrimary slug="javascript:void(0)" theme="transparent">
                 {{ $t('try-air360') }}
               </ButtonPrimary>
-            </PopupTrigger>
+            </nuxt-link>
           </div>
         </div>
         <div class="hidden aspect-w-5 aspect-h-3 -mt-6 z-0 md:block md:aspect-w-2 md:aspect-h-1">
@@ -29,7 +29,8 @@
 </template>
 
 <script setup lang="ts">
-const { locale } = useI18n()
+// const { locale } = useI18n()
+const localePath = useLocalePath()
 </script>
 
 <style scoped>

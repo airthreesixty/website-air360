@@ -48,13 +48,13 @@
           <span class="bg-button bg-button1" />
           <span class="bg-button bg-button2" />
           <span class="bg-button bg-button3" />
-          <PopupTrigger :id="locale === 'en' ? 'AJVqkglY': 'WcUPc0gT'">
+          <nuxt-link :to="localePath('/request-demo')">
             <div class="button transition ease-in-out duration-300 hover:opacity-80">
               <div class="text-white font-bold text-base">
                 {{ $t("request-demo.title") }}
               </div>
             </div>
-          </PopupTrigger>
+          </nuxt-link>
         </div>
       </div>
     </div>
@@ -65,6 +65,7 @@
 import { useIntersectionObserver } from '@vueuse/core'
 
 const { locale } = useI18n()
+const localePath = useLocalePath()
 
 const target = ref(null)
 const showIFrame = ref(false)

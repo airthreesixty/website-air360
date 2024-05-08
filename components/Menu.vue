@@ -101,11 +101,11 @@
               >{{ $t("login") }}</a>
             </li>
             <li class="pt-2 lg:pt-0">
-              <PopupTrigger :id="locale === 'en' ? 'AJVqkglY': 'WcUPc0gT'">
+              <nuxt-link :to="localePath('/request-demo')">
                 <ButtonPrimary slug="javascript:void(0)" :theme="isHomepage ? 'outline' : 'primary'">
                   {{ $t("request-demo.title") }}
                 </ButtonPrimary>
-              </PopupTrigger>
+              </nuxt-link>
             </li>
           </ul>
         </nav>
