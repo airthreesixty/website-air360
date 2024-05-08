@@ -150,20 +150,13 @@
 
 <script setup lang="ts">
 import axios from 'axios'
-import { toast } from 'vue3-toastify'
-import 'vue3-toastify/dist/index.css'
 import { useVuelidate } from '@vuelidate/core'
 import { required, email } from '~/utils/i18n-validators'
 
-const props = defineProps({
-  successMessage: {
-    type: String,
-    required: true,
-  },
-})
-
 const isSuccess = ref(false)
 const loading = ref(false)
+const router = useRouter()
+const localePath = useLocalePath()
 
 const formData = reactive({
   name: '',
@@ -203,11 +196,7 @@ const submitForm = async () => {
     isSuccess.value = !isSuccess.value
     v$.value.$reset()
     Object.assign(formData, { name: '', email: '', jobTitle: '', terms: false })
-    toast(props.successMessage, {
-      theme: 'auto',
-      type: 'success',
-      dangerouslyHTMLString: true,
-    })
+    router.push(localePath('/thank-you-for-the-demo-request'))
   }
 }
 </script>

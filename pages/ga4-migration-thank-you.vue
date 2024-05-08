@@ -2,14 +2,14 @@
   <ThankYouPage>
     <div class="flex flex-col justify-center items-center text-center">
       <h1 class="page-thank-you__title">
-        {{ $t('ga4-thank-you.title') }}
+        {{ $t('thank-you.title') }}
       </h1>
       <MochiFlying class="mt-12 mb-10" />
       <p class="page-thank-you__description">
-        {{ $t('ga4-thank-you.p1') }}
+        {{ $t('thank-you.p1') }}
       </p>
       <p class="page-thank-you__description pt-5">
-        {{ $t('ga4-thank-you.p2') }}
+        {{ $t('thank-you.p2') }}
       </p>
     </div>
   </ThankYouPage>
