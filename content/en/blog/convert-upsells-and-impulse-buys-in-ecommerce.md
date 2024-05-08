@@ -1,11 +1,11 @@
 ---
 title: Convert Upsells and Impulse Buys in Ecommerce
 published: 2023-2-21
-tags: 
+tags:
   - other
 readingTime: 4
 image: /blog/convert-upsells-and-impulse-buys-in-ecommerce.webp
-metaDesc: Seeing is selling. Brick-and-mortar locations have impulse buying and upselling down to a science. Americans spend $182.98 per month on impulse buys. From shelf placement to endcaps and checkout displays, in-person shopping is an impulse buying minefield. 
+metaDesc: Seeing is selling. Brick-and-mortar locations have impulse buying and upselling down to a science. Americans spend $182.98 per month on impulse buys. From shelf placement to endcaps and checkout displays, in-person shopping is an impulse buying minefield.
 ---
 
 Seeing is selling. Brick-and-mortar locations have impulse buying and upselling down to a science. Americans spend $182.98 per month on impulse buys. From shelf placement to endcaps and checkout displays, in-person shopping is an impulse buying minefield. Strategically placing products drives huge revenue for retailers with minimal effort. DTC brands can also implement upselling in eCommerce environments and get an extra bottom-line boost.
@@ -23,7 +23,7 @@ When cross-selling and upselling in eCommerce you need to know who your customer
 ::blog-inner-card{slug="/en/blog/personalise-and-target-new-customers-with-first-party-data/"}
 ::
 
-Kohan believes, “Chatbots, machine learning and virtual stylist assistance are all ways to not only encourage purchasing and upselling but can also be used to make sure the correct clothing sizes are selected which ultimately reduces returns.” 
+Kohan believes, “Chatbots, machine learning and virtual stylist assistance are all ways to not only encourage purchasing and upselling but can also be used to make sure the correct clothing sizes are selected which ultimately reduces returns.”
 
 But, just like customers browsing in a brick-and-mortar store, a lot of activity happens between visiting a listing and checking out. Platforms that can capture every action on the site provide large amounts of data that can be sliced and diced for analysis. For instance, Air360 tracks every user action and turns it into easy-to-read information that anyone can put together to make meaningful decisions.
 
@@ -39,4 +39,4 @@ Online retailers face unique challenges when implementing upselling in eCommerce
 
 Keep guesswork out of your upsell equation by tracking and analyzing meaningful data. As you build your product bundles, test and segment to find the right options for each customer personally. And finally, prioritize user experience to serve impulse buys to customers in an  enjoyable and frictionless way.
 
-To learn more about how [Air360](/en/product-tour/) can help you get creative with your impulse selling strategy, request a demo today.
+To learn more about how Air360 can help you get creative with your impulse selling strategy, request a demo today.

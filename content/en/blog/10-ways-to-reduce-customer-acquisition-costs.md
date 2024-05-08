@@ -1,7 +1,7 @@
 ---
 title: 10 Ways to Reduce Customer Acquisition Costs
 published: 2023-3-28
-tags: 
+tags:
   - marketing
   - ecommerce
 readingTime: 6
@@ -13,7 +13,7 @@ Brands spend an average of 12-15% of their annual revenue on customer acquisitio
 
 Everything from product pricing and sales to marketing spend can affect customer acquisition, making it a difficult metric to stay on top of.
 
-Fortunately, brands that are diligent in their efforts can follow a few proven methods to reduce the cost of acquiring new customers — allowing them to boost overall margins and business growth. 
+Fortunately, brands that are diligent in their efforts can follow a few proven methods to reduce the cost of acquiring new customers — allowing them to boost overall margins and business growth.
 
 Here we’ll define customer acquisition costs, then give you 10 suggestions on how to reduce these costs for your eCommerce business.
 
@@ -52,7 +52,7 @@ A/B testing is one of the most common and effective ways to increase conversions
 ::
 
 ### 7. Update Your Retargeting Campaign
-About 92% of the consumers who visit your website for the first time aren’t ready to make a purchase. But by targeting those customers who leave without making a purchase, you can reduce customer acquisition costs and drive traffic back to your website. In fact, combining retargeting ads with your other marketing efforts could help you sell 50% more. Use retargeting campaigns to promote best-selling products, introduce new items, and move slow inventory. 
+About 92% of the consumers who visit your website for the first time aren’t ready to make a purchase. But by targeting those customers who leave without making a purchase, you can reduce customer acquisition costs and drive traffic back to your website. In fact, combining retargeting ads with your other marketing efforts could help you sell 50% more. Use retargeting campaigns to promote best-selling products, introduce new items, and move slow inventory.
 
 ::blog-inner-card{slug="/en/blog/investing-in-paid-media-vs-investing-in-cro/"}
 ::
@@ -61,7 +61,7 @@ About 92% of the consumers who visit your website for the first time aren’t re
 ::
 
 ### 8. Create a Loyalty Program
-Loyalty programs have been a long-used strategy for eCommerce brands looking to retain customers and reduce acquisition costs. However, the trends in customer loyalty programs are shifting and in a way that may seem counter-intuitive. A recent McKinsey survey found that members of paid loyalty programs are 60% more likely to buy more after they subscribe, while members of free loyalty programs are 30% more likely to buy more. 
+Loyalty programs have been a long-used strategy for eCommerce brands looking to retain customers and reduce acquisition costs. However, the trends in customer loyalty programs are shifting and in a way that may seem counter-intuitive. A recent McKinsey survey found that members of paid loyalty programs are 60% more likely to buy more after they subscribe, while members of free loyalty programs are 30% more likely to buy more.
 
 ### 9. Build an Affiliate Program
 An impressive 40% of U.S. merchants say affiliate programs are their most effective customer acquisition channel. The marketing strategy blends with influencer marketing and social media marketing. It is a powerful tool to boost sales and increase conversions at a low cost. Whether your affiliates are making YouTube videos, blog posts, or podcasts, there are many affordable ways to get in the affiliate marketing game.
@@ -70,6 +70,6 @@ An impressive 40% of U.S. merchants say affiliate programs are their most effect
 Many eCommerce brands spend too much money driving traffic to a website that’s confusing or difficult for customers to navigate. Don’t throw away your marketing budget. Optimize the website experience to keep customers around and reduce your overall acquisition rates.
 
 ## Reduce Customer Acquisition Costs with Air360
-Customer acquisition costs have a serious impact on the success of any eCommerce brand. And though reducing the cost of bringing in a new customer may seem challenging, it doesn’t have to be. These 10 strategies can help any brand reduce customer acquisition costs and increase business growth. 
+Customer acquisition costs have a serious impact on the success of any eCommerce brand. And though reducing the cost of bringing in a new customer may seem challenging, it doesn’t have to be. These 10 strategies can help any brand reduce customer acquisition costs and increase business growth.
 
-Looking for more ways to reduce customer acquisition costs? [Air360](/en/product-tour/) can transform your website data into actionable insights that reduce your marketing costs. On-page analytics, smart funnels, session replays, and more help you experience your website through the eyes of your visitors, helping you increase conversion rates. [Request a demo today](/en/request-demo).
+Looking for more ways to reduce customer acquisition costs? Air360 can transform your website data into actionable insights that reduce your marketing costs. On-page analytics, smart funnels, session replays, and more help you experience your website through the eyes of your visitors, helping you increase conversion rates. [Request a demo today](/en/request-demo).

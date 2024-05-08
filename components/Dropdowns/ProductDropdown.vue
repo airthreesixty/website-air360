@@ -17,12 +17,12 @@
             {{ $t('product-dropdown.app-analysis') }}
           </NuxtLink>
         </div>
-        <div v-if="locale === 'en'" class="text-sm text-black-600 mt-4">
+        <!-- <div v-if="locale === 'en'" class="text-sm text-black-600 mt-4">
           <span><fa-icon class="text-lg text-primary-600 w-5 mr-2" :icon="['far', 'ticket-airline']" /></span>
           <NuxtLink :to="localePath('/product-tour')" class="text-black-600 hover:(text-primary-600 text-shadow-primary)">
             {{ $t('product-dropdown.product-tour') }}
           </NuxtLink>
-        </div>
+        </div> -->
       </div>
       <div>
         <div class="font-bold text-black-600">
@@ -76,5 +76,5 @@
 
 <script setup lang="ts">
 const localePath = useLocalePath()
-const { locale } = useI18n()
+// const { locale } = useI18n()
 </script>

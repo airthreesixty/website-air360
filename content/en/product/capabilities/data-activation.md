@@ -40,9 +40,9 @@ Connect to your favorite TechStack with Air360
 Whether you are trying to push out segments to your marketing cloud or if you are trying to push out data to your CRM or business intelligence solution, Air360 will offer you a solution to connect with all your TechStack.
 ::
 
-::cta2{slug="/product-tour"}
+<!-- ::cta2{slug="/product-tour"}
 #title
 Watch a product tour to see Air360 in action
 #cta
 Watch tour
-::
+:: -->
