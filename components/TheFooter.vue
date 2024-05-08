@@ -208,13 +208,11 @@
               </nuxt-link>
             </li>
             <li class="mb-4">
-              <PopupTrigger :id="locale ==='en' ? 'QysWVaIQ': 'h5xHQyCI'">
-                <a href="javascript:void(0)">
-                  <div class="hover:underline">
-                    {{ $t("contact-us") }}
-                  </div>
-                </a>
-              </PopupTrigger>
+              <nuxt-link :to="localePath('/contact')">
+                <div class="hover:underline">
+                  {{ $t("contact-us") }}
+                </div>
+              </nuxt-link>
             </li>
             <li class="mb-4">
               <a :href="runtimeConfig.public.appUrl" target="_blank" class="hover:underline">{{ $t("login") }}<fa-icon class="fa-sm pl-1" :icon="['fas', 'arrow-up-right-from-square']" /></a>

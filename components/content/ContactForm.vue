@@ -1,10 +1,5 @@
 <template>
   <section class="relative bg-white dark:bg-gray-900">
-    <transition name="bar">
-      <div v-if="isSuccess">
-        <SuccessNotification :is-success="isSuccess" @close="close" />
-      </div>
-    </transition>
     <Loading v-if="loading" />
     <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
       <div
@@ -193,15 +188,15 @@ const isFormValid = computed(() => {
   }
 })
 
-const close = () => {
-  isSuccess.value = !isSuccess.value
-}
+// const close = () => {
+//   isSuccess.value = !isSuccess.value
+// }
 
 const submitForm = async () => {
   const isFormCorrect = await v$.value.$validate()
   if (isFormCorrect) {
     loading.value = true
-    await axios.post('https://api.form-data.com/f/fhrtrdprid7cc823m483ku', formData)
+    await axios.post('https://api.form-data.com/f/ekjf63pz9fge1xrfc1wtj', formData)
     loading.value = false
     isSuccess.value = !isSuccess.value
     v$.value.$reset()
