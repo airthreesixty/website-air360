@@ -2,7 +2,7 @@
 title: Request Demo
 ---
 
-::request-form
+::request-form{successMessage="Your form has been successfully submitted."}
 #title
 Request Demo
 #title1
@@ -21,7 +21,7 @@ Name*
 #email
 Email*
 #jobTitle
-Job Title*
+Job Title\*
 #rule
 I agree to <span class="text-primary-600 hover:underline">[the terms of use and privacy policy](/en/privacy-policy)</span> of Air360.
 #cta

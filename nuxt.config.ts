@@ -2,7 +2,19 @@ import crawler from './crawler'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  modules: ['@nuxt/content', 'nuxt-windicss', '@nuxtjs/i18n', 'nuxt-font-loader', '@nuxtjs/algolia', '@nuxt/image', 'nuxt-schema-org', 'nuxt-simple-sitemap', '@vueuse/motion/nuxt', 'vue3-carousel-nuxt'],
+  modules: [
+    '@nuxt/content',
+    'nuxt-windicss',
+    '@nuxtjs/i18n',
+    'nuxt-font-loader',
+    '@nuxtjs/algolia',
+    '@nuxt/image',
+    'nuxt-schema-org',
+    'nuxt-simple-sitemap',
+    '@vueuse/motion/nuxt',
+    'vue3-carousel-nuxt',
+    "@nuxt/ui"
+  ],
   algolia: {
     apiKey: process.env.ALGOLIA_SEARCH_API_KEY,
     applicationId: process.env.ALGOLIA_APPLICATION_ID,

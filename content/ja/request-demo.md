@@ -2,7 +2,7 @@
 title: デモのリクエスト
 ---
 
-::request-form
+::request-form{successMessage="フォームの送信に成功しました。"}
 #title
 デモのリクエスト
 #title1
