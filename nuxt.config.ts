@@ -13,7 +13,6 @@ export default defineNuxtConfig({
     'nuxt-simple-sitemap',
     '@vueuse/motion/nuxt',
     'vue3-carousel-nuxt',
-    "@nuxt/ui"
   ],
   algolia: {
     apiKey: process.env.ALGOLIA_SEARCH_API_KEY,
@@ -56,7 +55,6 @@ export default defineNuxtConfig({
         {
           src: 'https://cdn.jsdelivr.net/gh/manucaralmo/GlowCookies@3.1.8/src/glowCookies.min.js',
         },
-        { src: '//embed.typeform.com/next/embed.js' },
         {
           src: 'https://cdn.air360tracker.net/v2/air360.ab.min.js',
           type: 'module',
