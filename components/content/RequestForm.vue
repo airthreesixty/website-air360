@@ -156,6 +156,7 @@ import { required, email } from '~/utils/i18n-validators'
 const isSuccess = ref(false)
 const loading = ref(false)
 const router = useRouter()
+const { locale } = useI18n()
 const localePath = useLocalePath()
 
 const formData = reactive({
@@ -183,15 +184,18 @@ const isFormValid = computed(() => {
   }
 })
 
-// const close = () => {
-//   isSuccess.value = !isSuccess.value
-// }
+const apiRequest = computed(() => {
+  if (locale.value === 'en') {
+    return 'https://api.form-data.com/f/k7te4v7wvbq3884uklqzwi'
+  }
+  return 'https://api.form-data.com/f/m3m82t00krrxiq85dqw9sr'
+})
 
 const submitForm = async () => {
   const isFormCorrect = await v$.value.$validate()
   if (isFormCorrect) {
     loading.value = true
-    await axios.post('https://api.form-data.com/f/m3m82t00krrxiq85dqw9sr', formData)
+    await axios.post(apiRequest.value, formData)
     loading.value = false
     isSuccess.value = !isSuccess.value
     v$.value.$reset()

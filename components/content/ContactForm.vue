@@ -176,7 +176,7 @@ const formData = reactive({
 })
 
 const loading = ref(false)
-
+const { locale } = useI18n()
 const isSuccess = ref(false)
 
 const rules = computed(() => {
@@ -198,15 +198,18 @@ const isFormValid = computed(() => {
   }
 })
 
-// const close = () => {
-//   isSuccess.value = !isSuccess.value
-// }
+const apiRequest = computed(() => {
+  if (locale.value === 'en') {
+    return 'https://api.form-data.com/f/ontirdwzd09gw275ggg3bl'
+  }
+  return 'https://api.form-data.com/f/ekjf63pz9fge1xrfc1wtj'
+})
 
 const submitForm = async () => {
   const isFormCorrect = await v$.value.$validate()
   if (isFormCorrect) {
     loading.value = true
-    await axios.post('https://api.form-data.com/f/ekjf63pz9fge1xrfc1wtj', formData)
+    await axios.post(apiRequest.value, formData)
     loading.value = false
     isSuccess.value = !isSuccess.value
     v$.value.$reset()
