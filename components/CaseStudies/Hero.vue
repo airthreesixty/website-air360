@@ -12,7 +12,7 @@
         <div class="flex justify-center">
           <div class="flex flex-col mt-5 md:flex-row md:gap-4">
             <div class="w-52 md:mb-0">
-              <ButtonPrimary theme="primary" :slug="localePath('/request-demo')">
+              <ButtonPrimary theme="primary" :slug="localePath('/case-studies/test-study')">
                 <fa-icon class="text-white text-lg mr-1" :icon="['far', 'play']" />Watch
               </ButtonPrimary>
             </div>

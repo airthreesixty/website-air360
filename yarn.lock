@@ -3556,6 +3556,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/reveal.js@npm:^5.0.3":
+  version: 5.0.3
+  resolution: "@types/reveal.js@npm:5.0.3"
+  checksum: 307aedfb88324e9dda65670c36d1cec0be294686bc203e05eb9408da28c0e64a92777feabc8310d7b098f1c3565ee5f128455134a7d3b7cc426948e98eac6420
+  languageName: node
+  linkType: hard
+
 "@types/sax@npm:^1.2.1":
   version: 1.2.4
   resolution: "@types/sax@npm:1.2.4"
@@ -5259,17 +5266,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30001464, caniuse-lite@npm:^1.0.30001503":
-  version: 1.0.30001517
-  resolution: "caniuse-lite@npm:1.0.30001517"
-  checksum: e4e87436ae1c4408cf4438aac22902b31eb03f3f5bad7f33bc518d12ffb35f3fd9395ccf7efc608ee046f90ce324ec6f7f26f8a8172b8c43c26a06ecee612a29
-  languageName: node
-  linkType: hard
-
-"caniuse-lite@npm:^1.0.30001587, caniuse-lite@npm:^1.0.30001599":
-  version: 1.0.30001616
-  resolution: "caniuse-lite@npm:1.0.30001616"
-  checksum: adbfdb5e2c02b060834874bec3deb7865a2717fa417b08ad8235af806c48ad7bc433bbf053e1ea48209d28c603c6e6d163eee3f0e4eec70e72569e378a7f9106
+"caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30001464, caniuse-lite@npm:^1.0.30001503, caniuse-lite@npm:^1.0.30001587, caniuse-lite@npm:^1.0.30001599":
+  version: 1.0.30001617
+  resolution: "caniuse-lite@npm:1.0.30001617"
+  checksum: a03bfd6ed474d14378f1b93bf90e9b0031e56a813cf42b364e5a86881ecdcdfdd58bf94c56febb0e4128c5ab57cc0a760ab7f3ef7ce0c1ead1af78a8e806375e
   languageName: node
   linkType: hard
 
@@ -13431,6 +13431,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"reveal.js@npm:^5.1.0":
+  version: 5.1.0
+  resolution: "reveal.js@npm:5.1.0"
+  checksum: 3173074094385f9888f895f5adaf1978aef8a35b80ffea14d2776e206e2807bd0f48be225a74be6622de9462f5787e59543a0ceb726869617f62e658938f6c47
+  languageName: node
+  linkType: hard
+
 "rimraf@npm:^3.0.2":
   version: 3.0.2
   resolution: "rimraf@npm:3.0.2"
@@ -13534,6 +13541,7 @@ __metadata:
     "@tresjs/post-processing": ^0.3.0
     "@typeform/embed": ^4.4.1
     "@types/lodash": ^4.14.194
+    "@types/reveal.js": ^5.0.3
     "@types/three": ^0.155.1
     "@vuelidate/core": ^2.0.0
     "@vuelidate/validators": ^2.0.0
@@ -13558,6 +13566,7 @@ __metadata:
     nuxt-seo-kit: 1.3.8
     nuxt-simple-sitemap: 3.1.3
     nuxt-windicss: ^2.6.0
+    reveal.js: ^5.1.0
     three: ^0.156.1
     typescript: 5.0.4
     unhead: 1.1.26
