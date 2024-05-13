@@ -22,18 +22,3 @@
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-interface Props {
-  app?: boolean
-  src: string
-}
-
-const localePath = useLocalePath()
-
-withDefaults(defineProps<Props>(), {
-  app: false,
-})
-
-// const { locale } = useI18n()
-</script>
