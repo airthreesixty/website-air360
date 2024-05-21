@@ -110,7 +110,7 @@
                   <nuxt-img format="webp" :src="data?.image" :alt="data?.title" class="h-90 mb-10 rounded-lg w-full object-cover" />
                   <span v-if="data?.attribution" class="text-center block -mt-5">Image by vectorjuice on Freepik</span>
                 </header>
-                <div class="nuxt-content" :class="locale === 'en' ? 'prose-lg' : 'prose'">
+                <div class="prose nuxt-content" :class="locale === 'en' && 'prose-lg'">
                   <!-- <NewTableOfContents :paragraph-titles="paragraphTitles" class="lg:hidden" /> -->
                   <ContentRendererMarkdown ref="nuxtContent" :value="data" />
                 </div>
