@@ -3,7 +3,7 @@
     <ContentRenderer :value="data">
       <div class="bg-white flex justify-center">
         <div class="pt-10 pb-5">
-          <div class="container lg:(flex justify-between max-w-[1000px]) gap-8">
+          <div class="container max-w-[800px] lg:(flex justify-between) gap-8">
             <div>
               <article
                 class="mx-auto format format-sm sm:format-base lg:format-lg format-blue"
