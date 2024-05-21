@@ -103,7 +103,7 @@
                     </div>
                   </div>
                   <h1
-                    class="mb-8 text-2xl font-semibold text-black-600 lg:text-3xl"
+                    class="mb-8 text-2xl font-semibold text-black-600 lg:text-4xl"
                   >
                     {{ data?.title }}
                   </h1>

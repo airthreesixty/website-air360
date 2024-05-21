@@ -34,6 +34,7 @@ export default defineConfig({
       typography: {
         DEFAULT: {
           css: {
+            letterSpacing: '0.025rem',
             p: {
               a: {
                 'text-decoration': 'none',
