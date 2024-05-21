@@ -3,8 +3,8 @@
     <ContentRenderer :value="data">
       <div class="bg-white flex justify-center">
         <div class="pt-10 pb-5">
-          <div class="container lg:flex lg:justify-between gap-8">
-            <div class="lg:w-[64%]">
+          <div class="container lg:(flex justify-between max-w-[1000px]) gap-8">
+            <div>
               <article
                 class="mx-auto format format-sm sm:format-base lg:format-lg format-blue"
               >
@@ -110,17 +110,17 @@
                   <nuxt-img format="webp" :src="data?.image" :alt="data?.title" class="h-90 mb-10 rounded-lg w-full object-cover" />
                   <span v-if="data?.attribution" class="text-center block -mt-5">Image by vectorjuice on Freepik</span>
                 </header>
-                <div class="prose nuxt-content">
+                <div class="nuxt-content" :class="locale === 'en' ? 'prose-lg' : 'prose'">
                   <!-- <NewTableOfContents :paragraph-titles="paragraphTitles" class="lg:hidden" /> -->
                   <ContentRendererMarkdown ref="nuxtContent" :value="data" />
                 </div>
               </article>
             </div>
-            <div class="hidden lg:block w-[34%]">
+            <!-- <div class="hidden lg:block w-[34%]">
               <div class="prose sticky top-30">
                 <NewTableOfContents :paragraph-titles="paragraphTitles" :active-toc-id="activeTocId" />
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
