@@ -38,6 +38,9 @@ Rather than relying on intuition or assumptions, A/B testing provides businesses
 ### 4. Continuous Improvement
 A/B testing is an ongoing process that enables businesses to continuously refine and optimize their marketing efforts. By regularly testing and iterating, businesses can stay ahead of evolving customer preferences and market trends, ensuring that their marketing strategies remain relevant and effective.
 
+::blog-inner-card{slug="/en/blog/the-perfect-match-of-ab-testing-and-air360/"}
+::
+
 ## Laying the Groundwork: Preparing for Successful A/B Testing
 ![Preparing for Successful A/B Testing](/blog/a-b-testing-best-practices/preparing-for-successful-ab-test.webp)
 Before diving into the intricacies of A/B testing, it's crucial to establish a solid foundation by addressing the following key considerations:
