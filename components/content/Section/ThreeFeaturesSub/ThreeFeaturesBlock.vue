@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col items-center">
-    <div class="w-18 h-18 flex justify-center items-center rounded-lg mb-2" :class="`bg-${color}-100`">
-      <fa-icon class="fa-3x" :icon="['far', icon]" :class="`text-${color}-600`" />
+    <div class="icon-bg-color w-18 h-18 flex justify-center items-center rounded-lg mb-2">
+      <fa-icon class="fa-3x icon-color" :icon="['far', icon]" />
     </div>
     <h3 class="mb-2 text-xl font-bold text-black-600" :class="{'text-white':dark}">
       <ContentSlot :use="$slots.title" unwrap="p" />
@@ -17,9 +17,26 @@ interface Props {
     icon: string
     dark?: boolean
     color?: string
+    bgColor?: string
 }
 
-withDefaults(defineProps<Props>(), {
-  color: 'primary',
+const props = withDefaults(defineProps<Props>(), {
+  color: '#e74b91',
+  bgColor: '#FCE9F2',
 })
+
+const theme = {
+  color: props.color,
+  bgColor: props.bgColor,
+}
 </script>
+
+<style lang="postcss" scoped>
+.icon-color {
+  color: v-bind('theme.color');
+}
+
+.icon-bg-color {
+  background-color: v-bind('theme.bgColor');
+}
+</style>

@@ -151,7 +151,7 @@ useIntersectionObserver(
 )
 </script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 .border-deco {
   @apply after:content-[''] after:block after:w-25 after:h-[4px] after:rounded-[7px] after:static after:mt-[30px] after:;
 }

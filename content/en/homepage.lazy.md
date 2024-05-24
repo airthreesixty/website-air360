@@ -17,13 +17,13 @@ The Go-To platform for complete & flexible CRO analysis
     #description
     Uncover digital journey insights and conversion opportunities fast.
     ::
-    ::three-features-block{icon="crosshairs-simple" color="orange"}
+    ::three-features-block{icon="crosshairs-simple" color="#FF7B00" bgColor="#FFEDDB"}
     #title
     Optimization Focus
     #description
     Target high-impact areas and segments for maximum conversion gains.
     ::
-    ::three-features-block{icon="flask" color="blue"}
+    ::three-features-block{icon="flask" color="#0C63E4" bgColor="#F0F6FF"}
     #title
     Testing Impact
     #description
