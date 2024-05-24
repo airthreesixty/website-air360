@@ -43,17 +43,11 @@ The possibilities for A/B testing on your website are endless — but if you nee
 4. Security measures: Test the elements of your website that build customer trust and confidence in the security of your site, such as customer reviews, BBB stickers or security labels.
 5. Cross-selling and up-selling: Just about every eCommerce store can implement cross-selling and up-selling strategies to boost revenue. Test these features to see which options minimize cart abandonment.
 
-::blog-inner-card{slug="/en/blog/how-to-reduce-annoying-checkout-form-fills/"}
-::
-
 ::blog-inner-card{slug="/en/blog/convert-upsells-and-impulse-buys-in-ecommerce/"}
 ::
 
 ## 6 Email A/B Tests to Reduce Cart Abandonment
 Many eCommerce brands rely on cart abandonment emails to bring customers back to complete a purchase, and data shows that the strategy is highly effective. In fact, 45% of cart abandonment emails are opened, and 21% receive click-throughs.
-
-::blog-inner-card{slug="/en/blog/10-email-marketing-tips-to-increase-conversions/"}
-::
 
 A/B testing can help marketers further optimize the effectiveness of cart abandonment emails. Here are some A/B testing ideas to include in future email tests:
 
@@ -63,6 +57,9 @@ A/B testing can help marketers further optimize the effectiveness of cart abando
 4. **Timing:** When is the best time to send your email? The answer depends on your audience. Test timing to see when customers are most likely to open your email.
 5. **Personalization:** Most customers respond well to personalization. Test the strategy by personalizing the subject line, including the customers’ purchase history and more.
 6. **CTA:** Though the goal of every cart abandonment email is to bring the customer back to the cart, there are many ways to state the call to action. Test various phrases to see which ones motivate customers to act.
+
+::blog-inner-card{slug="/en/blog/10-email-marketing-tips-to-increase-conversions/"}
+::
 
 ## A/B Testing Best Practices
 A/B testing takes time and patience to execute correctly. Here are some best practices to ensure you get the best return on investment from any A/B test.
@@ -74,7 +71,7 @@ A/B testing takes time and patience to execute correctly. Here are some best pra
 - **Choose the right sample size.** Your A/B tests won’t be reliable if you don’t test it on enough people. Make sure to have an adequate sample size to ensure best results.
 - **Use comparable periods.** Your A/B tests will be useless unless you run them during comparable time periods. Schedule your tests correctly to make sure you’re testing apples to apples.
 
-::blog-inner-card{slug="/en/blog/the-perfect-match-of-ab-testing-and-air360/"}
+::blog-inner-card{slug="/en/blog/a-b-testing-best-practices/"}
 ::
 
 ## Reduce Cart Abandonment with Air360
