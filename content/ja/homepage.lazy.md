@@ -18,13 +18,13 @@ Air360はウェブサイト上の顧客体験を簡単に理解できるデジ�
     #description
     最大のコンバージョンを得るために、デジタル体験のインサイトを発見し最適化を支援します。
     ::
-    ::three-features-block{icon="crosshairs-simple"}
+    ::three-features-block{icon="crosshairs-simple" color="orange"}
     #title
     最適化にフォーカス
     #description
     最大のコンバージョン利益を得るために、高影響の領域やセグメントをターゲットにします。
     ::
-    ::three-features-block{icon="flask"}
+    ::three-features-block{icon="flask" color="blue"}
     #title
     テストの影響
     #description
