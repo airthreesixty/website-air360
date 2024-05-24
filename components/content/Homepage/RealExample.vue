@@ -29,7 +29,7 @@
                 <Vue3AutoCounter
                   ref="counter1"
                   :start-amount="0"
-                  :end-amount="100"
+                  :end-amount="97"
                   :duration="3"
                   prefix="+"
                   suffix="%"
@@ -45,7 +45,7 @@
                 <Vue3AutoCounter
                   ref="counter2"
                   :start-amount="0"
-                  :end-amount="50"
+                  :end-amount="48"
                   :duration="3"
                   prefix="+"
                   suffix="%"
