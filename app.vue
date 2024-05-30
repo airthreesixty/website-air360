@@ -23,7 +23,7 @@ useHead({
   titleTemplate: 'Air360 - %s',
 })
 
-const runtimeConfig = useRuntimeConfig()
+// const runtimeConfig = useRuntimeConfig()
 
 // Redirect to the english if we don't have the locale in the URL and we are in the browser
 const routeMatch = route.fullPath.match(new RegExp(`^/${locales.value.map(l => l.code).join('|')}/`))
