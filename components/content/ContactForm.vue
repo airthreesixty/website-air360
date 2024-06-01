@@ -85,7 +85,6 @@
               <p class="mt-4 text-xs text-gray-500">
                 <ContentSlot :use="$slots.rule" />
               </p>
-              <!-- <VueReCaptcha /> -->
             </div>
             <button
               type="submit"

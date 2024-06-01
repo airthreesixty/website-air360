@@ -2,6 +2,7 @@ import { VueReCaptcha } from 'vue-recaptcha-v3'
 
 export default defineNuxtPlugin((nuxtApp) => {
   const runtimeConfig = useRuntimeConfig()
+
   let siteKey = ''
 
   if (nuxtApp.$config.public.platform === 'prod') {
