@@ -82,9 +82,10 @@
               <span v-if="v$.message.$error" class="error-alert">
                 {{ v$.message.$errors[0].$message }}
               </span>
-              <p class="mt-4 text-xs text-gray-500">
+              <p class="mt-4 text-xs text-gray-500 mb-5">
                 <ContentSlot :use="$slots.rule" />
               </p>
+              <RecaptchaV2 />
             </div>
             <button
               type="submit"
@@ -159,6 +160,7 @@ import axios from 'axios'
 import { toast } from 'vue3-toastify'
 import 'vue3-toastify/dist/index.css'
 import { useVuelidate } from '@vuelidate/core'
+import { RecaptchaV2 } from 'vue3-recaptcha-v2'
 import { required, email } from '~/utils/i18n-validators'
 
 const props = defineProps({

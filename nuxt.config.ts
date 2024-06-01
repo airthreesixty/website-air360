@@ -38,6 +38,7 @@ export default defineNuxtConfig({
       baseUrl: process.env.BASE_URL,
       appUrl: process.env.APP_URL,
       platform: process.env.PLATFORM,
+      recaptchaSiteKey: process.env.RECAPTCHA_SITE_KEY,
     },
   },
   schemaOrg: {
