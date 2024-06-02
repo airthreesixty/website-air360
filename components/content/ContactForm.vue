@@ -29,7 +29,7 @@
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
               ><ContentSlot :use="$slots.name" /></label>
               <input
-                id="name"
+                id="firstname"
                 v-model="formData.name"
                 type="text"
                 class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
@@ -46,7 +46,8 @@
               <input
                 id="email"
                 v-model="formData.email"
-                type="text"
+                type="email"
+                name="email"
                 class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
               >
               <span v-if="v$.email.$error" class="error-alert">
@@ -77,6 +78,7 @@
                 id="message"
                 v-model="formData.message"
                 rows="6"
+                name="message"
                 class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 transition ease-in-out duration-300 focus:ring-primary-600 focus:border-primary-600 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
               />
               <span v-if="v$.message.$error" class="error-alert">
