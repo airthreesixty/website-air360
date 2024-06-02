@@ -12,6 +12,7 @@ useHead({
   meta: [
     { hid: 'description', name: 'description', content: t('contact.content') },
   ],
+  script: [{ src: 'https://static.form-data.com/js/form-data-tools.v1.min.js' }],
 })
 
 const breadcrumbs = [

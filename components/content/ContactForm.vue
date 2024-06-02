@@ -85,6 +85,7 @@
               <p class="mt-4 text-xs text-gray-500">
                 <ContentSlot :use="$slots.rule" />
               </p>
+              <input type="hidden" name="_fd" value="0" class="form-data-marker">
             </div>
             <button
               type="submit"
@@ -178,6 +179,10 @@ const formData = reactive({
 const loading = ref(false)
 const { locale } = useI18n()
 const isSuccess = ref(false)
+
+onMounted(() => {
+  window._fd.scan()
+})
 
 const rules = computed(() => {
   return {
