@@ -88,6 +88,7 @@
                 <ContentSlot :use="$slots.rule" />
               </p>
               <input type="hidden" name="_fd" value="0" class="form-data-marker">
+              <input type="text" name="xx_password" style="display:none !important" tabindex="-1" autocomplete="off">
             </div>
             <button
               type="submit"
