@@ -226,29 +226,29 @@ const apiRequest = computed(() => {
 // }
 
 const runtimeConfig = useRuntimeConfig()
-const { executeRecaptcha } = useReCaptcha()
+// const { executeRecaptcha } = useReCaptcha()
 
-const recaptcha = async (action: string) => {
-  const token = await executeRecaptcha(action)
-  return token
-}
+// const recaptcha = async (action: string) => {
+//   const token = await executeRecaptcha(action)
+//   return token
+// }
 
 const submitForm = async (): Promise<void> => {
   const isFormCorrect = await v$.value.$validate()
   if (isFormCorrect) {
     loading.value = true
-    const token = await recaptcha('submit')
-    const values = {
-      event: {
-        token,
-        expectedAction: 'submit',
-        siteKey: runtimeConfig.public.recaptchaSiteKey,
-      },
+    // const token = await recaptcha('submit')
+    // const values = {
+    //   event: {
+    //     token,
+    //     expectedAction: 'submit',
+    //     siteKey: runtimeConfig.public.recaptchaSiteKey,
+    //   },
 
-    }
+    // }
 
     try {
-      await axios.post('/api/recaptcha', values)
+      // await axios.post('/api/recaptcha', values)
       await axios.post(apiRequest.value, formData)
 
       loading.value = false
