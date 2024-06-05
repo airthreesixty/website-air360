@@ -163,10 +163,15 @@ import axios from 'axios'
 import { toast } from 'vue3-toastify'
 import 'vue3-toastify/dist/index.css'
 import { useVuelidate } from '@vuelidate/core'
+import { useReCaptcha } from 'vue-recaptcha-v3'
 import { required, email } from '~/utils/i18n-validators'
 
 const props = defineProps({
   successMessage: {
+    type: String,
+    required: true,
+  },
+  errorMessage: {
     type: String,
     required: true,
   },
@@ -213,20 +218,56 @@ const apiRequest = computed(() => {
   return 'https://api.form-data.com/f/ekjf63pz9fge1xrfc1wtj'
 })
 
-const submitForm = async () => {
+// const useReCaptchaToken = async (action: string) => {
+//   const { recaptchaLoaded, executeRecaptcha } = useNuxtApp().$recaptcha
+//   await recaptchaLoaded()
+//   console.log('Hey')
+//   return executeRecaptcha(action)
+// }
+
+const runtimeConfig = useRuntimeConfig()
+const { executeRecaptcha } = useReCaptcha()
+
+const recaptcha = async (action: string) => {
+  const token = await executeRecaptcha(action)
+  return token
+}
+
+const submitForm = async (): Promise<void> => {
   const isFormCorrect = await v$.value.$validate()
   if (isFormCorrect) {
     loading.value = true
-    await axios.post(apiRequest.value, formData)
-    loading.value = false
-    isSuccess.value = !isSuccess.value
-    v$.value.$reset()
-    Object.assign(formData, { name: '', email: '', jobTitle: '', message: '' })
-    toast(props.successMessage, {
-      theme: 'auto',
-      type: 'success',
-      dangerouslyHTMLString: true,
-    })
+    const token = await recaptcha('submit')
+    const values = {
+      event: {
+        token,
+        expectedAction: 'submit',
+        siteKey: runtimeConfig.public.recaptchaSiteKey,
+      },
+
+    }
+
+    try {
+      await axios.post('/api/recaptcha', values)
+      await axios.post(apiRequest.value, formData)
+
+      loading.value = false
+      isSuccess.value = !isSuccess.value
+      v$.value.$reset()
+      Object.assign(formData, { name: '', email: '', jobTitle: '', message: '' })
+      toast(props.successMessage, {
+        theme: 'auto',
+        type: 'success',
+        dangerouslyHTMLString: true,
+      })
+    } catch (error) {
+      toast(props.errorMessage, {
+        theme: 'auto',
+        type: 'error',
+        dangerouslyHTMLString: true,
+      })
+      loading.value = false
+    }
   }
 }
 </script>

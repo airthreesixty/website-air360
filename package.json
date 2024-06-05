@@ -37,6 +37,7 @@
     "@fortawesome/sharp-regular-svg-icons": "^6.4.0",
     "@fortawesome/sharp-solid-svg-icons": "^6.4.0",
     "@fortawesome/vue-fontawesome": "latest-3",
+    "@google-cloud/recaptcha-enterprise": "^5.9.0",
     "@heroicons/vue": "^2.0.14",
     "@nuxtjs/algolia": "^1.5.0",
     "@tresjs/cientos": "^3.2.1",

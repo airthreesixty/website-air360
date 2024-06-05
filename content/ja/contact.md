@@ -2,7 +2,7 @@
 title: コンタクト
 ---
 
-::contact-form{successMessage="フォームの送信に成功しました。"}
+::contact-form{successMessage="フォームの送信に成功しました。" errorMessage="フォームの送信に失敗しました"}
 #subtext
 お問い合わせ内容をご入力ください。
 #name

@@ -2,7 +2,7 @@
 title: Contact
 ---
 
-::contact-form{successMessage="Your form has been successfully submitted."}
+::contact-form{successMessage="Your form has been successfully submitted." errorMessage="Something went wrong"}
 #subtext
 Please enter your inquiry.
 #name
