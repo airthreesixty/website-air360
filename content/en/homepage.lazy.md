@@ -113,7 +113,7 @@ Cross-functional impact through analytics
 #title
 Real Achievement
 #description
-[Club Med]{.font-bold}, which operates approximately 70 resorts in 24 countries, has seen a significant increase in sales since implementing Air360, with a +100% conversion rate and a +50% retention rate for options.
+[Club Med]{.font-bold}, which operates approximately 70 resorts in 24 countries, has seen a significant increase in sales since implementing Air360, with a +97% conversion rate and a +48% retention rate for options.
 #achievement1
 Conversion rate
 #achievement2
