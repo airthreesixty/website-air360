@@ -1,0 +1,25 @@
+{
+  "blog": {
+    "air360-team": "Air360 team",
+    "blog-index": {
+      "title": "Blog",
+      "description": "Learn about the latest trends in eCommerce UX, tips and tricks for improving conversion rates, and how Air360 can help you deliver.",
+      "ogDescription": "Learn about the latest trends in eCommerce UX, tips and tricks for improving conversion rates, and how Air360 can help you deliver."
+    },
+    "blog-name": {
+      "description": "Learn about the latest trends in eCommerce UX, tips and tricks for improving conversion rates, and how Air360 can help you deliver.",
+      "ogDescription": "Learn about the latest trends in eCommerce UX, tips and tricks for improving conversion rates, and how Air360 can help you deliver."
+    },
+    "tag": {
+      "all": "All",
+      "marketing": "Marketing",
+      "ux": "UX",
+      "other": "Other",
+      "ecommerce": "E-commerce",
+      "product": "Product",
+      "data": "Data"
+    },
+    "related-articles": "Related articles",
+    "how-to-increase-conversion": "Inspiration for conversion heroes"
+  }
+}

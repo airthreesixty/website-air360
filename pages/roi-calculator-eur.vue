@@ -1,3 +1,0 @@
-<template>
-  <CalculatorRoiCalculator currency="€" />
-</template>

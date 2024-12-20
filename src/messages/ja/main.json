@@ -1,0 +1,161 @@
+{
+  "main": {
+    "home": "ホーム",
+    "LocaleSwitcher": {
+      "label": "Change language",
+      "locale": "{locale, select, ja {日本語} en {English} other {Other}}"
+    },
+    "menu": {
+      "how-it-works": "How it works",
+      "about-us": "Air360について",
+      "manifesto": "マニフェスト",
+      "contact-us": "コンタクト",
+      "use-cases": "導入事例",
+      "product": "製品",
+      "pricing": "価格",
+      "inspiration": "インスピレーション",
+      "gallery": "コンテンツ集",
+      "login": "ログイン",
+      "contact-sales": "デモを予約",
+      "our-values": "企業理念",
+      "our-stance": "AIに対する姿勢",
+      "company": "企業",
+      "help": "ヘルプ",
+      "systemsStatus": "システムステータス",
+      "language": "言語",
+      "blog": "ブログ",
+      "content-gallery": "コンテンツ集",
+      "guides": "ガイド",
+      "roi-calc": "ROI Calculator",
+      "subMenu": {
+        "product": "製品情報",
+        "features": "特徴",
+        "other": "その他",
+        "inspiration": "インスピレーション",
+        "website-analysis": "ウェブサイト分析",
+        "app-analysis": "アプリ分析",
+        "security-compliance": "セキュリティ & コンプライアンス",
+        "data-integrations": "データ統合機能",
+        "capabilities": "機能性",
+        "data-collection": "データ収集",
+        "events-segments": "イベント & セグメント",
+        "data-analysis": "データ分析",
+        "product-tour": "プロダクトツアー",
+        "data-activation": "データアクティベーション",
+        "e-commerce": "Eコマース",
+        "hotels": "ホテル",
+        "luxury-brands": "高級ブランド",
+        "airlines": "航空会社",
+        "gaming": "ゲーム会社",
+        "insurance": "銀行・保険会社",
+        "multi-brand-companies": "マルチブランド企業",
+        "sport-team": "スポーツチーム",
+        "by-industry": "業界別"
+      },
+      "privacy-policy": {
+        "title": "プライバシーポリシー",
+        "content": "当社は、当社の顧客、パートナー、製品またはサービスの供給者、および顧客のプライバシーを尊重します。このプライバシーポリシーの目的は、お客様がこのウェブサイトを利用する際に、個人情報をどのように収集するか、また、お客様を個人として特定せずにこのウェブサイトとのやり取りに関するその他の情報をどのように収集するか、収集した情報の使用、処理、開示方法、および情報の収集と使用の方法に関するお客様の選択肢に関する情報をお客様に提供することです。"
+      },
+      "request-demo": {
+        "title": "デモのリクエスト",
+        "content": "簡単なフォームにご記入いただければ、お客様のニーズに合わせたAir360のご提案をさせていただきます。"
+      },
+      "website-analysis": {
+        "title": "ウェブサイトの改善箇所が簡単に見つかる",
+        "description": "Air360は、 コンバージョンを高め、逃した収益を取り戻し、不満を抱えたユーザーをリピーターに変えます。Air360で誰もが簡単にウェブサイトの改善ポイントを把握し、改善のためのアクションを素早く実現できます。"
+      },
+      "app-analysis": {
+        "title": "アプリ上のユーザージャーニーを分析",
+        "description": "Air360でモバイルアプリ上のユーザー行動を簡単に把握できます。Air360はすべてのアプリユーザーの行動をトラッキングし、ユーザーが感じた不満点や、問題点を簡単に見つけ、アプリの改善に導きます。"
+      },
+      "data-integrations": {
+        "title": "ユーザー行動が全てのツールの中心に",
+        "content": "全てのビジネス、業界で独自のデジタルエコシステムやKPIが存在する中で、Air360ではそれらのデータの統合を可能にします。複数のビジネステックソリューション間で、行動セグメントやインサイトを可能な限り柔軟に共有できます。"
+      },
+      "data-collection": {
+        "title": "3クリックでユーザー行動を収集・可視化",
+        "content": "技術的な展開に悩むのをやめて、タグ管理システムを介したシンプルでコードレスなインストールによって、ユーザーからのすべての行動データと購買データの収集を開始しましょう。"
+      },
+      "events-segments": {
+        "title": "必要なユーザーの行動を簡単に取得",
+        "content": "Air360は、データとビジネスユーザーのために設計されており、ユーザーの行動を完全に可視化します。当社のソリューションでは、行動イベントとセグメントを定義し、分析やマーケティングに使用することができ、わずかなクリックで操作が可能です。"
+      },
+      "data-analysis": {
+        "title": "未解決の質問に迅速に回答",
+        "content": "ユーザーの足跡と指紋を追跡し、ウェブサイトを離れて成約しない要因を素早く発見しましょう"
+      },
+      "product-tour": {
+        "title": "Uncover hidden behaviors and make smarter decisions.",
+        "content": "Air360 eCommerce experience analytics platform helps you spot all opportunities to improve & optimize your user journeys, get the recommendations you need to increase conversion & prioritize decisions to boost growth."
+      },
+      "security": {
+        "title": "セキュリティ & コンプライアンス",
+        "desc": "私たちは、プライバシー・バイ・デザインのアプローチによって、GDPRへの準拠を支援する機能を提供することに全力を注いでいます。また、クラス最高のセキュリティプロバイダーと提携し、すべてのデータの安全性を保ちます。"
+      },
+      "security-compliance": {
+        "compliance": {
+          "title": "コンプライアンス",
+          "desc": "GDPR・CCPAの個人情報保護法にも完全対応"
+        },
+        "security": {
+          "title": "セキュリティ",
+          "desc": "お客様のデータは、安全、安心、そしていつでも利用できます​"
+        },
+        "title": "プライバシーとセキュリティに配慮した取り組み"
+      },
+      "data-activation": {
+        "title": "洞察を行動に変える",
+        "content": "セグメントをA/Bテストに適用したり、個別化ソリューションを活用してより良いeコマース体験を創造し、コンバージョンを向上させることで、より迅速に結果を生み出すことができます。"
+      },
+      "promotion-lp": {
+        "title": "ページを見直しCVRを大幅改善",
+        "content": "サイト上のユーザー行動を全て可視化。 素早く分析し、効率的にCVRを向上。"
+      },
+      "about": {
+        "title": "会社概要",
+        "content": "Air360は、EC企業向けに開発されたUX分析ツールで、コンバージョン率を最大化することを目的としています。効果的なユーザーエクスペリエンスを実現し、ビジネスの成果を向上させるお手伝いをします。"
+      },
+      "contact": {
+        "title": "コンタクト",
+        "content": "どのようなご用件でしょうか？Linkedin Twitter Instagram 会社案内 ESW - 採用情報 - プライバシーポリシー　- インスピレーション - ブログ - ヘルプ - デモを依頼する - お問い合わせ - ログイン"
+      }
+    },
+    "error-message": "お探しのページは見つかりませんでした",
+    "errorStatusMessage": "Page not found",
+    "errorStatusCode": "404",
+    "Error": {
+      "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>",
+      "title": "Something went wrong!"
+    },
+    "learn-more": "詳しく見る",
+    "share": "シェア",
+    "share-on-linkedin": "Linkedinでシェア",
+    "share-on-twitter": "Twitterでシェア",
+    "share-on-facebook": "Facebookでシェア",
+    "share-link": "リンクをシェア",
+    "cta-new": {
+      "try-air360": "デモを予約",
+      "get-started": "今すぐ始めましょう",
+      "cta-description": "ユーザー体験を改善し、コンバージョン率を上げてみませんか？ヨーロッパのウェブサイト改善に使用されているAir360をぜひ一度ご紹介させてください！"
+    },
+    "guides": {
+      "title": "101 CRO for beginners",
+      "desc": "Learn the fundamentals of conversion rate optimization (CRO), its advantages, and how it differs from other marketing techniques to increase revenue."
+    }
+  },
+  "Metadata": {
+    "title": "Air360 - eコマースに最適なUX分析ツール",
+    "description": "UI/UXを改善し、eコマースの売上を劇的にアップ！Webサイト分析でユーザーの隠れた行動を明らかにし、コンバージョン率を改善します。"
+  },
+  "gallery": {
+    "title": "コンテンツ集",
+    "ogTitle": "Discover Air360",
+    "description": "Content Gallery showcases air360's contents",
+    "form": {
+      "firstName": "First Name*",
+      "lastName": "Last Name*",
+      "email": "Email*",
+      "formSuccessMessage": "Your form has been successfully submitted."
+    }
+  }
+}

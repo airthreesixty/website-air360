@@ -1,0 +1,122 @@
+.logo path {
+  @apply fill-white;
+}
+
+.logo.is-dark path {
+  @apply fill-gray-600;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+table {
+  border-collapse: collapse;
+  /* overflow-x: scroll; */
+  /* border: solid 2px #6B7280; */
+}
+
+th {
+  white-space: nowrap;
+}
+
+/* th, td {
+  border: solid 1px #6B7280;
+} */
+
+th:first-child {
+  width: 8%;
+}
+
+th:nth-child(2) {
+  width: 13%;
+}
+
+th:nth-child(3) {
+  width: 21%;
+}
+
+th:nth-child(4) {
+  width: 10%;
+}
+
+td {
+  word-break: break-all;
+}
+
+h2,
+h3 {
+  scroll-margin-top: 100px;
+}
+
+::selection {
+  background-color: #fce9f2;
+}
+
+.text-gradient {
+  background: linear-gradient(
+    126deg,
+    rgba(45, 146, 233, 1) 0%,
+    rgba(100, 74, 213, 1) 20%,
+    rgba(193, 65, 172, 1) 40%,
+    rgba(231, 33, 146, 1) 60%,
+    rgba(240, 77, 102, 1) 80%,
+    rgba(253, 112, 67, 1) 100%
+  );
+  color: transparent !important;
+  background-clip: text;
+}
+
+.bg-gradient-5 {
+  background: linear-gradient(
+    126deg,
+    rgba(45, 146, 233, 0.15) 0%,
+    rgba(100, 74, 213, 0.15) 20%,
+    rgba(193, 65, 172, 0.15) 40%,
+    rgba(231, 33, 146, 0.15) 60%,
+    rgba(240, 77, 102, 0.15) 80%,
+    rgba(253, 112, 67, 0.15) 100%
+  );
+}
+
+.drop-shadow-gradient-5 {
+  filter: drop-shadow(2px -2px 8px rgba(45, 146, 233, 0.05))
+    drop-shadow(-2px 2px 8px rgba(100, 74, 213, 0.05))
+    drop-shadow(-2px 4px 8px rgba(193, 65, 172, 0.05))
+    drop-shadow(-2px 2px 8px rgba(231, 33, 146, 0.05))
+    drop-shadow(-2px 4px 8px rgba(240, 77, 102, 0.05))
+    drop-shadow(-2px 4px 8px rgba(253, 112, 67, 0.05));
+}
+
+mark {
+  margin: 0 -0.4em;
+  padding: 0.1em 0.4em;
+  border-radius: 0.8em 0.3em;
+  background: transparent;
+  /* background-image: linear-gradient(
+    to right,
+    rgba(255, 225, 0, 0.1),
+    rgba(255, 225, 0, 0.7) 4%,
+    rgba(255, 225, 0, 0.3)
+  ); */
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 0, 0.1),
+    rgba(255, 255, 0, 0.9) 4%,
+    rgba(255, 255, 0, 0.3)
+  );
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+html[lang="en"] .title1,
+html[lang="en"] .title2 {
+  @apply font-really;
+}
+
+html[lang="ja"] .title1,
+html[lang="ja"] .title2 {
+  font-family: "Noto Sans JP", "ui-sans-serif", "system-ui", "-apple-system",
+    "sans-serif";
+  font-weight: bold;
+}

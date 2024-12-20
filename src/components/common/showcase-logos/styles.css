@@ -1,0 +1,13 @@
+.company-logos {
+  path {
+    @apply !fill-gray-500;
+  }
+
+  g {
+    @apply !fill-gray-500;
+  }
+
+  /* rect {
+  @apply !fill-gray-500;
+} */
+}

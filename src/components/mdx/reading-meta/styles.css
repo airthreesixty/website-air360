@@ -1,0 +1,7 @@
+svg.mochi-computer {
+  /* @apply w-14 h-16; */
+}
+svg.mochi-computer * {
+  width: 100%;
+  height: 100%;
+}

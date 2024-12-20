@@ -1,0 +1,155 @@
+{
+  "main": {
+    "home": "Home",
+    "LocaleSwitcher": {
+      "label": "Change language",
+      "locale": "{locale, select, ja {日本語} en {English} other {Unknown}}"
+    },
+    "menu": {
+      "how-it-works": "How it works",
+      "about-us": "About us",
+      "manifesto": "Manifesto",
+      "contact-us": "Contact",
+      "use-cases": "Use cases",
+      "product": "Product",
+      "inspiration": "Inspiration",
+      "gallery": "Content Gallery",
+      "login": "Login",
+      "contact-sales": "Contact sales",
+      "company": "Company",
+      "our-values": "Our values",
+      "our-stance": "Stance on AI",
+      "help": "Help",
+      "systemsStatus": "Systems Status",
+      "language": "Language",
+      "blog": "Blog",
+      "content-gallery": "Content gallery",
+      "guides": "Guides",
+      "roi-calc": "ROI Calculator",
+      "subMenu": {
+        "product": "Product",
+        "features": "Features",
+        "other": "Other",
+        "website-analysis": "Website analysis",
+        "app-analysis": "App analysis",
+        "security-compliance": "Security & Compliance",
+        "data-integrations": "Data integrations",
+        "capabilities": "Capabilities",
+        "data-collection": "Data collection",
+        "events-segments": "Events & Segments",
+        "data-analysis": "Data analysis",
+        "product-tour": "Product tour",
+        "data-activation": "Data activation",
+        "e-commerce": "E-commerce",
+        "hotels": "Hotels",
+        "luxury-brands": "Luxury brands",
+        "airlines": "Airlines",
+        "gaming": "Gaming",
+        "insurance": "Banks & Insurance",
+        "multi-brand-companies": "Multi-brand companies",
+        "sport-team": "Sport team",
+        "by-industry": "By industry"
+      },
+      "privacy-policy": {
+        "title": "Privacy Policy",
+        "content": "We respect the privacy of our customers, partners, suppliers of products or services, and clients. The purpose of this Privacy Policy is to provide you with information about how we collect personal information when you use this Web site; how we collect other information about your interactions with this Web site without identifying you as an individual; how we use, process, and disclose the information we collect; and your choices about how the information information about your choices regarding how the information is collected and used."
+      },
+      "request-demo": {
+        "title": "Get Started",
+        "content": "Fill out the short form and book a quick call with a CRO expert so we can tailor our Air360 offer to your needs. "
+      },
+      "website-analysis": {
+        "title": "Get insights fast and turn them into actions",
+        "description": "Air360 brings data analysts and business profiles together on the same mission. Increase conversion, unlock missed revenue, and turn frustrated users into loyal customers."
+      },
+      "app-analysis": {
+        "title": "Discover your App user journey",
+        "description": "User behavior from your mobile app users won’t be a black hole anymore. With Air360 collect all user interactions , discover main paths of behavior, and reveal frictions & obstacles during their journey."
+      },
+      "data-integrations": {
+        "title": "User behavior at the heart of your Tech Ecosystem",
+        "content": "At Air360, we know every business, and industry has its own digital ecosystem and KPIs. That is why we take a stacked approach. We are as flexible as possible in terms of sharing behavioral segments & insights across your multiple business tech solutions."
+      },
+      "data-collection": {
+        "title": "Collect & Visualize user behavior in 3 clicks",
+        "content": "Stop straggling with technical deployments, and start collecting all behavior and purchase data from your users with a simple and codeless installation through your tag management system."
+      },
+      "events-segments": {
+        "title": "Easily get the user behavior you need",
+        "content": "Air360 is designed for data and business users to get full visibility of your users. Our solution allows you to define behavioral events and segments to use for analysis, marketing with just few clicks."
+      },
+      "data-analysis": {
+        "title": "Answer unsolved questions fast",
+        "content": "Follow user footprints and fingerprints, and quickly discover the obstacles that make your audience leave your website without converting"
+      },
+      "product-tour": {
+        "title": "Uncover hidden behaviors and make smarter decisions.",
+        "content": "Air360 eCommerce experience analytics platform helps you spot all opportunities to improve & optimize your user journeys, get the recommendations you need to increase conversion & prioritize decisions to boost growth."
+      },
+      "security": {
+        "title": "Security & Compliance",
+        "desc": "We are fully committed to providing features that help you be compliant with GDPR by taking a privacy by design approach. As well as partnering with the best in class security providers to keep all your data safe."
+      },
+      "security-compliance": {
+        "compliance": {
+          "title": "Compliance",
+          "desc": "Fully compliant with GDPR & CCPA privacy acts"
+        },
+        "security": {
+          "title": "Security",
+          "desc": "Your data is safe, secure, and always available"
+        },
+        "title": "Committed to Privacy & Security"
+      },
+      "data-activation": {
+        "title": "Turn insights into actions",
+        "content": "Generate results faster by pushing segments to your A/B testing , or personalization solutions to create better eCommerce experiences and boost conversion."
+      },
+      "about": {
+        "title": "Company info",
+        "content": "Air360 is a UX analysis tool developed for EC companies with the aim of maximizing conversion rates. It helps achieve effective user experiences and improves business outcomes."
+      },
+      "contact": {
+        "title": "Contact us",
+        "content": "We are here to help you with any questions you may have. Please feel free to contact us."
+      }
+    },
+    "error-message": "The page you are looking for was not found.",
+    "errorStatusMessage": "Page not found",
+    "errorStatusCode": "404",
+    "Error": {
+      "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>",
+      "title": "Something went wrong!"
+    },
+    "learn-more": "Learn more",
+    "share": "share",
+    "share-on-linkedin": "share on linkedin",
+    "share-on-twitter": "share on twitter",
+    "share-on-facebook": "share on facebook",
+    "share-link": "share a link",
+    "cta-new": {
+      "try-air360": "Meet our team",
+      "get-started": "We’re all about helping websites grow!",
+      "cta-description": "Book a demo so that we can help you as well:) We assure you our team will guide you with all the help you need for your CRO!"
+    },
+    "guides": {
+      "title": "101 CRO for beginners",
+      "desc": "Learn the fundamentals of conversion rate optimization (CRO), its advantages, and how it differs from other marketing techniques to increase revenue."
+    }
+  },
+  "Metadata": {
+    "title": "Air360 - Simplify UX analysis, boost conversion",
+    "description": "Air360 is the UX analytics platform that uncovers hidden user behaviors and decodes the end-to-end user experience, speeding up CRO efforts."
+  },
+  "gallery": {
+    "title": "Content gallery",
+    "ogTitle": "Discover Air360",
+    "description": "Content Gallery showcases air360's contents",
+    "form": {
+      "firstName": "First Name*",
+      "lastName": "Last Name*",
+      "email": "Email*",
+      "formSuccessMessage": "Your form has been successfully submitted."
+    }
+  }
+}

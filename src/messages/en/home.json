@@ -1,0 +1,139 @@
+{
+  "home": {
+    "meta": {
+      "title": "Air360 - Simplify UX analysis, boost conversion",
+      "description": "Air360 is the UX analytics platform that uncovers hidden user behaviors and decodes the end-to-end user experience, speeding up CRO efforts.",
+      "ogTitle": "Air360 - Simplify UX analysis, boost conversion"
+    },
+    "hero": {
+      "title": {
+        "top": "CRO, minus the headache.",
+        "bottom": "made simple."
+      },
+      "subtitle": "We were frustrated with complicated tracking, unreliable data, and analyses that felt impossible to navigate. So we created Air360!"
+    },
+    "testimonials": {
+      "title": "See how easy it is with Air360",
+      "subtitle": "Our clients have great success stories.",
+      "clubMed": {
+        "name": "Nelson Fernandes",
+        "quote": "With Air360 we can get more people involved in making data-driven decisions on a global scale.",
+        "position": "Digital Analytics Manager, Club Med"
+      },
+      "airCaraibes": {
+        "quote": "It's impressive how easy and fast it is to get insights using Air360!"
+      },
+      "journeyFurther": {
+        "name": "Jonny Longden",
+        "quote": "With Air360 we are gaining faster time to insights so we can help customers drive towards a positive impact on CRO and revenue.",
+        "position": "CRO Expert and Influencer, Journey Further"
+      }
+    },
+    "parallaxCard": {
+      "subtext": "We hear your problem!",
+      "title": "CRO is too hard",
+      "slide-1": {
+        "title": "Install Air360 SDK",
+        "subtitle": "Get retro-active data and forgot about tracking plan!"
+      },
+      "slide-2": {
+        "title": "Want to analyse a Page?",
+        "subtitle": "Mochi got your back!"
+      },
+      "slide-3": {
+        "title": "Mochi automatically analyses what you ask for",
+        "subtitle": "Find hidden behavior and prioritize your roadmap!"
+      }
+    },
+    "problems": {
+      "subtext": "We hear your problem!",
+      "title": "CRO is too hard",
+      "slide-1": {
+        "title": "Data is quite overwhelming",
+        "description": "Drowning in data? Analyzing is simply too hard?"
+      },
+      "slide-2": {
+        "title": "Tagging plans takes time",
+        "description": "Sick of spending hours on tracking plans?"
+      },
+      "slide-3": {
+        "title": "It takes time to implement a tool",
+        "description": "Tools are nice, but you don’t want to take time to implement another one?"
+      }
+    },
+    "solutions": {
+      "subtext": "Meet your conversion rate hero!",
+      "title": "We solved it!",
+      "slide-1": {
+        "title": "We made data simple for you",
+        "description": "Air360 transforms overwhelming analytics into clear, actionable strategies."
+      },
+      "slide-2": {
+        "title": "No tagging plans",
+        "description": "Say goodbye to complexity with Air360's auto-tracking and retroactive data."
+      },
+      "slide-3": {
+        "title": "5 minutes to start",
+        "description": "Just add our pixel on your website and done. Air360's ultra-lightweight, no-code tracking eliminates implementation headaches. Relax!"
+      }
+    },
+    "achievement": {
+      "title": "Achievement",
+      "subtitle": "Increased CVR by 97%",
+      "description": "Club Med, which operates approximately 70 resorts in 24 countries, has seen a significant increase in sales since implementing Air360, with a +97% conversion rate.",
+      "tag-1": "Conversion rate",
+      "tag-2": "Retention rate"
+    },
+    "laundryList": {
+      "title": {
+        "dark": "Simple yet packed with",
+        "pink": "everything you need."
+      },
+      "items": {
+        "autoTracking": "Auto-tracking",
+        "retroactiveData": "Retroactive data",
+        "noCodeErrorDetection": "No-code error detection",
+        "customEvents": "Custom events",
+        "gdprCompliant": "GDPR compliant",
+        "funnelAnalysis": "Funnel analysis",
+        "userJourneys": "User journeys",
+        "onPageAnalysis": "On-page analysis",
+        "sessionReplays": "Session replays"
+      }
+    },
+    "slides": {
+      "title": "Our features are super Powerful + Easy!!",
+      "slide-1": {
+        "title": "On Page Analytics",
+        "description": "Understand the page and any element performance with just a click on your own website!"
+      },
+      "slide-2": {
+        "title": "Session Replays",
+        "description": "Check real users move to understand what’s really going on and find out where people are struggling."
+      },
+      "slide-3": {
+        "title": "Funnel",
+        "description": "You can see where the users drop off happened at an instant, whether it’s a page or button."
+      },
+      "slide-4": {
+        "title": "User Journey",
+        "description": "Discover what your users do after they drop off."
+      }
+    },
+    "increaseConversion": {
+      "title": {
+        "top": "Increase your",
+        "bottom": "conversion"
+      },
+      "cta": "Get started",
+      "cta2": "Book a demo"
+    },
+    "cookie-banner": {
+      "title": "No more cookies",
+      "description": "Air360 is now a cookie-less solution🙌",
+      "accept": "I want my cookies🍪",
+      "close": "I never liked them",
+      "message": "No more 🍪 here. Air360 is Air360 is now a cookie-less solution🎉"
+    }
+  }
+}
