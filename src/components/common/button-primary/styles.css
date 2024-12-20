@@ -1,0 +1,80 @@
+.cta-button-effect {
+  -webkit-tap-highlight-color: transparent;
+  appearance: none;
+  outline: none;
+  position: relative;
+}
+
+.cta-button-effect.start .lines svg {
+  animation: stroke 0.3s linear;
+}
+
+.cta-button-effect .lines {
+  position: absolute;
+  inset: 0;
+  mix-blend-mode: hard-light;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.cta-button-effect .lines > div {
+  position: absolute;
+  inset: 0;
+}
+
+.cta-button-effect .lines > div:last-child {
+  transform: rotate(180deg);
+}
+
+.cta-button-effect .lines > div svg {
+  display: block;
+  position: absolute;
+  inset: 0;
+  overflow: visible;
+  fill: none;
+  width: 100%;
+  height: 100%;
+}
+
+.cta-button-effect .lines > div svg {
+  display: block;
+  position: absolute;
+  inset: 0;
+  overflow: visible;
+  fill: none;
+  stroke-width: 2;
+  stroke: #c9e9ff;
+  width: 100%;
+  height: 100%;
+  stroke-dasharray: 12 12;
+  stroke-dashoffset: 12;
+  opacity: 0;
+  transform: rotate(-1deg) translate3d(0, 0, 0);
+}
+
+.cta-button-effect .lines > div svg:nth-child(2) {
+  stroke-width: 6px;
+  filter: blur(20px);
+}
+
+.cta-button-effect .lines > div svg:nth-child(3) {
+  stroke-width: 5px;
+  filter: blur(6px);
+}
+
+.cta-button-effect .lines > div svg:nth-child(4) {
+  stroke-width: 10px;
+  filter: blur(56px);
+}
+
+@keyframes stroke {
+  30%,
+  55% {
+    opacity: 1;
+  }
+
+  100% {
+    stroke-dashoffset: 5;
+    opacity: 0;
+  }
+}

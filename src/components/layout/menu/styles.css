@@ -1,0 +1,42 @@
+.bg-gradient {
+  width: 100%;
+  background: linear-gradient(101.87deg, #2d92e9 4.15%, #644ad5 22.36%, #c141ac 41.56%, #e72192 61.75%, #f04d66 78.49%, #fd7043 98.68%);
+  transform: skewY(-8deg) translateY(-150px);
+  position: absolute;
+  left: 0;
+  top: auto;
+}
+
+.menu-active {
+  @apply top-full mt-1 right-0;
+}
+
+.menu__link {
+  @apply flex items-center font-medium py-2 px-3 text-black-600 transition-all rounded-lg hover:bg-gray-75 focus:bg-gray-75;
+
+  .is-homepage & {
+    @apply lg:text-white;
+  }
+
+  &.router-link-exact-active {
+    @apply text-primary-600;
+  }
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
+#menu {
+  transition: all 0.5s ease;
+}
+
+.menu-expand {
+  @apply rounded-none w-full max-w-full border-none;
+}

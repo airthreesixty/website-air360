@@ -1,0 +1,25 @@
+{
+  "blog": {
+    "air360-team": "Air360チーム",
+    "blog-index": {
+      "title": "ブログ",
+      "description": "eコマースUXの最新トレンド、コンバージョン率向上のためのヒントやコツ、Air360がどのように提供できるかをご紹介します。",
+      "ogDescription": "eコマースUXの最新トレンド、コンバージョン率向上のためのヒントやコツ、Air360がどのように提供できるかをご紹介します。"
+    },
+    "blog-name": {
+      "description": "eコマースUXの最新トレンド、コンバージョン率向上のためのヒントやコツ、Air360がどのように提供できるかをご紹介します。",
+      "ogDescription": "eコマースUXの最新トレンド、コンバージョン率向上のためのヒントやコツ、Air360がどのように提供できるかをご紹介します。"
+    },
+    "tag": {
+      "all": "全カテゴリ",
+      "marketing": "マーケティング",
+      "ux": "UX",
+      "other": "その他",
+      "ecommerce": "eコマース",
+      "product": "プロダクト",
+      "data": "データ"
+    },
+    "related-articles": "関連記事",
+    "how-to-increase-conversion": "コンバージョン率を向上させるには"
+  }
+}

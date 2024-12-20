@@ -1,0 +1,9 @@
+/* You can add these styles directly as Tailwind classes */
+.tag__link {
+  @apply py-3 px-4 mt-5 md:px-5 inline-block text-sm lg:text-lg bg-blue-100 text-blue-400 font-semibold rounded mx-1 md:mx-2 transition-colors;
+}
+
+.tag__link:hover,
+.tag__link.active {
+  @apply text-white bg-blue-400;
+}

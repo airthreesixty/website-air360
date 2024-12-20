@@ -1,0 +1,17 @@
+{
+  "request-demo": {
+    "title": "デモのリクエスト",
+    "content": "簡単なフォームにご記入いただければ、お客様のニーズに合わせたAir360のご提案をさせていただきます。",
+    "title1": "UXアナリティクスを簡単に",
+    "subtitle1": "Air360はデジタルユーザーエクスペリエンスを理解するプロセスを簡略化します。",
+    "description1": "・デジタルジャーニーのインサイトを明らかに",
+    "description2": "・大きな効果が期待できる場所を重点的にターゲット",
+    "description3": "・A/Bテストの全体的な影響を評価",
+    "name": "お名前*",
+    "email": "メールアドレス*",
+    "jobTitle": "職種*",
+    "rule": "Air360の <link>利用規約とプライバシーポリシー</link> に同意するも",
+    "cta": "デモをリクエスト",
+    "formSuccessMessage": "Your form has been successfully submitted."
+  }
+}

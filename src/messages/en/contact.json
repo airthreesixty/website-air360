@@ -1,0 +1,18 @@
+{
+  "contact": {
+    "title": "Contact Us",
+    "subtext": "Please enter your inquiry.",
+    "name": "Name*",
+    "email": "Email*",
+    "jobTitle": "Job Title*",
+    "message": "Message*",
+    "rule": "By submitting this form, you agree to our <link>Terms of Use and Privacy Policy</link> which explains how we collect, use, and disclose your personal information to third parties.",
+    "submitButton": "Submit",
+    "formSuccessMessage": "Your form has been successfully submitted.",
+    "address": "Level 9 Marunouchi Kitaguchi Building 1-6-5, <br></br>Marunouchi, Chiyoda-ku, Tokyo",
+    "location": "Location:",
+    "companyInfo": "Company:",
+    "companyName": "Air360, Inc",
+    "content": "How can we help you. Linkedin Twitter Instagram About Us ESW - Careers - Privacy Policy - Inspiration - Blog - Help - Request a Demo - Contact Us - Login"
+  }
+}

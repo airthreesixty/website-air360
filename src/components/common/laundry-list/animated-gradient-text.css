@@ -1,0 +1,69 @@
+.text {
+  position: absolute;
+  width: 100%;
+  transition: opacity 1s ease-in-out;
+}
+
+.text1 {
+  --start-color: #c141ac;
+  --end-color: #e72192;
+  animation: text-change-color1 8s infinite;
+  background-image: linear-gradient(90deg, var(--start-color), var(--end-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text2 {
+  --start-color: #2d92e9;
+  --end-color: #644ad5;
+  animation: text-change-color2 8s infinite;
+  background-image: linear-gradient(90deg, var(--start-color), var(--end-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text3 {
+  --start-color: #f04d66;
+  --end-color: #fd7043;
+  animation: text-change-color3 8s infinite;
+  background-image: linear-gradient(90deg, var(--start-color), var(--end-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes text-change-color1 {
+  0%,
+  16.667%,
+  100% {
+    opacity: 1;
+  }
+  33%,
+  83.333% {
+    opacity: 0;
+  }
+}
+
+@keyframes text-change-color2 {
+  0%,
+  16.667%,
+  66.667%,
+  100% {
+    opacity: 0;
+  }
+  33.333%,
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes text-change-color3 {
+  0%,
+  50%,
+  100% {
+    opacity: 0;
+  }
+  66.667%,
+  83.333% {
+    opacity: 1;
+  }
+}

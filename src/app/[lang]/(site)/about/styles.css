@@ -1,0 +1,30 @@
+/* html[lang='en'] {
+  .prose :where(h2),
+  .prose :where(h1) {
+    @apply font-really;
+  }
+} */
+
+.prose :where(h1) {
+  @apply text-4xl text-black-600 lg:text-5xl xl:text-6xl !important;
+}
+.prose :where(h2) {
+  @apply text-3xl text-black-600 lg:text-4xl xl:text-5xl !important;
+}
+
+th:first-child {
+  width: 8%;
+}
+
+th:nth-child(2) {
+  width: 30%;
+  font-weight: normal;
+}
+
+.prose thead th,
+.prose tbody td {
+  @apply py-4 px-6;
+  & strong {
+    @apply font-bold;
+  }
+}

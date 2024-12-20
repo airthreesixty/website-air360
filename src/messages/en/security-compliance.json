@@ -1,0 +1,24 @@
+{
+    "security-compliance": {
+        "security": {
+            "mainTitle": "Security",
+            "title1": "Compliance",
+            "title2": "Security",
+            "description1": "Compliant with data protection regulations including, GDPR and CCPA acts",
+            "description2": "Your data is safe, secure, and always available​",
+            "more": "More"
+        },
+        "enabled-compliance": {
+            "mainTitle": "Enabled compliance",
+            "title1": "Lawful basis and transparency",
+            "title2": "Accountability and Governance",
+            "description1": "As part of our compliance to data protection regulation, we enter into Data Processing Agreements (DPAs) with all our customers. This DPA, a binding agreement signed between the controller and the processor when the latter processes data from the controller, details the standard contractual terms required under the GDPR. We are also transparent as regard internal organizations and processes and as regard the sub-processors, we are working with.",
+            "description2": "Air360 has appointed a Data Protection contact to monitor GDPR compliance, assess data protection risks, advise on data protection impact assessments, exchange with clients and cooperate with regulators."
+    }, 
+        "secure-data": {
+            "title": "Secure data handling & protection",
+            "subtext": "Limit Access to your data​",
+            "description": "Air360 follows strict data security regulations to ensure that we secure and limit access to your data."
+        }
+    }
+}

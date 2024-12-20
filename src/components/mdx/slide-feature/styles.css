@@ -1,0 +1,24 @@
+.text-container {
+  opacity: 0.22;
+  transition: 0.2s all;
+}
+.text-container.active {
+  opacity: 1;
+  transform-origin: right;
+  transform: scale(1.1);
+}
+
+.image-container {
+  opacity: 0;
+}
+.image-container.active {
+  opacity: 1;
+}
+
+@media screen and (min-width: 1420px) {
+  .text-container.active {
+    opacity: 1;
+    transform-origin: center;
+    transform: scale(1.1);
+  }
+}
