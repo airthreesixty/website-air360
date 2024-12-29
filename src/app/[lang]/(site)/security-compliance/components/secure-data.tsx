@@ -1,8 +1,15 @@
-import { useTranslations } from "next-intl";
+import { getTranslations } from "@/i18n/getTranslations";
 import Image from "next/image";
 
-const SecureData = () => {
-  const t = useTranslations("security-compliance");
+interface Props {
+  lang: string;
+}
+
+const SecureData = async ({ lang }: Props) => {
+  const t = await getTranslations({
+    locale: lang,
+    namespace: "security-compliance",
+  });
   return (
     <div id="handling-protection" className="container py-10 lg:py-15">
       <div className="md:flex md:justify-between">

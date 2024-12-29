@@ -16,6 +16,7 @@ import {
 import Icon from "@/components/common/icons";
 import { SubmenuItem } from "./models";
 import { aboutUs } from "./about-us";
+import { Link } from "@/i18n/routing";
 
 export function Navigation() {
   const t = useTranslations("main.menu");
@@ -177,13 +178,14 @@ const ListItem = React.forwardRef<
   return (
     <li>
       <NavigationMenuLink asChild>
-        <a
+        <Link
           ref={ref}
           className={cn(
             "select-none p-3 pl-0 leading-none no-underline outline-none hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground flex items-center w-64 my-3 py-1.5 rounded-[14px] transition cursor-pointer hover:bg-gray-75",
             className
           )}
           {...props}
+          href={props.slug}
         >
           <div className="h-12 w-12 mr-4 flex-shrink-0 rounded-lg flex justify-center items-center">
             <Icon name={props.icon} className={`text-xl w-7 ${iconColor}`} />
@@ -192,7 +194,7 @@ const ListItem = React.forwardRef<
             {title}
             <div className="text-gray-400">{children}</div>
           </div>
-        </a>
+        </Link>
       </NavigationMenuLink>
     </li>
   );

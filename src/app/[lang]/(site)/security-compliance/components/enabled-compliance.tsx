@@ -1,9 +1,16 @@
+import { getTranslations } from "@/i18n/getTranslations";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-const EnabledCompliance = () => {
-  const t = useTranslations("security-compliance");
+interface Props {
+  lang: string;
+}
+
+const EnabledCompliance = async ({ lang }: Props) => {
+  const t = await getTranslations({
+    locale: lang,
+    namespace: "security-compliance",
+  });
   return (
     <div
       id="enabled-compliance"

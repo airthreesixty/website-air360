@@ -1,28 +1,29 @@
-import createNextIntlPlugin from "next-intl/plugin";
 import createMDX from "@next/mdx";
 import remarkMdxFrontmatter from "remark-mdx-frontmatter";
 import remarkFrontmatter from "remark-frontmatter";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import remarkGfm from "remark-gfm";
-import { contentRedirect } from "./redirects-list.mjs";
+// import { contentRedirect } from "./redirects-list.mjs";
 import { withContentlayer } from "next-contentlayer";
 import withBundleAnalyzer from "@next/bundle-analyzer";
 
 const bundleAnalyzer = withBundleAnalyzer({
   enabled: process.env.ANALYZE === "true",
 });
-const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
   reactStrictMode: true,
   swcMinify: true,
-  // output: 'export',
-  async redirects() {
-    return [...contentRedirect];
+  output: "export",
+  images: {
+    unoptimized: true,
   },
+  // async redirects() {
+  //   return [...contentRedirect];
+  // },
   webpack(config) {
     // Grab the existing rule that handles SVG imports
     const fileLoaderRule = config.module.rules.find((rule) =>
@@ -76,6 +77,4 @@ const withMDX = createMDX({
   },
 });
 
-export default bundleAnalyzer(
-  withNextIntl(withContentlayer(withMDX(nextConfig)))
-);
+export default bundleAnalyzer(withContentlayer(withMDX(nextConfig)));

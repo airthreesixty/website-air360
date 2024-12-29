@@ -39,6 +39,7 @@ import EnabledCompliance from "@/app/[lang]/(site)/security-compliance/component
 import SecureData from "@/app/[lang]/(site)/security-compliance/components/secure-data";
 import MdxAccordion from "./accordion";
 import Manifesto from "../common/manifesto";
+import { IncreaseConversionWrapper } from "../mdx-client-wrapper";
 
 export const components = {
   BlogInnerCard,
@@ -85,6 +86,7 @@ export const components = {
   SecureData,
   MdxAccordion,
   Manifesto,
+  IncreaseConversionWrapper,
 };
 
 export {
@@ -133,4 +135,5 @@ export {
   SecureData,
   MdxAccordion,
   Manifesto,
+  IncreaseConversionWrapper,
 };

@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import MochiFlyingReverse from "/public/vectors/mochi-flying-reverse.svg";
 import ButtonCta from "@/components/ui/button-cta";
@@ -6,7 +8,6 @@ import { useTranslations } from "next-intl";
 
 const IncreaseConversion = () => {
   const t = useTranslations("home");
-
   return (
     <div className="m-auto text-center md:px-12 lg:px-20">
       <div className="relative mx-auto flex h-56 w-56 items-center justify-center">

@@ -1,3 +1,5 @@
+"use client";
+
 import ButtonCta from "@/components/ui/button-cta";
 import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";

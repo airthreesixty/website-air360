@@ -1,13 +1,11 @@
-"use client";
-
 import React from "react";
 import Image from "next/image";
 import { Card } from "@/components/ui/card";
-import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
+import { getTranslations } from "@/i18n/getTranslations";
 
-const Testimonials = ({ lang }: { lang: string }) => {
-  const t = useTranslations("home");
+const Testimonials = async ({ lang }: { lang: string }) => {
+  const t = await getTranslations({ locale: lang, namespace: "home" });
 
   return (
     <div className="mx-auto">

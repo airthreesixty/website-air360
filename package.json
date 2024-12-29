@@ -56,6 +56,7 @@
     "next-contentlayer": "^0.3.4",
     "next-extra": "^0.5.1",
     "next-intl": "^3.19.1",
+    "next-mdx-remote": "^5.0.0",
     "next-themes": "^0.3.0",
     "react": "^18",
     "react-countup": "^6.5.3",

@@ -1,9 +1,9 @@
-import { useTranslations } from "next-intl";
 import ColoredCards from "./colored-cards";
 import { cn } from "@/lib/utils";
+import { getTranslations } from "@/i18n/getTranslations";
 
-const Problems = ({ lang }: { lang: string }) => {
-  const t = useTranslations("home.problems");
+const Problems = async ({ lang }: { lang: string }) => {
+  const t = await getTranslations({ locale: lang, namespace: "home.problems" });
 
   const items = [
     {
