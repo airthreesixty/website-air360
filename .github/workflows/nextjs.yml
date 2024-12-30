@@ -51,6 +51,15 @@ jobs:
 
       - name: Build project
         run: pnpm build && pnpm next-image-export-optimizer --nextConfigPath ./next.config.mjs
+      
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./out
 
   deploy:
     environment:
