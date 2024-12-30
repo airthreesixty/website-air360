@@ -37,7 +37,7 @@ const nextConfig = {
     nextImageExportOptimizer_remoteImageCacheTTL: "0",
   },
   basePath: isProd ? "/website-air360" : "",
-  assetPrefix: isProd ? "/website-air360" : "",
+  assetPrefix: isProd ? "/website-air360/" : "",
   // async redirects() {
   //   return [...contentRedirect];
   // },
