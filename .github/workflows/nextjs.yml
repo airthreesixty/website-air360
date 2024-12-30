@@ -40,9 +40,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Install next-image-export-optimizer
-        run: pnpm add -D next-image-export-optimizer
-
       - name: Build project
         run: pnpm build && pnpm next-image-export-optimizer --nextConfigPath ./next.config.mjs
 
