@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "next-image-export-optimizer --nextConfigPath ./next.config.mjs && next dev",
+    "build": "next build && next-image-export-optimizer --nextConfigPath ./next.config.mjs",
     "start": "next start",
     "run-prod": "next start -p 4000",
     "lint": "next lint",
@@ -55,6 +55,7 @@
     "next": "14.2.8",
     "next-contentlayer": "^0.3.4",
     "next-extra": "^0.5.1",
+    "next-image-export-optimizer": "^1.18.0",
     "next-intl": "^3.19.1",
     "next-mdx-remote": "^5.0.0",
     "next-themes": "^0.3.0",

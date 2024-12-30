@@ -2,7 +2,7 @@
 
 import { Link, Pathnames } from "@/i18n/routing";
 import React from "react";
-import MdxImage from "./mdx-image";
+import ExportedImage from "next-image-export-optimizer";
 import { getPostBySlug } from "@/lib/query-content";
 import { useLocale } from "next-intl";
 
@@ -37,7 +37,7 @@ const BlogInnerCard: React.FC<Props> = ({
     <Link href={href} className="border-2 grid grid-cols-3 hover:opacity-70">
       {postSrc && (
         <div className="col-span-1 h-full md:h-35">
-          <MdxImage
+          <ExportedImage
             src={postSrc}
             className="h-full w-full object-cover my-0"
             alt="title"

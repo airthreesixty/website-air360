@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { getTranslations } from "@/i18n/getTranslations";
@@ -25,7 +25,7 @@ const Testimonials = async ({ lang }: { lang: string }) => {
       <div className="mt-10 grid gap-8 md:grid-cols-2">
         <Card className="rounded-3xl bg-white p-8 shadow-card dark:border-gray-700 dark:bg-gray-800 dark:shadow-none sm:col-span-2 sm:px-12 lg:col-span-1 lg:row-span-2">
           <div className="flex h-full flex-col justify-center space-y-6 md:space-y-8">
-            <Image
+            <ExportedImage
               className="mr-auto h-12 w-35"
               src="/logos/clubmed.svg"
               loading="lazy"
@@ -37,7 +37,7 @@ const Testimonials = async ({ lang }: { lang: string }) => {
               "{t("testimonials.clubMed.quote")}"
             </p>
             <div className="flex items-center gap-3">
-              <Image
+              <ExportedImage
                 className="h-12 w-12 rounded-full"
                 src="/headShotClubMed.webp"
                 loading="lazy"
@@ -58,7 +58,7 @@ const Testimonials = async ({ lang }: { lang: string }) => {
         </Card>
 
         <Card className="space-y-6 rounded-3xl bg-white p-8 shadow-card">
-          <Image
+          <ExportedImage
             className="h-6 w-auto"
             src="/logos/airCaraibes.svg"
             loading="lazy"
@@ -72,7 +72,7 @@ const Testimonials = async ({ lang }: { lang: string }) => {
         </Card>
 
         <Card className="space-y-6 rounded-3xl bg-white p-8 shadow-card">
-          <Image
+          <ExportedImage
             className="h-12 w-auto"
             src="/logos/journey-further.png"
             loading="lazy"
@@ -84,7 +84,7 @@ const Testimonials = async ({ lang }: { lang: string }) => {
             "{t("testimonials.journeyFurther.quote")}"
           </p>
           <div className="flex items-center gap-3 text-left">
-            <Image
+            <ExportedImage
               className="h-12 w-12 rounded-full"
               src="/ceo-journey-further.webp"
               alt="user avatar"

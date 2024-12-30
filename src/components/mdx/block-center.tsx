@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import React, { PropsWithChildren } from "react";
 // import { useTranslations } from "next-intl";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 
 interface BlockCenterProps extends PropsWithChildren {
   title: string;
@@ -104,7 +104,7 @@ const BlockHeroWithImage: React.FC<BlockHeroWithImageProps> = ({
         </div>
         {/* Image Content */}
         <div className="relative flex items-center aspect-video order-1 md:order-2">
-          <Image
+          <ExportedImage
             src={src}
             alt="hero image"
             fill

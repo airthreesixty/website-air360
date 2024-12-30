@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 
 interface BlockHeroProps {
   children: React.ReactNode;
@@ -36,7 +36,7 @@ const BlockTestimonial: React.FC<BlockHeroProps> = ({
           </blockquote>
           <figcaption className="flex items-center justify-center mt-6 space-x-3">
             <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-              <Image
+              <ExportedImage
                 src={src}
                 className="w-25 h-auto pr-3"
                 width={100}

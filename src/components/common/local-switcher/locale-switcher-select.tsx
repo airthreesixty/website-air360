@@ -11,7 +11,7 @@ import {
 import Icon from "@/components/common/icons";
 import { Button } from "@/components/ui/button";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import {
   Popover,
   PopoverContent,
@@ -65,7 +65,7 @@ export default function LocaleSwitcher({ otherLang }: Props) {
               value={otherLang}
               onClick={() => onSelected(otherLang)}
             >
-              <Image
+              <ExportedImage
                 src={`/flags/${flagName}.svg`}
                 alt="Flag"
                 fill
@@ -94,7 +94,7 @@ export default function LocaleSwitcher({ otherLang }: Props) {
               value={otherLang}
               onClick={() => onSelected(otherLang)}
             >
-              <Image
+              <ExportedImage
                 src={`/flags/${flagName}.svg`}
                 alt="Flag"
                 fill

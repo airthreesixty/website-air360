@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { pathname } from "next-extra/pathname";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 
@@ -14,7 +14,7 @@ export default function NotFound() {
       <div className="container py-8 lg:py-16">
         <div className="mx-auto max-w-screen-sm text-center">
           <div className="flex justify-center w-24 lg:w-44 relative m-auto">
-            <Image
+            <ExportedImage
               src={`/favicon.webp`}
               alt="Mochi"
               fill

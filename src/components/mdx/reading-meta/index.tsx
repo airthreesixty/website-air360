@@ -3,10 +3,10 @@
 import React from "react";
 import { format } from "date-fns";
 import MochiComputer from "/public/vectors/mochi-computer.svg";
-import Image from "next/image";
 import "./styles.css";
 import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
+import ExportedImage from "next-image-export-optimizer";
 
 interface ReadingMetaProps {
   writerName?: string;
@@ -37,7 +37,7 @@ const ReadingMeta: React.FC<ReadingMetaProps> = ({
           )}
         />
       ) : (
-        <Image
+        <ExportedImage
           src={writerImg}
           alt={author}
           className="mr-4 w-16 h-16"

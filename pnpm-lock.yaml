@@ -141,6 +141,9 @@ importers:
       next-extra:
         specifier: ^0.5.1
         version: 0.5.1(next@14.2.8(@babel/core@7.25.2)(@opentelemetry/api@1.5.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.78.0))(react@18.3.1)
+      next-image-export-optimizer:
+        specifier: ^1.18.0
+        version: 1.18.0(next@14.2.8(@babel/core@7.25.2)(@opentelemetry/api@1.5.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.78.0))(react@18.3.1)
       next-intl:
         specifier: ^3.19.1
         version: 3.19.1(next@14.2.8(@babel/core@7.25.2)(@opentelemetry/api@1.5.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.78.0))(react@18.3.1)
@@ -4478,6 +4481,14 @@ packages:
     peerDependencies:
       next: 14 || 15
       react: 18 || 19
+
+  next-image-export-optimizer@1.18.0:
+    resolution: {integrity: sha512-8yJO2QzBYMx2E1Lr67gWX3uqWbLZfBa7SwPjPjko4ki81SsJjsNeV7MID7VCcQ99aJW4mLgrWWRHCFNXF7gzlA==}
+    engines: {node: '>=16.0.0'}
+    hasBin: true
+    peerDependencies:
+      next: ^14.2.18 || ^15.0.3
+      react: ^18.2.0 || ^19.0.0-0
 
   next-intl@3.19.1:
     resolution: {integrity: sha512-KlJSomzbB5dNkWBIiSIRaoy5zqwLgHNV5Zw0ULhkHjNnPN7aLFFv2G+VOQKle630sNH2JiKc9nsmi6PM1GdkhA==}
@@ -10973,6 +10984,13 @@ snapshots:
       next: 14.2.8(@babel/core@7.25.2)(@opentelemetry/api@1.5.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.78.0)
       p-safe: 1.0.0
       react: 18.3.1
+
+  next-image-export-optimizer@1.18.0(next@14.2.8(@babel/core@7.25.2)(@opentelemetry/api@1.5.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.78.0))(react@18.3.1):
+    dependencies:
+      next: 14.2.8(@babel/core@7.25.2)(@opentelemetry/api@1.5.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.78.0)
+      react: 18.3.1
+      sharp: 0.33.5
+      typescript: 5.5.4
 
   next-intl@3.19.1(next@14.2.8(@babel/core@7.25.2)(@opentelemetry/api@1.5.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.78.0))(react@18.3.1):
     dependencies:

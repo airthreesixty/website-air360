@@ -3,7 +3,7 @@ import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { VisuallyHidden } from "@/components/ui/visually-hidden";
 import { useEffect, useState } from "react";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 
@@ -67,14 +67,14 @@ export default function Component() {
             className={cn("justify-center mb-2", isAccepted ? "flex mt-2" : "")}
           >
             {!isAccepted ? (
-              <Image
+              <ExportedImage
                 src={`/cookie.webp`}
                 alt="Cookie"
                 fill
                 className="!w-24 !h-24 !relative m-auto"
               />
             ) : (
-              <Image
+              <ExportedImage
                 src={`/en/data-collection/cookies.png`}
                 alt="Cookie"
                 fill

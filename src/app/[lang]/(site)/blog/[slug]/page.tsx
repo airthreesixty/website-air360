@@ -1,6 +1,5 @@
 import React from "react";
 import { useMDXComponent } from "next-contentlayer/hooks";
-import Image from "next/image";
 import ReadingMeta from "@/components/mdx/reading-meta";
 import { Metadata, NextPage } from "next";
 import Tags from "@/components/mdx/tags";
@@ -9,6 +8,8 @@ import { components } from "@/components/mdx";
 import { getPostBySlug } from "@/lib/query-content";
 import { mdxMetadata } from "@/lib/metadata";
 import { notFound } from "next/navigation";
+import ExportedImage from "next-image-export-optimizer";
+
 interface Props {
   params: { lang: string; slug: string };
 }
@@ -57,7 +58,7 @@ const Page: NextPage<Props> = ({ params: { lang, slug } }) => {
         <h1 className="mb-8 text-2xl font-semibold text-black-600 lg:text-4xl">
           {title}
         </h1>
-        <Image
+        <ExportedImage
           src={image as string}
           alt={title}
           width={800}

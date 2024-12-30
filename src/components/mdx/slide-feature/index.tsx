@@ -1,8 +1,8 @@
 import React, { PropsWithChildren } from "react";
 import { cn } from "@/lib/utils";
-import Image from "next/image";
 import "./styles.css";
 import SlideAnimationClient from "./slide-animation-client";
+import ExportedImage from "next-image-export-optimizer";
 
 interface SlideFeatureProps extends PropsWithChildren {
   title: string;
@@ -52,7 +52,7 @@ const SlideFeature: React.FC<SlideFeatureProps> = ({
           <div className="w-70vh h-50vh sticky overflow-hidden top-32vh">
             {slides.map((slide, index) => (
               <div key={index} className="image-container transition active">
-                <Image
+                <ExportedImage
                   src={slide.props.src}
                   width={865.2}
                   height={487.6}
@@ -104,7 +104,7 @@ const SlideMobileBlock: React.FC<SlideProps> = ({
   return (
     <div className="lg:hidden mt-8 pb-3">
       <div className="flex flex-col justify-center items-center text-center">
-        <Image
+        <ExportedImage
           alt={title}
           src={src}
           width={500}

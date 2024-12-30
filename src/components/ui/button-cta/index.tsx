@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
 import "./styles.css";
 import { cn } from "@/lib/utils";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 
 interface ButtonComponentProps {
   children: ReactNode;
@@ -23,7 +23,7 @@ export default function ButtonCta({
       )}
     >
       {icon && (
-        <Image
+        <ExportedImage
           className="absolute -top-[46px] right-18 z-10"
           src="/favicon.webp"
           alt="mochi"

@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import { Blog } from "contentlayer/generated";
 import { Link, Pathnames } from "@/i18n/routing";
 import Tags from "@/components/mdx/tags";
 import ReadingMeta from "@/components/mdx/reading-meta";
+import ExportedImage from "next-image-export-optimizer";
 
 interface BlogCardProps {
   post: Blog;
@@ -17,7 +17,7 @@ export default function BlogCard({ post }: BlogCardProps) {
   return (
     <Link href={url} className="block ">
       <article className="relative p-4 bg-white h-full rounded-lg border border-gray-200 shadow-md hover:shadow-xl transition-shadow">
-        <Image
+        <ExportedImage
           src={post.image}
           alt={post.title}
           className="mb-5 rounded-lg !h-50 !w-full object-cover"

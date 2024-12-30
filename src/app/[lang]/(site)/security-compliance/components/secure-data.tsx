@@ -1,5 +1,5 @@
 import { getTranslations } from "@/i18n/getTranslations";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 
 interface Props {
   lang: string;
@@ -24,7 +24,7 @@ const SecureData = async ({ lang }: Props) => {
             {t("secure-data.description")}
           </p>
         </div>
-        <Image
+        <ExportedImage
           src="/images/security/database.jpeg"
           alt="database"
           width={350}
