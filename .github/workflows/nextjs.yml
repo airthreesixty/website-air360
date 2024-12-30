@@ -44,7 +44,7 @@ jobs:
         run: pnpm add -D next-image-export-optimizer
 
       - name: Build project
-        run: pnpm build && next-image-export-optimizer --nextConfigPath ./next.config.mjs
+        run: pnpm build && pnpm next-image-export-optimizer --nextConfigPath ./next.config.mjs
 
   deploy:
     environment:
