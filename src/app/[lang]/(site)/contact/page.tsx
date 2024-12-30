@@ -4,7 +4,6 @@ import Location from "/public/vectors/location.svg";
 import ContactForm from "./components/form";
 import { mdxMetadata } from "@/lib/metadata";
 import { getTranslations } from "@/i18n/getTranslations";
-import { useTranslations } from "next-intl";
 
 interface Props {
   params: { lang: string };
@@ -22,9 +21,8 @@ export async function generateMetadata({
   return mdxMetadata(meta);
 }
 
-const Page: NextPage<Props> = ({ params: { lang } }) => {
-  // const t = await getTranslations({ locale: lang, namespace: "contact" });
-  const t = useTranslations("contact");
+const Page: NextPage<Props> = async ({ params: { lang } }) => {
+  const t = await getTranslations({ locale: lang, namespace: "contact" });
 
   return (
     <section className="relative bg-white dark:bg-gray-900">

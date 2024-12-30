@@ -11,12 +11,10 @@ import GalleryHero from "./gallery-hero";
 import Title from "./title";
 import Description from "./description";
 import Subtext from "./subtext";
-import BlogInnerCard from "./blog-inner-card";
 import Image from "./mdx-image";
 import { BlockTestimonial } from "./block-testimonial";
 import LaundryList from "../common/laundry-list";
 import { BlockFeature, Feature } from "./block-feature";
-import IncreaseConversion from "../common/increase-conversion";
 import { SlideFeature, Slide, SlideMobileBlock } from "./slide-feature";
 import CarouselFeature from "./carousel-feature";
 import FeatureCard from "./feature-card";
@@ -39,10 +37,13 @@ import EnabledCompliance from "@/app/[lang]/(site)/security-compliance/component
 import SecureData from "@/app/[lang]/(site)/security-compliance/components/secure-data";
 import MdxAccordion from "./accordion";
 import Manifesto from "../common/manifesto";
-import { IncreaseConversionWrapper } from "../mdx-client-wrapper";
+import {
+  BlogInnerCardWrapper,
+  IncreaseConversionWrapper,
+} from "../mdx-client-wrapper";
 
 export const components = {
-  BlogInnerCard,
+  BlogInnerCardWrapper,
   GalleryHero,
   Title,
   Description,
@@ -63,7 +64,6 @@ export const components = {
   BlockHeroWithImage,
   BlockFeature,
   Feature,
-  IncreaseConversion,
   SlideFeature,
   Slide,
   SlideMobileBlock,
@@ -91,7 +91,7 @@ export const components = {
 
 export {
   Image,
-  BlogInnerCard,
+  BlogInnerCardWrapper,
   GalleryHero,
   Title,
   Description,
@@ -112,7 +112,6 @@ export {
   BlockSection,
   BlockFeature,
   Feature,
-  IncreaseConversion,
   SlideFeature,
   Slide,
   SlideMobileBlock,

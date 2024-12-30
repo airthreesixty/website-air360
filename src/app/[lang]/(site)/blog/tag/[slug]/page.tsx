@@ -2,13 +2,14 @@ import React from "react";
 import { Metadata, NextPage } from "next";
 import ListLayout from "@/components/blog/list-layout";
 import { getAllPostByTag } from "@/lib/query-content";
-import { getTranslations } from "next-intl/server";
+
 import { mdxMetadata } from "@/lib/metadata";
 import { TAGS } from "@/lib/constants";
+import { getTranslations } from "@/i18n/getTranslations";
 
 interface Props {
   params: { lang: string; slug: string };
-  searchParams: { [key: string]: string | string[] | undefined };
+  // searchParams: { [key: string]: string | string[] | undefined };
 }
 
 export async function generateStaticParams() {
@@ -18,9 +19,9 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({
-  params: { slug },
+  params: { slug, lang },
 }: Props): Promise<Metadata> {
-  const t = await getTranslations("blog");
+  const t = await getTranslations({ locale: lang, namespace: "blog" });
   const titleKey = `tag.${slug}`;
   const ogTitle = `Air360 - ${t(titleKey)}`;
 
@@ -33,10 +34,10 @@ export async function generateMetadata({
   return mdxMetadata(meta);
 }
 
-const Page: NextPage<Props> = ({ params: { lang, slug }, searchParams }) => {
+const Page: NextPage<Props> = ({ params: { lang, slug } }) => {
   const posts = getAllPostByTag(slug, lang);
 
-  return <ListLayout posts={posts} searchQuery={searchParams?.query} />;
+  return <ListLayout posts={posts} />;
 };
 
 export default Page;

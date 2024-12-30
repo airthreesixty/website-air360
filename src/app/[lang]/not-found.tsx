@@ -1,12 +1,14 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
-// import { pathname } from "next-extra/pathname";
+import { pathname } from "next-extra/pathname";
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
-// import { getTranslations } from "@/i18n/getTranslations";
+import { useTranslations } from "next-intl";
 
-export default async function NotFound() {
-  // const t = await getTranslations({ locale: "en", namespace: "main" });
-  // const pathName = pathname();
+export default function NotFound() {
+  const t = useTranslations("main");
+  const pathName = pathname();
   return (
     <section className="bg-white dark:bg-gray-900">
       <div className="container py-8 lg:py-16">
@@ -19,7 +21,7 @@ export default async function NotFound() {
               className="!w-auto !relative"
             />
           </div>
-          {/* <h1 className="mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-primary-600 dark:text-primary-500">
+          <h1 className="mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-primary-600 dark:text-primary-500">
             {t("errorStatusCode")}
           </h1>
           <p className="mb-4 text-3xl tracking-tight font-bold text-gray-900 md:text-4xl dark:text-white">
@@ -30,7 +32,7 @@ export default async function NotFound() {
           </p>
           <Link href={"/"}>
             <Button>{t("home")}</Button>
-          </Link> */}
+          </Link>
         </div>
       </div>
     </section>

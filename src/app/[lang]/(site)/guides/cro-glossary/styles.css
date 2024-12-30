@@ -1,7 +1,0 @@
-h2 {
-  @apply text-6xl mb-5;
-}
-.prose > ol > li > p {
-  margin-bottom: 0;
-  margin-top: 0;
-}

@@ -24,10 +24,10 @@ export async function generateMetadata({
   return mdxMetadata(meta);
 }
 
-const Page: NextPage<Props> = ({ params: { lang }, searchParams }) => {
+const Page: NextPage<Props> = ({ params: { lang } }) => {
   const posts = getAllPosts(lang);
 
-  return <ListLayout posts={posts} searchQuery={searchParams?.query} />;
+  return <ListLayout posts={posts} />;
 };
 
 export default Page;
