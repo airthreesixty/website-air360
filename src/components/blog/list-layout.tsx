@@ -1,23 +1,26 @@
+"use client";
+
 import { Blog } from "contentlayer/generated";
 import { NextPage } from "next";
 import BlogCard from "@/components/blog/card";
 import TagsFilter from "./tags-filter";
 import SearchBar from "./search-bar";
 import { normalizeString } from "@/lib/utils";
-import { getTranslations } from "@/i18n/getTranslations";
+import { useTranslations } from "next-intl";
+import { useSearchParams } from "next/navigation"; // 修正
 
 interface Props {
   posts: Blog[];
-  searchQuery?: string | string[] | undefined;
 }
 
-const ListLayout: NextPage<Props> = async ({ posts, searchQuery }) => {
-  const t = await getTranslations({ locale: "en", namespace: "blog" });
+const ListLayout: NextPage<Props> = ({ posts }) => {
+  const t = useTranslations("blog");
+  const searchParams = useSearchParams(); // URLの検索パラメータを取得
+  const searchQuery = searchParams?.get("query") || undefined; // "query" パラメータを取得
+
   const list = searchQuery
     ? posts.filter((post) =>
-        normalizeString(post.title).includes(
-          normalizeString(searchQuery as string)
-        )
+        normalizeString(post.title).includes(normalizeString(searchQuery))
       )
     : posts;
 
