@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next-image-export-optimizer",
+    "build": "next build && next-image-export-optimizer --nextConfigPath ./next.config.mjs",
     "start": "next start",
     "run-prod": "next start -p 4000",
     "lint": "next lint",
