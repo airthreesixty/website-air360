@@ -1,9 +1,16 @@
+import { getTranslations } from "@/i18n/getTranslations";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useTranslations } from "next-intl";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 
-const EnabledCompliance = () => {
-  const t = useTranslations("security-compliance");
+interface Props {
+  lang: string;
+}
+
+const EnabledCompliance = async ({ lang }: Props) => {
+  const t = await getTranslations({
+    locale: lang,
+    namespace: "security-compliance",
+  });
   return (
     <div
       id="enabled-compliance"
@@ -44,7 +51,7 @@ const EnabledCompliance = () => {
           </div>
         </div>
       </div>
-      <Image
+      <ExportedImage
         alt="GDPR"
         src="/images/security/gdpr-compliance.jpeg"
         height={277}

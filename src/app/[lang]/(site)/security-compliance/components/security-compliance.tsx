@@ -1,8 +1,16 @@
+import { getTranslations } from "@/i18n/getTranslations";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useTranslations } from "next-intl";
 
-const Security = () => {
-  const t = useTranslations("security-compliance");
+interface Props {
+  lang: string;
+}
+
+const Security = async ({ lang }: Props) => {
+  const t = await getTranslations({
+    locale: lang,
+    namespace: "security-compliance",
+  });
+
   return (
     <div className="bg-gray-50 rounded-3xl px-4 text-center py-8 lg:py-15">
       <h2 className="mb-4 title2 font-bold">{t("security.mainTitle")}</h2>

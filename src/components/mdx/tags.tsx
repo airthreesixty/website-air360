@@ -1,7 +1,9 @@
-import React from 'react';
-import { Link, Pathnames } from '@/i18n/routing';
-import { Badge } from '@/components/ui/badge';
-import { useTranslations } from 'next-intl';
+"use client";
+
+import React from "react";
+import { Link, Pathnames } from "@/i18n/routing";
+import { Badge } from "@/components/ui/badge";
+import { useTranslations } from "next-intl";
 
 interface TagsProps {
   tags: string[];
@@ -9,13 +11,13 @@ interface TagsProps {
 }
 
 const Tags: React.FC<TagsProps> = ({ tags, noLink = false }) => {
-  const t = useTranslations('blog');
+  const t = useTranslations("blog");
   return (
     <div>
       {tags.map((tag, index) => {
         if (noLink) {
           return (
-            <Badge variant='noLink' key={index}>
+            <Badge variant="noLink" key={index}>
               {t(`tag.${tag}`)}
             </Badge>
           );

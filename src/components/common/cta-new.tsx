@@ -1,7 +1,9 @@
+"use client";
+
 import React from "react";
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 import ButtonPrimary from "@/components/common/button-primary";
+import ExportedImage from "next-image-export-optimizer";
 
 const CtaNew = () => {
   const t = useTranslations("main.cta-new");
@@ -24,7 +26,7 @@ const CtaNew = () => {
             </div>
           </div>
           <div className="hidden aspect-w-5 aspect-h-3 -mt-6 z-0 md:block md:max-w-[450px] lg:max-w-[580px] xl:max-w-[800px] md:aspect-w-2 md:aspect-h-1 absolute top-0 right-0">
-            <Image
+            <ExportedImage
               src="/images/cta-image.png"
               width={650 * 1.15}
               height={420 * 1.15}

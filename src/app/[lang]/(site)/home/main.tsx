@@ -10,26 +10,15 @@ import Solutions from "./components/solutions";
 import CtaNew from "@/components/common/cta-new";
 import { Slide, SlideFeature } from "@/components/mdx";
 import Manifesto from "@/components/common/manifesto";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "@/i18n/getTranslations";
 
 interface HomeProps {
   lang: string;
 }
 
-const Home: React.FC<HomeProps> = ({ lang }) => {
-  const t = useTranslations("home.slides");
+const Home: React.FC<HomeProps> = async ({ lang }) => {
+  const t = await getTranslations({ locale: lang, namespace: "home.slides" });
 
-  // const laundryListItems = [
-  //   t("laundryList.items.autoTracking"),
-  //   t("laundryList.items.retroactiveData"),
-  //   t("laundryList.items.noCodeErrorDetection"),
-  //   t("laundryList.items.customEvents"),
-  //   t("laundryList.items.gdprCompliant"),
-  //   t("laundryList.items.funnelAnalysis"),
-  //   t("laundryList.items.userJourneys"),
-  //   t("laundryList.items.onPageAnalysis"),
-  //   t("laundryList.items.sessionReplays"),
-  // ];
   return (
     <div>
       <section className="relative container pt-15 mb-10 md:pt-20 lg:mb-20">
@@ -42,16 +31,11 @@ const Home: React.FC<HomeProps> = ({ lang }) => {
         <Testimonials lang={lang} />
       </section>
       <section className="container-lp py-20">
-        {/* <ParallaxCard /> */}
         <Problems lang={lang} />
       </section>
       <section className="container-lp py-20">
-        {/* <ParallaxCard /> */}
         <Solutions lang={lang} />
       </section>
-      {/* <section className="md:hidden container pt-10 pb-10">
-        <Air360InAction />
-      </section> */}
       <section className="container-lp py-10 lg:py-15">
         <Achievement lang={lang} />
       </section>
@@ -87,9 +71,6 @@ const Home: React.FC<HomeProps> = ({ lang }) => {
           </Slide>
         </SlideFeature>
       </section>
-      {/* <section className="container-lp pt-10 md:pt-20 md:pb-10">
-        <LaundryList items={laundryListItems} lp={true} />
-      </section> */}
       <section className="container-lp md:pb-10">
         <MainVideo />
       </section>
@@ -97,7 +78,6 @@ const Home: React.FC<HomeProps> = ({ lang }) => {
         <Manifesto />
       </section>
       <section className="mt-10 mb-32">
-        {/* <IncreaseConversion /> */}
         <CtaNew />
       </section>
     </div>

@@ -1,3 +1,5 @@
+"use client";
+
 import { Link, Pathnames } from "@/i18n/routing";
 import Logo from "@/components/common/logo";
 import { Button } from "@/components/ui/button";

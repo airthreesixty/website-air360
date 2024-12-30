@@ -1,12 +1,12 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import "./achievement.css"; // Assuming you have a CSS module file
 import { useTranslations } from "next-intl";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { cn } from "@/lib/utils";
+import ExportedImage from "next-image-export-optimizer";
 
 const Achievement = ({ lang }: { lang: string }) => {
   const t = useTranslations("home");
@@ -32,7 +32,7 @@ const Achievement = ({ lang }: { lang: string }) => {
             <div
               className={`relative -mx-6 -mt-6 flex rounded-2xl border bg-image-logo p-10 dark:border-gray-700 dark:bg-gray-900/60 sm:mr-0 sm:-mb-6 sm:-ml-6 sm:-mt-6 sm:w-1/3 md:w-2/5 lg:w-1/3`}
             >
-              <Image
+              <ExportedImage
                 className="m-auto w-auto sm:h-16 lg:h-12"
                 src="/logos/clubmed.svg"
                 loading="lazy"

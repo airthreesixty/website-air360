@@ -12,10 +12,20 @@ env:
   NEXT_PUBLIC_PLATFORM: ${{ vars.NEXT_PUBLIC_PLATFORM }}
   SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
 
+
 on:
   push:
     branches:
       - main
+
+  
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   build:
@@ -40,7 +50,7 @@ jobs:
         run: pnpm install
 
       - name: Build project
-        run: pnpm build
+        run: pnpm build && pnpm next-image-export-optimizer --nextConfigPath ./next.config.mjs
 
   deploy:
     environment:

@@ -1,3 +1,7 @@
 .local-switcher-hover-card div[data-radix-popper-content-wrapper] {
   top: 4rem !important;
 }
+
+div[data-radix-popper-content-wrapper] {
+  top: 2rem !important;
+}

@@ -1,18 +1,19 @@
 import CompanyLogos from "@/components/common/compagny-logos";
 import Logo from "@/components/common/logo";
-import { useTranslations } from "next-intl";
 import React from "react";
 import RequestDemoForm from "./components/form";
 import { Metadata, NextPage } from "next";
 import { mdxMetadata } from "@/lib/metadata";
-import { getTranslations } from "next-intl/server";
+import { getTranslations } from "@/i18n/getTranslations";
 
 interface Props {
   params: { lang: string };
 }
 
-export async function generateMetadata({}: Props): Promise<Metadata> {
-  const t = await getTranslations("request-demo");
+export async function generateMetadata({
+  params: { lang },
+}: Props): Promise<Metadata> {
+  const t = await getTranslations({ locale: lang, namespace: "request-demo" });
   const meta = {
     description: t("content"),
     title: t("title"),
@@ -21,8 +22,8 @@ export async function generateMetadata({}: Props): Promise<Metadata> {
   return mdxMetadata(meta);
 }
 
-const DemoRequestPage: NextPage<Props> = ({ params: { lang } }) => {
-  const t = useTranslations("request-demo");
+const DemoRequestPage: NextPage<Props> = async ({ params: { lang } }) => {
+  const t = await getTranslations({ locale: lang, namespace: "request-demo" });
 
   return (
     <section className="bg-white dark:bg-gray-900">

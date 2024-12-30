@@ -6,6 +6,7 @@ import { mdxMetadata } from "@/lib/metadata";
 import { notFound } from "next/navigation";
 import { components } from "@/components/mdx";
 import { ParsedUrlQuery } from "querystring";
+import { allUseCases } from "contentlayer/generated";
 
 interface Params extends ParsedUrlQuery {
   slug: string[];
@@ -13,6 +14,12 @@ interface Params extends ParsedUrlQuery {
 }
 interface Props {
   params: Params;
+}
+
+export async function generateStaticParams() {
+  return allUseCases.map((useCase) => ({
+    slug: useCase.slug.split("/"),
+  }));
 }
 
 export async function generateMetadata({
