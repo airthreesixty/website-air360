@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { Metadata, NextPage } from "next";
 import ListLayout from "@/components/blog/list-layout";
 import { getAllPostByTag } from "@/lib/query-content";
@@ -9,7 +9,6 @@ import { getTranslations } from "@/i18n/getTranslations";
 
 interface Props {
   params: { lang: string; slug: string };
-  // searchParams: { [key: string]: string | string[] | undefined };
 }
 
 export async function generateStaticParams() {
@@ -37,7 +36,11 @@ export async function generateMetadata({
 const Page: NextPage<Props> = ({ params: { lang, slug } }) => {
   const posts = getAllPostByTag(slug, lang);
 
-  return <ListLayout posts={posts} />;
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ListLayout posts={posts} />
+    </Suspense>
+  );
 };
 
 export default Page;

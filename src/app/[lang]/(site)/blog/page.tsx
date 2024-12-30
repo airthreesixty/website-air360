@@ -4,6 +4,7 @@ import ListLayout from "@/components/blog/list-layout";
 import { mdxMetadata } from "@/lib/metadata";
 import { getAllPosts } from "@/lib/query-content";
 import { getTranslations } from "@/i18n/getTranslations";
+import { Suspense } from "react";
 
 interface Props {
   params: { lang: string };
@@ -27,7 +28,11 @@ export async function generateMetadata({
 const Page: NextPage<Props> = ({ params: { lang } }) => {
   const posts = getAllPosts(lang);
 
-  return <ListLayout posts={posts} />;
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ListLayout posts={posts} />
+    </Suspense>
+  );
 };
 
 export default Page;
