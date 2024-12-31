@@ -8,8 +8,6 @@ import remarkGfm from "remark-gfm";
 import { withContentlayer } from "next-contentlayer";
 import withBundleAnalyzer from "@next/bundle-analyzer";
 
-const isProd = process.env.NODE_ENV === "production";
-
 const bundleAnalyzer = withBundleAnalyzer({
   enabled: process.env.ANALYZE === "true",
 });
@@ -36,8 +34,6 @@ const nextConfig = {
     nextImageExportOptimizer_generateAndUseBlurImages: "true",
     nextImageExportOptimizer_remoteImageCacheTTL: "0",
   },
-  basePath: isProd ? "/website-air360" : "",
-  assetPrefix: isProd ? "https://airthreesixty.github.io/website-air360/" : "",
   // async redirects() {
   //   return [...contentRedirect];
   // },
