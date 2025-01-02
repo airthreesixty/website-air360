@@ -3,6 +3,7 @@ import "./styles.css";
 import { cn } from "@/lib/utils";
 import dynamic from "next/dynamic";
 import { SVGProps } from "react";
+import LoadingDots from "@/components/common/LoadingDots";
 
 const LogoBrandClubMed = dynamic(
   () => import("/public/logo-brand/club-med.svg")
@@ -63,7 +64,9 @@ const HeroSliderCompanies: React.FC = () => {
             logo.width
           )}
         >
-          <React.Suspense fallback={<div>Loading...</div>}>
+          <React.Suspense
+            fallback={<LoadingDots className="w-6" numDots={3} />}
+          >
             <logo.component
               className="h-9 object-contain w-full md:h-10"
               style={{ transform: `scale(${logo.scale})` }}
@@ -79,7 +82,9 @@ const HeroSliderCompanies: React.FC = () => {
             logo.width
           )}
         >
-          <React.Suspense fallback={<div>Loading...</div>}>
+          <React.Suspense
+            fallback={<LoadingDots className="w-6" numDots={3} />}
+          >
             <logo.component
               className="h-9 object-contain w-full md:h-10"
               style={{ transform: `scale(${logo.scale})` }}

@@ -3,6 +3,7 @@ import "./styles.css";
 import { cn } from "@/lib/utils";
 import dynamic from "next/dynamic";
 import { SVGProps } from "react";
+import LoadingDots from "../LoadingDots";
 
 const LogoBrandClubMed = dynamic(
   () => import("/public/logo-brand/club-med.svg")
@@ -59,7 +60,9 @@ const CompanyLogos: React.FC = () => {
                 `flex justify-center items-center company-logos-list`
               )}
             >
-              <React.Suspense fallback={<div>Loading...</div>}>
+              <React.Suspense
+                fallback={<LoadingDots className="w-6" numDots={3} />}
+              >
                 <logo.component
                   className="h-7.5 object-contain w-full lg:h-9.5"
                   style={{ transform: `scale(${logo.scale})` }}

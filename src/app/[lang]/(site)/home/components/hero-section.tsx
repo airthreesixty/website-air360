@@ -1,9 +1,9 @@
 "use client";
 
 import ButtonCta from "@/components/ui/button-cta";
+import { Link } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
-import Link from "next/link";
 
 interface HeroSectionProps {
   lang: string;

@@ -6,6 +6,7 @@ import { getAllPostByTag } from "@/lib/query-content";
 import { mdxMetadata } from "@/lib/metadata";
 import { TAGS } from "@/lib/constants";
 import { getTranslations } from "@/i18n/getTranslations";
+import LoadingDots from "@/components/common/LoadingDots";
 
 interface Props {
   params: { lang: string; slug: string };
@@ -37,7 +38,7 @@ const Page: NextPage<Props> = ({ params: { lang, slug } }) => {
   const posts = getAllPostByTag(slug, lang);
 
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<LoadingDots className="w-6" numDots={3} />}>
       <ListLayout posts={posts} />
     </Suspense>
   );
