@@ -1,4 +1,4 @@
-name: Deploy Next.js site to Vercel
+name: Deploy Next.js site to Github Pages
 
 env:
   FONTAWESOME_PACKAGE_TOKEN: ${{ secrets.FONTAWESOME_PACKAGE_TOKEN }}
