@@ -30,7 +30,7 @@ const Page: NextPage<Props> = ({ params: { lang } }) => {
   const posts = getAllPosts(lang);
 
   return (
-    <Suspense fallback={<LoadingDots className="w-6" numDots={3} />}>
+    <Suspense fallback={<LoadingDots className="w-6 h-6" numDots={3} />}>
       <ListLayout posts={posts} />
     </Suspense>
   );
