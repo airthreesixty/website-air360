@@ -21,6 +21,11 @@ export async function mdxMetadata(frontmatter: MdxMetadata): Promise<Metadata> {
 }
 
 export const getBaseUrl = () => {
+  const isProd = process.env.NODE_ENV === "production";
+
+  if (isProd) {
+    return process.env.NEXT_PUBLIC_BASE_URL || "https://air360.io";
+  }
   // Client-side
-  return process.env.NEXT_PUBLIC_BASE_URL || window.location.origin;
+  return process.env.NEXT_PUBLIC_BASE_LOCAL_URL || window.location.origin;
 };
