@@ -110,6 +110,7 @@ const BlockHeroWithImage: React.FC<BlockHeroWithImageProps> = ({
             fill
             priority
             className="rounded-lg mt-4 md:mt-0 object-cover"
+            placeholder="empty"
           />
         </div>
       </div>

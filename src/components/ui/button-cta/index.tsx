@@ -29,7 +29,7 @@ export default function ButtonCta({
           alt="mochi"
           width={80}
           height={80}
-          unoptimized
+          placeholder="empty"
         />
       )}
       <span className="bg-button bg-button1"></span>

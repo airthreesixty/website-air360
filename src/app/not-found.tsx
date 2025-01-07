@@ -29,7 +29,7 @@ export default function NotFound() {
                 alt="Mochi"
                 fill
                 className="!w-auto !relative"
-                unoptimized
+                placeholder="empty"
               />
             </div>
             <h1 className="mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-primary-600 dark:text-primary-500">
