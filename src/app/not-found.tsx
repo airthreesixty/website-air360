@@ -25,7 +25,7 @@ export default function NotFound() {
           <div className="mx-auto max-w-screen-sm text-center">
             <div className="flex justify-center w-24 lg:w-44 relative m-auto">
               <ExportedImage
-                src={`/favicon.webp`}
+                src={`/favicon2.webp`}
                 alt="Mochi"
                 fill
                 className="!w-auto !relative"

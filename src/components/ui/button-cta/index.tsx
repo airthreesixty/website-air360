@@ -25,7 +25,7 @@ export default function ButtonCta({
       {icon && (
         <ExportedImage
           className="absolute -top-[46px] right-18 z-10"
-          src="/favicon.webp"
+          src="/favicon2.webp"
           alt="mochi"
           width={80}
           height={80}
