@@ -5,8 +5,8 @@ const Signature = () => {
     <ExportedImage
       alt="signature"
       src="/images/signature.png"
-      width={160}
-      height={94}
+      width={80}
+      height={47}
     />
   );
 };
