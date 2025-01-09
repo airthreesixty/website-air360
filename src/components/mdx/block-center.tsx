@@ -82,7 +82,7 @@ const BlockHeroWithImage: React.FC<BlockHeroWithImageProps> = ({
       <div className="md:grid md:grid-cols-2 md:items-center md:gap-4">
         {/* Text Content */}
         <div
-          className="text-center md:text-left order-2 md:order-1 lg:max-w-md xl:max-w-xl
+          className="text-center md:text-left order-2 md:order-1 lg:max-w-[490px] xl:max-w-xl
 "
         >
           {subtext && (

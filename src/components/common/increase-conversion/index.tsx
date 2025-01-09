@@ -14,7 +14,7 @@ const IncreaseConversion = () => {
         <MochiFlyingReverse className="relative m-auto w-35" />
       </div>
       <div className="relative -mt-12">
-        <h2 className="mb-8 font-really text-4xl font-bold text-black-600 mx-auto select-none sm:text-6xl lg:text-7xl xl:text-8xl">
+        <h2 className="mb-8 font-really text-4xl font-bold text-black-600 mx-auto select-none sm:text-6xl lg:text-7xl">
           <span>{t("increaseConversion.title.top")}</span>
           <br />
           <span className="relative px-2 overflow-visible m-0 leading-relaxed text-transparent bg-clip-text bg-gradient-to-r from-primary-600/70 to-primary-700/80">

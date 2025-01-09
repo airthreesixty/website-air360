@@ -20,8 +20,8 @@ const Achievement = ({ lang }: { lang: string }) => {
     <div>
       <h2
         className={cn(
-          "font-really font-bold text-black-600 mb-8 text-center text-3xl md:text-5xl lg:mb-15 lg:text-6xl xl:text-7xl",
-          lang === "ja" && "md:text-4xl lg:text-5xl xl:text-6xl"
+          "font-really font-bold text-black-600 mb-8 text-center text-3xl md:text-5xl lg:mb-15 lg:text-6xl",
+          lang === "ja" && "md:text-4xl lg:text-5xl"
         )}
       >
         {t("achievement.title")}
@@ -45,13 +45,13 @@ const Achievement = ({ lang }: { lang: string }) => {
               <div className="h-full sm:flex sm:flex-col sm:justify-center lg:p-6">
                 <h2
                   className={cn(
-                    "text-2xl font-semibold font-really text-black-600 md:text-4xl lg:text-5xl lg:mb-4 dark:text-white",
+                    "text-2xl font-semibold font-really text-black-600 md:text-4xl lg:mb-4 dark:text-white",
                     lang === "ja" && "md:text-3xl lg:text-4xl font-noto"
                   )}
                 >
                   {t("achievement.subtitle")}
                 </h2>
-                <p className="mt-2 text-gray-450 md:text-xl lg:text-2xl xl:text-3xl">
+                <p className="mt-2 text-gray-450 md:text-xl lg:text-2xl">
                   {t("achievement.description")}
                 </p>
                 <div className="w-full pt-8 mx-auto text-center lg:pt-12">
