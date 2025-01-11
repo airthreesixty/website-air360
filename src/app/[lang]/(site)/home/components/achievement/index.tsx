@@ -45,7 +45,7 @@ const Achievement = ({ lang }: { lang: string }) => {
               <div className="h-full sm:flex sm:flex-col sm:justify-center lg:p-6">
                 <h2
                   className={cn(
-                    "text-2xl font-semibold text-black-600 md:text-4xl lg:mb-4 dark:text-white",
+                    "text-2xl font-semibold text-black-600 md:text-3xl lg:mb-4",
                     lang === "ja" && "md:text-3xl lg:text-4xl font-noto"
                   )}
                 >
