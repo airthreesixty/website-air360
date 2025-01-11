@@ -34,9 +34,7 @@ const Solutions = async ({ lang }: { lang: string }) => {
 
   return (
     <div className="text-center">
-      <span className="font-really font-bold text-black-600">
-        {t("subtext")}
-      </span>
+      <span className="font-bold text-black-600">{t("subtext")}</span>
       <h2
         className={cn(
           "font-really font-bold mt-2 text-black-600 text-center text-3xl md:text-5xl lg:text-6xl",

@@ -109,6 +109,10 @@ mark {
   box-decoration-break: clone;
 }
 
+.font-really {
+  letter-spacing: 0.03em;
+}
+
 html[lang="en"] .title1,
 html[lang="en"] .title2 {
   @apply font-really;

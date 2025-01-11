@@ -18,8 +18,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
         <div className="relative inline-block max-w-[950px]">
           <h1
             className={cn(
-              "mb-2 font-black font-really text-[42px] tracking-wide text-gradient select-none md:text-7xl lg:text-8xl text-center lg:mb-4",
-              lang === "ja" && "text-[38px] md:text-6xl lg:text-7xl"
+              "mb-2 font-black font-really text-[42px] text-gradient select-none md:text-7xl lg:text-8xl text-center lg:mb-4",
+              lang === "ja" && "text-[38px] md:text-6xl lg:text-7xl font-noto"
             )}
           >
             <span className="block leading-20">{t("hero.title.top")}</span>
