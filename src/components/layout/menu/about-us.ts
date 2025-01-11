@@ -16,12 +16,12 @@ export const aboutUs: MenuSection[] = [
         icon: "envelope-open-text",
         slug: "/manifesto",
       },
-      {
-        label: "our-values",
-        iconColor: "text-purple-600",
-        icon: "hands-holding-dollar",
-        slug: "/values",
-      },
+      // {
+      //   label: "our-values",
+      //   iconColor: "text-purple-600",
+      //   icon: "hands-holding-dollar",
+      //   slug: "/values",
+      // },
       {
         label: "our-stance",
         iconColor: "text-purple-600",
