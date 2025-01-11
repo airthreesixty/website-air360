@@ -115,7 +115,7 @@ body {
     @apply max-w-screen-1600 mx-auto px-6 lg:px-8 xl:px-10;
   }
   .title1 {
-    @apply text-4xl text-black-600 lg:text-5xl xl:text-6xl;
+    @apply text-4xl text-black-600 lg:text-5xl;
   }
   .title2 {
     @apply text-3xl text-black-600 lg:text-4xl xl:text-5xl;
