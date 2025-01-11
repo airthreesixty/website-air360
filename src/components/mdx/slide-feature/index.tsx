@@ -117,7 +117,7 @@ const SlideMobileBlock: React.FC<SlideProps> = ({
         <h3 className="font-really font-bold text-black-600 text-2xl mt-4">
           {title}
         </h3>
-        <div className="text-gray-600/60 max-w-[600px] mx-auto">{children}</div>
+        <div className="text-black-600 max-w-[600px] mx-auto">{children}</div>
       </div>
     </div>
   );

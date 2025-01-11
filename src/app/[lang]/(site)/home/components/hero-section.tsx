@@ -27,7 +27,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
               <span className="leading-20">{t("hero.title.bottom")}</span>
             )}
           </h1>
-          <p className="text-gray-450 text-lg font-really text-center md:text-2xl lg:text-3xl">
+          <p className="text-gray-450 text-lg text-center md:text-2xl lg:text-3xl">
             {t("hero.subtitle")}
           </p>
           <div className="flex justify-center mt-4 lg:mt-6">
