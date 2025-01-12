@@ -1,5 +1,5 @@
-'use client';
-import { useEffect, useRef } from 'react';
+"use client";
+import { useEffect, useRef } from "react";
 
 function SlideAnimation() {
   const textContainerRefs = useRef([]);
@@ -10,9 +10,13 @@ function SlideAnimation() {
   imageContainerRefs.current = [];
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const textContainers = Array.from(document.querySelectorAll('.text-container'));
-      const imageContainers = Array.from(document.querySelectorAll('.image-container'));
+    if (typeof window !== "undefined") {
+      const textContainers = Array.from(
+        document.querySelectorAll(".text-container")
+      );
+      const imageContainers = Array.from(
+        document.querySelectorAll(".image-container")
+      );
 
       const observer = new IntersectionObserver(
         (entries) => {
@@ -21,17 +25,17 @@ function SlideAnimation() {
             if (entry.isIntersecting) {
               // Remove 'active' class from all
               textContainers.forEach((container, idx) => {
-                container.classList.remove('active');
-                imageContainers[idx].classList.remove('active');
+                container.classList.remove("active");
+                imageContainers[idx].classList.remove("active");
               });
               // Add 'active' class to the intersecting element
-              entry.target.classList.add('active');
-              imageContainers[index].classList.add('active');
+              entry.target.classList.add("active");
+              imageContainers[index].classList.add("active");
             }
           });
         },
         {
-          threshold: 0.5 // Adjust as needed
+          threshold: 0.8, // Adjust as needed
         }
       );
 
