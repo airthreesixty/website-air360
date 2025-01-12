@@ -1,6 +1,5 @@
 import { IconWithBg } from "@/components/mdx/gallery-blocks";
 import { getTranslations } from "@/i18n/getTranslations";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ExportedImage from "next-image-export-optimizer";
 
 interface Props {
