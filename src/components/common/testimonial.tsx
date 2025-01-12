@@ -12,13 +12,13 @@ const Testimonials = async ({ lang }: { lang: string }) => {
       <div className="text-center">
         <h2
           className={cn(
-            "font-really text-black-600 text-center font-bold text-3xl md:text-5xl lg:text-6xl xl:text-7xl",
-            lang === "ja" && "md:text-4xl lg:text-5xl xl:text-6xl font-noto"
+            "font-really text-black-600 text-center font-bold text-3xl md:text-5xl lg:text-6xl",
+            lang === "ja" && "md:text-4xl lg:text-5xl font-noto"
           )}
         >
           {t("testimonials.title")}
         </h2>
-        <p className="mx-auto mt-4 md:text-xl xl:text-3xl text-gray-450 dark:text-gray-300 md:w-3/4 lg:w-3/5 lg:text-2xl">
+        <p className="mx-auto mt-4 md:text-xl text-gray-450 md:w-3/4 lg:w-3/5 lg:text-2xl">
           {t("testimonials.subtitle")}
         </p>
       </div>

@@ -16,6 +16,11 @@ interface Props extends PropsWithChildren {
   title?: string;
 }
 
+interface IconWithBgProps {
+  icon: IconName;
+  color?: string;
+}
+
 const GalleryBlocks: React.FC<Props> = ({ children, title }) => {
   const blocks: React.ReactElement[] = [];
 
@@ -50,6 +55,28 @@ const GalleryBlocks: React.FC<Props> = ({ children, title }) => {
 const Block = ({ children, icon, title, color }: BlockProps) => {
   const description = children;
 
+  return (
+    <div className="flex flex-col items-start">
+      {icon && <IconWithBg icon={icon} color={color} />}
+      {title && (
+        <Title
+          as="h3"
+          className={"mb-2 text-xl md:text-2xl font-bold text-black-600"}
+        >
+          {title}
+        </Title>
+      )}
+
+      {description && (
+        <Description className="mt-0 mb-4 textp">{description}</Description>
+      )}
+    </div>
+  );
+};
+
+Block.displayName = "Block";
+
+const IconWithBg = ({ icon, color }: IconWithBgProps) => {
   const textColor = () => {
     switch (color) {
       case "purple":
@@ -70,33 +97,18 @@ const Block = ({ children, icon, title, color }: BlockProps) => {
         return "bg-primary-100";
     }
   };
-
   return (
-    <div className="flex flex-col items-start">
-      <div
-        className={cn(
-          " w-15 h-15 flex justify-center items-center rounded-xl mb-2 bg-purple-100",
-          bgColor()
-        )}
-      >
-        {icon && <Icon name={icon} className={cn("fa-2x", textColor())} />}
-      </div>
-      {title && (
-        <Title
-          as="h3"
-          className={"mb-2 text-xl md:text-2xl font-bold text-black-600"}
-        >
-          {title}
-        </Title>
+    <div
+      className={cn(
+        "w-15 h-15 flex justify-center items-center rounded-xl mb-2 bg-purple-100",
+        bgColor()
       )}
-
-      {description && (
-        <Description className="mt-0 mb-4 textp">{description}</Description>
-      )}
+    >
+      <Icon name={icon} className={cn("fa-2x", textColor())} />
     </div>
   );
 };
 
-Block.displayName = "Block";
+IconWithBg.displayName = "IconWithBg";
 
-export { Block, GalleryBlocks };
+export { Block, GalleryBlocks, IconWithBg };

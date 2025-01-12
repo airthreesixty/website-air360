@@ -73,12 +73,14 @@ const config: Config = {
               a: {
                 color: "#374151",
                 fontWeight: "bold",
+                "word-break": "normal",
               },
             },
             h3: {
               a: {
                 color: "#374151",
                 fontWeight: "bold",
+                "word-break": "normal",
               },
             },
             h4: {
@@ -89,6 +91,7 @@ const config: Config = {
               a: {
                 color: "#374151",
                 fontWeight: "bold",
+                "word-break": "normal",
               },
             },
           },
