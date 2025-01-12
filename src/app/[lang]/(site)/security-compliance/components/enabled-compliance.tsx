@@ -14,7 +14,7 @@ const EnabledCompliance = async ({ lang }: Props) => {
   return (
     <div
       id="enabled-compliance"
-      className="gap-8 items-center container py-8 lg:py-15 lg:grid lg:grid-cols-2 xl:gap-16"
+      className="gap-8 items-center py-8 lg:py-15 lg:grid lg:grid-cols-2 xl:gap-16"
     >
       <div className="text-gray-500 sm:text-lg">
         <h2 className="title2 mb-5 lg:mb-8">
@@ -24,7 +24,7 @@ const EnabledCompliance = async ({ lang }: Props) => {
           <div className="flex">
             <div>
               <IconWithBg icon="scale-balanced" />
-              <h3 className="mb-2 text-xl font-really font-bold text-black-600">
+              <h3 className="mb-2 text-xl md:text-2xl font-bold text-black-600">
                 {t("enabled-compliance.title1")}
               </h3>
               <p className="mb-2 text-gray-500">
@@ -35,7 +35,7 @@ const EnabledCompliance = async ({ lang }: Props) => {
           <div className="flex pt-8">
             <div>
               <IconWithBg icon="building-shield" />
-              <h3 className="mb-2 text-xl font-really font-bold text-black-600">
+              <h3 className="mb-2 text-xl md:text-2xl font-bold text-black-600">
                 {t("enabled-compliance.title2")}
               </h3>
               <p className="mb-2 text-gray-500">
