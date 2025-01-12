@@ -1,3 +1,4 @@
+import { IconWithBg } from "@/components/mdx/gallery-blocks";
 import { getTranslations } from "@/i18n/getTranslations";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ExportedImage from "next-image-export-optimizer";
@@ -23,10 +24,7 @@ const EnabledCompliance = async ({ lang }: Props) => {
         <div className="py-8 mb-6">
           <div className="flex">
             <div>
-              <FontAwesomeIcon
-                className="fa-2x mb-2 text-primary-600"
-                icon={["far", "scale-balanced"]}
-              />
+              <IconWithBg icon="scale-balanced" />
               <h3 className="mb-2 text-xl font-really font-bold text-black-600">
                 {t("enabled-compliance.title1")}
               </h3>
@@ -37,10 +35,7 @@ const EnabledCompliance = async ({ lang }: Props) => {
           </div>
           <div className="flex pt-8">
             <div>
-              <FontAwesomeIcon
-                className="fa-2x mb-2 text-primary-600"
-                icon={["far", "building-shield"]}
-              />
+              <IconWithBg icon="building-shield" />
               <h3 className="mb-2 text-xl font-really font-bold text-black-600">
                 {t("enabled-compliance.title2")}
               </h3>
