@@ -51,7 +51,13 @@ const SlideFeature: React.FC<SlideFeatureProps> = ({
         <div className="flex justify-between lg:gap-x-15">
           <div className="w-70vh h-50vh sticky overflow-hidden top-32vh">
             {slides.map((slide, index) => (
-              <div key={index} className="image-container transition active">
+              <div
+                key={index}
+                className={cn(
+                  "image-container transition",
+                  index === 0 && "active"
+                )}
+              >
                 <ExportedImage
                   src={slide.props.src}
                   width={865.2}
