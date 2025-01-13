@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import "./achievement.css"; // Assuming you have a CSS module file
 import { useTranslations } from "next-intl";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
@@ -30,10 +29,18 @@ const Achievement = ({ lang }: { lang: string }) => {
         <div className="sm:h-80 lg:h-100 rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none">
           <div className="h-full relative gap-6 sm:flex">
             <div
-              className={`relative -mx-6 -mt-6 flex rounded-2xl border bg-image-logo p-10 dark:border-gray-700 dark:bg-gray-900/60 sm:mr-0 sm:-mb-6 sm:-ml-6 sm:-mt-6 sm:w-1/3 md:w-2/5 lg:w-1/3`}
+              className={`relative -mx-6 -mt-6 flex rounded-2xl border p-10 sm:mr-0 sm:-mb-6 sm:-ml-6 sm:-mt-6 sm:w-1/3 md:w-2/5 lg:w-1/3`}
             >
               <ExportedImage
-                className="m-auto w-auto sm:h-16 lg:h-12"
+                className="absolute inset-0 z-0 h-full w-full object-cover opacity-75 rounded-2xl brightness-105"
+                src="/clubmedResort.jpg"
+                alt="ClubMed resort"
+                width={300}
+                height={160}
+                loading="lazy"
+              />
+              <ExportedImage
+                className="m-auto z-10 w-auto sm:h-16 lg:h-12"
                 src="/logos/clubmed.svg"
                 loading="lazy"
                 alt="logo"
