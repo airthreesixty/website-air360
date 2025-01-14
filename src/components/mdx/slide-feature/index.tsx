@@ -88,10 +88,8 @@ SlideFeature.displayName = "SlideFeature";
 
 const Slide: React.FC<SlideProps> = ({ children, title }) => {
   return (
-    <div className="text-container max-w-[340px] ml-auto text-black-600 h-50vh flex flex-col justify-center text-right active">
-      <div className="text-2xl lg:text-3xl font-really mb-2 font-bold">
-        {title}
-      </div>
+    <div className="text-container max-w-[340px] ml-auto text-black-600 h-50vh flex flex-col justify-center text-left active">
+      <div className="text-2xl lg:text-3xl mb-2 font-bold">{title}</div>
       <span className="text-black-600 lg:text-xl xl:text-2xl xl:leading-8">
         {children}
       </span>
