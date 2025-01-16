@@ -40,7 +40,7 @@ const GalleryBlocks: React.FC<Props> = ({ children, title }) => {
     <section>
       <div className="container py-8 sm:py-16 mb-10">
         {title && (
-          <Title as="h2" className="mb-4 title2">
+          <Title as="h2" className="mb-4 title2 text-center">
             {title}
           </Title>
         )}
