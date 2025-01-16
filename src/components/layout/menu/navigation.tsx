@@ -189,7 +189,7 @@ const ListItem = React.forwardRef<
           {...props}
           href={props.slug}
         >
-          <div className="h-12 w-12 mr-4 flex-shrink-0 rounded-lg flex justify-center items-center">
+          <div className="h-12 w-12 bg-gray-75 mr-4 flex-shrink-0 rounded-lg flex justify-center items-center">
             <Icon name={props.icon} className={`text-xl w-7 ${iconColor}`} />
           </div>
           <div className="text-left text-sm">
