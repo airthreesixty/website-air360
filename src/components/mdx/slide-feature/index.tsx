@@ -40,7 +40,7 @@ const SlideFeature: React.FC<SlideFeatureProps> = ({
     <section className="container pt-15 pb-15 lg:py-30">
       <h2
         className={cn(
-          "title2 text-center font-really mb-8 text-3xl md:text-4xl lg:mb-15 lg:text-5xl",
+          "title2 text-center font-really mb-8 lg:mb-15",
           lp && "mb-8 text-3xl md:text-5xl lg:mb-15 lg:text-6xl",
           lang === "ja" && "md:text-4xl lg:text-5xl font-noto"
         )}
