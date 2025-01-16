@@ -45,6 +45,12 @@ export const aboutUs: MenuSection[] = [
         icon: "shield-check",
         slug: "/product/security-compliance",
       },
+      {
+        label: "where-is-your-data",
+        iconColor: "text-purple-600",
+        icon: "cloud-question",
+        slug: "/where-is-your-data",
+      },
     ],
   },
 ];
@@ -76,6 +82,12 @@ export const aboutUsMobile: MenuSection[] = [
         iconColor: "text-purple-600",
         icon: "microchip-ai",
         slug: "/ai",
+      },
+      {
+        label: "where-is-your-data",
+        iconColor: "text-purple-600",
+        icon: "cloud-question",
+        slug: "/where-is-your-data",
       },
       {
         label: "privacy-policy.title",

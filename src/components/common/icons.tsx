@@ -130,6 +130,7 @@ import {
   faFaceTired,
   faFaceSpiralEyes,
   faClock,
+  faCloudQuestion,
 } from "@fortawesome/pro-regular-svg-icons";
 
 import { config } from "@fortawesome/fontawesome-svg-core";
@@ -257,7 +258,8 @@ library.add(
   faFaceSadSweat,
   faFaceTired,
   faFaceSpiralEyes,
-  faClock
+  faClock,
+  faCloudQuestion
 );
 
 interface IconProps {
