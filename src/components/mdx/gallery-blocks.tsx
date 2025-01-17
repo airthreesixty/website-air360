@@ -14,6 +14,7 @@ interface BlockProps extends PropsWithChildren {
 
 interface Props extends PropsWithChildren {
   title?: string;
+  dense?: boolean;
 }
 
 interface IconWithBgProps {
@@ -21,7 +22,7 @@ interface IconWithBgProps {
   color?: string;
 }
 
-const GalleryBlocks: React.FC<Props> = ({ children, title }) => {
+const GalleryBlocks: React.FC<Props> = ({ children, title, dense }) => {
   const blocks: React.ReactElement[] = [];
 
   React.Children.forEach(children, (child) => {
@@ -40,11 +41,17 @@ const GalleryBlocks: React.FC<Props> = ({ children, title }) => {
     <section>
       <div className="container py-8 sm:py-16 mb-10">
         {title && (
-          <Title as="h2" className="mb-4 title2 text-center">
+          <Title as="h2" className="mb-4 title2">
             {title}
           </Title>
         )}
-        <div className="mt-12 lg:mt-12 space-y-8 md:grid md:grid-cols-2 md:gap-9 md:space-y-0 lg:gap-15">
+        <div
+          className={cn(
+            "mt-12 lg:mt-12 space-y-8 md:gap-9 lg:gap-15",
+            dense && "md:columns-2",
+            !dense && "md:grid md:grid-cols-2"
+          )}
+        >
           {blocks}
         </div>
       </div>
@@ -56,7 +63,7 @@ const Block = ({ children, icon, title, color }: BlockProps) => {
   const description = children;
 
   return (
-    <div className="flex flex-col items-start">
+    <div className="flex flex-col items-start break-inside-avoid">
       {icon && <IconWithBg icon={icon} color={color} />}
       {title && (
         <Title
