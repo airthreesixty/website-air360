@@ -22,6 +22,7 @@ export const routing = defineRouting({
     "/guides/cro-for-beginners": "/guides/cro-for-beginners",
     "/guides/cro-glossary": "/guides/cro-glossary",
     "/values": "/values",
+    "/where-is-your-data": "/where-is-your-data",
     "/contact": "/contact",
     "/roi-calculator-eur": "/roi-calculator-eur",
     "/product/website-analysis": "/product/website-analysis",

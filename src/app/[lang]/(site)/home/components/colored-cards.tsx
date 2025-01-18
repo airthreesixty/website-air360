@@ -35,9 +35,7 @@ const ColoredCards = ({ items }: Props) => {
           )}
           <div className="w-full h-full flex flex-col">
             <div className="p-6 grow">
-              <h3 className="title3 font-really mb-2 font-bold">
-                {item.title}
-              </h3>
+              <h3 className="title3 mb-2 font-bold">{item.title}</h3>
               <p className="textp mb-8">{item.description}</p>
             </div>
             {item.img && (
