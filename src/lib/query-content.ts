@@ -1,5 +1,11 @@
-import { allBlogs, allContentGalleries, allProducts, allUseCases } from 'contentlayer/generated';
-import { compareDesc } from 'date-fns';
+import {
+  allBlogs,
+  allChangelogs,
+  allContentGalleries,
+  allProducts,
+  allUseCases,
+} from "contentlayer/generated";
+import { compareDesc } from "date-fns";
 
 export const getPostBySlug = (slug: string, lang: string) => {
   return allBlogs.find((p) => {
@@ -14,11 +20,15 @@ export const getAllPostByTag = (tag: string, lang: string) => {
 };
 
 export const getAllPosts = (lang: string) => {
-  return allBlogs.filter((post) => post.locale === lang).sort((a, b) => compareDesc(new Date(a.published), new Date(b.published)));
+  return allBlogs
+    .filter((post) => post.locale === lang)
+    .sort((a, b) => compareDesc(new Date(a.published), new Date(b.published)));
 };
 
 export const getAllContenGallery = (lang: string) => {
-  return allContentGalleries.filter((post) => post.locale === lang).sort((a, b) => compareDesc(new Date(a.published), new Date(b.published)));
+  return allContentGalleries
+    .filter((post) => post.locale === lang)
+    .sort((a, b) => compareDesc(new Date(a.published), new Date(b.published)));
 };
 
 export const getContenGalleryBySlug = (slug: string, lang: string) => {
@@ -31,7 +41,7 @@ export const getAllProducts = (lang: string) => {
   return allProducts.filter((post) => post.locale === lang);
 };
 export const getProductBySlug = (slugs: string[], lang: string) => {
-  const slug = slugs.join('/') || '';
+  const slug = slugs.join("/") || "";
   const url = `${lang}/product/${slug}`;
 
   return allProducts.find((p) => {
@@ -42,11 +52,25 @@ export const getProductBySlug = (slugs: string[], lang: string) => {
 export const getAllUsesCases = (lang: string) => {
   return allUseCases.filter((post) => post.locale === lang);
 };
+
 export const getUsesCaseBySlug = (slugs: string[], lang: string) => {
-  const slug = slugs.join('/') || '';
+  const slug = slugs.join("/") || "";
   const url = `${lang}/use-cases/${slug}`;
 
   return allUseCases.find((p) => {
+    return p.url === url;
+  });
+};
+
+export const getAllChangelogs = (lang: string) => {
+  return allChangelogs.filter((changelog) => changelog.locale === lang);
+};
+
+export const getChangelogBySlug = (slugs: string[], lang: string) => {
+  const slug = slugs.join("/") || "";
+  const url = `${lang}/changelog/${slug}`;
+
+  return allChangelogs.find((p) => {
     return p.url === url;
   });
 };

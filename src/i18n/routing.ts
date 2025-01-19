@@ -46,6 +46,7 @@ export const routing = defineRouting({
     "/use-cases/multi-brand-companies": "/use-cases/multi-brand-companies",
     "/use-cases/sport-team": "/use-cases/sport-team",
     "/thank-you-for-the-demo-request": "/thank-you-for-the-demo-request",
+    "/changelog": "/changelog",
     "/pathnames": {
       en: "/test",
       ja: "/testja",

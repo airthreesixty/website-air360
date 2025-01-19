@@ -6,6 +6,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { getBaseUrl } from "@/lib/metadata";
 import Providers from "./providers";
 import { getTranslations } from "@/i18n/getTranslations";
+import { ChakraProvider } from "@chakra-ui/react";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -88,7 +89,7 @@ export default async function RootLayout({
     <html lang={params.lang}>
       <body className={`${inter.variable} ${really.variable} ${noto.variable}`}>
         <Providers locale={params.lang} messages={messages}>
-          {children}
+          <ChakraProvider>{children}</ChakraProvider>
         </Providers>
       </body>
     </html>

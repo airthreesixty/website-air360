@@ -19,6 +19,14 @@ const productFields: FieldDefs = {
   published: { type: "date", required: false },
 };
 
+const changelogFields: FieldDefs = {
+  title: { type: "string", required: true },
+  slug: { type: "string", required: true },
+  publishedAt: { type: "date", required: true },
+  headerImage: { type: "string", required: true },
+  authors: { type: "list", of: { type: "string" }, required: false },
+};
+
 interface DocumentTypeConfig {
   name: string;
   path: string;
@@ -55,6 +63,11 @@ const contentTypeList: DocumentTypeConfig[] = [
     name: "Product",
     path: "product",
     fields: productFields,
+  },
+  {
+    name: "Changelog",
+    path: "changelog",
+    fields: changelogFields,
   },
 ];
 
