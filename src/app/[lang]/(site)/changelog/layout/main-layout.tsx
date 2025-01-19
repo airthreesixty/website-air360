@@ -105,12 +105,13 @@ export const MainLayout = ({
             layout
             layoutId="timeline-switcher-button"
             transition={{ duration: 0 }}
-            style={{
-              position: "sticky",
-              top: "120px",
-              zIndex: 1,
-              paddingBottom: "32px",
-            }}
+            // style={{
+            //   position: "sticky",
+            //   top: "120px",
+            //   zIndex: 1,
+            //   paddingBottom: "32px",
+            // }}
+            className="sticky top-[100px] lg:top-[120px] mt-5 z-1 pb-8"
           >
             <TimeSelectionTabs />
           </motion.div>
@@ -194,6 +195,7 @@ export const MainLayout = ({
           </Container>
         </Box>
       </motion.div>
+      {/* <Footer /> */}
     </>
   );
 };

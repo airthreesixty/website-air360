@@ -22,7 +22,7 @@ const TimeSelectionTabs = () => {
       router.push(`/page/0#${view}`);
       timeline.setView(view);
     } else if (timeline.view === view) {
-      window.scrollTo({
+      return window.scrollTo({
         top: 0,
         behavior: "smooth",
       });
@@ -32,6 +32,13 @@ const TimeSelectionTabs = () => {
         timeline.setView(view);
       }
     }
+
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }, 50);
   };
 
   return (

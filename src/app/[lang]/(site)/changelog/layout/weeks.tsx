@@ -12,16 +12,11 @@ interface IWeeksProps {
 const Weeks = ({ slugs, isInfiniteScrollingView }: IWeeksProps) => {
   const Articles = React.useMemo(() => {
     return slugs.map((slug) =>
-      dynamic(() => import(`../../../../../content/en/changelog/${slug}.mdx`))
+      dynamic(() => import(`@/content/en/changelog/${slug}.mdx`))
     );
   }, [slugs]);
 
-  const test = getChangelogBySlug(slugs, "en");
   const changelogs = getAllChangelogs("en");
-  changelogs.forEach((changelog) => {
-    console.log(changelog);
-  });
-
   return (
     <>
       {Articles.map((Article, index) => {

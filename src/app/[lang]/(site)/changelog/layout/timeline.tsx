@@ -25,7 +25,7 @@ const Timeline = (props: TimelineProps) => {
 
   const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
-    setIsOpen(pathname.includes("/changelogs"));
+    setIsOpen(pathname.includes("/changelog/"));
   }, [pathname, isLargerThan768]);
 
   return (
@@ -112,7 +112,7 @@ const Timeline = (props: TimelineProps) => {
             />
           </motion.div>
         )}
-        <VStack alignItems="start" spacing={[0, 0, 2]}>
+        <VStack alignItems="start" spacing={[0, 0, 2]} className="ms-8">
           {!isLargerThan768 && (
             <VStack position="relative" top="-8px" spacing={4} mb={[4, 4]}>
               {isOpen && <BackButton />}

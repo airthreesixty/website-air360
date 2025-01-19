@@ -64,7 +64,7 @@ const Months = ({
     const year = date.format("YYYY");
     const hash = targetDate.replace(/[\s_]+/g, "-").toLowerCase();
 
-    router.push(`/years/${year}/months/${month}#${hash}`);
+    router.push(`/en/years/${year}/months/${month}#${hash}`);
   };
 
   return (
