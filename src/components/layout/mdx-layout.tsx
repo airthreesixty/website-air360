@@ -231,10 +231,11 @@ export const MdxLayout = (props: MdxLayoutProps) => {
                   <Image
                     src={props.meta.headerImage}
                     alt={props.meta.title}
+                    className="cursor-pointer"
                     w="full"
                     height={["100%", "100%", "360px"]}
                     objectFit={"cover"}
-                    cursor={props.hideLayout ? "pointer" : "default"}
+                    // cursor={props.hideLayout ? "pointer" : "pointer"}
                     _hover={{
                       // apply underline on hover to the next first .article-title
                       // "& + .article-title": {

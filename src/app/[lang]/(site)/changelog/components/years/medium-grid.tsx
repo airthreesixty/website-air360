@@ -42,6 +42,7 @@ const MediumGrid = (props: IGridProps) => {
                   style={{ height: "100%" }}
                 >
                   <Image
+                    className="helloImage"
                     key={index}
                     src={imageUrl}
                     alt={slug}
@@ -101,9 +102,7 @@ const MediumGrid = (props: IGridProps) => {
                 const year = date.format("YYYY");
                 const hash = targetDate.replace(/[\s_]+/g, "-").toLowerCase();
 
-                router.push(`/years/${year}#${hash}`, undefined, {
-                  scroll: true,
-                });
+                router.push(`/en/years/${year}#${hash}`);
               }}
             />
           </motion.div>

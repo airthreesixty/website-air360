@@ -33,32 +33,38 @@ const SmallGrid = (props: IGridProps) => {
               const year = date.format("YYYY");
               const hash = targetDate.replace(/[\s_]+/g, "-").toLowerCase();
 
-              router.push(`/years/${year}#${hash}`, undefined, { scroll: true });
+              router.push(`/years/${year}#${hash}`, undefined, {
+                scroll: true,
+              });
             }}
           />
         </motion.div>
       </Box>
       <VStack width="176px" height="100%">
-        {changelogs.slice(1, changelogs.length).map(({ imageUrl, slug, publishedAt}, index) => (
-          <Image
-            key={index}
-            src={imageUrl}
-            alt={slug}
-            objectFit={"cover"}
-            maxHeight="176px"
-            height="100%"
-            maxWidth="176px"
-            fallbackSrc="/plain-gray.jpg"
-            onClick={() => {
-              const date = dayjs(publishedAt);
-              const targetDate = date.format("MMM YYYY");
-              const year = date.format("YYYY");
-              const hash = targetDate.replace(/[\s_]+/g, "-").toLowerCase();
+        {changelogs
+          .slice(1, changelogs.length)
+          .map(({ imageUrl, slug, publishedAt }, index) => (
+            <Image
+              key={index}
+              src={imageUrl}
+              alt={slug}
+              objectFit={"cover"}
+              maxHeight="176px"
+              height="100%"
+              maxWidth="176px"
+              fallbackSrc="/plain-gray.jpg"
+              onClick={() => {
+                const date = dayjs(publishedAt);
+                const targetDate = date.format("MMM YYYY");
+                const year = date.format("YYYY");
+                const hash = targetDate.replace(/[\s_]+/g, "-").toLowerCase();
 
-              router.push(`/years/${year}#${hash}`, undefined, { scroll: true });
-            }}
-          />
-        ))}
+                router.push(`/years/${year}#${hash}`, undefined, {
+                  scroll: true,
+                });
+              }}
+            />
+          ))}
       </VStack>
     </HStack>
   );
