@@ -26,7 +26,7 @@ const Achievement = ({ lang }: { lang: string }) => {
         {t("achievement.title")}
       </h2>
       <div className="grid gap-6">
-        <div className="sm:h-80 lg:h-100 rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none">
+        <div className="sm:h-80 lg:h-100 rounded-3xl shadow-card bg-white p-8">
           <div className="h-full relative gap-6 sm:flex">
             <div
               className={`relative -mx-6 -mt-6 flex rounded-2xl border p-10 sm:mr-0 sm:-mb-6 sm:-ml-6 sm:-mt-6 sm:w-1/3 md:w-2/5 lg:w-1/3`}
