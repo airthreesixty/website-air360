@@ -19,7 +19,7 @@ const TimeSelectionTabs = () => {
       (pathname.includes("/page/") || pathname.includes("/years/")) &&
       timeline.view !== view
     ) {
-      router.push(`/page/0#${view}`);
+      router.push(`/en/page/0#${view}`);
       timeline.setView(view);
     } else if (timeline.view === view) {
       return window.scrollTo({
