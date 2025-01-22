@@ -8,11 +8,9 @@ import useTimelineStore from "@/lib/state/use-timeline-store";
 import usePageStatusStore from "@/lib/state/use-page-status-store";
 import useAnimatePageStore from "@/lib/state/use-animate-page-store";
 import { motion } from "framer-motion";
-import Menu from "@/components/layout/menu";
 
 import { Box, Button, Container, HStack, VStack } from "@chakra-ui/react";
 import TimeSelectionTabs from "../components/time-selection-tabs";
-import Footer from "@/components/layout/footer";
 
 export interface MainLayoutProps {
   page?: number;
@@ -27,7 +25,7 @@ export interface MainLayoutProps {
 }
 
 export const MainLayout = ({
-  page,
+  page = 0,
   children,
   itemsPerPage,
   totalItems,
@@ -72,7 +70,8 @@ export const MainLayout = ({
   const hasMorePage =
     !infiniteScrollingView &&
     page !== undefined &&
-    page < Math.floor(totalItems[timeline.view] / itemsPerPage) - 1;
+    page <
+      Math.floor((totalItems?.[timeline.view] ?? 0) / (itemsPerPage ?? 1)) - 1;
 
   const isInBlogPage = pathname.startsWith("/changelog/");
 
@@ -105,12 +104,6 @@ export const MainLayout = ({
             layout
             layoutId="timeline-switcher-button"
             transition={{ duration: 0 }}
-            // style={{
-            //   position: "sticky",
-            //   top: "120px",
-            //   zIndex: 1,
-            //   paddingBottom: "32px",
-            // }}
             className="sticky top-[100px] lg:top-[120px] mt-5 z-1 pb-8"
           >
             <TimeSelectionTabs />
@@ -195,7 +188,6 @@ export const MainLayout = ({
           </Container>
         </Box>
       </motion.div>
-      {/* <Footer /> */}
     </>
   );
 };

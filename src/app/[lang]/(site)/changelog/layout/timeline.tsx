@@ -1,7 +1,7 @@
 import BackButton from "../components/back-button";
 import { motion } from "framer-motion";
 import usePageStatusStore from "@/lib/state/use-page-status-store";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { ReactNode, useEffect, useState } from "react";
 
 import { Box, HStack, Text, useMediaQuery, VStack } from "@chakra-ui/react";
@@ -18,7 +18,6 @@ const Timeline = (props: TimelineProps) => {
   const { children, date } = props;
   const { prevUrl } = usePreviousPageUrl();
 
-  const router = useRouter();
   const pathname = usePathname();
   const pageStatus = usePageStatusStore();
   const [isLargerThan768] = useMediaQuery("(min-width: 768px)");

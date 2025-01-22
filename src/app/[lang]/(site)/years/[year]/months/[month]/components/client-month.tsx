@@ -27,9 +27,7 @@ export function ClientMonth({ changelogs, year, month }: ClientMonthViewProps) {
       slug: changelog.slug,
     }));
   }, [changelogs]);
-  console.log("articles", changelogs);
 
-  // ハッシュに基づくスクロール処理
   useEffect(() => {
     if (typeof window === "undefined") return;
 
@@ -51,7 +49,6 @@ export function ClientMonth({ changelogs, year, month }: ClientMonthViewProps) {
       }
     };
 
-    // DOMが完全に読み込まれてから実行
     setTimeout(scrollToElement, 1000);
   }, [changelogs]);
 
@@ -86,6 +83,7 @@ export function ClientMonth({ changelogs, year, month }: ClientMonthViewProps) {
           <MdxLayout meta={meta} key={slug}>
             <Component
               key={slug}
+              // @ts-ignore
               index={index}
               hideLayout={true}
               hideHead={true}

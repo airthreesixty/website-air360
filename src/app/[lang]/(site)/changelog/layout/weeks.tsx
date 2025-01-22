@@ -1,6 +1,5 @@
 import { MdxLayout } from "@/components/layout/mdx-layout";
-import { MdxMeta } from "@/lib/models/mdx-meta";
-import { getAllChangelogs, getChangelogBySlug } from "@/lib/query-content";
+import { getAllChangelogs } from "@/lib/query-content";
 import dynamic from "next/dynamic";
 import React from "react";
 

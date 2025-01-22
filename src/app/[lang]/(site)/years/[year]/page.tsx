@@ -3,12 +3,12 @@ import { getAllChangelogs } from "@/lib/query-content";
 import { MainLayout } from "../../changelog/layout/main-layout";
 import ClientMonths from "./components/client-months";
 
-// 型定義
 interface IImagePreviewMeta {
   imageUrl: string;
   slug: string;
   publishedAt: string;
   weeklyViewPage: number;
+  monthlyViewPage: number;
 }
 
 interface IAggregatedChangelogs {
@@ -23,14 +23,12 @@ interface PageProps {
 
 const ITEMS_PER_PAGE = 4;
 
-// メタデータの生成
 export async function generateMetadata({ params }: PageProps) {
   return {
     title: `Changelog ${params.year}`,
   };
 }
 
-// 静的パラメータの生成
 export async function generateStaticParams() {
   const currentYear = new Date().getFullYear();
   const years = Array.from({ length: 41 }, (_, i) =>
@@ -78,6 +76,7 @@ export default async function Page({ params }: PageProps) {
         slug: item.slug,
         publishedAt: item.publishedAt,
         weeklyViewPage: Math.floor(index / ITEMS_PER_PAGE),
+        monthlyViewPage: 0,
       });
 
       return acc;

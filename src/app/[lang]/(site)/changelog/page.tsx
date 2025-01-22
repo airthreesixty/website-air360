@@ -1,10 +1,6 @@
-// /app/changelog/page.tsx
 import { getAllChangelogs } from "@/lib/query-content";
 import ChangelogPage from "./components/change-log-page";
-import { allChangelogs } from "contentlayer/generated";
-import { MdxLayout } from "@/components/layout/mdx-layout";
 import { MdxMeta } from "@/lib/models/mdx-meta";
-import { MainLayout } from "./layout/main-layout";
 import { IAggregatedChangelogs, IImagePreviewMeta } from "@/lib/models/view";
 
 interface Props {
@@ -38,7 +34,7 @@ export default async function Page({ params }: Props) {
 
   // aggregate images for monthly changelogs
   const monthChangelogsMap: IAggregatedChangelogs = meta.reduce(
-    (acc, item, index) => {
+    (acc: { [key: string]: IImagePreviewMeta[] }, item, index) => {
       const date = new Date(item.publishedAt);
       const year = date.getFullYear();
       const month = date.getMonth() + 1;
@@ -63,7 +59,7 @@ export default async function Page({ params }: Props) {
     monthChangelogsMap
   )
     .slice(start, end)
-    .reduce((acc, key) => {
+    .reduce((acc: IAggregatedChangelogs, key: string) => {
       acc[key] = monthChangelogsMap[key];
       return acc;
     }, {});
@@ -71,7 +67,7 @@ export default async function Page({ params }: Props) {
   //   console.log("recentMonthChangelogsMap", recentMonthChangelogsMap);
 
   const yearsChangelogsMap: IAggregatedChangelogs = meta.reduce(
-    (acc, item, index) => {
+    (acc: { [key: string]: IImagePreviewMeta[] }, item, index) => {
       const date = new Date(item.publishedAt);
       const year = date.getFullYear().toString();
       if (!acc[year]) {
@@ -102,7 +98,7 @@ export default async function Page({ params }: Props) {
     yearsChangelogsMap
   )
     .slice(start, end)
-    .reduce((acc, key) => {
+    .reduce((acc: IAggregatedChangelogs, key: string) => {
       acc[key] = yearsChangelogsMap[key];
       return acc;
     }, {});

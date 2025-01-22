@@ -12,7 +12,7 @@ const MediumGrid = (props: IGridProps) => {
     <VStack spacing="8px">
       {changelogs
         .reverse()
-        .reduce((result, item, index) => {
+        .reduce<(typeof changelogs)[]>((result, item, index) => {
           const rowIndex = Math.floor(index / 3);
           if (!result[rowIndex]) {
             result[rowIndex] = [];

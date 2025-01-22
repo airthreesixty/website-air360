@@ -1,4 +1,4 @@
-import { Box, HStack, Image, VStack, Skeleton } from "@chakra-ui/react";
+import { Box, HStack, Image, VStack } from "@chakra-ui/react";
 import dayjs from "dayjs";
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";

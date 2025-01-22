@@ -1,24 +1,34 @@
-import { Box, Grid, GridItem, HStack, Image, Skeleton, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Grid,
+  GridItem,
+  HStack,
+  Image,
+  Skeleton,
+  VStack,
+} from "@chakra-ui/react";
 import dayjs from "dayjs";
 import { motion } from "framer-motion";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { IGridProps } from "./grid-interfaces";
 import LargeSubGrid from "./large-sub-grid";
 
 const LargeGrid = (props: IGridProps) => {
   const { changelogs } = props;
-  const router = useRouter()
+  const router = useRouter();
 
   return (
     <Grid
       gap={"2px"}
       templateColumns="repeat(1, 1fr)"
-      templateRows={`repeat(${Math.floor(changelogs.slice(0, 27).length / 9)}, 1fr)`}
+      templateRows={`repeat(${Math.floor(
+        changelogs.slice(0, 27).length / 9
+      )}, 1fr)`}
       height="100%"
     >
       {changelogs
         .slice(0, 27)
-        .reduce((result, item, index) => {
+        .reduce<(typeof changelogs)[]>((result, item, index) => {
           const rowIndex = Math.floor(index / 9);
           if (!result[rowIndex]) {
             result[rowIndex] = [];
@@ -33,7 +43,9 @@ const LargeGrid = (props: IGridProps) => {
               {i % 2 === 0 && (
                 <>
                   <motion.div
-                    layoutId={i === 0 && props.isFirstItem ? rowItems[0].slug : ``}
+                    layoutId={
+                      i === 0 && props.isFirstItem ? rowItems[0].slug : ``
+                    }
                     initial={{
                       scale: 1,
                     }}
@@ -59,16 +71,18 @@ const LargeGrid = (props: IGridProps) => {
                         const date = dayjs(rowItems[0].publishedAt);
                         const targetDate = date.format("MMM YYYY");
                         const year = date.format("YYYY");
-                        const hash = targetDate.replace(/[\s_]+/g, "-").toLowerCase();
+                        const hash = targetDate
+                          .replace(/[\s_]+/g, "-")
+                          .toLowerCase();
 
-                        router.push(`/years/${year}#${hash}`, undefined, { scroll: true });
+                        router.push(`/years/${year}#${hash}`);
                       }}
                     />
                   </motion.div>
                   <VStack spacing="2px">
                     {rowItems
                       .slice(1, rowItems.length)
-                      .reduce((result, item, index) => {
+                      .reduce<(typeof changelogs)[]>((result, item, index) => {
                         const rowIndex = Math.floor(index / 4);
                         if (!result[rowIndex]) {
                           result[rowIndex] = [];
@@ -92,7 +106,7 @@ const LargeGrid = (props: IGridProps) => {
                   <VStack spacing="2px">
                     {rowItems
                       .slice(0, rowItems.length - 1)
-                      .reduce((result, item, index) => {
+                      .reduce<(typeof changelogs)[]>((result, item, index) => {
                         const rowIndex = Math.floor(index / 4);
                         if (!result[rowIndex]) {
                           result[rowIndex] = [];
@@ -117,16 +131,23 @@ const LargeGrid = (props: IGridProps) => {
                     objectFit={"cover"}
                     fallback={
                       <Box overflow="hidden">
-                        <Skeleton height="198px" width={rowItems.length === 1 ? "100%" : "282px"} />
+                        <Skeleton
+                          height="198px"
+                          width={rowItems.length === 1 ? "100%" : "282px"}
+                        />
                       </Box>
                     }
                     onClick={() => {
-                      const date = dayjs(rowItems[rowItems.length - 1].publishedAt);
+                      const date = dayjs(
+                        rowItems[rowItems.length - 1].publishedAt
+                      );
                       const targetDate = date.format("MMM YYYY");
                       const year = date.format("YYYY");
-                      const hash = targetDate.replace(/[\s_]+/g, "-").toLowerCase();
+                      const hash = targetDate
+                        .replace(/[\s_]+/g, "-")
+                        .toLowerCase();
 
-                      router.push(`/years/${year}#${hash}`, undefined, { scroll: true });
+                      router.push(`/years/${year}#${hash}`);
                     }}
                   />
                 </>

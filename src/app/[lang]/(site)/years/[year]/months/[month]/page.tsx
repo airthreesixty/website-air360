@@ -23,7 +23,6 @@ export async function generateStaticParams() {
   const months = Array.from({ length: 12 }, (_, i) =>
     i < 9 ? `0${i + 1}` : `${i + 1}`
   );
-  console.log(months);
 
   // 全ての年月の組み合わせを生成
   return years.flatMap((year) =>

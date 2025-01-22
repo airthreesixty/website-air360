@@ -1,9 +1,8 @@
 import { MdxLayout } from "@/components/layout/mdx-layout";
 import { MdxMeta } from "@/lib/models/mdx-meta";
-import { getAllChangelogs, getChangelogBySlug } from "@/lib/query-content";
+import { getChangelogBySlug } from "@/lib/query-content";
 import { allChangelogs } from "contentlayer/generated";
 import { useMDXComponent } from "next-contentlayer/hooks";
-import { MainLayout } from "../layout/main-layout";
 
 interface Props {
   params: { slug: string[]; lang: string };
@@ -16,7 +15,6 @@ export async function generateStaticParams() {
 }
 
 const Page = ({ params }: Props) => {
-  console.log(params);
   const content = getChangelogBySlug(params.slug, params.lang);
 
   if (!content) {
