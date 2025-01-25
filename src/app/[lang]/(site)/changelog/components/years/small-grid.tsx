@@ -1,12 +1,14 @@
 import { Box, HStack, Image, VStack } from "@chakra-ui/react";
 import dayjs from "dayjs";
 import { motion } from "framer-motion";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { IGridProps } from "./grid-interfaces";
 
 const SmallGrid = (props: IGridProps) => {
   const { changelogs } = props;
   const router = useRouter();
+  const pathname = usePathname();
+  const lang = pathname.split("/")[1];
 
   return (
     <HStack height="100%" maxHeight="360px" maxWidth={"682px"}>
@@ -33,7 +35,7 @@ const SmallGrid = (props: IGridProps) => {
               const year = date.format("YYYY");
               const hash = targetDate.replace(/[\s_]+/g, "-").toLowerCase();
 
-              router.push(`/years/${year}#${hash}`);
+              router.push(`/${lang}/years/${year}#${hash}`);
             }}
           />
         </motion.div>
@@ -57,7 +59,7 @@ const SmallGrid = (props: IGridProps) => {
                 const year = date.format("YYYY");
                 const hash = targetDate.replace(/[\s_]+/g, "-").toLowerCase();
 
-                router.push(`/years/${year}#${hash}`);
+                router.push(`/${lang}/years/${year}#${hash}`);
               }}
             />
           ))}
