@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import { getAllChangelogs } from "@/lib/query-content";
 import { MainLayout } from "../../changelog/layout/main-layout";
 import ClientMonths from "./components/client-months";
+import LoadingDots from "@/components/common/LoadingDots";
 
 interface IImagePreviewMeta {
   imageUrl: string;
@@ -86,7 +87,7 @@ export default async function Page({ params }: PageProps) {
   );
 
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<LoadingDots className="w-6" numDots={3} />}>
       <MainLayout infiniteScrollingView="year">
         <ClientMonths
           initialMonthChangelogsMap={monthChangelogsMap}

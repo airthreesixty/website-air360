@@ -21,7 +21,6 @@ const productFields: FieldDefs = {
 
 const changelogFields: FieldDefs = {
   title: { type: "string", required: true },
-  slug: { type: "string", required: true },
   publishedAt: { type: "date", required: true },
   headerImage: { type: "string", required: true },
   authors: { type: "list", of: { type: "string" }, required: false },
