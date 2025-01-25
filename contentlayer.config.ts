@@ -24,6 +24,7 @@ const changelogFields: FieldDefs = {
   publishedAt: { type: "date", required: true },
   headerImage: { type: "string", required: true },
   authors: { type: "list", of: { type: "string" }, required: false },
+  description: { type: "string", required: true },
 };
 
 interface DocumentTypeConfig {
