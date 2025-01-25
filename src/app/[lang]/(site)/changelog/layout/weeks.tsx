@@ -11,7 +11,7 @@ interface IWeeksProps {
   isInfiniteScrollingView?: boolean;
 }
 
-const Weeks = ({ slugs, isInfiniteScrollingView }: IWeeksProps) => {
+const Weeks = ({ slugs }: IWeeksProps) => {
   const pathname = usePathname();
   const lang = pathname.split("/")[1];
   const Articles = React.useMemo(() => {
@@ -42,15 +42,7 @@ const Weeks = ({ slugs, isInfiniteScrollingView }: IWeeksProps) => {
 
         return (
           <MdxLayout key={slug} meta={meta}>
-            <Article
-              key={index}
-              // @ts-ignore
-              index={index}
-              hideLayout={true}
-              hideHead={true}
-              hideAuthors={true}
-              isInfiniteScrollingView={isInfiniteScrollingView}
-            />
+            <Article key={index} />
           </MdxLayout>
         );
       })}

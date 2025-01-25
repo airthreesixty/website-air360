@@ -8,7 +8,6 @@ const MONTHS_PER_RENDER = 12;
 
 export default function ClientMonths({
   initialMonthChangelogsMap,
-  year,
 }: {
   initialMonthChangelogsMap: IAggregatedChangelogs;
   year: string;

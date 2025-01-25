@@ -8,14 +8,15 @@ import { TabPanel, TabPanels, Tabs } from "@chakra-ui/react";
 import Years from "../layout/years";
 import Weeks from "../layout/weeks";
 import Months from "../layout/months";
+import { IAggregatedChangelogs } from "@/lib/models/view";
 
 const ITEMS_PER_PAGE = 4;
 
 export interface IPageProps {
   slugs: string[];
   changelogsMap: {
-    months: any;
-    years: any;
+    months: IAggregatedChangelogs;
+    years: IAggregatedChangelogs;
   };
   totalItems: { weeks: number; months: number; years: number };
 }

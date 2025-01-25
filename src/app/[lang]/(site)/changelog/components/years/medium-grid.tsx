@@ -30,6 +30,7 @@ const MediumGrid = (props: IGridProps) => {
             {rowItems.reverse().map(({ imageUrl, slug }, index) =>
               imageUrl ? (
                 <motion.div
+                  key={index}
                   layoutId={
                     i === 0 && props.isFirstItem ? rowItems[0].slug : ``
                   }
@@ -52,7 +53,7 @@ const MediumGrid = (props: IGridProps) => {
                   />
                 </motion.div>
               ) : (
-                <Box bg="#F1F3F5" h="full" w="full" />
+                <Box key={index} bg="#F1F3F5" h="full" w="full" />
               )
             )}
           </Grid>

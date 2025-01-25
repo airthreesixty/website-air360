@@ -67,7 +67,7 @@ export function ClientMonth({ changelogs, year, month }: ClientMonthViewProps) {
 
   return (
     <div className="space-y-8">
-      {ArticleComponents.map(({ Component, slug }, index) => {
+      {ArticleComponents.map(({ Component, slug }) => {
         const changelog = changelogs.find(
           (changelog) => changelog.slug === slug
         );
@@ -84,15 +84,7 @@ export function ClientMonth({ changelogs, year, month }: ClientMonthViewProps) {
         };
         return (
           <MdxLayout meta={meta} key={slug}>
-            <Component
-              key={slug}
-              // @ts-ignore
-              index={index}
-              hideLayout={true}
-              hideHead={true}
-              hideAuthors={true}
-              isInfiniteScrollingView={true}
-            />
+            <Component key={slug} />
           </MdxLayout>
         );
       })}

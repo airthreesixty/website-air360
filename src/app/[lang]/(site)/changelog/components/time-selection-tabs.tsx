@@ -61,7 +61,7 @@ const TimeSelectionTabs = () => {
           overflow={"hidden"}
           position="relative"
         >
-          {buttonGroup.map((view, index) => (
+          {buttonGroup.map((view) => (
             <Button
               key={view}
               borderRadius="100px"

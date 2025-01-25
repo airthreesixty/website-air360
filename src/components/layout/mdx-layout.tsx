@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 import usePreviousPageUrl from "@/lib/state/use-previous-page-url-store";
 import { MdxMeta } from "@/lib/models/mdx-meta";
@@ -9,61 +9,10 @@ import { motion } from "framer-motion";
 import dayjs from "dayjs";
 import { ReactNode } from "react";
 import { MDXProvider } from "@mdx-js/react";
-import {
-  Box,
-  Flex,
-  Heading,
-  Image,
-  ListItem,
-  OrderedList,
-  Text,
-  UnorderedList,
-  VStack,
-} from "@chakra-ui/react";
+import { Box, Flex, Image, VStack } from "@chakra-ui/react";
 import Timeline from "@/app/[lang]/(site)/changelog/layout/timeline";
-import { MainLayout } from "@/app/[lang]/(site)/changelog/layout/main-layout";
-
-import type { MDXComponents } from "mdx/types";
 import { Link, Pathnames } from "@/i18n/routing";
 import { components } from "@/components/mdx";
-// const components: MDXComponents = {
-//   h1: (props) => (
-//     <Heading
-//       as="h1"
-//       fontSize={["2xl", "2xl", "32px"]}
-//       color="#000"
-//       {...props}
-//     />
-//   ),
-//   h2: (props) => (
-//     <Text fontWeight="bold" fontSize="xl" mt={12} mb={6} {...props} />
-//   ),
-//   p: (props) => (
-//     <Text my={6} color="#495057" fontSize="16px" lineHeight="24px" {...props} />
-//   ),
-//   a: (props) => (
-//     <Text
-//       as="a"
-//       href={props.href}
-//       rel="noopener noreferrer"
-//       color="#6868F7"
-//       fontWeight="bold"
-//     >
-//       {props.children}
-//     </Text>
-//   ),
-//   ul: (props) => <UnorderedList spacing={4} {...props} />,
-//   ol: (props) => <OrderedList spacing={4} {...props} />,
-//   li: (props) => (
-//     <ListItem
-//       color="#495057"
-//       lineHeight="32px"
-//       fontSize="16px"
-//       _before={{ content: "unset" }}
-//       {...props}
-//     />
-//   ),
-// };
 
 export interface MdxLayoutProps {
   meta: MdxMeta;
@@ -78,12 +27,7 @@ export interface MdxLayoutProps {
 }
 
 export const MdxLayout = (props: MdxLayoutProps) => {
-  const title = `${props.meta.title} | June Changelog`;
-  const description = "Discover new updates and improvements to June.";
-  const url = "https://changelog.june.so";
-
   const { setPrevUrl } = usePreviousPageUrl();
-  const router = useRouter();
   const pathname = usePathname();
 
   React.useLayoutEffect(() => {
@@ -106,7 +50,7 @@ export const MdxLayout = (props: MdxLayoutProps) => {
         const rect = element?.getBoundingClientRect();
         const scrollTop =
           window.pageYOffset || document.documentElement.scrollTop;
-        const top = rect?.top + scrollTop;
+        const top = rect ? rect.top + scrollTop : 0;
 
         window.scrollTo({
           behavior: "smooth",
@@ -157,6 +101,7 @@ export const MdxLayout = (props: MdxLayoutProps) => {
               <Flex gap={2}>
                 {props.tags?.map((tag, index) => (
                   <Box
+                    key={index}
                     height="22px"
                     bg="#F1F3F5"
                     color="#0D131B"

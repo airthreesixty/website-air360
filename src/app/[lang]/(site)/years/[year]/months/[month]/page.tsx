@@ -1,4 +1,3 @@
-import { Suspense } from "react";
 import dayjs from "dayjs";
 import { MainLayout } from "@/app/[lang]/(site)/changelog/layout/main-layout";
 import { ClientMonth } from "./components/client-month";
@@ -34,7 +33,6 @@ export async function generateStaticParams() {
   );
 }
 
-// メタデータの生成
 export async function generateMetadata({ params }: PageProps) {
   const { year, month } = params;
   const formattedDate = dayjs(`${year}-${month}-01`).format("MMMM YYYY");
@@ -45,7 +43,6 @@ export async function generateMetadata({ params }: PageProps) {
   };
 }
 
-// サーバーサイドでのデータ取得と初期処理
 async function getMonthChangelogs(year: string, month: string, lang: string) {
   const changelogs = getAllChangelogs(lang);
 
@@ -72,16 +69,13 @@ async function getMonthChangelogs(year: string, month: string, lang: string) {
   }));
 }
 
-// メインのページコンポーネント（サーバーサイド）
 export default async function Page({ params }: PageProps) {
   const { year, month } = params;
   const changelogs = await getMonthChangelogs(year, month, params.lang);
 
   return (
     <MainLayout infiniteScrollingView="month">
-      <Suspense fallback={<div>Loading articles...</div>}>
-        <ClientMonth changelogs={changelogs} year={year} month={month} />
-      </Suspense>
+      <ClientMonth changelogs={changelogs} year={year} month={month} />
     </MainLayout>
   );
 }

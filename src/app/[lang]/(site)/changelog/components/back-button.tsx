@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import usePreviousPageUrl from "@/lib/state/use-previous-page-url-store";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
 
 import { Box, Text } from "@chakra-ui/react";
 
@@ -9,17 +8,13 @@ const BackButton = () => {
   const { prevUrl } = usePreviousPageUrl();
   const router = useRouter();
 
-  const [isLoading, setIsLoading] = useState(false);
-
   return (
     <Box
       onClick={() => {
         if (prevUrl) {
           router.push(prevUrl);
-          setIsLoading(true);
         } else {
           router.push("/");
-          setIsLoading(true);
         }
       }}
       cursor="pointer"

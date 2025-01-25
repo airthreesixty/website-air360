@@ -16,6 +16,7 @@ export async function generateStaticParams() {
 
 const Page = ({ params }: Props) => {
   const content = getChangelogBySlug(params.slug, params.lang);
+  const MDXContent = useMDXComponent(content?.body.code ?? "");
 
   if (!content) {
     return null;
@@ -28,7 +29,6 @@ const Page = ({ params }: Props) => {
     headerImage: content.headerImage,
   };
 
-  const MDXContent = useMDXComponent(content?.body.code ?? "");
   return (
     <MdxLayout meta={meta}>
       <MDXContent />
