@@ -3,6 +3,7 @@
 import { useEffect, useMemo } from "react";
 import dynamic from "next/dynamic";
 import { MdxLayout } from "@/components/layout/mdx-layout";
+import { usePathname } from "next/navigation";
 
 interface Changelog {
   slug: string;
@@ -18,11 +19,13 @@ interface ClientMonthViewProps {
 }
 
 export function ClientMonth({ changelogs, year, month }: ClientMonthViewProps) {
-  // 動的にMDXコンポーネントをインポート
+  const pathname = usePathname();
+  const lang = pathname.split("/")[1];
+
   const ArticleComponents = useMemo(() => {
     return changelogs.map((changelog) => ({
       Component: dynamic(
-        () => import(`@/content/en/changelog/${changelog.slug}.mdx`)
+        () => import(`@/content/${lang}/changelog/${changelog.slug}.mdx`)
       ),
       slug: changelog.slug,
     }));

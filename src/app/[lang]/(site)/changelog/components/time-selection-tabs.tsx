@@ -1,3 +1,5 @@
+"use client";
+
 import { Button, VStack, ButtonGroup } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import useTimelineStore from "@/lib/state/use-timeline-store";
@@ -11,6 +13,7 @@ const TimeSelectionTabs = () => {
     "months",
     "years",
   ];
+  const lang = pathname.split("/")[1];
 
   const timeline = useTimelineStore();
 
@@ -19,7 +22,7 @@ const TimeSelectionTabs = () => {
       (pathname.includes("/page/") || pathname.includes("/years/")) &&
       timeline.view !== view
     ) {
-      router.push(`/en/page/0#${view}`);
+      router.push(`/${lang}/page/0#${view}`);
       timeline.setView(view);
     } else if (timeline.view === view) {
       return window.scrollTo({

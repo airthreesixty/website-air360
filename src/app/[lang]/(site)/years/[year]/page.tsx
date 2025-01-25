@@ -18,6 +18,7 @@ interface IAggregatedChangelogs {
 interface PageProps {
   params: {
     year: string;
+    lang: string;
   };
 }
 
@@ -42,7 +43,7 @@ export async function generateStaticParams() {
 
 // メインのページコンポーネント
 export default async function Page({ params }: PageProps) {
-  const changelogs = getAllChangelogs("en");
+  const changelogs = getAllChangelogs(params.lang);
 
   const meta = changelogs.map((changelog) => ({
     slug: changelog.slug,

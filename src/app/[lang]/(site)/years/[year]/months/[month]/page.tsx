@@ -1,19 +1,18 @@
 import { Suspense } from "react";
 import dayjs from "dayjs";
 import { MainLayout } from "@/app/[lang]/(site)/changelog/layout/main-layout";
-// import { getArticleSlugs } from "@/lib/get-articles-slugs";
 import { ClientMonth } from "./components/client-month";
 import { getAllChangelogs } from "@/lib/query-content";
+import { SUPPORTED_LANGUAGES } from "@/lib/constants";
 
 interface PageProps {
   params: {
     month: string;
     year: string;
-    locale: string;
+    lang: string;
   };
 }
 
-// 静的ページの生成パラメータ
 export async function generateStaticParams() {
   const currentYear = new Date().getFullYear();
   const years = Array.from({ length: 41 }, (_, i) =>
@@ -24,13 +23,14 @@ export async function generateStaticParams() {
     i < 9 ? `0${i + 1}` : `${i + 1}`
   );
 
-  // 全ての年月の組み合わせを生成
-  return years.flatMap((year) =>
-    months.map((month) => ({
-      year,
-      month,
-      locale: "en", // 必要に応じて他のロケールを追加
-    }))
+  return SUPPORTED_LANGUAGES.flatMap((locale) =>
+    years.flatMap((year) =>
+      months.map((month) => ({
+        year,
+        month,
+        locale,
+      }))
+    )
   );
 }
 
@@ -46,8 +46,8 @@ export async function generateMetadata({ params }: PageProps) {
 }
 
 // サーバーサイドでのデータ取得と初期処理
-async function getMonthChangelogs(year: string, month: string) {
-  const changelogs = getAllChangelogs("en");
+async function getMonthChangelogs(year: string, month: string, lang: string) {
+  const changelogs = getAllChangelogs(lang);
 
   const filteredMeta = changelogs
     .map((changelog) => ({
@@ -75,7 +75,7 @@ async function getMonthChangelogs(year: string, month: string) {
 // メインのページコンポーネント（サーバーサイド）
 export default async function Page({ params }: PageProps) {
   const { year, month } = params;
-  const changelogs = await getMonthChangelogs(year, month);
+  const changelogs = await getMonthChangelogs(year, month, params.lang);
 
   return (
     <MainLayout infiniteScrollingView="month">

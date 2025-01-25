@@ -1,6 +1,9 @@
+"use client";
+
 import { MdxLayout } from "@/components/layout/mdx-layout";
 import { getAllChangelogs } from "@/lib/query-content";
 import dynamic from "next/dynamic";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 interface IWeeksProps {
@@ -9,13 +12,15 @@ interface IWeeksProps {
 }
 
 const Weeks = ({ slugs, isInfiniteScrollingView }: IWeeksProps) => {
+  const pathname = usePathname();
+  const lang = pathname.split("/")[1];
   const Articles = React.useMemo(() => {
     return slugs.map((slug) =>
-      dynamic(() => import(`@/content/en/changelog/${slug}.mdx`))
+      dynamic(() => import(`@/content/${lang}/changelog/${slug}.mdx`))
     );
   }, [slugs]);
 
-  const changelogs = getAllChangelogs("en");
+  const changelogs = getAllChangelogs(lang);
   return (
     <>
       {Articles.map((Article, index) => {

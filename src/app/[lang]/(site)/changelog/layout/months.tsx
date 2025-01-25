@@ -21,6 +21,7 @@ const Months = ({
   const pathname = usePathname();
   const yearMatch = pathname.match(/\/years\/(\d{4})/);
   const year = yearMatch ? yearMatch[1] : null;
+  const lang = pathname.split("/")[1];
 
   const sortedChangelogsArrayByMonth: IImagePreviewMeta[][] = Object.keys(
     monthChangelogsMap || {}
@@ -64,7 +65,7 @@ const Months = ({
     const year = date.format("YYYY");
     const hash = targetDate.replace(/[\s_]+/g, "-").toLowerCase();
 
-    router.push(`/en/years/${year}/months/${month}#${hash}`);
+    router.push(`/${lang}/years/${year}/months/${month}#${hash}`);
   };
 
   return (
