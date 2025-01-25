@@ -1,12 +1,16 @@
+"use client";
+
 import { Box, Grid, GridItem, Image, VStack, Skeleton } from "@chakra-ui/react";
 import dayjs from "dayjs";
 import { motion } from "framer-motion";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { IGridProps } from "./grid-interfaces";
 
 const MediumGrid = (props: IGridProps) => {
   const { changelogs } = props;
   const router = useRouter();
+  const pathname = usePathname();
+  const lang = pathname.split("/")[1];
 
   return changelogs.length < 9 ? (
     <VStack spacing="8px">
@@ -32,7 +36,7 @@ const MediumGrid = (props: IGridProps) => {
                 <motion.div
                   key={index}
                   layoutId={
-                    i === 0 && props.isFirstItem ? rowItems[0].slug : ``
+                    i === 0 && props.isFirstItem ? rowItems[0].slug : undefined
                   }
                   initial={{
                     scale: 1,
@@ -43,7 +47,6 @@ const MediumGrid = (props: IGridProps) => {
                   style={{ height: "100%" }}
                 >
                   <Image
-                    className="helloImage"
                     key={index}
                     src={imageUrl}
                     alt={slug}
@@ -74,7 +77,7 @@ const MediumGrid = (props: IGridProps) => {
           colSpan={[1, 3, 6].includes(index) ? 4 : 2}
         >
           <motion.div
-            layoutId={index === 0 && props.isFirstItem ? slug : ``}
+            layoutId={index === 0 && props.isFirstItem ? slug : undefined}
             initial={{
               scale: 1,
             }}
@@ -103,7 +106,7 @@ const MediumGrid = (props: IGridProps) => {
                 const year = date.format("YYYY");
                 const hash = targetDate.replace(/[\s_]+/g, "-").toLowerCase();
 
-                router.push(`/en/years/${year}#${hash}`);
+                router.push(`/${lang}/years/${year}#${hash}`);
               }}
             />
           </motion.div>

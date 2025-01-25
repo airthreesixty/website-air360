@@ -1,7 +1,7 @@
 import { Box, HStack, Image, VStack } from "@chakra-ui/react";
 import dayjs from "dayjs";
 import { motion } from "framer-motion";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { IGridProps } from "./grid-interfaces";
 
 const SmallGrid = (props: IGridProps) => {
@@ -33,9 +33,7 @@ const SmallGrid = (props: IGridProps) => {
               const year = date.format("YYYY");
               const hash = targetDate.replace(/[\s_]+/g, "-").toLowerCase();
 
-              router.push(`/years/${year}#${hash}`, undefined, {
-                scroll: true,
-              });
+              router.push(`/years/${year}#${hash}`);
             }}
           />
         </motion.div>
@@ -59,9 +57,7 @@ const SmallGrid = (props: IGridProps) => {
                 const year = date.format("YYYY");
                 const hash = targetDate.replace(/[\s_]+/g, "-").toLowerCase();
 
-                router.push(`/years/${year}#${hash}`, undefined, {
-                  scroll: true,
-                });
+                router.push(`/years/${year}#${hash}`);
               }}
             />
           ))}
