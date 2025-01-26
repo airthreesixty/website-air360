@@ -8,7 +8,7 @@ import Years from "../layout/years";
 import Weeks from "../layout/weeks";
 import Months from "../layout/months";
 import { IAggregatedChangelogs } from "@/lib/models/view";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsContent } from "@/components/ui/tabs";
 
 const ITEMS_PER_PAGE = 4;
 
