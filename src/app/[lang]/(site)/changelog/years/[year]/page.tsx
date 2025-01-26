@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import { getAllChangelogs } from "@/lib/query-content";
-import { MainLayout } from "../../changelog/layout/main-layout";
+import { MainLayout } from "../../layout/main-layout";
 import ClientMonths from "./components/client-months";
 import LoadingDots from "@/components/common/LoadingDots";
 

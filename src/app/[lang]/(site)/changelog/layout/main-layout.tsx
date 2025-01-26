@@ -138,20 +138,24 @@ export const MainLayout = ({
               >
                 <div className="flex flex-col md:flex-row md:justify-center space-y-4 md:space-y-0 md:space-x-4">
                   {page === 0 && hasMorePage ? (
-                    <Link href={`/page/1#${timeline.view}`}>
+                    <Link href={`/changelog/page/1#${timeline.view}`}>
                       <button className="btn btn-outline">Load more</button>
                     </Link>
                   ) : (
                     <>
                       {page > 0 && (
-                        <Link href={`/page/${page - 1}#${timeline.view}`}>
+                        <Link
+                          href={`/changelog/page/${page - 1}#${timeline.view}`}
+                        >
                           <button className="btn btn-outline">
                             Previous page
                           </button>
                         </Link>
                       )}
                       {hasMorePage && (
-                        <Link href={`/page/${page + 1}#${timeline.view}`}>
+                        <Link
+                          href={`/changelog/page/${page + 1}#${timeline.view}`}
+                        >
                           <button className="btn btn-outline">Next page</button>
                         </Link>
                       )}

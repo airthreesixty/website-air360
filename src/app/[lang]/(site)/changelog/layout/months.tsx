@@ -57,7 +57,7 @@ const Months = ({
     const year = date.format("YYYY");
     const hash = targetDate.replace(/\s+/g, "-").toLowerCase();
 
-    router.push(`/${lang}/years/${year}/months/${month}#${hash}`);
+    router.push(`/${lang}/changelog/years/${year}/months/${month}#${hash}`);
   };
 
   return (

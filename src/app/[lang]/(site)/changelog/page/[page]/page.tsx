@@ -1,5 +1,5 @@
 import { getAllChangelogs } from "@/lib/query-content";
-import IndexPage from "../../changelog/page";
+import IndexPage from "../../page";
 import { SUPPORTED_LANGUAGES } from "@/lib/constants";
 
 interface ParamsProps {

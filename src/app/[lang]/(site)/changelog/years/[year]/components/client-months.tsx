@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Months from "../../../changelog/layout/months";
+import Months from "../../../layout/months";
 import { IAggregatedChangelogs } from "@/lib/models/view";
 
 const MONTHS_PER_RENDER = 12;
