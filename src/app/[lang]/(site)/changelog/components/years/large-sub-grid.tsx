@@ -1,4 +1,3 @@
-import { Box, Grid, GridItem, Image, Skeleton } from "@chakra-ui/react";
 import dayjs from "dayjs";
 import { IImagePreviewMeta } from "@/lib/models/view";
 import { useRouter } from "next/navigation";
@@ -12,24 +11,29 @@ const LargeSubGrid = (props: ISubGridProps) => {
   const { changelogs, rowLength = 0 } = props;
   const router = useRouter();
 
+  const imageHeight = rowLength - 1 <= 4 ? "198px" : "98px";
+  const imageWidth = `${400 / changelogs.length - 2}px`;
+
   return (
-    <Grid gap="2px" templateColumns={`repeat(${changelogs.length}, 1fr)`}>
+    <div
+      className="grid gap-[2px]"
+      style={{
+        gridTemplateColumns: `repeat(${changelogs.length}, 1fr)`,
+      }}
+    >
       {changelogs.map(({ imageUrl, slug, publishedAt }, subI) => (
-        <GridItem key={subI}>
-          <Image
+        <div key={subI}>
+          <img
             src={imageUrl}
             alt={slug}
-            height={rowLength - 1 <= 4 ? "198px" : "98px"}
-            width={`${400 / changelogs.length - 2}px`}
-            objectFit={"cover"}
-            fallback={
-              <Box overflow="hidden">
-                <Skeleton
-                  height={rowLength - 1 <= 4 ? "198px" : "98px"}
-                  width={`${400 / changelogs.length - 2}px`}
-                />
-              </Box>
-            }
+            className="object-cover cursor-pointer"
+            style={{
+              height: imageHeight,
+              width: imageWidth,
+            }}
+            onError={(e) => {
+              (e.target as HTMLImageElement).src = "/plain-gray.jpg";
+            }}
             onClick={() => {
               const date = dayjs(publishedAt);
               const targetDate = date.format("MMM YYYY");
@@ -39,9 +43,9 @@ const LargeSubGrid = (props: ISubGridProps) => {
               router.push(`/years/${year}#${hash}`);
             }}
           />
-        </GridItem>
+        </div>
       ))}
-    </Grid>
+    </div>
   );
 };
 

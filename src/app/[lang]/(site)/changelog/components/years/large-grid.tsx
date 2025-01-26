@@ -1,15 +1,6 @@
-import {
-  Box,
-  Grid,
-  GridItem,
-  HStack,
-  Image,
-  Skeleton,
-  VStack,
-} from "@chakra-ui/react";
+import { useRouter } from "next/navigation";
 import dayjs from "dayjs";
 import { motion } from "framer-motion";
-import { useRouter } from "next/navigation";
 import { IGridProps } from "./grid-interfaces";
 import LargeSubGrid from "./large-sub-grid";
 
@@ -18,13 +9,15 @@ const LargeGrid = (props: IGridProps) => {
   const router = useRouter();
 
   return (
-    <Grid
-      gap={"2px"}
-      templateColumns="repeat(1, 1fr)"
-      templateRows={`repeat(${Math.floor(
-        changelogs.slice(0, 27).length / 9
-      )}, 1fr)`}
-      height="100%"
+    <div
+      className="grid gap-[2px]"
+      style={{
+        gridTemplateColumns: "repeat(1, 1fr)",
+        gridTemplateRows: `repeat(${Math.floor(
+          changelogs.slice(0, 27).length / 9
+        )}, 1fr)`,
+        height: "100%",
+      }}
     >
       {changelogs
         .slice(0, 27)
@@ -38,8 +31,8 @@ const LargeGrid = (props: IGridProps) => {
           return result;
         }, [])
         .map((rowItems, i) => (
-          <GridItem rowSpan={1} key={i}>
-            <HStack spacing="2px">
+          <div className="grid-item" key={i}>
+            <div className="flex space-x-[2px]">
               {i % 2 === 0 && (
                 <>
                   <motion.div
@@ -53,20 +46,17 @@ const LargeGrid = (props: IGridProps) => {
                       duration: 0,
                     }}
                   >
-                    <Image
+                    <img
                       src={rowItems[0].imageUrl}
                       alt={rowItems[0].slug}
-                      h="198px"
-                      w={rowItems.length === 1 ? "100%" : "282px"}
-                      objectFit={"cover"}
-                      fallback={
-                        <Box overflow="hidden">
-                          <Skeleton
-                            height="198px"
-                            width={rowItems.length === 1 ? "100%" : "282px"}
-                          />
-                        </Box>
-                      }
+                      className={`h-[198px] object-cover ${
+                        rowItems.length === 1 ? "w-full" : "w-[282px]"
+                      }`}
+                      onError={(e) => {
+                        const img = e.target as HTMLImageElement;
+                        img.onerror = null;
+                        img.className += " bg-gray-200 animate-pulse";
+                      }}
                       onClick={() => {
                         const date = dayjs(rowItems[0].publishedAt);
                         const targetDate = date.format("MMM YYYY");
@@ -79,7 +69,7 @@ const LargeGrid = (props: IGridProps) => {
                       }}
                     />
                   </motion.div>
-                  <VStack spacing="2px">
+                  <div className="flex flex-col space-y-[2px]">
                     {rowItems
                       .slice(1, rowItems.length)
                       .reduce<(typeof changelogs)[]>((result, item, index) => {
@@ -98,12 +88,12 @@ const LargeGrid = (props: IGridProps) => {
                           rowLength={rowItems.length}
                         />
                       ))}
-                  </VStack>
+                  </div>
                 </>
               )}
               {i % 2 === 1 && (
                 <>
-                  <VStack spacing="2px">
+                  <div className="flex flex-col space-y-[2px]">
                     {rowItems
                       .slice(0, rowItems.length - 1)
                       .reduce<(typeof changelogs)[]>((result, item, index) => {
@@ -122,21 +112,18 @@ const LargeGrid = (props: IGridProps) => {
                           rowLength={rowItems.length}
                         />
                       ))}
-                  </VStack>
-                  <Image
+                  </div>
+                  <img
                     src={rowItems[rowItems.length - 1].imageUrl}
                     alt={rowItems[rowItems.length - 1].slug}
-                    h="198px"
-                    w={rowItems.length === 1 ? "100%" : "282px"}
-                    objectFit={"cover"}
-                    fallback={
-                      <Box overflow="hidden">
-                        <Skeleton
-                          height="198px"
-                          width={rowItems.length === 1 ? "100%" : "282px"}
-                        />
-                      </Box>
-                    }
+                    className={`h-[198px] object-cover ${
+                      rowItems.length === 1 ? "w-full" : "w-[282px]"
+                    }`}
+                    onError={(e) => {
+                      const img = e.target as HTMLImageElement;
+                      img.onerror = null;
+                      img.className += " bg-gray-200 animate-pulse";
+                    }}
                     onClick={() => {
                       const date = dayjs(
                         rowItems[rowItems.length - 1].publishedAt
@@ -152,10 +139,10 @@ const LargeGrid = (props: IGridProps) => {
                   />
                 </>
               )}
-            </HStack>
-          </GridItem>
+            </div>
+          </div>
         ))}
-    </Grid>
+    </div>
   );
 };
 

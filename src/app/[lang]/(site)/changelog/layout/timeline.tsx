@@ -3,8 +3,6 @@ import { motion } from "framer-motion";
 import usePageStatusStore from "@/lib/state/use-page-status-store";
 import { usePathname } from "next/navigation";
 import { ReactNode, useEffect, useState } from "react";
-
-import { Box, HStack, Text, useMediaQuery, VStack } from "@chakra-ui/react";
 import usePreviousPageUrl from "@/lib/state/use-previous-page-url-store";
 
 export interface TimelineProps {
@@ -20,7 +18,16 @@ const Timeline = (props: TimelineProps) => {
 
   const pathname = usePathname();
   const pageStatus = usePageStatusStore();
-  const [isLargerThan768] = useMediaQuery("(min-width: 768px)");
+  const [isLargerThan768, setIsLargerThan768] = useState(false);
+
+  useEffect(() => {
+    setIsLargerThan768(window.innerWidth >= 768);
+    const handleResize = () => {
+      setIsLargerThan768(window.innerWidth >= 768);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
@@ -28,33 +35,35 @@ const Timeline = (props: TimelineProps) => {
   }, [pathname, isLargerThan768]);
 
   return (
-    <HStack
+    <div
       id={props.id}
-      className={props.className}
-      display="flex"
-      position="relative"
-      justifyContent="center"
-      alignItems="start"
-      spacing={0}
-      pt={isOpen ? (isLargerThan768 ? 28 : 8) : 0}
-      px={isOpen ? 4 : 0}
-      minWidth={["100%", "100%", "834px"]}
-      visibility={pageStatus.isLoading ? "hidden" : "visible"}
+      className={`
+        flex relative justify-center items-start 
+        ${props.className || ""}
+        pt-${isOpen ? (isLargerThan768 ? "28" : "8") : "0"}
+        px-${isOpen ? "4" : "0"}
+        min-w-full md:min-w-[834px]
+        ${pageStatus.isLoading ? "invisible" : "visible"}
+      `}
     >
       {isLargerThan768 && (
-        <VStack
-          position="relative"
-          top={isOpen ? "" : "-8px"}
-          width="120px"
-          spacing={4}
+        <div
+          className={`
+            relative 
+            ${isOpen ? "" : "top-[-8px]"}
+            w-[120px] 
+            flex flex-col space-y-4
+          `}
         >
           {isOpen && <BackButton />}
 
-          <Text
-            fontSize="16px"
-            color="#868E96"
-            alignItems="start"
-            width="125px"
+          <p
+            className="
+              text-base 
+              text-gray-500 
+              text-start 
+              w-[125px]
+            "
           >
             <motion.div
               initial={{ opacity: 0 }}
@@ -63,15 +72,17 @@ const Timeline = (props: TimelineProps) => {
             >
               {date}
             </motion.div>
-          </Text>
-        </VStack>
+          </p>
+        </div>
       )}
-      <HStack
-        alignItems="start"
-        spacing={isOpen ? 0 : 8}
-        display="relative"
+
+      <div
+        className={`
+          flex items-start 
+          ${isOpen ? "space-x-0" : "space-x-8"}
+          relative
+        `}
         id={date.replace(/[\s_]+/g, "-").toLowerCase()}
-        className="timeline-item"
       >
         {!isOpen && (
           <motion.div
@@ -81,54 +92,65 @@ const Timeline = (props: TimelineProps) => {
             }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6 }}
-            style={{
-              display: isOpen ? "hidden" : "flex",
-              alignItems: "start",
-              justifyContent: "center",
-              height: "100%",
-              width: "10px",
-              position: "absolute",
-            }}
+            className={`
+              ${isOpen ? "hidden" : "flex"}
+              items-start 
+              justify-center 
+              h-full 
+              w-[10px] 
+              absolute
+            `}
             hidden={isOpen}
           >
-            <Box
-              style={{
-                height: "8px",
-                width: "8px",
-                background: "#0D131B",
-                borderRadius: "100%",
-                zIndex: 10,
-              }}
+            <div
+              className="
+                h-2 
+                w-2 
+                bg-[#0D131B] 
+                rounded-full 
+                z-10
+              "
             />
-            <Box
-              style={{
-                position: "absolute",
-                height: "100%",
-                width: "2px",
-                background: "#E9ECEF",
-                zIndex: 5,
-              }}
+            <div
+              className="
+                absolute 
+                h-full 
+                w-[2px] 
+                bg-[#E9ECEF] 
+                z-5
+              "
             />
           </motion.div>
         )}
-        <VStack alignItems="start" spacing={[0, 0, 2]} className="ms-8">
+
+        <div className="flex flex-col items-start space-y-0 md:space-y-2 ms-8">
           {!isLargerThan768 && (
-            <VStack position="relative" top="-8px" spacing={4} mb={[4, 4]}>
+            <div
+              className="
+                relative 
+                top-[-8px] 
+                flex flex-col 
+                space-y-4 
+                mb-4
+              "
+            >
               {isOpen && <BackButton />}
-              <Text
-                fontSize="16px"
-                color="#868E96"
-                alignItems="start"
-                width="full"
+              <p
+                className="
+                  text-base 
+                  text-gray-500 
+                  text-start 
+                  w-full
+                "
               >
                 {date}
-              </Text>
-            </VStack>
+              </p>
+            </div>
           )}
           {children}
-        </VStack>
-      </HStack>
-    </HStack>
+        </div>
+      </div>
+    </div>
   );
 };
 

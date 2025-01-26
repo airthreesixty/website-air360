@@ -2,19 +2,28 @@ import { IAggregatedChangelogs, IImagePreviewMeta } from "@/lib/models/view";
 import dayjs from "dayjs";
 import MediumGrid from "../components/years/medium-grid";
 import LargeGrid from "../components/years/large-grid";
-import { Box, useMediaQuery, VStack } from "@chakra-ui/react";
 import Timeline from "./timeline";
 import { motion } from "framer-motion";
 import MoreItems from "../components/more-items";
 import SmallGrid from "../components/years/small-grid";
 import LazyLoad from "react-lazyload";
+import { useState, useEffect } from "react";
 
 interface IYearsProps {
   yearChangelogsMap: IAggregatedChangelogs;
 }
 
 const Years = ({ yearChangelogsMap }: IYearsProps) => {
-  const [isLargerThan768] = useMediaQuery("(min-width: 768px)");
+  const [isLargerThan768, setIsLargerThan768] = useState(false);
+
+  useEffect(() => {
+    setIsLargerThan768(window.innerWidth >= 768);
+    const handleResize = () => {
+      setIsLargerThan768(window.innerWidth >= 768);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const sortedYearKeys = Object.keys(yearChangelogsMap || {}).sort((a, b) => {
     const dateA = new Date(a);
@@ -40,33 +49,39 @@ const Years = ({ yearChangelogsMap }: IYearsProps) => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6 }}
           >
-            <Box
-              display="flex"
-              paddingBottom={
-                index === sortedChangelogsByYear.length - 1 ? 0 : [12, 16, 20]
-              }
+            <div
+              className={`
+                flex 
+                pb-${
+                  index === sortedChangelogsByYear.length - 1
+                    ? "0"
+                    : "12 md:pb-16 lg:pb-20"
+                }
+              `}
             >
-              <VStack onClick={() => {}} cursor="pointer">
-                <Box
-                  overflow="hidden"
-                  borderRadius={"16px"}
-                  maxWidth="682px"
-                  width={["100%", "100%", "682px"]}
-                  display="flex"
+              <div
+                className="
+                  cursor-pointer 
+                  flex 
+                  flex-col
+                "
+                onClick={() => {}}
+              >
+                <div
+                  className="
+                    overflow-hidden 
+                    rounded-2xl 
+                    max-w-[682px] 
+                    w-full 
+                    md:w-[682px] 
+                    flex 
+                    relative 
+                    transition-all 
+                    duration-300 
+                    hover:shadow-md 
+                    group
+                  "
                   onClick={() => {}}
-                  position="relative"
-                  _hover={{
-                    boxShadow: "0px 2px 4px 0px rgba(0, 0, 0, 0.1)",
-                    "& img": {
-                      boxShadow: "0px 2px 4px 0px rgba(0, 0, 0, 0.1)",
-                    },
-                  }}
-                  sx={{
-                    transition: "box-shadow 0.3s",
-                    "& img": {
-                      transition: "box-shadow 0.3s",
-                    },
-                  }}
                 >
                   {changelogs.length > 27 && (
                     <MoreItems numberOfItems={changelogs.length - 27} />
@@ -97,9 +112,9 @@ const Years = ({ yearChangelogsMap }: IYearsProps) => {
                       />
                     </LazyLoad>
                   )}
-                </Box>
-              </VStack>
-            </Box>
+                </div>
+              </div>
+            </div>
           </motion.div>
         </Timeline>
       ))}

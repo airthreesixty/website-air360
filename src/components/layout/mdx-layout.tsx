@@ -9,7 +9,6 @@ import { motion } from "framer-motion";
 import dayjs from "dayjs";
 import { ReactNode } from "react";
 import { MDXProvider } from "@mdx-js/react";
-import { Box, Flex, Image, VStack } from "@chakra-ui/react";
 import Timeline from "@/app/[lang]/(site)/changelog/layout/timeline";
 import { Link, Pathnames } from "@/i18n/routing";
 import { components } from "@/components/mdx";
@@ -31,15 +30,10 @@ export const MdxLayout = (props: MdxLayoutProps) => {
   const pathname = usePathname();
 
   React.useLayoutEffect(() => {
-    // using a timeout to wait for the page to render and get the right scroll position
     const timeout = setTimeout(() => {
       const month = pathname.split("month=")[1];
-
       const articleMonth = dayjs(props.meta.publishedAt).format("MM");
 
-      // if the current article is the first one in the page
-      // and the month is different from the current month
-      // scroll to the month
       if (
         month &&
         month !== articleMonth &&
@@ -64,11 +58,10 @@ export const MdxLayout = (props: MdxLayoutProps) => {
 
   if (props.imagePreviewMode) {
     return (
-      <Image
+      <img
         src={props.meta.headerImage}
         alt={props.meta.title}
-        height="100%"
-        objectFit={"cover"}
+        className="h-full object-cover"
       />
     );
   }
@@ -86,38 +79,39 @@ export const MdxLayout = (props: MdxLayoutProps) => {
           "MM"
         )}`}
       >
-        <Box
-          // mt={!props.hideLayout && [86, 86, 140]}
-          // maxW="4xl"
-          // mx="auto"
-          width={["100%", "100%", "682px"]}
-          // w="100%"
-          maxW="682px"
-          // px={defaultPx(32)}
+        <div
+          className="
+            w-full 
+            md:w-[682px] 
+            max-w-[682px] 
+            mx-auto
+          "
         >
           {/* Article header */}
-          <VStack align="start" spacing={[4, 4, 6]}>
+          <div className="flex flex-col space-y-4 md:space-y-6 items-start">
             {props.tags !== undefined && (
-              <Flex gap={2}>
+              <div className="flex gap-2">
                 {props.tags?.map((tag, index) => (
-                  <Box
+                  <span
                     key={index}
-                    height="22px"
-                    bg="#F1F3F5"
-                    color="#0D131B"
-                    fontSize="14px"
-                    borderRadius="full"
-                    px={2}
-                    lineHeight="21px"
-                    fontWeight={500}
-                    position="relative"
-                    top="-8px"
-                    mb="-10px"
+                    className="
+                      h-[22px] 
+                      bg-[#F1F3F5] 
+                      text-[#0D131B] 
+                      text-sm 
+                      rounded-full 
+                      px-2 
+                      leading-[21px] 
+                      font-medium 
+                      relative 
+                      top-[-8px] 
+                      mb-[-10px]
+                    "
                   >
                     {tag}
-                  </Box>
+                  </span>
                 ))}
-              </Flex>
+              </div>
             )}
             <motion.div
               layoutId={
@@ -142,66 +136,31 @@ export const MdxLayout = (props: MdxLayoutProps) => {
               }}
             >
               {isInBlogPage ? (
-                <Image
+                <img
                   src={props.meta.headerImage}
                   alt={props.meta.title}
-                  w="full"
-                  height={["100%", "100%", "360px"]}
-                  objectFit={"cover"}
-                  cursor={props.hideLayout ? "pointer" : "default"}
-                  _hover={{
-                    // apply underline on hover to the next first .article-title
-                    // "& + .article-title": {
-                    //   textDecoration: "underline",
-                    // },
-                    boxShadow: props.hideLayout
-                      ? "0px 2px 4px 0px rgba(0, 0, 0, 0.1)"
-                      : "",
-                  }}
-                  fallback={
-                    props.isInfiniteScrollingView ? (
-                      <Box height={["100%", "100%", "360px"]} />
-                    ) : (
-                      <Image
-                        src="/plain-gray.jpg"
-                        height={["100%", "100%", "360px"]}
-                        objectFit={"cover"}
-                        w="full"
-                      />
-                    )
-                  }
+                  className={`
+                    w-full 
+                    h-[100%] 
+                    md:h-[360px] 
+                    object-cover 
+                    ${props.hideLayout ? "cursor-pointer" : "cursor-default"}
+                    hover:shadow-md
+                  `}
                 />
               ) : (
                 <Link href={`/changelog/${props.meta.slug}` as Pathnames}>
-                  <Image
+                  <img
                     src={props.meta.headerImage}
                     alt={props.meta.title}
-                    className="cursor-pointer"
-                    w="full"
-                    height={["100%", "100%", "360px"]}
-                    objectFit={"cover"}
-                    // cursor={props.hideLayout ? "pointer" : "pointer"}
-                    _hover={{
-                      // apply underline on hover to the next first .article-title
-                      // "& + .article-title": {
-                      //   textDecoration: "underline",
-                      // },
-                      boxShadow: props.hideLayout
-                        ? "0px 2px 4px 0px rgba(0, 0, 0, 0.1)"
-                        : "",
-                    }}
-                    fallback={
-                      props.isInfiniteScrollingView ? (
-                        <Box height={["100%", "100%", "360px"]} />
-                      ) : (
-                        <Image
-                          src="/plain-gray.jpg"
-                          height={["100%", "100%", "360px"]}
-                          objectFit={"cover"}
-                          w="full"
-                        />
-                      )
-                    }
+                    className={`
+                      w-full 
+                      h-[100%] 
+                      md:h-[360px] 
+                      object-cover 
+                      cursor-pointer 
+                      hover:shadow-md
+                    `}
                     onClick={() => {
                       setPrevUrl(pathname);
                     }}
@@ -222,22 +181,38 @@ export const MdxLayout = (props: MdxLayoutProps) => {
             >
               {isInBlogPage ? (
                 <h1
-                  className={`article-title text-gray-900 font-hero text-[24px] leading-[32px] font-bold ${
-                    props.hideLayout
-                      ? "cursor-pointer hover:underline underline-offset-[3px]"
-                      : "cursor-text hover:no-underline"
-                  }`}
+                  className={`
+                    article-title 
+                    text-gray-900 
+                    font-hero 
+                    text-2xl 
+                    leading-8 
+                    font-bold 
+                    ${
+                      props.hideLayout
+                        ? "cursor-pointer hover:underline underline-offset-[3px]"
+                        : "cursor-text hover:no-underline"
+                    }
+                  `}
                 >
                   {props.meta.title}
                 </h1>
               ) : (
                 <Link href={`/changelog/${props.meta.slug}` as Pathnames}>
                   <h2
-                    className={`article-title text-gray-900 font-hero text-[24px] leading-[32px] font-bold ${
-                      props.hideLayout
-                        ? "cursor-pointer hover:underline underline-offset-[3px]"
-                        : "cursor-text hover:no-underline"
-                    }`}
+                    className={`
+                      article-title 
+                      text-gray-900 
+                      font-hero 
+                      text-2xl 
+                      leading-8 
+                      font-bold 
+                      ${
+                        props.hideLayout
+                          ? "cursor-pointer hover:underline underline-offset-[3px]"
+                          : "cursor-text hover:no-underline"
+                      }
+                    `}
                     onClick={() => {
                       setPrevUrl(pathname);
                     }}
@@ -247,7 +222,7 @@ export const MdxLayout = (props: MdxLayoutProps) => {
                 </Link>
               )}
             </motion.div>
-          </VStack>
+          </div>
           {/* Article content */}
           <motion.div
             initial={{ opacity: 0, y: props.hideLayout ? 0 : 20 }}
@@ -259,9 +234,7 @@ export const MdxLayout = (props: MdxLayoutProps) => {
           >
             <div className="pb-16 prose">{props.children}</div>
           </motion.div>
-          {/* Article authors */}
-          {/* {!props.hideAuthors && <Contributors authors={props.meta.authors} />} */}
-        </Box>
+        </div>
       </Timeline>
     </MDXProvider>
   );

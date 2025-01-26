@@ -53,8 +53,6 @@ export default async function Page({ params }: Props) {
     {}
   );
 
-  //   console.log("monthChangelogsMap", monthChangelogsMap);
-
   const recentMonthChangelogsMap: IAggregatedChangelogs = Object.keys(
     monthChangelogsMap
   )
@@ -63,8 +61,6 @@ export default async function Page({ params }: Props) {
       acc[key] = monthChangelogsMap[key];
       return acc;
     }, {});
-
-  //   console.log("recentMonthChangelogsMap", recentMonthChangelogsMap);
 
   const yearsChangelogsMap: IAggregatedChangelogs = meta.reduce(
     (acc: { [key: string]: IImagePreviewMeta[] }, item, index) => {
@@ -92,8 +88,6 @@ export default async function Page({ params }: Props) {
     {}
   );
 
-  //   console.log("yearsChangelogsMap", yearsChangelogsMap);
-
   const recentYearsChangelogsMap: IAggregatedChangelogs = Object.keys(
     yearsChangelogsMap
   )
@@ -102,8 +96,6 @@ export default async function Page({ params }: Props) {
       acc[key] = yearsChangelogsMap[key];
       return acc;
     }, {});
-
-  //   console.log("recentYearsChangelogsMap", recentYearsChangelogsMap);
 
   return (
     <ChangelogPage

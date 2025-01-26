@@ -3,13 +3,11 @@
 import React, { ReactNode, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { defaultPx } from "@/lib/utils";
 import useTimelineStore from "@/lib/state/use-timeline-store";
 import usePageStatusStore from "@/lib/state/use-page-status-store";
 import useAnimatePageStore from "@/lib/state/use-animate-page-store";
 import { motion } from "framer-motion";
 
-import { Box, Button, Container, HStack, VStack } from "@chakra-ui/react";
 import TimeSelectionTabs from "../components/time-selection-tabs";
 
 export interface MainLayoutProps {
@@ -63,7 +61,6 @@ export const MainLayout = ({
       timeline.setView("weeks");
     }
 
-    // URL変更時にロード完了を設定
     pageStatus.setIsLoading(false);
   }, [pathname]);
 
@@ -84,14 +81,6 @@ export const MainLayout = ({
           setAnimatePage(false);
         }}
       >
-        {/* <motion.div
-          variants={{
-            hidden: { opacity: 0 },
-            visible: { opacity: 1, transition: { duration: 0.6 } },
-          }}
-        >
-          <Menu />
-        </motion.div> */}
         {!isInBlogPage && (
           <motion.div
             variants={{
@@ -104,19 +93,14 @@ export const MainLayout = ({
             layout
             layoutId="timeline-switcher-button"
             transition={{ duration: 0 }}
-            className="sticky top-[100px] lg:top-[120px] mt-5 z-1 pb-8"
+            className="sticky top-[100px] lg:top-[120px] mt-5 z-10 pb-8"
           >
             <TimeSelectionTabs />
           </motion.div>
         )}
-        <Box w="100vw" maxW={"100%"} zIndex="docked">
-          <Container
-            maxW="landingMax"
-            display="flex"
-            justifyContent="center"
-            px={defaultPx(32)}
-          >
-            <VStack spacing={8} alignItems="center" w="full">
+        <div className="w-screen max-w-full z-[100]">
+          <div className="container flex justify-center">
+            <div className="flex flex-col items-center w-full space-y-8">
               <motion.div
                 variants={{
                   hidden: { opacity: 0, y: 20 },
@@ -127,24 +111,17 @@ export const MainLayout = ({
                   },
                 }}
               >
-                <VStack
-                  display="flex"
-                  justifyContent="start"
-                  alignItems="start"
-                  gap={[8, 8, 14]}
-                  minWidth={["100%", "100%", "834px"]}
-                  minHeight="100vh"
-                >
+                <div className="flex flex-col justify-start items-start gap-8 md:gap-14 min-w-full md:min-w-[834px] min-h-screen">
                   {!isInBlogPage && (
-                    <div className="font-hero flex flex-col items-start w-full gap-2">
+                    <div className="flex flex-col items-start w-full gap-2">
                       <h1 className="title1 text-left">Changelog</h1>
-                      <p className="max-w-2xl text-2xl font-hero font-bold leading-8 text-gray-900 text-left">
+                      <p className="max-w-2xl text-2xl font-bold leading-8 text-gray-900 text-left">
                         New features, improvements, and fixes every week
                       </p>
                     </div>
                   )}
                   <div className="flex flex-col justify-center">{children}</div>
-                </VStack>
+                </div>
               </motion.div>
               <motion.div
                 hidden={!!infiniteScrollingView}
@@ -157,36 +134,32 @@ export const MainLayout = ({
                   },
                 }}
               >
-                <VStack align={["stretch", "stretch", "center"]}>
+                <div className="flex flex-col md:flex-row md:justify-center space-y-4 md:space-y-0 md:space-x-4">
                   {page === 0 && hasMorePage ? (
                     <Link href={`/page/1#${timeline.view}`}>
-                      <Button variant="landingOutline" size="landingLg">
-                        Load more
-                      </Button>
+                      <button className="btn btn-outline">Load more</button>
                     </Link>
                   ) : (
-                    <HStack justifyContent="center" spacing={4}>
+                    <>
                       {page > 0 && (
-                        <Link href={`/page/${page - 1}${"#" + timeline.view}`}>
-                          <Button variant="landingOutline" size="landingLg">
+                        <Link href={`/page/${page - 1}#${timeline.view}`}>
+                          <button className="btn btn-outline">
                             Previous page
-                          </Button>
+                          </button>
                         </Link>
                       )}
                       {hasMorePage && (
-                        <Link href={`/page/${page + 1}${"#" + timeline.view}`}>
-                          <Button variant="landingOutline" size="landingLg">
-                            Next page
-                          </Button>
+                        <Link href={`/page/${page + 1}#${timeline.view}`}>
+                          <button className="btn btn-outline">Next page</button>
                         </Link>
                       )}
-                    </HStack>
+                    </>
                   )}
-                </VStack>
+                </div>
               </motion.div>
-            </VStack>
-          </Container>
-        </Box>
+            </div>
+          </div>
+        </div>
       </motion.div>
     </>
   );

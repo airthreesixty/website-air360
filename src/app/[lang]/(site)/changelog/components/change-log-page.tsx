@@ -1,14 +1,14 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { usePathname } from "next/navigation";
 import useTimelineStore from "@/lib/state/use-timeline-store";
 import { MainLayout } from "../layout/main-layout";
-import { TabPanel, TabPanels, Tabs } from "@chakra-ui/react";
 import Years from "../layout/years";
 import Weeks from "../layout/weeks";
 import Months from "../layout/months";
 import { IAggregatedChangelogs } from "@/lib/models/view";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const ITEMS_PER_PAGE = 4;
 
@@ -31,36 +31,52 @@ export default function ChangelogPage({
   const match = pathname.match(/\/page\/(\d+)/);
   const page = parseInt(match ? match[1] : "0", 10);
 
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash;
+      switch (hash) {
+        case "weeks":
+          timeline.setView("weeks");
+          break;
+        case "months":
+          timeline.setView("months");
+          break;
+        case "years":
+          timeline.setView("years");
+          break;
+      }
+    };
+
+    handleHashChange();
+    window.addEventListener("hashchange", handleHashChange);
+
+    return () => {
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, [timeline.view]);
+
+  const handleValueChange = (value: string) => {
+    if (value === "weeks" || value === "months" || value === "years") {
+      timeline.setView(value);
+    }
+  };
+
   return (
     <MainLayout
       page={page}
       itemsPerPage={ITEMS_PER_PAGE}
       totalItems={totalItems}
     >
-      <Tabs
-        isLazy
-        lazyBehavior="keepMounted"
-        isFitted
-        index={
-          timeline.view === "weeks" ? 0 : timeline.view === "months" ? 1 : 2
-        }
-        onChange={(index) => {
-          timeline.setView(
-            index === 0 ? "weeks" : index === 1 ? "months" : "years"
-          );
-        }}
-      >
-        <TabPanels>
-          <TabPanel padding={0}>
-            <Weeks slugs={slugs} />
-          </TabPanel>
-          <TabPanel padding={0}>
-            <Months monthChangelogsMap={changelogsMap.months} />
-          </TabPanel>
-          <TabPanel padding={0}>
-            <Years yearChangelogsMap={changelogsMap.years} />
-          </TabPanel>
-        </TabPanels>
+      <Tabs value={timeline.view} onValueChange={handleValueChange}>
+        <TabsContent value="weeks">
+          <Weeks slugs={slugs} />
+        </TabsContent>
+        <TabsContent value="months">
+          <Months monthChangelogsMap={changelogsMap.months} />
+        </TabsContent>
+        <TabsContent value="years">
+          <Years yearChangelogsMap={changelogsMap.years} />
+        </TabsContent>
       </Tabs>
     </MainLayout>
   );

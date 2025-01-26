@@ -1,4 +1,3 @@
-import { Box, HStack, Image, VStack } from "@chakra-ui/react";
 import dayjs from "dayjs";
 import { motion } from "framer-motion";
 import { usePathname, useRouter } from "next/navigation";
@@ -11,8 +10,8 @@ const SmallGrid = (props: IGridProps) => {
   const lang = pathname.split("/")[1];
 
   return (
-    <HStack height="100%" maxHeight="360px" maxWidth={"682px"}>
-      <Box width="100%">
+    <div className="flex h-full max-h-[360px] max-w-[682px] md:gap-x-2">
+      <div className="w-full">
         <motion.div
           layoutId={props.isFirstItem ? changelogs[0].slug : ``}
           initial={{
@@ -23,12 +22,19 @@ const SmallGrid = (props: IGridProps) => {
           }}
           style={{ overflow: "hidden" }}
         >
-          <Image
+          <img
             src={changelogs[0]?.imageUrl}
             alt={changelogs[0]?.slug}
-            minHeight={["176px", "176px", "360px"]}
-            objectFit={"cover"}
-            fallbackSrc="/plain-gray.jpg"
+            className="
+              min-h-[176px] 
+              md:min-h-[360px] 
+              w-full 
+              object-cover 
+              cursor-pointer
+            "
+            onError={(e) => {
+              (e.target as HTMLImageElement).src = "/plain-gray.jpg";
+            }}
             onClick={() => {
               const date = dayjs(changelogs[0]?.publishedAt);
               const targetDate = date.format("MMM YYYY");
@@ -39,20 +45,25 @@ const SmallGrid = (props: IGridProps) => {
             }}
           />
         </motion.div>
-      </Box>
-      <VStack width="176px" height="100%">
+      </div>
+      <div className="flex flex-col w-[176px] h-full space-y-2">
         {changelogs
           .slice(1, changelogs.length)
           .map(({ imageUrl, slug, publishedAt }, index) => (
-            <Image
+            <img
               key={index}
               src={imageUrl}
               alt={slug}
-              objectFit={"cover"}
-              maxHeight="176px"
-              height="100%"
-              maxWidth="176px"
-              fallbackSrc="/plain-gray.jpg"
+              className="
+                object-cover
+                max-h-[176px]
+                h-full
+                max-w-[176px]
+                cursor-pointer
+              "
+              onError={(e) => {
+                (e.target as HTMLImageElement).src = "/plain-gray.jpg";
+              }}
               onClick={() => {
                 const date = dayjs(publishedAt);
                 const targetDate = date.format("MMM YYYY");
@@ -63,8 +74,8 @@ const SmallGrid = (props: IGridProps) => {
               }}
             />
           ))}
-      </VStack>
-    </HStack>
+      </div>
+    </div>
   );
 };
 
