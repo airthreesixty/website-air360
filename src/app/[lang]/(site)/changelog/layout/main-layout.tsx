@@ -9,6 +9,7 @@ import useAnimatePageStore from "@/lib/state/use-animate-page-store";
 import { motion } from "framer-motion";
 
 import TimeSelectionTabs from "../components/time-selection-tabs";
+import { useTranslations } from "next-intl";
 
 export interface MainLayoutProps {
   page?: number;
@@ -33,6 +34,7 @@ export const MainLayout = ({
   const { animatePage, setAnimatePage } = useAnimatePageStore();
   const pathname = usePathname();
   const pageStatus = usePageStatusStore();
+  const t = useTranslations("changelog");
 
   React.useEffect(() => {
     const hash = window?.location.hash ?? "";
@@ -114,9 +116,9 @@ export const MainLayout = ({
                 <div className="flex flex-col justify-start items-start gap-8 md:gap-14 min-w-full md:min-w-[834px] min-h-screen">
                   {!isInBlogPage && (
                     <div className="flex flex-col items-start w-full gap-2">
-                      <h1 className="title1 text-left">Changelog</h1>
+                      <h1 className="title1 text-left">{t("title")}</h1>
                       <p className="max-w-2xl text-2xl font-bold leading-8 text-gray-900 text-left">
-                        New features, improvements, and fixes every week
+                        {t("description")}
                       </p>
                     </div>
                   )}

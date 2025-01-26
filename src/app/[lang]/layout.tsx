@@ -73,6 +73,7 @@ async function getMessages(locale: string) {
     ...(await import(`@/messages/${locale}/roi-calc.json`)).default,
     ...(await import(`@/messages/${locale}/security-compliance.json`)).default,
     ...(await import(`@/messages/${locale}/thank-you.json`)).default,
+    ...(await import(`@/messages/${locale}/changelog.json`)).default,
   };
   return messagesModule;
 }

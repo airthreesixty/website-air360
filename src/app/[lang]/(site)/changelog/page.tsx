@@ -2,12 +2,29 @@ import { getAllChangelogs } from "@/lib/query-content";
 import ChangelogPage from "./components/change-log-page";
 import { MdxMeta } from "@/lib/models/mdx-meta";
 import { IAggregatedChangelogs, IImagePreviewMeta } from "@/lib/models/view";
+import { Metadata } from "next";
+import { getTranslations } from "@/i18n/getTranslations";
+import { mdxMetadata } from "@/lib/metadata";
 
 interface Props {
   params: { page?: string; lang: string };
 }
 
 const ITEMS_PER_PAGE = 4;
+
+export async function generateMetadata({
+  params: { lang },
+}: Props): Promise<Metadata> {
+  const t = await getTranslations({ locale: lang, namespace: "changelog" });
+  const meta = {
+    description: t("description"),
+    title: t("title"),
+    ogTitle: `Air360 - ${t("title")}`,
+    image: "/heroIllustration.webp",
+  };
+
+  return mdxMetadata(meta);
+}
 
 export default async function Page({ params }: Props) {
   const page = parseInt(params.page ?? "0", 10);
