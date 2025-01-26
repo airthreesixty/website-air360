@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import dayjs from "dayjs";
 import MoreItems from "../components/more-items";
 import Timeline from "./timeline";
+import ExportedImage from "next-image-export-optimizer";
 
 interface IMonthsProps {
   monthChangelogsMap: IAggregatedChangelogs;
@@ -110,7 +111,7 @@ const Months = ({
                               transition={{ duration: 0.6 }}
                               className="w-full h-full"
                             >
-                              <img
+                              <ExportedImage
                                 src={imageUrl}
                                 alt={`${
                                   Object.keys(monthChangelogsMap)[index]
@@ -119,6 +120,8 @@ const Months = ({
                                 onClick={() =>
                                   handleFindWeekChangelog(publishedAt)
                                 }
+                                width={682}
+                                height={360}
                               />
                             </motion.div>
                           </div>

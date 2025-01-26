@@ -12,6 +12,7 @@ import { MDXProvider } from "@mdx-js/react";
 import Timeline from "@/app/[lang]/(site)/changelog/layout/timeline";
 import { Link, Pathnames } from "@/i18n/routing";
 import { components } from "@/components/mdx";
+import ExportedImage from "next-image-export-optimizer";
 
 export interface MdxLayoutProps {
   meta: MdxMeta;
@@ -58,7 +59,7 @@ export const MdxLayout = (props: MdxLayoutProps) => {
 
   if (props.imagePreviewMode) {
     return (
-      <img
+      <ExportedImage
         src={props.meta.headerImage}
         alt={props.meta.title}
         className="h-full object-cover"
@@ -136,7 +137,7 @@ export const MdxLayout = (props: MdxLayoutProps) => {
               }}
             >
               {isInBlogPage ? (
-                <img
+                <ExportedImage
                   src={props.meta.headerImage}
                   alt={props.meta.title}
                   className={`
@@ -150,7 +151,7 @@ export const MdxLayout = (props: MdxLayoutProps) => {
                 />
               ) : (
                 <Link href={`/changelog/${props.meta.slug}` as Pathnames}>
-                  <img
+                  <ExportedImage
                     src={props.meta.headerImage}
                     alt={props.meta.title}
                     className={`
@@ -164,6 +165,8 @@ export const MdxLayout = (props: MdxLayoutProps) => {
                     onClick={() => {
                       setPrevUrl(pathname);
                     }}
+                    width={682}
+                    height={360}
                   />
                 </Link>
               )}

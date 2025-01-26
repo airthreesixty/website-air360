@@ -3,6 +3,7 @@ import dayjs from "dayjs";
 import { motion } from "framer-motion";
 import { IGridProps } from "./grid-interfaces";
 import LargeSubGrid from "./large-sub-grid";
+import ExportedImage from "next-image-export-optimizer";
 
 const LargeGrid = (props: IGridProps) => {
   const { changelogs } = props;
@@ -46,7 +47,7 @@ const LargeGrid = (props: IGridProps) => {
                       duration: 0,
                     }}
                   >
-                    <img
+                    <ExportedImage
                       src={rowItems[0].imageUrl}
                       alt={rowItems[0].slug}
                       className={`h-[198px] object-cover ${
@@ -67,6 +68,8 @@ const LargeGrid = (props: IGridProps) => {
 
                         router.push(`/years/${year}#${hash}`);
                       }}
+                      width={682}
+                      height={360}
                     />
                   </motion.div>
                   <div className="flex flex-col space-y-[2px]">
@@ -113,7 +116,7 @@ const LargeGrid = (props: IGridProps) => {
                         />
                       ))}
                   </div>
-                  <img
+                  <ExportedImage
                     src={rowItems[rowItems.length - 1].imageUrl}
                     alt={rowItems[rowItems.length - 1].slug}
                     className={`h-[198px] object-cover ${
@@ -136,6 +139,8 @@ const LargeGrid = (props: IGridProps) => {
 
                       router.push(`/years/${year}#${hash}`);
                     }}
+                    width={682}
+                    height={360}
                   />
                 </>
               )}

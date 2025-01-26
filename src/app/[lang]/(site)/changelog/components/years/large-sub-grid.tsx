@@ -1,6 +1,7 @@
 import dayjs from "dayjs";
 import { IImagePreviewMeta } from "@/lib/models/view";
 import { useRouter } from "next/navigation";
+import ExportedImage from "next-image-export-optimizer";
 
 interface ISubGridProps {
   changelogs: IImagePreviewMeta[];
@@ -23,7 +24,7 @@ const LargeSubGrid = (props: ISubGridProps) => {
     >
       {changelogs.map(({ imageUrl, slug, publishedAt }, subI) => (
         <div key={subI}>
-          <img
+          <ExportedImage
             src={imageUrl}
             alt={slug}
             className="object-cover cursor-pointer"
@@ -42,6 +43,8 @@ const LargeSubGrid = (props: ISubGridProps) => {
 
               router.push(`/years/${year}#${hash}`);
             }}
+            width={682}
+            height={360}
           />
         </div>
       ))}

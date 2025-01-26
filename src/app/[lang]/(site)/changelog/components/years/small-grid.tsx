@@ -2,6 +2,7 @@ import dayjs from "dayjs";
 import { motion } from "framer-motion";
 import { usePathname, useRouter } from "next/navigation";
 import { IGridProps } from "./grid-interfaces";
+import ExportedImage from "next-image-export-optimizer";
 
 const SmallGrid = (props: IGridProps) => {
   const { changelogs } = props;
@@ -22,7 +23,7 @@ const SmallGrid = (props: IGridProps) => {
           }}
           style={{ overflow: "hidden" }}
         >
-          <img
+          <ExportedImage
             src={changelogs[0]?.imageUrl}
             alt={changelogs[0]?.slug}
             className="
@@ -43,6 +44,8 @@ const SmallGrid = (props: IGridProps) => {
 
               router.push(`/${lang}/years/${year}#${hash}`);
             }}
+            width={682}
+            height={360}
           />
         </motion.div>
       </div>
@@ -50,7 +53,7 @@ const SmallGrid = (props: IGridProps) => {
         {changelogs
           .slice(1, changelogs.length)
           .map(({ imageUrl, slug, publishedAt }, index) => (
-            <img
+            <ExportedImage
               key={index}
               src={imageUrl}
               alt={slug}
@@ -72,6 +75,8 @@ const SmallGrid = (props: IGridProps) => {
 
                 router.push(`/${lang}/years/${year}#${hash}`);
               }}
+              width={682}
+              height={360}
             />
           ))}
       </div>

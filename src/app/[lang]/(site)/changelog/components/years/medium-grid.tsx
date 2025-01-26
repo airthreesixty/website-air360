@@ -4,6 +4,7 @@ import dayjs from "dayjs";
 import { motion } from "framer-motion";
 import { usePathname, useRouter } from "next/navigation";
 import { IGridProps } from "./grid-interfaces";
+import ExportedImage from "next-image-export-optimizer";
 
 const MediumGrid = (props: IGridProps) => {
   const { changelogs } = props;
@@ -41,13 +42,15 @@ const MediumGrid = (props: IGridProps) => {
                   }}
                   style={{ height: "100%" }}
                 >
-                  <img
+                  <ExportedImage
                     src={imageUrl}
                     alt={slug}
                     className="h-full w-full object-cover"
                     onError={(e) => {
                       (e.target as HTMLImageElement).src = "/plain-gray.jpg";
                     }}
+                    width={682}
+                    height={360}
                   />
                 </motion.div>
               ) : (
@@ -87,7 +90,7 @@ const MediumGrid = (props: IGridProps) => {
               }}
               style={{ height: "100%" }}
             >
-              <img
+              <ExportedImage
                 src={imageUrl}
                 alt={slug}
                 className="h-full w-full object-cover cursor-pointer"
@@ -102,6 +105,8 @@ const MediumGrid = (props: IGridProps) => {
 
                   router.push(`/${lang}/years/${year}#${hash}`);
                 }}
+                width={682}
+                height={360}
               />
             </motion.div>
           </div>
