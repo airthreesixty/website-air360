@@ -89,38 +89,11 @@ export default async function RootLayout({
     <html lang={params.lang}>
       <body className={`${inter.variable} ${really.variable} ${noto.variable}`}>
         {/* Air360 script */}
-        {process.env.NEXT_PUBLIC_PLATFORM === "prod" && (
-          <Script
-            id="air360-script"
-            dangerouslySetInnerHTML={{
-              __html: `
-              window.Air360 = window.Air360 || [];
-              Air360.init = Air360.init || function(e) {
-                window.Air360.appid = e;
-                var a = document.createElement("script");
-                a.type = "module";
-                a.async = true;
-                a.src = "https://cdn.air360tracker.net/cl/air360.min.js";
-                var n = document.getElementsByTagName("script")[0];
-                n.parentNode.insertBefore(a, n);
-                for (var o = function(e) {
-                  return function() {
-                    Air360.push([e].concat(Array.prototype.slice.call(arguments, 0)));
-                  };
-                }, p = [
-                  "addEventProperties", "clearEventProperties", "identify", 
-                  "removeEventProperty", "setUserProperties", "track", "trackError", 
-                  "trackPurchase", "trackConversion", "optInUserTracking", 
-                  "optOutUserTracking", "virtualPageview"
-                ], c = 0; c < p.length; c++) {
-                  Air360[p[c]] = o(p[c]);
-                }
-              };
-              Air360.init("izxdj2ihcqxarhox");
-            `,
-            }}
-          />
-        )}
+        {/* {process.env.NEXT_PUBLIC_PLATFORM === "prod" && ( */}
+        <Script id="air360-script">
+          {`window.Air360 = window.Air360||[],Air360.init=Air360.init||function(e){window.Air360.appid=e;var a=document.createElement("script");a.type="module",a.async=!0,a.src="https://cdn.air360tracker.net/cl/air360.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){Air360.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","clearEventProperties","identify","removeEventProperty","setUserProperties","track","trackError","trackPurchase","trackConversion","optInUserTracking","optOutUserTracking","virtualPageview"],c=0;c<p.length;c++)Air360[p[c]]=o(p[c])};Air360.init("izxdj2ihcqxarhox");`}
+        </Script>
+        {/* )} */}
         <Providers locale={params.lang} messages={messages}>
           {children}
         </Providers>
