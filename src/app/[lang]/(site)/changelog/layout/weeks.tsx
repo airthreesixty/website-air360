@@ -21,6 +21,7 @@ const Weeks = ({ slugs }: IWeeksProps) => {
   }, [slugs]);
 
   const changelogs = getAllChangelogs(lang);
+
   return (
     <>
       {Articles.map((Article, index) => {

@@ -10,6 +10,7 @@ import { motion } from "framer-motion";
 
 import TimeSelectionTabs from "../components/time-selection-tabs";
 import { useTranslations } from "next-intl";
+import { Button } from "@/components/ui/button";
 
 export interface MainLayoutProps {
   page?: number;
@@ -33,6 +34,7 @@ export const MainLayout = ({
   const timeline = useTimelineStore();
   const { animatePage, setAnimatePage } = useAnimatePageStore();
   const pathname = usePathname();
+  const lang = pathname.split("/")[1];
   const pageStatus = usePageStatusStore();
   const t = useTranslations("changelog");
 
@@ -70,11 +72,7 @@ export const MainLayout = ({
     !infiniteScrollingView &&
     page !== undefined &&
     page <
-      Math.floor((totalItems?.[timeline.view] ?? 0) / (itemsPerPage ?? 1)) - 1;
-  console.log("infinitescrollingview", infiniteScrollingView);
-  console.log("totalItems", totalItems);
-  console.log("timeline.view", timeline.view);
-  console.log("itemsPerPage", itemsPerPage);
+      Math.ceil((totalItems?.[timeline.view] ?? 0) / (itemsPerPage ?? 1)) - 1;
 
   const isInBlogPage = pathname.startsWith("/changelog/");
 
@@ -104,7 +102,7 @@ export const MainLayout = ({
             <TimeSelectionTabs />
           </motion.div>
         )}
-        <div className="w-screen max-w-full z-[100]">
+        <div className="w-screen max-w-full z-[100] pb-10">
           <div className="container flex justify-center">
             <div className="flex flex-col items-center w-full space-y-8">
               <motion.div
@@ -142,25 +140,27 @@ export const MainLayout = ({
               >
                 <div className="flex flex-col md:flex-row md:justify-center space-y-4 md:space-y-0 md:space-x-4">
                   {page === 0 && hasMorePage ? (
-                    <Link href={`/changelog/page/1#${timeline.view}`}>
-                      <button className="btn btn-outline">Load more</button>
+                    <Link href={`/${lang}/changelog/page/1#${timeline.view}`}>
+                      <Button>Load more</Button>
                     </Link>
                   ) : (
                     <>
                       {page > 0 && (
                         <Link
-                          href={`/changelog/page/${page - 1}#${timeline.view}`}
+                          href={`/${lang}/changelog/page/${page - 1}#${
+                            timeline.view
+                          }`}
                         >
-                          <button className="btn btn-outline">
-                            Previous page
-                          </button>
+                          <Button>Previous page</Button>
                         </Link>
                       )}
                       {hasMorePage && (
                         <Link
-                          href={`/changelog/page/${page + 1}#${timeline.view}`}
+                          href={`/${lang}/changelog/page/${page + 1}#${
+                            timeline.view
+                          }`}
                         >
-                          <button className="btn btn-outline">Next page</button>
+                          <Button>Next page</Button>
                         </Link>
                       )}
                     </>
