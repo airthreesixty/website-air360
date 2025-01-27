@@ -1,8 +1,6 @@
-import { Suspense } from "react";
 import { getAllChangelogs } from "@/lib/query-content";
 import { MainLayout } from "../../layout/main-layout";
 import ClientMonths from "./components/client-months";
-import LoadingDots from "@/components/common/LoadingDots";
 
 interface IImagePreviewMeta {
   imageUrl: string;
@@ -23,6 +21,10 @@ interface PageProps {
   };
 }
 
+interface Props {
+  params: { lang: string };
+}
+
 const ITEMS_PER_PAGE = 4;
 
 export async function generateMetadata({ params }: PageProps) {
@@ -31,14 +33,17 @@ export async function generateMetadata({ params }: PageProps) {
   };
 }
 
-export async function generateStaticParams() {
-  const currentYear = new Date().getFullYear();
-  const years = Array.from({ length: 41 }, (_, i) =>
-    (currentYear - 20 + i).toString()
-  );
+export async function generateStaticParams({ params }: Props) {
+  const changelogs = getAllChangelogs(params.lang);
+  const yearsSet = new Set<number>();
 
-  return years.map((year) => ({
-    year,
+  changelogs.forEach((changelog) => {
+    const date = new Date(changelog.publishedAt);
+    yearsSet.add(date.getFullYear());
+  });
+
+  return Array.from(yearsSet).map((year) => ({
+    year: year.toString(),
   }));
 }
 
@@ -87,13 +92,11 @@ export default async function Page({ params }: PageProps) {
   );
 
   return (
-    <Suspense fallback={<LoadingDots className="w-6" numDots={3} />}>
-      <MainLayout infiniteScrollingView="year">
-        <ClientMonths
-          initialMonthChangelogsMap={monthChangelogsMap}
-          year={params.year}
-        />
-      </MainLayout>
-    </Suspense>
+    <MainLayout infiniteScrollingView="year">
+      <ClientMonths
+        initialMonthChangelogsMap={monthChangelogsMap}
+        year={params.year}
+      />
+    </MainLayout>
   );
 }

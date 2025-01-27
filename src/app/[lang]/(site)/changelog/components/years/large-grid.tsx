@@ -1,4 +1,6 @@
-import { useRouter } from "next/navigation";
+"use client";
+
+import { usePathname, useRouter } from "next/navigation";
 import dayjs from "dayjs";
 import { motion } from "framer-motion";
 import { IGridProps } from "./grid-interfaces";
@@ -8,6 +10,8 @@ import ExportedImage from "next-image-export-optimizer";
 const LargeGrid = (props: IGridProps) => {
   const { changelogs } = props;
   const router = useRouter();
+  const pathname = usePathname();
+  const lang = pathname.split("/")[1];
 
   return (
     <div
@@ -137,7 +141,7 @@ const LargeGrid = (props: IGridProps) => {
                         .replace(/[\s_]+/g, "-")
                         .toLowerCase();
 
-                      router.push(`/years/${year}#${hash}`);
+                      router.push(`/${lang}/changelog/years/${year}#${hash}`);
                     }}
                     width={682}
                     height={360}

@@ -73,7 +73,7 @@ const SmallGrid = (props: IGridProps) => {
                 const year = date.format("YYYY");
                 const hash = targetDate.replace(/[\s_]+/g, "-").toLowerCase();
 
-                router.push(`/${lang}/years/${year}#${hash}`);
+                router.push(`/${lang}/changelog/years/${year}#${hash}`);
               }}
               width={682}
               height={360}
