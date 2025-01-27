@@ -71,6 +71,10 @@ export const MainLayout = ({
     page !== undefined &&
     page <
       Math.floor((totalItems?.[timeline.view] ?? 0) / (itemsPerPage ?? 1)) - 1;
+  console.log("infinitescrollingview", infiniteScrollingView);
+  console.log("totalItems", totalItems);
+  console.log("timeline.view", timeline.view);
+  console.log("itemsPerPage", itemsPerPage);
 
   const isInBlogPage = pathname.startsWith("/changelog/");
 
