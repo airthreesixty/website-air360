@@ -223,6 +223,11 @@ const Footer: React.FC = () => {
                   <div className="hover:underline">{t("menu.blog")}</div>
                 </Link>
               </li>
+              <li className="mb-4">
+                <Link href="/changelog">
+                  <div className="hover:underline">{t("menu.changelog")}</div>
+                </Link>
+              </li>
             </ul>
           </div>
           <div>
