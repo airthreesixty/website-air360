@@ -20,7 +20,7 @@ export async function generateMetadata({
     description: t("description"),
     title: t("title"),
     ogTitle: `Air360 - ${t("title")}`,
-    image: "/images/changelog/2024-02-26/headerImage.png",
+    image: "/heroIllustration.webp",
   };
 
   return mdxMetadata(meta);
