@@ -41,6 +41,7 @@ import {
   IncreaseConversionWrapper,
 } from "../mdx-client-wrapper";
 import Signature from "./signature";
+import { Badge } from "../ui/badge";
 
 export const components = {
   BlogInnerCardWrapper,
@@ -87,6 +88,7 @@ export const components = {
   Manifesto,
   IncreaseConversionWrapper,
   Signature,
+  Badge,
 };
 
 export {
@@ -135,4 +137,5 @@ export {
   Manifesto,
   IncreaseConversionWrapper,
   Signature,
+  Badge,
 };
