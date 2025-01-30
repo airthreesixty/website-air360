@@ -57,15 +57,13 @@ const Timeline = (props: TimelineProps) => {
         >
           {isOpen && <BackButton />}
 
-          <p className="text-gray-450 text-start w-[125px]">
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.6 }}
-            >
-              {date}
-            </motion.div>
-          </p>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+          >
+            <p className="text-gray-450 text-start w-[125px]">{date}</p>
+          </motion.div>
         </div>
       )}
 
