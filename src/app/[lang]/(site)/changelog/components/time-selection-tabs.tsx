@@ -22,26 +22,23 @@ const TimeSelectionTabs = () => {
       (pathname.includes("/page/") || pathname.includes("/years/")) &&
       timeline.view !== view
     ) {
-      router.push(`/${lang}/changelog/page/0#${view}`);
-      timeline.setView(view);
-    } else if (timeline.view === view) {
-      return window.scrollTo({
-        top: 0,
-        behavior: "smooth",
+      router.push(`/${lang}/changelog/page/0#${view}`, {
+        scroll: false,
       });
+      timeline.setView(view);
     } else {
       if (timeline.view !== view) {
-        router.push(`#${view}`);
+        router.push(`#${view}`, {
+          scroll: false,
+        });
         timeline.setView(view);
       }
     }
 
-    setTimeout(() => {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    }, 50);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   return (
