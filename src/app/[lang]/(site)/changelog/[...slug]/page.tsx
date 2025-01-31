@@ -1,9 +1,10 @@
 import { MdxLayout } from "@/components/layout/mdx-layout";
+import { components } from "@/components/mdx";
 import { mdxMetadata } from "@/lib/metadata";
 import { MdxMeta } from "@/lib/models/mdx-meta";
 import { getChangelogBySlug } from "@/lib/query-content";
 import { allChangelogs } from "contentlayer/generated";
-import { Metadata } from "next";
+import { Metadata, NextPage } from "next";
 import { useMDXComponent } from "next-contentlayer/hooks";
 import { notFound } from "next/navigation";
 
@@ -27,7 +28,7 @@ export async function generateMetadata({
   return mdxMetadata(meta);
 }
 
-const Page = ({ params }: Props) => {
+const Page: NextPage<Props> = ({ params }: Props) => {
   const content = getChangelogBySlug(params.slug, params.lang);
   const MDXContent = useMDXComponent(content?.body.code ?? "");
 
@@ -44,7 +45,7 @@ const Page = ({ params }: Props) => {
 
   return (
     <MdxLayout meta={meta}>
-      <MDXContent />
+      <MDXContent components={components} />
     </MdxLayout>
   );
 };

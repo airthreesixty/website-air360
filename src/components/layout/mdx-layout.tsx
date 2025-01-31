@@ -8,10 +8,8 @@ import { MdxMeta } from "@/lib/models/mdx-meta";
 import { motion } from "framer-motion";
 import dayjs from "dayjs";
 import { ReactNode } from "react";
-import { MDXProvider } from "@mdx-js/react";
 import Timeline from "@/app/[lang]/(site)/changelog/layout/timeline";
 import { Link, Pathnames } from "@/i18n/routing";
-import { components } from "@/components/mdx";
 import ExportedImage from "next-image-export-optimizer";
 
 export interface MdxLayoutProps {
@@ -73,29 +71,26 @@ export const MdxLayout = (props: MdxLayoutProps) => {
   const isInBlogPage = pathname.startsWith("/changelog/");
 
   const MDX = () => (
-    <MDXProvider components={components}>
-      <Timeline
-        date={dayjs(props.meta.publishedAt).format("MMM DD YYYY")}
-        className={`timeline-month-${dayjs(props.meta.publishedAt).format(
-          "MM"
-        )}`}
-      >
-        <div
-          className="
+    <Timeline
+      date={dayjs(props.meta.publishedAt).format("MMM DD YYYY")}
+      className={`timeline-month-${dayjs(props.meta.publishedAt).format("MM")}`}
+    >
+      <div
+        className="
             w-full 
             md:w-[682px] 
             max-w-[682px] 
             mx-auto
           "
-        >
-          {/* Article header */}
-          <div className="flex flex-col space-y-4 md:space-y-6 items-start">
-            {props.tags !== undefined && (
-              <div className="flex gap-2">
-                {props.tags?.map((tag, index) => (
-                  <span
-                    key={index}
-                    className="
+      >
+        {/* Article header */}
+        <div className="flex flex-col space-y-4 md:space-y-6 items-start">
+          {props.tags !== undefined && (
+            <div className="flex gap-2">
+              {props.tags?.map((tag, index) => (
+                <span
+                  key={index}
+                  className="
                       h-[22px] 
                       bg-[#F1F3F5] 
                       text-[#0D131B] 
@@ -108,39 +103,37 @@ export const MdxLayout = (props: MdxLayoutProps) => {
                       top-[-8px] 
                       mb-[-10px]
                     "
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            )}
-            <motion.div
-              layoutId={
-                shouldAnimateFromPreviousPage ? `${props.meta.slug}` : ``
-              }
-              initial={{
-                opacity: shouldAnimateFromPreviousPage ? 1 : 0,
-                y: shouldAnimateFromPreviousPage ? 0 : 20,
-                scale: shouldAnimateFromPreviousPage ? 0.9 : 1,
-              }}
-              animate={{
-                opacity: 1,
-                y: 0,
-                transition: { duration: 0.6 },
-                scale: 1,
-              }}
-              style={{
-                width: "100%",
-                overflow: "hidden",
-                borderRadius: "16px",
-                height: "100%",
-              }}
-            >
-              {isInBlogPage ? (
-                <ExportedImage
-                  src={props.meta.headerImage}
-                  alt={props.meta.title}
-                  className={`
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
+          <motion.div
+            layoutId={shouldAnimateFromPreviousPage ? `${props.meta.slug}` : ``}
+            initial={{
+              opacity: shouldAnimateFromPreviousPage ? 1 : 0,
+              y: shouldAnimateFromPreviousPage ? 0 : 20,
+              scale: shouldAnimateFromPreviousPage ? 0.9 : 1,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+              transition: { duration: 0.6 },
+              scale: 1,
+            }}
+            style={{
+              width: "100%",
+              overflow: "hidden",
+              borderRadius: "16px",
+              height: "100%",
+            }}
+          >
+            {isInBlogPage ? (
+              <ExportedImage
+                src={props.meta.headerImage}
+                alt={props.meta.title}
+                className={`
                     w-full 
                     h-[100%] 
                     md:h-[360px] 
@@ -148,13 +141,13 @@ export const MdxLayout = (props: MdxLayoutProps) => {
                     ${props.hideLayout ? "cursor-pointer" : "cursor-default"}
                     hover:shadow-md
                   `}
-                />
-              ) : (
-                <Link href={`/changelog/${props.meta.slug}` as Pathnames}>
-                  <ExportedImage
-                    src={props.meta.headerImage}
-                    alt={props.meta.title}
-                    className={`
+              />
+            ) : (
+              <Link href={`/changelog/${props.meta.slug}` as Pathnames}>
+                <ExportedImage
+                  src={props.meta.headerImage}
+                  alt={props.meta.title}
+                  className={`
                       w-full 
                       h-[100%] 
                       md:h-[360px] 
@@ -162,29 +155,29 @@ export const MdxLayout = (props: MdxLayoutProps) => {
                       cursor-pointer 
                       hover:shadow-md
                     `}
-                    onClick={() => {
-                      setPrevUrl(pathname);
-                    }}
-                    width={682}
-                    height={360}
-                  />
-                </Link>
-              )}
-            </motion.div>
-            <motion.div
-              initial={{
-                opacity: 0,
-                y: shouldAnimateFromPreviousPage ? 0 : 20,
-              }}
-              animate={{
-                opacity: 1,
-                y: 0,
-                transition: { duration: 0.4, delay: 0.2 },
-              }}
-            >
-              {isInBlogPage ? (
-                <h1
-                  className={`
+                  onClick={() => {
+                    setPrevUrl(pathname);
+                  }}
+                  width={682}
+                  height={360}
+                />
+              </Link>
+            )}
+          </motion.div>
+          <motion.div
+            initial={{
+              opacity: 0,
+              y: shouldAnimateFromPreviousPage ? 0 : 20,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+              transition: { duration: 0.4, delay: 0.2 },
+            }}
+          >
+            {isInBlogPage ? (
+              <h1
+                className={`
                     article-title 
                     text-gray-900 
                     font-hero 
@@ -197,13 +190,13 @@ export const MdxLayout = (props: MdxLayoutProps) => {
                         : "cursor-text hover:no-underline"
                     }
                   `}
-                >
-                  {props.meta.title}
-                </h1>
-              ) : (
-                <Link href={`/changelog/${props.meta.slug}` as Pathnames}>
-                  <h2
-                    className={`
+              >
+                {props.meta.title}
+              </h1>
+            ) : (
+              <Link href={`/changelog/${props.meta.slug}` as Pathnames}>
+                <h2
+                  className={`
                       article-title 
                       text-gray-900 
                       font-hero 
@@ -216,30 +209,29 @@ export const MdxLayout = (props: MdxLayoutProps) => {
                           : "cursor-text hover:no-underline"
                       }
                     `}
-                    onClick={() => {
-                      setPrevUrl(pathname);
-                    }}
-                  >
-                    {props.meta.title}
-                  </h2>
-                </Link>
-              )}
-            </motion.div>
-          </div>
-          {/* Article content */}
-          <motion.div
-            initial={{ opacity: 0, y: props.hideLayout ? 0 : 20 }}
-            animate={{
-              opacity: 1,
-              y: 0,
-              transition: { duration: 0.4, delay: 0.2 },
-            }}
-          >
-            <div className="pb-16 prose">{props.children}</div>
+                  onClick={() => {
+                    setPrevUrl(pathname);
+                  }}
+                >
+                  {props.meta.title}
+                </h2>
+              </Link>
+            )}
           </motion.div>
         </div>
-      </Timeline>
-    </MDXProvider>
+        {/* Article content */}
+        <motion.div
+          initial={{ opacity: 0, y: props.hideLayout ? 0 : 20 }}
+          animate={{
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.4, delay: 0.2 },
+          }}
+        >
+          <div className="pb-16 prose">{props.children}</div>
+        </motion.div>
+      </div>
+    </Timeline>
   );
 
   return <MDX />;
