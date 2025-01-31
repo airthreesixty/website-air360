@@ -10,6 +10,7 @@
     "name": "お名前*",
     "email": "メールアドレス*",
     "jobTitle": "職種*",
+    "message": "メッセージ",
     "rule": "Air360の <link>利用規約とプライバシーポリシー</link> に同意するも",
     "cta": "デモをリクエスト",
     "formSuccessMessage": "Your form has been successfully submitted."

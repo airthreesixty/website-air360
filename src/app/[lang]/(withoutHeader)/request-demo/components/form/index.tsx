@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
+  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -20,6 +21,7 @@ import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 import { Link, useRouter } from "@/i18n/routing";
 import ToastErrorMessage from "@/components/common/toast-error-message";
+import { Textarea } from "@/components/ui/textarea";
 
 const FormSchema = z.object({
   name: z.string().min(3, {
@@ -29,6 +31,7 @@ const FormSchema = z.object({
   "job-title": z.string().min(3, {
     message: "Job title must be at least 3 characters.",
   }),
+  message: z.string().optional(),
   terms: z.boolean().refine((val) => val === true),
 });
 
@@ -44,6 +47,7 @@ export function RequestDemoForm({ lang }: { lang: string }) {
     name: "",
     email: "",
     "job-title": "",
+    message: "",
     terms: false,
   };
 
@@ -105,35 +109,48 @@ export function RequestDemoForm({ lang }: { lang: string }) {
               </FormItem>
             )}
           />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <FormField
+              control={form.control}
+              name="email"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>{t("email")}</FormLabel>
+                  <FormControl>
+                    <Input type="email" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
 
+            <FormField
+              control={form.control}
+              name="job-title"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>{t("jobTitle")}</FormLabel>
+                  <FormControl>
+                    <Input type="text" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+          </div>
           <FormField
             control={form.control}
-            name="email"
+            name="message"
             render={({ field }) => (
-              <FormItem>
-                <FormLabel>{t("email")}</FormLabel>
+              <FormItem className="md:col-span-2">
+                <FormLabel>{t("message")}</FormLabel>
                 <FormControl>
-                  <Input type="email" {...field} />
+                  <Textarea rows={4} className="resize-none" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
             )}
           />
-
-          <FormField
-            control={form.control}
-            name="job-title"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>{t("jobTitle")}</FormLabel>
-                <FormControl>
-                  <Input type="text" {...field} />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-
           <FormField
             control={form.control}
             name="terms"
