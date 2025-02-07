@@ -1,7 +1,7 @@
 "use client";
 
 import { useParams } from "next/navigation";
-import { useTransition } from "react";
+import { useEffect, useState, useTransition } from "react";
 import { usePathname, useRouter } from "@/i18n/routing";
 import {
   HoverCard,
@@ -27,9 +27,15 @@ type Props = {
 export default function LocaleSwitcher({ otherLang }: Props) {
   const router = useRouter();
   const [, startTransition] = useTransition();
+  const [isIPad, setIsIPad] = useState(false);
   const pathname = usePathname();
   const params = useParams();
   const t = useTranslations("main.LocaleSwitcher");
+
+  useEffect(() => {
+    const userAgent = navigator.userAgent.toLowerCase();
+    setIsIPad(/ipad|macintosh/.test(userAgent) && "ontouchend" in document);
+  }, []);
 
   function onSelected(nextLocale: string) {
     startTransition(() => {
@@ -44,6 +50,40 @@ export default function LocaleSwitcher({ otherLang }: Props) {
   }
 
   const flagName = otherLang === "en" ? "america" : "japan";
+
+  if (isIPad) {
+    return (
+      <div>
+        <Popover>
+          <PopoverTrigger asChild>
+            <Button variant="ghost" size="icon">
+              <Icon
+                prefix="fas"
+                name="earth-america"
+                className="fa-lg text-slate-900"
+              />
+            </Button>
+          </PopoverTrigger>
+          <PopoverContent className="w-fit">
+            <Button
+              variant="ghost"
+              key={otherLang}
+              value={otherLang}
+              onClick={() => onSelected(otherLang)}
+            >
+              <ExportedImage
+                src={`/flags/${flagName}.svg`}
+                alt="Flag"
+                fill
+                className="!w-6 !h-6 !relative mr-2"
+              />
+              {t("locale", { locale: otherLang })}
+            </Button>
+          </PopoverContent>
+        </Popover>
+      </div>
+    );
+  }
 
   return (
     <>
