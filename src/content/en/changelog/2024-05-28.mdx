@@ -1,0 +1,46 @@
+---
+title: 28th of May 2024
+description: 28th of May 2024 updates
+publishedAt: 2024-05-28
+headerImage: /images/changelog/2024-02-26/headerImage.png
+---
+
+<Badge variant="noLink" className="m-0">
+  <span>New</span>
+</Badge>
+
+**MFA update 🔐**
+2FA is no longer mandatory, but you will receive a reminder to enable it when you log in. You can still use apps like Authy, Microsoft Authenticator, or Duo for two-factor authentication. Additionally, we've added support for email OTP for users who want an extra layer of security without using a third-party 2FA app.
+
+**IP addresses updates 🛠️**
+The IP addresses of our Session Replay servers have been updated.
+Previously, we used the IP addresses 54.229.241.188 and 54.246.39.166 to download CSS from your website for session replays.
+We have now upgraded our systems with the following new IPs:
+- 34.243.65.244
+- 46.51.131.14
+- 52.212.130.157
+
+This change is part of a major upgrade on our side, and these new IPs should remain stable moving forward.
+If you are not filtering IP addresses on your website, no action is required on your part.
+
+
+<Badge variant="noLink" className="m-0">
+  <span>Improvement</span>
+</Badge>
+
+✅**Ability to Filter Session Replays by Purchasing Behavior**
+
+You can now filter session replays based on whether a visitor made a purchase or not. This was also possible before using a user segment. It is now possible to it directly as a filter without relying on a user segment.
+![](/images/changelog/2024-05-28/1.gif)
+
+✅**Corporate Link Scanning Software**
+
+We've added a mechanism to prevent corporate link scanning software from opening emails containing links. Some of our customers experienced issues with expired links when inviting new users or trying to change passwords. This update addresses that problem.
+
+✅**Device Type**
+
+You can now directly select the device type when creating segments and events or when filtering Session Replays or Users (in the Users view)
+Previously, you had to specify the operating system (e.g., iOS and Android for mobile), which was not very user-friendly. Now, you can simply use mobile or non-mobile as platform options.
+![](/images/changelog/2024-05-28/2.gif)
+
+
