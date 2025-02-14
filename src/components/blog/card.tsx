@@ -23,6 +23,7 @@ export default function BlogCard({ post }: BlogCardProps) {
           className="mb-5 rounded-lg !h-50 !w-full object-cover"
           width={500}
           height={300}
+          placeholder="empty"
         />
         <Tags tags={post.tags} noLink />
 

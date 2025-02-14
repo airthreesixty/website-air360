@@ -191,6 +191,13 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li className="mb-4">
+                <Link href="/where-is-your-data">
+                  <div className="hover:underline">
+                    {t("menu.where-is-your-data")}
+                  </div>
+                </Link>
+              </li>
+              <li className="mb-4">
                 <Link href="/privacy-policy">
                   <div className="hover:underline">
                     {t("menu.privacy-policy.title")}
@@ -214,6 +221,11 @@ const Footer: React.FC = () => {
               <li className="mb-4">
                 <Link href="/blog">
                   <div className="hover:underline">{t("menu.blog")}</div>
+                </Link>
+              </li>
+              <li className="mb-4">
+                <Link href="/changelog">
+                  <div className="hover:underline">{t("menu.changelog")}</div>
                 </Link>
               </li>
             </ul>
