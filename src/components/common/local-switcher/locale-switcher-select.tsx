@@ -1,8 +1,8 @@
 "use client";
 
-import { useParams, usePathname } from "next/navigation";
+import { useParams } from "next/navigation";
 import { useEffect, useState, useTransition } from "react";
-import { useRouter } from "@/i18n/routing";
+import { useRouter, usePathname } from "@/i18n/routing";
 import {
   HoverCard,
   HoverCardTrigger,

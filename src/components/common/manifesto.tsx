@@ -1,10 +1,11 @@
 "use client";
 
 import React from "react";
-import enContent from "/src/content/en/manifesto/content.mdx";
-import jaContent from "/src/content/ja/manifesto/content.mdx";
-import frContent from "/src/content/fr/manifesto/content.mdx";
+
 import { usePathname } from "next/navigation";
+import enContent from "@/content/en/manifesto/content.mdx";
+import jaContent from "@/content/ja/manifesto/content.mdx";
+import frContent from "@/content/fr/manifesto/content.mdx";
 
 const contentMap: Record<string, React.ComponentType> = {
   en: enContent,
