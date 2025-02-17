@@ -58,9 +58,10 @@ export function RequestDemoForm({ lang }: { lang: string }) {
   async function onSubmit(data: FormSchemaType) {
     setLoading(true);
     const targetUrl =
-      lang === "en"
-        ? "https://api.form-data.com/f/maxbqln43gps853piaiwy"
-        : "https://api.form-data.com/f/drwe35duuwb2jjt8fuagda";
+      lang === "ja"
+        ? "https://api.form-data.com/f/drwe35duuwb2jjt8fuagda"
+        : "https://api.form-data.com/f/maxbqln43gps853piaiwy";
+
     try {
       await fetch(targetUrl, {
         method: "POST",
