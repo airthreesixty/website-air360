@@ -7,7 +7,7 @@
     "jobTitle": "Titre du poste*",
     "message": "Message*",
     "rule": "En soumettant ce formulaire, vous acceptez nos <link>Conditions d'utilisation et Politique de confidentialité</link> qui expliquent comment nous collectons, utilisons et divulguons vos informations personnelles à des tiers.",
-    "submitButton": "Soumettre",
+    "submitButton": "Envoyer",
     "formSuccessMessage": "Votre formulaire a été soumis avec succès.",
     "address": "Niveau 9 Marunouchi Kitaguchi Building 1-6-5, <br></br>Marunouchi, Chiyoda-ku, Tokyo",
     "location": "Emplacement :",

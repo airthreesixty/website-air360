@@ -7,10 +7,10 @@
     },
     "hero": {
       "title": {
-        "top": "CRO, sans le mal de tête.",
+        "top": "CRO, sans les maux de tête.",
         "bottom": "simplifié."
       },
-      "subtitle": "Nous étions frustrés par le suivi compliqué, les données peu fiables et les analyses qui semblaient impossibles à naviguer. Alors nous avons créé Air360 !"
+      "subtitle": "Nous étions frustrés par le suivi compliqué, les données peu fiables et les analyses impossibles à naviguer. Alors nous avons créé Air360 !"
     },
     "testimonials": {
       "title": "Voyez comme c'est facile avec Air360",
@@ -38,7 +38,7 @@
       },
       "slide-2": {
         "title": "Vous voulez analyser une page ?",
-        "subtitle": "Mochi vous soutient !"
+        "subtitle": "Mochi vous couvre !"
       },
       "slide-3": {
         "title": "Mochi analyse automatiquement ce que vous demandez",
@@ -50,7 +50,7 @@
       "title": "Le CRO est trop difficile",
       "slide-1": {
         "title": "Les données sont assez accablantes",
-        "description": "Vous vous noyez dans les données ? Analyser est tout simplement trop difficile ?"
+        "description": "Vous vous noyez dans les données ? L'analyse est tout simplement trop difficile ?"
       },
       "slide-2": {
         "title": "Les plans de marquage prennent du temps",
@@ -97,15 +97,15 @@
         "gdprCompliant": "Conforme au RGPD",
         "funnelAnalysis": "Analyse de l'entonnoir",
         "userJourneys": "Parcours utilisateur",
-        "onPageAnalysis": "Analyse sur la page",
+        "onPageAnalysis": "Analyse sur page",
         "sessionReplays": "Replays de session"
       }
     },
     "slides": {
       "title": "Nos fonctionnalités sont super puissantes + faciles !!",
       "slide-1": {
-        "title": "Analyse sur la page",
-        "description": "Comprenez la page et la performance de tout élément en un clic sur votre propre site web !"
+        "title": "Analyse sur page",
+        "description": "Comprenez la performance de la page et de tout élément en un clic sur votre propre site web !"
       },
       "slide-2": {
         "title": "Replays de session",
@@ -113,7 +113,7 @@
       },
       "slide-3": {
         "title": "Entonnoir",
-        "description": "Vous pouvez voir où les utilisateurs ont abandonné instantanément, que ce soit une page ou un bouton."
+        "description": "Vous pouvez voir instantanément où les utilisateurs ont abandonné, que ce soit une page ou un bouton."
       },
       "slide-4": {
         "title": "Parcours utilisateur",
