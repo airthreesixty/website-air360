@@ -3,13 +3,20 @@
 import React from "react";
 import enContent from "/src/content/en/manifesto/content.mdx";
 import jaContent from "/src/content/ja/manifesto/content.mdx";
+import frContent from "/src/content/fr/manifesto/content.mdx";
 import { usePathname } from "next/navigation";
+
+const contentMap: Record<string, React.ComponentType> = {
+  en: enContent,
+  ja: jaContent,
+  fr: frContent,
+};
 
 const Manifesto = () => {
   const pathname = usePathname();
   const lang = pathname.split("/")[1];
 
-  const Content = lang === "en" ? enContent : jaContent;
+  const Content = contentMap[lang] || contentMap["en"];
 
   if (!Content) {
     return null;

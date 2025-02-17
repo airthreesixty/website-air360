@@ -32,22 +32,28 @@ export const flattenAndMergeSlugs = (menuSections: MenuSection[]): string[] => {
   );
 };
 
-/**
- * Gets the default array of responsive values that's mainly used in section containers.
- *
- * @example <Container maxW="landingMax" px={defaultPx(32)} />
- * @param desktopValue value for desktop sizes
- * @returns array of responsive values
- */
-export const defaultPx = (
-  desktopValue: number | string | (string | number)[]
-) => {
-  let newValues = [];
-  if (typeof desktopValue === "string" || typeof desktopValue === "number") {
-    newValues = [desktopValue];
-  } else {
-    newValues = desktopValue;
+export async function getMdxContent(
+  lang: string,
+  path: string,
+  defaultLang: string = "en"
+) {
+  try {
+    const content = await import(`@/app/[lang]/(site)/${path}/${lang}.mdx`);
+    return {
+      Content: content.default,
+      frontmatter: content.frontmatter,
+    };
+  } catch (error) {
+    try {
+      const fallbackContent = await import(
+        `@/app/[lang]/(site)/${path}/${defaultLang}.mdx`
+      );
+      return {
+        Content: fallbackContent.default,
+        frontmatter: fallbackContent.frontmatter,
+      };
+    } catch {
+      throw new Error(`MDX content not found for path: ${path}`);
+    }
   }
-
-  return [4, 4, 12, 12, ...newValues];
-};
+}

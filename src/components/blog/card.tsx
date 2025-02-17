@@ -15,7 +15,7 @@ export default function BlogCard({ post }: BlogCardProps) {
   const url = `/blog/${post.slug}` as Pathnames;
 
   return (
-    <Link href={url} className="block ">
+    <Link href={url} className="block">
       <article className="relative p-4 bg-white h-full rounded-lg border border-gray-200 shadow-md hover:shadow-xl transition-shadow">
         <ExportedImage
           src={post.image}

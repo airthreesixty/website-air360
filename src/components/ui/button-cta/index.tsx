@@ -18,7 +18,7 @@ export default function ButtonCta({
     <div
       className={cn(
         "relative z-1 mx-auto",
-        lg ? "h-14 px-8 w-56" : "h-12 px-6",
+        lg ? "h-14 px-8" : "h-12 px-6",
         icon && "mt-12"
       )}
     >
@@ -39,7 +39,7 @@ export default function ButtonCta({
         <div
           className={cn(
             "text-white font-bold flex justify-center items-center",
-            lg ? "text-lg h-14" : "text-base h-12" // フォントサイズと高さを lg に応じて切り替え
+            lg ? "text-lg h-14" : "text-base h-12"
           )}
         >
           {children}

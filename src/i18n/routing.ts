@@ -1,15 +1,17 @@
 //https://github.com/IngEoGeoBuk/next-intl-splitting-multiple-files
+import { SUPPORTED_LANGUAGES } from "@/lib/constants";
 import { createLocalizedPathnamesNavigation } from "next-intl/navigation";
 import { defineRouting } from "next-intl/routing";
 
 export const routing = defineRouting({
-  locales: ["en", "ja"],
+  locales: SUPPORTED_LANGUAGES,
   defaultLocale: "en",
   // localePrefix: 'as-needed',
   pathnames: {
     "/": "/",
     "/en": "/en",
     "/ja": "/ja",
+    "/fr": "/fr",
     "/docs": "/docs",
     "/request-demo": "/request-demo",
     "/ai": "/ai",
@@ -50,6 +52,7 @@ export const routing = defineRouting({
     "/pathnames": {
       en: "/test",
       ja: "/testja",
+      fr: "/testfr",
     },
   },
 });

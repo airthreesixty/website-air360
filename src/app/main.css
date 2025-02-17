@@ -114,7 +114,9 @@ mark {
 }
 
 html[lang="en"] .title1,
-html[lang="en"] .title2 {
+html[lang="en"] .title2,
+html[lang="fr"] .title1,
+html[lang="fr"] .title2 {
   @apply font-really;
 }
 
