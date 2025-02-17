@@ -1,0 +1,22 @@
+{
+  "thank-you": {
+    "title": "Merci d'avoir réservé une réunion avec nous !",
+    "p1": "Nous vous contacterons sous peu.",
+    "p2": "En attendant, prenez une tasse de café et trouvez plus d'inspiration avec ces articles de blog.",
+    "warning": "Avertissement - Réservé aux Héros du Taux de Conversion",
+    "demo-request": {
+      "title": "Merci d'avoir réservé une réunion avec nous !",
+      "description": "Nous vous contacterons sous peu pour adapter notre offre à vos besoins. En attendant, prenez une tasse de café et trouvez plus d'inspiration avec ces articles de blog."
+    },
+    "cro-checklist": {
+      "title": "Merci de vous intéresser à notre liste de recommandations pour l'optimisation du taux de conversion lors du paiement !",
+      "desc": "Veuillez vérifier votre boîte de réception pour recevoir le document de notre part.",
+      "cta": "Télécharger"
+    },
+    "cro-roadmap": {
+      "title": "Merci de vous intéresser à notre modèle gratuit de feuille de route CRO !",
+      "desc": "Veuillez télécharger le fichier pour l'obtenir.",
+      "cta": "Télécharger"
+    }
+  }
+}

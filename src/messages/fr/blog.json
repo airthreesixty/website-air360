@@ -1,0 +1,25 @@
+{
+  "blog": {
+    "air360-team": "Équipe Air360",
+    "blog-index": {
+      "title": "Blog",
+      "description": "Découvrez les dernières tendances en UX pour le e-commerce, des astuces pour améliorer les taux de conversion, et comment Air360 peut vous aider à réussir.",
+      "ogDescription": "Découvrez les dernières tendances en UX pour le e-commerce, des astuces pour améliorer les taux de conversion, et comment Air360 peut vous aider à réussir."
+    },
+    "blog-name": {
+      "description": "Découvrez les dernières tendances en UX pour le e-commerce, des astuces pour améliorer les taux de conversion, et comment Air360 peut vous aider à réussir.",
+      "ogDescription": "Découvrez les dernières tendances en UX pour le e-commerce, des astuces pour améliorer les taux de conversion, et comment Air360 peut vous aider à réussir."
+    },
+    "tag": {
+      "all": "Tous",
+      "marketing": "Marketing",
+      "ux": "UX",
+      "other": "Autre",
+      "ecommerce": "E-commerce",
+      "product": "Produit",
+      "data": "Données"
+    },
+    "related-articles": "Articles connexes",
+    "how-to-increase-conversion": "Inspiration pour les héros de la conversion"
+  }
+}

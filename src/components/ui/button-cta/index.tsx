@@ -18,13 +18,13 @@ export default function ButtonCta({
     <div
       className={cn(
         "relative z-1 mx-auto",
-        lg ? "h-14 px-8 w-56" : "h-12 px-6",
+        lg ? "h-14 px-8" : "h-12 px-6",
         icon && "mt-12"
       )}
     >
       {icon && (
         <ExportedImage
-          className="absolute -top-[46px] right-18 z-10"
+          className="absolute -top-[46px] left-1/2 -translate-x-1/2 z-10"
           src="/favicon2.webp"
           alt="mochi"
           width={80}
@@ -39,7 +39,7 @@ export default function ButtonCta({
         <div
           className={cn(
             "text-white font-bold flex justify-center items-center",
-            lg ? "text-lg h-14" : "text-base h-12" // フォントサイズと高さを lg に応じて切り替え
+            lg ? "text-lg h-14" : "text-base h-12"
           )}
         >
           {children}

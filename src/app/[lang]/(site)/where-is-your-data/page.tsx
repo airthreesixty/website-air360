@@ -1,10 +1,9 @@
 import React from "react";
-import enContent, { frontmatter as enFrontmatter } from "./en.mdx";
-import jaContent, { frontmatter as jaFrontmatter } from "./ja.mdx";
 import { notFound } from "next/navigation";
 import LetterTemplateLayout from "@/components/mdx/letter-template-layout";
 import type { Metadata } from "next";
 import { mdxMetadata } from "@/lib/metadata";
+import { getMdxContent } from "@/lib/utils";
 
 interface PageProps {
   params: { lang: string };
@@ -13,15 +12,20 @@ interface PageProps {
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
-  const { frontmatter } = await import(`./${params.lang}.mdx`);
+  const { frontmatter } = await getMdxContent(
+    params.lang,
+    "where-is-your-data"
+  );
   return mdxMetadata(frontmatter);
 }
 const Page: React.FC<PageProps> = async ({ params: { lang } }) => {
   try {
-    const Content = lang === "en" ? enContent : jaContent;
-    const metadata = lang === "en" ? enFrontmatter : jaFrontmatter;
+    const { Content, frontmatter } = await getMdxContent(
+      lang,
+      "where-is-your-data"
+    );
     return (
-      <LetterTemplateLayout title={metadata.title}>
+      <LetterTemplateLayout title={frontmatter.title}>
         <Content />
       </LetterTemplateLayout>
     );

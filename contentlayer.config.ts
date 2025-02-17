@@ -78,7 +78,7 @@ const documentTypes = contentTypeList.map((contentType) => {
 
     return {
       name: contentType.name,
-      filePathPattern: `{en,ja}/${pathName}/**/*.mdx`,
+      filePathPattern: `{en,ja,fr}/${pathName}/**/*.mdx`,
       contentType: "mdx",
       fields,
       computedFields: {

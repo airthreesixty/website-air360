@@ -7,6 +7,7 @@ import { getBaseUrl } from "@/lib/metadata";
 import Providers from "./providers";
 import { getTranslations } from "@/i18n/getTranslations";
 import Script from "next/script";
+import { SUPPORTED_LANGUAGES } from "@/lib/constants";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -33,7 +34,7 @@ interface RootLayoutProps {
 }
 
 export async function generateStaticParams() {
-  return ["en", "ja"].map((lang) => ({
+  return SUPPORTED_LANGUAGES.map((lang) => ({
     lang,
   }));
 }

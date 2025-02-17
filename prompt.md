@@ -4,7 +4,7 @@ Translate the content into your language, remove this comment, and add any other
 You will probably want to add a glossary for words that are translated incorrectly or inconsistently.
 -->
 
-I am translating the documentation into Japanese
+I am translating the documentation into French
 Translate the Markdown content I'll paste later.
 
 You must strictly follow the rules below.

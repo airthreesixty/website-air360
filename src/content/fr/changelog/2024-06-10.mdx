@@ -1,0 +1,45 @@
+---
+title: 10 juin 2024
+description: Mises à jour du 10 juin 2024
+publishedAt: 2024-06-10
+headerImage: /images/changelog/2024-02-26/headerImage.png
+---
+
+<Badge variant="noLink" className="m-0">
+  <span>Nouveau</span>
+</Badge>
+
+**Amélioration du travail d'équipe**🙌
+
+Il est désormais possible d'ajouter des descriptions et des commentaires 💬 aux entonnoirs, parcours utilisateurs et événements. Nous pensons que cela améliorera grandement la collaboration au sein des équipes.
+C'était une fonctionnalité très demandée, notamment par les grandes équipes qui avaient du mal à partager le contexte sur les entonnoirs, parcours utilisateurs et événements : Quel est le but ? Y a-t-il quelque chose à surveiller ? etc. Plus de dates oubliées !
+La fonctionnalité en est encore à ses débuts et la collaboration est clairement quelque chose que nous voulons/devons améliorer dans Air360 !
+
+**Meilleure organisation des entonnoirs, parcours utilisateurs et événements**🗂️
+Une autre fonctionnalité très demandée était de pouvoir mieux organiser les entonnoirs, parcours utilisateurs et événements.
+Tous ceux-ci peuvent désormais être **triés par propriétaires** (très utile pour les grandes équipes) ce qui est maintenant directement affiché dans les listes.
+Les listes sont plus faciles à lire et vous **pouvez maintenant ajouter des étiquettes** aux entonnoirs et parcours utilisateurs !
+
+**Meilleure recherche**🕵🏻
+Vous pouvez maintenant rechercher vos entonnoirs, parcours utilisateurs et événements non seulement par leurs noms ou étiquettes mais aussi par leurs descriptions.
+Il est également possible de filtrer par propriétaire !
+
+
+**Pages vues virtuelles**✨
+Il existe des cas d'utilisation où vous devez déclencher manuellement un événement de page vue. Par exemple, dans les applications à page unique (SPA) où la page ne se rafraîchit pas et l'URL ne change pas, vous pourriez toujours vouloir déclencher un événement de page vue. Pour répondre à cela, nous avons créé une nouvelle fonction qui envoie un événement de page vue. Vous pouvez trouver plus d'informations sur comment l'utiliser [ici](https://app.air360.io/docs/quickstart-api/#virtual-pageview).
+
+
+<Badge variant="noLink" className="m-0">
+  <span>Amélioration</span>
+</Badge>
+
+La vue d'un seul événement a été améliorée avec la somme de tous les événements sur la période et aussi la légende affichée 👇
+![](/images/changelog/2024-06-10/1.png)
+
+
+<Badge variant="noLink" className="m-0">
+  <span>Correction</span>
+</Badge>
+
+- ✅Correction d'un bug de régression qui permettait la création multiple du même événement avec les mêmes définitions exactes.
+- ✅Diverses corrections de bugs mineurs 🐛
