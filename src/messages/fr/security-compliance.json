@@ -12,12 +12,12 @@
             "mainTitle": "Conformité activée",
             "title1": "Base légale et transparence",
             "title2": "Responsabilité et Gouvernance",
-            "description1": "Dans le cadre de notre conformité à la réglementation sur la protection des données, nous signons des accords de traitement des données (DPA) avec tous nos clients. Ce DPA, un accord contraignant signé entre le contrôleur et le processeur lorsque ce dernier traite les données du contrôleur, détaille les termes contractuels standard requis par le GDPR. Nous sommes également transparents en ce qui concerne les organisations et processus internes ainsi que les sous-traitants avec lesquels nous travaillons.",
-            "description2": "Air360 a nommé un contact pour la protection des données afin de surveiller la conformité au GDPR, évaluer les risques liés à la protection des données, conseiller sur les évaluations d'impact sur la protection des données, échanger avec les clients et coopérer avec les régulateurs."
+            "description1": "Dans le cadre de notre conformité à la réglementation sur la protection des données, nous signons des accords de traitement des données (DPA) avec tous nos clients. Ce DPA, un accord contraignant signé entre le contrôleur et le processeur lorsque ce dernier traite les données du contrôleur, détaille les termes contractuels standard requis par le GDPR. Nous sommes également transparents quant à nos organisations et processus internes ainsi qu'aux sous-traitants avec lesquels nous travaillons.",
+            "description2": "Air360 a désigné un contact pour la protection des données afin de surveiller la conformité au GDPR, évaluer les risques liés à la protection des données, conseiller sur les évaluations d'impact, échanger avec les clients et coopérer avec les régulateurs."
     }, 
         "secure-data": {
             "title": "Gestion et protection sécurisées des données",
-            "subtext": "Limiter l'accès à vos données",
+            "subtext": "Limitez l'accès à vos données",
             "description": "Air360 suit des réglementations strictes en matière de sécurité des données pour garantir que nous sécurisons et limitons l'accès à vos données."
         }
     }

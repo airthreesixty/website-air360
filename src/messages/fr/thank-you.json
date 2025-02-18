@@ -1,15 +1,15 @@
 {
   "thank-you": {
-    "title": "Merci d'avoir réservé une réunion avec nous !",
+    "title": "Merci d'avoir réservé un rendez-vous avec nous !",
     "p1": "Nous vous contacterons sous peu.",
-    "p2": "En attendant, prenez une tasse de café et trouvez plus d'inspiration avec ces articles de blog.",
+    "p2": "En attendant, prenez un café et trouvez plus d'inspiration avec ces articles de blog.",
     "warning": "Attention - Réservé aux Héros du Taux de Conversion",
     "demo-request": {
-      "title": "Merci d'avoir réservé une réunion avec nous !",
-      "description": "Nous vous contacterons sous peu pour adapter notre offre à vos besoins. En attendant, prenez une tasse de café et trouvez plus d'inspiration avec ces articles de blog."
+      "title": "Merci d'avoir réservé un rendez-vous avec nous !",
+      "description": "Nous vous contacterons sous peu pour adapter notre offre à vos besoins. En attendant, prenez un café et trouvez plus d'inspiration avec ces articles de blog."
     },
     "cro-checklist": {
-      "title": "Merci de votre intérêt pour notre liste de recommandations CRO pour le paiement !",
+      "title": "Merci de votre intérêt pour notre checklist des recommandations CRO pour le paiement !",
       "desc": "Veuillez vérifier votre boîte de réception pour recevoir le document de notre part.",
       "cta": "Télécharger"
     },

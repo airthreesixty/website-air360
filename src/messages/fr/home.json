@@ -7,49 +7,49 @@
     },
     "hero": {
       "title": {
-        "top": "CRO, sans les maux de tête.",
+        "top": "CRO, sans prise de tête.",
         "bottom": "simplifié."
       },
-      "subtitle": "Nous étions frustrés par le suivi compliqué, les données peu fiables et les analyses impossibles à naviguer. Alors nous avons créé Air360 !"
+      "subtitle": "Nous étions frustrés par le suivi compliqué, les données peu fiables et les analyses impossibles à naviguer. Alors, nous avons créé Air360 !"
     },
     "testimonials": {
-      "title": "Voyez comme c'est facile avec Air360",
-      "subtitle": "Nos clients ont de belles histoires de réussite.",
+      "title": "Découvrez la simplicité avec Air360",
+      "subtitle": "Nos clients ont de belles histoires de succès.",
       "clubMed": {
         "name": "Nelson Fernandes",
         "quote": "Avec Air360, nous pouvons impliquer plus de personnes dans la prise de décisions basées sur les données à l'échelle mondiale.",
-        "position": "Responsable Analytique Numérique, Club Med"
+        "position": "Responsable Analytique Digitale, Club Med"
       },
       "airCaraibes": {
         "quote": "C'est impressionnant à quel point il est facile et rapide d'obtenir des insights avec Air360 !"
       },
       "journeyFurther": {
         "name": "Jonny Longden",
-        "quote": "Avec Air360, nous obtenons des insights plus rapidement pour aider les clients à avoir un impact positif sur le CRO et les revenus.",
+        "quote": "Avec Air360, nous obtenons des insights plus rapidement pour aider nos clients à avoir un impact positif sur le CRO et les revenus.",
         "position": "Expert CRO et Influenceur, Journey Further"
       }
     },
     "parallaxCard": {
-      "subtext": "Nous entendons votre problème !",
-      "title": "Le CRO est trop difficile",
+      "subtext": "Nous comprenons votre problème !",
+      "title": "Le CRO est trop compliqué",
       "slide-1": {
         "title": "Installez le SDK Air360",
         "subtitle": "Obtenez des données rétroactives et oubliez le plan de suivi !"
       },
       "slide-2": {
         "title": "Vous voulez analyser une page ?",
-        "subtitle": "Mochi vous couvre !"
+        "subtitle": "Mochi est là pour vous !"
       },
       "slide-3": {
         "title": "Mochi analyse automatiquement ce que vous demandez",
-        "subtitle": "Trouvez des comportements cachés et priorisez votre feuille de route !"
+        "subtitle": "Découvrez les comportements cachés et priorisez votre feuille de route !"
       }
     },
     "problems": {
-      "subtext": "Nous entendons votre problème !",
-      "title": "Le CRO est trop difficile",
+      "subtext": "Nous comprenons votre problème !",
+      "title": "Le CRO est trop compliqué",
       "slide-1": {
-        "title": "Les données sont assez accablantes",
+        "title": "Les données sont accablantes",
         "description": "Vous vous noyez dans les données ? L'analyse est tout simplement trop difficile ?"
       },
       "slide-2": {
@@ -58,7 +58,7 @@
       },
       "slide-3": {
         "title": "Il faut du temps pour implémenter un outil",
-        "description": "Les outils sont bien, mais vous ne voulez pas prendre le temps d'en implémenter un autre ?"
+        "description": "Les outils sont bien, mais vous ne voulez pas perdre de temps à en implémenter un autre ?"
       }
     },
     "solutions": {
@@ -95,7 +95,7 @@
         "noCodeErrorDetection": "Détection d'erreurs sans code",
         "customEvents": "Événements personnalisés",
         "gdprCompliant": "Conforme au RGPD",
-        "funnelAnalysis": "Analyse de l'entonnoir",
+        "funnelAnalysis": "Analyse de tunnel",
         "userJourneys": "Parcours utilisateur",
         "onPageAnalysis": "Analyse sur page",
         "sessionReplays": "Replays de session"
@@ -105,19 +105,19 @@
       "title": "Nos fonctionnalités sont super puissantes + faciles !!",
       "slide-1": {
         "title": "Analyse sur page",
-        "description": "Comprenez la performance de la page et de tout élément en un clic sur votre propre site web !"
+        "description": "Comprenez la performance de la page et de tout élément d'un simple clic sur votre propre site !"
       },
       "slide-2": {
         "title": "Replays de session",
-        "description": "Vérifiez les mouvements des utilisateurs réels pour comprendre ce qui se passe vraiment et découvrez où les gens rencontrent des difficultés."
+        "description": "Observez les mouvements réels des utilisateurs pour comprendre ce qui se passe vraiment et découvrez où les gens rencontrent des difficultés."
       },
       "slide-3": {
-        "title": "Entonnoir",
-        "description": "Vous pouvez voir instantanément où les utilisateurs ont abandonné, que ce soit une page ou un bouton."
+        "title": "Tunnel",
+        "description": "Vous pouvez voir instantanément où les utilisateurs abandonnent, que ce soit une page ou un bouton."
       },
       "slide-4": {
         "title": "Parcours utilisateur",
-        "description": "Découvrez ce que vos utilisateurs font après avoir abandonné."
+        "description": "Découvrez ce que font vos utilisateurs après avoir abandonné."
       }
     },
     "increaseConversion": {
@@ -130,10 +130,10 @@
     },
     "cookie-banner": {
       "title": "Plus de cookies",
-      "description": "Air360 est maintenant une solution sans cookies🙌",
+      "description": "Air360 est désormais une solution sans cookies🙌",
       "accept": "Je veux mes cookies🍪",
       "close": "Je ne les ai jamais aimés",
-      "message": "Plus de 🍪 ici. Air360 est maintenant une solution sans cookies🎉"
+      "message": "Plus de 🍪 ici. Air360 est désormais une solution sans cookies🎉"
     }
   }
 }
