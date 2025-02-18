@@ -1,0 +1,46 @@
+---
+title: 28 mai 2024
+description: Mises à jour du 28 mai 2024
+publishedAt: 2024-05-28
+headerImage: /images/changelog/2024-02-26/headerImage.png
+---
+
+<Badge variant="noLink" className="m-0">
+  <span>Nouveau</span>
+</Badge>
+
+**Mise à jour MFA 🔐**
+La 2FA n'est plus obligatoire, mais vous recevrez un rappel pour l'activer lors de votre connexion. Vous pouvez toujours utiliser des applications comme Authy, Microsoft Authenticator ou Duo pour l'authentification à deux facteurs. De plus, nous avons ajouté la prise en charge de l'OTP par email pour les utilisateurs qui souhaitent une couche de sécurité supplémentaire sans utiliser une application 2FA tierce.
+
+**Mises à jour des adresses IP 🛠️**
+Les adresses IP de nos serveurs de Session Replay ont été mises à jour.
+Auparavant, nous utilisions les adresses IP 54.229.241.188 et 54.246.39.166 pour télécharger le CSS de votre site web pour les replays de session.
+Nous avons maintenant mis à niveau nos systèmes avec les nouvelles IP suivantes :
+- 34.243.65.244
+- 46.51.131.14
+- 52.212.130.157
+
+Ce changement fait partie d'une mise à niveau majeure de notre côté, et ces nouvelles IP devraient rester stables à l'avenir.
+Si vous ne filtrez pas les adresses IP sur votre site web, aucune action n'est requise de votre part.
+
+
+<Badge variant="noLink" className="m-0">
+  <span>Amélioration</span>
+</Badge>
+
+✅**Possibilité de filtrer les replays de session par comportement d'achat**
+
+Vous pouvez désormais filtrer les replays de session en fonction de si un visiteur a effectué un achat ou non. Cela était également possible auparavant en utilisant un segment utilisateur. Il est maintenant possible de le faire directement en tant que filtre sans dépendre d'un segment utilisateur.
+![](/images/changelog/2024-05-28/1.gif)
+
+✅**Logiciel de scan de liens d'entreprise**
+
+Nous avons ajouté un mécanisme pour empêcher les logiciels de scan de liens d'entreprise d'ouvrir les emails contenant des liens. Certains de nos clients ont rencontré des problèmes avec des liens expirés lors de l'invitation de nouveaux utilisateurs ou de la tentative de changement de mot de passe. Cette mise à jour résout ce problème.
+
+✅**Type d'appareil**
+
+Vous pouvez désormais sélectionner directement le type d'appareil lors de la création de segments et d'événements ou lors du filtrage des replays de session ou des utilisateurs (dans la vue Utilisateurs).
+Auparavant, vous deviez spécifier le système d'exploitation (par exemple, iOS et Android pour mobile), ce qui n'était pas très convivial. Désormais, vous pouvez simplement utiliser mobile ou non-mobile comme options de plateforme.
+![](/images/changelog/2024-05-28/2.gif)
+
+Il semble que le contenu à traduire n'ait pas été fourni. Veuillez coller le texte Markdown que vous souhaitez que je traduise en français.

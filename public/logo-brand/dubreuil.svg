@@ -1,9 +1,6 @@
 
-<svg version="1.1" id="dubreuil" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" data-dubreuil="dubreuil" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 220 150" style="enable-background:new 0 0 220 150;" xml:space="preserve">
-<style type="text/css">
-	#dubreuil .st0{fill:#e2e2e2 !important;}
-</style>
 <path fill="#e2e2e2" class="st0" d="M161.8,107c7-10.1,11.1-22.3,11.1-35.6c0-34.5-28-62.5-62.5-62.5s-62.5,28-62.5,62.5C47.9,84.6,52,96.9,59,107
 	H161.8z"/>
 <path fill="#071EEF" d="M87.2,92.8c0,0-13.3-35.8-55.1-40.9c25.1-5.4,43.6,1.4,61.4,21.9c18.8-20.1,45.6-23.2,61.6-20.9

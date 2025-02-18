@@ -12,21 +12,21 @@ const Testimonials = async ({ lang }: { lang: string }) => {
       <div className="text-center">
         <h2
           className={cn(
-            "font-really text-black-600 text-center font-bold text-3xl md:text-5xl lg:text-6xl xl:text-7xl",
-            lang === "ja" && "md:text-4xl lg:text-5xl xl:text-6xl font-noto"
+            "font-really text-black-600 text-center font-bold text-3xl md:text-5xl lg:text-6xl",
+            lang === "ja" && "md:text-4xl lg:text-5xl font-noto"
           )}
         >
           {t("testimonials.title")}
         </h2>
-        <p className="mx-auto mt-4 md:text-xl xl:text-3xl text-gray-450 dark:text-gray-300 md:w-3/4 lg:w-3/5 lg:text-2xl">
+        <p className="mx-auto mt-4 md:text-xl text-gray-450 md:w-3/4 lg:w-3/5 lg:text-2xl">
           {t("testimonials.subtitle")}
         </p>
       </div>
       <div className="mt-10 grid gap-8 md:grid-cols-2">
-        <Card className="rounded-3xl bg-white p-8 shadow-card dark:border-gray-700 dark:bg-gray-800 dark:shadow-none sm:col-span-2 sm:px-12 lg:col-span-1 lg:row-span-2">
+        <Card className="rounded-3xl bg-white p-8 shadow-card sm:col-span-2 sm:px-12 lg:col-span-1 lg:row-span-2">
           <div className="flex h-full flex-col justify-center space-y-6 md:space-y-8">
             <ExportedImage
-              className="mr-auto h-12 w-35"
+              className="mr-auto h-auto w-35 md:w-44 lg:w-52"
               src="/logos/clubmed.svg"
               loading="lazy"
               alt="microsoft"
@@ -59,7 +59,7 @@ const Testimonials = async ({ lang }: { lang: string }) => {
 
         <Card className="space-y-6 rounded-3xl bg-white p-8 shadow-card">
           <ExportedImage
-            className="h-6 w-auto"
+            className="h-6 w-auto md:h-7 lg:h-8"
             src="/logos/airCaraibes.svg"
             loading="lazy"
             alt="airbnb"
@@ -73,14 +73,14 @@ const Testimonials = async ({ lang }: { lang: string }) => {
 
         <Card className="space-y-6 rounded-3xl bg-white p-8 shadow-card">
           <ExportedImage
-            className="h-12 w-auto"
+            className="h-12 w-auto md:h-14 lg:h-16"
             src="/logos/journey-further.png"
             loading="lazy"
             alt="ge"
             width="108"
             height="48"
           />
-          <p className="text-black-600 lg:text-xl xl:text-2xl dark:text-gray-300">
+          <p className="text-black-600 lg:text-xl xl:text-2xl">
             "{t("testimonials.journeyFurther.quote")}"
           </p>
           <div className="flex items-center gap-3 text-left">

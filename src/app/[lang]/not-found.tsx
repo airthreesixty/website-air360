@@ -1,14 +1,14 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { pathname } from "next-extra/pathname";
 import ExportedImage from "next-image-export-optimizer";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 
 export default function NotFound() {
   const t = useTranslations("main");
-  const pathName = pathname();
+  const pathName = usePathname();
   return (
     <section className="bg-white dark:bg-gray-900">
       <div className="container py-8 lg:py-16">

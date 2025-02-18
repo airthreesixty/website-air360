@@ -30,7 +30,7 @@ const Page: React.FC<Props> = async ({ params: { lang } }) => {
         <h1 className="page-thank-you__title">
           <span className="inline-block">{t("title")}</span>
         </h1>
-        <MochiFlying className="mt-12 mb-10" />
+        <MochiFlying className="mt-12 mb-10 size-28" />
         <p className="page-thank-you__description">{t("p1")}</p>
         <p className="page-thank-you__description pt-5">{t("p2")}</p>
       </div>

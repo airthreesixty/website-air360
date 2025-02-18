@@ -9,6 +9,7 @@
     "name": "Name*",
     "email": "Email*",
     "jobTitle": "Job Title*",
+    "message": "Message",
     "rule": "I agree to <link>the terms of use and privacy policy</link> of Air360",
     "cta": "Request Demo",
     "formSuccessMessage": "Your form has been successfully submitted.",

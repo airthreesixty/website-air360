@@ -1,0 +1,60 @@
+---
+
+title: 16 avril 2024
+
+description: Mises à jour du 16 avril 2024
+
+publishedAt: 2024-04-16
+
+headerImage: /images/changelog/2024-02-26/headerImage.png
+
+---
+
+<Badge variant="noLink" className="m-0">
+
+  <span>Nouveau</span>
+
+</Badge>
+
+### Nouveau pixel
+
+Nous venons de lancer un SDK JS mis à jour, plus rapide et plus léger.
+
+### Pourquoi un nouveau pixel ?
+
+Cette nouvelle version intègre plusieurs améliorations par rapport à son prédécesseur. Bien que notre pixel actuel soit déjà l'un des plus légers du marché, notre équipe a réussi à réduire sa taille de 40kB à 37kB, le rendant 8% plus petit. Bien que cela puisse sembler peu, dans le domaine de l'UX, chaque octet et milliseconde compte !
+
+Le nouveau pixel utilise la compression Brotli au lieu de Gzip, ce qui permet une décompression plus rapide côté navigateur. Nos benchmarks indiquent que le temps de décompression précédent de 24ms a maintenant été réduit à 11ms (le plus bas, le mieux !). Encore une fois, chaque milliseconde compte.
+
+En plus de sa taille réduite, nous avons mis à jour le pixel pour suivre le rythme de l'évolution rapide du paysage web, garantissant la compatibilité avec les dernières fonctionnalités des navigateurs. Cela ouvre également de nouvelles possibilités pour les futures capacités d'Air360. Restez à l'écoute !
+
+### Comment mettre à jour ?
+
+Il suffit de remplacer le pixel précédent que vous aviez pour Air360 par celui de notre guide de démarrage rapide ici : https://app.air360.io/docs/getting-started/#on-your-website
+
+Note : Si vous avez installé notre pixel après le 3 janvier 2024, vous n'avez rien à faire.
+
+### Quand mettre à jour ?
+
+Il n'y a pas d'urgence. Le SDK JS actuel continuera à être pris en charge jusqu'au 1er août 2024. Cependant, nous vous encourageons à mettre à jour dès que possible pour des performances optimales.
+
+<Badge variant="noLink" className="m-0">
+
+  <span>Amélioration</span>
+
+</Badge>
+
+**Replays de session**
+
+- Diverses améliorations de performance sur les replays de session.
+
+- Possibilité de masquer des éléments HTML des replays de session sans aucun code. Voyez comment vous pouvez faire [cela ici](https://help.air360.io/settings/app-settings/#pii-personal-identifiable-information-to-remove). (Disponible uniquement avec le nouveau pixel)
+
+<Badge variant="noLink" className="m-0">
+
+  <span>Correction</span>
+
+</Badge>
+
+**Plugin Chrome**
+Correction d'un problème dans le calcul du taux d'exposition qui affectait certaines pages dans des conditions spécifiques.
