@@ -51,6 +51,9 @@ jobs:
       - name: Install pnpm
         run: npm install -g pnpm
 
+      - name: Clean pnpm store
+        run: pnpm store prune
+
       - name: Install dependencies
         run: pnpm install
 
