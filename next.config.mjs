@@ -65,7 +65,11 @@ const nextConfig = {
 
 const withMDX = createMDX({
   options: {
-    remarkPlugins: [remarkGfm, remarkFrontmatter, remarkMdxFrontmatter],
+    remarkPlugins: [
+      [remarkGfm, { tablePipeAlign: false }],
+      remarkFrontmatter,
+      remarkMdxFrontmatter,
+    ],
     rehypePlugins: [
       rehypeSlug,
       [
