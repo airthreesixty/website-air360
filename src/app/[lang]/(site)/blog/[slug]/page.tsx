@@ -24,7 +24,7 @@ export async function generateMetadata({
   return mdxMetadata(meta);
 }
 
-const Page: NextPage<Props> = async ({ params: { lang, slug } }) => {
+const Page: NextPage<Props> = ({ params: { lang, slug } }) => {
   const post = getPostBySlug(slug, lang);
 
   const MDXContent = useMDXComponent(post?.body.code ?? ""); // MDX content is available as "code"
