@@ -10,40 +10,6 @@ html {
   scroll-behavior: smooth;
 }
 
-table {
-  border-collapse: collapse;
-  /* overflow-x: scroll; */
-  /* border: solid 2px #6B7280; */
-}
-
-th {
-  white-space: nowrap;
-}
-
-/* th, td {
-  border: solid 1px #6B7280;
-} */
-
-th:first-child {
-  width: 8%;
-}
-
-th:nth-child(2) {
-  width: 13%;
-}
-
-th:nth-child(3) {
-  width: 21%;
-}
-
-th:nth-child(4) {
-  width: 10%;
-}
-
-td {
-  word-break: break-all;
-}
-
 h2,
 h3 {
   scroll-margin-top: 100px;
