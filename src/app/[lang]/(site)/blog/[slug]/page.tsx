@@ -31,12 +31,6 @@ const Page: NextPage<Props> = async ({ params: { lang, slug } }) => {
 
   if (!post) return null;
 
-  // const mdxSource = await serialize(post.body.code, {
-  //   mdxOptions: {
-  //     remarkPlugins: [remarkGfm], // テーブルを正しく解釈する
-  //   },
-  // });
-
   const {
     readingTime,
     published,
