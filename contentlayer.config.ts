@@ -2,7 +2,7 @@ import {
   defineDocumentType,
   FieldDefs,
   makeSource,
-} from "contentlayer/source-files";
+} from "@contentlayer/source-files";
 import rehypeSlug from "rehype-slug"; // Optional: Add slugs to headings
 import remarkGfm from "remark-gfm"; // Optional: Enable GitHub flavored markdown
 
