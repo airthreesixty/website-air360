@@ -55,6 +55,9 @@ export async function generateMetadata({
     metadataBase: url,
     alternates: {
       canonical: "./",
+      languages: Object.fromEntries(
+        SUPPORTED_LANGUAGES.map((l) => [l, `${baseUrl}/${l}`])
+      ),
     },
     openGraph: {
       title: t("title"),
