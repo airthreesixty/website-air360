@@ -85,7 +85,7 @@ const ItemBlocks: React.FC = () => {
               href={process.env.NEXT_PUBLIC_APP_URL as Pathnames}
               target="_blank"
             >
-              Login
+              {t("login")}
             </Link>
           </Button>
         </SheetTrigger>

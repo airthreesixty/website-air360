@@ -345,7 +345,7 @@ const Bremont = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 845 400"
-      className="h-16 object-contain w-full md:h-16"
+      className="h-14 object-contain w-full"
     >
       <path
         d="M18.67,393.59c-0.87,0-1.53-0.22-1.96-0.66c-0.44-0.44-0.66-1.09-0.66-1.96v-86.44c0-0.96,0.22-1.64,0.66-2.03

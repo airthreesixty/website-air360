@@ -28,15 +28,14 @@ const DemoRequestPage: NextPage<Props> = async ({ params: { lang } }) => {
   return (
     <section className="bg-white dark:bg-gray-900">
       <div className="max-w-screen-1400 px-4 py-8 mx-auto lg:grid lg:gap-20 lg:py-16 lg:grid-cols-12">
-        <div className="flex-col justify-between hidden mr-auto lg:flex lg:col-span-6 xl:mb-0">
-          <div className="lg:mb-6">
+        <div className="flex-col hidden mr-auto lg:flex lg:col-span-6 xl:mb-0">
+          <div className="lg:mb-10">
             <div className="inline-flex items-center mb-6 text-2xl font-semibold text-gray-900 lg:mb-10 dark:text-white">
               <Logo isDark />
             </div>
-            <h1 className="mb-3 font-semibold text-gradient text-xl md:text-2xl lg:text-3xl">
+            <h1 className="mb-5 font-semibold text-gradient text-xl md:text-2xl lg:text-3xl">
               {t("title1")}
             </h1>
-            <h2 className="mb-4 text-gray-500 lg:text-lg">{t("subtitle1")}</h2>
             <div className="flex">
               <div>
                 <p className="mb-2 text-black-600 font-bold">

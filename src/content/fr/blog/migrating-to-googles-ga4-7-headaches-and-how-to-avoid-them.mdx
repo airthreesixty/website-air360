@@ -1,0 +1,140 @@
+---
+title: Migration vers GA4 de Google - 7 Problèmes et Comment les Éviter
+published: 2023-4-26
+tags: 
+  - data
+readingTime: 10
+image: /blog/migrate-GA4.jpeg
+metaDesc: Bien que cela ne soit pas une bonne nouvelle pour d'innombrables utilisateurs de GA3 (28,1 millions de sites utilisent actuellement Google Analytics), le temps presse et Google exhorte les utilisateurs à migrer vers GA4 immédiatement.  
+---
+
+Prêt ou non, Google met à jour Google Analytics de Universal Analytics (également connu sous le nom de UA ou GA3) vers une plateforme complètement nouvelle et améliorée, Google Analytics 4 (GA4). 
+
+Bien que cela ne soit pas une bonne nouvelle pour d'innombrables utilisateurs de GA3 (28,1 millions de sites utilisent actuellement Google Analytics), le temps presse et Google exhorte les utilisateurs à migrer vers GA4 immédiatement.  
+
+Il y a une bonne raison pour cette urgence. À partir du 1er juillet 2023, Google UA cessera de collecter de nouvelles données provenant des interactions des utilisateurs, et il ne sera pas possible de migrer les données existantes après cette date. 
+
+Cette échéance imminente rend vital pour les utilisateurs de configurer GA4 sur tous leurs sites Web et applications dès maintenant afin d'avoir autant de données disponibles que possible lorsque UA sera abandonné. Après la date limite de juillet, UA sera toujours accessible pour consultation, mais il cessera de collecter de nouvelles données.  
+
+## Qu'est-ce que Google Analytics 4 ?
+Bien qu'il offre une grande partie des mêmes fonctionnalités que Universal Analytics, GA4 est un produit complètement nouveau avec une interface entièrement différente, des métriques disponibles et une méthodologie de collecte de données. 
+
+GA4 est la réponse de Google aux changements de comportement des consommateurs et aux modifications significatives des politiques de confidentialité en ligne. Avec GA4, Google semble se préparer à un monde de plus en plus soucieux de la confidentialité où les cookies ne sont pas aussi disponibles pour le suivi. 
+
+Google affirme que GA4 apportera une évolution des normes de mesure, permettant aux utilisateurs de mesurer différents types de données provenant des applications iOS et Android et du Web. GA4 permet un suivi axé sur la confidentialité, des analyses prédictives pilotées par l'IA et des données intercanaux. 
+
+### Pourquoi les entreprises craignent-elles de migrer vers GA4 
+La perspective de passer à une toute nouvelle plateforme d'analyse n'a pas été bien accueillie par les entreprises qui traitent de grandes quantités de données liées aux affaires. La migration à grande échelle est toujours risquée.
+
+Les entreprises de commerce électronique qui dépendent de la précision des données clients pour prendre des décisions commerciales pourraient être particulièrement affectées par la perte potentielle de données précieuses lors du processus de migration.
+
+De plus, un processus de migration long et une courbe d'apprentissage importante pourraient entraîner des perturbations du flux de travail, en particulier pour les entreprises migrant de grandes quantités de données. Ensuite, il y a le problème de la sécurité des données. Certaines données seront-elles perdues lors de la traduction, et si oui, combien ?
+
+Pour ces raisons, une hésitation à passer à GA4 est compréhensible. De l'avis général, migrer vers GA4 n'est pas une promenade de santé et s'accompagne de nombreux défis. Examinons donc GA4, comment il diffère de GA3, les maux de tête liés à la migration vers une nouvelle plateforme d'analyse, et comment les surmonter.
+
+## Quelle est la différence entre GA4 et Universal Analytics/GA3 ?
+La principale différence entre les plateformes d'analyse de Google est que GA4 est une architecture entièrement nouvelle. Alors que Google a construit le modèle GA3 autour du concept de sessions et de vues de page, GA4 se concentre plutôt sur les événements. GA4 classe chaque action comme un événement — qu'il s'agisse de vues de page, de clics, de soumissions de formulaires ou d'événements personnalisés.
+
+Selon Google, ce changement d'architecture permet à GA4 de collecter beaucoup plus de données que UA avec un processus de mesure plus court. Et ce qui intéresse les marques de commerce électronique, c'est que GA4 recueille des informations plus approfondies sur l'activité des utilisateurs sur les sites Web ou les applications. En fait, Google affirme que GA4 peut suivre à peu près tout, pas seulement le trafic Web.
+
+## Les 7 défis de la migration vers GA4
+![](/blog/migrate-GA4-1.webp)
+Passer à GA4 s'accompagne de nombreux maux de tête, notamment des préoccupations en matière de sécurité des données, des problèmes de compatibilité, des temps d'arrêt pendant la migration et la complexité globale du processus. Ces problèmes peuvent être particulièrement préoccupants pour les spécialistes du marketing numérique de commerce électronique qui ont besoin d'un accès constant à des données à jour. Voici cinq maux de tête signalés par les utilisateurs qui ont déjà migré vers GA4.
+
+### 1. Manque de temps
+Universal GA cessera de suivre les données d'ici juillet 2023. Selon Google, les propriétés standard d'Universal Analytics cesseront de traiter de nouveaux hits le 1er juillet 2023. Leur 360 Universal Analytics cessera de traiter de nouveaux hits le 1er octobre 2023.
+
+### 2. Absence de Support de Migration depuis UA
+Selon les utilisateurs qui ont déjà migré, le principal inconvénient de GA4 est l'incapacité de migrer les données existantes depuis UA.
+
+Cette limitation n'affecte que les utilisateurs existants de UA, mais les données pour ces utilisateurs sont divisées en deux systèmes d'analyse distincts.
+
+Cette séparation rend impossible l'identification de motifs à travers les deux ensembles de données sans d'abord les exporter dans un système séparé pour analyse.
+
+Pour éviter ce problème, les utilisateurs doivent configurer GA4 sur tous leurs sites web et applications dès maintenant afin que le maximum de données soit disponible lorsque UA sera abandonné.
+
+### 3. Intégration de Données Complexe et Coûteuse
+Les entreprises qui gèrent de grandes quantités de données doivent également faire face à la tâche complexe et chronophage d'intégrer leurs données existantes avec la nouvelle plateforme GA4, ce qui nécessite de migrer toutes les données de leur ancienne plateforme vers la nouvelle.
+
+Cela pourrait prendre un temps considérable pour les entreprises avec d'énormes banques de données, car la migration implique beaucoup de marquage, de remarquage et de raffinement des couches de données.
+
+Ce n'est pas une migration comme Google le présente - c'est une architecture entièrement nouvelle qui nécessitera une installation manuelle et complexe obligeant les administrateurs à gérer les deux applications jusqu'à ce que GA3 soit abandonné.
+
+Faire la transition signifie que vous devez d'abord configurer GA4, puis configurer Google Tag Manager, puis marquer (ou remarquer) chaque événement sur votre site... et ensuite attendre que de nouvelles données soient collectées... et ensuite croiser les doigts et espérer que vous avez marqué les bons événements. Un processus aussi étendu soulève également des préoccupations concernant la sécurité des données et la perte potentielle de données pendant la migration.
+
+### 4. Pas de Collecte de Données Rétroactive
+L'un des plus grands inconvénients de GA4 est qu'il s'agit d'une nouvelle propriété conçue pour collecter à la fois des données de site web et d'application afin de mieux comprendre le parcours client.
+
+Bien que cela semble bien, une nouvelle propriété signifie également que les utilisateurs doivent repartir de zéro. Aucune des données historiques d'un utilisateur ne sera transférée de UA vers la nouvelle plateforme.
+
+Le flux de données n'est disponible que lorsqu'ils commencent à suivre un événement à l'intérieur de GA4. Les marques ne peuvent toujours pas voir ce qui s'est passé dans les événements qu'elles n'ont pas encore choisi d'examiner.
+
+Malgré la promesse du "suivi sans code", GA4 nécessite toujours l'utilisation de Google Tag-Manager et un suivi manuel, ce qui signifie que les équipes ne peuvent pas être autonomes.
+
+Vous aurez toujours un ensemble de données incomplet et biaisé sans capacité de données rétroactives, et les équipes n'auront aucun moyen de révéler des zones de friction inconnues.
+
+### 5. Les données historiques ne seront pas transférées vers GA4
+La nouvelle plateforme GA4 collectera de nouvelles données utilisateur et de session une fois que les marques auront configuré la plateforme. Pour cette raison, les utilisateurs devraient migrer vers GA4 dès que possible.
+
+C'est l'un des problèmes les plus difficiles de Google Analytics 4, surtout pour les entreprises traitant de grandes quantités de données.
+
+Certains utilisateurs ont exporté toutes leurs données GA vers leur data lake ; seule BigQuery est intégrée par défaut. L'intégration BigQuery est incluse sans frais.
+
+Mais vous devrez payer pour toute utilisation de données au-delà des limites du modèle gratuit, qui sont de 10 Go de stockage et 1 To de traitement de données de requête par mois.
+
+Assurez-vous donc de prendre en compte les coûts de données dans vos calculs de transition.
+
+### 6. Incohérence des données
+GA4 suit les données d'une manière très différente de Universal Analytics. Même les métriques portant le même nom, comme les sessions et les utilisateurs, seront mesurées différemment.
+
+Les administrateurs et les équipes doivent vivre dans les deux applications en tandem pour mieux comprendre le delta des métriques entre les deux plateformes jusqu'à ce que GA3 soit abandonné.
+
+Ils doivent mettre en place un suivi double, choisir les événements essentiels, puis organiser et re-étiqueter tout sur votre site.
+
+Certaines entreprises estiment que cela pourrait prendre des années. La migration des propriétés UA vers GA4 peut être problématique, que vous le fassiez vous-même ou que vous laissiez l'outil de Google automatiser le processus.
+
+Le processus devient encore plus complexe si vous avez beaucoup de données ou de nombreuses configurations personnalisées.
+
+### 7. Courbe d'apprentissage abrupte
+GA4 est une version entièrement nouvelle de Google Analytics, avec une interface utilisateur et des fonctionnalités repensées, donc la courbe d'apprentissage est considérable.
+
+Comprendre et maîtriser les nouvelles fonctionnalités de cette plateforme prendra du temps, en particulier pour les entreprises qui traitent de grandes quantités de données. GA4 est également hautement personnalisable, ce qui le rend encore plus difficile à apprendre.
+
+Cela pourrait également être coûteux, car de nombreuses entreprises pourraient avoir besoin d'embaucher des experts tiers pour aider à configurer et à mettre en œuvre la nouvelle plateforme.
+
+## Comment surmonter les défis lors de la migration vers GA4
+Surmonter les obstacles inhérents à la migration vers GA4 est simple : apprenez autant que possible sur GA4 avant et après la migration. Les entreprises qui s'immergent dans l'éducation GA4 surmonteront plus rapidement la courbe d'apprentissage et éviteront les perturbations du flux de travail.
+
+Mais le temps n'est pas une ressource sur laquelle vous pouvez toujours compter, c'est pourquoi votre entreprise pourrait envisager un outil supplémentaire plus intuitif comme Air360 qui collecte et affiche les données dont vous avez besoin. Voici quelques avantages à diversifier vos outils d'analyse.
+
+### 1. Gagnez du temps et ne perdez aucune donnée
+ Vous n'avez pas encore de plan de marquage ? Pas de soucis. Installez le pixel Air360 et suivez chaque interaction et session par défaut.
+
+ Cela signifie que vous avez instantanément accès aux données historiques, depuis le moment où vous avez installé votre outil d'analyse. Si vous réalisez que vous souhaitez suivre un comportement spécifique, il est déjà là, vous apportant la tranquillité d'esprit.
+
+### 2. Simplifiez votre migration de marquage
+ Pas clair sur ce qu'il faut migrer vers GA4 ? Si vous avez Air360 installé sur votre site web, cela clarifiera quels événements vous devez suivre sur GA4.
+
+ Laissez toutes les interactions à Air360 (suivi automatique, pas de marquage) et dirigez simplement les conversions vers GA4. Cela réduit le temps et les ressources nécessaires pour obtenir les données dont vous avez besoin.
+
+### 3. Ne marquez plus jamais les interactions utilisateur
+ L'ère du marquage et de la cartographie est révolue. Avec le suivi automatique Air360, un type de suivi sans code qui capture automatiquement le comportement des utilisateurs comme les clics et les vues de page avant que vous ne choisissiez de les suivre, il n'est pas nécessaire de marquer une interaction utilisateur. Il suffit d'enregistrer les événements. C'est beaucoup plus intuitif et moins gourmand en ressources que toute autre solution.
+
+### 4. Découvrez des choses que vous ne saviez pas se produire
+ Obtenez ce que, comment et pourquoi vos utilisateurs se comportent d'une certaine manière. Allez au-delà de l'analyse web et identifiez facilement les zones de frustration et obtenez les recommandations dont vous avez besoin pour augmenter votre conversion.
+
+## Simplifiez votre migration vers GA4 avec Air360
+
+Heureusement, Google reconnaît les défis. À cette fin, l'entreprise fournit aux entreprises des ressources pour les aider à apprendre à utiliser GA4, y compris des cours en ligne, des certifications, des guides de formation et des forums de support.
+
+Google travaille également avec des partenaires pour fournir aux entreprises des conseils d'experts et un support pour le processus de migration.
+
+En fin de compte, pour migrer vers GA4 avec succès et collecter les données dont vous avez besoin, vous pourriez vouloir faire appel à un partenaire.
+
+Air360 est une solution d'analyse de l'expérience utilisateur dynamique qui offre aux marques de commerce électronique DTC la tranquillité d'esprit pour sauvegarder en toute sécurité les données et rationaliser les processus de retagging et de migration.
+
+Air360 aidera à transformer les données en informations exploitables sur la façon dont les visiteurs utilisent votre site web et vos applications.
+
+Cette compréhension approfondie donne aux marques de commerce électronique DTC une meilleure compréhension du comportement des clients, ce qui se traduit par des taux de conversion considérablement améliorés et une augmentation des revenus.
+
+Contactez Air360 dès aujourd'hui !
