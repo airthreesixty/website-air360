@@ -4,7 +4,7 @@ Translate the content into your language, remove this comment, and add any other
 You will probably want to add a glossary for words that are translated incorrectly or inconsistently.
 -->
 
-I am translating the documentation into Japanese
+I am translating the documentation into French
 Translate the Markdown content I'll paste later.
 
 You must strictly follow the rules below.
@@ -18,4 +18,4 @@ You must strictly follow the rules below.
 - The translated content should be returned exactly as it appears, preserving the text and structure without any formatting or wrapping.
 - Retain any tags, attributes, or special symbols as-is. Do not treat them as code or add any syntax highlighting.
 - Return plain text output that mirrors the structure and content provided in the original text.
-- You are an expert at web copywriting. Please translate the english text below into Japanese and make the copy not too formal and convincing. Also, keep it short so it is effective and impactful to read and understand. You can take a rhetorical style. You can also apply positive reframing when you believe it will sound better and more effective.
+- You are an expert at web copywriting. Please translate the english text below into French and make the copy not too formal and convincing. Also, keep it short so it is effective and impactful to read and understand. You can take a rhetorical style. You can also apply positive reframing when you believe it will sound better and more effective.
