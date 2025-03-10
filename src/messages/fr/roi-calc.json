@@ -1,0 +1,16 @@
+{
+  "roi-calc": {
+    "header": "Combien de revenus supplémentaires pouvez-vous générer grâce à Air360 dans les 3 prochains mois ?",
+    "label1": "Sessions mensuelles de la boutique en ligne",
+    "label2": "Taux de conversion actuel (%)",
+    "label3": "Valeur moyenne des commandes",
+    "title": "Calculateur de ROI",
+    "subtitle": "Calculateur de ROI",
+    "description": "Calculez votre ROI avec Air360",
+    "calculate": "Calculer",
+    "additional-revenue": "Vous pouvez atteindre un Revenu Supplémentaire",
+    "roi": "Combien de fois le retour sur votre investissement Air360",
+    "times": "fois",
+    "caution": "Ce calculateur est une simulation non contraignante des résultats que vous pourriez obtenir en utilisant notre solution. Nous avons projeté vos résultats avec une augmentation de 50 % de votre taux de conversion moyen."
+  }
+}

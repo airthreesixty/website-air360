@@ -1,0 +1,18 @@
+{
+  "request-demo": {
+    "title": "Demander une Démo",
+    "title1": "Analyse UX Simplifiée",
+    "subtitle1": "Air360 simplifie la compréhension de l'expérience utilisateur numérique.",
+    "description1": "・Découvrez des insights sur le parcours digital",
+    "description2": "・Ciblez les zones et segments à fort impact",
+    "description3": "・Évaluez l'impact global des tests A/B",
+    "name": "Nom*",
+    "email": "Email*",
+    "jobTitle": "Titre du poste*",
+    "message": "Message",
+    "rule": "J'accepte <link>les conditions d'utilisation et la politique de confidentialité</link> d'Air360",
+    "cta": "Demander une Démo",
+    "formSuccessMessage": "Votre formulaire a été soumis avec succès.",
+    "content": "Remplissez le court formulaire et réservez un appel rapide avec un expert CRO pour que nous puissions adapter notre offre Air360 à vos besoins."
+  }
+}

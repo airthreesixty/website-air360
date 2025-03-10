@@ -59,9 +59,9 @@ export function ContactForm({ lang }: { lang: string }) {
     setLoading(true);
     try {
       const targetUrl =
-        lang === "en"
-          ? "https://api.form-data.com/f/c5zpyru1kzimpu3696ybl"
-          : "https://api.form-data.com/f/scwbyukgrfktihhosxsdl";
+        lang === "ja"
+          ? "https://api.form-data.com/f/scwbyukgrfktihhosxsdl"
+          : "https://api.form-data.com/f/c5zpyru1kzimpu3696ybl";
       await fetch(targetUrl, {
         method: "POST",
         headers: {

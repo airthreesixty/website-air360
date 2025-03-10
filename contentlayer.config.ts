@@ -2,7 +2,7 @@ import {
   defineDocumentType,
   FieldDefs,
   makeSource,
-} from "contentlayer/source-files";
+} from "@contentlayer/source-files";
 import rehypeSlug from "rehype-slug"; // Optional: Add slugs to headings
 import remarkGfm from "remark-gfm"; // Optional: Enable GitHub flavored markdown
 
@@ -17,6 +17,14 @@ const baseFields: FieldDefs = {
 const productFields: FieldDefs = {
   ...baseFields,
   published: { type: "date", required: false },
+};
+
+const changelogFields: FieldDefs = {
+  title: { type: "string", required: true },
+  publishedAt: { type: "date", required: true },
+  headerImage: { type: "string", required: true },
+  authors: { type: "list", of: { type: "string" }, required: false },
+  description: { type: "string", required: true },
 };
 
 interface DocumentTypeConfig {
@@ -56,6 +64,11 @@ const contentTypeList: DocumentTypeConfig[] = [
     path: "product",
     fields: productFields,
   },
+  {
+    name: "Changelog",
+    path: "changelog",
+    fields: changelogFields,
+  },
 ];
 
 const documentTypes = contentTypeList.map((contentType) => {
@@ -65,7 +78,7 @@ const documentTypes = contentTypeList.map((contentType) => {
 
     return {
       name: contentType.name,
-      filePathPattern: `{en,ja}/${pathName}/**/*.mdx`,
+      filePathPattern: `{en,ja,fr}/${pathName}/**/*.mdx`,
       contentType: "mdx",
       fields,
       computedFields: {

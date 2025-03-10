@@ -2,8 +2,7 @@ import React from "react";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { mdxMetadata } from "@/lib/metadata";
-import enContent from "./en.mdx";
-import jaContent from "./ja.mdx";
+import { getMdxContent } from "@/lib/utils";
 
 interface PageProps {
   params: { lang: string };
@@ -13,13 +12,13 @@ interface PageProps {
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
-  const { frontmatter } = await import(`./${params.lang}.mdx`);
+  const { frontmatter } = await getMdxContent(params.lang, "privacy-policy");
   return mdxMetadata(frontmatter);
 }
 
 const Page: React.FC<PageProps> = async ({ params: { lang } }) => {
   try {
-    const Content = lang === "en" ? enContent : jaContent;
+    const { Content } = await getMdxContent(lang, "privacy-policy");
 
     return (
       <div className="flex justify-center">
