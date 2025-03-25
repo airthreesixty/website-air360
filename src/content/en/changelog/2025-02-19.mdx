@@ -1,0 +1,20 @@
+---
+title: 19th of February 2025
+description: 19th of February 2025 updates
+publishedAt: 2025-02-19
+headerImage: /images/changelog/2024-02-26/headerImage.png
+---
+<Badge variant="noLink" className="m-0">
+  <span>Improvements</span>
+</Badge>
+
+## Automatic tracking of datalayer push events
+This was a popular/requested feedback that will allow us to automatically capture events sent via `dataLayer.Push`
+Whenever a `dataLayer.push` will be triggered on a website, this will automatically trigger an `Air360.track()` with the same event.
+For example, when a `dataLayer.push({ event: "register" })` is performed, Air360 JS SDK will automatically trigger a `Air360.track("register")`
+This can be then used as any other API/custom event in Air360.
+**Note:** While you can already use the events here via the usual "Custom events", we're also going to improve the ease of use here, stay tuned!
+
+## Handle label in input type submit/button
+This is something we recently saw on a client's website:submit/button label's were not automatically captured until now.
+This is now captured by the new JS SDK.

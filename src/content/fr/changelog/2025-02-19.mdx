@@ -1,0 +1,20 @@
+---
+title: 19 Février 2025
+description: Mises à jour du 19 Février 2025
+publishedAt: 2025-02-19
+headerImage: /images/changelog/2024-02-26/headerImage.png
+---
+<Badge variant="noLink" className="m-0">
+  <span>Amélioration</span>
+</Badge>
+
+## Suivi automatique des événements push de la couche de données
+Il s'agit d'un feedback populaire/demandé qui nous permettra de capturer automatiquement les événements envoyés via `dataLayer.Push`
+Chaque fois qu'un `dataLayer.push` sera déclenché sur un site web, cela déclenchera automatiquement un `Air360.track()` avec le même événement.
+Par exemple, lorsqu'un `dataLayer.push({ event : « register » })` est exécuté, Air360 JS SDK déclenchera automatiquement un `Air360.track(« register »)`
+Celui-ci peut alors être utilisé comme tout autre événement API/personnalisé dans Air360.
+**Note:** Bien que vous puissiez déjà utiliser les événements ici via les « événements personnalisés » habituels, nous allons également améliorer la facilité d'utilisation ici, restez à l'écoute !
+
+## Gérer l'étiquette dans le type d'entrée submit/button
+C'est quelque chose que nous avons récemment vu sur le site d'un client : les étiquettes de type submit/button n'étaient pas automatiquement capturées jusqu'à présent.
+Ceci est maintenant pris en compte par le nouveau SDK JS.
