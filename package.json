@@ -55,7 +55,7 @@
     "embla-carousel-react": "^8.5.1",
     "framer-motion": "^11.18.1",
     "lucide-react": "^0.438.0",
-    "next": "14.2.8",
+    "next": "14.2.25",
     "next-contentlayer": "^0.3.4",
     "next-extra": "^0.5.1",
     "next-image-export-optimizer": "^1.18.0",
