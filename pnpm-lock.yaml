@@ -5,7 +5,7 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  next-contentlayer>next: 14.2.8
+  next-contentlayer>next: 14.2.25
   '@opentelemetry/api': ~1.5.0
 
 importers:
@@ -4608,7 +4608,7 @@ packages:
     resolution: {integrity: sha512-UtUCwgAl159KwfhNaOwyiI7Lg6sdioyKMeh+E7jxx0CJ29JuXGxBEYmCI6+72NxFGIFZKx8lvttbbQhbnYWYSw==}
     peerDependencies:
       contentlayer: 0.3.4
-      next: 14.2.8
+      next: 14.2.25
       react: '*'
       react-dom: '*'
 
