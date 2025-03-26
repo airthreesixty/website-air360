@@ -7,7 +7,6 @@ import {
   BlockHeroWithImage,
 } from "./block-center";
 import { Block, GalleryBlocks } from "./gallery-blocks";
-import GalleryHero from "./gallery-hero";
 import Title from "./title";
 import Description from "./description";
 import Subtext from "./subtext";
@@ -45,7 +44,6 @@ import { Badge } from "../ui/badge";
 
 export const components = {
   BlogInnerCardWrapper,
-  GalleryHero,
   Title,
   Description,
   Subtext,
@@ -94,7 +92,6 @@ export const components = {
 export {
   Image,
   BlogInnerCardWrapper,
-  GalleryHero,
   Title,
   Description,
   Subtext,
