@@ -16,12 +16,12 @@ export const aboutUs: MenuSection[] = [
         icon: "envelope-open-text",
         slug: "/manifesto",
       },
-      {
-        label: "our-values",
-        iconColor: "text-purple-600",
-        icon: "hands-holding-dollar",
-        slug: "/values",
-      },
+      // {
+      //   label: "our-values",
+      //   iconColor: "text-purple-600",
+      //   icon: "hands-holding-dollar",
+      //   slug: "/values",
+      // },
       {
         label: "our-stance",
         iconColor: "text-purple-600",
@@ -44,6 +44,12 @@ export const aboutUs: MenuSection[] = [
         iconColor: "text-purple-600",
         icon: "shield-check",
         slug: "/product/security-compliance",
+      },
+      {
+        label: "where-is-your-data",
+        iconColor: "text-purple-600",
+        icon: "cloud-question",
+        slug: "/where-is-your-data",
       },
     ],
   },
@@ -76,6 +82,12 @@ export const aboutUsMobile: MenuSection[] = [
         iconColor: "text-purple-600",
         icon: "microchip-ai",
         slug: "/ai",
+      },
+      {
+        label: "where-is-your-data",
+        iconColor: "text-purple-600",
+        icon: "cloud-question",
+        slug: "/where-is-your-data",
       },
       {
         label: "privacy-policy.title",

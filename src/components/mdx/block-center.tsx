@@ -18,7 +18,6 @@ interface BlockHeroWithImageProps extends PropsWithChildren {
   title: string;
   src: string;
   icon?: string;
-  subtext?: string;
 }
 
 interface BlockSectionProps extends PropsWithChildren {
@@ -73,7 +72,6 @@ BlockHero.displayName = "BlockHero";
 const BlockHeroWithImage: React.FC<BlockHeroWithImageProps> = ({
   children,
   title,
-  subtext,
   src,
 }) => {
   // const t = useTranslations("home");
@@ -82,14 +80,9 @@ const BlockHeroWithImage: React.FC<BlockHeroWithImageProps> = ({
       <div className="md:grid md:grid-cols-2 md:items-center md:gap-4">
         {/* Text Content */}
         <div
-          className="text-center md:text-left order-2 md:order-1 lg:max-w-md xl:max-w-xl
+          className="text-center md:text-left order-2 md:order-1 lg:max-w-[490px] xl:max-w-xl
 "
         >
-          {subtext && (
-            <span className="text-primary-600 font-really font-bold">
-              {subtext}
-            </span>
-          )}
           <h1 className="title1 my-5 text-black-600">{title}</h1>
           <div className="prose textp">{children}</div>
           {/* <div className="flex justify-center md:justify-start">
@@ -110,6 +103,7 @@ const BlockHeroWithImage: React.FC<BlockHeroWithImageProps> = ({
             fill
             priority
             className="rounded-lg mt-4 md:mt-0 object-cover"
+            placeholder="empty"
           />
         </div>
       </div>

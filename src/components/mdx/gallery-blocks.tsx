@@ -14,9 +14,15 @@ interface BlockProps extends PropsWithChildren {
 
 interface Props extends PropsWithChildren {
   title?: string;
+  dense?: boolean;
 }
 
-const GalleryBlocks: React.FC<Props> = ({ children, title }) => {
+interface IconWithBgProps {
+  icon: IconName;
+  color?: string;
+}
+
+const GalleryBlocks: React.FC<Props> = ({ children, title, dense }) => {
   const blocks: React.ReactElement[] = [];
 
   React.Children.forEach(children, (child) => {
@@ -35,11 +41,17 @@ const GalleryBlocks: React.FC<Props> = ({ children, title }) => {
     <section>
       <div className="container py-8 sm:py-16 mb-10">
         {title && (
-          <Title as="h2" className="mb-4 title2">
+          <Title as="h2" className="mb-4 title2 text-center">
             {title}
           </Title>
         )}
-        <div className="mt-12 lg:mt-12 space-y-8 md:grid md:grid-cols-2 md:gap-9 md:space-y-0 lg:gap-15">
+        <div
+          className={cn(
+            "mt-12 lg:mt-12 space-y-8 md:gap-9 lg:gap-15",
+            dense && "md:columns-2",
+            !dense && "md:grid md:grid-cols-2"
+          )}
+        >
           {blocks}
         </div>
       </div>
@@ -50,6 +62,28 @@ const GalleryBlocks: React.FC<Props> = ({ children, title }) => {
 const Block = ({ children, icon, title, color }: BlockProps) => {
   const description = children;
 
+  return (
+    <div className="flex flex-col items-start break-inside-avoid">
+      {icon && <IconWithBg icon={icon} color={color} />}
+      {title && (
+        <Title
+          as="h3"
+          className={"mb-2 text-xl md:text-2xl font-bold text-black-600"}
+        >
+          {title}
+        </Title>
+      )}
+
+      {description && (
+        <Description className="mt-0 mb-4 textp">{description}</Description>
+      )}
+    </div>
+  );
+};
+
+Block.displayName = "Block";
+
+const IconWithBg = ({ icon, color }: IconWithBgProps) => {
   const textColor = () => {
     switch (color) {
       case "purple":
@@ -70,33 +104,18 @@ const Block = ({ children, icon, title, color }: BlockProps) => {
         return "bg-primary-100";
     }
   };
-
   return (
-    <div className="flex flex-col items-start">
-      <div
-        className={cn(
-          " w-15 h-15 flex justify-center items-center rounded-xl mb-2 bg-purple-100",
-          bgColor()
-        )}
-      >
-        {icon && <Icon name={icon} className={cn("fa-2x", textColor())} />}
-      </div>
-      {title && (
-        <Title
-          as="h3"
-          className={"mb-2 text-xl md:text-2xl font-bold text-black-600"}
-        >
-          {title}
-        </Title>
+    <div
+      className={cn(
+        "w-15 h-15 flex justify-center items-center rounded-xl mb-2 bg-purple-100",
+        bgColor()
       )}
-
-      {description && (
-        <Description className="mt-0 mb-4 textp">{description}</Description>
-      )}
+    >
+      <Icon name={icon} className={cn("fa-2x", textColor())} />
     </div>
   );
 };
 
-Block.displayName = "Block";
+IconWithBg.displayName = "IconWithBg";
 
-export { Block, GalleryBlocks };
+export { Block, GalleryBlocks, IconWithBg };

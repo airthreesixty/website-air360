@@ -1,0 +1,46 @@
+---
+title: 16th of April 2024
+description: 16th of April 2024 updates
+publishedAt: 2024-04-16
+headerImage: /images/changelog/2024-02-26/headerImage.png
+---
+
+<Badge variant="noLink" className="m-0">
+  <span>New</span>
+</Badge>
+
+### Brand new pixel
+We've just launched an updated JS SDK that's faster and lighter.
+
+### Why a new pixel?
+This new version incorporates several improvements over its predecessor. Despite our current pixel already being one of the lightest on the market, our team managed to reduce its size from 40kB to 37kB, making it 8% smaller. While this may not seem like much, in the realm of UX, every byte and millisecond count!
+
+The new pixel utilizes Brotli compression instead of Gzip, leading to faster decompression on the browser side. Our benchmarks indicate that the previous 24ms decompression time has now been reduced to 11ms (the lower, the better!). Once more, every millisecond counts.
+
+In addition to its reduced size, we've updated the pixel to keep pace with the rapidly evolving web landscape, ensuring compatibility with the latest browser features. This also opens up new possibilities for future Air360 capabilities. Stay tuned!
+
+### How to update?
+Just replace the previous pixel you had for Air360 with the one from our quickstart here: https://app.air360.io/docs/getting-started/#on-your-website
+Note: If you installed our pixel after 3rd of January 2024, you have nothing to do.
+
+### When to update?
+There's no rush. The current JS SDK will continue to receive support until August 1st, 2024. However, we encourage you to update at your earliest convenience for optimal performance.
+
+
+<Badge variant="noLink" className="m-0">
+  <span>Improvement</span>
+</Badge>
+
+**Session replays**
+- Various performance improvements on session replays.
+- Ability to hide HTML elements from the session replays without any code. See how you can do [this here](https://help.air360.io/settings/app-settings/#pii-personal-identifiable-information-to-remove). (Available only with new pixel)
+
+
+<Badge variant="noLink" className="m-0">
+  <span>Fix</span>
+</Badge>
+
+**Chrome Plugin**
+Fixed a glitch on exposure rate calculation that affected some page under some specific conditions.
+
+

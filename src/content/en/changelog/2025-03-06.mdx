@@ -1,0 +1,21 @@
+---
+title: 06th of March 2025
+description: 06th of March 2025 updates
+publishedAt: 2025-03-06
+headerImage: /images/changelog/2024-02-26/headerImage.png
+---
+<Badge variant="noLink" className="m-0">
+  <span>Improvements</span>
+</Badge>
+
+- We increased the limit on the number of paths that can be displayed in the user journeys from 100k to 500k.
+- When the login fails, we now show user-friendly message.
+- We ignore the `|` characters when used in CSS : This prevented to analyze some specific elements for some clients.
+
+
+<Badge variant="noLink" className="m-0">
+  <span>Fix</span>
+</Badge>
+
+- Fixed: Only users with Admin permissions could create/edit/delete snapshots. It is now available to users with Full access
+- False positives on rage clicks: When a lot of scrolls were performed on mobile, this could be considered as rage clicks as we saw on a client's website when users scrolled very aggressively. However it's actually fine on mobile. This is fixed since March 5th 2025 and not retroactive. This also explains the high number of rage click.

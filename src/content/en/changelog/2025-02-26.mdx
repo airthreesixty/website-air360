@@ -1,0 +1,22 @@
+---
+title: 26th of February 2025
+description: 26th of February 2025 updates
+publishedAt: 2025-02-26
+headerImage: /images/changelog/2024-02-26/headerImage.png
+---
+<Badge variant="noLink" className="m-0">
+  <span>Improvements</span>
+</Badge>
+
+- There is now a dedicated menu for datalayer properties in the Event creation UI.
+- Improved launcher for the new OPA
+    - The domains with the most traffic are automatically coming first
+    - You can add domains to favorites using the favorite icon
+- Limit of 100K sessions on display
+    - We previously introduced a display limit of 100K sessions in user journeys to prevent browser performance issues when handling large number of sessions.
+    - This limit only affects the number of sessions displayed in the browser—it does not impact the analysis, which still includes all sessions within the selected date range.
+
+<Badge variant="noLink" className="m-0">
+  <span>Fix</span>
+</Badge>
+Fixed some caching issues that resulted in not all users displayed in the users view.

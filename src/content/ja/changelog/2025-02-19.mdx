@@ -1,0 +1,19 @@
+---
+title: 2025年02月19日
+description: 2025年02月19日の更新
+publishedAt: 2025-02-19
+headerImage: /images/changelog/2024-02-26/headerImage.png
+---
+<Badge variant="noLink" className="m-0">
+  <span>修正</span>
+</Badge>
+
+# データレイヤープッシュイベントの自動追跡
+これは、`dataLayer.Push`を介して送信されたイベントを自動的に捕捉することを可能にする、人気/リクエストのフィードバックでした。
+ウェブサイト上で `dataLayer.push` がトリガーされると、自動的に同じイベントで `Air360.track()` がトリガーされます。
+例えば、`dataLayer.push({ event: 「register」 })` が実行されると、Air360 JS SDK は自動的に `Air360.track(「register」)` をトリガーします。
+これはAir360の他のAPI/カスタムイベントと同様に使用できます。
+**Note:** 通常の 「Custom events 」を使ってここのイベントを使うことができますが、使いやすさを向上させる予定です！
+
+## 入力タイプsubmit/buttonのラベルを処理する
+これは最近、あるクライアントのウェブサイトで見かけたもので、これまでsubmit/buttonのラベルが自動的にキャプチャされていませんでしたが、新しいJS SDKによってキャプチャされるようになりました。

@@ -12,6 +12,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import Icon from "@/components/common/icons";
 import { SubmenuItem } from "./models";
@@ -125,8 +126,7 @@ export function Navigation() {
               <div className="text-left mb-3 text-black-600">
                 <div className="font-bold">{t("about-us")}</div>
               </div>
-
-              <div className="grid  md:grid-cols-2 ">
+              <div className="grid md:grid-cols-2 ">
                 {aboutUs.map((menu, idx) => {
                   return (
                     <div key={`${idx}`}>
@@ -156,11 +156,13 @@ export function Navigation() {
             </div>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        {/* <NavigationMenuItem>
+        <NavigationMenuItem>
           <NavigationMenuLink className={navigationMenuTriggerStyle()} asChild>
-            <Link href="/manifesto">{t("manifesto")}</Link>
+            <Link href="/values" className="!font-bold">
+              {t("our-values")}
+            </Link>
           </NavigationMenuLink>
-        </NavigationMenuItem> */}
+        </NavigationMenuItem>
         {/* <NavigationMenuItem asChild>
           <NavigationMenuLink className={navigationMenuTriggerStyle()} asChild>
             <Link href="/ai">AI</Link>
@@ -187,7 +189,7 @@ const ListItem = React.forwardRef<
           {...props}
           href={props.slug}
         >
-          <div className="h-12 w-12 mr-4 flex-shrink-0 rounded-lg flex justify-center items-center">
+          <div className="h-12 w-12 bg-gray-75 mr-4 flex-shrink-0 rounded-lg flex justify-center items-center">
             <Icon name={props.icon} className={`text-xl w-7 ${iconColor}`} />
           </div>
           <div className="text-left text-sm">

@@ -14,7 +14,7 @@ const config: Config = {
     title2: "text-3xl text-black-600 lg:text-4xl xl:text-5xl",
     title3: "text-xl text-black-600 lg:text-2xl xl:text-3xl",
     textp: "text-[#818896] lg:text-lg xl:text-xl xl:leading-8",
-    "shadow-card": "border border-gray-100 shadow-2xl shadow-gray-600/10",
+    "shadow-card": "shadow-[0_0_16px_rgba(36,42,42,0.1)] border-none",
   },
   theme: {
     container: {
@@ -73,12 +73,14 @@ const config: Config = {
               a: {
                 color: "#374151",
                 fontWeight: "bold",
+                "word-break": "normal",
               },
             },
             h3: {
               a: {
                 color: "#374151",
                 fontWeight: "bold",
+                "word-break": "normal",
               },
             },
             h4: {
@@ -89,6 +91,7 @@ const config: Config = {
               a: {
                 color: "#374151",
                 fontWeight: "bold",
+                "word-break": "normal",
               },
             },
           },

@@ -40,9 +40,9 @@ const SlideFeature: React.FC<SlideFeatureProps> = ({
     <section className="container pt-15 pb-15 lg:py-30">
       <h2
         className={cn(
-          "title2 text-center font-really",
-          lp && "mb-8 text-3xl md:text-5xl lg:mb-15 lg:text-6xl xl:text-7xl",
-          lang === "ja" && "md:text-4xl lg:text-5xl xl:text-6xl font-noto"
+          "title2 text-center font-really mb-8 lg:mb-15",
+          lp && "mb-8 text-3xl md:text-5xl lg:mb-15 lg:text-6xl",
+          lang === "ja" && "md:text-4xl lg:text-5xl font-noto"
         )}
       >
         {title}
@@ -51,7 +51,13 @@ const SlideFeature: React.FC<SlideFeatureProps> = ({
         <div className="flex justify-between lg:gap-x-15">
           <div className="w-70vh h-50vh sticky overflow-hidden top-32vh">
             {slides.map((slide, index) => (
-              <div key={index} className="image-container transition active">
+              <div
+                key={index}
+                className={cn(
+                  "image-container transition",
+                  index === 0 && "active"
+                )}
+              >
                 <ExportedImage
                   src={slide.props.src}
                   width={865.2}
@@ -82,10 +88,8 @@ SlideFeature.displayName = "SlideFeature";
 
 const Slide: React.FC<SlideProps> = ({ children, title }) => {
   return (
-    <div className="text-container max-w-[340px] ml-auto text-black-600 h-50vh flex flex-col justify-center text-right active">
-      <div className="text-2xl lg:text-3xl font-really mb-2 font-bold">
-        {title}
-      </div>
+    <div className="text-container max-w-[340px] ml-auto text-black-600 h-50vh flex flex-col justify-center text-left active">
+      <div className="text-2xl lg:text-3xl mb-2 font-bold">{title}</div>
       <span className="text-black-600 lg:text-xl xl:text-2xl xl:leading-8">
         {children}
       </span>
@@ -117,7 +121,7 @@ const SlideMobileBlock: React.FC<SlideProps> = ({
         <h3 className="font-really font-bold text-black-600 text-2xl mt-4">
           {title}
         </h3>
-        <div className="text-gray-600/60 max-w-[600px] mx-auto">{children}</div>
+        <div className="text-black-600 max-w-[600px] mx-auto">{children}</div>
       </div>
     </div>
   );

@@ -1,15 +1,17 @@
 //https://github.com/IngEoGeoBuk/next-intl-splitting-multiple-files
+import { SUPPORTED_LANGUAGES } from "@/lib/constants";
 import { createLocalizedPathnamesNavigation } from "next-intl/navigation";
 import { defineRouting } from "next-intl/routing";
 
 export const routing = defineRouting({
-  locales: ["en", "ja"],
+  locales: SUPPORTED_LANGUAGES,
   defaultLocale: "en",
   // localePrefix: 'as-needed',
   pathnames: {
     "/": "/",
     "/en": "/en",
     "/ja": "/ja",
+    "/fr": "/fr",
     "/docs": "/docs",
     "/request-demo": "/request-demo",
     "/ai": "/ai",
@@ -22,6 +24,7 @@ export const routing = defineRouting({
     "/guides/cro-for-beginners": "/guides/cro-for-beginners",
     "/guides/cro-glossary": "/guides/cro-glossary",
     "/values": "/values",
+    "/where-is-your-data": "/where-is-your-data",
     "/contact": "/contact",
     "/roi-calculator-eur": "/roi-calculator-eur",
     "/product/website-analysis": "/product/website-analysis",
@@ -45,9 +48,11 @@ export const routing = defineRouting({
     "/use-cases/multi-brand-companies": "/use-cases/multi-brand-companies",
     "/use-cases/sport-team": "/use-cases/sport-team",
     "/thank-you-for-the-demo-request": "/thank-you-for-the-demo-request",
+    "/changelog": "/changelog",
     "/pathnames": {
       en: "/test",
       ja: "/testja",
+      fr: "/testfr",
     },
   },
 });

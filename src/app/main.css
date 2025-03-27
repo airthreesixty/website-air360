@@ -10,40 +10,6 @@ html {
   scroll-behavior: smooth;
 }
 
-table {
-  border-collapse: collapse;
-  /* overflow-x: scroll; */
-  /* border: solid 2px #6B7280; */
-}
-
-th {
-  white-space: nowrap;
-}
-
-/* th, td {
-  border: solid 1px #6B7280;
-} */
-
-th:first-child {
-  width: 8%;
-}
-
-th:nth-child(2) {
-  width: 13%;
-}
-
-th:nth-child(3) {
-  width: 21%;
-}
-
-th:nth-child(4) {
-  width: 10%;
-}
-
-td {
-  word-break: break-all;
-}
-
 h2,
 h3 {
   scroll-margin-top: 100px;
@@ -101,7 +67,7 @@ mark {
   ); */
   background-image: linear-gradient(
     to right,
-    rgba(255, 255, 0, 0.1),
+    rgba(231, 255, 0, 0.1),
     rgba(255, 255, 0, 0.9) 4%,
     rgba(255, 255, 0, 0.3)
   );
@@ -109,14 +75,25 @@ mark {
   box-decoration-break: clone;
 }
 
+.font-really {
+  letter-spacing: 0.03em;
+}
+
 html[lang="en"] .title1,
-html[lang="en"] .title2 {
+html[lang="en"] .title2,
+html[lang="fr"] .title1,
+html[lang="fr"] .title2 {
   @apply font-really;
 }
 
-html[lang="ja"] .title1,
-html[lang="ja"] .title2 {
+html[lang="ja"] {
   font-family: "Noto Sans JP", "ui-sans-serif", "system-ui", "-apple-system",
     "sans-serif";
+}
+
+html[lang="ja"] .title1,
+html[lang="ja"] .title2,
+html[lang="ja"] h2,
+html[lang="ja"] h3 {
   font-weight: bold;
 }

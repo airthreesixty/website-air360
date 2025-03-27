@@ -14,9 +14,9 @@ const MdxAccordion: React.FC<AccordionProps> = ({ title, children }) => {
     <Accordion
       type="single"
       collapsible
-      className="bg-white border-l-[5px] border-[1px] border-l-primary-600 px-5 rounded-lg shadow-sm mb-5"
+      className="bg-white px-5 mb-5 border-t border-t-1 border-gray-100"
     >
-      <AccordionItem value="item-1" className="border-none ">
+      <AccordionItem value="item-1" className="border-none">
         <AccordionTrigger className="text-black-600 text-left font-semibold transition-all text-lg lg:text-xl py-5 no-underline hover:no-underline">
           {title}
         </AccordionTrigger>

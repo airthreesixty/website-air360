@@ -31,7 +31,7 @@ const Items: React.FC<ItemsProps> = ({
           className={`flex items-center w-full py-2 mb-1 rounded-xl  ${hoverColor}`}
         >
           <div
-            className={`w-9 h-9 mr-2 rounded-lg flex justify-center items-center`}
+            className={`w-9 h-9 bg-gray-75 mr-2 rounded-lg flex justify-center items-center`}
           >
             <FontAwesomeIcon
               className={`fa-lg w-6 ${textColor}`}

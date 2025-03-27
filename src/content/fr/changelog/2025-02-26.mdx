@@ -1,0 +1,22 @@
+---
+title: 26 Février 2025
+description: Mises à jour du 26 Février 2025
+publishedAt: 2025-02-26
+headerImage: /images/changelog/2024-02-26/headerImage.png
+---
+<Badge variant="noLink" className="m-0">
+  <span>Amélioration</span>
+</Badge>
+
+- Il y a maintenant un menu dédié aux propriétés des couches de données dans l'interface de création d'événements .
+- Lanceur amélioré pour le nouvel OPA
+    - Les domaines avec le plus de trafic sont automatiquement affichés en premier.
+    - Vous pouvez ajouter des domaines aux favoris en utilisant l'icône des favoris
+- Limite de 100K sessions affichées
+    - Nous avons précédemment introduit une limite d'affichage de 100K sessions dans les parcours utilisateurs afin de prévenir les problèmes de performance du navigateur lors de la gestion d'un grand nombre de sessions.
+    - Cette limite n'affecte que le nombre de sessions affichées dans le navigateur - elle n'a pas d'impact sur l'analyse, qui inclut toujours toutes les sessions dans la plage de dates sélectionnée.
+
+<Badge variant="noLink" className="m-0">
+  <span>Fixer</span>
+</Badge>
+Correction de certains problèmes de mise en cache qui faisaient que tous les utilisateurs n'étaient pas affichés dans la vue des utilisateurs.

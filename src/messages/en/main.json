@@ -19,6 +19,7 @@
       "company": "Company",
       "our-values": "Our values",
       "our-stance": "Stance on AI",
+      "where-is-your-data": "Where is your data",
       "help": "Help",
       "systemsStatus": "Systems Status",
       "language": "Language",
@@ -26,6 +27,7 @@
       "content-gallery": "Content gallery",
       "guides": "Guides",
       "roi-calc": "ROI Calculator",
+      "changelog": "Changelog",
       "subMenu": {
         "product": "Product",
         "features": "Features",

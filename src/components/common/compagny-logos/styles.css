@@ -3,3 +3,7 @@
     @apply !fill-gray-500;
   }
 }
+
+[data-dubreuil="dubreuil"] > path:nth-child(1) {
+  fill: #e2e2e2 !important;
+}

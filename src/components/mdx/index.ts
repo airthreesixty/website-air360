@@ -7,7 +7,6 @@ import {
   BlockHeroWithImage,
 } from "./block-center";
 import { Block, GalleryBlocks } from "./gallery-blocks";
-import GalleryHero from "./gallery-hero";
 import Title from "./title";
 import Description from "./description";
 import Subtext from "./subtext";
@@ -17,7 +16,6 @@ import LaundryList from "../common/laundry-list";
 import { BlockFeature, Feature } from "./block-feature";
 import { SlideFeature, Slide, SlideMobileBlock } from "./slide-feature";
 import CarouselFeature from "./carousel-feature";
-import FeatureCard from "./feature-card";
 import ShowcaseLogos from "../common/showcase-logos";
 import {
   ClubMed,
@@ -41,10 +39,11 @@ import {
   BlogInnerCardWrapper,
   IncreaseConversionWrapper,
 } from "../mdx-client-wrapper";
+import Signature from "./signature";
+import { Badge } from "../ui/badge";
 
 export const components = {
   BlogInnerCardWrapper,
-  GalleryHero,
   Title,
   Description,
   Subtext,
@@ -68,7 +67,6 @@ export const components = {
   Slide,
   SlideMobileBlock,
   CarouselFeature,
-  FeatureCard,
   ShowcaseLogos,
   ClubMed,
   SAS,
@@ -87,12 +85,13 @@ export const components = {
   MdxAccordion,
   Manifesto,
   IncreaseConversionWrapper,
+  Signature,
+  Badge,
 };
 
 export {
   Image,
   BlogInnerCardWrapper,
-  GalleryHero,
   Title,
   Description,
   Subtext,
@@ -116,7 +115,6 @@ export {
   Slide,
   SlideMobileBlock,
   CarouselFeature,
-  FeatureCard,
   ShowcaseLogos,
   ClubMed,
   SAS,
@@ -135,4 +133,6 @@ export {
   MdxAccordion,
   Manifesto,
   IncreaseConversionWrapper,
+  Signature,
+  Badge,
 };
